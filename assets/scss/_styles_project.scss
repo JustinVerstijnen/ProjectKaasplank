@@ -329,8 +329,3 @@ body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:-ms-input
     color: #fff;
     background-color: #8EAFDA;
 }
-
-/* Hide Tags/Categories on blog post pages */
-.single.section-blog .post-meta-taxonomies {
-  display: none;
-}
