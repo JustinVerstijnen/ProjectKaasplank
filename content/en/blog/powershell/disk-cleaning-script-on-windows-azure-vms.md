@@ -161,9 +161,9 @@ Go to the "Triggers" tab and add a new trigger.
 
 Select "Monthly" and select all months. Then change the "Days" field to 1 to run it on the first day.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 You can defer from this schedule if your environment needs that. This is just an example.
-{% /alert %}
+{{% /alert %}}
 
 Now the page looks like this:
 

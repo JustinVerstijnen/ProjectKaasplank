@@ -80,9 +80,9 @@ Click on "[Definitions](https://portal.azure.com/#view/Microsoft_Azure_Policy/Po
 
 At the "definition location", select your subscription where you want this configuration to be active. You can also select the tenant root management group, so this is enabled on all subscriptions. Caution with this of course.
 
-{% alert color="warning" %}
+{{% alert color="warning" %}}
 Warning: Policies assigned to the Tenant Management Group cannot be assigned remediation tasks. Select one or more subscriptions instead.
-{% /alert %}
+{{% /alert %}}
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-98d6e5da31bd.png)
 
 Then give the policy a good name and description.

@@ -31,9 +31,9 @@ Download script from GitHub
 
 Because it is a user-context script that runs on user sign in, I advice you to install this script using Group Policy or Microsoft Intune. I will show you how to do it with Group Policy. You can also store the script in your session host and run it with Task Scheduler.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Demonstration is done through the Local Group Policy editor, but it will work for both domain/non-domain group policy.
-{% /alert %}
+{{% /alert %}}
 
 Place the script on a local or network location and open Group Policy Management, and then create a new GPO.
 

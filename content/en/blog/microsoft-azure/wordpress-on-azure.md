@@ -102,9 +102,9 @@ Finish the wizard. Now the resource group is created and we can advance to deplo
 We can go to the Azure Marketplace now to search for the Wordpress solution published by Microsoft:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-bc127106ef4a.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 In this guide, we will use the Microsoft offering. You are free to choose other options, but some steps will not align with this guide.
-{% /alert %}
+{{% /alert %}}
 
 Now after selecting the option, we have 4 different plans which we can choose. This mostly depends on how big you want your environment to be:
 
@@ -142,12 +142,12 @@ This automatically creates an storage account. Then go to the "Networking" tab.
 
 On the networking tab, we have to select a virtual network. This is because the database is hosted on a private, non public accessible network. When using a existing Azure network, select your own network. In my case, I stick to the automatic generated network.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 When using your own network, you have to create 2 subnets:
 
 - appsubnet
 - dbsubnet
-{% /alert %}
+{{% /alert %}}
 
 Click on "Next". And finish the wizard. For the basic plan, there are no additional options available.
 

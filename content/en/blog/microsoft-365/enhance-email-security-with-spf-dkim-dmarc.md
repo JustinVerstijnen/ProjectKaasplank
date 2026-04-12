@@ -12,9 +12,9 @@ description: >
 ---
 When it comes to basic email security, we have 3 techniques that can enhance our email security and delivery by some basic initial configuration. Those are called SPF, DKIM and DMARC. This means, configure and mostly never touch again.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 [Microsoft announced](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730) that starting from May 5, 2025: SPF, DKIM and DMARC will become mandatory for inbound email delivery. Not configuring all three can result in your emails not being delivered correctly.
-{% /alert %}
+{{% /alert %}}
 
 These 3 techniques are:
 
@@ -45,9 +45,9 @@ Configuring these 3 techniques helps with:
 - And so, increases security
   - Not only for your own company but for others also
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Tip: Use my DNS MEGAtool to verify if your domain or other domains already use these techniques: <https://tools.justinverstijnen.nl/dnsmegatool>
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -240,9 +240,9 @@ Create those 2 records in your DNS hosting service. In my case this configured:
 For reference;
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-36ceaabf260b.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 Some DNS hosting providers requires you to end external domain-record values with a dot "."
-{% /alert %}
+{{% /alert %}}
 
 Save the DNS records, and check in Microsoft 365 if DKIM can be enabled. This may be not directly but should work after 15 minutes.
 
@@ -278,11 +278,11 @@ My configured record for reference:
 
 This configuration must done for all your domains.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 When implementing the reject policy in real world domains, double check all systems who send email from your domain, as this change can disrupt deliverability when not configured correctly.
 
 Ensure all systems are defined in SPF and use DKIM.
-{% /alert %}
+{{% /alert %}}
 
 ### Configure DMARC for your .onmicrosoft.com domain(s)
 

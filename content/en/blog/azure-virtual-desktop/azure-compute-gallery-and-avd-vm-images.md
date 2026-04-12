@@ -99,11 +99,11 @@ After you made your choice, proceed to the last page of the wizard and create th
 
 ## Create a VM image definition
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 VM image definitions can be created manually like this step, but also through a image you capture. Most of the information will be filled in automatically when choosing the second option.
 
 I will showcase both of the options.
-{% /alert %}
+{{% /alert %}}
 
 After creating the gallery itself, the place to store the images, we can now manually create a VM image definition. The category of images that we can store.
 
@@ -162,19 +162,15 @@ Open the application and select "Generalize" and the as Shutdown option: "Shutdo
 Click "OK" and wait till the virtual machine performs the shutdown action.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-95db64f6f21e.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 If you get an error during this stage that states Bitlocker is activated, you need to disable it temporarily. At deployment of the image, this will be re-activated.
 
 PowerShell
 
-```
+```powershell
 Disable-BitLocker -MountPoint "C:"
 ```
-
-```
-Disable-BitLocker -MountPoint "C:"
-```
-{% /alert %}
+{{% /alert %}}
 
 ### Capturing the image in Azure
 

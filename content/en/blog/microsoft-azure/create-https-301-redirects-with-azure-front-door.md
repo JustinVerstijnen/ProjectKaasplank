@@ -192,9 +192,9 @@ Create a new CNAME record with this information:
 - **Type:** CNAME
 - **Value:** jvshortcuts-to-jvtools-eha7cua0hqhnd4gk.z01.azurefd.net**.**
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Make sure to end the value with a **trailing dot** (.), as this is a hostname externally to your DNS zone.
-{% /alert %}
+{{% /alert %}}
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-b7b8339fc864.png)
 
 Save the DNS configuration, and your complete setup will now work in around 45 to 60 minutes.

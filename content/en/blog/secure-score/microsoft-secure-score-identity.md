@@ -156,9 +156,9 @@ Microsoft Entra ID has some lower-privileged roles which we must utilize. I will
 | User must be able to invite guest users | Guest Inviter |
 | User must be able to manage applications and give consent | Cloud Application Administrator |
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 For a comprehensive list of Entra ID roles, check out this Microsoft page: <https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

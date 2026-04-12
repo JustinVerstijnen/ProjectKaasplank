@@ -60,9 +60,9 @@ Then execute this command to disable DirectSend tenant-wide:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Set-OrganizationConfig -RejectDirectSend $true
 {{< /card >}}
-{% alert color="info" %}
+{{% alert color="info" %}}
 To re-enable DirectSend, just change the $true boolean to $false.
-{% /alert %}
+{{% /alert %}}
 
 If you want to check the status before or after the set command, you can use this command:
 
@@ -76,7 +76,7 @@ Thats all. :)
 
 If an email is now sent using DirectSend, the following error will occur:
 
-```
+```text
 550 5.7.68 TenantInboundAttribution; Direct Send not allowed for this organization from unauthorized sources
 ```
 

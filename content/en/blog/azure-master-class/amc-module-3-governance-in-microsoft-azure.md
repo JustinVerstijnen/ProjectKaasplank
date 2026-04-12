@@ -91,9 +91,9 @@ In Microsoft Azure, there are hundreds of different roles for each service, but 
 - **Contributor**: This role allows access to modify the entire configuration, but does not permit the user to change permissions at the assigned level.
 - **Owner**: This role provides full access to modify the entire configuration, including the ability to manage permissions.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 The highest permissions are effective if multiple roles are assigned.
-{% /alert %}
+{{% /alert %}}
 
 These roles define the scope of control users or groups have over resources in Azure, ensuring that access can be finely tuned based on the level of responsibility.
 

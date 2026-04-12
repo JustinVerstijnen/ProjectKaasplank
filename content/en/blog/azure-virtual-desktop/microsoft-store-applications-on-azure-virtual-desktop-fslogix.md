@@ -34,9 +34,9 @@ The fun fact is, the application data is stored in the user profile. You can tes
 
 So, the application manifest of Windows which contains what applications are available to the user cleans up after logging out, but the data is persistent.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Source: <https://learn.microsoft.com/en-us/fslogix/troubleshooting-appx-issues>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

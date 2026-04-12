@@ -67,9 +67,9 @@ Because this billing option aligns tohow you use the storage, we can define for 
 - Hot
 - Cool
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 All three tiers use the same underlying hardware and give you the same performance.
-{% /alert %}
+{{% /alert %}}
 
 For Azure Virtual Desktop operating in standard performance and pay-as-you-go billing, **Transaction optimized** or **Hot** tiers are recommended. Let's find out why:
 
@@ -81,9 +81,9 @@ For Azure Virtual Desktop operating in standard performance and pay-as-you-go bi
 
 Per this table, we would pay the most if we place frequent accessed files on a "Cool" tier, as you pay the most for IOPS. Therefore, for FSLogix profiles it the best to use "Hot" tier as we pay the most for storage and we try to limit that as much as possible by deleting unneeded profiles and limiting the profile size with FSLogix settings.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Use the [Azure Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for a real world calculation based on your needs.
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -95,9 +95,9 @@ Now we have those terms to indicate the performance, but what do they mean exact
 - **Burst IO/s (IOPS):** Maximum temporary higher read/write operations/actions per second, but only for a short time (boost)
 - **Throughput rate:** The maximum data transfer rate in MB/s that the storage account allows
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 We can compare IOPS and throughput to a car, where the IOPS are the rotations per minute (RPM) of the engine and the throughput is the actual speed of the car.
-{% /alert %}
+{{% /alert %}}
 
 ---
 

@@ -37,9 +37,9 @@ Now this looks really how it normally should look.
 
 Now, let's take a look at how normal, Managed disks work:
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Topologies are simplified for more understanding.
-{% /alert %}
+{{% /alert %}}
 
 As you can see, they could be stored anywhere in a datacenter or region. It could even be another datacenter. We can't see this in the portal. We only see that a VM and disk are in a specific region and availability zone, but we don't have further control.
 

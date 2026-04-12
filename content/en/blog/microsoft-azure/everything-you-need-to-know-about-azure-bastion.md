@@ -252,11 +252,11 @@ Create the container and open it.
 
 We need to create a Shared Access Signature for the Azure Bastion instance to access our newly created storage account and container.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 A Shared Access Signature (SAS) is a granular token which permits limited access to a storage account. A limited token with limited permissions at suit your needs, while using least-privilege.
 
 To learn more about SAS tokens: [click here](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/how-to-guides/create-sas-tokens?tabs=Containers)
-{% /alert %}
+{{% /alert %}}
 
 When you have opened the container, open "Shared access tokens":
 

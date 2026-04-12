@@ -58,9 +58,9 @@ The script has the domain *justinverstijnen.nl* everywhere in it. This has to be
 
 Download the script file and copy the script and csv file to the same folder on the destination server. After that run the script and it will create the users.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Note: If you want to bypass the Powershell Execution Policy in the most effective and secure way possible, use the following command:
-{% /alert %}
+{{% /alert %}}
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Set-ExecutionPolicy RemoteSigned -Scope Process
 {{< /card >}}

@@ -68,9 +68,9 @@ After that, if you are eligible for a trial, you can get it by clicking on "Deta
 In my environment, i have assigned the license to my user:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-7b3f43fce41f.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 After starting the trial or purchasing the right licenses, please log out of the tenant and log back in. This will make sure all of the required options are available in your environment.
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -310,9 +310,9 @@ We have to add permissions for auditing here. Click on the "Add" button, and the
 
 Type "Everyone" and hit "OK".
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Selecting the "Everyone" principal may seem unsecure, but means we collect changes done by every user.
-{% /alert %}
+{{% /alert %}}
 
 Now we get a pile of permissions:
 

@@ -161,9 +161,9 @@ In the "Secret" field, paste your just saved API key:
 
 Click on "Add secret" to add the secret to your repository.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 The API key is saved secretly, and in the code we refer to this secret. This is a best-practice to save API keys instead of plain text in your public code.
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -277,9 +277,9 @@ Pretty cool in my opinion.
 
 Now we have our script on the PowerShell Gallery, we can actually download and execute the script using some simple commands.
 
-{% alert color="warning" %}
+{{% alert color="warning" %}}
 Do not execute my example script, unless you know what you are doing.
-{% /alert %}
+{{% /alert %}}
 
 Open PowerShell on your testing environment and execute this command with your script name to install your newly uploaded script.
 

@@ -58,9 +58,9 @@ You can install this group policy by following the steps below;
 3. Run the .ps1 file in the zip
    - In your current folder, do a shift+richt click and select "Open Powershell window"
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 If you have to change your Powershell Execution Policy, use Set-ExecutionPolicy Unrestricted -Scope Process and then run your script. This bypasses the execution policy for only the duration of that Powershell window.
-{% /alert %}
+{{% /alert %}}
 
 After succesfully running the script, the GPO will be available in the Group Policy Management console;
 

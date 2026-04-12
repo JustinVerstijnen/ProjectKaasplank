@@ -59,9 +59,9 @@ Now click on "+ Add settings", search for Google. Click it open to go down to "G
 
 Select the option "Configure the list of force-installed apps and extensions".
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 The same option exists with (User) attached, using that option means a user is able to delete the extension.
-{% /alert %}
+{{% /alert %}}
 
 Now we can configure that option by setting the switch to "Enabled".
 
@@ -110,9 +110,9 @@ Then set the script options as this:
 2. Enforce script signature check: No
 3. Run script in 64 bit PowerShell Host: Yes
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 The script targets the whole machine by creating a registry key in the HKEY\_LOCAL\_MACHINE hive.
-{% /alert %}
+{{% /alert %}}
 
 Then click "Next" and assign it to your devices. In my case, I selected "All devices".
 

@@ -34,9 +34,9 @@ Here we can select 3 options:
 - **Dynamic User**: A dynamic group for Users
 - **Dynamic Device**: A dynamic group for Devices
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 For creating and using Dynamic Groups, you need at least one Microsoft Entra P1 license (included from 365 Business Premium and up).
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -258,9 +258,9 @@ We can build a dynamic group query based on users' assigned licenses. Instead of
 
 I have done this multiple times for Windows 365 environments, where we want a machine automatically to be deployed when a license is assigned. By default, after assigning a license, you have to assign the user to a group before a machine will deploy (Enrollment profile).
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 For more information about this setup, visit: <https://justinverstijnen.nl/dynamic-group-for-access-to-windows-365/>
-{% /alert %}
+{{% /alert %}}
 
 Before you can make a query to find your service plans, you need to find the service plan id in your environment, you can find this by following these steps:
 

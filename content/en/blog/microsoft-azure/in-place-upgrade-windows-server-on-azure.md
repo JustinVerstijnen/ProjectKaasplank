@@ -146,9 +146,9 @@ After creating the upgrade media we have to assign it to the virtual machine we 
 
 Then select to attach an existing disk, and select the upgrade media you have created through Powershell.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Note: The disk and virtual machine have to be in the same resource group to be attached.
-{% /alert %}
+{{% /alert %}}
 ---
 
 ## Step 4: Start upgrade of Windows Server
@@ -162,9 +162,9 @@ Login into the virtual machine and let's do some pre-upgrade checks:
 As you can see, the machine is on Windows Server 2022 Datacenter and we have enough disk space to perform this action. Now we can perform the upgrade through Windows Explorer, and then going to the upgrade disk we just created and assigned:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-533a6a03fdfa.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 When the volume is not available in Windows Explorer, you first have to initialize the disk in Disk Management (diskmgmt.msc) in Windows. Then it will be available.
-{% /alert %}
+{{% /alert %}}
 
 Open the volume upgrade and start setup.exe. The starup will take about 2 minutes.
 

@@ -36,9 +36,9 @@ The server must have the following software installed:
 - [Azure Powershell module](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell) and [Azure Storage](https://www.powershellgallery.com/packages/Az.Storage/) module
 - The Active Directory PowerShell module (Can be installed through Server Manager)
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 **Source:** <https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable#prerequisites>
-{% /alert %}
+{{% /alert %}}
 
 ### Installing the Azure PowerShell module
 

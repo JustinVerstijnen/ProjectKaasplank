@@ -56,9 +56,9 @@ My advice is to configure both when possible, because not every email service do
 
 MTA-STS (Mail Transfer Agent Strict Transport Security) is a standard that improves email security by always using SMTP TLS encryption and validating certificates during email transmission. It's designed to prevent man-in-the-middle (MitM) attacks, ensuring email servers cannot be tricked into falling back to insecure delivery. This increases security and protects your data.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 MTA-STS works very similar to how HSTS works for webservers.
-{% /alert %}
+{{% /alert %}}
 
 MTA-STS consists of the following components:
 
@@ -88,9 +88,9 @@ _mta-sts.yourdomain.com. 3600 IN TXT v=STSv1; id=20250101000000Z;
 
 The first part must contain your domain instead of *yourdomain.com* and the last part after the ID contains the timestamp of the record being published.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Tip: you can use my (Microsoft 365) DNS Record Generator tool for customizing your MTA-STS record: <https://tools.justinverstijnen.nl/365recordsgenerator>
-{% /alert %}
+{{% /alert %}}
 
 I have logged in into the DNS hosting and added my TXT record there. My record looks like this:
 

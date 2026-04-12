@@ -95,9 +95,9 @@ Log Analytics is an Azure service for centrally storing logs and metrics. It act
 
 Log Analytics data is organized within a Workspace, which is the actual Log Analytics resource. Within this workspace, you can choose to store all information for a specific application, as data retention settings are defined at the workspace level.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 It is very important to watch the data retention of the workspace. The more data you store, the more expensive it will get.
-{% /alert %}
+{{% /alert %}}
 
 In Azure, you can send logs to Log Analytics from almost every resource under "Diagnostics Settings":
 

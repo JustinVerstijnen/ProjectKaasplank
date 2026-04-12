@@ -242,9 +242,9 @@ Search for the setting:
 
 Select the option on the right and then enable it on the left (with or without UEFI lock)
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Source: <https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure?tabs=intune#enable-windows-defender-credential-guard-by-using-intune>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

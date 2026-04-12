@@ -2,7 +2,6 @@
 title: "Terms and Conditions"
 description: "This page contains my general Terms and Conditions. Please review them accordingly before using my website."
 date: 2024-06-19
-slug: "terms-conditions"
 build:
   render: always
   list: never

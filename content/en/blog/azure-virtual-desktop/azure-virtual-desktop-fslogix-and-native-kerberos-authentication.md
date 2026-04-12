@@ -280,9 +280,9 @@ Finish the wizard to make the assignment active.
 
 We must also do one final configuration to the storage account permissions, and that is to set default share-level permissions. Is is a requirement of this Microsoft Entra Kerberos thing.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Source: <https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions?WT.mc_id=Portal-Microsoft_Azure_FileStorage&tabs=azure-portal#choose-how-to-assign-share-level-permissions>
-{% /alert %}
+{{% /alert %}}
 
 Go back to the storage account, click on FIle shares and then click on "Default share-level permissions"
 
@@ -346,9 +346,9 @@ Under FSLogix -> Profile Containers, select the following settings, enable them 
 | VHD Locations | Your storage account and share in UNC. Mine is here:      \\sajvazurevirtualdesktop.file.core.windows.net\fslogix |
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b293467c80a1.png)
-{% alert color="warning" %}
+{{% alert color="warning" %}}
 Make sure the option "*Access Network as Computer Object*" is **Disabled**, as this is a requirement for user authentication. Otherwise the solution will not work and sign in will result in a FSLogix "Error code: 0x000000035, Message: Impossibile to find network path" error.
-{% /alert %}
+{{% /alert %}}
 
 ### Container naming settings
 
@@ -387,9 +387,9 @@ Select the group to give desktop access to the users. Then save the assignment.
 After assigning the group we would have to do one last configuration, enabling Single Sign On on the hostpool. Go to your hostpool and open the RDP Properties
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-9e61108354a9.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 For a comprehensive guide about Azure Virtual Desktop and RDP Properties, visit: <https://justinverstijnen.nl/azure-virtual-desktop-rdp-properties/>
-{% /alert %}
+{{% /alert %}}
 
 On the "Connection Information" tab, select the "Microsoft Entra single sign-on" option and set this to provide single sign-on. Then save the configuration.
 

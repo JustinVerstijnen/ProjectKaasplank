@@ -37,9 +37,9 @@ Let's look at them all and explain what their function is:
 | **RID Master** | Domain | Assigns RID pools for unique SIDs |
 | **Infrastructure Master** | Domain | Maintains cross-domain references |
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 For more information about the specifics of the roles, check out the official Microsoft page: <https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/fsmo-roles>
-{% /alert %}
+{{% /alert %}}
 
 Depending on your environment, these roles can run on one or multiple domain controllers. If having an environment with a single domain controller, all roles will be done by that single server. As you might already guess, this is a single point of failure.
 

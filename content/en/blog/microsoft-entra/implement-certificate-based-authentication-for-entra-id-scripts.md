@@ -38,9 +38,9 @@ This means that if an client doesn't have a allowed certificate installed, we ca
 
 After authenticating, we have the permissions (API or Entra Roles) assigned to the Enterprise Application/App Registration, which we will call a "Service Principal".
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Note: Self Signed certificaties will expire after 365 days (1 year).
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -108,19 +108,15 @@ $cert.Thumbprint
 
 ## Connecting to Entra ID using a certificate
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Installing the Microsoft Graph Powershell module can be done with:
 
 PowerShell
 
-```
+```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 ```
-
-```
-Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
-```
-{% /alert %}
+{{% /alert %}}
 
 We can now logon to Microsoft Graph using this certificate, we must first fill in the parameters on your server:
 

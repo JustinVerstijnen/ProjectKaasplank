@@ -42,9 +42,9 @@ The Start/Stop solution is a complete solution and collection of predefined reso
 
 The good thing about the solution is that you can name all resources to your own likings and configure it without the need to built everything from scratch. It saves a lot of time and we all know, time is money.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 To learn more about the Start/Stop solution, check out this page: <https://learn.microsoft.com/en-us/azure/azure-functions/start-stop-vms/overview>
-{% /alert %}
+{{% /alert %}}
 
 After deploying the template to your resource group, you can find some Logic Apps that are deployed to the resource group:
 
@@ -76,9 +76,9 @@ Let's say, we have 5 servers (E4s\_V5 + 256GB storage) without 1 or 3 year reser
 | 120 hours | Only workdays | 24/5 | $ 502 | 19% |
 | 75 hours | Business hours + spare | 6AM to 9PM | $ 392 | 37% |
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Check out how these calculations are made: <https://azure.com/e/763a431f77dc4c73868c4f250e6cf522>
-{% /alert %}
+{{% /alert %}}
 
 As you can see, the impact on the costs is great, according to the times you enable the servers. You can save up to 35% but at the expense of availability. Also, we always have to pay for our disks IP addresses so the actual savings are not linear to the running hours.
 
@@ -172,9 +172,9 @@ Paste the copied Resource ID there and add a part of code just under the "Reques
 {{< card code=true header="**JSON**" lang="json" >}}
 "ExcludedVMLists": [],
 {{< /card >}}
-{% alert color="info" %}
+{{% alert color="info" %}}
 In the "ExcludedVMLists" part you can paste the resource ID of virtual machines in the same resource group which you want to exclude from the Auto Start/Stop solution.
-{% /alert %}
+{{% /alert %}}
 
 Now my "Function-Try" code block looks like this (line 68 to line 91):
 
@@ -255,9 +255,9 @@ Again, go to Line 68 and change the resource group to the "Resource ID" of your 
                 "type": "Scope"
             }
 {{< /card >}}
-{% alert color="info" %}
+{{% alert color="info" %}}
 In the "ExcludedVMLists" part you can paste the resource ID of virtual machines in the same resource group which you want to exclude from the Auto Start/Stop solution.
-{% /alert %}
+{{% /alert %}}
 
 After configuring the Function-Try block you can save the Logic app and head to its Home page and enable the Logic App to make it active.
 

@@ -13,11 +13,11 @@ Locks in Azure are a great way to prevent accidental deletion or modify resource
 
 Now with Azure Policy we can automatically deploy Locks to Resource Groups to secure them from deleting or read-only resources. In this guide I will explain how this can be done and how it works.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Note: Locks on Resource Groups can stop some automations. If you use read-only locks on a Azure Virtual Desktop resource group for example.
 
 Take care before creating them and assigning this policy to such subscription.
-{% /alert %}
+{{% /alert %}}
 
 ---
 

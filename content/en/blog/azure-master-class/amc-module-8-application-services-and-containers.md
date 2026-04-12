@@ -178,9 +178,9 @@ The control plane of Kubernetes is the brain behind managing Kubernetes. The con
 - **Controller-Manager:** The Controller-Manager is the service that runs controller processes. This service is consolidated so that a single service takes care of all controller tasks.
 - **ETCD Database:** ETCD is a database where all cluster data is stored. It is considered a "key-value" database.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 For more information, check out this website: <https://kubernetes.io/docs/concepts/overview/components/>
-{% /alert %}
+{{% /alert %}}
 
 The above services are managed by Microsoft Azure in Azure Kubernetes Services.
 

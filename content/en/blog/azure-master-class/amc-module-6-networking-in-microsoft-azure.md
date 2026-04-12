@@ -513,9 +513,9 @@ An Azure Virtual WAN consists of a base network that must be at least a /24 netw
 
 Overall, Azure Virtual WAN ensures that when a company has a network in Azure along with multiple branch offices, all locations are centrally connected to Azure. This architecture is a more efficient and scalable solution compared to manually connecting various virtual networks using different VPN gateways.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Azure Virtual WAN replaces VPN connections with Azure Virtual Network Gateways to Virtual WAN. It also supports more tunnels (2000 versus 30 in a virtual network gateway).
-{% /alert %}
+{{% /alert %}}
 
 ---
 

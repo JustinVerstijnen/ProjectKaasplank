@@ -256,9 +256,9 @@ Als je nu een bericht voor je krijgt dat de module succesvol geladen is kunnen w
 
 ### Stap 5: De module informatie verlenen
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Je mag er bij deze stap voor kiezen om niet je echte gegevens te gebruiken. Vul hier dan neppe informatie in, dit verandert verder niets aan de uitkomst.
-{% /alert %}
+{{% /alert %}}
 
 Wanneer de module wel succesvol geladen is kun je het onderstaande commando uitvoeren. Powershell vraagt nu om je naam:
 

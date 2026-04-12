@@ -83,9 +83,9 @@ If you want to go with the free non-license option, then we can create a shared 
 
 Now we have to create the Dynamic Distribution Group. Go to Exchange Admin Center (as this option only exists there). <https://admin.exchange.microsoft.com>
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 In my guide, I create one group for excluding only. You can also create a group for all@domain.com for a internal mailing list with all employees.
-{% /alert %}
+{{% /alert %}}
 
 Go to "Recipients" and then "Groups". Then open the tab "Dynamic distribution list"
 

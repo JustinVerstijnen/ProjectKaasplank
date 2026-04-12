@@ -87,9 +87,9 @@ This number decides how many hosts we can use in our network. The more zeros in 
 
 A smaller subnet is basically a higher performance. Because some requests, like broadcasts are sent to every address. This process is faster to 254 addresses than to 65.000 addresses.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 **Tip:** use my Subnet calculator to calculate your networks: <https://subnet.justinverstijnen.nl/>
-{% /alert %}
+{{% /alert %}}
 
 ### Deep dive into IP addresses
 

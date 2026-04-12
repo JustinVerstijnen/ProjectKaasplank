@@ -57,16 +57,12 @@ Get-MpComputerStatus
 This will give you an overview of all Defender information available on the device like latest signature updates, enabled/disabled status:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-9468534ec20d.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 If this command doesn't work, check if the module is imported correctly:
 
 PowerShell
 
-```
-Import-Module Defender
-```
-
-```
+```powershell
 Import-Module Defender
 ```
 
@@ -74,14 +70,10 @@ If this doesn't help anything you can run this command to install the module:
 
 PowerShell
 
-```
+```powershell
 Get-Module -ListAvailable Defender | Install-Module
 ```
-
-```
-Get-Module -ListAvailable Defender | Install-Module
-```
-{% /alert %}
+{{% /alert %}}
 
 ### Microsoft Defender admin center
 

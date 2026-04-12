@@ -307,9 +307,9 @@ Azure Update Management Center is a solution within Azure that can update virtua
 
 These solutions help manage updates while ensuring that applications and VMs on Azure stay up-to-date without risking downtime or performance issues.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 To learn more about Azure Update Manager, check out my guide: <https://justinverstijnen.nl/using-azure-update-manager-to-manage-updates-at-scale/>
-{% /alert %}
+{{% /alert %}}
 
 # Azure Compute Gallery
 

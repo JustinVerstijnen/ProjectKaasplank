@@ -41,19 +41,15 @@ I have already downloaded the script, and have it ready to execute:
 
 When executed, it asks to login to a tenant. Here you have to login to the tenant you want to audit. After that it will be performing the checks. This can take a while with several users and role assignments.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 When prompted that the Execution Policy is restricted, you can use this command for a one-time bypass (till the window closes):
 
 PowerShell
 
-```
+```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
-
-```
-Set-ExecutionPolicy Unrestricted -Scope Process
-```
-{% /alert %}
+{{% /alert %}}
 
 After the script finishes all the checks, it puts out a CSV file in the same folder as the script which we can now open to review all the Entra ID user role assignments:
 

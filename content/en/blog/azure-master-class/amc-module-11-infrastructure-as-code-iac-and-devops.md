@@ -35,9 +35,9 @@ Each of these environments offers different levels of flexibility and control, w
 The Azure Portal is the home of your Azure environment and is the most used tool to manage Azure. From the start, you always use it and in case of emergencies, it is the easiest, fastest and most reliable tool for some troubleshooting.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/creating-static-web-apps-on-azure-the-easy-way-2346/jv-media-2346-d8d4a87a581c.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 You visit the Azure Portal by going to: <https://portal.azure.com>
-{% /alert %}
+{{% /alert %}}
 
 ## Azure Powershell
 

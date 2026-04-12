@@ -168,9 +168,9 @@ Create a CNAME record on your DNS hosting called "beer" with the value.
 
 End the value of the CNAME record with a "." dot because it is an external domain.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 If you use a higher level domain, like justinverstijnen.nl, your DNS host may require you to create a ALIAS record instead of a CNAME record.
-{% /alert %}
+{{% /alert %}}
 
 Save the record, wait for 2 minutes and click "Validate" in Azure to validate your CNAME record. This process is mostly done within 5 minutes, but it can take up to 48 hours.
 

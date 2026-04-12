@@ -130,21 +130,17 @@ Put this line into the "Run" window and the applications opens itself.
 
 Select "Generalize" and choose the option to shutdown the machine after completing.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 If getting an error that Bitlocker Drive Encryption is enabled, execute this command to disable it (you can re-enable it after deployment):
 
 PowerShell
 
-```
-manage-bde -off C:
-```
-
-```
+```powershell
 manage-bde -off C:
 ```
 
 Wait for around 15 minutes to finish decryption, then try Sysprep again.
-{% /alert %}
+{{% /alert %}}
 
 The machine will now clean itself up and then shutdown. This process can take up to 20 minutes, in the meanwhile you can advance with step 4.
 

@@ -9,9 +9,9 @@ tags:
 description: >
   Since the beginning of Azure Virtual Desktop, it is mandatory to run it with an Active Directory. This because when using pooled sess...
 ---
-{% alert color="info" %}
+{{% alert color="info" %}}
 This deployment option is superseded by the more easy and secure Entra Kerberos option, check out the updated deployment guide here: <https://justinverstijnen.nl/azure-virtual-desktop-fslogix-and-native-kerberos-authentication/>
-{% /alert %}
+{{% /alert %}}
 
 Since the beginning of Azure Virtual Desktop, it is mandatory to run it with an Active Directory. This because when using pooled session hosts, there has to be some sort of NTFS permission for FSLogix to reach the users' profile disks. This permission is done using NTFS with Kerberos authentication. Something Azure AD doesn't support.
 
@@ -126,9 +126,9 @@ Select your user or group here and save. The user/group is now allowed to logon 
 
 ## Step 3: Create a dynamic group for session hosts (optional)
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Using dynamic groups require a Microsoft Entra Premium P1 tenant. If you don't have this license, you can use an assigned group instead.
-{% /alert %}
+{{% /alert %}}
 
 Before we can configure the session hosts in Microsoft Intune, we need to have a group for all our session hosts. I really like the use of dynamic group for this sort of configurations, because the settings will be automatically done. Otherwise we configure a new session host in about 3 months later and forget about the group assignment.
 
@@ -162,9 +162,9 @@ We can now configure FSLogix in Intune. I do this by using configuration profile
 
 [Download FSLogix configuration template](https://github.com/JustinVerstijnen/AVDCloudOnlyFSLogix)
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 If you choose to download the FSLogix configuration template, you need to change the VHD location to your own storage account and share name.
-{% /alert %}
+{{% /alert %}}
 
 To configure this manually create a new configuration template from scratch for Windows 10 and higher and use the "Settings catalog"
 

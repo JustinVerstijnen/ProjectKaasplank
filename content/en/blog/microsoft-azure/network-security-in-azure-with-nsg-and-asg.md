@@ -39,9 +39,9 @@ To clarify some of the terms used in a rule;
 - **Action:** Select if you want to block or allow the traffic
 - **Priority:** This is the priority of the rule. A number closer to zero means the rule will be processed first and priorities with a higher number will be processed in the order after that.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 To learn more about NSG's in Azure, check out this webpage: <https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

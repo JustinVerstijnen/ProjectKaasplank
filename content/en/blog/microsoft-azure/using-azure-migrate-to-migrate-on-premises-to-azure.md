@@ -28,14 +28,14 @@ This page is about Azure Migrate and how you can migrate an on-premises server o
 - 1 server dedicated to Migration based on *Windows Server 2016\**
 - 2 servers for Discovery and Migration based on *Windows Server 2016\**
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 \*Windows Server 2016 is the only supported OS, please do not install other versions as this will not work.
 
 Evaluation versions may be used.
-{% /alert %}
-{% alert color="info" %}
+{{% /alert %}}
+{{% alert color="info" %}}
 Officially, it is not supported to combine the Discovery Server and the Migration Server. These must be separate servers according to the official documentation. However, I was able to successfully combine them in a testing environment.
-{% /alert %}
+{{% /alert %}}
 
 ---
 

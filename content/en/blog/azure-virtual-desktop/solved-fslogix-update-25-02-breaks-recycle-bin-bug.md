@@ -9,11 +9,11 @@ tags:
 description: >
   I tested the new FSLogix 25.02 version and a very annoying bug appeared. "The Recycle Bin on C:\ is corrupted."
 ---
-{% alert color="info" %}
+{{% alert color="info" %}}
 This issue has been solved in the newest release of FSLogix 25.04: <https://learn.microsoft.com/en-us/fslogix/overview-release-notes>
 
 Please use this newer version instead of version 25.02. This fixes the bug in this article without any change in policies and settings.
-{% /alert %}
+{{% /alert %}}
 
 ## The problem/bug described
 
@@ -83,9 +83,9 @@ This problem can be very annoying, especially when not wanting to disable the re
 
 In existing and sensitive environments, my advice is to keep using the last [FSLogix 2210 hotfix 4](https://aka.ms/fslogix-latest) version. As far as I know, this version is completely bug-free and does not have this problem.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 After some more research, I came across a page of Microsoft about a lot of features deprecated in this version of FSLogix. Be aware of those changes before they might impact your environment: <https://learn.microsoft.com/en-us/fslogix/troubleshooting-feature-deprecation>
-{% /alert %}
+{{% /alert %}}
 
 If I helped you with this guide to fix this bug, it was my pleasure and thank you for reading it.
 

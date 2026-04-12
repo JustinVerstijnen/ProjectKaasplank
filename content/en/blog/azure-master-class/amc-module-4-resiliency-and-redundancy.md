@@ -119,9 +119,9 @@ The blue blocks represent Availability Sets (AS) and Virtual Machine Scale Sets 
 
 To maintain clarity and organization, ensure that each application has its own separate set. So you have implemented a good level of redundancy.
 
-{% alert color="warning" %}
+{{% alert color="warning" %}}
 Availability Sets, Virtual Machine Scale Sets, and Fault Domains do not provide protection against failures at the datacenter level. You need Availability Zones for that.
-{% /alert %}
+{{% /alert %}}
 ---
 
 ## Availability Zones

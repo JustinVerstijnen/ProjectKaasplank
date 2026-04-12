@@ -79,9 +79,9 @@ As you can see, it totally depends on how many data is backed up, and selecting 
 You can find currect usage easily through the Microsoft 365 Admin center (<https://admin.cloud.microsoft>) and then to "Reports" and then "Usage":
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-36baff867d1d.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 Tip: Calculate your actual data usage with this PowerShell scripts of Microsoft: <https://learn.microsoft.com/en-us/microsoft-365/backup/backup-pricing?view=o365-worldwide#finding-the-sizes-of-stored-data>
-{% /alert %}
+{{% /alert %}}
 
 ## Required permissions for Microsoft 365 Backup
 
@@ -178,9 +178,9 @@ Now that we have connected the service to our Azure subscription, we actually en
 We will first configure a policy for SharePoint. Click on "+ Set up policy". After that, click Next on the SharePoint backup policy page.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d535942eb80.png)
-{% alert color="info" %}
+{{% alert color="info" %}}
 You can use the "filters" option, but you always need to add new sites manually. This is not a dynamic option. Therefore, the "Individual" option is more easy.
-{% /alert %}
+{{% /alert %}}
 
 Here we can select how we want to select our SharePoint sites. I will use the "Individual" option here. Then select the sites you want to backup.
 

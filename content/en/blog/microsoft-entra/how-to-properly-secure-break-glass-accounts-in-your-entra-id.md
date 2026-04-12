@@ -83,9 +83,9 @@ A great recommendation is to use long and strong passwords. Strong passwords con
 
 Use anywhere between 64 and 256 characters passwords for break glass administrator accounts. Save those in a safe place like an encrypted password storage.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Tip: use my Password generator for generatng passwords: <https://password.jvapp.nl/>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

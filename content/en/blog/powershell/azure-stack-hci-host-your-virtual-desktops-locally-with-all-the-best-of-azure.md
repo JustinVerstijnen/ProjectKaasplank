@@ -15,9 +15,9 @@ Azure Stack HCI is a solution for Microsoft Azure to host Azure resources on you
 
 For example, with Azure Stack HCI it is possible to host some Azure Virtual Desktop hosts in your own network to boost performance by decreasing latency. Also it is possible to use GPU enabled software on this.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Azure Stack HCI became part of Azure Local after writing this post, see more information here: <https://azure.microsoft.com/en-us/products/local>
-{% /alert %}
+{{% /alert %}}
 
 ---
 

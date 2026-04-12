@@ -16,11 +16,11 @@ In this guide I will show you how you can clean up FSLogix profiles from Azure F
 
 I will give you a step-by-step guide to build this Logic App yourself.
 
-{% alert color="info" %}
+{{% alert color="info" %}}
 Make sure you have backups ofenabled on your storage account so when a file is deleted but you need it for some reason after some time, you can restore it from a monthly or yearly backup.
 
 Also: Recover Services storage is much cheaper than live Storage Account storage, keep this in mind when implementing this sort of Logic Apps.
-{% /alert %}
+{{% /alert %}}
 
 ---
 
@@ -195,9 +195,9 @@ Click the "Delete files" option.
 
 Now on the "File" field, again click on the thunder icon to add dynamic content and add the "Body Path" option of the "Filter Array" step.
 
-{% alert color="warning" %}
+{{% alert color="warning" %}}
 Make sure you select the Filter Array step, as other steps might delete ALL files.
-{% /alert %}
+{{% /alert %}}
 
 This automatically transforms the "Delete files" step into a loop where it performs the action for all filtered files in the "Filter Array" step.
 
