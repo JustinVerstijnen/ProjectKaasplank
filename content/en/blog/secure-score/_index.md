@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score
+title: Secure Score
 
 ---
 

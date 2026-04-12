@@ -3,7 +3,7 @@ title: "How I bumped up Microsoft Secure Score towards 100%"
 date: 2026-04-30
 slug: "how-i-bumped-up-microsoft-secure-score-towards-100"
 categories:
-  - Microsoft Entra
+  - Secure Score
 tags:
   - Step by Step guides
 description: >
