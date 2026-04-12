@@ -228,6 +228,19 @@ body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:-ms-input
   text-decoration: none;
 }
 
+/* Styling homepage blocks in picture */
+.td-cover-block {
+  min-height: 100vh; /* volledige schermhoogte */
+  display: flex;
+  align-items: center;      /* verticaal centreren */
+  justify-content: center;  /* horizontaal centreren */
+  text-align: center;
+}
+
+.td-cover-block-inner {
+  margin: 0 auto;
+}
+
 /* Shared card sizing for homepage feature blocks and latest post cards */
 .homepage-equal-card {
   min-height: 100%;
