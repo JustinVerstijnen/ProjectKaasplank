@@ -329,3 +329,27 @@ body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:-ms-input
     color: #fff;
     background-color: #8EAFDA;
 }
+
+/* Blog posts pages styles */
+.td-toc #TableOfContents a.active {
+    color: #2b4975;
+    border-left-color: #8EAFDA;
+}
+
+/* Theme colors on hover */
+.td-sidebar-nav a:hover,
+.td-sidebar-nav a:focus,
+.td-sidebar .nav-link:hover,
+.td-sidebar .nav-link:focus,
+.td-sidebar-link:hover,
+.td-sidebar-link:focus,
+.td-sidebar-nav__section-title:hover,
+.td-sidebar-nav__section-title:focus,
+.td-sidebar-nav__section-title a:hover,
+.td-sidebar-nav__section-title a:focus,
+.td-sidebar-nav .td-sidebar-link__page:hover,
+.td-sidebar-nav .td-sidebar-link__page:focus,
+.td-sidebar-nav .nav-item summary:hover,
+.td-sidebar-nav .nav-item summary:focus {
+  color: #8EAFDA !important;
+}
