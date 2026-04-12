@@ -1,0 +1,293 @@
+/* Site style overrides */
+
+// Import external Docsy modules
+@import 'td/color-adjustments-dark';
+@import 'td/code-dark';
+@import 'td/gcs-search-dark';
+@import 'td/extra/buttons';
+@import 'td/extra/main-container';
+
+/* Improve link contrast inside primary content blocks */
+.td-box--primary {
+  a {
+    color: #ffffff !important;
+    background-color: #8EAFDA;
+  }
+}
+
+.td-box--primary {
+    color: #fff;
+    background-color: #8EAFDA;
+}
+
+/* Primary button colors */
+.btn-primary, .td-blog .td-rss-button .btn.disabled .btn-outline-primary .btn-outline-primary, div.drawio button {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #8EAFDA;
+  --bs-btn-border-color: #8daed9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7691b5;
+  --bs-btn-hover-border-color: #7a96bb;
+}
+
+/* Hide the language selector in the navbar */
+.td-navbar .td-lang-menu {
+  display: none;
+}
+
+/* Dark/Lightmode selector background color (active) */
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #8EAFDA;
+}
+
+/* Hide the project Links in page */
+.td-page-meta {
+  display: none;
+}
+
+/* Default link styling */
+a {
+  color: #6e89ab;
+  text-decoration: none;
+}
+
+/* Self-link color for headings */
+.td-heading-self-link {
+  color: #8EAFDA;
+}
+
+/* Default navbar styling */
+.td-navbar {
+  --bs-link-underline-opacity: 0.65;
+  --td-navbar-bg-color: #8eafda;
+}
+
+/* Non-home pages: normal solid navbar */
+body:not(.home-navbar-transparent) .td-navbar {
+  background-color: var(--td-navbar-bg-color) !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  border-bottom: 1px solid var(--bs-border-color) !important;
+  box-shadow: none !important;
+}
+
+/* Homepage: glass-effect navbar */
+.home-navbar-transparent .td-navbar,
+.home-navbar-transparent .td-navbar.td-navbar-cover,
+.home-navbar-transparent .td-navbar.td-navbar-cover.td-navbar-transparent {
+  background: rgba(255, 255, 255, 0.08) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: blur(10px) saturate(140%) !important;
+  backdrop-filter: blur(10px) saturate(140%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16) !important;
+}
+
+/* Remove extra overlay layers that can create ugly bars */
+.home-navbar-transparent .td-navbar::before,
+.home-navbar-transparent .td-navbar::after,
+.home-navbar-transparent .td-navbar-container::before,
+.home-navbar-transparent .td-navbar-container::after {
+  content: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Kill any extra overlay layers */
+.home-navbar-transparent .td-navbar::before,
+.home-navbar-transparent .td-navbar::after,
+.home-navbar-transparent .td-navbar-container::before,
+.home-navbar-transparent .td-navbar-container::after {
+  content: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Remove extra generated layers that can create a white bar */
+.home-navbar-transparent .td-navbar::before,
+.home-navbar-transparent .td-navbar::after {
+  content: none !important;
+}
+
+/* Make navbar text white on the homepage */
+.home-navbar-transparent .td-navbar .nav-link,
+.home-navbar-transparent .td-navbar .navbar-brand,
+.home-navbar-transparent .td-navbar .dropdown-toggle {
+  color: #fff !important;
+}
+
+/* Make the navbar search white only on the homepage */
+.home-navbar-transparent .td-navbar .td-search,
+.home-navbar-transparent .td-navbar .td-search:not(:focus-within),
+.home-navbar-transparent .td-navbar .td-search__icon,
+.home-navbar-transparent .td-navbar .td-search__icon::before,
+.home-navbar-transparent .td-navbar .td-search .fa-search,
+.home-navbar-transparent .td-navbar .td-search i,
+.home-navbar-transparent .td-navbar .td-search__input,
+.home-navbar-transparent .td-navbar .td-search .form-control,
+.home-navbar-transparent .td-navbar .td-search__input.form-control {
+  color: #fff !important;
+}
+
+/* Style the homepage search input */
+.home-navbar-transparent .td-navbar .td-search__input,
+.home-navbar-transparent .td-navbar .td-search .form-control,
+.home-navbar-transparent .td-navbar .td-search__input.form-control {
+  border-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  caret-color: #fff !important;
+  border-width: 1px !important;
+}
+
+/* Keep the homepage search field white while focused */
+.home-navbar-transparent .td-navbar .td-search__input:focus,
+.home-navbar-transparent .td-navbar .td-search .form-control:focus,
+.home-navbar-transparent .td-navbar .td-search__input.form-control:focus {
+  color: #fff !important;
+  border-color: #fff !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Make homepage search placeholder text white */
+.home-navbar-transparent .td-navbar .td-search__input::placeholder,
+.home-navbar-transparent .td-navbar .td-search .form-control::placeholder,
+.home-navbar-transparent .td-navbar .td-search__input::-webkit-input-placeholder,
+.home-navbar-transparent .td-navbar .td-search .form-control::-webkit-input-placeholder,
+.home-navbar-transparent .td-navbar .td-search__input::-moz-placeholder,
+.home-navbar-transparent .td-navbar .td-search .form-control::-moz-placeholder,
+.home-navbar-transparent .td-navbar .td-search__input:-ms-input-placeholder,
+.home-navbar-transparent .td-navbar .td-search .form-control:-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Restore normal search colors on all non-home pages */
+body:not(.home-navbar-transparent) .td-navbar .td-search,
+body:not(.home-navbar-transparent) .td-navbar .td-search:not(:focus-within),
+body:not(.home-navbar-transparent) .td-navbar .td-search__icon,
+body:not(.home-navbar-transparent) .td-navbar .td-search__icon::before,
+body:not(.home-navbar-transparent) .td-navbar .td-search .fa-search,
+body:not(.home-navbar-transparent) .td-navbar .td-search i {
+  color: var(--bs-body-color) !important;
+}
+
+/* Restore normal search input colors on all non-home pages */
+body:not(.home-navbar-transparent) .td-navbar .td-search__input,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control,
+body:not(.home-navbar-transparent) .td-navbar .td-search__input.form-control {
+  color: var(--bs-body-color) !important;
+  border-color: var(--bs-border-color) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  caret-color: var(--bs-body-color) !important;
+  border-width: 1px !important;
+}
+
+/* Restore normal search colors while focused on all non-home pages */
+body:not(.home-navbar-transparent) .td-navbar .td-search__input:focus,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:focus,
+body:not(.home-navbar-transparent) .td-navbar .td-search__input.form-control:focus {
+  color: var(--bs-body-color) !important;
+  border-color: var(--bs-border-color) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Restore normal placeholder colors on all non-home pages */
+body:not(.home-navbar-transparent) .td-navbar .td-search__input::placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control::placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search__input::-webkit-input-placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control::-webkit-input-placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search__input::-moz-placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control::-moz-placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search__input:-ms-input-placeholder,
+body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:-ms-input-placeholder {
+  color: var(--bs-body-color) !important;
+  opacity: 1 !important;
+}
+
+/* Make homepage feature blocks fully clickable */
+.homepage-feature-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Keep homepage feature links clean on hover and focus */
+.homepage-feature-link:hover,
+.homepage-feature-link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Shared card sizing for homepage feature blocks and latest post cards */
+.homepage-equal-card {
+  min-height: 100%;
+  padding: 2rem;
+  border-radius: 0.9rem;
+}
+
+/* Homepage feature block styling */
+.homepage-feature-item {
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Highlight feature blocks on hover */
+.homepage-feature-link:hover .homepage-feature-item,
+.homepage-feature-link:focus .homepage-feature-item {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+}
+
+/* Homepage latest post card styling */
+.homepage-post-card {
+  height: 100%;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.9rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+/* Keep blog post titles clean */
+.homepage-post-title {
+  color: inherit;
+  text-decoration: none;
+}
+
+.homepage-post-title:hover,
+.homepage-post-title:focus {
+  text-decoration: underline;
+}
+
+/* Style the blog post category */
+.homepage-post-category {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--bs-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Style the blog post date */
+.homepage-post-date {
+  font-size: 0.95rem;
+  color: var(--bs-secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+/* Footer background color */
+.td-box--dark,
+.td-footer {
+  color: #fff;
+  background-color: #0E202C;
+}
