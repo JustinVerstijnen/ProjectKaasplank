@@ -33,7 +33,7 @@ The pages are very interesting (according to myself ;), but are not neccesarily 
 
 [**7:** Virtual Machines and Scale Sets](https://justinverstijnen.nl/amc-module-6-networking-in-microsoft-azure/)
 
-[8**:** Application Services and Containers](https://justinverstijnen.nl/ama-module-8-application-services-and-containers/)
+[**8:** Application Services and Containers](https://justinverstijnen.nl/ama-module-8-application-services-and-containers/)
 
 [**9:** Databases & AI](https://justinverstijnen.nl/amc-module-9-databases-ai/)
 
