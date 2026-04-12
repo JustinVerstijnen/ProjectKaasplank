@@ -87,7 +87,7 @@ params:
     taxonomyCloudTitle: [Tags, Categories]
     taxonomyPageHeader: [tags, categories]
 
-  privacy_policy: /terms-and-conditions/
+  privacy_policy: /terms-conditions/
 
   version_menu: Releases
   archived_version: false
