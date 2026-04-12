@@ -20,14 +20,30 @@
     background-color: #8EAFDA;
 }
 
-/* Primary button colors */
-.btn-primary, .td-blog .td-rss-button .btn.disabled .btn-outline-primary .btn-outline-primary, div.drawio button {
+/* Button colors */
+.btn-primary, .td-blog .td-rss-button .btn.disabled .btn-outline-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #8EAFDA;
   --bs-btn-border-color: #8daed9;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #7691b5;
   --bs-btn-hover-border-color: #7a96bb;
+  background-color: #8EAFDA;
+}
+
+  .btn-outline-primary, div.drawio button {
+    --bs-btn-color: #8EAFDA;
+    --bs-btn-border-color: #8EAFDA;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8EAFDA;
+    --bs-btn-hover-border-color: #8EAFDA;
+}
+
+.page-link.active, .active>.page-link {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #8EAFDA;
+    border-color: #8EAFDA;
 }
 
 /* Hide the language selector in the navbar */
