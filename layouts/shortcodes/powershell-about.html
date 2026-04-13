@@ -1,14 +1,26 @@
+{{- $id := printf "ps-about-%d" now.UnixNano -}}
+{{- $typedLines := slice \
+  "Write-Host \"Starting about-me.ps1\"" \
+  "Write-Host \"Name: Justin Verstijnen\"" \
+  "Write-Host \"Location: Netherlands\"" \
+  "Write-Host \"Focus: Microsoft, Azure, Cloud & Automation\"" \
+  "Write-Host \"Rendering profile...\"" \
+  "Write-Host \"Done.\"" \
+-}}
 
-<div class="ps-terminal-wrapper">
-  <pre class="ps-terminal">
-<span class="ps-line">PS C:\Users\Justin> ./about-me.ps1</span>
-<span id="ps-output"></span>
-<span class="ps-cursor">█</span>
-  </pre>
-</div>
+<div id="{{ $id }}" class="ps-about" data-ps-lines='{{ jsonify $typedLines }}'>
+  <div class="ps-terminal-wrapper" aria-live="polite">
+    <div class="ps-terminal-chrome">
+      <span></span><span></span><span></span>
+    </div>
 
-<div id="about-content" class="about-hidden">
-  {{ .Inner }}
+    <pre class="ps-terminal"><span class="ps-line">PS C:\Users\Justin&gt; ./about-me.ps1</span>
+<span class="ps-output"></span><span class="ps-cursor" aria-hidden="true">█</span></pre>
+  </div>
+
+  <div class="ps-rendered about-hidden">
+    {{ .Page.RenderString .Inner }}
+  </div>
 </div>
 
 <link rel="stylesheet" href="/css/powershell-about.css">

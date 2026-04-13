@@ -3,15 +3,11 @@ title: "About me"
 ---
 
 {{< powershell-about >}}
-# Hi, I'm Justin Verstijnen
-
-I live in the Netherlands and I work on Microsoft, cloud, and infrastructure-focused solutions.
+I am Justin Verstijnen, I live in the Netherlands and work on Microsoft, Azure, cloud and automation.
 
 ## My IT and Cloud story
 
-My interest in computers started at a young age and gradually turned into hands-on work with modern IT platforms, automation, and cloud technology.
+My interest in computers started at a young age and evolved into a professional career focused on Microsoft and cloud solutions.
 
-Over time, that interest grew into a stronger focus on Microsoft technologies, practical infrastructure design, and building solutions that are clear, reliable, and useful in the real world.
-
-What I enjoy most is combining technical depth with a clean, understandable way of working — whether that is around cloud environments, platform engineering, or improving the experience for the people using the end result.
+I enjoy building practical solutions, improving infrastructure and turning complex technical problems into something clear and usable.
 {{< /powershell-about >}}
