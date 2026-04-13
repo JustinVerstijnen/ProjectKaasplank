@@ -4,19 +4,17 @@
 
 <div class="ps-about" data-command="{{ $command }}">
   <div class="ps-terminal-wrapper" aria-live="polite">
-    <div class="ps-terminal-header" aria-hidden="true">
-      <div class="ps-terminal-header-left">
-        <span class="ps-terminal-dot"></span>
-        <span class="ps-terminal-dot"></span>
-        <span class="ps-terminal-dot"></span>
-      </div>
-      <div class="ps-terminal-title">Windows PowerShell</div>
+    <div class="ps-terminal-chrome" aria-hidden="true">
+      <span></span><span></span><span></span>
     </div>
-
-    <pre class="ps-terminal-body"><span class="ps-terminal-line"><span class="ps-prompt">PS C:\Users\Justin&gt; </span><span class="ps-terminal-command"></span><span class="ps-terminal-cursor" aria-hidden="true">█</span></span><span class="ps-terminal-output"></span></pre>
+    <pre class="ps-terminal"><span class="ps-prompt">PS C:\Users\Justin&gt; </span><span class="ps-command"></span>
+<span class="ps-output"></span><span class="ps-cursor" aria-hidden="true">█</span></pre>
   </div>
 
-  <div class="ps-markdown about-hidden" hidden aria-hidden="true">
+  <div class="ps-markdown about-hidden">
     {{ $rendered }}
   </div>
 </div>
+
+<link rel="stylesheet" href="/css/powershell-about.css">
+<script src="/js/powershell-about.js" defer></script>

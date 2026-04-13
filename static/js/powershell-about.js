@@ -3,15 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   blocks.forEach((block) => {
     const terminal = block.querySelector(".ps-terminal-wrapper");
-    const command = block.querySelector(".ps-terminal-command");
-    const output = block.querySelector(".ps-terminal-output");
-    const cursor = block.querySelector(".ps-terminal-cursor");
+    const command = block.querySelector(".ps-command");
+    const output = block.querySelector(".ps-output");
+    const cursor = block.querySelector(".ps-cursor");
     const content = block.querySelector(".ps-markdown");
     const scriptName = block.dataset.command || ".\\about-justin-verstijnen.ps1";
 
     if (!terminal || !command || !output || !cursor || !content) {
       return;
     }
+
+    content.classList.add("about-hidden");
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const outputLines = [
@@ -23,8 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const showContent = () => {
-      content.hidden = false;
-      content.setAttribute("aria-hidden", "false");
       content.classList.remove("about-hidden");
     };
 
@@ -68,13 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (charIndex < currentLine.length) {
         output.appendChild(document.createTextNode(currentLine.charAt(charIndex)));
         charIndex += 1;
-        setTimeout(typeOutput, 10);
+        setTimeout(typeOutput, 9);
         return;
       }
 
       lineIndex += 1;
       charIndex = 0;
-      setTimeout(typeOutput, lineIndex === outputLines.length ? 150 : 80);
+      setTimeout(typeOutput, lineIndex === outputLines.length ? 150 : 70);
     }
 
     function typeCommand() {
