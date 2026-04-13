@@ -1,7 +1,10 @@
-.ps-about {
-  margin: 0 auto 2.5rem;
+/* About page - PowerShell intro + rendered markdown content */
+
+.ps-about-shell {
+  width: 100%;
 }
 
+/* Terminal wrapper */
 .ps-terminal-wrapper {
   background: #0e202c;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -10,8 +13,8 @@
   overflow: hidden;
   margin: 0 auto 2rem;
   max-width: 1040px;
-  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.45s ease, margin 0.45s ease;
   max-height: 900px;
+  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.45s ease, margin 0.45s ease;
 }
 
 .ps-terminal-wrapper.is-hidden {
@@ -22,152 +25,89 @@
   pointer-events: none;
 }
 
-.ps-terminal-chrome {
+/* Fake title bar */
+.ps-terminal-header {
   display: flex;
-  gap: 0.45rem;
   align-items: center;
-  padding: 0.85rem 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  background: rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.ps-terminal-chrome span {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+.ps-terminal-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.ps-terminal {
-  margin: 0;
-  padding: 1.35rem 1.4rem 1.5rem;
+.ps-terminal-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ps-terminal-title {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Terminal body */
+.ps-terminal-body {
+  padding: 1.25rem 1.35rem;
+  color: #e8edf2;
+  font-family: Consolas, "Cascadia Mono", "Courier New", monospace;
+  font-size: 0.98rem;
+  line-height: 1.65;
   white-space: pre-wrap;
   word-break: break-word;
-  font: 0.98rem/1.65 Consolas, "Cascadia Code", "Courier New", monospace;
-  color: #e6edf3;
+  min-height: 220px;
 }
 
-.ps-prompt {
-  color: #c9d1d9;
+.ps-terminal-line {
+  display: block;
 }
 
-.ps-command {
-  color: #ffd866;
+.ps-terminal-command {
+  color: #ffd84d;
 }
 
-.ps-output {
-  color: #d4d4d4;
+.ps-terminal-output {
+  color: #d7e2ec;
 }
 
-.ps-cursor {
+.ps-terminal-cursor {
   display: inline-block;
+  width: 0.6ch;
   color: #ffffff;
-  animation: ps-blink 1s steps(1) infinite;
+  animation: ps-terminal-blink 1s step-end infinite;
 }
 
-@keyframes ps-blink {
+@keyframes ps-terminal-blink {
   50% {
     opacity: 0;
   }
 }
 
-.about-hidden {
-  display: none;
-}
-
+/* Markdown content */
 .ps-markdown {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 2.5rem 0 1rem;
+  padding: 3rem 1.25rem 1rem;
   animation: ps-fade-in 0.35s ease;
-}
-
-.ps-markdown > *:first-child {
-  margin-top: 0;
-}
-
-.ps-markdown p,
-.ps-markdown li,
-.ps-markdown td,
-.ps-markdown th {
-  font-size: 1.03rem;
-}
-
-.ps-markdown p {
-  line-height: 1.8;
-}
-
-.ps-markdown h2 {
-  margin-top: 2.6rem;
-  margin-bottom: 1rem;
-}
-
-.ps-markdown h3 {
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-}
-
-.ps-markdown > p:first-of-type {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.ps-markdown .about-two-columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
-  align-items: start;
-  margin: 2rem auto 2.25rem;
-  max-width: 900px;
-}
-
-.ps-markdown .about-two-columns > div {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
-  padding: 1.25rem 1.35rem;
-}
-
-.ps-markdown .about-two-columns ul {
-  margin-bottom: 0;
-}
-
-.ps-markdown table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem auto 0;
-  overflow: hidden;
-  border-radius: 14px;
-}
-
-.ps-markdown thead th,
-.ps-markdown th {
-  text-align: left;
-  font-weight: 700;
-}
-
-.ps-markdown th,
-.ps-markdown td {
-  padding: 0.85rem 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  vertical-align: top;
-}
-
-.ps-markdown tr:nth-child(odd) {
-  background: rgba(0, 0, 0, 0.035);
-}
-
-.ps-markdown tr:nth-child(even) {
-  background: rgba(0, 0, 0, 0.065);
+  color: inherit;
+  font-family: inherit;
 }
 
 @keyframes ps-fade-in {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -175,28 +115,220 @@
   }
 }
 
-@media (max-width: 768px) {
-  .ps-terminal-wrapper,
+/* Keep the same font as the rest of the site */
+.ps-markdown,
+.ps-markdown * {
+  font-family: inherit;
+}
+
+/* Main content width so text feels centered and calmer */
+.ps-markdown > * {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+.ps-markdown h1,
+.ps-markdown h2,
+.ps-markdown h3,
+.ps-markdown h4,
+.ps-markdown h5,
+.ps-markdown h6 {
+  text-align: left;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ps-markdown h1 {
+  margin-bottom: 1.25rem;
+}
+
+.ps-markdown h2 {
+  margin-top: 3rem;
+}
+
+.ps-markdown h3 {
+  margin-top: 2rem;
+}
+
+/* Intro paragraph centered */
+.ps-markdown > p:first-of-type {
+  text-align: center;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+/* Default text */
+.ps-markdown p,
+.ps-markdown li,
+.ps-markdown td,
+.ps-markdown th,
+.ps-markdown blockquote {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.ps-markdown p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.ps-markdown ul,
+.ps-markdown ol {
+  padding-left: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.ps-markdown li + li {
+  margin-top: 0.3rem;
+}
+
+.ps-markdown a {
+  text-underline-offset: 0.14em;
+}
+
+/* Two-column cards for hobbies + profiles
+   Use this in your markdown:
+   <div class="about-two-columns">
+     <div class="about-card">...</div>
+     <div class="about-card">...</div>
+   </div>
+*/
+.ps-markdown .about-two-columns {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+  margin: 2.25rem auto 2.75rem;
+}
+
+.ps-markdown .about-card {
+  width: 100%;
+  max-width: none;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  box-sizing: border-box;
+}
+
+.ps-markdown .about-card h2,
+.ps-markdown .about-card h3,
+.ps-markdown .about-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.ps-markdown .about-card ul,
+.ps-markdown .about-card ol {
+  margin-bottom: 0;
+}
+
+/* Certifications table */
+.ps-markdown table {
+  width: 100%;
+  max-width: 1040px;
+  border-collapse: collapse;
+  margin: 1rem auto 2.5rem;
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.ps-markdown thead th {
+  text-align: left;
+  font-weight: 700;
+  padding: 0.95rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ps-markdown tbody td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  vertical-align: top;
+}
+
+.ps-markdown tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.ps-markdown tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.035);
+}
+
+/* Images and media */
+.ps-markdown img,
+.ps-markdown video,
+.ps-markdown iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Code blocks inside markdown */
+.ps-markdown pre,
+.ps-markdown code {
+  font-family: Consolas, "Cascadia Code", "Courier New", monospace;
+}
+
+.ps-markdown pre {
+  max-width: 1040px;
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
   .ps-markdown {
-    max-width: 100%;
+    padding: 2.25rem 1rem 1rem;
   }
 
   .ps-markdown .about-two-columns {
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin: 1.75rem auto 2.25rem;
   }
 
-  .ps-markdown th,
-  .ps-markdown td {
-    padding: 0.7rem 0.8rem;
+  .ps-markdown > * {
+    max-width: 100%;
+  }
+
+  .ps-markdown > p:first-of-type {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .ps-terminal-wrapper {
+    border-radius: 14px;
+  }
+
+  .ps-terminal-body {
+    padding: 1rem;
+    font-size: 0.94rem;
+  }
+
+  .ps-markdown table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .ps-terminal-wrapper,
   .ps-markdown,
-  .ps-cursor {
-    animation: none;
-    transition: none;
+  .ps-terminal-cursor {
+    animation: none !important;
+    transition: none !important;
   }
 }
