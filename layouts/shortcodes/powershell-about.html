@@ -1,0 +1,15 @@
+
+<div class="ps-terminal-wrapper">
+  <pre class="ps-terminal">
+<span class="ps-line">PS C:\Users\Justin> ./about-me.ps1</span>
+<span id="ps-output"></span>
+<span class="ps-cursor">█</span>
+  </pre>
+</div>
+
+<div id="about-content" class="about-hidden">
+  {{ .Inner | safeHTML }}
+</div>
+
+<link rel="stylesheet" href="/css/powershell-about.css">
+<script src="/js/powershell-about.js"></script>
