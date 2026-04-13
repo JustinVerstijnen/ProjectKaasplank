@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 2: Identity in Azure"
+title: "Module 2: Identity in Azure"
 date: 2024-10-24
 slug: "amc-module-2-identity"
 categories:
