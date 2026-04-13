@@ -1,14 +1,32 @@
 
 .ps-terminal-wrapper {
-  background:#012456;
-  border-radius:6px;
-  padding:1.2rem;
-  font-family:Consolas, monospace;
-  color:#fff;
-  margin-bottom:3rem;
+  background: #012456;
+  border-radius: 6px;
+  padding: 1.25rem;
+  font-family: Consolas, "Courier New", monospace;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
-.ps-terminal { white-space:pre-wrap; margin:0; }
-.ps-line { color:#7dcfff; }
-.ps-cursor { animation: blink 1s infinite; }
-@keyframes blink { 0%,50%,100%{opacity:1}25%,75%{opacity:0} }
-.about-hidden { display:none; }
+
+.ps-terminal {
+  white-space: pre-wrap;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.ps-line {
+  color: #7dcfff;
+}
+
+.ps-cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
+.about-hidden {
+  display: none;
+}
