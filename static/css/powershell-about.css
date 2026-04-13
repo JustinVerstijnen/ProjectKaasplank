@@ -78,7 +78,7 @@
 .ps-markdown {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 0 1rem;
+  padding: 2.5rem 0 1rem;
   animation: ps-fade-in 0.35s ease;
 }
 
