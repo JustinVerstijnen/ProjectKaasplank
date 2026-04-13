@@ -1,5 +1,5 @@
 ---
-title: "Module 1: Fundamentals of Cloud and Microsoft Azure"  
+title: "Module 1: Fundaments of Cloud and Azure"  
 date: 2024-10-17  
 slug: "amc-module-1-fundamentals-of-cloud-and-microsoft-azure"  
 categories:

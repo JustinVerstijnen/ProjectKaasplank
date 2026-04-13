@@ -1,5 +1,5 @@
 ---
-title: "Module 11: Infrastructure as Code (IaC) and DevOps"
+title: "Module 11: Infrastructure as Code & DevOps"
 date: 2025-03-27
 slug: "amc-module-11-infrastructure-as-code-iac-and-devops"
 categories:
