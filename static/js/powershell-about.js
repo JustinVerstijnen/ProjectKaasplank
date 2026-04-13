@@ -1,57 +1,88 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const blocks = document.querySelectorAll("[data-powershell-about]");
+  const blocks = document.querySelectorAll(".ps-about");
 
   blocks.forEach((block) => {
-    const output = block.querySelector("[data-ps-output]");
-    const content = block.querySelector("[data-about-content]");
-    const terminal = block.querySelector("[data-terminal-wrapper]");
-    const cursor = block.querySelector("[data-ps-cursor]");
-    const source = block.querySelector("[data-ps-source]");
+    const terminal = block.querySelector(".ps-terminal-wrapper");
+    const command = block.querySelector(".ps-command");
+    const output = block.querySelector(".ps-output");
+    const cursor = block.querySelector(".ps-cursor");
+    const content = block.querySelector(".ps-markdown");
+    const scriptName = block.dataset.command || ".\\about-justin-verstijnen.ps1";
 
-    if (!output || !content || !terminal || !source) {
+    if (!terminal || !command || !output || !cursor || !content) {
       return;
     }
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const text = source.value.replace(/\r\n/g, "\n").trim();
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const outputLines = [
+      "Initializing profile generator...",
+      "Collecting biography and interests...",
+      "Building certifications, links and story sections...",
+      "Converting structured data to Markdown...",
+      "Rendering about page...",
+      "Done."
+    ];
 
-    if (!text) {
-      content.classList.remove("about-hidden");
+    if (prefersReducedMotion) {
+      command.textContent = scriptName;
+      output.textContent = `\n${outputLines.join("\n")}`;
+      cursor.style.display = "none";
       terminal.classList.add("is-hidden");
-      return;
-    }
-
-    if (reducedMotion) {
-      output.textContent = text;
       content.classList.remove("about-hidden");
-      terminal.classList.add("is-hidden");
       return;
     }
 
-    let index = 0;
-    const typingSpeed = 4;
-    const finishDelay = 450;
+    let commandIndex = 0;
+    let lineIndex = 0;
+    let charIndex = 0;
 
-    const typeNextCharacter = () => {
-      if (index >= text.length) {
-        window.setTimeout(() => {
-          content.classList.remove("about-hidden");
-          terminal.classList.add("is-hidden");
+    function finishSequence() {
+      cursor.style.display = "none";
 
-          window.setTimeout(() => {
-            if (cursor) {
-              cursor.style.display = "none";
-            }
-          }, 360);
-        }, finishDelay);
+      setTimeout(() => {
+        terminal.classList.add("is-hidden");
+      }, 250);
+
+      setTimeout(() => {
+        content.classList.remove("about-hidden");
+      }, 650);
+    }
+
+    function typeOutput() {
+      if (lineIndex >= outputLines.length) {
+        finishSequence();
         return;
       }
 
-      output.textContent += text.charAt(index);
-      index += 1;
-      window.setTimeout(typeNextCharacter, typingSpeed);
-    };
+      const currentLine = outputLines[lineIndex];
 
-    typeNextCharacter();
+      if (charIndex === 0) {
+        output.appendChild(document.createTextNode("\n"));
+      }
+
+      if (charIndex < currentLine.length) {
+        output.appendChild(document.createTextNode(currentLine.charAt(charIndex)));
+        charIndex += 1;
+        setTimeout(typeOutput, 12);
+        return;
+      }
+
+      lineIndex += 1;
+      charIndex = 0;
+      setTimeout(typeOutput, lineIndex === outputLines.length ? 180 : 110);
+    }
+
+    function typeCommand() {
+      if (commandIndex < scriptName.length) {
+        command.textContent += scriptName.charAt(commandIndex);
+        commandIndex += 1;
+        setTimeout(typeCommand, 22);
+        return;
+      }
+
+      setTimeout(typeOutput, 160);
+    }
+
+    typeCommand();
   });
 });

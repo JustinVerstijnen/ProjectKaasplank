@@ -1,20 +1,18 @@
-<div class="ps-about" data-powershell-about>
-  <div class="ps-terminal-wrapper" data-terminal-wrapper>
-    <div class="ps-terminal-chrome" aria-hidden="true">
-      <span class="ps-terminal-dot"></span>
-      <span class="ps-terminal-dot"></span>
-      <span class="ps-terminal-dot"></span>
-      <span class="ps-terminal-title">Windows PowerShell</span>
-    </div>
+{{- $command := .Get "command" | default ".\\about-justin-verstijnen.ps1" -}}
+{{- $content := .Inner | strings.TrimSpace -}}
+{{- $rendered := .Page.RenderString $content -}}
 
-    <pre class="ps-terminal"><span class="ps-command">PS C:\Users\Justin&gt; .\about-me.ps1</span>
-<span class="ps-output" data-ps-output></span><span class="ps-cursor" data-ps-cursor>█</span></pre>
+<div class="ps-about" data-command="{{ $command }}">
+  <div class="ps-terminal-wrapper" aria-live="polite">
+    <div class="ps-terminal-chrome">
+      <span></span><span></span><span></span>
+    </div>
+    <pre class="ps-terminal"><span class="ps-prompt">PS C:\Users\Justin&gt; </span><span class="ps-command"></span>
+<span class="ps-output"></span><span class="ps-cursor" aria-hidden="true">█</span></pre>
   </div>
 
-  <textarea class="ps-typing-source" data-ps-source aria-hidden="true">{{ .Inner | htmlUnescape }}</textarea>
-
-  <div class="ps-rendered-content about-hidden" data-about-content>
-    {{ .Inner | safeHTML }}
+  <div class="ps-markdown about-hidden">
+    {{ $rendered }}
   </div>
 </div>
 
