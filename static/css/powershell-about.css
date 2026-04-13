@@ -1,18 +1,20 @@
-.ps-about {
+/* About page - PowerShell intro + rendered markdown content */
+
+.ps-about-shell {
   width: 100%;
-  margin: 0 auto;
 }
 
+/* Terminal wrapper */
 .ps-terminal-wrapper {
-  max-width: 1040px;
-  margin: 0 auto 2rem;
   background: #0e202c;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   box-shadow: 0 22px 54px rgba(0, 0, 0, 0.35);
   overflow: hidden;
-  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.45s ease, margin 0.45s ease;
+  margin: 0 auto 2rem;
+  max-width: 1040px;
   max-height: 900px;
+  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.45s ease, margin 0.45s ease;
 }
 
 .ps-terminal-wrapper.is-hidden {
@@ -23,51 +25,65 @@
   pointer-events: none;
 }
 
-.ps-terminal-chrome {
+/* Fake title bar */
+.ps-terminal-header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 44px;
+  padding: 0.7rem 1rem;
   background: rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.ps-terminal-chrome span {
+.ps-terminal-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ps-terminal-dot {
   width: 11px;
   height: 11px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.24);
-  display: inline-block;
+  background: rgba(255, 255, 255, 0.25);
 }
 
-.ps-terminal {
-  margin: 0;
+.ps-terminal-title {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Terminal body */
+.ps-terminal-body {
   padding: 1.25rem 1.35rem;
-  min-height: 220px;
-  color: #d7e2ec;
-  background: transparent;
+  color: #e8edf2;
   font-family: Consolas, "Cascadia Mono", "Courier New", monospace;
   font-size: 0.98rem;
   line-height: 1.65;
   white-space: pre-wrap;
   word-break: break-word;
+  min-height: 220px;
 }
 
-.ps-prompt {
-  color: #c6d2de;
+.ps-terminal-line {
+  display: block;
 }
 
-.ps-command {
+.ps-terminal-command {
   color: #ffd84d;
 }
 
-.ps-output {
+.ps-terminal-output {
   color: #d7e2ec;
 }
 
-.ps-cursor {
+.ps-terminal-cursor {
   display: inline-block;
-  width: 0.7ch;
+  width: 0.6ch;
   color: #ffffff;
   animation: ps-terminal-blink 1s step-end infinite;
 }
@@ -78,17 +94,14 @@
   }
 }
 
+/* Markdown content */
 .ps-markdown {
-  max-width: 1100px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 3rem 1.25rem 1rem;
+  animation: ps-fade-in 0.35s ease;
   color: inherit;
   font-family: inherit;
-  animation: ps-fade-in 0.35s ease;
-}
-
-.ps-markdown.about-hidden {
-  display: none;
 }
 
 @keyframes ps-fade-in {
@@ -102,35 +115,20 @@
   }
 }
 
+/* Keep the same font as the rest of the site */
 .ps-markdown,
 .ps-markdown * {
   font-family: inherit;
-  box-sizing: border-box;
 }
 
-.ps-markdown > h1,
-.ps-markdown > h2,
-.ps-markdown > h3,
-.ps-markdown > h4,
-.ps-markdown > h5,
-.ps-markdown > h6,
-.ps-markdown > p,
-.ps-markdown > ul,
-.ps-markdown > ol,
-.ps-markdown > table,
-.ps-markdown > hr,
-.ps-markdown > blockquote {
+/* Main content width so text feels centered and calmer */
+.ps-markdown > * {
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ps-markdown > p:first-of-type {
-  max-width: 760px;
-  text-align: center;
-  font-size: 1.08rem;
-}
-
+/* Headings */
 .ps-markdown h1,
 .ps-markdown h2,
 .ps-markdown h3,
@@ -143,14 +141,28 @@
   margin-bottom: 1rem;
 }
 
-.ps-markdown > h2 {
+.ps-markdown h1 {
+  margin-bottom: 1.25rem;
+}
+
+.ps-markdown h2 {
   margin-top: 3rem;
 }
 
-.ps-markdown > h3 {
+.ps-markdown h3 {
   margin-top: 2rem;
 }
 
+/* Intro paragraph centered */
+.ps-markdown > p:first-of-type {
+  text-align: left;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+/* Default text */
 .ps-markdown p,
 .ps-markdown li,
 .ps-markdown td,
@@ -180,48 +192,53 @@
   text-underline-offset: 0.14em;
 }
 
+/* Two-column cards for hobbies + profiles
+   Use this in your markdown:
+   <div class="about-two-columns">
+     <div class="about-card">...</div>
+     <div class="about-card">...</div>
+   </div>
+*/
 .ps-markdown .about-two-columns {
   max-width: 1040px;
-  margin: 2.5rem auto 2.75rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   align-items: start;
+  margin: 2.25rem auto 2.75rem;
 }
 
 .ps-markdown .about-card {
   width: 100%;
+  max-width: none;
   background: rgba(0, 0, 0, 0.02);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 18px;
   padding: 1.5rem 1.5rem 1.25rem;
+  box-sizing: border-box;
 }
 
-.ps-markdown .about-card h1,
 .ps-markdown .about-card h2,
 .ps-markdown .about-card h3,
-.ps-markdown .about-card h4,
-.ps-markdown .about-card h5,
-.ps-markdown .about-card h6 {
+.ps-markdown .about-card h4 {
   margin-top: 0;
   margin-bottom: 0.9rem;
 }
 
-.ps-markdown .about-card p,
 .ps-markdown .about-card ul,
 .ps-markdown .about-card ol {
-  margin-left: 0;
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
+/* Certifications table */
 .ps-markdown table {
   width: 100%;
+  max-width: 1040px;
   border-collapse: collapse;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: 14px;
+  margin: 1rem auto 2.5rem;
   overflow: hidden;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .ps-markdown thead th {
@@ -237,21 +254,15 @@
   vertical-align: top;
 }
 
-.ps-markdown tbody tr:nth-child(even) {
-  background: rgba(0, 0, 0, 0.035);
-}
-
 .ps-markdown tbody tr:last-child td {
   border-bottom: 0;
 }
 
-.ps-markdown hr {
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+.ps-markdown tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.035);
 }
 
+/* Images and media */
 .ps-markdown img,
 .ps-markdown video,
 .ps-markdown iframe {
@@ -262,6 +273,7 @@
   margin-right: auto;
 }
 
+/* Code blocks inside markdown */
 .ps-markdown pre,
 .ps-markdown code {
   font-family: Consolas, "Cascadia Code", "Courier New", monospace;
@@ -274,6 +286,7 @@
   border-radius: 12px;
 }
 
+/* Mobile */
 @media (max-width: 900px) {
   .ps-markdown {
     padding: 2.25rem 1rem 1rem;
@@ -285,27 +298,20 @@
     margin: 1.75rem auto 2.25rem;
   }
 
-  .ps-markdown > h1,
-  .ps-markdown > h2,
-  .ps-markdown > h3,
-  .ps-markdown > h4,
-  .ps-markdown > h5,
-  .ps-markdown > h6,
-  .ps-markdown > p,
-  .ps-markdown > ul,
-  .ps-markdown > ol,
-  .ps-markdown > table,
-  .ps-markdown > hr,
-  .ps-markdown > blockquote,
+  .ps-markdown > * {
+    max-width: 100%;
+  }
+
   .ps-markdown > p:first-of-type {
     max-width: 100%;
+    font-size: 1rem;
   }
 
   .ps-terminal-wrapper {
     border-radius: 14px;
   }
 
-  .ps-terminal {
+  .ps-terminal-body {
     padding: 1rem;
     font-size: 0.94rem;
   }
@@ -317,10 +323,11 @@
   }
 }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .ps-terminal-wrapper,
   .ps-markdown,
-  .ps-cursor {
+  .ps-terminal-cursor {
     animation: none !important;
     transition: none !important;
   }
