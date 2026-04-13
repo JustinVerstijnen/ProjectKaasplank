@@ -1,12 +1,5 @@
 {{- $id := printf "ps-about-%d" now.UnixNano -}}
-{{- $typedLines := slice \
-  "Write-Host \"Starting about-me.ps1\"" \
-  "Write-Host \"Name: Justin Verstijnen\"" \
-  "Write-Host \"Location: Netherlands\"" \
-  "Write-Host \"Focus: Microsoft, Azure, Cloud & Automation\"" \
-  "Write-Host \"Rendering profile...\"" \
-  "Write-Host \"Done.\"" \
--}}
+{{- $typedLines := slice `Write-Host "Starting about-me.ps1"` `Write-Host "Name: Justin Verstijnen"` `Write-Host "Location: Netherlands"` `Write-Host "Focus: Microsoft, Azure, Cloud & Automation"` `Write-Host "Rendering profile..."` `Write-Host "Done."` -}}
 
 <div id="{{ $id }}" class="ps-about" data-ps-lines='{{ jsonify $typedLines }}'>
   <div class="ps-terminal-wrapper" aria-live="polite">
