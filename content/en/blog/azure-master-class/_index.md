@@ -21,17 +21,17 @@ I find some of the pages very interesting, but are not neccesarily to prepare yo
 
 Here are all the pages summed up. You can also find them in the blog side bar under the Azure Master Class folder.
 
-[**1:** Fundamentals of Cloud & Azure](https://justinverstijnen.nl/module-1-fundamentals-of-cloud-and-microsoft-azure/)
-[**2:** Identity](https://justinverstijnen.nl/amc-module-2-identity/)
-[**3:** Governance](https://justinverstijnen.nl/ama-module-3-governance-in-microsoft-azure/)
-[**4:** Resiliency & Redundancy](https://justinverstijnen.nl/amc-module-4-resiliency-and-redundancy/)
-[**5:** Storage](https://justinverstijnen.nl/amc-module-5-storage/)
-[**6:** Networking](https://justinverstijnen.nl/amc-module-6-networking-in-microsoft-azure/)
-[**7:** Virtual Machines and Scale Sets](https://justinverstijnen.nl/amc-module-6-networking-in-microsoft-azure/)
-[**8:** Application Services and Containers](https://justinverstijnen.nl/ama-module-8-application-services-and-containers/)
-[**9:** Databases & AI](https://justinverstijnen.nl/amc-module-9-databases-ai/)
-[**10:** Monitoring and Security](https://justinverstijnen.nl/amc-module-10-monitoring-and-security/)
-[**11:** Infrastructure as Code (IaC) and DevOps](https://justinverstijnen.nl/amc-module-11-infrastructure-as-code-iac-and-devops/)
+- [**1:** Fundamentals of Cloud & Azure](https://justinverstijnen.nl/module-1-fundamentals-of-cloud-and-microsoft-azure/)
+- [**2:** Identity](https://justinverstijnen.nl/amc-module-2-identity/)
+- [**3:** Governance](https://justinverstijnen.nl/ama-module-3-governance-in-microsoft-azure/)
+- [**4:** Resiliency & Redundancy](https://justinverstijnen.nl/amc-module-4-resiliency-and-redundancy/)
+- [**5:** Storage](https://justinverstijnen.nl/amc-module-5-storage/)
+- [**6:** Networking](https://justinverstijnen.nl/amc-module-6-networking-in-microsoft-azure/)
+- [**7:** Virtual Machines and Scale Sets](https://justinverstijnen.nl/amc-module-6-networking-in-microsoft-azure/)
+- [**8:** Application Services and Containers](https://justinverstijnen.nl/ama-module-8-application-services-and-containers/)
+- [**9:** Databases & AI](https://justinverstijnen.nl/amc-module-9-databases-ai/)
+- [**10:** Monitoring and Security](https://justinverstijnen.nl/amc-module-10-monitoring-and-security/)
+- [**11:** Infrastructure as Code (IaC) and DevOps](https://justinverstijnen.nl/amc-module-11-infrastructure-as-code-iac-and-devops/)
 
 ---
 
