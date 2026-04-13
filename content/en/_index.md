@@ -85,3 +85,5 @@ Let's introduce this website into 3 categories:
 {{< latest-posts >}}
 
 {{< /blocks/section >}}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4082816808518335" crossorigin="anonymous"></script>
