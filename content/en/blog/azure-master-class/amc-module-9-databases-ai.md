@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 9: Databases &amp; AI"
+title: "AMC - Module 9: Databases & AI"
 date: 2025-03-13
 slug: "amc-module-9-databases-ai"
 categories:
