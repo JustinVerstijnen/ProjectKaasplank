@@ -9,7 +9,7 @@ enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
 enableGitInfo: true
 
-# /Blog en datum uitschakelen uit URL
+# Blog en datum uitschakelen uit URL
 permalinks:
   blog: "/:slug/"
 
