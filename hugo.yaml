@@ -138,7 +138,7 @@ params:
     developer:
       - name: Site information
         url: /site/
-        icon: fa-solid fa-hammer
+        icon: fa-area-chart
         desc: Site build information.
       - name: Send me an email
         url: mailto:info@justinverstijnen.nl
