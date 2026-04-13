@@ -15,11 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const outputLines = [
-      "Initializing profile generator...",
-      "Collecting biography and interests...",
-      "Building certifications, links and story sections...",
-      "Converting structured data to Markdown...",
-      "Rendering about page...",
+      "Loading profile data...",
+      "Grouping hobbies and profiles...",
+      "Formatting certifications table...",
+      "Rendering Markdown page...",
       "Done."
     ];
 
@@ -41,11 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         terminal.classList.add("is-hidden");
-      }, 250);
+      }, 220);
 
       setTimeout(() => {
         content.classList.remove("about-hidden");
-      }, 650);
+      }, 620);
     }
 
     function typeOutput() {
@@ -63,24 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
       if (charIndex < currentLine.length) {
         output.appendChild(document.createTextNode(currentLine.charAt(charIndex)));
         charIndex += 1;
-        setTimeout(typeOutput, 12);
+        setTimeout(typeOutput, 10);
         return;
       }
 
       lineIndex += 1;
       charIndex = 0;
-      setTimeout(typeOutput, lineIndex === outputLines.length ? 180 : 110);
+      setTimeout(typeOutput, lineIndex === outputLines.length ? 170 : 85);
     }
 
     function typeCommand() {
       if (commandIndex < scriptName.length) {
         command.textContent += scriptName.charAt(commandIndex);
         commandIndex += 1;
-        setTimeout(typeCommand, 22);
+        setTimeout(typeCommand, 18);
         return;
       }
 
-      setTimeout(typeOutput, 160);
+      setTimeout(typeOutput, 120);
     }
 
     typeCommand();

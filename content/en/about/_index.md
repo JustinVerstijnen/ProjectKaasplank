@@ -3,9 +3,12 @@ title: "About me"
 ---
 
 {{< powershell-about command=".\\about-justin-verstijnen.ps1" >}}
-I am Justin Verstijnen, I live in the Netherlands and am 27 years old. My interest in computers started around the age of 8 and have never been less.
+I am Justin Verstijnen, I live in the Netherlands and am 27 years old. My interest in computers started around the age of 8 and has never been less.
 
-## Hobbies and pasttimes
+<div class="about-two-columns">
+<div>
+
+### Hobbies and pasttimes
 
 - Photography
 - Playing guitar
@@ -18,6 +21,25 @@ I am Justin Verstijnen, I live in the Netherlands and am 27 years old. My intere
 - Darts
 - Fitness
 - Football
+
+</div>
+<div>
+
+### Profiles and Socials
+
+- [LinkedIn](https://www.linkedin.com/in/justinverstijnen/)
+- [Microsoft Learn](https://learn.microsoft.com/en-us/users/justinverstijnen/)
+- [Microsoft Certification Transcript](https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0)
+- [GitHub](https://github.com/JustinVerstijnen)
+- [Reddit](https://www.reddit.com/user/JustinVerstijnen/)
+- [Subreddit](https://www.reddit.com/r/JustinVerstijnen/)
+- [Email](mailto:info@justinverstijnen.nl)
+- [PowerShell Gallery](https://www.powershellgallery.com/profiles/JustinVerstijnen)
+- [YouTube](https://www.youtube.com/@JustinVerstijnen)
+- [Buy me a Coffee](https://buymeacoffee.com/justinverstijnen)
+
+</div>
+</div>
 
 ## Certifications
 
@@ -43,23 +65,10 @@ I am Justin Verstijnen, I live in the Netherlands and am 27 years old. My intere
 | Microsoft Certified Solutions Associate (MCSA) | 70-740, 70-741, 70-742 |
 | Ubiquiti Wireless Administrator | UEWA |
 | Ubiquiti Networking Fundamentals | UNS |
-| Hurricane Electric IPv6 Networking "Sage" | |
-| 3CX Expert | |
+| Hurricane Electric IPv6 Networking "Sage" |  |
+| 3CX Expert |  |
 | Cisco Certified Networking Associate 1 + 2 | CCNA 1, CCNA 2 |
-| ITIL 4 Foundation | |
-
-## Profiles and Socials
-
-- [LinkedIn](https://www.linkedin.com/in/justinverstijnen/)
-- [Microsoft Learn](https://learn.microsoft.com/en-us/users/justinverstijnen/)
-- [Microsoft Certification Transcript](https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0)
-- [GitHub](https://github.com/JustinVerstijnen)
-- [Reddit](https://www.reddit.com/user/JustinVerstijnen/)
-- [Subreddit](https://www.reddit.com/r/JustinVerstijnen/)
-- [Email](mailto:info@justinverstijnen.nl)
-- [PowerShell Gallery](https://www.powershellgallery.com/profiles/JustinVerstijnen)
-- [YouTube](https://www.youtube.com/@JustinVerstijnen)
-- [Buy me a Coffee](https://buymeacoffee.com/justinverstijnen)
+| ITIL 4 Foundation |  |
 
 ## My IT and Cloud story
 
@@ -69,9 +78,9 @@ In my free time I sometimes play some games, and I liked it to set up custom gam
 
 ## From hobby to job
 
-After passing my IT Intermediate vocational education I started at my first IT job on the servicedesk. A few years later, the wishes to specialize on Microsoft and Microsoft Cloud solutions became higher, and I followed this wish. After some years of watching experience, and hands-on experience I started to achieve Microsoft Certifications and then the learning really started which has never stopped since.
+After passing my IT Intermediate vocational education I started at my first IT job on the servicedesk. A few years later, the wish to specialize in Microsoft and Microsoft Cloud solutions became stronger, and I followed that path. After some years of watching, learning and gaining hands-on experience, I started to achieve Microsoft certifications and that is where the learning really began and has never stopped since.
 
-In 2024, after achieving every Microsoft Certification I wanted, I started this website as a great way to shift into the next phase; gaining even more and deeper information and sharing practice this information. I really like to research a topic or technical part and then documenting what I did to make it work. It really pushes me to the limit when having to understand a solution, then configuring it correctly and then explaining this in a way that people without the knowledge must do the same within the first try. This is something I really like to do, as you can find a lot of examples on this page.
+In 2024, after achieving every Microsoft certification I wanted, I started this website as a great way to shift into the next phase: gaining even more knowledge, going deeper into topics and sharing that knowledge in practice. I really like to research a topic or technical part and then document what I did to make it work. It pushes me to the limit when I have to understand a solution, configure it correctly and then explain it in a way that helps others get it working as well.
 
-In my daily job I am busy with designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.
+In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.
 {{< /powershell-about >}}
