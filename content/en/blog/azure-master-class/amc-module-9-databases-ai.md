@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 9: Databases & AI"
+title: "Module 9: Databases & AI"
 date: 2025-03-13
 slug: "amc-module-9-databases-ai"
 categories:
@@ -275,7 +275,8 @@ In Azure, the possibilities are endless in terms of Databases and AI are almost 
 
 Thank you for reading this page.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

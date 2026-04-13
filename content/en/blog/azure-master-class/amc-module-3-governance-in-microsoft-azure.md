@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 3: Governance in Microsoft Azure"
+title: "Module 3: Governance in Microsoft Azure"
 date: 2024-11-07
 slug: "amc-module-3-governance-in-microsoft-azure"
 categories:
@@ -227,7 +227,8 @@ When using Microsoft Azure, there are multiple ways to save money:
 
 Governance in Azure ensures that your cloud resources are used effectively and securely, aligned with organizational policies and compliance requirements. You can reach this outcomes by using the solutions defined on this page.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

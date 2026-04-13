@@ -362,7 +362,7 @@ Always keep the Zero Trust principals in mind when configuring identities:
 - Verify explicitly
 - Assume breach
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
 
 {{< ads >}}
 

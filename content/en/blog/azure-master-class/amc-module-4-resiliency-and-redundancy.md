@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 4: Resiliency and Redundancy in Azure"
+title: "Module 4: Resiliency and Redundancy in Azure"
 date: 2024-11-21
 slug: "amc-module-4-resiliency-and-redundancy"
 categories:
@@ -188,7 +188,8 @@ Choose based on the scope and complexity of your backup requirements.
 
 Backup and Resilience in Microsoft Azure is very important. This starts with knowing exactly what your solution does. Therefore you can apply high availability and backup to it.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

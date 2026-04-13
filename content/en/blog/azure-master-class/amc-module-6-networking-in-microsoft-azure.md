@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 6: Networking in Microsoft Azure"
+title: "Module 6: Networking in Microsoft Azure"
 date: 2025-02-28
 slug: "amc-module-6-networking-in-microsoft-azure"
 categories:
@@ -641,7 +641,8 @@ Networking is a critical part of administering and architecturing solutions in M
 
 Most of the knowledge is needed to architect and configure the solutions and most of the time, you sporadically add an IP address to a whitelist or make a minor change.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+TTo go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

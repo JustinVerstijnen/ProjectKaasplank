@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 10: Monitoring and Security"
+title: "Module 10: Monitoring and Security"
 date: 2025-03-20
 slug: "amc-module-10-monitoring-and-security"
 categories:
@@ -278,7 +278,8 @@ With Monitoring and Security in Azure, there almost is no limit. Workbooks enabl
 
 Thank you for reading this page.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Azure Master Class - Navigation page"
+title: "Azure Master Class"
 date: 2024-10-17
 slug: "microsoft-azure-master-class-navigation"
 categories:

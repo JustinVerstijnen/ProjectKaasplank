@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 5: Storage in Azure"
+title: "Module 5: Storage in Azure"
 date: 2024-12-21
 slug: "amc-module-5-storage"
 categories:
@@ -253,7 +253,8 @@ Azure offers a service for importing or exporting large amounts of data.
 
 - **Azure Data Box:** Microsoft sends you a hard drive, you load the data onto it along with a CSV file specifying where each file should go, and then send it back to Microsoft. This is an offline method. For **Export**, the process works in reverse.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 

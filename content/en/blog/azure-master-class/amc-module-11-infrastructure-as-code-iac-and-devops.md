@@ -1,5 +1,5 @@
 ---
-title: "AMC - Module 11: Infrastructure as Code (IaC) and DevOps"
+title: "Module 11: Infrastructure as Code (IaC) and DevOps"
 date: 2025-03-27
 slug: "amc-module-11-infrastructure-as-code-iac-and-devops"
 categories:
@@ -407,7 +407,8 @@ However, using those tools is not a must and there is no "wrong" way of how you 
 
 Thank you for reading this module, and the rest of the master class. Unfoetunately, this is the last page.
 
-To go back to the navigation page: <https://justinverstijnen.nl/microsoft-azure-master-class-navigation/>
+To go back to the navigation page: <https://justinverstijnen.nl/blog/azure-master-class/>
+
 
 {{< ads >}}
 
