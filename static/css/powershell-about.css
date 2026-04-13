@@ -1,10 +1,7 @@
-/* About page - PowerShell intro + rendered markdown content */
-
-.ps-about-shell {
+.ps-about {
   width: 100%;
 }
 
-/* Terminal wrapper */
 .ps-terminal-wrapper {
   background: #0e202c;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -13,8 +10,8 @@
   overflow: hidden;
   margin: 0 auto 2rem;
   max-width: 1040px;
-  max-height: 900px;
   transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.45s ease, margin 0.45s ease;
+  max-height: 900px;
 }
 
 .ps-terminal-wrapper.is-hidden {
@@ -25,7 +22,6 @@
   pointer-events: none;
 }
 
-/* Fake title bar */
 .ps-terminal-header {
   display: flex;
   align-items: center;
@@ -47,7 +43,7 @@
   width: 11px;
   height: 11px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .ps-terminal-title {
@@ -57,8 +53,8 @@
   letter-spacing: 0.01em;
 }
 
-/* Terminal body */
 .ps-terminal-body {
+  margin: 0;
   padding: 1.25rem 1.35rem;
   color: #e8edf2;
   font-family: Consolas, "Cascadia Mono", "Courier New", monospace;
@@ -71,6 +67,10 @@
 
 .ps-terminal-line {
   display: block;
+}
+
+.ps-prompt {
+  color: #e8edf2;
 }
 
 .ps-terminal-command {
@@ -94,14 +94,20 @@
   }
 }
 
-/* Markdown content */
 .ps-markdown {
   max-width: 1040px;
   margin: 0 auto;
   padding: 3rem 1.25rem 1rem;
-  animation: ps-fade-in 0.35s ease;
   color: inherit;
   font-family: inherit;
+}
+
+.ps-markdown.about-hidden {
+  display: none;
+}
+
+.ps-markdown:not(.about-hidden) {
+  animation: ps-fade-in 0.35s ease;
 }
 
 @keyframes ps-fade-in {
@@ -115,20 +121,17 @@
   }
 }
 
-/* Keep the same font as the rest of the site */
 .ps-markdown,
 .ps-markdown * {
   font-family: inherit;
 }
 
-/* Main content width so text feels centered and calmer */
 .ps-markdown > * {
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Headings */
 .ps-markdown h1,
 .ps-markdown h2,
 .ps-markdown h3,
@@ -153,16 +156,14 @@
   margin-top: 2rem;
 }
 
-/* Intro paragraph centered */
 .ps-markdown > p:first-of-type {
   text-align: left;
   font-size: 1.08rem;
   line-height: 1.85;
-  max-width: 760px;
+  max-width: 860px;
   margin-bottom: 2rem;
 }
 
-/* Default text */
 .ps-markdown p,
 .ps-markdown li,
 .ps-markdown td,
@@ -192,13 +193,6 @@
   text-underline-offset: 0.14em;
 }
 
-/* Two-column cards for hobbies + profiles
-   Use this in your markdown:
-   <div class="about-two-columns">
-     <div class="about-card">...</div>
-     <div class="about-card">...</div>
-   </div>
-*/
 .ps-markdown .about-two-columns {
   max-width: 1040px;
   display: grid;
@@ -230,7 +224,6 @@
   margin-bottom: 0;
 }
 
-/* Certifications table */
 .ps-markdown table {
   width: 100%;
   max-width: 1040px;
@@ -262,7 +255,6 @@
   background: rgba(0, 0, 0, 0.035);
 }
 
-/* Images and media */
 .ps-markdown img,
 .ps-markdown video,
 .ps-markdown iframe {
@@ -273,7 +265,6 @@
   margin-right: auto;
 }
 
-/* Code blocks inside markdown */
 .ps-markdown pre,
 .ps-markdown code {
   font-family: Consolas, "Cascadia Code", "Courier New", monospace;
@@ -286,7 +277,6 @@
   border-radius: 12px;
 }
 
-/* Mobile */
 @media (max-width: 900px) {
   .ps-markdown {
     padding: 2.25rem 1rem 1rem;
@@ -323,7 +313,6 @@
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .ps-terminal-wrapper,
   .ps-markdown,
