@@ -92,8 +92,12 @@ In my daily job I am busy designing, building, maintaining, securing and improvi
 | Cisco Certified Networking Associate 1 + 2 | CCNA 1, CCNA 2 |
 | ITIL 4 Foundation |  |
 
+---
+
 In 2023 I founded this website and wanted to use it as my personal documentation system, as I went to research pretty much solutions. Documenting these solutions and actually being able to explain them pushes me further than only trying a solution and knowing I did something with it.
 
 Thank you for visiting my website.
+
+{{< ads >}}
 
 {{< /powershell-about >}}
