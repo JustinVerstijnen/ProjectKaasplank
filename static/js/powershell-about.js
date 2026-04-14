@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".td-navbar");
+
+  function syncAboutNavbarOffset() {
+    if (!navbar) {
+      return;
+    }
+
+    const navbarHeight = Math.ceil(navbar.getBoundingClientRect().height || navbar.offsetHeight || 0);
+    document.body.classList.add("has-ps-about-page");
+    document.body.style.setProperty("--ps-about-navbar-offset", `${navbarHeight}px`);
+  }
+
+  syncAboutNavbarOffset();
+  window.addEventListener("resize", syncAboutNavbarOffset, { passive: true });
+  window.addEventListener("load", syncAboutNavbarOffset, { passive: true });
+
   const blocks = document.querySelectorAll(".ps-about");
 
   blocks.forEach((block) => {

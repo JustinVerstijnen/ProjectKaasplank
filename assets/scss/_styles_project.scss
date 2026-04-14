@@ -82,37 +82,13 @@ a {
 }
 
 /* Fix for navbar not showing properly on mobile devices */
-:root {
-  --site-navbar-offset: 4rem;
-}
-
-@media (min-width: 1px) {
-  .td-navbar {
-    position: fixed;
-    top: 0;
-    min-height: 4rem;
-    width: 100%;
-  }
-}
-
-/* Compensate fixed navbar height on small screens */
-@media (max-width: 767.98px) {
-  .td-main main {
-    padding-top: calc(var(--td-main-padding-top, 1.5rem) + var(--site-navbar-offset));
-  }
-
-  .td-below-navbar.td-box,
-  .td-below-navbar.td-cover-block {
-    margin-top: var(--site-navbar-offset);
-    padding-top: var(--site-navbar-offset) !important;
-  }
-
-  .td-anchor-no-extra-offset,
-  .td-content > h2,
-  .td-content > h3,
-  .td-content > h4 {
-    scroll-margin-top: calc(var(--site-navbar-offset) + 1rem);
-  }
+@media(min-width: 1px) {
+    .td-navbar {
+        position:fixed;
+        top: 0;
+        min-height: 4rem;
+        width: 100%
+    }
 }
 
 /* Non-home pages: normal solid navbar */
@@ -398,4 +374,31 @@ body:not(.home-navbar-transparent) .td-navbar .td-search .form-control:-ms-input
 .td-content > .highlight:last-child,
 .td-content > .td-card.card:last-child {
   margin-bottom: 0;
+}
+
+/* About page fixed navbar offset */
+body.has-ps-about-page {
+  --ps-about-navbar-offset: 0px;
+}
+
+body.has-ps-about-page .td-main {
+  padding-top: calc(var(--ps-about-navbar-offset) + 0.75rem);
+}
+
+body.has-ps-about-page .ps-about,
+body.has-ps-about-page .ps-markdown,
+body.has-ps-about-page .ps-markdown h1,
+body.has-ps-about-page .ps-markdown h2,
+body.has-ps-about-page .ps-markdown h3,
+body.has-ps-about-page .ps-markdown h4,
+body.has-ps-about-page .ps-markdown h5,
+body.has-ps-about-page .ps-markdown h6,
+body.has-ps-about-page .ps-markdown [id] {
+  scroll-margin-top: calc(var(--ps-about-navbar-offset) + 1rem);
+}
+
+@media (max-width: 900px) {
+  body.has-ps-about-page .td-main {
+    padding-top: calc(var(--ps-about-navbar-offset) + 0.5rem);
+  }
 }
