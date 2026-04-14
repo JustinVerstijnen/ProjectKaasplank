@@ -129,8 +129,6 @@ Select "Generalize" and choose the option to shutdown the machine after completi
 {{% alert color="info" %}}
 If getting an error that Bitlocker Drive Encryption is enabled, execute this command to disable it (you can re-enable it after deployment):
 
-PowerShell
-
 ```powershell
 manage-bde -off C:
 ```

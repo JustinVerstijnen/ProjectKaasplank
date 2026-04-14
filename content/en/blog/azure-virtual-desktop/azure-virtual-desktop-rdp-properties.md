@@ -81,9 +81,7 @@ Here is a list with all RDP properties published, with the support for Azure Vir
 
 All RDP options are in the convention: *option:type:value*
 
-You can search through the list with the search button, and support for AVD and seperate .RDP files is added.
-
-RDP Settings Table
+You can search through the list with the search function of your browser, and support for AVD and separate .RDP files is added.
 
 | Property | Type | Value (by default) | Support AVD | Support RDP | Description |
 | --- | --- | --- | --- | --- | --- |

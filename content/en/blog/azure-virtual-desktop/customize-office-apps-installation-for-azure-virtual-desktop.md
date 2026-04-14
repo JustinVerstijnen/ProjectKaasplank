@@ -252,7 +252,7 @@ Now the installation of Office is done and I will click through the applications
 
 As we have Shared Computer Activation enabled, my user account needs a Microsoft 365 Business Premium or higher license to use the apps. I don't have this at the moment so this is by design.
 
-Learn more about the licensing requirements of Shared COmputer Activation here:
+Learn more about the licensing requirements of Shared Computer Activation here:
 
 - <https://learn.microsoft.com/en-us/microsoft-365-apps/licensing-activation/overview-shared-computer-activation#how-to-enable-shared-computer-activation-for-microsoft-365-apps>
 
