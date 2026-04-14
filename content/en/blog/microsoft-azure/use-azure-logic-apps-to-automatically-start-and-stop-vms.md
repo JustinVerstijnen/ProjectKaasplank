@@ -58,6 +58,8 @@ Logic Apps are relatively cheap, most of the time we can save a lot more money o
 
 Advance to the next step.
 
+![]()
+
 Create the app by filling in the details and finish the wizard.
 
 After finishing the wizard, we have our Logic App in place, and now we can configure our "flows" and the 3 examples.
@@ -82,6 +84,8 @@ We now have a Logic App created, but it cannot do something for us unless we giv
 
 In the Logic App, go to "Identity" and enable the System-assigned managed identity.
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-azure-logic-apps-to-automatically-start-and-stop-vms-2258/jv-media-2258-369dbaef3a5d.png)
+
 Now we have to give this Managed Identity permissions to a certain scope. Since my Minecraft server is in a specific Resource Group, I can assign the permissions there. If you create flows for one specific machine in a resource group with multiple machines, assign the permissions on the VM level instead.
 
 In my example, I will assign the permissions at Resource Group level.
@@ -89,6 +93,8 @@ In my example, I will assign the permissions at Resource Group level.
 Go to the Resource group where your Virtual Machine resides, and open the option "Access Control (IAM)".
 
 Add a new Role assignment here:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-azure-logic-apps-to-automatically-start-and-stop-vms-2258/jv-media-2258-9f0e84a8dd6a.png)
 
 Select the role "Virtual Machine Contributor" or a custom role with the permissions:
 
@@ -100,7 +106,11 @@ Click on "Next".
 
 Select the option "Managed Identity" and select the Logic App identity:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-azure-logic-apps-to-automatically-start-and-stop-vms-2258/jv-media-2258-210c599a138d.png)
+
 Select the Managed Identity that we created.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-azure-logic-apps-to-automatically-start-and-stop-vms-2258/jv-media-2258-1f16ed3fa273.png)
 
 Assign the role and that concludes the permissions-part.
 
@@ -135,6 +145,8 @@ Save the trigger and now we have to add actions to perform after the trigger.
 Click on the "+" under Recurrence and then "add a task" to link a task to the recurrence.
 
 Search for: "virtual machine"
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-azure-logic-apps-to-automatically-start-and-stop-vms-2258/jv-media-2258-c2e01e58b203.png)
 
 Select the option "Start virtual machine".
 
