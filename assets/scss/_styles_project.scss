@@ -82,13 +82,37 @@ a {
 }
 
 /* Fix for navbar not showing properly on mobile devices */
-@media(min-width: 1px) {
-    .td-navbar {
-        position:fixed;
-        top: 0;
-        min-height: 4rem;
-        width: 100%
-    }
+:root {
+  --site-navbar-offset: 4rem;
+}
+
+@media (min-width: 1px) {
+  .td-navbar {
+    position: fixed;
+    top: 0;
+    min-height: 4rem;
+    width: 100%;
+  }
+}
+
+/* Compensate fixed navbar height on small screens */
+@media (max-width: 767.98px) {
+  .td-main main {
+    padding-top: calc(var(--td-main-padding-top, 1.5rem) + var(--site-navbar-offset));
+  }
+
+  .td-below-navbar.td-box,
+  .td-below-navbar.td-cover-block {
+    margin-top: var(--site-navbar-offset);
+    padding-top: var(--site-navbar-offset) !important;
+  }
+
+  .td-anchor-no-extra-offset,
+  .td-content > h2,
+  .td-content > h3,
+  .td-content > h4 {
+    scroll-margin-top: calc(var(--site-navbar-offset) + 1rem);
+  }
 }
 
 /* Non-home pages: normal solid navbar */
