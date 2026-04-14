@@ -20,6 +20,8 @@ DNSSEC is a feature where a client can validate the DNS records received by a DN
 
 DNSSEC is developed to prevent attacks like in the topology below:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1494f13639ce.png)
+
 Here a attacker injects a fake DNS record and sends the user to a different IP-address, not the actual IP-address of the real website but a fake, mostly spoofed website. This way, a user sees for example https://portal.azure.com in his address bar but is actually on a malicious webserver. This makes the user far more vulnerable to credential harvesting or phising attacks.
 
 With DNSSEC, the client receives the malicious and fake DNS entry, validates it at the authorative DNS server for the domain and sees its fake. The user will be presented a error message and we have prevented just another breach.
@@ -47,7 +49,7 @@ SMTP DANE and DKIM sounded the same security to me when i first read about it. H
 
 - A Microsoft 365 tenant
 - A DNSSEC capable DNS-hosting or server
-  - Check here: <https://dnsmegatool.jvapp.nl/>
+  - Check here: <https://tools.justinverstijnen.nl/dnsmegatool/>
   - Does your DNS hosting not support DNSSEC? Check out this guide: <https://justinverstijnen.nl/what-is-mta-sts-and-how-to-protect-your-email-flow/>
 - Exchange Online PowerShell module
 - Some basic knowledge about SPF/DKIM/DMARC
@@ -60,9 +62,11 @@ SMTP DANE and DKIM sounded the same security to me when i first read about it. H
 
 When starting out, your DNS hosting must support and enabled DNSSEC on your domain. Without this, those protocols don't work. You can check out your domain and DNSSEC status with my DNS MEGAtool:
 
-<https://dnsmegatool.jvapp.nl>
+<https://tools.justinverstijnen.nl/dnsmegatool/>
 
 My domain is DNSSEC capable and a DS record is published from the registrar to the DNS hosting and is ready to go to the next phase:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-b3f0ac5317c4.png)
 
 You can find this on the last row of the table in the DNS MEGAtool. If the status is red or an error is in the value field, the configuration of your domain is not correct.
 
@@ -78,6 +82,7 @@ First, login into Exchange Online Powershell:
 Connect-ExchangeOnline
 {{< /card >}}
 
+
 Login with your credentials, and we are ready.
 
 ---
@@ -89,6 +94,7 @@ We have to enable DNSSEC to each of our domains managed in Microsoft 365. In my 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Enable-DnssecForVerifiedDomain -DomainName "justinverstijnen.nl"
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-2c556bcd39f4.png)
 
 The output of the command gives us a new, DNSSEC enabled MX-record.
@@ -97,13 +103,15 @@ The output of the command gives us a new, DNSSEC enabled MX-record.
 
 ## Step 4: Configure DNSSEC enabled MX record
 
+Now PowerShell gives us a new MX record which we must configure. This is the new "DANE"-enabled MX-record
+
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 DnssecMxValue                         Result  ErrorData
 -------------                         ------  ---------
 justinverstijnen-nl.r-v1.mx.microsoft Success
 {{< /card >}}
 
-We have to change the value of the MX-record in the DNS hosting of your domain and it has to be the new primary MX-record (the one with the highest priority -> lowest number). I added it to the list of DNS records with a priority of 5, and switched the records outside of business hours to minimize service disruption.
+Let's change this in the DNS hosting of your domain and it has to be the new primary MX-record (the one with the highest priority -> lowest number). I added it to the list of DNS records with a priority of 5, and switched the records outside of business hours to minimize service disruption.
 
 Here an example of my configuration before switching to the new DNSSEC enabled MX record as primary.
 
@@ -144,9 +152,10 @@ After we configured DNSSEC, we can enable SMTP DANE in the same Exchange Online 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Enable-SmtpDaneInbound -DomainName "justinverstijnen.nl"
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8598a10ef5c0.png)
 
-This is only a command to enable the option, here is no additional DNS change needed.
+This is only a command to enable SMTP DANE for inbound email, here is no additional DNS change needed.
 
 ---
 
