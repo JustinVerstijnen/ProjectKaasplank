@@ -54,8 +54,6 @@ This gave pretty interesting results:
 
 This result would indicate a theoretical CPU performance increase of around 55%.
 
-Click here for benchmark results
-
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-52f0abf87f8e.png)
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ad2552f93fe3.png)
