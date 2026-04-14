@@ -71,7 +71,11 @@ We tried to do a DNS Zone transfer, which means that we wanted to make a full ex
 
 Now we have generated our first alert and the Security Operations Center (SOC) of the company will be notified. We can find the alert in the Security Portal by going to "Hunting" and then to "Advanced Hunting". There we can use the query "IdentityQueryEvents":
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-51c8e67f4b98.png)
+
 This will show all events where attackers tried to do sensitive queries. We can investigate this further by expanding the alert:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-41faf39aa119.png)
 
 Now the SOC knows exactly on which computer this happend and on what time.
 
@@ -91,6 +95,8 @@ net user /domain
 
 Now we get a report of all the users in the domain, with username and so their emailaddresses:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0730c72dd2d5.png)
+
 Now we can run a command to get all groups in the domain:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
@@ -99,17 +105,23 @@ net group /domain
 
 This list shows some default groups and some user created groups that are in use for different use cases. We now want to go a level deeper, and that is the members of one of these groups:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-aa4fc2750ac5.png)
+
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 net group "Domain Admins" /domain
 {{< /card >}}
 
 Now, as an attacker, we have gold on our hands. We know exactly which 5 users we have to attack to get domain admin permissions and be able to be destructive.
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cecdfec5ebe5.png)
+
 If we want to have even more permissions, we can find out which user has Enterprise Admin permissions:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 net group "Enterprise Admins" /domain
 {{< /card >}}
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-8f3780afa4c6.png)
 
 So we can aim our attack to that guy Justin.
 
@@ -133,7 +145,7 @@ In Active Directory, SYSVOL is a really important network share. It is created b
 
 For this steps, we need a tool called NetSess, which can be downloaded here: <https://www.joeware.net/freetools/tools/netsess/>
 
-Place the tool on your attacking workstation and navigate to the folder for a convinient usage. In my case, i did it with this command:
+Place the tool on your attacking workstation and navigate to the folder for a convinient usage. In my case, I did it with this command:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 cd C:\Users\justin-admin\Desktop\Netsess
@@ -146,6 +158,8 @@ Now lets run a command to show all logged in users including their IP addresses
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Netsess.exe vm-jv-mdi
 {{< /card >}}
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-2e915a6bc310.png)
 
 Now we know where potential domain admins are logged in and could launch attacks on their computer, especially because we know on which computer the user credentials are stored. This all without any access to a server (yet).
 
@@ -227,6 +241,8 @@ Let's configure this account as Honeytoken account in the Security portal. Go to
 
 Tag the user and select it from the list.
 
+
+
 After that save the account and let's generate some alerts.
 
 ---
@@ -236,6 +252,8 @@ After that save the account and let's generate some alerts.
 Now, as an attacker, we cloud know that the admin.service account exists through the Enumeration of users/groups and group memberships. Let's open the Windows Explorer on a workstation and open the SYSVOL share of the domain.
 
 It asks for credentials, we can try to log in with some basic, wrong passwords on the admin.service account.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-c9a9560d7c95.png)
 
 This will generate alerts on that account because the account is not really supposed to logon. The SOC will immediately know that an malicious actor is running some malicious behaviour.
 

@@ -90,9 +90,7 @@ Select "On" to show the restore page. This will prompt the user (when an active 
 
 Save the configuration to make this active.
 
----
-
-## Client-side configuration
+### Client-side configuration
 
 Users can also manually configure this new Backup in the Windows Settings:
 
@@ -102,7 +100,7 @@ This is the overview after I have configured it in Intune and synced to my devic
 
 ---
 
-## Restoring a backup (Step-by-step)
+## Step 3: Restoring a backup (Step-by-step)
 
 To restore the back-up made by Windows Backup for Organizations, let's install a second laptop (JV-LPT-002) with the latest Windows updates (25H2).
 
@@ -126,7 +124,7 @@ Now the backup will be restored.
 
 ---
 
-## Result/after restoring backup
+## Step 4: Result/after restoring backup
 
 After the backup has been restored, this was the state on the laptop without any manual change. It synced the dark mode I configured, the installed Windows Store apps, the Windows taskbar to the left and my nice holiday picture. All without any manual action after restoring.
 
