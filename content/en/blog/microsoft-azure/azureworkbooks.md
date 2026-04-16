@@ -4,15 +4,7 @@ title: "Create Custom Azure Workbooks for Detailed Monitoring"
 date: 2026-04-16
 slug: create-custom-azure-workbooks-for-detailed-monitoring
 categories:
-
-* Azure
-* Monitoring
-  tags:
-* Azure Workbooks
-* Azure Monitor
-* Virtual Machines
-* Observability
-  draft: false
+tags:
 
 ---
 
