@@ -76,7 +76,7 @@ In Azure i have a single resource group where i want to deploy my cluster into:
 
 ---
 
-## 1. Multi-node setup guide {< /rawhtml >}{{< rawhtml >}}<span id="multi-node-cluster"></span>{{< /rawhtml >}}
+## 1. Multi-node setup guide
 
 ### 1.1 Installing nodes for the cluster
 
@@ -270,7 +270,7 @@ After that we can go to the tab "Validation". Here we have to validate the compl
 
 ---
 
-## 2. Steps for creating a single-node cluster {< /rawhtml >}{{< rawhtml >}}<span id="single-node-cluster"></span>{{< /rawhtml >}}
+## 2. Steps for creating a single-node cluster
 
 Microsoft doesn't officially support a single node cluster, but you can create this. When you want to configure this, most of the steps must be done in PowerShell.
 
