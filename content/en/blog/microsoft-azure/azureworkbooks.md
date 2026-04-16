@@ -18,7 +18,7 @@ Azure Workbooks are a powerful way to build customizable dashboards for monitori
 
 They are flexible enough for quick performance overviews or deep investigations.
 
-![Azure Workbook Overview](jv-media-1468-2640911c236e.png)
+![Azure Workbook Overview](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-2640911c236e.png)
 
 ## Using Default Azure Workbooks
 
@@ -28,7 +28,7 @@ Many Azure resources include built-in workbook templates with basic health and p
 2. Select **Workbooks**.
 3. Choose **Overview** or another template.
 
-![Default Workbook](jv-media-1468-718a21d9fa1c.png)
+![Default Workbook](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-718a21d9fa1c.png)
 
 ## Workbook Templates and Examples
 
@@ -38,19 +38,19 @@ Microsoft maintains a public repository with workbook templates:
 
 This library contains hundreds of ready-to-use workbooks that can also be reused in your own custom dashboards.
 
-![Workbook Templates](jv-media-1468-054c08b65b8e.png)
+![Workbook Templates](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-054c08b65b8e.png)
 
 ## Import a Predefined Workbook
 
 Create a new workbook in Azure and open the **Advanced Editor** to paste workbook JSON from GitHub.
 
-![Create Workbook](jv-media-1468-b8f66398adf1.png)
-![Advanced Editor](jv-media-1468-bc401700d54b.png)
-![Empty Workbook JSON](jv-media-1468-07bd89e2f08b.png)
+![Create Workbook](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-b8f66398adf1.png)
+![Advanced Editor](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-bc401700d54b.png)
+![Empty Workbook JSON](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-07bd89e2f08b.png)
 
 After applying the JSON, the workbook becomes available in your tenant.
 
-![Imported Workbook](jv-media-1468-114a3e46f540.png)
+![Imported Workbook](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-114a3e46f540.png)
 
 ## Build Your Own Custom Workbook
 
@@ -61,7 +61,7 @@ Useful building blocks:
 * **Metrics** – CPU, memory, disk, network
 * **Groups** – combine components into sections
 
-![Workbook Components](jv-media-1468-ddb3eaf80d17.png)
+![Workbook Components](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-ddb3eaf80d17.png)
 
 ### Add CPU Metrics
 
@@ -71,7 +71,7 @@ Create a new metric tile:
 * Scope: select one or more VMs
 * Metric: **Percentage CPU**
 
-![CPU Metric](jv-media-1468-c3134b9a392f.png)
+![CPU Metric](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-c3134b9a392f.png)
 
 ### Add Memory Metrics
 
@@ -79,7 +79,7 @@ Use:
 
 * **Available Memory Percentage**
 
-![Memory Metric](jv-media-1468-115718ebd01e.png)
+![Memory Metric](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-115718ebd01e.png)
 
 ### Add Disk Metrics
 
@@ -92,13 +92,13 @@ Recommended metrics:
 
 Use **Average** aggregation.
 
-![Disk Metrics](jv-media-1468-d2d1f9528460.png)
+![Disk Metrics](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-d2d1f9528460.png)
 
 ## Save the Workbook
 
 Store workbooks in a dedicated monitoring resource group or alongside the application.
 
-![Save Workbook](jv-media-1468-074f695a16d4.png)
+![Save Workbook](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-074f695a16d4.png)
 
 ## Improve Visualizations
 
@@ -114,7 +114,7 @@ Reorder tiles and set width percentages (for example 50%) to create two-column l
 
 Bar charts are often clearer than line charts for quick health checks.
 
-![Bar Charts](jv-media-1468-580ef53592cd.png)
+![Bar Charts](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-580ef53592cd.png)
 
 ### Grid View for Operations
 
@@ -137,4 +137,4 @@ You can download the original sample workbook here:
 
 Azure Workbooks provide a flexible and scalable way to visualize operational data in Azure. Start with templates, then evolve toward dashboards tailored to your own workloads.
 
-![Final Dashboard](jv-media-1468-bea4d456f8dc.png)
+![Final Dashboard](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-custom-azure-workbooks-for-detailed-monitoring-1468/jv-media-1468-bea4d456f8dc.png)
