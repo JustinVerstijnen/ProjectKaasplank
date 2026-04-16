@@ -8,7 +8,6 @@ tags:
   - Step by Step guides
 description: >
   On this page, I will describe how I implemented my current Microsoft Secure Score on the Apps pillar. This means altering mostly the...
-draft: true
 ---
 On this page, I will describe how I implemented my current Microsoft Secure Score on the Apps pillar. This means altering mostly the options of Microsoft Defender for Office 365 but also for Exchange Online, Teams and SharePoint.
 
