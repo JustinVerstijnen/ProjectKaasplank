@@ -75,7 +75,7 @@ An workbook can look like this:
 
 The advantages of an Azure Workbook are that every button, every column and every type of conditional formatting is customizable. However, it can quickly become very complex and it requires a bit of knowledge of Kusto Query Language (KQL) to make it totally yours. I speak out of experience here.
 
-What really helped me were the **free Azure Workbook** templates from Microsoft themselves. They have created a whole Github repository full of templates which you can import in your own environment and use some modules from. You can find them in the link below:
+What really helped me were the free Azure Workbook templates from Microsoft themselves. They have created a whole Github repository full of templates which you can import in your own environment and use some modules from. You can find them in the link below:
 
 <https://github.com/microsoft/Application-Insights-Workbooks/tree/master/Workbooks>
 
@@ -193,7 +193,7 @@ Microsoft Defender for Cloud also provides a dashboard with Secure Score, which 
 
 Defender for Cloud is partially free (Basic tier), but it also offers a paid version with advanced features and resource-specific plans, such as protection for SQL servers, Storage accounts, Windows Server VMs and more.
 
-### **Security Policies and Compliance**
+### Security Policies and Compliance
 
 In addition to its standard recommendations, Defender for Cloud allows you to apply global security standards to your Azure subscriptions. This provides additional recommendations to ensure compliance with industry standards, such as:
 
@@ -241,7 +241,7 @@ Managed Identities in Microsoft Azure are the next generation of service account
 
 The main advantage is that they do not use passwords or secrets that need to be securely stored, reducing the risk of leaks. Additionally, each resource can be granted only the necessary permissions following the principle of least privilege.
 
-### **Types of Managed Identities in Azure:**
+### Types of Managed Identities in Azure:
 
 1. **System-Assigned Managed Identity:**
    - Directly tied to one specific resource.
@@ -258,17 +258,37 @@ Mostly you use a System-assigned MI when you must allow access to for example a 
 
 ## Azure Key Vault
 
-Azure Key Vault is a resource in Microsoft Azure where you can store:
+Azure Key Vault is a type of vault used to store sensitive technical information, such as:
 
-- Secrets
 - Certificates
-- Passwords
+- Secrets
+- Keys
 
-It offers the ability to rotate keys, ensuring they are periodically changed to enhance security.
+What sets Azure Key Vault apart from a traditional password manager is that it allows software to integrate with the vault. Instead of hardcoding a secret, the software can retrieve it from the vault. Additionally, it is possible to rotate a secret every month, enabling the application to use a different secret each month.
 
-Azure services can be linked to the Key Vault to specify that the secrets are stored there. This allows you to centrally manage the lifecycle of these resources and define how frequently keys should be rotated, ensuring better security control across your environment.
+Practical use cases include:
 
-It is also possible to leverage Azure Policy for some specific enforcements and to ensure resources for example use encryption with the encryption key stored in Azure Key Vault.
+- Storing BitLocker encryption keys for virtual machines
+- Storing Azure Disk Encryption keys
+- Storing the secret of an Entra ID app registration
+- Storing API keys
+
+## How does Azure Key Vault work?
+
+The sensitive information can be retrieved via a unique URL for each entry. This URL is then used in the application code, and the secret is only released if sufficient permissions are granted.
+
+To retrieve information from a Key Vault, a Managed Identity is used. This is considered a best practice since it is linked to a resource.
+
+Access to Azure Key Vault can be managed in two ways:
+
+1. **Access Policies**
+   - Provides access to a specific category but not individual entries.
+2. **RBAC (Recommended Option)**
+   - Allows access to be granted at the entry level.
+
+A Managed Identity can also be used in languages like PHP. In this case, you first request an access token, which then provides access to the information in the vault.
+
+There is also a **Premium** option, which ensures that Keys in a Key Vault are stored on a hardware security module (HSM). This allows the use of a higher level of encryption keys and meets certain compliance standards that require this level of security.
 
 ---
 

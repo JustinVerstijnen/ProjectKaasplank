@@ -96,13 +96,21 @@ Login to the Azure Portal, and deploy a new virtual machine:
 - Disable availability zones (as this is not supported)
 - Select your image (Windows 11 24H2 Multi-session in my case)
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0aa05d214d08.png)
+
 Now we have to select a size, which mus contain a non-capital "d". This stands for having local NVME storage on the hypervisor which makes it bloody fast. In my case, I selected the vm size: "E4ds\_v6"
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-c278ed8f3c6b.png)
+
 Now the wizard looks like this:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-4d108e4761ac.png)
 
 Proceed by creating your local account and advance to the tab "Disks".
 
 Here we have to scroll down to the "Advanced" section, expand it and here we have the hided options for having Ephemeral OS disks:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-8e6940754b56.png)
 
 Select the "NVME placement" option and let the option "Use managed disks" checked. This is for additional data disks you link to the virtual machine. The Ephemeral OS disk option requires you to enable it.
 

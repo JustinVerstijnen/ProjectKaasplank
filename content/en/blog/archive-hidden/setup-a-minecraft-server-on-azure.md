@@ -44,6 +44,8 @@ For a typical Minecraft server, without Mods, the guidelines and system requirem
 
 First, we need to setup our Azure environment for a Minecraft server. I started with creating a Resource group named "rg-jv-minecraftserver".
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png)
+
 This resource group can we use to put all of the related resources in. We not only need to create a VM but also an virtual network, Public IP address, Network Security Group and disk for storage.
 
 ---
@@ -58,9 +60,11 @@ For a single server-setup, we can use most of the default settings of the wizard
 
 Go to "Virtual Machines" and create a new virtual machine:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-565b2b65e616.png)
+
 Put the server in the created resource group. I use the image **Ubuntu Server 24.04 LTS - x64 Gen2** for this deployment. This is a "Long-Term Support" image, which are enterprise grade images with at least 5 years support.
 
-For the specs, I used the size E4s\_V6 which has 4vCPU's and 32GB of RAM. Enough for 20 to 50 players and a big world so the game will not get bored.
+For the specs, I used the size E4s\_V6 which has 4vCPU's and 32GB of RAM. Enough for 20 to 50 players and a big world so the game will not get boring.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a6dd7a972a5.png)
 
@@ -95,6 +99,8 @@ Select the option "Create and attach a new disk". Then give the disk a name and 
 
 I chose 128GB as size and have the performance tier as default.
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5df22c79b290.png)
+
 Click "OK" and review the settings:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8d2b1865d288.png)
@@ -102,6 +108,8 @@ Click "OK" and review the settings:
 ### Networking
 
 Advance to the "Networking" tab.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d4fd996364aa.png)
 
 Azure automatically creates a virtual network and a subnet for you. These are needed for the server to have an outbound connection to the internet. This way we can download updates on the server.
 
@@ -131,6 +139,8 @@ Then create the virtual machine and we are good to go! Create the virtual machin
 
 We want to secure inbound connections made to the server. Let's go to "Network Security Groups" (NSG for short) in Azure:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b711942f42d3.png)
+
 Open the related NSG and go to "Inbound Security rules".
 
 By default we have a rule applied for SSH access that allows the whole internet to the server. For security, the first thing we want to do is limit this access to only our own IP address. You can find your IP address by going to this page: <https://whatismyipaddress.com/>
@@ -139,9 +149,13 @@ By default we have a rule applied for SSH access that allows the whole internet 
 
 Note this IP address down and return to Azure.
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5607360d763d.png)
+
 Click on the rule "SSH".
 
 Change the "Source" to "IP addresses" and paste in the IP address from the IP lookup website. This only allows SSH (admin) traffic from your own IP-address for security. This is a whitelist.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-3376bb21c6af.png)
 
 You see that the warning is now gone as we have blocked more than 99% of all worldwide IP addresses SSH access to our server.
 
@@ -173,6 +187,10 @@ Create a new rule with the following settings:
 \*Here we do allow all inbound connections and use the Minecraft username whitelist.
 
 My rule looks like this:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4dac80b0730.png)
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-bd0875603ad0.png)
 
 Now the network configuration in Azure is done. We will advance to the server configuration now.
 
@@ -217,6 +235,7 @@ Run the following command to get administrator/sudo access:
 {{< card code=true header="**BASH**" lang="bash" >}}
 sudo -s
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2519033c5758.png)
 
 Now you see the line went from green to white and starts with "root". This is the highest level of privileges on a Linux system.
@@ -260,6 +279,7 @@ Run the following command to get all disks in a nice overview:
 {{< card code=true header="**BASH**" lang="bash" >}}
 lsblk
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9c5d0eb93c52.png)
 
 In my case, the nvme0n2 disk is the added disk. This can be different on your server, so take a good look at the size which is your disk.
@@ -282,6 +302,7 @@ If we now again run the command to list our disk and partitions, we see the chan
 {{< card code=true header="**BASH**" lang="bash" >}}
 lsblk
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-65b7e595394b.png)
 
 Under disk "nvme0n2" there is now an partition called "nvme0n2p1".
@@ -313,6 +334,7 @@ Let's try if this works :)
 {{< card code=true header="**BASH**" lang="bash" >}}
 cd /mnt/minecraft-data
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0703a6bc11fd.png)
 
 This works and our disks is now operational. Please note that this is non-persistent and gone after a reboot. We must add this to the systems disks of Linux to mount this at boot.
@@ -328,6 +350,8 @@ blkid /dev/nvme0n2p1
 {{< /card >}}
 
 You will get an output of this command what we need. Mine is:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2d7b63c0e56e.png)
 
 We have to edit the fstab system file to tell the system part that it must make this mount at boot.
 
@@ -400,6 +424,8 @@ We can now finally run the server with 28GBs of RAM with the following command:
 java -Xmx28672M -Xms28672M -jar server.jar nogui
 {{< /card >}}
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
+
 Now our server has been fully initialized and we are ready to play.
 
 ---
@@ -407,8 +433,6 @@ Now our server has been fully initialized and we are ready to play.
 ## Connecting to the server
 
 The moment we have been waiting for, finally playing on our own Minecraft server. Download the game and login to your account.
-
-Let's wait till the game opens.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a6f21b79d2.png)
 
@@ -462,6 +486,8 @@ RestartSec=10
 WantedBy=multi-user.target
 {{< /card >}}
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-942703b1b91c.png)
+
 Then use the shortcut CTRL and X to exit and select Yes to save.
 
 Now run this commands (can be run at once) to refresh the services list and to enable our newly created Minecraft-service:
@@ -471,6 +497,8 @@ sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl enable minecraft.service
 {{< /card >}}
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e5b52074ced7.png)
 
 Now run this command to start Minecraft:
 
@@ -484,7 +512,9 @@ We can view the status of the service by running this command:
 sudo systemctl status minecraft
 {{< /card >}}
 
-We made a seperate service of Minecraft which allows it to automatically run at boot. We can easily restart and stop it when needed without using the complex commands of Minecraft.
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
+
+We made a separate service of Minecraft which allows it to automatically run at boot. We can easily restart and stop it when needed without using the complex commands of Minecraft.
 
 With the systemctl status minecraft command you can see the last 10 lines for troubleshooting purposes.
 
@@ -505,6 +535,8 @@ All of these settings are in files of the minecraft directory. You can navigate 
 {{< card code=true header="**BASH**" lang="bash" >}}
 cd /mnt/minecraft-data
 {{< /card >}}
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-7d01df6754ab.png)
 
 Open the file *server.properties*
 
