@@ -55,8 +55,8 @@ You need the following to follow this guide and make sure to minimize errors:
 
 In my guide, i will focus on creating a cluster with 2 nodes. I have included and tested the steps to create a single-server cluster too:
 
-- [Multi node cluster setup](#multi-node-cluster)
-- [Single node cluster setup](#single-node-cluster)
+- [Multi node cluster setup](#1-multi-node-setup-guide)
+- [Single node cluster setup](#2-steps-for-creating-a-single-node-cluster)
 
 ## My environment
 
@@ -233,7 +233,7 @@ On the tab "Configuration", i chose for a new configuration:
 
 ![Azure Stack HCI cluster configuration](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e09e3f7cbe05.png)
 
-On the tab "Networking", i chose for "Network switch for storage". This means if there is a network switch between the servers. In my environment, i am using VMware as Hypervisor for my cluster nodes. This has a internal switching system and has no direct link to the PCIe connected network interface.
+On the tab "Networking", I chose for "Network switch for storage". This means if there is a network switch between the servers. In my environment, i am using VMware as Hypervisor for my cluster nodes. This has a internal switching system and has no direct link to the PCIe connected network interface.
 
 Further, you have the option to segment your cluster network by using different network links for:
 
