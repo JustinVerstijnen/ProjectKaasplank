@@ -60,10 +60,12 @@ As you might think, there are indeed some security risks with this setup;
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;page&quot;:1,&quot;dark-mode&quot;:&quot;auto&quot;,&quot;toolbar&quot;:&quot;pages zoom layers tags lightbox&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0\&quot; version=\&quot;26.2.14\&quot; pages=\&quot;2\&quot;&gt;\n  &lt;diagram name=\&quot;Traditional setup\&quot; id=\&quot;Ru-RAAyF32au7Hvwx1fT\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;1877\&quot; dy=\&quot;1078\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;400\&quot; pageHeight=\&quot;156\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-1\&quot; value=\&quot;Active Directory&amp;lt;div&amp;gt;Domain&amp;lt;/div&amp;gt;\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Azure_AD_Domain_Services.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-57.03999999999999\&quot; y=\&quot;-104\&quot; width=\&quot;59.07\&quot; height=\&quot;54\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-3\&quot; value=\&quot;Storage account\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-60\&quot; y=\&quot;47\&quot; width=\&quot;65\&quot; height=\&quot;52\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-4\&quot; value=\&quot;Session host\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-400\&quot; y=\&quot;50\&quot; width=\&quot;69\&quot; height=\&quot;64\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-5\&quot; value=\&quot;fslogix-profiles\&quot; style=\&quot;sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#7088ff, #bfd3ff);shape=mxgraph.mscae.enterprise.shared_folder\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;150\&quot; y=\&quot;48\&quot; width=\&quot;43\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-6\&quot; value=\&quot;userprofile.vhdx\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Disks.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;290\&quot; y=\&quot;51\&quot; width=\&quot;50.89\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-10\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;exitX=0.503;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.499;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; source=\&quot;9mR7YrU1p4Kd-DwnpqKB-6\&quot; target=\&quot;9mR7YrU1p4Kd-DwnpqKB-4\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;100\&quot; y=\&quot;10\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-300\&quot; y=\&quot;170\&quot; as=\&quot;targetPoint\&quot; /&gt;\n            &lt;Array as=\&quot;points\&quot;&gt;\n              &lt;mxPoint x=\&quot;316\&quot; y=\&quot;170\&quot; /&gt;\n              &lt;mxPoint x=\&quot;-366\&quot; y=\&quot;170\&quot; /&gt;\n            &lt;/Array&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-11\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-320\&quot; y=\&quot;73\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-70\&quot; y=\&quot;73\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-13\&quot; value=\&quot;\&quot; style=\&quot;verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-389.25\&quot; y=\&quot;-4\&quot; width=\&quot;47.5\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-14\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-38\&quot; y=\&quot;40\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-38\&quot; y=\&quot;-10\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-15\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-20\&quot; y=\&quot;-10\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-20\&quot; y=\&quot;40\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-19\&quot; value=\&quot;\&quot; style=\&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-162.5\&quot; y=\&quot;-280\&quot; width=\&quot;270\&quot; height=\&quot;115\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-20\&quot; value=\&quot;DC01\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-149.5\&quot; y=\&quot;-267\&quot; width=\&quot;69\&quot; height=\&quot;64\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-21\&quot; value=\&quot;DC02\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-61.5\&quot; y=\&quot;-267\&quot; width=\&quot;69\&quot; height=\&quot;64\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-22\&quot; value=\&quot;DC03\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;25.5\&quot; y=\&quot;-267\&quot; width=\&quot;69\&quot; height=\&quot;64\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-23\&quot; value=\&quot;Domain Controllers\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-92.5\&quot; y=\&quot;-290\&quot; width=\&quot;130\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-24\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-36.5\&quot; y=\&quot;-106\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-36.5\&quot; y=\&quot;-156\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-25\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-18.5\&quot; y=\&quot;-156\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-18.5\&quot; y=\&quot;-106\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-26\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;9\&quot; y=\&quot;73\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;140\&quot; y=\&quot;73\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-27\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;210\&quot; y=\&quot;75.5\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;285\&quot; y=\&quot;75.5\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-28\&quot; value=\&quot;1. User logs in\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-250\&quot; y=\&quot;40\&quot; width=\&quot;100\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-29\&quot; value=\&quot;2. Authentication attempt is sent to Active Directory\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-370.5\&quot; y=\&quot;-80\&quot; width=\&quot;290\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-30\&quot; value=\&quot;\&quot; style=\&quot;sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;fillColor=#2D9C5E;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.check\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-10\&quot; y=\&quot;-140\&quot; width=\&quot;25\&quot; height=\&quot;20\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-31\&quot; value=\&quot;3. User is authenticated successfully\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;20.5\&quot; y=\&quot;-80\&quot; width=\&quot;220\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-32\&quot; value=\&quot;4. User is authorized&amp;lt;div&amp;gt;through NTFS&amp;lt;/div&amp;gt;\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;15\&quot; y=\&quot;35\&quot; width=\&quot;130\&quot; height=\&quot;40\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;9mR7YrU1p4Kd-DwnpqKB-33\&quot; value=\&quot;5. Profile disk is mounted\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-107\&quot; y=\&quot;170\&quot; width=\&quot;160\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n  &lt;diagram id=\&quot;MBvYcN8Ojx7u8KXp0AiT\&quot; name=\&quot;Cloud Only Setup\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;1616\&quot; dy=\&quot;787\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;400\&quot; pageHeight=\&quot;156\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-2\&quot; value=\&quot;Storage account\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;235\&quot; y=\&quot;-40.5\&quot; width=\&quot;65\&quot; height=\&quot;52\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-3\&quot; value=\&quot;Session host\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-300\&quot; y=\&quot;-36\&quot; width=\&quot;69\&quot; height=\&quot;64\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-4\&quot; value=\&quot;fslogix-profiles\&quot; style=\&quot;sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#7088ff, #bfd3ff);shape=mxgraph.mscae.enterprise.shared_folder\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;400\&quot; y=\&quot;-39.5\&quot; width=\&quot;43\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-5\&quot; value=\&quot;userprofile.vhdx\&quot; style=\&quot;image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Disks.svg;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;540\&quot; y=\&quot;-36.5\&quot; width=\&quot;50.89\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-6\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;566\&quot; y=\&quot;40\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-266\&quot; y=\&quot;50\&quot; as=\&quot;targetPoint\&quot; /&gt;\n            &lt;Array as=\&quot;points\&quot;&gt;\n              &lt;mxPoint x=\&quot;566\&quot; y=\&quot;94\&quot; /&gt;\n              &lt;mxPoint x=\&quot;150\&quot; y=\&quot;94\&quot; /&gt;\n              &lt;mxPoint x=\&quot;-266\&quot; y=\&quot;94\&quot; /&gt;\n            &lt;/Array&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-7\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-220\&quot; y=\&quot;-36.18\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;30\&quot; y=\&quot;-36.18\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-8\&quot; value=\&quot;\&quot; style=\&quot;verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-289.25\&quot; y=\&quot;-90\&quot; width=\&quot;47.5\&quot; height=\&quot;50\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-19\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;460\&quot; y=\&quot;-12\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;535\&quot; y=\&quot;-12\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-20\&quot; value=\&quot;1. User logs in\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-150\&quot; y=\&quot;-66.18\&quot; width=\&quot;100\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-25\&quot; value=\&quot;5. Profile disk is mounted\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;75\&quot; y=\&quot;94\&quot; width=\&quot;160\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-26\&quot; value=\&quot;Entra ID\&quot; style=\&quot;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Microsoft_Entra_ID_color_icon.svg/2048px-Microsoft_Entra_ID_color_icon.svg.png;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;35\&quot; y=\&quot;-78\&quot; width=\&quot;70\&quot; height=\&quot;70\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;I8O79UHgh5rET7-c4sSl-28\&quot; value=\&quot;2. User is authenticated successfully\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-200\&quot; y=\&quot;-28\&quot; width=\&quot;220\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;0-JxYI6A8gHYjIfGkcxg-2\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;25\&quot; y=\&quot;-25.999999999999993\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;-225\&quot; y=\&quot;-25.999999999999993\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;0-JxYI6A8gHYjIfGkcxg-3\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot; target=\&quot;I8O79UHgh5rET7-c4sSl-2\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;-230\&quot; y=\&quot;4\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;180\&quot; y=\&quot;24\&quot; as=\&quot;targetPoint\&quot; /&gt;\n            &lt;Array as=\&quot;points\&quot;&gt;\n              &lt;mxPoint x=\&quot;-120\&quot; y=\&quot;24\&quot; /&gt;\n              &lt;mxPoint x=\&quot;170\&quot; y=\&quot;24\&quot; /&gt;\n            &lt;/Array&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;0-JxYI6A8gHYjIfGkcxg-4\&quot; value=\&quot;3. Session host uses storage account access key\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;rotation=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;-130\&quot; y=\&quot;28\&quot; width=\&quot;290\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;0-JxYI6A8gHYjIfGkcxg-5\&quot; value=\&quot;\&quot; style=\&quot;endArrow=classic;html=1;rounded=0;flowAnimation=1;\&quot; edge=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry width=\&quot;50\&quot; height=\&quot;50\&quot; relative=\&quot;1\&quot; as=\&quot;geometry\&quot;&gt;\n            &lt;mxPoint x=\&quot;310\&quot; y=\&quot;-13.590000000000003\&quot; as=\&quot;sourcePoint\&quot; /&gt;\n            &lt;mxPoint x=\&quot;385\&quot; y=\&quot;-13.590000000000003\&quot; as=\&quot;targetPoint\&quot; /&gt;\n          &lt;/mxGeometry&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;0-JxYI6A8gHYjIfGkcxg-6\&quot; value=\&quot;4. Session host has correct storage account key\&quot; style=\&quot;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;280\&quot; y=\&quot;-78\&quot; width=\&quot;280\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;\n&quot;}"></div>
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
+As you might think, there are indeed some security risks with this setup;
+
 - The session host has full control over all user disks, not locked down to user1 only access to disk of user1 etc.
 - The storage account access key is saved in the machine and does not rotate periodically
 
-
+![Cloud only setup security warning](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff89fe30062e.png)
 
 However, we want to learn something so we are still going to configure this cloud only setup. But take great care when bringing this into production.
 
@@ -73,15 +75,15 @@ However, we want to learn something so we are still going to configure this clou
 
 My environment looks like this before the guide. I already have created the needed resources to perform the tasks:
 
+![Azure resources before the guide](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1f756f47544b.png)
+
 So I created the hostpool, a network, the workspace and a demo VM to test this configuration with.
 
 The hostpool must be an Entra ID joined hostpool, which you can configure at the creation wizard of the hostpool:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-44beae2aa00a.png)
+![Create Entra ID joined hostpool](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-44beae2aa00a.png)
 
 I also highly recommend using the "Enroll VM with Intune" option so we can manage the session hosts with Intune, as we don't have Group Policies in this cloud only setup.
-
----
 
 ## Step 2: Create a test user and assign roles
 
@@ -96,11 +98,19 @@ In addition, our test user must have access to the Desktop application group in 
 
 In this case, we are going to create our test user and assign him the default, non administrative role:
 
+![Create test user](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-5096138430ae.png)
+
 Now that the user is created, go to the Azure Portal, and then to the resource group where your session hosts lives:
+
+![Go to resource group access control](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-20b1d4f35b7a.png)
 
 Click on "+ Add" and then on "add role assignment":
 
+![Add role assignment](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-c97c9c238cbf.png)
+
 Then click on "Next" and under "User, group or service principal" select your user or user group:
+
+![Select user for role assignment](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1ece4c34e856.png)
 
 Click on "Review + assign" to assign the role to your users.
 
@@ -110,27 +120,29 @@ Now we navigate to our Hostpool to give our user access to the desktops.
 
 Go to "Application Groups", and then to our Hostpool DAG:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff00e0e18dda.png)
+![Application group in hostpool](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff00e0e18dda.png)
 
 Click on "+ Add" to add our user or user group here:
 
-Select your user or group here and save. The user/group is now allowed to logon to the hostpool and get the workspace in the Windows App.
+![Add user to application group](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8e73957a59a9.png)
 
----
+Select your user or group here and save. The user/group is now allowed to logon to the hostpool and get the workspace in the Windows App.
 
 ## Step 3: Create a dynamic group for session hosts (optional)
 
-{{% alert color="info" %}}
+{{< alert color="info" >}}
 Using dynamic groups require a Microsoft Entra Premium P1 tenant. If you don't have this license, you can use an assigned group instead.
-{{% /alert %}}
+{{< /alert >}}
 
 Before we can configure the session hosts in Microsoft Intune, we need to have a group for all our session hosts. I really like the use of dynamic group for this sort of configurations, because the settings will be automatically done. Otherwise we configure a new session host in about 3 months later and forget about the group assignment.
 
 Go to Microsoft Entra and then to groups:
 
+![Microsoft Entra groups](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a9076b80ed92.png)
+
 Create a new "Dynamic Device" security group and add the following query:
 
-{{< card code=true header="**V**" lang="v" >}}
+{{< card code=true header="**DYNAMIC MEMBERSHIP RULE**" lang="text" >}}
 (device.displayName -startsWith "jv-vm-avd") and (device.deviceModel -eq "Virtual Machine") and (device.managementType -eq "MDM")
 {{< /card >}}
 
@@ -138,11 +150,13 @@ This ensures no other device comes into the group by accident or by a wrong name
 
 This looks like this:
 
+![Dynamic device group membership rule](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4104ca102e33.png)
+
 Validate your rule by testing these rules on the "Validate Rules" tab:
 
-Now we are 100% sure our session host will join the group automatically but a Windows 11 laptop for example not.
+![Validate dynamic group rules](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-edb0bc453fcb.png)
 
----
+Now we are 100% sure our session host will join the group automatically but a Windows 11 laptop for example not.
 
 ## Step 4: Configure FSLogix
 
@@ -150,23 +164,26 @@ We can now configure FSLogix in Intune. I do this by using configuration profile
 
 [Download FSLogix configuration template](https://github.com/JustinVerstijnen/AVDCloudOnlyFSLogix)
 
-{{% alert color="info" %}}
+{{< alert color="info" >}}
 If you choose to download the FSLogix configuration template, you need to change the VHD location to your own storage account and share name.
-{{% /alert %}}
+{{< /alert >}}
 
 To configure this manually create a new configuration template from scratch for Windows 10 and higher and use the "Settings catalog"
+
+![Create Intune settings catalog profile](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a42a2435f3b0.png)
 
 Give the profile a name and description and advance.
 
 Click on "Add settings" and navigate to the FSLogix policy settings.
 
+![Add FSLogix policy settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2e2308b11a0b.png)
+
 ### Profile Container settings
 
 Under FSLogix -> Profile Containers, select the following settings, enable them and configure them:
 
-|  |  |
-| --- | --- |
-| **Setting name** | **Value** |
+| Setting name | Value |
+|---|---|
 | Access Network as Computer Object | Enabled |
 | Delete Local Profile When VHD Should Apply | Enabled |
 | Enabled | Enabled |
@@ -175,27 +192,30 @@ Under FSLogix -> Profile Containers, select the following settings, enable them 
 | Prevent Login With Failure | Enabled |
 | Roam Identity | Enabled |
 | Roam Search | Disabled |
-| VHD Locations | Your storage account and share in UNC. Mine is here:      \\sajvavdcloudonly.file.core.windows.net\fslogix-profiles |
+| VHD Locations | Your storage account and share in UNC. Mine is here: `\\sajvavdcloudonly.file.core.windows.net\fslogix-profiles` |
+
+![FSLogix profile container settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-73dd9e3f30a6.png)
 
 ### Container naming settings
 
 Under FSLogix -> Profile Containers -> Container and Directory Naming, select the following settings, enable them and configure them:
 
-|  |  |
-| --- | --- |
-| **Setting name** | **Value** |
+| Setting name | Value |
+|---|---|
 | No Profile Containing Folder | Enable |
-| VHD Name Match | %username% |
-| VHD Name Pattern | %username% |
+| VHD Name Match | `%username%` |
+| VHD Name Pattern | `%username%` |
 | Volume Type (VHD or VHDX) | VHDX |
+
+![FSLogix container naming settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-04e4eeaeb097.png)
 
 You can defer from this configuration to fit your needs, this is purely how I configured FSLogix.
 
 After configuring the settings, advance to the "Assignments" tab:
 
-Select your group here as "Included group" and save.
+![Assign Intune configuration profile](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-eea62074fa32.png)
 
----
+Select your group here as "Included group" and save.
 
 ## Step 5: Create Powershell script for connection to Storage account
 
@@ -240,17 +260,25 @@ Change the information on line 5, 8 and 11 and save the script as .ps1 file or d
 
 You can find the information for line 5 and 11 in the Azure Portal by going to your Storage Account, and then "Access Keys":
 
+![Storage account access keys](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-671744095216.png)
+
 For line 8, you can go to Data Storage -> File Shares:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-bd668f70132f.png)
+![Storage account file shares](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-bd668f70132f.png)
 
 If you don't have a fileshare yet, this is the time to create one.
 
 Paste this information in the script and save the script. It should look like this:
 
+![PowerShell script filled in](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-713e60002afb.png)
+
 Go to Intune and navigate to the "Scripts and Remediations" and then to the tab "Platform scripts". Then add a new script:
 
+![Add Intune platform script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4a86325c01a6.png)
+
 Give the script a name and description and advance.
+
+![Name Intune script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-077adf8fdb9e.png)
 
 Select the script and change the options shown in the image and as follows:
 
@@ -263,7 +291,7 @@ Advance to the "Assignments" tab:
 
 Select your session hosts dynamic group and save the script:
 
----
+![Assign Intune PowerShell script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-9acd9df4f58d.png)
 
 ## Step 6: Let's test the result!
 
@@ -271,29 +299,37 @@ Now we are done with all of the setups and we can test our configuration. The se
 
 Configuration Profile:
 
+![Intune configuration profile status](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ec71a9c92b2a.png)
+
 PowerShell script: (This took about 30 minutes to sync into the Intune portal)
+
+![Intune PowerShell script status](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8470d924dc3b.png)
 
 Now that we know for sure everything is fully synchronized and performed, let's download the new Windows App to connect to our hostpool.
 
+![Windows App connection](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2044ed6cac35.png)
+
 After connecting we can see the session host indeed uses FSLogix to mount the profile to Windows:
+
+![FSLogix profile mounted in Windows](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-dfeba134f219.png)
 
 Also we can find a new file in the FSLogix folder on the Azure Storage Account:
 
-We have now successfully configured the Cloud only setup for Azure Virtual Desktop.
+![FSLogix profile file in Azure Files](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-cdfc173365f0.png)
 
----
+We have now successfully configured the Cloud only setup for Azure Virtual Desktop.
 
 ## Testing the session host and security
 
 We can test navigating to the Azure Storage account from the session host, we will get this error:
+
+![Access denied to Azure Files share](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-0d7d4a5be021.png)
 
 This is because we try it through the context of the user which doesn't have access. So users cannot navigate to the fileshare of FSLogix because only our session host has access as system.
 
 This means that you can only navigate to the fileshare on the PC when having local administrator permissions on the session host. This because a local administrator can traverse the SYSTEM account and navigate to the fileshare. However, local administrator permissions is something you don't give to end users, so in this case it's safe.
 
 I tried several things to find the storage access key on the machine in registry and cmdkey commands but no success. It is secured enough but it is still a security concern.
-
----
 
 ## Security recommendations for session hosts
 
@@ -302,8 +338,6 @@ I have some security recommendations for session hosts, not only for this cloud 
 - Use Microsoft Defender for Endpoint
 - Use the firewall on your Storage account so it can only be accessed from your session hosts' subnet
 - Block critical Windows tools like CMD/Powershell/Scripts/Control panel and access to power off/reboot in the VM
-
----
 
 ## Summary
 
