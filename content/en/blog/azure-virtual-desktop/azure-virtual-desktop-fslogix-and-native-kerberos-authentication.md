@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  On this page I will describe how I built an environment with a pooled Azure Virtual Desktop hostpool with FSLogix and using the Entra...
+  On this page I will describe how I built an environment with a pooled Azure Virtual Desktop hostpool with FSLogix and using the Entra Kerberos option for authentication. This new authentication option eliminates the unsafe need of storing the storage key in hosts' registry like we did [in my earlier AVD full Entra blog](https://justinverstijnen.nl/pooled-azure-virtual-desktop-with-azure-ad-users/).
 ---
-On this page I will describe how I built an environment with a pooled Azure Virtual Desktop hostpool with FSLogix and using the Entra Kerberos option for authentication. This new authentication option eliminates the unsafe need of storing the storage key in hosts' registry like we did [in my earlier AVD full Entra blog](https://justinverstijnen.nl/pooled-azure-virtual-desktop-with-azure-ad-users/).
 
 In this guide I will dive into how I configured an simple environment where I placed every configuration action in separate steps to keep it simple and clear to follow and also will give some describing information about some concepts and settings.
 

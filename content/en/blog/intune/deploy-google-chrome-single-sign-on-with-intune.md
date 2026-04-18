@@ -7,14 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  When deploying Google Chrome with Microsoft Intune, users still have to manually login with their credentials into Microsoft Online websites.
----
-When deploying Google Chrome with Microsoft Intune, users still have to manually login with their credentials into Microsoft Online websites. Microsoft Edge has built-in Single Sign On (SSO) for users who already logged in with their Microsoft account to their computer.
-
-However, there is a Chrome extension published by Microsoft themselves which allows users to also have this Single Sign On experience into Google Chrome.
-
-On this page I will show how this extension works, what the advantages are and how we can deploy this with Microsoft Intune. I will share both a Configuration Policy and a PowerShell script option where you may choose which one to use.
-
+  When deploying Google Chrome with Microsoft Intune, users still have to manually login with their credentials into Microsoft Online websites. Microsoft Edge has built-in Single Sign On (SSO) for users who already logged in with their Microsoft account to their computer. However, there is a Chrome extension published by Microsoft themselves which allows users to also have this Single Sign On experience into Google Chrome. On this page I will show how this extension works, what the advantages are and how we can deploy this with Microsoft Intune. I will share both a Configuration Policy and a PowerShell script option where you may choose which one to use.
 ---
 
 ## How the extension works

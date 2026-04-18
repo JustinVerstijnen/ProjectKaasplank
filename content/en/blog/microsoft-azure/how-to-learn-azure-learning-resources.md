@@ -7,9 +7,8 @@ categories:
 tags:
   - Concepts
 description: >
-  When starting to learn Microsoft Azure, the resources and information can be overwhelming. At this page i have summarized...
+  When starting to learn Microsoft Azure, the resources and information can be overwhelming. At this page I have summarized some resources which found out during my Azure journey and my advice on when to use what resource.
 ---
-When starting to learn Microsoft Azure, the resources and information can be overwhelming. At this page I have summarized some resources which found out during my Azure journey and my advice on when to use what resource.
 
 To give a quick overview of all the training resources I used throughout the years and give you different types and sorted the resources from beginning to end:
 

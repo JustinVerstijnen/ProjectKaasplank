@@ -7,15 +7,10 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Since the latest Windows 25H2 update, we have a great new feature. We can now remove pre-installed Windows Store Applications which we...
----
-Since the latest Windows 25H2 update, we have a great new feature. We can now remove pre-installed Windows Store Applications which we don't want to ship with our devices. This helps us alot with both Windows 365 and Azure Virtual Desktop Personal deployments as with normal Intune-joined devices. The only downside is that Pooled Azure Virtual Desktop Deployments are not supported.
-
-In this guide I will dive into this new setting and explain how to configure this and why this is a great update. The step-by-step guide shows how I have configured a policy that removes most of the non-productive apps from my PC.
-
+  Since the latest Windows 25H2 update, we have a great new feature. We can now remove pre-installed Windows Store Applications which we don't want to ship with our devices. This helps us alot with both Windows 365 and Azure Virtual Desktop Personal deployments as with normal Intune-joined devices. The only downside is that Pooled Azure Virtual Desktop Deployments are not supported. In this guide I will dive into this new setting and explain how to configure this and why this is a great update. The step-by-step guide shows how I have configured a policy that removes most of the non-productive apps from my PC.
 ---
 
-## The new feature described
+## This new feature described
 
 In Intune we can now select which default shipped apps must be removed from Windows clients. Before, this was a complete package we had to use or remove with custom scripts, but now we can select the apps to remove (and deselect to keep).
 
