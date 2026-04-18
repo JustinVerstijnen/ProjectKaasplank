@@ -62,7 +62,7 @@ Let's introduce this website into 3 categories:
     </div>
 
     <div class="col-md-10 col-lg-4 d-flex">
-      <a href="/portfolio/" class="homepage-feature-link w-100">
+      <a href="/about/" class="homepage-feature-link w-100">
         <div class="homepage-feature-item homepage-equal-card w-100 text-center">
           <div class="mb-3">
             <i class="fa-solid fa-address-card fa-3x"></i>
