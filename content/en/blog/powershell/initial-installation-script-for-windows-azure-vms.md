@@ -19,7 +19,7 @@ For this purpose I built this script. It sets the timezone for Western Europe an
 
 For the fast pass, my script can be downloaded here:
 
-[Download script from GitHub](https://github.com/JustinVerstijnen/JV-ServersInitialInstall)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ServersInitialInstall">Download script from GitHub</a></p>
 
 ---
 

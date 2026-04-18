@@ -19,7 +19,7 @@ Also, in the case of Azure Virtual Desktop, we want to present our users their n
 
 For the fast pass, I have the script here:
 
-[Download the script from GitHub](https://github.com/JustinVerstijnen/JV-AzureVMSetLanguage)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-AzureVMSetLanguage">Download script from GitHub</a></p>
 
 ---
 

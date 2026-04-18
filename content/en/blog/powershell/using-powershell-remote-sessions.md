@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this guide i explain how to use PowerShell remote sessions, what they are and how to configure your systems to use this. Also some...
----
-PowerShell Remote Sessions can be a great way to administer your virtual machines, cluster-nodes or physical Windows-based devices. With a Powershell remote session you can execute powershell commands on a remote device.
-
-It works the best with servers in a specific management subnet. I do not recommend to administer client devices with Powershell because this can be a huge security risk.
-
+  In this guide I will explain how to use PowerShell remote sessions, what they are and how to configure your systems to use this. PowerShell Remote Sessions can be a great way to administer your virtual machines, cluster-nodes or physical Windows-based devices. With a Powershell remote session you can execute powershell commands on a remote device. It works the best with servers in a specific management subnet. I do not recommend to administer client devices with Powershell because this can be a huge security risk.
 ---
 
 ## Requirements

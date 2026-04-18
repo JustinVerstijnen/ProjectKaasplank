@@ -29,6 +29,8 @@ To start off with the fast pass, my script can be downloaded here from my Github
 
 [Download script from Github](https://github.com/JustinVerstijnen/JV-EntraIDGetAssignedRoles)
 
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-EntraIDGetAssignedRoles"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
+
 ---
 
 ## Using the Entra ID User role assignments script
@@ -41,8 +43,6 @@ When executed, it asks to login to a tenant. Here you have to login to the tenan
 
 {{% alert color="info" %}}
 When prompted that the Execution Policy is restricted, you can use this command for a one-time bypass (till the window closes):
-
-PowerShell
 
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process

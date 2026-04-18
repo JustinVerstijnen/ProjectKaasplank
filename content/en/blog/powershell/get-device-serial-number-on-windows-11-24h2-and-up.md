@@ -9,13 +9,14 @@ tags:
 description: >
   With Windows 24H2 and the deprecation of WMIC, a easy command to find your devices' serial number is gone. However, we can still look this up with Powershell.
 ---
-With Windows 24H2 and the deprecation of WMIC, a easy command to find your devices' serial number is gone. However, we can still look this up with Powershell.
 
-Use the following command:
+To get your device's serial number, use the following command in Windows PowerShell:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Get-WmiObject win32_bios | select SerialNumber
 {{< /card >}}
+
+Its as simple as that!
 
 {{< ads >}}
 

@@ -7,9 +7,10 @@ categories:
 tags:
   - Tools and Scripts
 description: >
-  Sometimes we need to have the original installed Windows Product Key just for documentation purposes. We simple can do this with...
+  Sometimes we need to have the original installed Windows Product Key just for documentation purposes. This post explains how to retrieve your activation key from the registry.
 ---
-Sometimes we need to have the original installed Windows Product Key just for documentation purposes. We simple can do this with one command in PowerShell:
+
+We simply can do this with one command in PowerShell:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform").BackupProductKeyDefault

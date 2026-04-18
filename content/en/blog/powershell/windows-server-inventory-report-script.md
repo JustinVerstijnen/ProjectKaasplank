@@ -23,7 +23,7 @@ An example of the output of the script.
 
 For the fast pass, my script can be downloaded here:
 
-[Download script from GitHub](https://github.com/JustinVerstijnen/JV-ServerInventoryReport/blob/main/JV-ServerInventoryReport.ps1)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ServerInventoryReport/blob/main/JV-ServerInventoryReport.ps1">Download script from GitHub</a></p>
 
 ---
 

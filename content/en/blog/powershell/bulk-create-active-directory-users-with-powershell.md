@@ -25,7 +25,7 @@ When it comes to creating users for Active Directory, especially in new implemen
 
 Here is the full script including CSV that creates the ad users:
 
-[Show PowerShell script on Github](https://github.com/JustinVerstijnen/BulkCreateADDSUser)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/BulkCreateADDSUser">Show PowerShell script on Github</a></p>
 
 ---
 

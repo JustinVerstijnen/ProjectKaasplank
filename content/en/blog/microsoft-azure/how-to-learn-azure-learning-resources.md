@@ -30,7 +30,6 @@ After this, there is a Microsoft Learn collection available which describes the 
 
 <p><a class="btn btn-primary" href="https://www.youtube.com/watch?v=_x1V2ny8FWM">Starting out (Video)</a>&nbsp;<a class="btn btn-primary" href="https://learn.microsoft.com/nl-nl/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts">Starting out (Text)</a></p>
 
-
 ---
 
 ## 2. Creating a free trial on Azure
@@ -62,9 +61,7 @@ John Savil: <https://www.youtube.com/watch?v=tQp1YkB2Tgs>
 
 John has a extra playlist for each concept where he will go deeper into the subject than in the cram. You can find that here: <https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3>
 
-- [AZ-900 Text course](https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus)
-- [AZ-900 Video course](https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3)
-- [AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs)
+<p><a class="btn btn-primary" href="https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus">AZ-900 Text course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3">AZ-900 Video course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/watch?v=tQp1YkB2Tgs">AZ-900 Study Cram</a></p>
 
 ---
 
@@ -78,10 +75,9 @@ Also, in the modules there are some interactive guides. These are visual but you
 
 <https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator>
 
-When wanting to have some great hands-on experience and inspiration for your Azure trial/test environment, there are some practice labs available based on the interactive guides to build the resources in your own environment. You can find [them under heading 8.](#github-labs)
+When wanting to have some great hands-on experience and inspiration for your Azure trial/test environment, there are some practice labs available based on the interactive guides to build the resources in your own environment. You can find <a href="#github-labs">them under heading 8.</a>
 
-- [AZ-104 Interactive labs](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator)
-- [AZ-104 Text course](https://learn.microsoft.com/nl-nl/training/paths/az-104-administrator-prerequisites/)
+<p><a class="btn btn-primary" href="https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator">AZ-104 Interactive labs</a>&nbsp;<a class="btn btn-primary" href="https://learn.microsoft.com/nl-nl/training/paths/az-104-administrator-prerequisites/">AZ-104 Text course</a></p>
 
 ---
 
@@ -93,7 +89,7 @@ The video can be found here:
 
 https://www.youtube.com/watch?v=0Knf9nub4-k
 
-- [AZ-104 Study cram](https://www.youtube.com/watch?v=0Knf9nub4-k)
+<p><a class="btn btn-primary" href="https://www.youtube.com/watch?v=0Knf9nub4-k">AZ-104 Study cram</a></p>
 
 ---
 
@@ -109,7 +105,7 @@ I have one note when using the practice exams for training. The actual exam is h
 - Drag and drop in order or terms to explaination
 - Hot Area: You get one or more pictures about a configuration and you have to spot an error, configuration, mistake etc.
 
-- [AZ-104 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/practice/assessment?assessment-type=practice&assessmentId=21&practice-assessment-type=certification)
+<p><a class="btn btn-primary" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/practice/assessment?assessment-type=practice&assessmentId=21&practice-assessment-type=certification">AZ-104 Practice Assessment</a></p>
 
 ---
 
@@ -140,7 +136,7 @@ However, it requires you to have an Azure subscription to click around and deplo
 2. Shutdown VMs when not using
 3. Pick cheap options, not "Premium" options
 
-- [AZ-104 Github Labs](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)
+<p><a class="btn btn-primary" href="https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/">AZ-104 Github Labs</a></p>
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-learn-azure-learning-resources-338/jv-media-338-f0a4094d9edb.png)
 
@@ -152,7 +148,7 @@ After doing everything on this page and knowing everything John explained in the
 
 Good luck!
 
-<https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification>
+<p><a class="btn btn-primary" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification">AZ-104 Certification</a></p>
 
 ---
 
@@ -167,7 +163,7 @@ After you have the AZ-104 certification, you can pursue multiple paths to furthe
 
 Also I really recommend doing these labs if you are pursuing a career in Azure Networking or networking in general:
 
-<https://github.com/Azure/Azure-Network-Security/blob/master/Azure%20Network%20Security%20-%20Workshop/README.md>
+<p><a class="btn btn-primary" href="https://github.com/Azure/Azure-Network-Security/blob/master/Azure%20Network%20Security%20-%20Workshop/README.md">Azure Network Security Workshop</a></p>
 
 These are specialized labs like heading 4 of this page but then for networking and securing incoming connections.
 
