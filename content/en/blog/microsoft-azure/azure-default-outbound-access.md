@@ -7,12 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  Starting on 30 September 2025, default outbound connectivity for Azure VMs will be retired. This means that after this date you have to...
----
-Starting on 30 September 2025, default outbound connectivity for Azure VMs will be retired. This means that after this date you have to configure a way for virtual machines to actually have connection to the internet. Otherwise, you will get an VM that runs but is only available through your internal network.
-
-In this post I will do a deep dive into this new developement and explain what is needed and what this means for your existing environment and how to transition to the new situation after this 30 September 2025 date.
-
+  Starting on 30 September 2025, default outbound connectivity for Azure VMs will be retired. This means that after this date you have to configure a way for virtual machines to actually have connection to the internet. Otherwise, you will get an VM that runs but is only available through your internal network. In this post I will do a deep dive into this new developement and explain what is needed and what this means for your existing environment and how to transition to the new situation after this 30 September 2025 date.
 ---
 
 ## What does this new requirement mean?

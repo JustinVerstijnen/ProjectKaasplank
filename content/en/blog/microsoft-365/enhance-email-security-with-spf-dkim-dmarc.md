@@ -8,9 +8,8 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  When it comes to basic email security, we have 3 techniques that can enhance our email security. SPF, DKIM and DMARC.
+  When it comes to basic email security, we have 3 techniques that can enhance our email security and delivery by some basic initial configuration. Those are called SPF, DKIM and DMARC. This means, configure and mostly never touch again.
 ---
-When it comes to basic email security, we have 3 techniques that can enhance our email security and delivery by some basic initial configuration. Those are called SPF, DKIM and DMARC. This means, configure and mostly never touch again.
 
 {{% alert color="info" %}}
 [Microsoft announced](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730) that starting from May 5, 2025: SPF, DKIM and DMARC will become mandatory for inbound email delivery. Not configuring all three can result in your emails not being delivered correctly.

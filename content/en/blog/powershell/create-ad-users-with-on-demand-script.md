@@ -19,7 +19,7 @@ I will explain how this script works on this page.
 
 For the fast pass, the script can be downloaded from my GitHub page:
 
-<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-CreateADUsersOnDemand">Download script from GitHub</a></p>
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-CreateADUsersOnDemand"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 
 ---
 

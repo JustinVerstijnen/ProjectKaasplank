@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  With the Azure Start/Stop solution we can save costs in Microsoft Azure and save some environmental impact. In this guide I will explain...
----
-With the Azure Start/Stop solution we can save costs in Microsoft Azure and save some environmental impact. In this guide I will explain how the solution works, how it can help your Azure solutions and how it must be deployed and configured.
-
+  With the Azure Start/Stop solution we can save costs in Microsoft Azure and save some environmental impact. In this guide I will explain how the solution works, how it can help your Azure solutions and how it must be deployed and configured.
 ---
 
 ## Requirements

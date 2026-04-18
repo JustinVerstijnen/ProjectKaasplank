@@ -23,7 +23,7 @@ Note: Think out very carefully how long the retention must be. Deleting files is
 
 The Powershell script for cleaning up files is on my GitHub page:
 
-<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/CleanFilesOnSchedule/blob/main/CleanFilesOnSchedule.ps1">Download PowerShell script</a></p>
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/CleanFilesOnSchedule/blob/main/CleanFilesOnSchedule.ps1"><i class="fa-brands fa-github"></i> Download PowerShell script</a></p>
 
 It starts with a parameter to define the amount of days you want to retain the files. It checks this at the last write time to the file.
 

@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  One day I came across an option in Microsoft 365 to disable the users' self service trials. You must have seen it happening in your ten...
+  One day I came across an option in Microsoft 365 to disable the users' self service trials. You must have seen it happening in your tenants, users with free licenses for Power Automate, Teams or Power BI. I will show you how to disable those and only let administrators buy and assign new licenses.
 ---
-One day I came across an option in Microsoft 365 to disable the users' self service trials. You must have seen it happening in your tenants, users with free licenses for Power Automate, Teams or Power BI. I will show you how to disable those and only let administrators buy and assign new licenses.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-b2e8595ef8fb.png)
 

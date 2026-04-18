@@ -8,12 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  Azure Bastion is a great tool in Azure to ensure your virtual machines are accessible in a fast, safe and easy way. This is cool if you...
----
-Azure Bastion is a great tool in Azure to ensure your virtual machines are accessible in a fast, safe and easy way. This is cool if you want to embrace Zero Trust into your servers management layer and so a secure way to access your servers in Azure.
-
-In this guide I will explain more about Azure Bastion and I hope I can give you a good overview of the service, its features, pricing and some practice information.
-
+  Azure Bastion is a great tool in Azure to ensure your virtual machines are accessible in a fast, safe and easy way. This is cool if you want to embrace Zero Trust into your servers management layer and so a secure way to access your servers in Azure. In this guide I will explain more about Azure Bastion and I hope I can give you a good overview of the service, its features, pricing and some practice information.
 ---
 
 ## How does Azure Bastion work?

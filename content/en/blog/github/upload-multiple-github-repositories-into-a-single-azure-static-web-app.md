@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this guide, I will describe how I host multiple Github applications/tools into one single Static Web App environment in Azure. Ths...
+  In the past few weeks, I have been busy on scaling up my tools and the backend hosting of the tools. For the last year, I used multiple Static Web Apps on Azure for this, but this took a lot of time administering and creating them. I thought about a better and more scalable manner of hosting tools, minimizing the amount of hosts needed, uniforming URLs and shortcodes with Azure Front Door (guide coming up) andlinking multiple GitHub repositories into one for central management.
 ---
-In the past few weeks, I have been busy on scaling up my tools and the backend hosting of the tools. For the last year, I used multiple Static Web Apps on Azure for this, but this took a lot of time administering and creating them. I thought about a better and more scalable manner of hosting tools, minimizing the amount of hosts needed, uniforming URLs and shortcodes with Azure Front Door (guide coming up) andlinking multiple GitHub repositories into one for central management.
 
 In this guide, I will describe how I now host multiple Github applications/tools into one single Static Web App environment in Azure. This mostly captures the simple, single task, tools which can be found on my website:
 

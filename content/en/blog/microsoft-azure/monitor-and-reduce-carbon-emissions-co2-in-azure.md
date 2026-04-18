@@ -7,12 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  In Microsoft Azure, we have some options to monitor and reduce your organizations Carbon emissions (CO2) from services hosted in the cloud.
----
-In Microsoft Azure, we have some options to monitor and reduce your organizations Carbon emissions (CO2) from services hosted in the cloud. When hosting servers on-premises, they need power, cooling and networking and those are also needed in the cloud. By migrating servers to the cloud doesn't mean that those emissions do not count. Those emissions are generated on an other location.
-
-In this guide, I will show some features of Microsoft Azure regarding monitoring and reducing carbon emissions.
-
+  In Microsoft Azure, we have some options to monitor and reduce your organizations Carbon emissions (CO2) from services hosted in the cloud. When hosting servers on-premises, they need power, cooling and networking and those are also needed in the cloud. By migrating servers to the cloud doesn't mean that those emissions do not count. Those emissions are generated on an other location. In this guide, I will show some features of Microsoft Azure regarding monitoring and reducing carbon emissions.
 ---
 
 ## Carbon Optimization dashboard

@@ -7,9 +7,8 @@ categories:
 tags:
   - Tools and Scripts
 description: >
-  When using Windows 11 Multi Session images on Azure for Azure Virtual Desktop, Microsoft has disabled some features and changed...
+  When using Windows 11 Multi Session images on Azure for Azure Virtual Desktop, Microsoft has disabled some features and changed the behaviour to optimize it for using with multiple users. One of the things that has been "lazy loading" is Windows Search. The first time after logging in it will be much slower than normal. The 2nd, 3rd and 4th time, it will be much faster.
 ---
-When using Windows 11 Multi Session images on Azure for Azure Virtual Desktop, Microsoft has disabled some features and changed the behaviour to optimize it for using with multiple users. One of the things that has been "lazy loading" is Windows Search. The first time after logging in it will be much slower than normal. The 2nd, 3rd and 4th time, it will be much faster.
 
 [The video](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-445bd67fa9ae.mp4)
 
@@ -23,7 +22,7 @@ We can solve this issue by running a simple script on startup that opens the sta
 
 I have a simple script that does this here:
 
-[Download script from GitHub](https://github.com/JustinVerstijnen/JV-AVDWindowsSearchOnLogin)
+<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-AVDWindowsSearchOnLogin"><i class="fa-brands fa-github"></i> Download script from GitHub</a>
 
 ---
 

@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  By default it is not possible to create multiple shared mailboxes with the same name/alias. In this guide i will explain how to reach...
----
-When using Microsoft 365 and using multiple custom domains, sometimes you are unable to create a shared mailbox that uses the same alias as an existing mailbox.
-
-In this guide I will explain this problem and show how to still get the job done.
-
+  When using Microsoft 365 and using multiple custom domains, sometimes you are unable to create a shared mailbox that uses the same alias as an existing mailbox. In this guide I will explain this problem and show how to still get the job done.
 ---
 
 ## The problem of multiple shared mailboxes with same alias

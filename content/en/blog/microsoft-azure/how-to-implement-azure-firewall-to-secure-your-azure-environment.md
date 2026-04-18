@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this article, we are going to implement Azure Firewall in Azure. We are going to do this by building and architecting a new network and creating...
----
-In this article, we are going to implement Azure Firewall in Azure. We are going to do this by building and architecting a new network and creating the basic rules to make everything work.
-
+  In this article, we are going to implement Azure Firewall in Azure. We are going to do this by building and architecting a new network and creating the basic rules to make everything work.
 ---
 
 ## Requirements

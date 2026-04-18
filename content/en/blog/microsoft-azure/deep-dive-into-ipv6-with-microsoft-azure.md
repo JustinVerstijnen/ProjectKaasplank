@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In Microsoft Azure, we can build servers and networks that use IPv6 for their connectivity. This is especially great for your webserv...
----
-In Microsoft Azure, we can build servers and networks that use IPv6 for their connectivity. This is especially great for your webservers, where you want the highest level of availability for your users. This is achieved the best using both IPv4 and IPv6 protocols.
-
-In this guide we do a deep dive into IPv6 in Microsoft Azure and i will show some practical examples of use of IPv6 in Azure.
-
+  In Microsoft Azure, we can build servers and networks that use IPv6 for their connectivity. This is especially great for your webservers, where you want the highest level of availability for your users. This is achieved the best using both IPv4 and IPv6 protocols. In this guide we do a deep dive into IPv6 in Microsoft Azure and i will show some practical examples of use of IPv6 in Azure.
 ---
 
 ## Requirements

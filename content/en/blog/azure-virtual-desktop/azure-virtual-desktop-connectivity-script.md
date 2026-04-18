@@ -8,11 +8,8 @@ tags:
   - AI Generated Content
   - Tools and Scripts
 description: >
-  Sometimes, we need to check some basic connectivity from end user devices to a service like Azure Virtual Desktop.
+  Sometimes, we need to check some basic connectivity from end user devices to a service like Azure Virtual Desktop. Most networks have a custom firewall equipped where we must allow certain traffic to flow to the internet. Previously there was a tool from Microsoft available, the Azure Virtual Desktop experience estimator, but they have discontinued that. This tested the Round Trip Time (RTT) to a specific Azure region and is a calculation of what the end user will get.
 ---
-Sometimes, we need to check some basic connectivity from end user devices to a service like Azure Virtual Desktop. Most networks have a custom firewall equipped where we must allow certain traffic to flow to the internet.
-
-Previously there was a tool from Microsoft available, the Azure Virtual Desktop experience estimator, but they have discontinued that. This tested the Round Trip Time (RTT) to a specific Azure region and is a calculation of what the end user will get.
 
 I created a script to test the connectivity, if it is allowed through Firewall and also test the RTT to the Azure Virtual Desktop service. The script then gives the following output:
 

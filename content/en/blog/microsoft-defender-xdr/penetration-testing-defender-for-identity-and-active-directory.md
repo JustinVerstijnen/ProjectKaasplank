@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this guide, i will show how to do some popular Active Directory attacking tests and show how Defender for Identity (MDI) will alert...
----
-In this guide, i will show how to do some popular Active Directory attacking tests and show how Defender for Identity (MDI) will alert you about the attacks.
-
-Not everyting detected by Defender for Identity will be directly classified as potential attack. When implementing the solution, it will learn during the first 30 days what normal behaviour in the network is.
-
+  In this guide, I will show how to do some popular Active Directory attacking tests and show how Defender for Identity (MDI) will alert you about the attacks. Not everyting detected by Defender for Identity will be directly classified as potential attack. When implementing the solution, it will learn during the first 30 days what normal behaviour in the network is.
 ---
 
 ## Requirements
@@ -27,7 +22,7 @@ Not everyting detected by Defender for Identity will be directly classified as p
 
 ## Starting out
 
-So i want to mention, that most of the attacks to Active Directory can be easily prevented if everybody locks their computer everytime they walk away from it and also use good enough authentication methods. Some other attacks cannot always be prevented but we can do the most of it detecting them and acting in a greatly manner.
+So I want to mention, that most of the attacks to Active Directory can be easily prevented if everybody locks their computer everytime they walk away from it and also use good enough authentication methods. Some other attacks cannot always be prevented but we can do the most of it detecting them and acting in a greatly manner.
 
 So let's imagine, we are walking through a generic office building and searching for computers that are unmonitored by people and the Windows Desktop is on the screen aside from the email and documents the user is working on. An attacker, in our case we, are going to that computer and run some commands to exactly know how the network is built.
 

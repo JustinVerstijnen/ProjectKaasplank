@@ -7,8 +7,9 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Azure Update Manager is a relatively new tool from Microsoft and is developed to automate, installing and documenting...
+  Azure Update Manager is a tool from Microsoft and is developed to automate, installing and documenting Windows updates or updates to Linux server on Azure. This all in a single pane of glass and without installing any additional software.
 ---
+
 Azure Update Manager is a tool from Microsoft and is developed to automate, installing and documenting Windows updates or updates to Linux server on Azure. This all in a single pane of glass and without installing any additional software.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-da1adbcab709.png)

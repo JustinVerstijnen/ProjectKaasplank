@@ -8,10 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  Microsoft Azure has a service called the 'Static Web Apps" (SWA) which are simple but yet effective webpages. They can host HTML...
----
-Microsoft Azure has a service called the 'Static Web Apps" (SWA) which are simple but yet effective webpages. They can host HTML pages with included CSS and can link with Azure Functions for doing more advanced tasks for you. In this guide we will explore the possibilities of Static Web Apps in Azure.
-
+  Microsoft Azure has a service called the 'Static Web Apps" (SWA) which are simple but yet effective webpages. They can host HTML pages with included CSS and can link with Azure Functions for doing more advanced tasks for you. In this guide we will explore the possibilities of Static Web Apps in Azure.
 ---
 
 ## Requirements

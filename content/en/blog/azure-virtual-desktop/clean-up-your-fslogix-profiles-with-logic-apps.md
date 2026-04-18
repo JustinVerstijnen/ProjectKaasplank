@@ -8,11 +8,8 @@ tags:
   - Step by Step guides
   - Tools and Scripts
 description: >
-  Today I have a Logic App for you to clean up orphaned FSLogix profiles with Logic Apps. As you know, storage in Azure costs money and we...
+  Today I have a Logic App for you to clean up orphaned FSLogix profiles with Logic Apps. As you know, storage in Azure costs money and we want to store as minimum as possible. But in most companies, old and orphaned FSLogix profiles will be forgotten to clean up so we have automate this. In this guide I will show you how you can clean up FSLogix profiles from Azure Files by looking up the last modified date, and deleting the files after they exceeded the number of days.
 ---
-Today I have a Logic App for you to clean up orphaned FSLogix profiles with Logic Apps. As you know, storage in Azure costs money and we want to store as minimum as possible. But in most companies, old and orphaned FSLogix profiles will be forgotten to clean up so we have automate this.
-
-In this guide I will show you how you can clean up FSLogix profiles from Azure Files by looking up the last modified date, and deleting the files after they exceeded the number of days.
 
 I will give you a step-by-step guide to build this Logic App yourself.
 
@@ -37,7 +34,7 @@ Also: Recover Services storage is much cheaper than live Storage Account storage
 
 For the fast pass, you can download the Logic App JSON code here:
 
-[Download from Github](https://github.com/JustinVerstijnen/JV-LA-CleanupFSLogixProfilesAfterDays/blob/main/LogicApp.json)
+<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-LA-CleanupFSLogixProfilesAfterDays/blob/main/LogicApp.json"><i class="fa-brands fa-github"></i> Download from GitHub</a>
 
 Then you can use the code to configure it completely and only change the connections.
 

@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  As we want to secure our Break Glass Accounts as good as possible, we cloud want to get alerts when break glass admins are used to login.
----
-As we want to secure our Break Glass Accounts as good as possible, we cloud want to get alerts when break glass admins are used to login. Maybe they are used on a daily basis, or are being attacked. When we configure notifications, we instantly know when the accounts are being used and can check why a login has taken place.
-
-In this guide we will configure this without Microsoft Sentinel. If you already have a Sentinel workspace, the recommended action is to configure it there and to configure a automation rule/playbook.
-
+  As we want to secure our Break Glass Accounts as good as possible, we cloud want to get alerts when break glass admins are used to login. Maybe they are used on a daily basis, or are being attacked. When we configure notifications, we instantly know when the accounts are being used and can check why a login has taken place. In this guide we will configure this without Microsoft Sentinel. If you already have a Sentinel workspace, the recommended action is to configure it there and to configure a automation rule/playbook.
 ---
 
 ## The alert solution described

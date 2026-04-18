@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Most companies who use Microsoft Azure in a hybrid setup have a Site-to-Site VPN gateway between the network in Azure and on-premises. This...
----
-Most companies who use Microsoft Azure in a hybrid setup have a Site-to-Site VPN gateway between the network in Azure and on-premises. This connection becomes mission critical for this company as a disruption mostly means a disruption in work or processes.
-
-But sometimes, Microsoft has to perform updates to these gateways to keep them up-to-date and secure. We can now define when this will be exactly, so we can configure the gateways to update only outside of business hours. In this guide I will explain how to configure this.
-
+  Most companies who use Microsoft Azure in a hybrid setup have a Site-to-Site VPN gateway between the network in Azure and on-premises. This connection becomes mission critical for this company as a disruption mostly means a disruption in work or processes. But sometimes, Microsoft has to perform updates to these gateways to keep them up-to-date and secure. We can now define when this will be exactly, so we can configure the gateways to update only outside of business hours. In this guide I will explain how to configure this.
 ---
 
 ## Why configure a maintenance configuration?

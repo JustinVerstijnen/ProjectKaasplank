@@ -7,12 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  We now have a new feature in Microsoft Azure; Service Groups. In this guide, we will dive a bit deeper into Service Groups and what we can...
----
-A new feature in Microsoft Azure rised up on the Microsoft pages; Service Groups. In this guide, we will dive a bit deeper into Service Groups and what we can do with them in practice.
-
-At the time of writing, this feature is in public preview and anyone can use it now.
-
+  A new feature in Microsoft Azure rised up on the Microsoft pages; Service Groups. In this guide, we will dive a bit deeper into Service Groups and what we can do with them in practice. At the time of writing, this feature is in public preview and anyone can use it now.
 ---
 
 ## What are these new Service Groups in Azure?

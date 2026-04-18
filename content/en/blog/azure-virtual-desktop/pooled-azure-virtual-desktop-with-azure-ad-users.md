@@ -7,7 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Since the beginning of Azure Virtual Desktop, it is mandatory to run it with an Active Directory. This because when using pooled sess...
+  Since the beginning of Azure Virtual Desktop, it is mandatory to run it with an Active Directory. This because of the FSLogix dependency relying on SMB and Kerberos authentication, something which is not available in Entra ID at this time.
 ---
 {{% alert color="info" %}}
 This deployment option is superseded by the more easy and secure Entra Kerberos option, check out the updated deployment guide here: <https://justinverstijnen.nl/azure-virtual-desktop-fslogix-and-native-kerberos-authentication/>

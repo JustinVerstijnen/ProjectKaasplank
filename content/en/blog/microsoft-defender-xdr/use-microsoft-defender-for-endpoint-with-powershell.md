@@ -7,13 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft Defender for Endpoint is a built-in antivirus and security solution that helps protect your Windows devices. Because we want as...
-draft: true
----
-Microsoft Defender for Endpoint is a built-in antivirus and security solution that helps protect your Windows devices. Because we want as less overhead as possible at certain moments, I though of using Defender with PowerShell. Using PowerShell, you can manage Defender by checking its status, running Full and Quick scans, updating protections, and handling detected threats.
-
-In this guide, I will explain some PowerShell commands with simple steps to help you control Defender effectively from PowerShell, remotely or even to use in your scripts.
-
+  Microsoft Defender for Endpoint is a built-in antivirus and security solution that helps protect your Windows devices. Because we want as less overhead as possible at certain moments, I though of using Defender with PowerShell. Using PowerShell, you can manage Defender by checking its status, running Full and Quick scans, updating protections, and handling detected threats. In this guide, I will explain some PowerShell commands with simple steps to help you control Defender effectively from PowerShell, remotely or even to use in your scripts.
 ---
 
 ## Requirements

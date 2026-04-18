@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  On this page, I will describe how I implemented my current Microsoft Secure Score on the Devices pillar. This means altering mostly the...
----
-On this page, I will describe how I implemented my current Microsoft Secure Score on the Devices pillar. This means altering mostly the options of Microsoft Defender and Intune.
-
+  On this page, I will describe how I implemented my current Microsoft Secure Score on the Devices pillar. This means altering mostly the options of Microsoft Defender and Intune.
 ---
 
 ## Before we begin
@@ -304,7 +301,7 @@ This can be found under the Drive Encryption settings:
 
 To be generous and if you don't want to click through the Intune portal, I have my Intune configuration policy here to download:
 
-[Download Configuration policy from GitHub](https://github.com/JustinVerstijnen/JV-SecureScore-Devices/blob/main/JV-SecureScore-Devices_2026-02-08T14_31_51.084Z.json)
+<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-SecureScore-Devices/blob/main/JV-SecureScore-Devices_2026-02-08T14_31_51.084Z.json"><i class="fa-brands fa-github"></i> Download Configuration policy from GitHub</a>
 
 {{< ads >}}
 

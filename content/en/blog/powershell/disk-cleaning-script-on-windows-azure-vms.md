@@ -19,7 +19,7 @@ To help reducing this chance, I have created a PowerShell script that cleans up 
 
 For the fast pass, my script can be downloaded here:
 
-<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ServerPeriodicDiskCleanup">Download script from GitHub</a></p>
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ServerPeriodicDiskCleanup"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 
 ---
 

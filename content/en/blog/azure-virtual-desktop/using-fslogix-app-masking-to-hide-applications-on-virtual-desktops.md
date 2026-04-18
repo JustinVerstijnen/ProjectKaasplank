@@ -8,12 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  In this blog post I will explain and demonstrate the pro's and features of using FSLogix App Masking for Azure Virtual Desktop. This is a...
----
-In this blog post I will explain and demonstrate the pro's and features of using FSLogix App Masking for Azure Virtual Desktop. This is a feature of FSLogix where we can hide certain applications and other components from our users while still having to maintain a single golden image.
-
-In this guide I will give some extra explaination about this feature, how it works, how to implement it in a production environment and how to create those rules based on the logged on user. I hope to give a "one-post-fits-all" experience.
-
+  In this blog post I will explain and demonstrate the pro's and features of using FSLogix App Masking for Azure Virtual Desktop. This is a feature of FSLogix where we can hide certain applications and other components from our users while still having to maintain a single golden image. In this guide I will give some extra explaination about this feature, how it works, how to implement it in a production environment and how to create those rules based on the logged on user. I hope to give a "one-post-fits-all" experience.
 ---
 
 ## Requirements

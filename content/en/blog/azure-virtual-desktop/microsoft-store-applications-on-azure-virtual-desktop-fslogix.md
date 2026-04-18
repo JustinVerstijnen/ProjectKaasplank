@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  By default, Microsoft Store applications are not supported when using FSLogix. The root cause is that Windows stores some metadata that...
----
-By default, Microsoft Store applications are not supported when using FSLogix. The root cause is that Windows stores some metadata that is not roamed in the profile folder and cleared at every new logon. You will encounter this behaviour in every environment where you use FSLogix.
-
-Now a long time I told our end users that there unfortunately is no solution possible to download apps and make them persistent across Azure Virtual Desktop sessions but someday I found a workaround to this problem. I will explain this at this page.
-
+  By default, Microsoft Store applications are not supported when using FSLogix. The root cause is that Windows stores some metadata that is not roamed in the profile folder and cleared at every new logon. You will encounter this behaviour in every environment where you use FSLogix. Now a long time I told our end users that there unfortunately is no solution possible to download apps and make them persistent across Azure Virtual Desktop sessions but someday I found a workaround to this problem. I will explain this at this page.
 ---
 
 ## Requirements

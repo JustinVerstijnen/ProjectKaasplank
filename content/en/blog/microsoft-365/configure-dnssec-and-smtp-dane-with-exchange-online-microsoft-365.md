@@ -8,10 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  This guide explains how to configure the new announced DNSSEC and SMTP DANE security options in Exchange Online.
----
-Recently, Microsoft announced the general availability of 2 new security protocol when using Microsoft 365 and the service Exchange Online in particular. SMTP DANE and DNSSEC. What are these protocols, what is the added value and how can they help you secure your organization? Lets find out.
-
+  Recently, Microsoft announced the general availability of 2 new security protocol when using Microsoft 365 and the service Exchange Online in particular. SMTP DANE and DNSSEC. What are these protocols, what is the added value and how can they help you secure your organization? Lets find out.
 ---
 
 ## Domain Name System Security Extensions (DNSSEC)

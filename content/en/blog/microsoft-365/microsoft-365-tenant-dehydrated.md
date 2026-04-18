@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft will sometimes "pause" tenants to reduce infrastructure costs. You will then get an error which contains "tenant dehydrated".
----
-Microsoft will sometimes "pause" tenants to reduce infrastructure costs. You will then get an error which contains "tenant dehydrated". What this means and how to solve it, I will explain in this post.
-
+  Microsoft will sometimes "pause" tenants with minor activity to reduce infrastructure costs. You will then get an error which contains "tenant dehydrated". What this means and how to solve it, I will explain in this post.
 ---
 
 ## What is "Tenant dehydrated"?

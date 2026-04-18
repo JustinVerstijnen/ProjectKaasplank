@@ -7,7 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft released that the Kerberos protocol will be hardened by an update coming in April to June 2026 to increase the security. This was...
+  Microsoft released that the Kerberos protocol will be hardened by an update coming in April to June 2026 to increase the security.
 ---
 Microsoft released that the Kerberos protocol will be hardened by an update coming in April to June 2026 to increase security. This was released by Microsoft here:
 

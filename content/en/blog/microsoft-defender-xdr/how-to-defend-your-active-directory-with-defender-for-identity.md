@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft Defender for Identity (MDI for short) is a comprehensive security and monitoring tool which is part of the Microsoft XDR suite...
----
-When it comes to security, it is great to secure every perimeter. In the Zero Trust model, it has been stated that we have to verify everything, everytime, everywhere. So why consider not monitoring and defending your traditional Active Directory that is still in use because of some legacy applications?
-
+  When it comes to security, it is great to secure every perimeter. In the Zero Trust model, it has been stated that we have to verify everything, everytime, everywhere. So why consider not monitoring and defending your traditional Active Directory that is still in use because of some legacy applications?
 ---
 
 ## Requirements

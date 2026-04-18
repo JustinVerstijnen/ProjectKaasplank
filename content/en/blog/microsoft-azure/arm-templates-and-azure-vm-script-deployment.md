@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In Azure we can deploy ARM templates (+ script afterwards) to deploy resources on a big scale. This is like an easier version Terraform...
+  In Azure we can deploy ARM templates (+ script afterwards) to deploy resources on a big scale. This is like an easier version Terraform and Bicep, but without the great need to test every change and to learn a whole new language and convention. Also with less features indeed.
 ---
-In Azure we can deploy ARM templates (+ script afterwards) to deploy resources on a big scale. This is like an easier version Terraform and Bicep, but without the great need to test every change and to learn a whole new language and convention. Also with less features indeed.
 
 In this post I will show some examples of deploying with ARM templates and also will show you how to deploy a PowerShell script to run directly after the deployment of an virtual machine. This further helps automating your tasks.
 

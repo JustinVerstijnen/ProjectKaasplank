@@ -8,9 +8,8 @@ tags:
   - Step by Step guides
   - Tools and Scripts
 description: >
-  In this guide, I will show you how to delete the printers using a PowerShell script. This is compatible with Microsoft Intune and Group Po...
+  In this guide, I will show you how to delete the printers using a PowerShell script. This is compatible with Microsoft Intune and Group Policy and can be used on physical devices, Azure Virtual Desktop and Windows 365.
 ---
-In this guide, I will show you how to delete the printers using a PowerShell script. This is compatible with Microsoft Intune and Group Policy and can be used on physical devices, Azure Virtual Desktop and Windows 365.
 
 By default in Windows 11 with Microsoft 365 apps installed, we have two software printers installed. These are:
 

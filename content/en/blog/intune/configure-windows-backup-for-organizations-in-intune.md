@@ -7,14 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft just released a new feature, Windows Backup for Organizations, which is a revolution on top of the older Enterprise State Roaming.
----
-Microsoft just released a new feature, Windows Backup for Organizations, which is a revolution on top of the older Enterprise State Roaming.
-
-Windows Backup for Organizations will help you and your users by saving different components of your Windows installation to make a the proces of a new installation or computer much easier. Especially when used with Windows Autopilot, this is a great addition to the whole Windows/Intune ecosystem.
-
-In this guide I will dive into how it works, what is backed up and excluded and how to configure and use it.
-
+  Microsoft just released a new feature, Windows Backup for Organizations, which is a revolution on top of the older Enterprise State Roaming. Windows Backup for Organizations will help you and your users by saving different components of your Windows installation to make a the proces of a new installation or computer much easier. Especially when used with Windows Autopilot, this is a great addition to the whole Windows/Intune ecosystem. In this guide I will dive into how it works, what is backed up and excluded and how to configure and use it.
 ---
 
 ## Requirements

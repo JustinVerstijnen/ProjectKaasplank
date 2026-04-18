@@ -7,15 +7,9 @@ categories:
 tags:
   - Concepts
 description: >
-  In our environment, we will do everything to secure it as much as possible. We give users only the permissions they need and only at...
+  In our environment, we will do everything to secure it as much as possible. We give users only the permissions they need and only at given times, we enable Conditional Access to limit access to our data as much as possible. But we also create Break Glass administrator accounts as our last resort, a method to login if everything else doesn't work. Security wise, this sounds against all rules but we prefer a account to login in emergency situations over a complete tenant lockout. To help you secure break glass administrator accounts, I have 10 generic industry-known guidelines for these accounts which you can implement relatively easy. These help you on top of all other security mechanisms (CA/MFA/PIM/Least privilege) securing, decreasing the chance of lockouts and decrease the value for possible attackers.
 ---
-In our environment, we will do everything to secure it as much as possible. We give users only the permissions they need and only at given times, we enable Conditional Access to limit access to our data as much as possible.
 
-But we also create Break Glass administrator accounts as our last resort, a method to login if everything else doesn't work. Security wise, this sounds against all rules but we prefer a account to login in emergency situations over a complete tenant lockout.
-
-To help you secure break glass administrator accounts, I have 10 generic industry-known advices for these accounts which you can implement relatively easy. These help you on top of all other security mechanisms (CA/MFA/PIM/Least privilege) securing, decreasing the chance of lockouts and decrease the value for possible attackers.
-
----
 
 ## List of recommendations
 
@@ -107,7 +101,7 @@ You can also register FIDO2 keys for break glass administrators. These are a har
 
 As we don't want break glass administrator accounts to be used on a daily basis and being actively attacked, you might want to setup alerts for people logging in to the account.
 
-To setup notifications like phone calls, I have this guide for you: [https://justinverstijnen.nl/get-notifications-when-entra-id-break-glass-admins-are-used](https://justinverstijnen.nl/?p=4337)
+To setup notifications like phone calls, I have this guide for you: [https://justinverstijnen.nl/get-notifications-when-entra-id-break-glass-admins-are-used](https://justinverstijnen.nl/get-notifications-when-entra-id-break-glass-admins-are-used)
 
 ---
 

@@ -7,10 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  We hear it a lot these days and it's a very common network addressing protocol. On this page I will describe the basics and benefits of IPv6.
----
-IPv6. We hear it a lot these days and it's a very common network addressing protocol and the successor of the older IPv4, but will not necessarily take over IPv4 100% (yet). On this page I will describe the basics, some tips and the benefits.
-
+  IPv6. We hear it a lot these days and it's a very common network addressing protocol and the successor of the older IPv4, but will not necessarily take over IPv4 100% (yet). On this page I will describe the basics, some tips and the benefits.
 ---
 
 ## Requirements

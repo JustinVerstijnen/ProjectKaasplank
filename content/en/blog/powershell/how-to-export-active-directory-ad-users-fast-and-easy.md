@@ -17,7 +17,7 @@ At this page I will show you how to export all your AD users fast and easy.
 
 For the fast pass, I uploaded the script to my Github page:
 
-<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ExportADUsers">Download script from GitHub</a></p>
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-ExportADUsers"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 
 ---
 

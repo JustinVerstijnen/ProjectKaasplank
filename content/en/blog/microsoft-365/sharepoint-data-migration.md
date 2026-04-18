@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  This page helps you to migrate to SharePoint or OneDrive with the SharePoint Migration Tool (SPMT). This tool helps automating the...
+  When still managing on-premises environments, but shifting your focus to the cloud you sometimes need to do a migration. This page helps you to migrate to SharePoint or Onedrive according to your needs.
 ---
-When still managing on-premises environments, but shifting your focus to the cloud you sometimes need to do a migration. This page helps you to migrate to SharePoint or Onedrive according to your needs.
 
 At the moment, SharePoint is a better option to store your files because it has the following benefits over a traditional SMB share:
 

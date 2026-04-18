@@ -7,12 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  At this page, i will explain you how basic Network security works in Azure by using only Network Security Groups (NSG) and ASG.
----
-When designing, managing and securing a network in Microsoft Azure we have lots of options to do this. We can leverage third-party appliances like Fortinet, Palo Alto, PFSense or Sophos XG Firewall but we can also use the somewhat limited built-in options; Network Security Groups (NSG for short) and Application Security Groups (ASG).
-
-In this guide I will explain how Network Security Groups (NSG) and Application Security Groups (ASG) can be used to secure your environment.
-
+  When designing, managing and securing a network in Microsoft Azure we have lots of options to do this. We can leverage third-party appliances like Fortinet, Palo Alto, PFSense or Sophos XG Firewall but we can also use the somewhat limited built-in options; Network Security Groups (NSG for short) and Application Security Groups (ASG). In this guide I will explain how Network Security Groups (NSG) and Application Security Groups (ASG) can be used to secure your environment.
 ---
 
 ## What does an Network Security Group (NSG) do?

@@ -7,13 +7,14 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Sometimes a company wants to receive all email, even when addresses don't really exist in Exchange. Now we call this a Catch all mailbox...
+  Sometimes a company wants to receive all email, even when addresses don't really exist in Exchange. Now we call this a Catch all mailbox, where all inbound email is being catched that is not pointed to a known recipient. Think of a sort of *@domain.com. In this guide I will explain how to configure this in Exchange Online and how to maintain this by limiting our administrative effort. 
 ---
-Sometimes a company wants to receive all email, even when addresses don't really exist in Exchange. Now we call this a Catch all mailbox, where all inbound email is being catched that is not pointed to a known recipient. Think of a sort of \*@domain.com.
 
-In this guide I will explain how to configure this in Exchange Online and how to maintain this by limiting our administrative effort. I also created a full customizable PowerShell script for this task which you can find here:
+I also created a full customizable PowerShell script for this task which you can find here:
 
-[Powershell script](#script)
+<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/M365CatchAllScript"><i class="fa-brands fa-github"></i> Download script from GitHub</a>
+
+This way you can skip the guide for a faster solution. Otherwise, follow the steps below to do everything by hand and get a better understanding of the relevant steps needed.
 
 ---
 
@@ -170,7 +171,7 @@ $catchallalias = (Get-EXOMailbox -Identity $catchalladdress).Alias
 $flowruletitle = "JV-NL-Catchall"
 $flowruledesc = "Your rule description"
 
-# Create the rule itself with given parameters
+### Create the rule itself with given parameters
 New-TransportRule -FromScope 'NotInOrganization' -RedirectMessageTo '$doelalias' -ExceptIfSentToMemberOf $distributiongroup -Name 'AllMailboxes' -StopRuleProcessing:$false -Mode 'Enforce' -Comments $flowruledesc -RuleErrorAction 'Ignore' -SenderAddressLocation 'Header'
 {{< /card >}}
 
@@ -216,14 +217,6 @@ And it did!
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-d94a8d4b8796.png)
 
 Now you should test normal email flow too, and ensure not all email is sent to your catch all mailbox. If this works, then the solution is working 100%.
-
----
-
-## Complete PowerShell script
-
-To minimize errors for your configuration, I created a PowerShell script to automate this setup. You can view and download the script here:
-
-[Powershell script](https://github.com/JustinVerstijnen/M365CatchAllScript/blob/main/M365CatchAllScript.ps1)
 
 ---
 

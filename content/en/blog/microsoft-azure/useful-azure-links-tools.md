@@ -1,19 +1,13 @@
 ---
 title: "Useful Azure links/tools"
-date: 2026-05-07
+date: 2026-05-14
 slug: "useful-azure-links-tools"
 categories:
   - Microsoft Azure
 tags:
   - Tools and Scripts
 description: >
-  Working with Azure and related services is easier when you use the right tools. Alongside the Azure Portal its highly recommended to make...
-draft: true
----
-Working with Azure and related services is easier when you use the right tools. Alongside the Azure Portal its highly recommended to make use of various other tools, which we can use for topics like cost management, architecture, designing, documentation and monitoring.
-
-In this guide, I will explain 10 tools I use regularly and we can use with Azure and its related services.
-
+  Working with Azure and related services is easier when you use the right tools. Alongside the Azure Portal its highly recommended to make use of various other tools, which we can use for topics like cost management, architecture, designing, documentation and monitoring. In this guide, I will explain 10 tools I use regularly and we can use with Azure and its related services.
 ---
 
 ## Introduction to page and tools

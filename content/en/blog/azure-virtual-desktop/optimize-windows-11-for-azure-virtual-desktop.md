@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  When using Windows 11 on Azure Virtual Desktop (AVD), without the right optimization, the experience can be a little lagg..
----
-When using Windows 11 on Azure Virtual Desktop (AVD), without the right optimization, the experience can be a little laggy, stuttery and slow. Especially when you came from Windows 10 with the same settings. You definitely want to optimize some settings.
-
-After that we will look into the official Virtual Desktop Optimization Toolkit (VDOT).
-
+  When using Windows 11 on Azure Virtual Desktop (AVD), without the right optimization, the experience can be a little laggy, stuttery and slow. Especially when you came from Windows 10 with the same settings. You definitely want to optimize some settings. After that we will look into the official Virtual Desktop Optimization Toolkit (VDOT).
 ---
 
 ## Introduction to the Group Policy template

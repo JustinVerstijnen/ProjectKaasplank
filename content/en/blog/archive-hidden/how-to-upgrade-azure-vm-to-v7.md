@@ -7,12 +7,10 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  As we now have V7 machines in Microsoft Azure with a new boot controller, we need to upgrade our VMs with some more administrative...
+  As we now have V7 machines in Microsoft Azure with a new boot controller, we need to upgrade our VMs with some more administrative effort. We cannot upgrade V1 to V5 machines directly to V6 or V7 because of this boot controller change. On this page, I will explain how to upgrade your Virtual Machine from V5 to V7 using manual actions, to better understand the steps needed to perform this upgrade.
 draft: true
 ---
-As we now have V7 machines in Microsoft Azure with a new boot controller, we need to upgrade our VMs with some more administrative effort. We cannot upgrade V1 to V5 machines directly to V6 or V7 because of this boot controller change.
 
-On this page, I will explain how to upgrade your Virtual Machine from V5 to V7 using manual actions, to better understand the steps needed to perform this upgrade.
 
 As I already did some research on this topic with Azure Virtual Desktop, I also did some benchmarks, where V7 will have a CPU power gain of around 50% opposing to V5: <https://justinverstijnen.nl/azure-virtual-desktop-v6-v7-vms-imaging/>
 

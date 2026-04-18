@@ -7,11 +7,9 @@ categories:
 tags:
   - Concepts
 description: >
-  Azure Firewall is a Firewall which can be implemented in your Azure network. It acts as a Layer 3, 4 and 7 Firewall and so has more...
+  Azure Firewall is a cloud-native Firewall which can be implemented in your Azure network. It acts as a Layer 3, 4 and 7 Firewall and so has more administrative options than for example NSGs.
 ---
-Azure Firewall is a cloud-native Firewall which can be implemented in your Azure network. It acts as a Layer 3, 4 and 7 Firewall and so has more administrative options than for example NSGs.
 
----
 
 ## Requirements
 

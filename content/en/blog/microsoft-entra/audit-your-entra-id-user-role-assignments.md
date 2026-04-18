@@ -7,12 +7,7 @@ categories:
 tags:
   - Tools and Scripts
 description: >
-  Today I have a relatively short blog post. I have created a script that exports all Entra ID user role assignments with Microsoft Graph.
----
-Today I have a relatively short blog post. I have created a script that exports all Entra ID user role assignments with Microsoft Graph. This can come in handy when auditing your users, but then realizing the portals doesn't always show you the information in the most efficient way.
-
-Therefore, I have created a script that only gets all Entra ID role assignments to users of every role and exports it to a nice and readable CSV file.
-
+  Today I have a relatively short blog post. I have created a script that exports all Entra ID user role assignments with Microsoft Graph. This can come in handy when auditing your users, but then realizing the portals doesn't always show you the information in the most efficient way. Therefore, I have created a script that only gets all Entra ID role assignments to users of every role and exports it to a nice and readable CSV file.
 ---
 
 ## Requirements
@@ -26,8 +21,6 @@ Therefore, I have created a script that only gets all Entra ID role assignments 
 ## Entra ID User role assignments script
 
 To start off with the fast pass, my script can be downloaded here from my Github page:
-
-[Download script from Github](https://github.com/JustinVerstijnen/JV-EntraIDGetAssignedRoles)
 
 <p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-EntraIDGetAssignedRoles"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 

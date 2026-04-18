@@ -7,14 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  On this page, I will describe how I implemented my current Microsoft Secure Score on the Apps pillar. This means altering mostly the...
----
-On this page, I will describe how I implemented my current Microsoft Secure Score on the Apps pillar. This means altering mostly the options of Microsoft Defender for Office 365 but also for Exchange Online, Teams and SharePoint.
-
-I have categorized all of the requirements, so the reader cam implement the settings very easily using the least administrative effort.
-
-Small note, because of the mass of this page, the contents widget on the left will not work properly, Use the Table of Contents widget instead.
-
+  On this page, I will describe how I implemented my current Microsoft Secure Score on the Apps pillar. This means altering mostly the options of Microsoft Defender for Office 365 but also for Exchange Online, Teams and SharePoint. I have categorized all of the requirements, so the reader cam implement the settings very easily using the least administrative effort.
 ---
 
 ## Before we begin
@@ -24,6 +17,8 @@ I collected all the options of the Microsoft Secure Score for Apps on this page,
 Remember, having a secure score of 100% doesn't mean 100% security. This only means you are using 100% of the security toolbox of Microsoft.
 
 At the start of this page, my current Secure Score overview looks like this:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
 ---
 

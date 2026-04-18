@@ -8,12 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  When using Entra ID, we can automate a lot of different tasks. We can use a script processing server for this task but doing that...
----
-When using Entra ID, we can automate a lot of different tasks. We can use a script processing server for this task but doing that normally means we have to save credentials or secrets in our scripts. Something we don't want.
-
-Today I will show how to implement certificate-based authentication for App Registrations instead of using a client secret (which still feels like a password).
-
+  When using Entra ID, we can automate a lot of different tasks. We can use a script processing server for this task but doing that normally means we have to save credentials or secrets in our scripts. Something we don't want. Today I will show how to implement certificate-based authentication for App Registrations instead of using a client secret (which still feels like a password and matches it's unsafety).
 ---
 
 ## Requirements

@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this post, I will explain how I redirect my domains and subdomains to websites and parts of my website. If you ever visited my tools...
----
-In this post, I will explain how I redirect my domains and subdomains to websites and parts of my website. If you ever visited my tools page at <https://justinverstijnen.nl/tools>, you will see I have shortcuts to my tools themselves, although they are not directly linked to the instances.
-
-In this post I will explain how this is done, how to setup Azure Front Door to do this and how to create your own redirects from the Azure Portal.
-
+  In this post, I will explain how I redirect my domains and subdomains to websites and parts of my website. If you ever visited my tools page at <https://justinverstijnen.nl/tools>, you will see I have shortcuts to my tools themselves, although they are not directly linked to the instances. In this post I will explain how this is done, how to setup Azure Front Door to do this and how to create your own redirects from the Azure Portal.
 ---
 
 ## Requirements

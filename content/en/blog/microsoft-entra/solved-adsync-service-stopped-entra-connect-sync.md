@@ -6,6 +6,9 @@ categories:
   - Microsoft Entra
 tags:
   - Step by Step guides
+  - Tools and Scripts
+description: >
+ This blog post helps you to make the ADSync service more stable by utilizing a script that checks the service regularly and starting it when needed. 
 ---
 Sometimes, the ADSync service stops without further notice. You will see that the service has been stopped in the Services panel:
 
@@ -19,7 +22,7 @@ In this guide I will explain how I solved this problem using a simple PowerShell
 
 The PowerShell script that fixes this problem is on my GitHub page:
 
-[Download PowerShell script](https://github.com/JustinVerstijnen/JV-CheckStartADSyncService)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-CheckStartADSyncService"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 
 The script simply checks if the service is running, if this is the case the script will be terminated. If the service is not running, the service will be started.
 

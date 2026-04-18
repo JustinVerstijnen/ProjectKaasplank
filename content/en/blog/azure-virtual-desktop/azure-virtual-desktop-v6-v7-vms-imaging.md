@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  When I first chose to use V6 or V7 machines with Azure Virtual Desktop, I ran into some boot controller errors about the boot...
+  When I first chose to use V6 or V7 machines with Azure Virtual Desktop, I ran into some boot controller errors about the boot controller not supporting SCSI images.
 ---
-When I first chose to use V6 or V7 machines with Azure Virtual Desktop, I ran into some boot controller errors about the boot controller not supporting SCSI images.
 
 - *The VM size 'Standard\_E4as\_v7' cannot boot with OS image or disk. Please check that disk controller types supported by the OS image or disk is one of the supported disk controller types for the VM size 'Standard\_E4as\_v7'. Please query sku api at <https://aka.ms/azure-compute-skus> to determine supported disk controller types for the VM size. (Code: InvalidParameter)*
 - *This size is not available because it does not support the SCSI disk controller type.*

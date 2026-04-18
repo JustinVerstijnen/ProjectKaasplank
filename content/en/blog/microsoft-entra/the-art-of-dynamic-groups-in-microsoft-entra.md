@@ -7,12 +7,9 @@ categories:
 tags:
   - Concepts
 description: >
-  Dynamic Groups are really great for automating certain things. They are basically like groups like we know them for several years but they...
-draft: true
+  Dynamic Groups are really great for automating certain things. They are basically like groups like we know them for several years but they always required some sort of manual action or assignment. Dynamic Groups will help us eliminating this. I will give some examples how I implemented certain actions in production. I will also share the rules syntaxes which can be used directly into your environment and can be changed to your likings.
 ---
-Dynamic Groups are really great for automating certain things. They are basically like groups like we know them for several years but they always required some sort of manual action or assignment. Dynamic Groups will help us eliminating this.
-
-I will give some examples how I implemented certain actions in production. I will also share the rules syntaxes which can be used directly into your environment and can be changed to your likings.
+Dynamic Groups are really great for automating certain things. They are basically like groups like we know them for several years but they always required some sort of manual action or assignment. Dynamic Groups will help us eliminating this. I will give some examples how I implemented certain actions in production. I will also share the rules syntaxes which can be used directly into your environment and can be changed to your likings.
 
 ---
 

@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  This guide will explain how to create a Dynamic group for access to Windows 365. THis further enhance the deployment of new users.
----
-When using Windows 365 in your organization, the deployment is very easy to do. When it comes to adding more users to the service, it can be much manual clicks to reach your goal. My advice is to leverage the Dynamic Group feature of Microsoft Entra.
-
+  When using Windows 365 in your organization, the deployment is very easy to do. When it comes to adding more users to the service, it can be much manual clicks to reach your goal. My advice is to leverage the Dynamic Group feature of Microsoft Entra.
 ---
 
 ## Requirements

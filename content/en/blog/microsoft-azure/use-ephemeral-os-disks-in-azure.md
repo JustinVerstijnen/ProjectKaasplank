@@ -8,10 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  In Azure, you have the option to create Ephemeral OS disks for your machine. This sounds really cool but what is it actually, what pro's...
----
-In Azure, you have the option to create Ephemeral OS disks for your machine. This sounds really cool but what is it actually, what pro's and cons are coming with them, what is the pricing and how do we use them? I will do my best to explain everything in this guide.
-
+  In Azure, you have the option to create Ephemeral OS disks for your machine. This sounds really cool but what is it actually, what pro's and cons are coming with them, what is the pricing and how do we use them? I will do my best to explain everything in this guide.
 ---
 
 ## Requirements

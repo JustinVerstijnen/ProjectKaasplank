@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  If you have the Office Apps installed with OneNote included, sometimes the OneNote printer will be installed as default...
+  If you have the Office Apps installed with OneNote included, sometimes the OneNote printer will be installed as default. This post explains how to solve this problem.
 ---
-If you have the Office Apps installed with OneNote included, sometimes the OneNote printer will be installed as default:
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-b6757651a8fd.png)
 

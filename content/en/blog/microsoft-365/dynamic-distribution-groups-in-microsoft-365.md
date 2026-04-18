@@ -9,6 +9,7 @@ tags:
 description: >
   This guide explains how Exchange Online Dynamic Distribution Groups work, how to create and maintain them with Microsoft 365.
 ---
+
 Sometimes you want to have a distribution group with all your known mailboxes in it. For example an employees@justinverstijnen.nl or all@justinverstijnen.nl address to send a mail company wide. A normal distribution group is possible, but requires a lot of manual maintenance, like adding and removing users.
 
 To apply a little more automation you can use the Dynamic Distribution Group feature of Exchange Online. This is a feature like the Dynamic groups feature of Microsoft Entra which automatically adds new user mailboxes after they are created to make sure every new employee is added automatically.

@@ -9,9 +9,6 @@ tags:
 description: >
   In some cases we want to automatically start the Windows App for connections to AVD and Windows 365 at startup. We can achieve this through different ways which I will describe in this post.
 ---
-In some cases we want to automatically start the Windows App for connections to AVD and Windows 365 at startup. We can achieve this through different ways which I will describe in this post.
-
----
 
 ## Creating the Intune script
 

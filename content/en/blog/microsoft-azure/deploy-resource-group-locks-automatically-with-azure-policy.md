@@ -7,16 +7,13 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Locks in Azure are a great way to prevent accidental deletion or modify resources or resource groups. This helps further securing your...
+  Locks in Azure are a great way to prevent accidental deletion or modify resources or resource groups. This helps further securing your environment and make it somewhat more "fool proof". Now with Azure Policy we can automatically deploy Locks to Resource Groups to secure them from deleting or read-only resources. In this guide I will explain how this can be done and how it works.
 ---
-Locks in Azure are a great way to prevent accidental deletion or modify resources or resource groups. This helps further securing your environment and make it somewhat more "fool proof".
-
-Now with Azure Policy we can automatically deploy Locks to Resource Groups to secure them from deleting or read-only resources. In this guide I will explain how this can be done and how it works.
 
 {{% alert color="info" %}}
-Note: Locks on Resource Groups can stop some automations. If you use read-only locks on a Azure Virtual Desktop resource group for example.
+Note: Locks on Resource Groups can stop some automations. If you use read-only locks on a Azure Virtual Desktop resource group for example, autoscaling will not work anymore.
 
-Take care before creating them and assigning this policy to such subscription.
+Take care and test these changes before creating them and assigning this policy to such (production) subscription.
 {{% /alert %}}
 
 ---

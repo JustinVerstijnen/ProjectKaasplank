@@ -7,14 +7,7 @@ categories:
 tags:
   - Try outs
 description: >
-  In Azure we can configure private DNS zones for local domains. We can use this to resolve our resources in our virtual network by name...
----
-In Azure we can configure private DNS zones for local domains. We can use this to resolve our resources in our virtual network by name instead of IP addresses, which can be helpful creating failover and redundancy. These could all help to achieve a higher availability for your end users. Especially because Private DNS Zones are free and globally redundant.
-
-I thought of myself; "Will this also work for Active Directory?". In that case, DNS would still resolve if suddenly our domain controllers are offline and users are working in a solution like Azure Virtual Desktop.
-
-In this guide I will describe how I got this to work. Honestly, the setup with real DNS servers is better, but it's worth giving this setup a chance.
-
+  In Azure we can configure private DNS zones for local domains. We can use this to resolve our resources in our virtual network by name instead of IP addresses, which can be helpful creating failover and redundancy. These could all help to achieve a higher availability for your end users. Especially because Private DNS Zones are free and globally redundant.I thought of myself; "Will this also work for Active Directory?". In that case, DNS would still resolve if suddenly our domain controllers are offline and users are working in a solution like Azure Virtual Desktop. In this guide I will describe how I got this to work. Honestly, the setup with real DNS servers is better, but it's worth giving this setup a chance.
 ---
 
 ## The configuration explained

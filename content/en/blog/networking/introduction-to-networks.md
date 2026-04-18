@@ -7,10 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  This page is an introduction to Networks. We don't need to know everything about it, but often face it in our work. In this guide I will...
----
-This page is an introduction to Networks. We don't need to know everything about it, but often face it in our work. In this guide I will give you a basic understanding of networks, IP addresses, VLANs, Segmenting etcetera. Basically everything you need to understand the process, and hopefully even more than that.
-
+  This page is an introduction to Networks. We don't need to know everything about it, but often face it in our work. In this guide I will give you a basic understanding of networks, IP addresses, VLANs, Segmenting etcetera. Basically everything you need to understand the process, and hopefully even more than that.
 ---
 
 ## Requirements

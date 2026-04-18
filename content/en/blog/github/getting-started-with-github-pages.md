@@ -8,13 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  With GitHub Pages, we can host some free websites for personal use. This is really great as we mostly already use GitHub to store our code and assets for websites.
----
-
-With GitHub Pages, we can host some free websites for personal use. This is really great as we mostly already use GitHub to store our code and assets for websites. The website you see now is also hosted on GitHub Pages.
-
-In this guide, I will explain some of the advantages of GitHub Pages, and how to get started by using the service. Let's dive into it!
-
+  With GitHub Pages, we can host some free websites for personal use. This is really great as we mostly already use GitHub to store our code and assets for websites. The website you see now is also hosted on GitHub Pages. In this guide, I will explain some of the advantages of GitHub Pages, and how to get started by using the service. Let's dive into it!
 ---
 
 ## Requirements

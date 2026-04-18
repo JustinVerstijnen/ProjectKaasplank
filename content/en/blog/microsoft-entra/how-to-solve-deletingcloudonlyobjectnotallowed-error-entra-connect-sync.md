@@ -7,7 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Now and then we come across a problem with Entra Connect Sync which states "DeletingCloudOnlyObjectNotAllowed". This error looks...
+  Now and then we come across a problem with Entra Connect Sync which states "DeletingCloudOnlyObjectNotAllowed". This post helps you to solve this error.
 ---
 Now and then we come across a problem with Entra Connect Sync which states "DeletingCloudOnlyObjectNotAllowed". This error looks like this:
 

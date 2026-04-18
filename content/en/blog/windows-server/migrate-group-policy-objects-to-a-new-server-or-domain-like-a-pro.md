@@ -23,8 +23,7 @@ By default, the only option Microsoft has built in into Group Policy Management 
 
 I have created two scripts with Powershell that fully exports and imports all Group Policy Objects (GPOs). This with 2 seperate scripts. These can be found and downloaded from my Github page:
 
-[Export script](https://github.com/JustinVerstijnen/MigrateGroupPoliciesScripts/blob/main/ExportGroupPolicies.ps1)  
-[Import script](https://github.com/JustinVerstijnen/MigrateGroupPoliciesScripts/blob/main/ImportGroupPolicies.ps1)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/MigrateGroupPoliciesScripts/blob/main/ExportGroupPolicies.ps1"><i class="fa-brands fa-github"></i> Download Export script from GitHub</a>&nbsp;<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/MigrateGroupPoliciesScripts/blob/main/ImportGroupPolicies.ps1"><i class="fa-brands fa-github"></i> Download Import script from GitHub</a></p>
 
 ---
 

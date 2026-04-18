@@ -23,6 +23,8 @@ Remember, having a secure score of 100% doesn't mean 100% security. This only me
 
 Starting this page, my Secure Score overview is this:
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
+
 ---
 
 ## The Microsoft Entra ID recommendations

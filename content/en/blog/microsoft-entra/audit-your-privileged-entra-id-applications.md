@@ -7,19 +7,14 @@ categories:
 tags:
   - Tools and Scripts
 description: >
-  In Microsoft Entra ID it's possible to create App registrations and Enterprise applications who can get high privileges if not managed...
----
-In Microsoft Entra ID it's possible to create App registrations and Enterprise applications who can get high privileges if not managed and monitored regularly. We do our best with Identities to be secure, with security processes like MFA, access reviews and such, but most of the companies don't care that much about the Enterprise applications.
-
-In this post, I will try to convince you that this is as much as important as identities. For helping you to solve this I built a PowerShell script to get a complete overview of all the applications and their permissions.
-
+  In Microsoft Entra ID it's possible to create App registrations and Enterprise applications who can get high privileges if not managed and monitored regularly. We do our best with Identities to be secure, with security processes like MFA, access reviews and such, but most of the companies don't care that much about the Enterprise applications. In this post, I will try to convince you that this is as much as important as identities. For helping you to solve this I built a PowerShell script to get a complete overview of all the applications and their permissions.
 ---
 
 ## Entra ID Privileged Applications report script
 
 To start off with the fast pass, my script can be downloaded here from my Github page:
 
-[Download script from GitHub](https://github.com/JustinVerstijnen/JV-EntraIDGetPrivilegedEntApps)
+<p><a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-EntraIDGetPrivilegedEntApps"><i class="fa-brands fa-github"></i> Download script from GitHub</a></p>
 
 This script can be used to get a report of all high privileged applications across the tenant. [Go to this section](https://justinverstijnen.nl/audit-your-privileged-entra-id-applications/#using-my-script-to-audit-all-high-privileged-applications) for instructions of how to use the script and the output.
 

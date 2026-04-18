@@ -7,21 +7,18 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Sometimes, it is necessary to match an existing local Active Directory (AD) user through Entra Connect with an existing Entra ID user...
+  Sometimes, it is necessary to match an existing local Active Directory (AD) user through Entra Connect with an existing Entra ID user (formerly known as Azure AD). This process ensures that the account in both environments is aligned and maintains the same underlying configurations and settings across systems.
 ---
-Sometimes, it is necessary to match an existing local Active Directory (AD) user through Entra Connect with an existing Entra ID user (formerly known as Azure AD). This process ensures that the account in both environments is aligned and maintains the same underlying configurations and settings across systems.
 
 ![Entra Connect sync](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/match-active-directory-users-with-microsoft-365-using-entra-connect-sync-hard-match-813/jv-media-813-da1d8fd6db71.png)
 
 ---
 
-## What is soft-matching?
+## The difference between soft and hard matching
 
 Most of the time the system itself will match the users automatically using soft-matching. Here the service will be matching users in both Entra ID and Active Directory by using known attributes like UserPrincipalName and ProxyAddresses.
 
-## What is hard-matching?
-
-In some cases, especially when you use different Active Directory and Entra ID domains, we need to give the final tip to match the users. We will tell Entra ID what the GUID of the on-premises user is by getting that value and encode it into Base64. Then we pass Entra ID this value so it understands what local user to link with what cloud user. This process is called "hard-matching".
+In some cases, especially when you use different Active Directory and Entra ID domains, we need to give the final tip to Entra ID to match and AD user to an Entra ID users. We will tell Entra ID what the GUID of the on-premises user is by getting that value and encode it into Base64. Then we pass Entra ID this value so it understands what local user to link with what cloud user. This process is called "hard-matching", as we have to do this by hand or by scripting.
 
 ---
 

@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  With Azure Logic apps we can save some money on compute costs. Azure Logic apps are flow based tasks that can be run on schedule, or on a...
----
-With Azure Logic apps we can save some money on compute costs. Azure Logic apps are flow based tasks that can be run on schedule, or on a specific trigger like receiving a email message or Teams message. After the trigger has been started, we can choose what action to do. If you are familiar with Microsoft's Power Automate, Logic Apps is almost exactly the same but then hosted in Azure.
-
-In this guide I will demonstrate some simple examples of what Logic Apps can do to save on compute costs.
-
+  With Azure Logic apps we can save some money on compute costs. Azure Logic apps are flow based tasks that can be run on schedule, or on a specific trigger like receiving a email message or Teams message. After the trigger has been started, we can choose what action to do. If you are familiar with Microsoft's Power Automate, Logic Apps is almost exactly the same but then hosted in Azure. In this guide I will demonstrate some simple examples of what Logic Apps can do to save on compute costs.
 ---
 
 ## Azure Logic Apps

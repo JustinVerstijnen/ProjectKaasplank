@@ -9,6 +9,7 @@ tags:
 description: >
   This guide explains how to perform a in-place upgrade WIndows Server on Azure to leverage the newest version and stay secure.
 ---
+
 Once every 3 to 4 years you want to be on the last version of Windows Server because of new features and of course to have the latest security updates. These security updates are the most important these days.
 
 When having your server hosted on Microsoft Azure, this proces can look a bit complicated but it is relatively easy to upgrade your Windows Server to the last version, and I will explain how to on this page.

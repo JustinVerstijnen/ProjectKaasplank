@@ -7,7 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  Azure Compute Gallery is a great service in Azure to store, capture and maintain your VM images. This can be helpful when deploying...
+  Azure Compute Gallery is a great service in Azure to store, capture and maintain your VM images. This post explains how to work through these steps and how this works.
 ---
 Azure Compute Gallery is a great service in Azure to store, capture and maintain your VM images. This can be helpful when deploying multiple similar VMs. Use cases of this can be [VM Scale Sets](https://justinverstijnen.nl/amc-module-7-virtual-machines-and-scale-sets/#virtual-machine-scale-sets-vmss), webservers , containers or Azure Virtual Desktop session hosts.
 

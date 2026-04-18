@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  When deploying Microsoft Office apps to (pooled) Virtual Desktops, we mostly need to do some optimizations to the installation. We want to...
----
-When deploying Microsoft Office apps to (pooled) Virtual Desktops, we mostly need to do some optimizations to the installation. We want to optimize performance on pooled and virtual machines, or maybe we want to enable shared computer activation because multiple users need the apps.
-
-In this guide I will show you how to customize the installation of Office apps, primarily for Virtual Desktops, but can be used on any Windows machine.
-
+  When deploying Microsoft Office apps to (pooled) Virtual Desktops, we mostly need to do some optimizations to the installation. We want to optimize performance on pooled and virtual machines, or maybe we want to enable shared computer activation because multiple users need the apps. In this guide I will show you how to customize the installation of Office apps, primarily for Virtual Desktops, but can be used on any Windows machine.
 ---
 
 ## Requirements

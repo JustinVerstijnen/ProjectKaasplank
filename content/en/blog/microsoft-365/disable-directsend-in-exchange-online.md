@@ -5,10 +5,7 @@ slug: "disable-directsend-in-exchange-online"
 categories:
   - Microsoft 365
 description: >
-  Microsoft has published a new command to completely disable the unsafe DirectSend protocol in your Microsoft 365 environment. In this...
----
-Microsoft has published a new command to completely disable the unsafe DirectSend protocol in your Microsoft 365 environment. In this guide I will explain what DirectSend is, why you should disable this and how we can achieve this.
-
+  Microsoft has published a new command to completely disable the unsafe DirectSend protocol in your Microsoft 365 environment. In this guide I will explain what DirectSend is, why you should disable this and how we can achieve this.
 ---
 
 ## What is DirectSend?

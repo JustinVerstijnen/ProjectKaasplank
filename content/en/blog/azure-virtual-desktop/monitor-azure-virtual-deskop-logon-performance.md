@@ -7,9 +7,8 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Sometimes we want to know why a Azure Virtual Desktop logon took longer than expected. Several actions happen at Windows logon...
+  Sometimes we want to know why a Azure Virtual Desktop logon took longer than expected. Several actions happen at Windows logon, like FSLogix profile mounting, Group Policy processing and preparing the desktop. I found a script online that helps us monitor the sign-ins and logons and basically tells us why it took 2 minutes and what parts took a specific amount of seconds.
 ---
-Sometimes we want to know why a Azure Virtual Desktop logon took longer than expected. Several actions happen at Windows logon, like FSLogix profile mounting, Group Policy processing and preparing the desktop. I found a script online that helps us monitor the sign-ins and logons and basically tells us why it took 2 minutes and what parts took a specific amount of seconds.
 
 The script is **not** made by myself, the source of the script is: <https://www.controlup.com/script-library-posts/analyze-logon-duration/>
 

@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Microsoft 365 Backup ensures that your data, accounts and email is safe and backed up into a separate storage space. A good and reliable...
----
-Microsoft 365 Backup ensures that your data, accounts and email is safe and backed up into a separate storage space. A good and reliable back-up solution is crucial for any cloud service, even when having versioning and recycle bin options. Data in SharePoint or OneDrive stays data in one central place and any minor error is made within seconds.
-
-In this guide, I will explain how Microsoft 365 Backup works and how you can start using it.
-
+  Microsoft 365 Backup ensures that your data, accounts and email is safe and backed up into a separate storage space. A good and reliable back-up solution is crucial for any cloud service, even when having versioning and recycle bin options. Data in SharePoint or OneDrive stays data in one central place and any minor error is made within seconds. In this guide, I will explain how Microsoft 365 Backup works and how you can start using it.
 ---
 
 ## Requirements

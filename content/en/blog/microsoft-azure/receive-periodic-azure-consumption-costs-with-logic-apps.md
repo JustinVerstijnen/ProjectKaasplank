@@ -1,6 +1,6 @@
 ---
 title: "Receive Periodic Azure Consumption costs with Logic Apps"
-date: 2026-05-21
+date: 2026-05-30
 slug: "receive-periodic-azure-consumption-costs-with-logic-apps"
 categories:
   - Microsoft Azure
@@ -8,12 +8,8 @@ tags:
   - Step by Step guides
   - Tools and Scripts
 description: >
-  Cost management is very important when leveraging cloud services. Unexpected costs of cloud services can really disallow us from using any...
-draft: true
+  Cost management is very important when leveraging cloud services. Unexpected costs of cloud services can really disallow us from using any more services, and knowing from week to week what happens can help us with this. To partly address this issue for Azure Consumption costs, I have made a Logic App that sends us the actual consumption on weekly level. This because Logic Apps gives us much more customization options as the default built-in "Subscribe" feature.
 ---
-Cost management is very important when leveraging cloud services. Unexpected costs of cloud services can really disallow us from using any more services, and knowing from week to week what happens can help us with this.
-
-To partly address this issue for Azure Consumption costs, I have made a Logic App that sends us the actual consumption on weekly level. This because Logic Apps gives us much more customization options as the default built-in "Subscribe" feature.
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/receive-periodic-azure-consumption-costs-with-logic-apps-7022/jv-media-7022-412e6aeff517.png)
 

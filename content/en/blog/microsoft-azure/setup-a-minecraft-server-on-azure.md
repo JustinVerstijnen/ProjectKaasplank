@@ -7,9 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Minecraft is a great game. And what if i tell you we can setup a server for Minecraft on Azure so you can play it with your friends and...
----
-Sometimes, we also want a step down from our work and want to fully enjoy a videogame. Especially when you really like games with open worlds, Minecraft is a great game. And what if I tell you we can setup a server for Minecraft on Azure so you can play it with your friends and have a 24/7 uptime this way.
+  Sometimes, we also want a step down from our work and want to fully enjoy a videogame. Especially when you really like games with open worlds, Minecraft is a great game. And what if I tell you we can setup a server for Minecraft on Azure so you can play it with your friends and have a 24/7 uptime this way.
 
 ---
 

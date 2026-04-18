@@ -8,9 +8,8 @@ tags:
   - Concepts
   - Try outs
 description: >
-  Choosing the right performance tier of Azure Storage Accounts can be very complex. How much size and performance do we need? How many...
+  Choosing the right performance tier of Azure Storage Accounts can be very complex. How much size and performance do we need? How many users will login to Azure Virtual Desktop and how many profile size do we want to assign them?
 ---
-Choosing the right performance tier of Azure Storage Accounts can be very complex. How much size and performance do we need? How many users will login to Azure Virtual Desktop and how many profile size do we want to assign them?
 
 In this blog post I will explain everything about hosting your FSLogix profiles on Azure Virtual Desktop and the storage account performance including pricing. AFter that we will do some real world performance testing and a conclusion.
 

@@ -8,7 +8,7 @@ tags:
   - Concepts
   - Step by Step guides
 description: >
-  Microsoft announced RemoteAppV2 under some pretty enhancements on top of the older RemoteApp engine. This newer version has some...
+  This blog post explains how to get started with Remote App V2 in Azure Virtual Desktop, and I will explain on what area's this new version is better and what area's still needs to improve.
 ---
 Microsoft announced RemoteAppV2 under some pretty enhancements on top of the older RemoteApp engine. This newer version has some improvements like:
 

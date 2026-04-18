@@ -7,10 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  In this guide i will explain how to add a alias of a domain to every user in Microsoft 365/Exchange Online.
----
-Sometimes, we add a new domain to Microsoft 365 and we want to have a domain alias for multiple or every user.
-
+  Sometimes, we add a new domain to Microsoft 365 and we want to have a domain alias for multiple or every user when acquiring a new domain in some cases. This post explains how to add a new alias with another domain to every user in your Microsoft 365 tenant.
 ---
 
 ## Logging in Exchange Online Powershell

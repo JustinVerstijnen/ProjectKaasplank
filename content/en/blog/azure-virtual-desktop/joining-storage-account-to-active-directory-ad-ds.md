@@ -7,12 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  Joining a storage account to Active Directory can be a hard part of configuring Azure Virtual Desktop or other components to work. We must...
----
-Joining a storage account to Active Directory can be a hard part of configuring Azure Virtual Desktop or other components to work. We must join the storage account so we can do our Kerberos authentication against the storage account.
-
-In this guide I will write down the most easiest way with the least effort of performing this action.
-
+  Joining a storage account to Active Directory can be a hard part of configuring Azure Virtual Desktop or other components to work. We must join the storage account so we can do our Kerberos authentication against the storage account. In this guide I will write down the most easiest way with the least effort of performing this action.
 ---
 
 ## Requirements

@@ -9,9 +9,6 @@ tags:
 description: >
   This page is about Azure Migrate and how you can migrate an on-premises server or multiple servers to Microsoft Azure. This process is not very easy, but it's also not extremely difficult. Microsoft hasn't made it as simple as just installing an agent on a VM, logging in, and clicking the migrate button. Instead, it is built in a scalable way.
 ---
-This page is about Azure Migrate and how you can migrate an on-premises server or multiple servers to Microsoft Azure. This process is not very easy, but it's also not extremely difficult. Microsoft hasn't made it as simple as just installing an agent on a VM, logging in, and clicking the migrate button. Instead, it is built in a more scalable way.
-
----
 
 ## Requirements
 

@@ -1,19 +1,13 @@
 ---
-title: "Microsoft Secure Score \u2013 Data"
-date: 2026-04-23
+title: "Microsoft Secure Score Data"
+date: 2026-04-30
 slug: "microsoft-secure-score-data"
 categories:
   - Secure Score
 tags:
   - Step by Step guides
 description: >
-  This guide explains how I configured the Secure Score recommendations related to Microsoft Information Protection and Purview.
-draft: true
----
-This guide explains how I configured the Secure Score recommendations related to Microsoft Information Protection and Purview.
-
-Make sure that to target those recommendations, you will need at least Microsoft 365 E5 licenses (or separate licenses that do the job).
-
+  This guide explains how I configured the Secure Score recommendations related to Microsoft Information Protection and Purview. Make sure that to target those recommendations, you will need at least Microsoft 365 E5 licenses (or separate licenses that do the job).
 ---
 
 ## Before we begin
@@ -25,6 +19,8 @@ You can use all options, or only use a subset of the options. This is up to you 
 Remember, having a secure score of 100% doesn't mean 100% security. This only means you are using 100% of the security toolbox.
 
 Starting this page, my Secure Score overview is this:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
 ---
 

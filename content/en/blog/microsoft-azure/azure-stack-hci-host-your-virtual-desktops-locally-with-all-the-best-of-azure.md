@@ -3,12 +3,14 @@ title: "Azure Stack HCI - Host your Virtual Desktops locally"
 date: 2024-10-03
 slug: "azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure"
 categories:
-  - Powershell
+  - Microsoft Azure
+  - PowerShell
 tags:
   - Step by Step guides
 description: >
-  Azure Stack HCI is a solution for Microsoft Azure to host Azure resources on your own hardware and location. This soun...
+  Azure Stack HCI is a solution for Microsoft Azure to host Azure resources on your own hardware and location. This sounds traditional but can help to boost your Azure resources for your customer and/or use case. For example, with Azure Stack HCI it is possible to host some Azure Virtual Desktop hosts in your own network to boost performance by decreasing latency. Also it is possible to use GPU enabled software on this without having the very high monthly computing costs.
 ---
+
 ## Introduction to Azure Stack HCI
 
 Azure Stack HCI is a solution for Microsoft Azure to host Azure resources on your own hardware and location. This sounds traditional but can help to boost your Azure resources for your customer and/or use case.

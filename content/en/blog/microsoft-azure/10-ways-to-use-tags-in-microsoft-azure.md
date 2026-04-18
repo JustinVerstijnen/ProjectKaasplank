@@ -7,12 +7,7 @@ categories:
 tags:
   - Concepts
 description: >
-  When being introduced to Azure, I learned about tags very quickly. However, this is something you can use in practice but is no requirement...
----
-When being introduced to Azure, I learned about tags very quickly. However, this is something you can use in practice but is no requirement to make stuff actually work. Now some years ahead in my Azure journey, I can recommend (at least) 10 ways to use them properly and to make them actually useful in your environment.
-
-I will explain these ways in this article.
-
+  When being introduced to Azure, I learned about tags very quickly. However, this is something you can use in practice but is no requirement to make stuff actually work. Now some years ahead in my Azure journey, I can recommend (at least) 10 ways to use them properly and to make them actually useful in your environment. I will explain these ways in this article.
 ---
 
 ## What are Tags in Azure?
