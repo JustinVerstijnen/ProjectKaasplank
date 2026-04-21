@@ -92,7 +92,7 @@ Now we have the identifier Entra ID needs. We change the ID of the cloud user to
 
 ## Step 2: Logging into Entra ID with Microsoft Graph
 
-To actually match the users, we need to login to Microsoft Graph in PowerShell, as we can there perform the actions. For installation instructions of the Microsoft Graph PowerShell module: <https://www.powershellgallery.com/packages/Microsoft.Graph/2.24.0>
+To actually match the users, we need to login to Microsoft Graph in PowerShell, as we can there perform the actions. For installation instructions of the Microsoft Graph PowerShell module: <https://www.powershellgallery.com/packages/Microsoft.Graph>
 
 Run the following command to login to Microsoft Entra ID with Microsoft Graph:
 
