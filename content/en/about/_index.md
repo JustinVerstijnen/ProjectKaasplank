@@ -2,7 +2,7 @@
 title: "About me"
 ---
 
-{{< powershell-about command=".\about-justin-verstijnen.ps1" >}}
+{{< powershell-about command=".\AboutJustinVerstijnen.ps1" >}}
 
 <div class="about-two-columns">
   <div class="about-card">
