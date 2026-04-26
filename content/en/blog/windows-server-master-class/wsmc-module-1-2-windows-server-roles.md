@@ -1,5 +1,5 @@
 ---
-title: "WSMC \u2013 Module 1-2: Windows Server Roles"
+title: "WSMC Module 1-2: Windows Server Roles"
 date: 2026-03-09
 slug: "wsmc-module-1-2-windows-server-roles"
 categories:
@@ -37,29 +37,29 @@ To install Server Roles on a Windows Server machine, we mostly use the Server Ma
 
 On the Windows Server instance, open the Server Manager if not done already:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-c78d7bdc60a4.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-c78d7bdc60a4.png)
 
 In the top right corner, click "Manage" and then "Add Roles and Features":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a8a8c1153fe7.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a8a8c1153fe7.png)
 
 You will get a first page, asking you if you have done your basic server configuration tasks:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-6bcd254cf4d9.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-6bcd254cf4d9.png)
 
 Click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b40d6fea7f05.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b40d6fea7f05.png)
 
 Then it asks you if you want to install a role or if you want to install Remote Desktop Services (which is a set of roles, possibly for multiple servers).
 
 In the case of wanting to install a single role that is not Remote Desktop Services, choose the above option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-83c822fdf47e.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-83c822fdf47e.png)
 
 Select the server to install the role on. In my case, I only have one server. Poor me.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f86c91740097.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f86c91740097.png)
 
 Here you can select what role(s) you want to install. Its basically that easy, select and click Next. Some roles need you to do some configurations which I will dive into for each role itself. On this page, I will explain how to install and configure each role and how to do it with PowerShell for automation (and save yourself some time).
 
@@ -69,7 +69,7 @@ Here you can select what role(s) you want to install. Its basically that easy, s
 
 This must be the most used role of Windows Server. Active Directory is a users/computers/group based authentication mechanism where you can facilitate multiple users logging into multiple computers. It also contains some basic management tools like Group Policy to alter the clients configuration. This has been the basic office network for the last 20 years.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-8bc620ad6f9a.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-8bc620ad6f9a.png)
 
 ### Features of Active Directory
 
@@ -88,17 +88,17 @@ To install Active Directory, head to the Server Manager and follow the steps to 
 
 Select the **Active Directory Domain Services** role from the list. The other roles I will describe furtherly in Chapter 3.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-422d9d7ea961.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-422d9d7ea961.png)
 
 Click "Next" here and also on the "Select features" and AD DS pages.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-bc3a3bbe16b2.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-bc3a3bbe16b2.png)
 
 As this is a testing server, I selected the checkmark to directly restart the server when it has to.
 
 The installation will take around 3 minutes, based on your servers' speed.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-7cf2fd0ab8ff.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-7cf2fd0ab8ff.png)
 
 Then we have to promote the server to a domain controller. This means it will be the boss-server of the network and "controls your domain". We also have to configure our domainname here, where we have several options:
 
@@ -109,38 +109,38 @@ In my case, I will use the internal.justinverstijnen.nl option.
 
 Select the option "Add a new forest" as this is our first domain, and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-dfa8d21703d7.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-dfa8d21703d7.png)
 
 Now select the Forest and Domain functional levels and type in your Directory Services Restore Mode (DSRM) password.
 
 - **Forest** and **Domain** functional levels are the "version" of your Active Directory. The higher the level, the more functionality you have, but older servers can't join and work together with your domain.
 - The **DSRM password** is a password you have to type in when using the restore mode. This is basically an recovery mode made for Active Directory, and can be set on every server. It's a local password, and not shared throughout the domain so be aware to secure it in a safe place.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-eebb23cfe7d9.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-eebb23cfe7d9.png)
 
 Select your functional levels and fill in your desired password, and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-7726326fdb67.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-7726326fdb67.png)
 
 Click "Next" on this page, the notification is by design as I chose a forest name that doesn't exists yet.
 
 On the NetBIOS page, select a NetBIOS name. This is a fallback name (older protocol) and a single label DNS name for your domain. In my case, I chose it to be "JUSTINVERS".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f32279113eaf.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f32279113eaf.png)
 
 This name is used in several components in Active Directory. After choosing your name, click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a0a765ad3f7b.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a0a765ad3f7b.png)
 
 For production servers, its recommended to change the AD DS database, SYSVOL and log files to another volume/disk. This for performance and redundancy. In my case, I stick to the default settings.
 
 Now we get a summary of our configuration, and we can finish the wizard. We also can choose "View script" to check out how this could be done with PowerShell.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-dbbc009f2263.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-dbbc009f2263.png)
 
 After the role is installed, the server must restart, and then our role is installed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-8bc620ad6f9a.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-8bc620ad6f9a.png)
 
 ### Installation of Active Directory (PowerShell)
 
@@ -173,15 +173,15 @@ Change the parameters between quotes on line 5, 6 and 7 to your own setup. This 
 
 I started with the first line.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-2b09123be019.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-2b09123be019.png)
 
 Then the rest of the block:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-ec13070209ae.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-ec13070209ae.png)
 
 You only need to fill in your desired DSRM password and the rest will be installed and configured automatically:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f6fa06405f8b.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-f6fa06405f8b.png)
 
 After the restart is done, the role is installed automatically.
 
@@ -193,11 +193,11 @@ DNS (Domain Name System) is a protocol that translates human-readable domain nam
 
 If we visit the website www.justinverstijnen.nl, we are actually visiting 80.69.67.10. Using a simple tool in Windows, you can find the underlying IP address:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-43ce64a23a79.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-43ce64a23a79.png)
 
 Domain Name System (DNS) is a role which we can also install on Windows Server. We can then host our own DNS server for our own domain but can also use it alongside Active Directory. Active Directory relies heavily on DNS.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-1dbcd9656158.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-1dbcd9656158.png)
 
 ### Features of DNS
 
@@ -222,7 +222,7 @@ To install the role itself, execute this command:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Install-WindowsFeature DNS -IncludeManagementTools
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b4b88a2580c0.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b4b88a2580c0.png)
 
 Now we have to configure the role by configuring a primary domain:
 
@@ -239,7 +239,7 @@ Change the domain on line 1 to your own domain.
 
 The File and Storage Services is a big role in Windows Server with different subroles including in it. These are all available roles in the File and Storage Services role itself:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a96a05eca2f4.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-a96a05eca2f4.png)
 
 In this guide, I will only stick to those 3 components as they are the most used roles in real world scenario's:
 
@@ -267,11 +267,11 @@ The Internet Information Services (IIS) module in Windows Server is a role to ho
 
 The Internet Information Services management console looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b5e3ae891784.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-b5e3ae891784.png)
 
 The default website of Internet Information Services is this, pretty sure you came across it in the real world:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-ca4c4ca67962.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-ca4c4ca67962.png)
 
 ### Installation of Internet Information Services (GUI)
 
@@ -279,17 +279,17 @@ Click here to expand the installation instructions
 
 To install the Internet Information Services role, open up the Server Manager and go to "Manage", and then click "Add roles and Features".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-e4846c8c5eb8.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-e4846c8c5eb8.png)
 
 Then follow the wizard till you got to "Server roles". Select the Web Server (IIS) role here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-650592c7a589.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-650592c7a589.png)
 
 Then click "Add features" to select the role and included management tools.
 
 Click next for multiple times and click "Install "to finish the wizard and start the installation.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-daeeae6300ba.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-daeeae6300ba.png)
 
 ### Installation of Internet Information Services (PowerShell)
 
@@ -303,11 +303,11 @@ Install-WindowsFeature -Name Web-Server -IncludeManagementTools
 
 The role will now be installed on your server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-2dc7215caeb6.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-2dc7215caeb6.png)
 
 After around 1 minute the role is succesfully installed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-–-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-e7b61dcd9524.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-2-Windows-Server-Roles-6342/jv-media-6342-e7b61dcd9524.png)
 
 ---
 

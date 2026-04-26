@@ -24,7 +24,7 @@ The framework itself can help organizations help to secure their environment rea
 
 ## The framework itself
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-dfde3a7edc08.png)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-mitre-attck-framework-597/jv-media-597-706be9d17c63.png)
 
 The framework can be found on this website: [MITRE ATT&CK®](https://attack.mitre.org/)
 
