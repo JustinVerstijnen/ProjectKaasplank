@@ -46,6 +46,42 @@ jobs:
           hugo-version: "0.160.0"
           extended: true
 
+      - name: Show planned posts
+        run: |
+          echo "## Planned posts" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Date | Title | File |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|---|" >> $GITHUB_STEP_SUMMARY
+
+          python3 - <<'PY' >> $GITHUB_STEP_SUMMARY
+          from pathlib import Path
+          from datetime import datetime, timezone
+          import re
+
+          today = datetime.now(timezone.utc).date()
+          found = False
+
+          for path in sorted(Path("content/en/blog").glob("*.md")):
+              text = path.read_text(encoding="utf-8")
+
+              date_match = re.search(r"^date:\s*['\"]?([^'\"\n]+)['\"]?", text, re.MULTILINE)
+              title_match = re.search(r"^title:\s*['\"]?([^'\"\n]+)['\"]?", text, re.MULTILINE)
+
+              if not date_match:
+                  continue
+
+              raw_date = date_match.group(1).strip()
+              post_date = datetime.fromisoformat(raw_date[:10]).date()
+
+              if post_date > today:
+                  found = True
+                  title = title_match.group(1).strip() if title_match else path.stem
+                  print(f"| {post_date.strftime('%d-%m-%Y')} | {title} | `{path}` |")
+
+          if not found:
+              print("| - | No planned posts found | - |")
+          PY
+
       - name: Build site
         run: hugo --minify --gc
 
