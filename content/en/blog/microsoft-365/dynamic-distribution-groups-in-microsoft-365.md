@@ -43,7 +43,7 @@ After creating the mailbox, go to Groups and then Dynamic distribution list and 
 
 Go to the tab "Settings" and click "edit delivery management".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-c338a1c8a9c6.png)
+[![jv-media-251-c338a1c8a9c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-c338a1c8a9c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-c338a1c8a9c6.png)
 
 Here you can define the users who may send and a general advice to restrict mailing only from the same orgainzation.
 
@@ -71,11 +71,11 @@ ientTypeDetails -eq 'UserMailbox') -and (CustomAttribute1 -ne 'exclude_from_empl
 
 After running these commands succesfully you can add the attribute from the Exchange Online admin center in a mailbox. To add this attribute, open a mailbox;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f2b6b9769301.png)
+[![jv-media-251-f2b6b9769301.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f2b6b9769301.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f2b6b9769301.png)
 
 Go to "Custom Attributes" and add the attribute like shown below;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f6fe3e17bc86.png)
+[![jv-media-251-f6fe3e17bc86.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f6fe3e17bc86.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-distribution-groups-in-microsoft-365-251/jv-media-251-f6fe3e17bc86.png)
 
 When a mailbox had this attribute in field 1, it will be excluded from the dynamic distribution group.
 

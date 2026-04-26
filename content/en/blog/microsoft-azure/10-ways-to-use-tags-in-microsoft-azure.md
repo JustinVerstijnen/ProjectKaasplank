@@ -25,7 +25,7 @@ We can define ourselves what the Name and Value actually are, if we stay within 
 
 An example of a resource in my environment using tags:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-b5043d3808e0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-b5043d3808e0.png)
+[![jv-media-4968-b5043d3808e0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-b5043d3808e0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-b5043d3808e0.png)
 
 I marked two domains I use for a redirection to an other website. Therefore I have a nice overview over multiple resources.
 
@@ -55,7 +55,7 @@ Before we go logging into our environment and tag everything we see, I will firs
 
 You can add tags to a resource by opening it, and then click on "Tags". Here we can define what tags to link to the resource. As you might use the same name/value for multiple resources, this will auto-suggest you for easy linking:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-59d2a9b7ee07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-59d2a9b7ee07.png)
+[![jv-media-4968-59d2a9b7ee07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-59d2a9b7ee07.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-59d2a9b7ee07.png)
 
 Check out this video where I demonstrate creating the tags from the example below, 1: Documentation
 
@@ -67,7 +67,7 @@ https://www.youtube.com/watch?v=sR4GdScNG7M
 
 Documentation of your environment is very important. Especially when configuring things, then to not touch it for sometimes months or years. Also when managing resources with multiple people in one company, using a tag to point to your documentation is very useful.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1af73f5e2f14.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1af73f5e2f14.png)
+[![jv-media-4968-1af73f5e2f14.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1af73f5e2f14.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1af73f5e2f14.png)
 
 If you have a nice and numbered documentation-system, you can use the number and page number. Otherwise you can also use a whole link. This points out where the documentation of the resource can be found.
 
@@ -84,7 +84,7 @@ You can use tags to mark different environments. This way every administrator wo
 3. Production
 4. Production-Replica
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1c49d66150f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1c49d66150f0.png)
+[![jv-media-4968-1c49d66150f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1c49d66150f0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-1c49d66150f0.png)
 
 Here I marked a resource as a Testing resource as an example.
 
@@ -94,7 +94,7 @@ Here I marked a resource as a Testing resource as an example.
 
 In a shared responsibility model on an Azure environment, we would mostly use RBAC to lock down access to your resources. However, sometimes this is not possible. We could define the responsibility of a resource with tags, defining the person or department.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-8d632069cc4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-8d632069cc4f.png)
+[![jv-media-4968-8d632069cc4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-8d632069cc4f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-8d632069cc4f.png)
 
 ---
 
@@ -102,7 +102,7 @@ In a shared responsibility model on an Azure environment, we would mostly use RB
 
 We could add tags to define the lifecycle and retention of the data of an resource. Here I have 3 examples of how this could be done:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-fd4aa11228bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-fd4aa11228bf.png)
+[![jv-media-4968-fd4aa11228bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-fd4aa11228bf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-fd4aa11228bf.png)
 
 I created a tag Lifecycle, one for Retention in days and a Expiry date, after when the resource can be deleted permanently. Useful if storing some data temporarily after a migration.
 
@@ -112,7 +112,7 @@ I created a tag Lifecycle, one for Retention in days and a Expiry date, after wh
 
 We could use the tags on an Azure resource to mark if they are compliant with industry accepted security frameworks. This could lookm like this:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-694a3a1f5425.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-694a3a1f5425.png)
+[![jv-media-4968-694a3a1f5425.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-694a3a1f5425.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-694a3a1f5425.png)
 
 Compliance could be some customization, as every organization is different.
 
@@ -122,7 +122,7 @@ Compliance could be some customization, as every organization is different.
 
 You can add tags to define the role/purpose of the resource. For example, Role: Webserver or Role: AVD-ProfileStorage, like I have done below:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-2ef06e93451d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-2ef06e93451d.png)
+[![jv-media-4968-2ef06e93451d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-2ef06e93451d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-2ef06e93451d.png)
 
 This way you can define dependencies of a solution in Azure. When having multiple dependencies, some good documentation is key.
 
@@ -134,7 +134,7 @@ You can make cost overviews within one or multiple subscriptions based on a tag.
 
 You can make these overviews by going to your subscription, then to "Cost Analysis" and then "Group By" -> Tags -> Your tag.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-92c57251ad61.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-92c57251ad61.png)
+[![jv-media-4968-92c57251ad61.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-92c57251ad61.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-92c57251ad61.png)
 
 This way, I know exactly what resources with a particular tag was billed in the last period.
 
@@ -144,7 +144,7 @@ This way, I know exactly what resources with a particular tag was billed in the 
 
 Tags could be used excellently to define the maintenance hours and Restore Time Objective (RTO) of a resource. This way anyone in the environment will know exactly when changes can be done and how many data-loss is acceptable if errors occur.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-271689ef62c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-271689ef62c9.png)
+[![jv-media-4968-271689ef62c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-271689ef62c9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-271689ef62c9.png)
 
 Here I have created 2 tags, defining the maintenance hours including the timezone and the Restore Time Objective.
 
@@ -196,7 +196,7 @@ resource "azurerm_static_web_app" "swa" {
 
 And the result in the Azure Portal:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-e2d1ccdb4abb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-e2d1ccdb4abb.png)
+[![jv-media-4968-e2d1ccdb4abb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-e2d1ccdb4abb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-e2d1ccdb4abb.png)
 
 ---
 
@@ -210,7 +210,7 @@ We could categorize our resources into different tiers for our Disaster Recovery
 
 This way we write our plan to in case of emergencies, we first restore Level 1 systems/resources. After they all are online, we could advance to Level 2 and then to Level 3.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-9efcbb4bce42.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-9efcbb4bce42.png)
+[![jv-media-4968-9efcbb4bce42.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-9efcbb4bce42.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-9efcbb4bce42.png)
 
 By searching for the tags, we can instantly view which resources we have to restore first according to our plan, and so on.
 
@@ -220,7 +220,7 @@ By searching for the tags, we can instantly view which resources we have to rest
 
 In an earlier guide, I described how to use a renameable tag for resources in Azure:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-a2076903baeb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-a2076903baeb.png)
+[![jv-media-4968-a2076903baeb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-a2076903baeb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/10-ways-to-use-tags-in-microsoft-azure-4968/jv-media-4968-a2076903baeb.png)
 
 This could be useful if you want to make things a little more clear for other users, like a warning or a new name where the actual name cannot be changed unfortunately.
 

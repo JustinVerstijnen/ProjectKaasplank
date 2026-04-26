@@ -93,7 +93,7 @@ _mta-sts.justinverstijnen.nl. 3600 IN TXT v=STSv1; id=20250511000000Z;
 
 After filling the form, it looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-05d5e3e71051.png)
+[![jv-media-2198-05d5e3e71051.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-05d5e3e71051.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-05d5e3e71051.png)
 
 The domain is automatically added by the DNS protocol and from v=STSv1 to the 0's and the Z; is the value part.
 
@@ -130,7 +130,7 @@ Create an account on Github or login to proceed.
 
 Create a new repository:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-9553dc6e01c0.png)
+[![jv-media-2198-9553dc6e01c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-9553dc6e01c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-9553dc6e01c0.png)
 
 Give it a name and description and decide if you want the repository to be public. Note that the TXT will be public in any case.
 
@@ -140,23 +140,23 @@ Create the repository.
 
 I have my repository public, and you can check out that to have an example of the correct configuration. We must download the index.html file from here: <https://github.com/JustinVerstijnen/MTA-STS>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-07d1f2c07212.png)
+[![jv-media-2198-07d1f2c07212.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-07d1f2c07212.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-07d1f2c07212.png)
 
 Click on the index.html file and download this. You can also copy the content and create the file with this content in your own repository.
 
 Now go back to your own, newly created repository on Github.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-97dcff978151.png)
+[![jv-media-2198-97dcff978151.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-97dcff978151.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-97dcff978151.png)
 
 Click on the "Add file" button and then on "Create a new file".
 
 Now we must create the folder and the TXT file. First type in: ".well-known", then press "/" and then enter "mta-sts.txt". This creates the folder and then the file.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-21fa67a7b02a.png)
+[![jv-media-2198-21fa67a7b02a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-21fa67a7b02a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-21fa67a7b02a.png)
 
 Now we can paste in the information of our defined policy:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-78027d8fbbc7.png)
+[![jv-media-2198-78027d8fbbc7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-78027d8fbbc7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-78027d8fbbc7.png)
 
 Now commit the changes, which is basically saving the file.
 
@@ -166,13 +166,13 @@ Now because a Static Web App requires you to have a Index.html at all time (beca
 
 Click on "Add file" and then on "Upload files". Then click on "Select your files" and select the downloaded Index.html file.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a39fbc6700ae.png)
+[![jv-media-2198-a39fbc6700ae.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a39fbc6700ae.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a39fbc6700ae.png)
 
 Commit the change. After committing the change, click on the Index.html file. We must make some changes to this file to change it to your own website:
 
 Change the URLs on line 5 and 7 to your own domain. the mta-sts part on the beginning must stay intact and the part from .well-known too.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-1809477fc3ed.png)
+[![jv-media-2198-1809477fc3ed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-1809477fc3ed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-1809477fc3ed.png)
 
 As you can see, its a simple HTML file that redirects every visitor directly to the correct file in the .well-known folder. This is purely for Azure which always must have a *index.html* but it makes your life a bit easier too.
 
@@ -182,13 +182,13 @@ Proceed to the next steps in Azure.
 
 Now we must create the Azure Static Web App in Azure to host this file. Search for "Static Web Apps" in the Azure Portal and create a new app:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-d51e3d43ea77.png)
+[![jv-media-2198-d51e3d43ea77.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-d51e3d43ea77.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-d51e3d43ea77.png)
 
 Place it in the desired resource group, give it a name (cannot be changed) and select a plan. You can use a free plan for this. The only limit is the custom domains you can link, which is 2 custom domain names per app.
 
 Then scroll down on the page till you see the Deployment type:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-fad07abb0af6.png)
+[![jv-media-2198-fad07abb0af6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-fad07abb0af6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-fad07abb0af6.png)
 
 Link your Github account to Azure so Azure can get the information from your repository and put it in the Static Web App. Select your Repository after linking and complete the wizard. There is no need to change anything else in this wizard to make it work.
 
@@ -196,7 +196,7 @@ After completing the wizard, the app will be created and then your repository fi
 
 After around 3 minutes, your website is uploaded into Azure and it will show:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-cf0e9b99961b.png)
+[![jv-media-2198-cf0e9b99961b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-cf0e9b99961b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-cf0e9b99961b.png)
 
 If you now click on "visit your site", it will redirect you to the file. However, we didn't link our custom domain yet, so it will not show our policy yet. The redirection will work fine.
 
@@ -204,19 +204,19 @@ If you now click on "visit your site", it will redirect you to the file. However
 
 Now we can link our custom domain to our created Azure Static Web App in the Azure portal. Go to "Custom domains" in the settings of the Static Web App and click on "+ Add".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-dc64268e5bbd.png)
+[![jv-media-2198-dc64268e5bbd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-dc64268e5bbd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-dc64268e5bbd.png)
 
 Select the option "Custom domain on other DNS", the middle option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-bba293144ef1.png)
+[![jv-media-2198-bba293144ef1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-bba293144ef1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-bba293144ef1.png)
 
 Now fill in mta-sts.yourdomain.com, for my environment this will be:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-abada43feef5.png)
+[![jv-media-2198-abada43feef5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-abada43feef5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-abada43feef5.png)
 
 Click on "Next". Now we have to validate that we are the owner of the domain. I recommend the default CNAME option, as this is a validation and alias/redirection in one record.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-e08758cffa40.png)
+[![jv-media-2198-e08758cffa40.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-e08758cffa40.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-e08758cffa40.png)
 
 Copy the Value of the CNAME record which is the project-name of the Static Web App and we now have to create a DNS record for our domain.
 
@@ -230,15 +230,15 @@ orange-coast-05c818d03.6.azurestaticapps.net.
 
 Save the DNS record and go back to Azure, and click "Add" to validate the record. This process will be done automatically and ready after 5 minutes most of the time.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-5930d37c8754.png)
+[![jv-media-2198-5930d37c8754.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-5930d37c8754.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-5930d37c8754.png)
 
 Now we can test our site in the Azure Portal by again using the "Visit your site" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-18de7db5b1be.png)
+[![jv-media-2198-18de7db5b1be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-18de7db5b1be.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-18de7db5b1be.png)
 
 Now the website will show your MTA-STS policy:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-43811f05bf13.png)
+[![jv-media-2198-43811f05bf13.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-43811f05bf13.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-43811f05bf13.png)
 
 We are now succesfully hosting our MTA-STS policy on a Azure Static Web App instance. We also using a mandatory index.html to redirect to the correct sub-location. If your repository doesn't have a index.html file in the root, the upload to Azure action will fail.
 
@@ -318,7 +318,7 @@ Click in the "Trigger" section on "HTTP(req)".
 
 Here we can define how the HTTP trigger is and the file/path of the MTA-STS policy:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-eb45d8a80fa4.png)
+[![jv-media-2198-eb45d8a80fa4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-eb45d8a80fa4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-eb45d8a80fa4.png)
 
 Change the values as below:
 
@@ -333,7 +333,7 @@ We can now test if this works by forming the URL with the function app and the a
 
 - <https://jv-mta-sts.azurewebsites.net/.well-known/mta-sts.txt>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-4c9178b13e2c.png)
+[![jv-media-2198-4c9178b13e2c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-4c9178b13e2c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-4c9178b13e2c.png)
 
 It works not by going to the Function App URL but we now need to add our custom domain.
 
@@ -343,29 +343,29 @@ It works not by going to the Function App URL but we now need to add our custom 
 
 Now we need to link our domain to the function app. Go to "Custom domains" and add your custom domain:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c08341234aca.png)
+[![jv-media-2198-c08341234aca.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c08341234aca.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c08341234aca.png)
 
 Choose "All other domain services" at the Domain provider part.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-6a7c793357e3.png)
+[![jv-media-2198-6a7c793357e3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-6a7c793357e3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-6a7c793357e3.png)
 
 Fill in your custom domain, this must start with mta-sts because of the hard URL requirement for MTA-STS to work.
 
 We now get 2 validation records, these must be created at your DNS hosting provider.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c7b7f8480a05.png)
+[![jv-media-2198-c7b7f8480a05.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c7b7f8480a05.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c7b7f8480a05.png)
 
 Here I created them:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c8b316be3d1e.png)
+[![jv-media-2198-c8b316be3d1e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c8b316be3d1e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-c8b316be3d1e.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-39b6a0ca3b78.png)
+[![jv-media-2198-39b6a0ca3b78.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-39b6a0ca3b78.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-39b6a0ca3b78.png)
 
 Now hit "Validate" and let Azure check the records. This can take up to 1 hour before Azure knows your records due to DNS propagation processes. In my case, this worked after 3 minutes.
 
 Now we can check if the full URL works like expected: <https://mta-sts.justinverstijnen.nl/.well-known/mta-sts.txt>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a9faf38fe8cd.png)
+[![jv-media-2198-a9faf38fe8cd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a9faf38fe8cd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-a9faf38fe8cd.png)
 
 As you can see, our policy is succesfully published.
 
@@ -381,7 +381,7 @@ You can test your current MTA-STS configuration with my DNS MEGAtool:
 
 This tests our configuration of MTA-STS and tells us exactly what is wrong in case of an error:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-866f746cfcb5.png)
+[![jv-media-2198-866f746cfcb5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-866f746cfcb5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/what-is-mta-sts-and-how-to-protect-your-email-flow-2198/jv-media-2198-866f746cfcb5.png)
 
 The tool checks MTA-STS for both the TXT record value and the website. In my case, everything is green so good to go and this means you did the configuration correctly.
 

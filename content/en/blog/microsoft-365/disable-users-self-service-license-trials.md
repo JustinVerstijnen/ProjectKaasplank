@@ -10,7 +10,7 @@ description: >
   One day I came across an option in Microsoft 365 to disable the users' self service trials. You must have seen it happening in your tenants, users with free licenses for Power Automate, Teams or Power BI. I will show you how to disable those and only let administrators buy and assign new licenses.
 ---
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-b2e8595ef8fb.png)
+[![jv-media-5454-b2e8595ef8fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-b2e8595ef8fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-b2e8595ef8fb.png)
 
 ---
 
@@ -28,13 +28,13 @@ To disable those purchases from happening in the GUI, open up Microsoft 365 admi
 
 Then go to "Settings", "Org settings" and then "Self-service trials and purchases".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-9744e127ac83.png)
+[![jv-media-5454-9744e127ac83.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-9744e127ac83.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-9744e127ac83.png)
 
 Here you get a list of all the possible products you could disable individually. Unfortunately, for disabling everything, you must do this manually for all (at the moment 27) items. The good thing is, PowerShell can actually do this for us.
 
 Click on your license to be disabled, and click on "Do not allow". Then save the setting to apply it to your users.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-68a5c44f6e6d.png)
+[![jv-media-5454-68a5c44f6e6d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-68a5c44f6e6d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-68a5c44f6e6d.png)
 
 ---
 
@@ -75,11 +75,11 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase |
 
 PowerShell will now initiate a loop that sets the status of every license to "Disabled":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-1448fd2f43fb.png)
+[![jv-media-5454-1448fd2f43fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-1448fd2f43fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-1448fd2f43fb.png)
 
 After the simple script has run succesfully, all trial license options should be disabled in the Microsoft 365 Portal:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-c44f4f015f67.png)
+[![jv-media-5454-c44f4f015f67.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-c44f4f015f67.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-users-self-service-license-trials-5454/jv-media-5454-c44f4f015f67.png)
 
 And thank you once again PowerShell for saving a ton of clicks :)
 

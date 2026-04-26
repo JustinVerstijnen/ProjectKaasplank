@@ -13,7 +13,7 @@ To help us IT identifying certain configurations on a server and possible miscon
 
 In this post I will explain how to use it and how the script works.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-047721edba6f.png)
+[![jv-media-3866-047721edba6f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-047721edba6f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-047721edba6f.png)
 
 An example of the output of the script.
 
@@ -53,7 +53,7 @@ Install-Script JV-ServerInventoryReport
 
 At the question for the untrusted repository, answer "Yes to all" (A).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-73da7b39246d.png)
+[![jv-media-3866-73da7b39246d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-73da7b39246d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-73da7b39246d.png)
 
 Now the script is installed, and we can execute it by running:
 
@@ -75,23 +75,23 @@ First download the script from GitHub:
 
 Click on the blue button above. You now are on the GitHub page of the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-49e7d848560d.png)
+[![jv-media-3866-49e7d848560d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-49e7d848560d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-49e7d848560d.png)
 
 Click on "Code" and then "Download ZIP".
 
 Now place the files on the server where you want to execute the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-7b76c7b8117c.png)
+[![jv-media-3866-7b76c7b8117c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-7b76c7b8117c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-7b76c7b8117c.png)
 
 Unzip the ZIP file.
 
 Open Powershell ISE as administrator.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-4baa015038fe.png)
+[![jv-media-3866-4baa015038fe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-4baa015038fe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-4baa015038fe.png)
 
 After opening PowerShell ISE and after authenticating, open the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-a00421852055.png)
+[![jv-media-3866-a00421852055.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-a00421852055.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-a00421852055.png)
 
 Review the script to understand what it does. This is always a good recommendation before executing unknown scripts.
 
@@ -105,7 +105,7 @@ This disables the default PowerShell execution policy for only the duration of y
 
 Then run the script by clicking the "Play" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-e70383784fc0.png)
+[![jv-media-3866-e70383784fc0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-e70383784fc0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-e70383784fc0.png)
 
 The script will run. This takes about 30 seconds. After it has been succesfully completed, the HTML-file will be placed on the desktop (or other location if you specify this while running).
 
@@ -122,7 +122,7 @@ Script made by...
                                                        |__/
 Report written to: C:\Users\justin-admin\Desktop\Server-Inventory_20250821_101816.html
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-361f5c88aa16.png)
+[![jv-media-3866-361f5c88aa16.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-361f5c88aa16.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-inventory-report-script-3866/jv-media-3866-361f5c88aa16.png)
 
 Then you can open this file with your favorite webbrowser and review the information.
 

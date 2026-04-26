@@ -38,17 +38,17 @@ The script is relatively easy and consists of 4 steps:
 
 The script contains a set of pre-defined attributes which you can change to your own settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-708348197460.png)
+[![jv-media-3685-708348197460.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-708348197460.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-708348197460.png)
 
 You can change all of these settings, but I advice you to not change any $variables because that will break the script.
 
 On line 12 to 14, you have a parameter that specifies the OU to create the user in:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b6fda0ca6fba.png)
+[![jv-media-3685-b6fda0ca6fba.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b6fda0ca6fba.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b6fda0ca6fba.png)
 
 Change this to your own OU when using. You can find this by enabling the "Advanced Features" in the "View" menu and then going to the OU properties and the "Attributes".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8e0911209cc4.png)
+[![jv-media-3685-8e0911209cc4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8e0911209cc4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8e0911209cc4.png)
 
 Search for the "DistinguishedName" attribute and copy that value.
 
@@ -58,7 +58,7 @@ Search for the "DistinguishedName" attribute and copy that value.
 
 To use my create ad users script, go to my GitHub page and download the script there:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b8ebf60bbf7d.png)
+[![jv-media-3685-b8ebf60bbf7d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b8ebf60bbf7d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-b8ebf60bbf7d.png)
 
 Click on "Code" and then on "Download ZIP".
 
@@ -66,11 +66,11 @@ Then place the ZIP file on your Active Directory management server.
 
 Open PowerShell ISE as Administrator:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-db8174903971.png)
+[![jv-media-3685-db8174903971.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-db8174903971.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-db8174903971.png)
 
 Verify your credentials if needed and then use the "Open" function of PowerShell ISE and open the script file:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad901a5a5b5a.png)
+[![jv-media-3685-ad901a5a5b5a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad901a5a5b5a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad901a5a5b5a.png)
 
 Review:
 
@@ -91,27 +91,27 @@ Execute the command, and when prompted to lower the policy, click Yes.
 
 Now we can run the script itself by clicking the green "Play" button.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8ccaaddd148b.png)
+[![jv-media-3685-8ccaaddd148b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8ccaaddd148b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-8ccaaddd148b.png)
 
 Now the script will ask the details for the user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-16d98a8d268c.png)
+[![jv-media-3685-16d98a8d268c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-16d98a8d268c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-16d98a8d268c.png)
 
 After filling this in and hit Enter, the user will be created almost instantly:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ab212d3eb337.png)
+[![jv-media-3685-ab212d3eb337.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ab212d3eb337.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ab212d3eb337.png)
 
 Now let's take a look in the Active Directory Users and Computers snap-in (dsa.msc):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-af4be77dd486.png)
+[![jv-media-3685-af4be77dd486.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-af4be77dd486.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-af4be77dd486.png)
 
 The user is succesfully created in the desired OU and Group1 has been added to the member of list. Also the extra attributes has been added to the user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad4376d5a168.png)
+[![jv-media-3685-ad4376d5a168.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad4376d5a168.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-ad4376d5a168.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-acb968679fbf.png)
+[![jv-media-3685-acb968679fbf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-acb968679fbf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-acb968679fbf.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-6759df29e1fc.png)
+[![jv-media-3685-6759df29e1fc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-6759df29e1fc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-ad-users-with-on-demand-script-3685/jv-media-3685-6759df29e1fc.png)
 
 ---
 

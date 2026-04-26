@@ -216,7 +216,7 @@ To configure DKIM for your domain in Microsoft 365, go to the Security center or
 
 Then, under "Email & Collaboration" go to "Policies & Rules".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-6c7a3f0c134f.png)
+[![jv-media-1462-6c7a3f0c134f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-6c7a3f0c134f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-6c7a3f0c134f.png)
 
 Click on "Threat policies".
 
@@ -226,7 +226,7 @@ Here you will find all your domains added to Microsoft 365 and the status of DKI
 
 If you have a domain that has DKIM disabled, you can click on the domain-name. This opens an fly-in window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-142c458b7cca.png)
+[![jv-media-1462-142c458b7cca.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-142c458b7cca.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-142c458b7cca.png)
 
 The window tells us how to configure the records in our DNS service. In my case i have to configure 2 CNAME type DNS records. Microsoft 365 always use this 2 CNAME-configuration.
 
@@ -242,7 +242,7 @@ Create those 2 records in your DNS hosting service. In my case this configured:
 
 For reference;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-36ceaabf260b.png)
+[![jv-media-1462-36ceaabf260b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-36ceaabf260b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-36ceaabf260b.png)
 {{% alert color="info" %}}
 Some DNS hosting providers requires you to end external domain-record values with a dot "."
 {{% /alert %}}
@@ -277,7 +277,7 @@ We have to create or change an existing record to make this DMARC policy effecti
 
 My configured record for reference:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-42be939b8d00.png)
+[![jv-media-1462-42be939b8d00.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-42be939b8d00.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-42be939b8d00.png)
 
 This configuration must done for all your domains.
 
@@ -293,11 +293,11 @@ It's also possible to configure DMARC on your Microsoft Online Email Routing Add
 
 To configure this, go to Microsoft 365 Admin Center and head to the domains section:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-2196f5040337.png)
+[![jv-media-1462-2196f5040337.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-2196f5040337.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-2196f5040337.png)
 
 Open your domain and then open the "DNS records" tab. Create a new record here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-343d9db4978f.png)
+[![jv-media-1462-343d9db4978f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-343d9db4978f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/enhance-email-security-with-spf-dkim-dmarc-1462/jv-media-1462-343d9db4978f.png)
 
 Use the following parameters:
 

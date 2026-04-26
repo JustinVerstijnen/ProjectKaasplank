@@ -38,7 +38,7 @@ ipconfig /all
 
 We get the full IP-configuration of the machine, including DNS servers and domain-name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-f4c0daa2b50f.png)
+[![jv-media-1049-f4c0daa2b50f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-f4c0daa2b50f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-f4c0daa2b50f.png)
 
 This will be needed in the next commands.
 
@@ -50,7 +50,7 @@ nslookup
 
 The output will show more details of the DNS server itself and launches a DNS console where we can put some extra commands in:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0dd62a4eaa1b.png)
+[![jv-media-1049-0dd62a4eaa1b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0dd62a4eaa1b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0dd62a4eaa1b.png)
 
 Now issue the following command in the nslookup tool:
 
@@ -60,17 +60,17 @@ ls -d internal.justinverstijnen.nl
 
 If the DNS is correctly secured, we will get an error like below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-630c6d10a227.png)
+[![jv-media-1049-630c6d10a227.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-630c6d10a227.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-630c6d10a227.png)
 
 We tried to do a DNS Zone transfer, which means that we wanted to make a full export of the DNS zone internal.justinverstijnen.nl in my case. The DNS server refused this request which is a security best practice by default.
 
 Now we have generated our first alert and the Security Operations Center (SOC) of the company will be notified. We can find the alert in the Security Portal by going to "Hunting" and then to "Advanced Hunting". There we can use the query "IdentityQueryEvents":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-51c8e67f4b98.png)
+[![jv-media-1049-51c8e67f4b98.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-51c8e67f4b98.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-51c8e67f4b98.png)
 
 This will show all events where attackers tried to do sensitive queries. We can investigate this further by expanding the alert:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-41faf39aa119.png)
+[![jv-media-1049-41faf39aa119.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-41faf39aa119.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-41faf39aa119.png)
 
 Now the SOC knows exactly on which computer this happend and on what time.
 
@@ -90,7 +90,7 @@ net user /domain
 
 Now we get a report of all the users in the domain, with username and so their emailaddresses:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0730c72dd2d5.png)
+[![jv-media-1049-0730c72dd2d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0730c72dd2d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-0730c72dd2d5.png)
 
 Now we can run a command to get all groups in the domain:
 
@@ -100,7 +100,7 @@ net group /domain
 
 This list shows some default groups and some user created groups that are in use for different use cases. We now want to go a level deeper, and that is the members of one of these groups:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-aa4fc2750ac5.png)
+[![jv-media-1049-aa4fc2750ac5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-aa4fc2750ac5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-aa4fc2750ac5.png)
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 net group "Domain Admins" /domain
@@ -108,7 +108,7 @@ net group "Domain Admins" /domain
 
 Now, as an attacker, we have gold on our hands. We know exactly which 5 users we have to attack to get domain admin permissions and be able to be destructive.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cecdfec5ebe5.png)
+[![jv-media-1049-cecdfec5ebe5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cecdfec5ebe5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cecdfec5ebe5.png)
 
 If we want to have even more permissions, we can find out which user has Enterprise Admin permissions:
 
@@ -116,7 +116,7 @@ If we want to have even more permissions, we can find out which user has Enterpr
 net group "Enterprise Admins" /domain
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-8f3780afa4c6.png)
+[![jv-media-1049-8f3780afa4c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-8f3780afa4c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-8f3780afa4c6.png)
 
 So we can aim our attack to that guy Justin.
 
@@ -130,7 +130,7 @@ We can further investigate every event by expanding it:
 
 After some time (around 10 minutes in my case), an official incident will be opened in the Security portal, and notifiies the SOC with possible alerts they have configured:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00dbcaddecd7.png)
+[![jv-media-1049-00dbcaddecd7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00dbcaddecd7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00dbcaddecd7.png)
 
 ---
 
@@ -154,7 +154,7 @@ Now lets run a command to show all logged in users including their IP addresses
 Netsess.exe vm-jv-mdi
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-2e915a6bc310.png)
+[![jv-media-1049-2e915a6bc310.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-2e915a6bc310.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-2e915a6bc310.png)
 
 Now we know where potential domain admins are logged in and could launch attacks on their computer, especially because we know on which computer the user credentials are stored. This all without any access to a server (yet).
 
@@ -214,7 +214,7 @@ mimikatz.exe "privilege::debug" "sekurlsa::pth /user:alexander.harris /ntlm:F526
 
 A new command prompt will open with the permissions of Alexander Harris in place:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-b1f4ed648e2e.png)
+[![jv-media-1049-b1f4ed648e2e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-b1f4ed648e2e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-b1f4ed648e2e.png)
 
 This situation is worst case scenario which is not that easy to execute anymore due to kernel improvements of Windows and not be able to export hashes from the memory anymore.
 
@@ -230,13 +230,13 @@ We can add users and devices to this list.
 
 I now have created a user that seems to give the attacker some real permissions (but in fact is a normal domain user):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-55a63743cfeb.png)
+[![jv-media-1049-55a63743cfeb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-55a63743cfeb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-55a63743cfeb.png)
 
 Let's configure this account as Honeytoken account in the Security portal. Go to the Settings -> Identities -> Honeytoken accounts
 
 Tag the user and select it from the list.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00a625bce214.png)
+[![jv-media-1049-00a625bce214.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00a625bce214.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-00a625bce214.png)
 
 After that save the account and let's generate some alerts.
 
@@ -248,17 +248,17 @@ Now, as an attacker, we cloud know that the admin.service account exists through
 
 It asks for credentials, we can try to log in with some basic, wrong passwords on the admin.service account.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-c9a9560d7c95.png)
+[![jv-media-1049-c9a9560d7c95.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-c9a9560d7c95.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-c9a9560d7c95.png)
 
 This will generate alerts on that account because the account is not really supposed to logon. The SOC will immediately know that an malicious actor is running some malicious behaviour.
 
 After filling in around 15 wrong passwords i filled in the right password on purpose:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-84adbdc276e6.png)
+[![jv-media-1049-84adbdc276e6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-84adbdc276e6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-84adbdc276e6.png)
 
 In the Security Portal, after around 5 minutes, an alert is generated due to our malicious behaviour;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cf6b10d08499.png)
+[![jv-media-1049-cf6b10d08499.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cf6b10d08499.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/penetration-testing-defender-for-identity-and-active-directory-1049/jv-media-1049-cf6b10d08499.png)
 
 ---
 

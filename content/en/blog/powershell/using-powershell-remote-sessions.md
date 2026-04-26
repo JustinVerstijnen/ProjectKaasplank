@@ -45,7 +45,7 @@ Create a new or use an existing Group Policy object and go to:
 
 Pick the option: "Allow remote server management through WinRM"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-9a922997a7e6.png)
+[![jv-media-527-9a922997a7e6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-9a922997a7e6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-9a922997a7e6.png)
 
 Here we can define from what IP-addresses we can use WinRM for a more secure use of WinRM.
 
@@ -57,7 +57,7 @@ In the GPO, go to:
 
 Create a new Inbound rule based on a Predefined rule:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-2d7249a5ee50.png)
+[![jv-media-527-2d7249a5ee50.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-2d7249a5ee50.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-powershell-remote-sessions-527/jv-media-527-2d7249a5ee50.png)
 
 Click next till the wizard is done.
 

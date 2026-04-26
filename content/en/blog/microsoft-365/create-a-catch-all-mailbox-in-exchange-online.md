@@ -51,7 +51,7 @@ Now we have to create a mailbox in Microsoft 365. Login to <https://admin.micros
 
 Go to Users and create a new user, and make it clear that this is the Catch-All user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-16ef4a9c580e.png)
+[![jv-media-2480-16ef4a9c580e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-16ef4a9c580e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-16ef4a9c580e.png)
 
 Advance to the next tab and assign at least a Exchange Online P1 license and finish creating the user.
 
@@ -88,23 +88,23 @@ In my guide, I create one group for excluding only. You can also create a group 
 
 Go to "Recipients" and then "Groups". Then open the tab "Dynamic distribution list"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-58a228307c9a.png)
+[![jv-media-2480-58a228307c9a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-58a228307c9a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-58a228307c9a.png)
 
 Click on "Add a group" to create a new group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3013a5d8a7ef.png)
+[![jv-media-2480-3013a5d8a7ef.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3013a5d8a7ef.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3013a5d8a7ef.png)
 
 Select the option "Dynamic distribution" and click on "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-c2c4dae9fbbf.png)
+[![jv-media-2480-c2c4dae9fbbf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-c2c4dae9fbbf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-c2c4dae9fbbf.png)
 
 Fill in a good name and description for the Dynamic distribution group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-40cd088cc4b5.png)
+[![jv-media-2480-40cd088cc4b5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-40cd088cc4b5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-40cd088cc4b5.png)
 
 Now for the owner select your admin account(s) and for the members define which types of addresses you want to include. In my case, I only selected Users with Exchange mailboxes. Then click on "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b6112c103f6.png)
+[![jv-media-2480-3b6112c103f6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b6112c103f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b6112c103f6.png)
 
 Now define the email address name of the Dynamic Distribution group.
 
@@ -127,13 +127,13 @@ New-DynamicDistributionGroup -Name '$distributiongroup' -Alias '$aliasdistributi
 
 Now we have to create the Mailflow rule in Exchange Admin Center. Go to "Mail flow" and then to "Rules".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-8c8f32e4ab5d.png)
+[![jv-media-2480-8c8f32e4ab5d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-8c8f32e4ab5d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-8c8f32e4ab5d.png)
 
 Click on "+ Add a rule" and then on "Create a new rule" to create a new rule from scratch.
 
 Now we have to define the rule by hand:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-dfde3a7edc08.png)
+[![jv-media-2480-dfde3a7edc08.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-dfde3a7edc08.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-dfde3a7edc08.png)
 
 Give the rule a clear name. I called the rule "JV-NL-Catchall" which contains the domain abbreviation and the TLD of the domain. Then specified that its a Catchall rule.
 
@@ -143,19 +143,19 @@ Give the rule a clear name. I called the rule "JV-NL-Catchall" which contains th
 
 The rule must look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-51c46350321e.png)
+[![jv-media-2480-51c46350321e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-51c46350321e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-51c46350321e.png)
 
 Click on "Next".
 
 Now for the rule settings, select "Stop processing more rules" to ensure this rule is hit.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)
+[![jv-media-2480-a1dcfb0f21db.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)
 
 Then give the rule a good description/comment and save the rule.
 
 After creating the rule, we can activate the rule if not already done. Click on the "Disabled" part of the rule and click on the switch to enable the rule.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-ef62a128709c.png)
+[![jv-media-2480-ef62a128709c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-ef62a128709c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-ef62a128709c.png)
 
 As you can see, my rule is enabled.
 
@@ -185,11 +185,11 @@ For Exchange be able to redirect messages to a email addresses that doesn't real
 
 You can enable this in Exchange Admin Center, by going to "Mail flow" and then to "Accepted domains":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b1af94bf2bc.png)
+[![jv-media-2480-3b1af94bf2bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b1af94bf2bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-3b1af94bf2bc.png)
 
 Select your domain and click on it. A window will be opened to the right:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-081b7973420c.png)
+[![jv-media-2480-081b7973420c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-081b7973420c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-081b7973420c.png)
 
 Select the option "Internal Relay" and save the configuration.
 
@@ -214,7 +214,7 @@ I have sent a message from Hotmail to no-reply@justinverstijnen.nl which is a no
 
 And it did!
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-d94a8d4b8796.png)
+[![jv-media-2480-d94a8d4b8796.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-d94a8d4b8796.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-d94a8d4b8796.png)
 
 Now you should test normal email flow too, and ensure not all email is sent to your catch all mailbox. If this works, then the solution is working 100%.
 

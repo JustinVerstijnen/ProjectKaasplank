@@ -30,7 +30,7 @@ To start off with the fast pass, my script can be downloaded here from my Github
 
 I have already downloaded the script, and have it ready to execute:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-bdde85acb7c6.png)
+[![jv-media-3495-bdde85acb7c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-bdde85acb7c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-bdde85acb7c6.png)
 
 When executed, it asks to login to a tenant. Here you have to login to the tenant you want to audit. After that it will be performing the checks. This can take a while with several users and role assignments.
 
@@ -44,7 +44,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 After the script finishes all the checks, it puts out a CSV file in the same folder as the script which we can now open to review all the Entra ID user role assignments:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-9f1098440589.png)
+[![jv-media-3495-9f1098440589.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-9f1098440589.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-entra-id-user-role-assignments-3495/jv-media-3495-9f1098440589.png)
 
 As you can see, this shows crystal clear what users and assigned roles this environment has.
 

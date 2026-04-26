@@ -15,7 +15,7 @@ Sometimes you want to force a group policy update on multiple computers. Often w
 
 There is a option in Group Policy management to force a group policy update to all computers in a OU:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-b7954db3f633.png)
+[![jv-media-534-b7954db3f633.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-b7954db3f633.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-b7954db3f633.png)
 
 Actually, this only works after you configured this on the remote computers. The good part is, there is a way to do this with Group Policy!
 
@@ -55,11 +55,11 @@ After this link the GPO to the right OU and do a last manual GPupdate or wait fo
 
 You can use the Group Policy update option in Group Policy Management (gpmc.msc) to perform a group policy update on all computers in a OU.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-fec510b3d91d.png)
+[![jv-media-534-fec510b3d91d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-fec510b3d91d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-fec510b3d91d.png)
 
 After that you will get succeeded notifications:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-27861d74e1b9.png)
+[![jv-media-534-27861d74e1b9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-27861d74e1b9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-enable-remote-group-policy-update-534/jv-media-534-27861d74e1b9.png)
 
 ---
 

@@ -17,7 +17,7 @@ Azure Bastion is a serverless instance you deploy in your Azure virtual network.
 
 The process of it looks like this:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f0747dc2cc22.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f0747dc2cc22.png)
+[![jv-media-3240-f0747dc2cc22.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f0747dc2cc22.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f0747dc2cc22.png)
 
 A user can choose to connect from the Azure Portal to Azure Bastion and from there to the destination server or use a native client, which can be:
 
@@ -80,17 +80,17 @@ For the Standard and Premium SKUs of Azure Bastion, it is possible to get more t
 
 We can deploy Azure Bastion through the Azure Portal. Search for "Bastions" and you will find it:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8f068ff2833e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8f068ff2833e.png)
+[![jv-media-3240-8f068ff2833e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8f068ff2833e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8f068ff2833e.png)
 
 ### Create Azure Bastion subnet
 
 Before we can deploy Azure Bastion to a network, we must create a subnet for this managed service. This can be done in the virtual network. Then go to "subnets":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8be9be0ffb07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8be9be0ffb07.png)
+[![jv-media-3240-8be9be0ffb07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8be9be0ffb07.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8be9be0ffb07.png)
 
 Click on "+ Subnet" to create a new subnet:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-1a99cea9ce9f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-1a99cea9ce9f.png)
+[![jv-media-3240-1a99cea9ce9f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-1a99cea9ce9f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-1a99cea9ce9f.png)
 
 Select "Azure Bastion" at the subnet purpose field, this is a template for the network.
 
@@ -100,7 +100,7 @@ Click on "Add" to finish the creation of this subnet.
 
 Now go back to "Bastions" and we can create a new instance:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-a08be9bd44ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-a08be9bd44ff.png)
+[![jv-media-3240-a08be9bd44ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-a08be9bd44ff.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-a08be9bd44ff.png)
 
 Fill in your details and select your Tier (SKU). Then choose the network to place the Bastion instance in. The virtual network and the basion instance must be in the same region.
 
@@ -108,7 +108,7 @@ Then create a public IP which the Azure Bastion service uses to form the bridge 
 
 Now we advance to the tab "Advanced" where we can enable some Premium features:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-823e77eaa647.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-823e77eaa647.png)
+[![jv-media-3240-823e77eaa647.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-823e77eaa647.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-823e77eaa647.png)
 
 I selected these options for showcasing them in this post.
 
@@ -118,7 +118,7 @@ Now we can deploy the Bastion instance. This will take around 15 minutes.
 
 You can also deploy Azure Bastion when creating a virtual network:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-74fff95e8855.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-74fff95e8855.png)
+[![jv-media-3240-74fff95e8855.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-74fff95e8855.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-74fff95e8855.png)
 
 However, this option has less control over naming structure and placement. Something we don't always want :)
 
@@ -130,23 +130,23 @@ We can now use Azure Bastion by going to the instance itself or going to the VM 
 
 Via instance:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-9acf90f3e8c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-9acf90f3e8c7.png)
+[![jv-media-3240-9acf90f3e8c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-9acf90f3e8c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-9acf90f3e8c7.png)
 
 Via virtual machine:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f6c5d2d30386.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f6c5d2d30386.png)
+[![jv-media-3240-f6c5d2d30386.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f6c5d2d30386.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-f6c5d2d30386.png)
 
 ### Connecting to virtual machine
 
 We can now connect to a virtual machine. In this case I will use a Windows VM:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-4e9d9f7bc9e4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-4e9d9f7bc9e4.png)
+[![jv-media-3240-4e9d9f7bc9e4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-4e9d9f7bc9e4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-4e9d9f7bc9e4.png)
 
 Fill in the details like the internal IP address and the username/password. Then click on "Connect".
 
 Now we are connected through the browser, without needing to open any ports or to install any applications:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-0ae283cf1531.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-0ae283cf1531.png)
+[![jv-media-3240-0ae283cf1531.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-0ae283cf1531.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-0ae283cf1531.png)
 
 ---
 
@@ -158,19 +158,19 @@ This may decrease the security, so be aware of how you store these links.
 
 In the Azure Bastion instance, open the menu "Shareable links":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-c39ba73542ce.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-c39ba73542ce.png)
+[![jv-media-3240-c39ba73542ce.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-c39ba73542ce.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-c39ba73542ce.png)
 
 Click on "+ Add"
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8dc7e64be8b1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8dc7e64be8b1.png)
+[![jv-media-3240-8dc7e64be8b1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8dc7e64be8b1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8dc7e64be8b1.png)
 
 Select the resource group and then the virtual machine you want to share. Click on "Create".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-db3c3dbc81b2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-db3c3dbc81b2.png)
+[![jv-media-3240-db3c3dbc81b2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-db3c3dbc81b2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-db3c3dbc81b2.png)
 
 We can now connect to the machine using the shareable link. This looks like this:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-bd123c1daa05.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-bd123c1daa05.png)
+[![jv-media-3240-bd123c1daa05.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-bd123c1daa05.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-bd123c1daa05.png)
 
 Of course you still need to have the credentials and the connection information, but this is less secure than accessing servers via the Azure Portal only. This will expose a login page to the internet, and with the right URL, its a matter of time for a hacker to breach your system.
 
@@ -180,7 +180,7 @@ Of course you still need to have the credentials and the connection information,
 
 We also have the option to disable copy/paste functionality in the sessions. This improves the security while decreasing the user experience for the administrators.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8061b5cf86b2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8061b5cf86b2.png)
+[![jv-media-3240-8061b5cf86b2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8061b5cf86b2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8061b5cf86b2.png)
 
 You can disable this by deselecting this option above.
 
@@ -202,7 +202,7 @@ Let's follow these steps:
 
 Go to "Storage accounts" and create a new storage account:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8a28b5a4c778.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8a28b5a4c778.png)
+[![jv-media-3240-8a28b5a4c778.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8a28b5a4c778.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-8a28b5a4c778.png)
 
 Fill in the details on the first page and skip to the deployment as we don't need to change other settings.
 
@@ -225,11 +225,11 @@ Here fill in the following:
 
 The Bation DNS name can be found on the homepage of the Azure Bastion instance:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-b506d47b9dfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-b506d47b9dfa.png)
+[![jv-media-3240-b506d47b9dfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-b506d47b9dfa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-b506d47b9dfa.png)
 
 Ensure the CORS settings look like this:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-45a02b5c38da.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-45a02b5c38da.png)
+[![jv-media-3240-45a02b5c38da.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-45a02b5c38da.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-45a02b5c38da.png)
 
 Click on "Save" and we are done with CORS.
 
@@ -237,7 +237,7 @@ Click on "Save" and we are done with CORS.
 
 Go to the storage account again and create a new container here:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-7253f25c356e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-7253f25c356e.png)
+[![jv-media-3240-7253f25c356e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-7253f25c356e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-7253f25c356e.png)
 
 Create the container and open it.
 
@@ -260,11 +260,11 @@ When you have opened the container, open "Shared access tokens":
   - List
 - Set your timeframe for the access to be active. This has to be active now so we can test the configuration
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-16c8b1a4d481.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-16c8b1a4d481.png)
+[![jv-media-3240-16c8b1a4d481.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-16c8b1a4d481.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-16c8b1a4d481.png)
 
 Then click on "Generate SAS token and URL" to generate a URL:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-342341663fd7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-342341663fd7.png)
+[![jv-media-3240-342341663fd7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-342341663fd7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-342341663fd7.png)
 
 Copy the Blob SAS URL, as we need this in the next step.
 
@@ -272,17 +272,17 @@ Copy the Blob SAS URL, as we need this in the next step.
 
 We need to paste this URL into Azure Bastion, as the instance can save the recordings there. Head to the Azure Bastion instance:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-94dd72e76e4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-94dd72e76e4f.png)
+[![jv-media-3240-94dd72e76e4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-94dd72e76e4f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-94dd72e76e4f.png)
 
 Then open the option "Session recordings" and click on "Add or update SAS URL".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-46c669d756b6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-46c669d756b6.png)
+[![jv-media-3240-46c669d756b6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-46c669d756b6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-46c669d756b6.png)
 
 Paste the URL here and click on "Upload".
 
 Now the service is succesfully configured!
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-834397e64f13.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-834397e64f13.png)
+[![jv-media-3240-834397e64f13.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-834397e64f13.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-834397e64f13.png)
 
 ---
 
@@ -290,15 +290,15 @@ Now the service is succesfully configured!
 
 Now let's connect again to a VM now by going to the instance:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-053d60230cc5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-053d60230cc5.png)
+[![jv-media-3240-053d60230cc5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-053d60230cc5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-053d60230cc5.png)
 
 Now fill in the credentials of the machine to connect with it.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-02e55b50e588.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-02e55b50e588.png)
+[![jv-media-3240-02e55b50e588.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-02e55b50e588.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-02e55b50e588.png)
 
 We are once again connected, and this session will be recorded. You can find these recordings in the Session recordings section in the Azure portal. These will be saved after a session is closed.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-32a170dfb8ae.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-32a170dfb8ae.png)
+[![jv-media-3240-32a170dfb8ae.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-32a170dfb8ae.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/everything-you-need-to-know-about-azure-bastion-3240/jv-media-3240-32a170dfb8ae.png)
 
 The recording looks like this, watch me installing the ISS role for demonstration of this function. This is a recording that Azure Bastion has made.
 

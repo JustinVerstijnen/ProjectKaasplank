@@ -47,27 +47,27 @@ The Installation script creates a folder in C:\ named "Scripts" if not already t
 
 Click on the blue button above. You now are on the Github page of the script.
 
-![GitHub page of the Windows Updates script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)
+[![jv-media-3614-0ceb1a8a2ba0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)
 
 Click on "Code" and then "Download ZIP".
 
 Now place the files on the server where you want to install the script.
 
-![Downloaded script files on server](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-754a4eca6afa.png)
+[![jv-media-3614-754a4eca6afa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-754a4eca6afa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-754a4eca6afa.png)
 
 Unzip the file and then we can run the "Install" script. This must be run as administrator and temporarily without Execution Policy.
 
 Open Powershell ISE as administrator.
 
-![Open PowerShell ISE as administrator](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-abb9c2951099.png)
+[![jv-media-1276-abb9c2951099.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-abb9c2951099.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-abb9c2951099.png)
 
 Now open the "Install" script.
 
-![Open the install script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-06723875d442.png)
+[![jv-media-3614-06723875d442.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-06723875d442.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-06723875d442.png)
 
 Review it's default settings and if you feel at home in PowerShell, review the rest of the script to understand what it does.
 
-![Review install script settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-10c2ae562340.png)
+[![jv-media-3614-10c2ae562340.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-10c2ae562340.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-10c2ae562340.png)
 
 You can change the schedule very easily by changing the runtime: 0:00 till 23:59 and the day of month to specify the day number of the month (1-31).
 
@@ -81,19 +81,19 @@ This way the execution policy stays enabled but for this session only it's been 
 
 Execute the command, and when prompted to lower the policy, click Yes.
 
-![Confirm execution policy change](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-6339e6e403bb.png)
+[![jv-media-1276-6339e6e403bb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-6339e6e403bb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-6339e6e403bb.png)
 
 Now execute the Install script by clicking the green "Run" button:
 
-![Run the install script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-2f79db1ca1e7.png)
+[![jv-media-3614-2f79db1ca1e7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-2f79db1ca1e7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-2f79db1ca1e7.png)
 
 After executing the script, we get the message that the task has been created succesfully:
 
-![Scheduled task created successfully](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-edc5506b3c66.png)
+[![jv-media-3614-edc5506b3c66.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-edc5506b3c66.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-edc5506b3c66.png)
 
 Let's check this in the Windows Task Scheduler:
 
-![Task Scheduler created task](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-d784dbdb3f5d.png)
+[![jv-media-3614-d784dbdb3f5d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-d784dbdb3f5d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-d784dbdb3f5d.png)
 
 As you can see, the script is succesfully installed to Task Scheduler. This ensures it runs every first of the month at 03:00 (or at your own defined schedule). Also, the script has been placed in C:\Scripts for a good overview of the scripts of the system.
 
@@ -103,7 +103,7 @@ If you want to define your own schedule and script location, it can be better to
 
 Click on the blue Download button at the beginning of the page.
 
-![GitHub page of the Windows Updates script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)
+[![jv-media-3614-0ceb1a8a2ba0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-0ceb1a8a2ba0.png)
 
 Click on "Code" and then "Download ZIP".
 
@@ -113,23 +113,23 @@ Then place the ZIP file on the server where you want to install the disk cleanup
 
 Select the script and place it in your preferred location. My advice is to not install this in a user profile, but in a location accessible for all users. Like C:\Scripts.
 
-![Move script to C Scripts folder](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-e6f20bd4ff30.png)
+[![jv-media-3614-e6f20bd4ff30.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-e6f20bd4ff30.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-e6f20bd4ff30.png)
 
 I have placed the scipt into the correct folder. If you also want the script to run on a schedule, open up the "Task Scheduler" (taskschd.msc).
 
 ### Creating the scheduled task
 
-![Open Task Scheduler](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-1df7d56f3806.png)
+[![jv-media-1276-1df7d56f3806.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-1df7d56f3806.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-1df7d56f3806.png)
 
 Do a "Right-mouse click" on the empty space and click on "Create New Task...".
 
-![Create new task in Task Scheduler](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-52c360ba7351.png)
+[![jv-media-3614-52c360ba7351.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-52c360ba7351.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-52c360ba7351.png)
 
 Give the task a name and description that alings with your documentation.
 
 Then change the user to "SYSTEM" to run this in SYSTEM context for the highest privileges:
 
-![Change task user to SYSTEM](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-c6c18f9fa7db.png)
+[![jv-media-1276-c6c18f9fa7db.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-c6c18f9fa7db.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-c6c18f9fa7db.png)
 
 Then check the "Run with highest privileges" and select the highest OS possible in the "Configure for" dropdown menu.
 
@@ -137,7 +137,7 @@ Then check the "Run with highest privileges" and select the highest OS possible 
 
 Go to the "Triggers" tab and add a new trigger.
 
-![Add new scheduled task trigger](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-fafe7b477e51.png)
+[![jv-media-1276-fafe7b477e51.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-fafe7b477e51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-fafe7b477e51.png)
 
 Select "Monthly" and select all months. Then change the "Days" field to 1 to run it on the first day.
 
@@ -147,7 +147,7 @@ You can defer from this schedule if your environment needs that. This is just an
 
 Now the page looks like this:
 
-![Monthly scheduled trigger configured](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-8e35e0f371e5.png)
+[![jv-media-1276-8e35e0f371e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-8e35e0f371e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-8e35e0f371e5.png)
 
 ### Configure script action
 
@@ -165,7 +165,7 @@ In the "Add arguments (optional):" field, type in the following:
 -ExecutionPolicy Bypass -File C:\Scripts\JV-ServerPeriodicInstallUpdates.ps1
 {{< /card >}}
 
-![Scheduled task action configuration](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-e54f48edbd99.png)
+[![jv-media-1276-e54f48edbd99.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-e54f48edbd99.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-e54f48edbd99.png)
 
 Now click on "OK" twice to create the task.
 
@@ -173,17 +173,17 @@ Now click on "OK" twice to create the task.
 
 Now we can manually run the task to ensure it runs on a schedule too. Right click the task and click on "Run" to start the task.
 
-![Run scheduled task manually](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-33d36f0fd528.png)
+[![jv-media-1276-33d36f0fd528.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-33d36f0fd528.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-1276-33d36f0fd528.png)
 
 As we can see, the script runs successfully as it still runs after 30 seconds. This means the task and permissions are correct.
 
-![Task running successfully](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-862330fa7685.png)
+[![jv-media-3614-862330fa7685.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-862330fa7685.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-862330fa7685.png)
 
 The script can take up to several hours when cleaning everything, depending on the server size.
 
 In the folder of the script, a log file is created:
 
-![Windows Updates script log file](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-ee84aab2d2f6.png)
+[![jv-media-3614-ee84aab2d2f6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-ee84aab2d2f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/installing-windows-updates-through-powershell-script-3614/jv-media-3614-ee84aab2d2f6.png)
 
 Every update installed will be logged for documentation and monitoring purposes. This can come in handy when an update unfortunately brings bugs with it so we can search for and remove this update.
 

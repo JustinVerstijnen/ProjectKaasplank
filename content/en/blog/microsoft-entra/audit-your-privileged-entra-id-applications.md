@@ -30,7 +30,7 @@ In terms of Entra ID and Identity, we call a Enterprise Application a "**Service
 
 Enterprise applications are mostly pre-configured by the 3rd party publisher of the application that needs permission. However, a user can be prompted to give their information to a application. This looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-0cdeadf8bf3a.png)
+[![jv-media-3399-0cdeadf8bf3a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-0cdeadf8bf3a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-0cdeadf8bf3a.png)
 
 As we can see, the application gets the information of the calendars, the profile of the user and gets data. These alone aren't not that much privileged, but this can be much worse. Let's take a look at "App Registrations".
 
@@ -73,11 +73,11 @@ Open the [Microsoft Entra admin center](https://entra.microsoft.com/) and go to:
 
 Click on "+ New registration":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-54556d0be245.png)
+[![jv-media-3399-54556d0be245.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-54556d0be245.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-54556d0be245.png)
 
 Fill in a name and the rest doesn't care for testing purposes. You can leave them default.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-5a841560a4c4.png)
+[![jv-media-3399-5a841560a4c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-5a841560a4c4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-5a841560a4c4.png)
 
 Click Register.
 
@@ -85,17 +85,17 @@ Click Register.
 
 Now the application is created. Open it if not already redirected. Write down the "Client ID" and the "Tenant ID" because we will need them in a short moment. Then go to the section "API permissions".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-83b9dfe6462a.png)
+[![jv-media-3399-83b9dfe6462a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-83b9dfe6462a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-83b9dfe6462a.png)
 
 Here you find all assigned permissions to the application. Click on "+ Add a permission" to add permissions to this application. Then click on "Microsoft Graph".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-d6a933e90a59.png)
+[![jv-media-3399-d6a933e90a59.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-d6a933e90a59.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-d6a933e90a59.png)
 
 Microsoft Graph is the new API of Microsoft that spans across most of the Microsoft Online services.
 
 Then click on "Application permissions":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1740d396ab82.png)
+[![jv-media-3399-1740d396ab82.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1740d396ab82.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1740d396ab82.png)
 
 Now we can choose several permissions that the application gets. You can search for some of the High privileged apps, for example these:
 
@@ -112,7 +112,7 @@ As you can see; if I create the application with these permissions I have a non-
 
 Create the application with your permissions and click on "Grant admin consent for 'Tenant'" to make the permissions active.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-7e7c02fddb0b.png)
+[![jv-media-3399-7e7c02fddb0b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-7e7c02fddb0b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-7e7c02fddb0b.png)
 
 ### Create Client secret for application
 
@@ -120,15 +120,15 @@ We can now create a Client secret for this application. This is a sort of master
 
 In Entra, go to the application again, and the to "Certificates & secrets":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-71e3a89e3be8.png)
+[![jv-media-3399-71e3a89e3be8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-71e3a89e3be8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-71e3a89e3be8.png)
 
 Create a new secret.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-78a86bb547b8.png)
+[![jv-media-3399-78a86bb547b8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-78a86bb547b8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-78a86bb547b8.png)
 
 Specify the period and the lifetime and click on "Add" to create the secret.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-9fde0e7825a9.png)
+[![jv-media-3399-9fde0e7825a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-9fde0e7825a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-9fde0e7825a9.png)
 
 Now copy both the Value, which is the secret itself and the Secret ID and store them in a safe place, like a password manager. These can be viewed for some minutes and then will be concealed forever.
 
@@ -204,7 +204,7 @@ You can, once again, download the script here:
 
 I have already downloaded the script, and have it ready to execute:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-142b5f8d3d06.png)
+[![jv-media-3399-142b5f8d3d06.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-142b5f8d3d06.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-142b5f8d3d06.png)
 
 When executed, it asks to login to a tenant. Here you have to login to the tenant you want to audit. After that it will be performing the checks. This can take a while with several applications.
 
@@ -217,15 +217,15 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 After the script finishes all the checks, it puts out a CSV file in the same folder as the script which we can now open to review the applications and their permissions:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1ef9722813f1.png)
+[![jv-media-3399-1ef9722813f1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1ef9722813f1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-1ef9722813f1.png)
 
 As we can see, this must be a far too much privileged application, and everything must be done to secure it:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-89c4f968230d.png)
+[![jv-media-3399-89c4f968230d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-89c4f968230d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-89c4f968230d.png)
 
 It also queries if the applications has active secrets or certificates:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-2fd8b4a781f3.png)
+[![jv-media-3399-2fd8b4a781f3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-2fd8b4a781f3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/audit-your-privileged-entra-id-applications-3399/jv-media-3399-2fd8b4a781f3.png)
 
 So this way we know within minutes which applications we must monitor and even deleted or seperated into more, smaller, less privileged applications.
 

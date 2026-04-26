@@ -17,7 +17,7 @@ DNSSEC is a feature where a client can validate the DNS records received by a DN
 
 DNSSEC is developed to prevent attacks like in the topology below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1494f13639ce.png)
+[![jv-media-499-1494f13639ce.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1494f13639ce.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1494f13639ce.png)
 
 Here a attacker injects a fake DNS record and sends the user to a different IP-address, not the actual IP-address of the real website but a fake, mostly spoofed website. This way, a user sees for example https://portal.azure.com in his address bar but is actually on a malicious webserver. This makes the user far more vulnerable to credential harvesting or phising attacks.
 
@@ -63,7 +63,7 @@ When starting out, your DNS hosting must support and enabled DNSSEC on your doma
 
 My domain is DNSSEC capable and a DS record is published from the registrar to the DNS hosting and is ready to go to the next phase:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-b3f0ac5317c4.png)
+[![jv-media-499-b3f0ac5317c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-b3f0ac5317c4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-b3f0ac5317c4.png)
 
 You can find this on the last row of the table in the DNS MEGAtool. If the status is red or an error is in the value field, the configuration of your domain is not correct.
 
@@ -92,7 +92,7 @@ We have to enable DNSSEC to each of our domains managed in Microsoft 365. In my 
 Enable-DnssecForVerifiedDomain -DomainName "justinverstijnen.nl"
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-2c556bcd39f4.png)
+[![jv-media-499-2c556bcd39f4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-2c556bcd39f4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-2c556bcd39f4.png)
 
 The output of the command gives us a new, DNSSEC enabled MX-record.
 
@@ -112,7 +112,7 @@ Let's change this in the DNS hosting of your domain and it has to be the new pri
 
 Here an example of my configuration before switching to the new DNSSEC enabled MX record as primary.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8351f98c1ca0.png)
+[![jv-media-499-8351f98c1ca0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8351f98c1ca0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8351f98c1ca0.png)
 
 When you change your MX record it can take up to 72 hours before the whole world knows your new MX record.
 
@@ -124,21 +124,21 @@ We can test our new MX record and the working of our change with the following t
 
 Fill in your emailaddress and log into the service:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-5c2e85ebc77f.png)
+[![jv-media-499-5c2e85ebc77f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-5c2e85ebc77f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-5c2e85ebc77f.png)
 
 After that you get an test report:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-4cfdcfe48393.png)
+[![jv-media-499-4cfdcfe48393.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-4cfdcfe48393.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-4cfdcfe48393.png)
 
 I did this test before flipping the MX records. You can test this anytime.
 
 After the MX records are fine, we can test our DNSSEC. The DNSSEC enabled MX record has to be primary at this point.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-90943131a4aa.png)
+[![jv-media-499-90943131a4aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-90943131a4aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-90943131a4aa.png)
 
 After the test is completed you get the results and possible warnings and errors:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-7e97f59d39f9.png)
+[![jv-media-499-7e97f59d39f9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-7e97f59d39f9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-7e97f59d39f9.png)
 
 ---
 
@@ -150,7 +150,7 @@ After we configured DNSSEC, we can enable SMTP DANE in the same Exchange Online 
 Enable-SmtpDaneInbound -DomainName "justinverstijnen.nl"
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8598a10ef5c0.png)
+[![jv-media-499-8598a10ef5c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8598a10ef5c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-8598a10ef5c0.png)
 
 This is only a command to enable SMTP DANE for inbound email, here is no additional DNS change needed.
 
@@ -164,7 +164,7 @@ You can test the outcome by using this tool: <https://testconnectivity.microsoft
 
 Fill in your domain, and select the "DANE-validation" including DNSSEC to test both of your implemented mechanisms:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1674b02f9a11.png)
+[![jv-media-499-1674b02f9a11.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1674b02f9a11.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-dnssec-and-smtp-dane-with-exchange-online-microsoft-365-499/jv-media-499-1674b02f9a11.png)
 
 ---
 

@@ -11,7 +11,7 @@ description: >
 ---
 Now and then we come across a problem with Entra Connect Sync which states "DeletingCloudOnlyObjectNotAllowed". This error looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-0b0f49fdf50a.png)
+[![jv-media-5139-0b0f49fdf50a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-0b0f49fdf50a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-0b0f49fdf50a.png)
 
 This error will be shown if opening the Syncronization Service and email messages of this error will aso be sent to your tenant's technical contact.
 
@@ -39,7 +39,7 @@ As this gives us only the ObjectId of the cloud user, we still have to dig into 
 
 We can find the affected account by pasting the object ID into [Microsoft Entra](https://entra.microsoft.com):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-1c0cae3f0696.png)
+[![jv-media-5139-1c0cae3f0696.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-1c0cae3f0696.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-1c0cae3f0696.png)
 
 This will return the affected user.
 
@@ -48,7 +48,7 @@ Or you could do this with Microsoft Graph, where the UserId is the ObjectId whic
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 PS C:\Windows\system32> Get-MgUser -UserId aa5c5d7b-2bde-40f4-94f1-b29ff664e669
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-64f17b5c6c20.png)
+[![jv-media-5139-64f17b5c6c20.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-64f17b5c6c20.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-64f17b5c6c20.png)
 
 Now we know which user gives us the errors, let's solve the problem.
 
@@ -78,7 +78,7 @@ Invoke-MgGraphRequest -Method PATCH -Uri "https://graph.microsoft.com/v1.0/Users
 
 Now we have set the ImmutableId to null, and told Entra that this user has no on-premises entity anymore. It will delete the user from the sync database:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-16b98bf83139.png)
+[![jv-media-5139-16b98bf83139.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-16b98bf83139.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-solve-deletingcloudonlyobjectnotallowed-error-entra-connect-sync-5139/jv-media-5139-16b98bf83139.png)
 
 ---
 

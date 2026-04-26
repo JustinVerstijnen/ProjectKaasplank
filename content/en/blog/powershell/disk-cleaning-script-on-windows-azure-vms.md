@@ -63,27 +63,27 @@ The Installation script creates a folder in C:\ named "Scripts" if not already t
 
 Click on the blue button above. You now are on the Github page of the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)
+[![jv-media-1276-124a84eaa9eb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)
 
 Click on "Code" and then "Download ZIP".
 
 Now place the files on the server where you want to install the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-ddcc9123190d.png)
+[![jv-media-1276-ddcc9123190d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-ddcc9123190d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-ddcc9123190d.png)
 
 Unzip the file and then we can run the "Install" script. This must be run as administrator and temporarily without Execution Policy.
 
 Open Powershell ISE as administrator.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-abb9c2951099.png)
+[![jv-media-1276-abb9c2951099.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-abb9c2951099.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-abb9c2951099.png)
 
 Now open the "Install" script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2af30938721b.png)
+[![jv-media-1276-2af30938721b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2af30938721b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2af30938721b.png)
 
 Review it's default settings and if you feel at home in PowerShell, review the rest of the script to understand what it does.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f3c0b123c54a.png)
+[![jv-media-1276-f3c0b123c54a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f3c0b123c54a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f3c0b123c54a.png)
 
 You can change the schedule very easily by changing the runtime: 0:00 till 23:59 and the day of month to specify the day number of the month (1-31).
 
@@ -97,19 +97,19 @@ This way the execution policy stays enabled but for this session only it's been 
 
 Execute the command, and when prompted to lower the policy, click Yes.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-6339e6e403bb.png)
+[![jv-media-1276-6339e6e403bb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-6339e6e403bb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-6339e6e403bb.png)
 
 Now execute the Install script by clicking the green "Run" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0c76057f8ec1.png)
+[![jv-media-1276-0c76057f8ec1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0c76057f8ec1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0c76057f8ec1.png)
 
 After executing the script, we get the message that the task has been created succesfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1f68c43db92c.png)
+[![jv-media-1276-1f68c43db92c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1f68c43db92c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1f68c43db92c.png)
 
 Let's check this in the Windows Task Scheduler:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c97dc8c16bfa.png)
+[![jv-media-1276-c97dc8c16bfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c97dc8c16bfa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c97dc8c16bfa.png)
 
 As you can see, the script is succesfully installed to Task Scheduler. This ensures it runs every first of the month at 03:00 (or at your own defined schedule). Also, the script has been places in C:\Scripts for a good overview of the scripts of the system.
 
@@ -121,7 +121,7 @@ If you want to define your own schedule and script location, it can be better to
 
 Click on the blue Download button at the beginning of the page.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)
+[![jv-media-1276-124a84eaa9eb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-124a84eaa9eb.png)
 
 Click on "Code" and then "Download ZIP".
 
@@ -131,23 +131,23 @@ Then place the ZIP file on the server where you want to install the disk cleanup
 
 Select the script and place it in your preferred location. My advice is to not install this in a user profile, but in a location accessible for all users. Like C:\Scripts.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f1add1017f51.png)
+[![jv-media-1276-f1add1017f51.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f1add1017f51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-f1add1017f51.png)
 
 I have placed the scipt into the correct folder. If you also want the script to run on a schedule, open up the "Task Scheduler" (taskschd.msc).
 
 ### Creating the scheduled task
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1df7d56f3806.png)
+[![jv-media-1276-1df7d56f3806.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1df7d56f3806.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-1df7d56f3806.png)
 
 Do a "Right-mouse click" on the empty space and click on "Create New Task...".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-348875edb112.png)
+[![jv-media-1276-348875edb112.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-348875edb112.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-348875edb112.png)
 
 Give the task a name and description that alings with your documentation.
 
 Then change the user to "SYSTEM" to run this in SYSTEM context for the highest privileges:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c6c18f9fa7db.png)
+[![jv-media-1276-c6c18f9fa7db.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c6c18f9fa7db.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-c6c18f9fa7db.png)
 
 Then check the "Run with highest privileges" and select the highest OS possible in the "Configure for" dropdown menu.
 
@@ -155,7 +155,7 @@ Then check the "Run with highest privileges" and select the highest OS possible 
 
 Go to the "Triggers" tab and add a new trigger.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-fafe7b477e51.png)
+[![jv-media-1276-fafe7b477e51.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-fafe7b477e51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-fafe7b477e51.png)
 
 Select "Monthly" and select all months. Then change the "Days" field to 1 to run it on the first day.
 
@@ -165,7 +165,7 @@ You can defer from this schedule if your environment needs that. This is just an
 
 Now the page looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-8e35e0f371e5.png)
+[![jv-media-1276-8e35e0f371e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-8e35e0f371e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-8e35e0f371e5.png)
 
 ### Configure script action
 
@@ -182,7 +182,7 @@ In the "Add arguments (optional):" field, type in the following:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 -ExecutionPolicy Bypass -File C:\Scripts\JV-ServerPeriodicDiskCleanup.ps1
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-e54f48edbd99.png)
+[![jv-media-1276-e54f48edbd99.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-e54f48edbd99.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-e54f48edbd99.png)
 
 Now click on "OK" twice to create the task.
 
@@ -190,17 +190,17 @@ Now click on "OK" twice to create the task.
 
 Now we can manually run the task to ensure it runs on a schedule too. Right click the task and click on "Run" to start the task.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-33d36f0fd528.png)
+[![jv-media-1276-33d36f0fd528.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-33d36f0fd528.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-33d36f0fd528.png)
 
 As we can see, the script runs succesfully as it still runs after 30 seconds. This means the task and permissions are correct.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0a1b4dc58c68.png)
+[![jv-media-1276-0a1b4dc58c68.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0a1b4dc58c68.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-0a1b4dc58c68.png)
 
 The script can take up to several hours when cleaning everything, depending on the server size.
 
 In the folder of the script, a log file is created:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2acc74f58076.png)
+[![jv-media-1276-2acc74f58076.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2acc74f58076.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disk-cleaning-script-on-windows-azure-vms-1276/jv-media-1276-2acc74f58076.png)
 
 ---
 

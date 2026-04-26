@@ -54,13 +54,13 @@ When starting with Defender for Identity, it is possible to start a free 3-month
 
 You can get this one-time trial through the Microsoft 365 marketplace by looking up Defender for Identity:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-49f5208add58.png)
+[![jv-media-999-49f5208add58.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-49f5208add58.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-49f5208add58.png)
 
 After that, if you are eligible for a trial, you can get it by clicking on "Details" and then on "Start Trial".
 
 In my environment, i have assigned the license to my user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-7b3f43fce41f.png)
+[![jv-media-999-7b3f43fce41f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-7b3f43fce41f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-7b3f43fce41f.png)
 {{% alert color="info" %}}
 After starting the trial or purchasing the right licenses, please log out of the tenant and log back in. This will make sure all of the required options are available in your environment.
 {{% /alert %}}
@@ -77,7 +77,7 @@ There you can open one of the settings for Defender for Identity by going to Set
 
 If this is your first Defender service in the Microsoft 365 tenant, the following message will appear:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-74dfe39646b0.png)
+[![jv-media-999-74dfe39646b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-74dfe39646b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-74dfe39646b0.png)
 
 This can take up to 15 minutes.
 
@@ -87,29 +87,29 @@ Download the sensor here by clicking "Add sensor".
 
 If your environment already has its servers joined to Microsoft Defender, there is a new option available that automatically onboards the server (Blue). In our case, we did not have joined the server, so we choose the classic sensor installation (Grey) here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-330e8de013c2.png)
+[![jv-media-999-330e8de013c2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-330e8de013c2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-330e8de013c2.png)
 
 After clicking on the classic sensor installation, we get the following window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-76258a38a6e8.png)
+[![jv-media-999-76258a38a6e8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-76258a38a6e8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-76258a38a6e8.png)
 
 Here we get the right installer file and an access key. We have to install this sensor on every domain controller for full coverage and fill in the access key. This way the server knows exactly to which of the billions of Microsoft 365 tenants the data must be sent and simultaneously acts like a password.
 
 Download the installer and place it on the target server(s).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-321744d8f49a.png)
+[![jv-media-999-321744d8f49a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-321744d8f49a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-321744d8f49a.png)
 
 Extract the .zip file.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ffb02b1ea3e5.png)
+[![jv-media-999-ffb02b1ea3e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ffb02b1ea3e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ffb02b1ea3e5.png)
 
 We find 3 files in the .zip file, run the setup.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-675c4ae8cc2d.png)
+[![jv-media-999-675c4ae8cc2d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-675c4ae8cc2d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-675c4ae8cc2d.png)
 
 Select your preferred language and click on "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5bca68d7f0ef.png)
+[![jv-media-999-5bca68d7f0ef.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5bca68d7f0ef.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5bca68d7f0ef.png)
 
 We have 3 deployment types:
 
@@ -122,7 +122,7 @@ I chose the option "Sensor" because my environment only has one server to do the
 
 Choose your preferred deployment type and click next.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ccf384eec284.png)
+[![jv-media-999-ccf384eec284.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ccf384eec284.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-ccf384eec284.png)
 
 Here we have to paste the access key we copied from the Security portal.
 
@@ -130,11 +130,11 @@ Paste the key into the "Access Key" field and click "Install".
 
 It will install and configure the software now:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b0b5da9f6e7b.png)
+[![jv-media-999-b0b5da9f6e7b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b0b5da9f6e7b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b0b5da9f6e7b.png)
 
 After a minute or 5, the software is installed succesfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-f9c7092db2e3.png)
+[![jv-media-999-f9c7092db2e3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-f9c7092db2e3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-f9c7092db2e3.png)
 
 ---
 
@@ -150,7 +150,7 @@ We can edit the configuration of the sensor by clicking on the blue "Manage sens
 
 First, click on the "Manage Sensor" button.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5c34cf8fa418.png)
+[![jv-media-999-5c34cf8fa418.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5c34cf8fa418.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-5c34cf8fa418.png)
 
 We can configure the network interfaces where the server must capture the information. This can be usefull if your network consists of multiple VLANs.
 
@@ -174,7 +174,7 @@ In my opinion, the best way to enable this is through Group Policy. Open the Gro
 
 I created a new Group Policy on the OU of "Domain Controllers". This is great to do, because all domain controllers in this domain will be placed here automatically and benefit from the settings we made here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-0c0db653ea46.png)
+[![jv-media-999-0c0db653ea46.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-0c0db653ea46.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-0c0db653ea46.png)
 
 Edit the group policy to configure NTLM Auditing.
 
@@ -219,7 +219,7 @@ Change all of the audit policies below to the desired option. Take a look at the
 
 To check which event IDs are enabled with this settings, check out [the Microsoft page.](https://learn.microsoft.com/en-us/defender-for-identity/deploy/configure-windows-event-collection#configure-advanced-audit-policy-settings-from-the-ui)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-8f44faccd656.png)
+[![jv-media-999-8f44faccd656.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-8f44faccd656.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-8f44faccd656.png)
 
 After you set all the Audit Policies, we can close the Group Policy Management console. Then we can restart the server to make all changes made in the policies effective.
 
@@ -271,27 +271,27 @@ The third and last post installation task is to enable domain object auditing. T
 
 We can enable this in the Active Directory Users and Computers (dsa.msc) console:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4fbc7d5afc02.png)
+[![jv-media-999-4fbc7d5afc02.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4fbc7d5afc02.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4fbc7d5afc02.png)
 
 First, we have to enable the "Advanced Features" by clicking on "View" in the menu bar and then clicking "Advanced Features".
 
 Then right click the domain you want to enable object auditing and click on "Properties"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-471f2c19358e.png)
+[![jv-media-999-471f2c19358e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-471f2c19358e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-471f2c19358e.png)
 
 Then click on the tab "Security" and then the "Advanced" button.
 
 Now we get a huge pile of permissions and assignments:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4d871b77c346.png)
+[![jv-media-999-4d871b77c346.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4d871b77c346.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-4d871b77c346.png)
 
 Click on the "Auditing" tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-bda947166888.png)
+[![jv-media-999-bda947166888.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-bda947166888.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-bda947166888.png)
 
 We have to add permissions for auditing here. Click on the "Add" button, and then on "Select a principal".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a1d39b95278e.png)
+[![jv-media-999-a1d39b95278e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a1d39b95278e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a1d39b95278e.png)
 
 Type "Everyone" and hit "OK".
 
@@ -301,7 +301,7 @@ Selecting the "Everyone" principal may seem unsecure, but means we collect chang
 
 Now we get a pile of permissions:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a0281ac4fd76.png)
+[![jv-media-999-a0281ac4fd76.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a0281ac4fd76.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-a0281ac4fd76.png)
 
 We have to select "Type" and set it to "Success" and then the Applies to: "Decendant User objects" like i have done in the picture above.
 
@@ -315,7 +315,7 @@ Then click "Full Control" and deselect the following permissions:
 
 This should be the outcome:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b5b0dbc60fb6.png)
+[![jv-media-999-b5b0dbc60fb6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b5b0dbc60fb6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-defend-your-active-directory-with-defender-for-identity-999/jv-media-999-b5b0dbc60fb6.png)
 
 We have to repeat the steps for the following categories:
 

@@ -41,7 +41,7 @@ Note: Self Signed certificaties will expire after 365 days (1 year).
 
 In the old Windows Server days, we could sometimes find really unsecure jokes like these:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-082b560d52d5.png)
+[![jv-media-3522-082b560d52d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-082b560d52d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-082b560d52d5.png)
 
 This is something that is **really unsecure** and I advice you to never do actions like these. With certificate-based authentication we eliminate the need for this by a lot.
 
@@ -83,13 +83,13 @@ We now have generated a self signed certificate using the settings of the server
 
 Now head to the Entra ID portal and go to your already created App registration, and then to "Certificates & Secrets".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-53393b7e28f5.png)
+[![jv-media-3522-53393b7e28f5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-53393b7e28f5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-53393b7e28f5.png)
 
 Upload the .cer file there to assign it to the app registration and get the assigned roles.
 
 Now you will see the certificate uploaded:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-624b46cb44ee.png)
+[![jv-media-3522-624b46cb44ee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-624b46cb44ee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-624b46cb44ee.png)
 
 Now we have the thumbprint of the certificate, which is a identifier of the certificate. You can also get this on the server where you just generated the certificate:
 
@@ -134,7 +134,7 @@ Connect-MgGraph `
 
 Now you should be logged in succesfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-1444167a34a8.png)
+[![jv-media-3522-1444167a34a8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-1444167a34a8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-1444167a34a8.png)
 
 I double checked if we were able to get our organization and that was the case. This is a command that doesn't work when not connected.
 
@@ -144,11 +144,11 @@ I double checked if we were able to get our organization and that was the case. 
 
 As we should not be able to connect without the certificate installed, we will test this for sure on another device:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-cdb9658bc456.png)
+[![jv-media-3522-cdb9658bc456.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-cdb9658bc456.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-cdb9658bc456.png)
 
 Powershell cannot find our certificate in the store. This is as expected as we didn't install it. But let's try another method:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-c48809e18562.png)
+[![jv-media-3522-c48809e18562.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-c48809e18562.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/implement-certificate-based-authentication-for-entra-id-scripts-3522/jv-media-3522-c48809e18562.png)
 
 With Exchange Online Powershell, this also doesn't work because we don't have the certificate installed. Working as intended!
 

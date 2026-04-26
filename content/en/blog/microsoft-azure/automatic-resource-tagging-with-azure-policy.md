@@ -32,7 +32,7 @@ We can now create our Azure Policy that alters the resources and adds a tag just
 
 Open the Azure Portal and go to “Policy”. We will land on the Policy compliancy dashboard:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-70eb6b5c15f1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-70eb6b5c15f1.png)
+[![jv-media-5017-70eb6b5c15f1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-70eb6b5c15f1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-70eb6b5c15f1.png)
 
 As for this purpose, Microsoft has already two templates ready which we can use. You can also choose to start from scratch. There are many more policy templates available from here, but they all need to be implemented the same as this guide.
 
@@ -40,31 +40,31 @@ As for this purpose, Microsoft has already two templates ready which we can use.
 
 I selected the "**Add a tag to resources**" policy template. Now we can select a scope, from where the policy must apply. We can also give it a custon name and description and possible exclusions.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-fef734887c07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-fef734887c07.png)
+[![jv-media-5017-fef734887c07.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-fef734887c07.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-fef734887c07.png)
 
 Click "Next".
 
 On the "Parameters" tab, fill in the tag name (1st) and tag value (2nd) part of the tag to assign:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-a33279b2ff66.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-a33279b2ff66.png)
+[![jv-media-5017-a33279b2ff66.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-a33279b2ff66.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-a33279b2ff66.png)
 
 For example, my testing resource group:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-bc29218b800c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-bc29218b800c.png)
+[![jv-media-5017-bc29218b800c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-bc29218b800c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-bc29218b800c.png)
 
 Click "Next" and you reach the "Remediation" tab.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-ff1a4e8bf80b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-ff1a4e8bf80b.png)
+[![jv-media-5017-ff1a4e8bf80b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-ff1a4e8bf80b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-ff1a4e8bf80b.png)
 
 The remediation task is the actual task that applies the tags. The definition is only stating what you want, the remediation task is the executor.
 
 Enable the checkbox and select the policy you just selected.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-e28b03c5ac1a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-e28b03c5ac1a.png)
+[![jv-media-5017-e28b03c5ac1a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-e28b03c5ac1a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-e28b03c5ac1a.png)
 
 On the "Managed Identity" tab, select to use a System assigned managed identity and finish the wizard.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-059dde37ebb3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-059dde37ebb3.png)
+[![jv-media-5017-059dde37ebb3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-059dde37ebb3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-059dde37ebb3.png)
 
 ---
 
@@ -72,9 +72,9 @@ On the "Managed Identity" tab, select to use a System assigned managed identity 
 
 Now I created a dummy resource, just to check if it gets a tags assigned and test our current configuration. I created a public IP address as this is a easy and cheap resource which is deployed instantly.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-252c314b6547.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-252c314b6547.png)
+[![jv-media-5017-252c314b6547.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-252c314b6547.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-252c314b6547.png)
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-8df378386419.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-8df378386419.png)
+[![jv-media-5017-8df378386419.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-8df378386419.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-8df378386419.png)
 
 Now we have to wait for some time, as the remediation task can take up to an hour to actually add the tag. In my case, it took a few minutes.
 
@@ -84,11 +84,11 @@ Now we have to wait for some time, as the remediation task can take up to an hou
 
 In the Policy, the remediation task is now showing as running:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-f5e84325e50b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-f5e84325e50b.png)
+[![jv-media-5017-f5e84325e50b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-f5e84325e50b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-f5e84325e50b.png)
 
 Now I will go back to the Public IP address and check the results:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-2cbd795d7a95.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-2cbd795d7a95.png)
+[![jv-media-5017-2cbd795d7a95.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-2cbd795d7a95.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-resource-tagging-with-azure-policy-5017/jv-media-5017-2cbd795d7a95.png)
 
 It indeed got the tag assigned automatically after about 5 minutes. This is really cool.
 

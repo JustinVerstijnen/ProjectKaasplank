@@ -10,7 +10,7 @@ description: >
   Sometimes, it is necessary to match an existing local Active Directory (AD) user through Entra Connect with an existing Entra ID user (formerly known as Azure AD). This process ensures that the account in both environments is aligned and maintains the same underlying configurations and settings across systems.
 ---
 
-![Entra Connect sync](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/match-active-directory-users-with-microsoft-365-using-entra-connect-sync-hard-match-813/jv-media-813-da1d8fd6db71.png)
+[![jv-media-813-da1d8fd6db71.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/match-active-directory-users-with-microsoft-365-using-entra-connect-sync-hard-match-813/jv-media-813-da1d8fd6db71.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/match-active-directory-users-with-microsoft-365-using-entra-connect-sync-hard-match-813/jv-media-813-da1d8fd6db71.png)
 
 ---
 

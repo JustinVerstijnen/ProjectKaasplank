@@ -34,11 +34,11 @@ Before we can use the policy and automatic remediation, we need to set the corre
 
 Go to "Subscriptions", and select the subscription where you want the policy to be active. Now you are here, copy the "Subscription ID":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-db8f5729387c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-db8f5729387c.png)
+[![jv-media-4361-db8f5729387c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-db8f5729387c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-db8f5729387c.png)
 
 Go to "Access control (IAM)". Then click on "+ Add" and then "Add custom role".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-0693d9e60bbd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-0693d9e60bbd.png)
+[![jv-media-4361-0693d9e60bbd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-0693d9e60bbd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-0693d9e60bbd.png)
 
 Here go directly to the "JSON" tab, click "Edit" and paste the code below, and then paste the subscription ID on the placeholder on line 6:
 
@@ -80,11 +80,11 @@ Now we can create the Policy Deinition in Azure. This is the definition or let's
 
 Open the Azure Portal, and go to "Policy".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-593b8efbe00c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-593b8efbe00c.png)
+[![jv-media-4361-593b8efbe00c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-593b8efbe00c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-593b8efbe00c.png)
 
 Then under "Authoring" click on "Definitions". Then click "+ Policy Definition" to create a new policy definition.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8fd59ea01326.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8fd59ea01326.png)
+[![jv-media-4361-8fd59ea01326.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8fd59ea01326.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8fd59ea01326.png)
 
 In the "Definition Location", select the subscription where the policy must place locks. Then give the definition a name, description and select a category. Make sure to select a subscription and not a management group, otherwise it will not work.
 
@@ -94,11 +94,11 @@ After that, we must paste the code into the Policy Rule field. I have the fully 
 
 Open the link and click this button to copy all code:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ce82441db80d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ce82441db80d.png)
+[![jv-media-4361-ce82441db80d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ce82441db80d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ce82441db80d.png)
 
 Then paste the code above into the Policy rule field in Azure:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-07767fa3f9f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-07767fa3f9f0.png)
+[![jv-media-4361-07767fa3f9f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-07767fa3f9f0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-07767fa3f9f0.png)
 
 After that, save the policy definition and we are done with creating the policy definition.
 
@@ -108,7 +108,7 @@ After that, save the policy definition and we are done with creating the policy 
 
 Now that we have made the definition, we can assign this to our subscription(s). You can do this by clicking on "Assign policy" directly after creating the definition, or by going back to "Policy" and selecting "Assignments":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-15f84c51bf69.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-15f84c51bf69.png)
+[![jv-media-4361-15f84c51bf69.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-15f84c51bf69.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-15f84c51bf69.png)
 
 Click on "Assignments" and then on "Assign Policy".
 
@@ -116,11 +116,11 @@ At the scope level, you can determine which subscription to use. Then you could 
 
 At the Policy definition field, select the just created definition to assign it, and give it a name and description.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8565829f0600.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8565829f0600.png)
+[![jv-media-4361-8565829f0600.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8565829f0600.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8565829f0600.png)
 
 Then advance to the tab "Remediation". The remediation task is where Azure automatically ensures that resources (or resource groups in this case) are compliant with your policy. This by automatically placing the lock.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-f52f3537ee25.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-f52f3537ee25.png)
+[![jv-media-4361-f52f3537ee25.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-f52f3537ee25.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-f52f3537ee25.png)
 
 Enable "Create a remediation task" and the rest can be left default settings. You could use a user assigned managed identity if needed.
 
@@ -134,23 +134,23 @@ Now that we have assigned the managed identity to our remediation task, we can a
 
 Go to your subscription, and once again to "Access control (IAM)". Then select the tab "Role assignments":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-cd70761245fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-cd70761245fb.png)
+[![jv-media-4361-cd70761245fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-cd70761245fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-cd70761245fb.png)
 
 Search for the managed identity Azure just made. It will be under the "Lock Contributor" category:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-b62d22a11bcf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-b62d22a11bcf.png)
+[![jv-media-4361-b62d22a11bcf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-b62d22a11bcf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-b62d22a11bcf.png)
 
 Copy or write down the name and click "+ Add" and add a role to the subscription.
 
 On the "Role" tab, select type: "Custom role" to only view custom roles and select your just created role:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-09683c386770.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-09683c386770.png)
+[![jv-media-4361-09683c386770.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-09683c386770.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-09683c386770.png)
 
 Click next.
 
 Make sure "User, group or service principal" is selected, click "+ Select members" and paste in the name of the identity you have just copied.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-e25c212179aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-e25c212179aa.png)
+[![jv-media-4361-e25c212179aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-e25c212179aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-e25c212179aa.png)
 
 While Azure call this a managed identity, it is really a service principal which can sound very strange. WHy this is is really simple, it is not linked to a resource. Managed Identities are linked to resources so a resource has permissions. In this case, it's only Azure Policy.
 
@@ -164,11 +164,11 @@ After configuring everything, we have to wait around 15 minutes for the policy t
 
 After the 15 minute window we can check the status of the remediation task:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-abb611d27fd2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-abb611d27fd2.png)
+[![jv-media-4361-abb611d27fd2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-abb611d27fd2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-abb611d27fd2.png)
 
 Looks promising! Let's take a look into the resource groups itself:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8e6ac47c5291.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8e6ac47c5291.png)
+[![jv-media-4361-8e6ac47c5291.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8e6ac47c5291.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-8e6ac47c5291.png)
 
 Looks great and exactly what we wanted to achieve.
 
@@ -178,15 +178,15 @@ Looks great and exactly what we wanted to achieve.
 
 Now with this Azure Policy solution, every resource group created automatically gets a Delete lock type. To exclude resource groups in your subscription to get a lock, go back to the policy assignment:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-fb5c3972fc19.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-fb5c3972fc19.png)
+[![jv-media-4361-fb5c3972fc19.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-fb5c3972fc19.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-fb5c3972fc19.png)
 
 Then click on your policy assignment and then on "Edit assignment":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ee044fd54189.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ee044fd54189.png)
+[![jv-media-4361-ee044fd54189.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ee044fd54189.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-ee044fd54189.png)
 
 And then click on the "Exclusions" part of this page:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-5bf3e631e011.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-5bf3e631e011.png)
+[![jv-media-4361-5bf3e631e011.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-5bf3e631e011.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/deploy-resource-group-locks-automatically-with-azure-policy-4361/jv-media-4361-5bf3e631e011.png)
 
 Here you can select the resource groups to be excluded from this automatic locking solution. Recommended is to select the resource groups here where you do some sort of automation on it. A prevent delete lock prevents automations from deleting resources in the resource group.
 

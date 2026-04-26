@@ -55,7 +55,7 @@ I will refer to the line numbers of the script on GitHub:
 - Line 15: Specify the paths. As this is an array, it must be comma-seperated except the last one. Keep this in mind. You can add as many folders as you want but be aware to not put in critical folders
 - Line 21: Specify the maximum size of the log file. It will remove lines at the start of the file so the latest information is always available
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-29e335edfd63.png)
+[![jv-media-262-29e335edfd63.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-29e335edfd63.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-29e335edfd63.png)
 
 ---
 
@@ -74,23 +74,23 @@ The Installation script creates a folder in C:\ named "Scripts" if not already t
 
 Click on the blue button above. You now are on the Github page of the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-bd5120723e6c.png)
+[![jv-media-262-bd5120723e6c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-bd5120723e6c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-bd5120723e6c.png)
 
 Click on "Code" and then "Download ZIP".
 
 Then place the files on the server where you want to install the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-2f7eeaef8810.png)
+[![jv-media-262-2f7eeaef8810.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-2f7eeaef8810.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-2f7eeaef8810.png)
 
 Open Powershell ISE as administrator.
 
 Now open the "Install" script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-52f60dcc58a7.png)
+[![jv-media-262-52f60dcc58a7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-52f60dcc58a7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-52f60dcc58a7.png)
 
 Review it's default settings and if you feel at home in PowerShell, review the rest of the script to understand what it does.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-ba06ebf0a588.png)
+[![jv-media-262-ba06ebf0a588.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-ba06ebf0a588.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-ba06ebf0a588.png)
 
 You can change the schedule very easily by changing the runtime: 0:00 till 23:59 and the day of month to specify the day number of the month (1-31).
 
@@ -106,15 +106,15 @@ Execute the command, and when prompted to lower the policy, click Yes.
 
 Now execute the Install script by clicking the green "Run" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-5d8c5132c234.png)
+[![jv-media-262-5d8c5132c234.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-5d8c5132c234.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-5d8c5132c234.png)
 
 After executing the script, we get the message that the task has been created succesfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-796cf0e8b1c6.png)
+[![jv-media-262-796cf0e8b1c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-796cf0e8b1c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-796cf0e8b1c6.png)
 
 Let's check this in the Windows Task Scheduler:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-15f532958450.png)
+[![jv-media-262-15f532958450.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-15f532958450.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-15f532958450.png)
 
 As you can see, the script is succesfully installed to Task Scheduler. This ensures it runs every first of the month at 03:00 (or at your own defined schedule). Also, the script has been placed in C:\Scripts for a good overview of the scripts of the system.
 
@@ -159,33 +159,33 @@ Execute the command, and when prompted to lower the policy, click Yes.
 
 Now we can run the script itself by clicking the green "Play" button.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-76a0868abc22.png)
+[![jv-media-262-76a0868abc22.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-76a0868abc22.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-76a0868abc22.png)
 
 Now we have a folder with 100 files with random last write times:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-45d854205010.png)
+[![jv-media-262-45d854205010.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-45d854205010.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-45d854205010.png)
 
 If we would execute the cleanup script, only the files from 18-6-2025 and newer will be retained.
 
 Review the parameters on line 12 to 20, change them to your needs and then execute the script. I have changed the Paths to C:\Temp only.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-254abcf4ca57.png)
+[![jv-media-262-254abcf4ca57.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-254abcf4ca57.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-254abcf4ca57.png)
 
 The script will now delete every file older than the specified days:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-6de48e1650e3.png)
+[![jv-media-262-6de48e1650e3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-6de48e1650e3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-6de48e1650e3.png)
 
 Let's take a look at the folder:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-814012720169.png)
+[![jv-media-262-814012720169.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-814012720169.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-814012720169.png)
 
 All cleared now and only versions younger than 30 days are retained.
 
 In the Script directory, a file is created, containing all the filenames it has removed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-1fd571205bb5.png)
+[![jv-media-262-1fd571205bb5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-1fd571205bb5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-1fd571205bb5.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-fd1602bd51a6.png)
+[![jv-media-262-fd1602bd51a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-fd1602bd51a6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-files-on-schedule-with-powershell-retention-script-262/jv-media-262-fd1602bd51a6.png)
 
 ---
 

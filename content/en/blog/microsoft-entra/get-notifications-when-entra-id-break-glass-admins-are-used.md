@@ -30,17 +30,17 @@ We will start configuring our Log Analytics Workspace in Azure. This can be simp
 
 Login to the Azure Portal and search for "Log Analytics Workspace":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-8dd967418560.png)
+[![jv-media-4337-8dd967418560.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-8dd967418560.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-8dd967418560.png)
 
 Click on "+ Create" to create a new workspace.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-416ac290e6ff.png)
+[![jv-media-4337-416ac290e6ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-416ac290e6ff.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-416ac290e6ff.png)
 
 Select the desired resource group and give it a name and create the workspace.
 
 After the workspace is configured, we can configure the data retention and daily cap of the Log Analytics Workspace. As ingesting a lot of data could be very expensive at the end of the month, you could configure some caps. Also, we will only ingest the data needed for this solution, and nothing more.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-84314f304831.png)
+[![jv-media-4337-84314f304831.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-84314f304831.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-84314f304831.png)
 
 Here I have set the daily cap to 1 gigabyte max per day, which would be more than enough for this solution in my case. In bigger environments, you could set this to a higher value.
 
@@ -52,15 +52,15 @@ Now we need to configure the Sign in logs writing to our Log Analytics Workspace
 
 Go to "Monitoring and Health" and then to "Diagnostic Settings"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-17efc920d28b.png)
+[![jv-media-4337-17efc920d28b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-17efc920d28b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-17efc920d28b.png)
 
 On there, click on "+ Add diagnostic setting"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-476efdfb679b.png)
+[![jv-media-4337-476efdfb679b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-476efdfb679b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-476efdfb679b.png)
 
 On this page, give the connector a describing name, select SignInLogs on the left and on the right select "Send to Log Analytics workspace" and then select your just created workspace there.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2e607fe27391.png)
+[![jv-media-4337-2e607fe27391.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2e607fe27391.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2e607fe27391.png)
 
 Then click the "Save" button to save this configuration. Now newly created sign in logs will be written to our Log Analytics workspace, so we can do further investigation.
 
@@ -109,7 +109,7 @@ SigninLogs
 
 Now we know the queries, we can use this in Log Analytics and set the query type to KQL. Paste one of the queries above and change the username to get the results in your tenant:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4abc6e034b4f.png)
+[![jv-media-4337-4abc6e034b4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4abc6e034b4f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4abc6e034b4f.png)
 
 Now we have a successful login attempt of our testing account, and we can see more information like the source IP address, location, if Conditional Access was applied and the resulttype. Resulttype 0 means a successful login.
 
@@ -121,7 +121,7 @@ You could also use the other queries, but for this solution we need to use query
 
 Now that we have a successful query, we need to configure a alert rule. We can do this while still being in the Log Analytics query pane:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-ab689a8d8a11.png)
+[![jv-media-4337-ab689a8d8a11.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-ab689a8d8a11.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-ab689a8d8a11.png)
 
 Click on the 3 dots and then on "+ New alert rule". This creates an alert rule completely based on the query we have used.
 
@@ -131,7 +131,7 @@ On this page, scroll down to "Alert logic" and set the following settings:
 - **Threshold value**: 1
 - **Frequency of evaluation:** 5 minutes
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4c8793152aea.png)
+[![jv-media-4337-4c8793152aea.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4c8793152aea.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-4c8793152aea.png)
 
 This means the alert is triggered if the query finds 1 or more successful attempts. You can customize this is needed.
 
@@ -139,7 +139,7 @@ Now go to the "Actions" tab. We now need to create an Action group, where we def
 
 Create a action group if you don't already have one.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-6545f5a8eeab.png)
+[![jv-media-4337-6545f5a8eeab.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-6545f5a8eeab.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-6545f5a8eeab.png)
 
 Give it a name and displayname. Good practice is to use a different action group for this alert, as you can define per action group what kind of notification and receivers you want to use.
 
@@ -147,11 +147,11 @@ Now go to the "Notifications" tab. Select "Email/SMS message/Push/Voice" and con
 
 I have configured Microsoft to call me when this alert is triggered:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-cd6f02bdceb0.png)
+[![jv-media-4337-cd6f02bdceb0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-cd6f02bdceb0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-cd6f02bdceb0.png)
 
 Advance to the next tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-7c7a3bb37d2b.png)
+[![jv-media-4337-7c7a3bb37d2b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-7c7a3bb37d2b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-7c7a3bb37d2b.png)
 
 You could also run an automated action against this trigger. As this includes Webhook, you could get customized messages for example on your Microsoft Teams account.
 
@@ -169,7 +169,7 @@ I have logged in seconds from **13:20:08** hours. Let's wait till I receive the 
 
 And at 13:27, 7 minutes later, I got an call from Microsoft that the alert was triggered:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2bb093cd77dd.jpg)
+[![jv-media-4337-2bb093cd77dd.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2bb093cd77dd.jpg)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/get-notifications-when-entra-id-break-glass-admins-are-used-4337/jv-media-4337-2bb093cd77dd.jpg)
 
 This way we will know in a very direct way our break glass account is possibly misused. We could also choose to only get messages from this or use the webhook option which will be less rigorous than getting a phone call. But hey, at least the option exists.
 

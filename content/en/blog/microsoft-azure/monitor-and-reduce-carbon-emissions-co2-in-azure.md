@@ -22,13 +22,13 @@ At this dashboard we can find some interesting information, like the total emiss
 
 On the Emissions details pane we can find some more detailed information, like what type and resources contributed to the emissions:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-927f75d08439.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-927f75d08439.png)
+[![jv-media-1466-927f75d08439.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-927f75d08439.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-927f75d08439.png)
 
 Here we have an overview of an Azure environment with 5 servers, a storage account including backup. You see that the virtual machine on top is the biggest factor of the emissions each month. This has the most impact on the datacenters of Microsoft in terms of computing power. The storage account takes the 2nd place, because of all the redundant options configured there (GRS).
 
 We can also search per type of resources, which makes the overview a lot better and summarized:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-05833d959a4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-05833d959a4f.png)
+[![jv-media-1466-05833d959a4f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-05833d959a4f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-05833d959a4f.png)
 
 ---
 
@@ -36,7 +36,7 @@ We can also search per type of resources, which makes the overview a lot better 
 
 The "Emissions Reductions" detail pane contains advices about how to reduce emissions in your exact environment:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-fdf4005c7ade.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-fdf4005c7ade.png)
+[![jv-media-1466-fdf4005c7ade.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-fdf4005c7ade.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/monitor-and-reduce-carbon-emissions-co2-in-azure-1466/jv-media-1466-fdf4005c7ade.png)
 
 In my environment I have only 1 recommendation, and that is to downgrade one of the servers that has more resources than it needs. However, we have to stick to system requirements of an specific application that needs those resources at minimum.
 

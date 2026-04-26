@@ -17,11 +17,11 @@ Dynamic Groups are really great for automating certain things. They are basicall
 
 In Microsoft Entra, you can create a Dynamic Group by heading to "Groups" and then click "+ New group":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-931642b7b77c.png)
+[![jv-media-6315-931642b7b77c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-931642b7b77c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-931642b7b77c.png)
 
 Then click on the "Membership type":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-09b9c1a7aebd.png)
+[![jv-media-6315-09b9c1a7aebd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-09b9c1a7aebd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-09b9c1a7aebd.png)
 
 Here we can select 3 options:
 
@@ -39,7 +39,7 @@ For creating and using Dynamic Groups, you need at least one Microsoft Entra P1 
 
 To change the rules of the dynamic group, head to "Dynamic membership rules":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3eb374bedbfe.png)
+[![jv-media-6315-3eb374bedbfe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3eb374bedbfe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3eb374bedbfe.png)
 
 Here are 3 rules where a device must comply with to be added to the group:
 
@@ -49,17 +49,17 @@ Here are 3 rules where a device must comply with to be added to the group:
 
 To check if a device we want to be menber actually is added to the group, we can use the "Validate rules" tool:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-458a9412b6ac.png)
+[![jv-media-6315-458a9412b6ac.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-458a9412b6ac.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-458a9412b6ac.png)
 
 This is basically a Yes/No tool where you can add any device (or user) and check the membership:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-d758699a9f40.png)
+[![jv-media-6315-d758699a9f40.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-d758699a9f40.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-d758699a9f40.png)
 
 This shows exactly which devices will be meber and which not. You can also click on "View details" to view the rules and appliance:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-11faf2cf7d82.png)
+[![jv-media-6315-11faf2cf7d82.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-11faf2cf7d82.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-11faf2cf7d82.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-328425176fa5.png)
+[![jv-media-6315-328425176fa5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-328425176fa5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-328425176fa5.png)
 
 Really great overview of the rules and why a device will be member of the group.
 
@@ -69,7 +69,7 @@ Really great overview of the rules and why a device will be member of the group.
 
 I have done multiple Azure Virtual Desktop implementations that needed a group for all the hosts. This for policies and other settings/scripts and FSLogix settings. Creating a Dynamic Group instead of an assigned group helps you with automation and avoids a manual action when enrolling a new machine and potentially forgetting this step, and then asking yourself why some policies are not applying.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-93dcf3da4e8e.png)
+[![jv-media-6315-93dcf3da4e8e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-93dcf3da4e8e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-93dcf3da4e8e.png)
 
 This rule syntax is built up in these 3 rules:
 
@@ -79,7 +79,7 @@ This rule syntax is built up in these 3 rules:
 
 ### To use it in your environment
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-49f8bf9f3e8d.png)
+[![jv-media-6315-49f8bf9f3e8d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-49f8bf9f3e8d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-49f8bf9f3e8d.png)
 
 Change the "displayname" property to the starting string of your AVD hosts.
 
@@ -95,7 +95,7 @@ Above rule syntax can be copied to your group.
 
 This group will contain all active internal employees. Guests, shared mailboxes and disabled accounts are automatically excluded from this group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-8630745ee211.png)
+[![jv-media-6315-8630745ee211.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-8630745ee211.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-8630745ee211.png)
 
 The rule syntax is built up in these rules:
 
@@ -114,7 +114,7 @@ The rule syntax is built up in these rules:
 
 In some cases, we need to have all accounts ending with a specific domain name in a group. We can do this with the options below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-bece6e554f78.png)
+[![jv-media-6315-bece6e554f78.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-bece6e554f78.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-bece6e554f78.png)
 
 The rule syntax is built up in these rules:
 
@@ -132,7 +132,7 @@ The rule syntax is built up in these rules:
 
 We can also do group memberships based on the department of the user. This makes it possible to create different access packages on groups based on te department.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-33f8a5e2c9d9.png)
+[![jv-media-6315-33f8a5e2c9d9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-33f8a5e2c9d9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-33f8a5e2c9d9.png)
 
 The rule syntax is built up in these rules:
 
@@ -150,7 +150,7 @@ The rule syntax is built up in these rules:
 
 We can also put all synchronized user accounts in a group if they are being synced using Entra Connect Sync.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3c8e19d86c79.png)
+[![jv-media-6315-3c8e19d86c79.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3c8e19d86c79.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-3c8e19d86c79.png)
 
 The rule syntax is built up in these rules:
 
@@ -177,7 +177,7 @@ We can create rules to only have members from certain locations. We can use diff
 
 I know a case where a company has multiple branches and needed this for security controls and access to certain applications. In this way we could have all users from a specific branch in a group and apply policies and access to the application specific to that branch.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-2903771f8da2.png)
+[![jv-media-6315-2903771f8da2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-2903771f8da2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-2903771f8da2.png)
 
 ### The rule syntax is built up in these rules:
 
@@ -193,7 +193,7 @@ We can also do group memberships based on the time they are hired. This is the f
 
 I don't know an actual use case for this but it can be used for time-based group memberships for temporary workers.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-26293aefd064.png)
+[![jv-media-6315-26293aefd064.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-26293aefd064.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-26293aefd064.png)
 
 The rule syntax is built up in these rules:
 
@@ -211,7 +211,7 @@ The rule syntax is built up in these rules:
 
 We can do memberships based on the OS of the device. In this example, I created a rule set to get Windows devices into a group and only if they have a version equal or higher than configured:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-caf6ed4ff092.png)
+[![jv-media-6315-caf6ed4ff092.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-caf6ed4ff092.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-caf6ed4ff092.png)
 
 The rule syntax is built up in these rules:
 
@@ -230,7 +230,7 @@ The rule syntax is built up in these rules:
 
 We can also filter on different device manufacturers to only be member. This is a great addition to the OS. Sometimes, we need to have all Windows devices but want to exclude other devices like Windows based scanners or Teams Rooms devices. In this case we can filter this out.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-7fff925f805f.png)
+[![jv-media-6315-7fff925f805f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-7fff925f805f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-7fff925f805f.png)
 
 The rule syntax is built up in these rules:
 
@@ -249,7 +249,7 @@ The rule syntax is built up in these rules:
 
 We can build a dynamic group query based on users' assigned licenses. Instead of the friendly name of a license, we will use the Service Plan ID, which is a GUID:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-c114f9603aab.png)
+[![jv-media-6315-c114f9603aab.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-c114f9603aab.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-art-of-dynamic-groups-in-microsoft-entra-6315/jv-media-6315-c114f9603aab.png)
 
 I have done this multiple times for Windows 365 environments, where we want a machine automatically to be deployed when a license is assigned. By default, after assigning a license, you have to assign the user to a group before a machine will deploy (Enrollment profile).
 

@@ -43,25 +43,25 @@ To use my script, download it from Github and place it on your newly created or 
 
 Click on "Code" and then on "Download ZIP".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-20af79b03317.png)
+[![jv-media-3665-20af79b03317.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-20af79b03317.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-20af79b03317.png)
 
 Place the ZIP file on your server. Then unzip it so we can navigate to the script itself.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-890f08d74217.png)
+[![jv-media-3665-890f08d74217.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-890f08d74217.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-890f08d74217.png)
 
 Now we can execute this script. The easiest way is to open the PowerShell ISE version as this eliminates navigating to the script by hand.
 
 Open PowerShell ISE as Administrator:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-db8174903971.png)
+[![jv-media-3665-db8174903971.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-db8174903971.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-db8174903971.png)
 
 Verify your credentials if needed and then use the "Open" function of PowerShell ISE and open the script file:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-67cad5d6694a.png)
+[![jv-media-3665-67cad5d6694a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-67cad5d6694a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-67cad5d6694a.png)
 
 The script will now be opened and review the parameters on line 12 till 16:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-4ff50ecb0af7.png)
+[![jv-media-3665-4ff50ecb0af7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-4ff50ecb0af7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-4ff50ecb0af7.png)
 
 By default, everything is set to "Dutch" but you can change them. I added links to the corresponding artices of Microsoft to quickly lookup what your settings must be. The links are also added to the sources at the bottom of this post.
 
@@ -75,15 +75,15 @@ This way the execution policy stays enabled but for this session only it's been 
 
 Execute the command, and when prompted to lower the policy, click Yes.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-607bf989f877.png)
+[![jv-media-3665-607bf989f877.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-607bf989f877.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-607bf989f877.png)
 
 Now we can run the script itself by clicking the green "Play" button.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2ef7c09ce1b4.png)
+[![jv-media-3665-2ef7c09ce1b4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2ef7c09ce1b4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2ef7c09ce1b4.png)
 
 The script can take up to 20 minutes, so have a little patience.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-ea52d8de8602.png)
+[![jv-media-3665-ea52d8de8602.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-ea52d8de8602.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-ea52d8de8602.png)
 
 After every task is completed the server will reboot and you will be presented with the new settings.
 
@@ -93,11 +93,11 @@ After every task is completed the server will reboot and you will be presented w
 
 Before the script ran, my machine looked like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2cb911e8db5a.png)
+[![jv-media-3665-2cb911e8db5a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2cb911e8db5a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-2cb911e8db5a.png)
 
 After the script ran, my machine looked like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-be29af29e078.png)
+[![jv-media-3665-be29af29e078.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-be29af29e078.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/set-correct-language-and-timezone-on-azure-vm-3665/jv-media-3665-be29af29e078.png)
 
 Perfectly in Dutch settings and ready to go.
 

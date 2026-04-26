@@ -82,18 +82,18 @@ Visio is a popular Microsoft tool to draw professional diagrams. With its Azure 
 
 Azure CLI and PowerShell let you manage Azure using commands in a terminal. These tools are great for automation and managing resources faster than using the portal. We have the CLI and PowerShell directly in the Portal available using the "Cloud shell" button:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-3c03f882d2d1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-3c03f882d2d1.png)
+[![jv-media-6825-3c03f882d2d1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-3c03f882d2d1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-3c03f882d2d1.png)
 
 On Windows 11, you already have Azure CLI ready to use on your device. You only need to login to the tenant itself:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-d220539e5097.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-d220539e5097.png)
+[![jv-media-6825-d220539e5097.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-d220539e5097.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-d220539e5097.png)
 
 To use Azure PowerShell, you need to open PowerShell on your endpoint and install the needed modules:
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Install-Module -Name Az.Accounts -Scope CurrentUser -AllowClobber -Force
 {{< /card >}}
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-9822baafab3d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-9822baafab3d.png)
+[![jv-media-6825-9822baafab3d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-9822baafab3d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/useful-azure-links-tools-6825/jv-media-6825-9822baafab3d.png)
 
 Then connect to your tenant using this command:
 

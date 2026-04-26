@@ -138,7 +138,7 @@ However, it requires you to have an Azure subscription to click around and deplo
 
 <p><a class="btn btn-primary" href="https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/">AZ-104 Github Labs</a></p>
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-learn-azure-learning-resources-338/jv-media-338-f0a4094d9edb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-learn-azure-learning-resources-338/jv-media-338-f0a4094d9edb.png)
+[![jv-media-338-f0a4094d9edb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-learn-azure-learning-resources-338/jv-media-338-f0a4094d9edb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-learn-azure-learning-resources-338/jv-media-338-f0a4094d9edb.png)
 
 ---
 

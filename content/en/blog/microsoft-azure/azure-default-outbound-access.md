@@ -31,13 +31,13 @@ Load balancer, NAT Gateway, Azure Firewall and 3rd party firewall (NVA) also nee
 
 To further explain what is going on with these types:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-c225b8e3d40d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-c225b8e3d40d.png)
+[![jv-media-2652-c225b8e3d40d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-c225b8e3d40d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-c225b8e3d40d.png)
 
 These are the Azure native solutions to achieve defualt outbound access with the details on the right.
 
 This change means that Microsoft actually mark all subnets as "Private Subnet", which you can already configure today:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-da9d1e7d3a1c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-da9d1e7d3a1c.png)
+[![jv-media-2652-da9d1e7d3a1c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-da9d1e7d3a1c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-default-outbound-access-2652/jv-media-2652-da9d1e7d3a1c.png)
 
 ---
 

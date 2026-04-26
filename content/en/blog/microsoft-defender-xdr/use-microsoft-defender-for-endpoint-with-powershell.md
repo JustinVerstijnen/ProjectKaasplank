@@ -30,7 +30,7 @@ In coorperation with Microsoft Intune we can manage devices and enforce security
 
 Defender for Endpoint works by default with the defaults of Microsoft, which is very broad and widely compatible. This means it secures your device a bit but we don't get every penny out of it. This is why you want to create your own configurations with Microsoft Intune which we can do through the Intune Admin center (<https://intune.microsoft.com>).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ac4cfa8cf2ed.png)
+[![jv-media-7360-ac4cfa8cf2ed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ac4cfa8cf2ed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ac4cfa8cf2ed.png)
 
 To learn more about configuring Microsoft Defender with Intune, check out this guide: [https://justinverstijnen.nl/microsoft-secure-score-devices](https://justinverstijnen.nl/microsoft-secure-score-devices/)
 
@@ -48,7 +48,7 @@ Get-MpComputerStatus
 
 This will give you an overview of all Defender information available on the device like latest signature updates, enabled/disabled status:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-9468534ec20d.png)
+[![jv-media-7360-9468534ec20d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-9468534ec20d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-9468534ec20d.png)
 {{% alert color="info" %}}
 If this command doesn't work, check if the module is imported correctly:
 
@@ -67,7 +67,7 @@ Get-Module -ListAvailable Defender | Install-Module
 
 To check out your devices in Microsoft Defender admin center, go to: <https://security.microsoft.com/machines>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4b5d28f4f8bf.png)
+[![jv-media-7360-4b5d28f4f8bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4b5d28f4f8bf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4b5d28f4f8bf.png)
 
 ### Onboard new devices to Microsoft Defender for Endpoint
 
@@ -75,15 +75,15 @@ To onboard a new device in Microsoft Defender, go to:
 
 <https://security.microsoft.com/securitysettings/endpoints/onboarding>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4f88a35445d0.png)
+[![jv-media-7360-4f88a35445d0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4f88a35445d0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-4f88a35445d0.png)
 
 For 1 or 2 devices, the local script option is faster. If having more than 2 devices I would advise to onboard them using Intune or Group Policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-0f67cb86a170.png)
+[![jv-media-7360-0f67cb86a170.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-0f67cb86a170.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-0f67cb86a170.png)
 
 Run the script on the target machine as Administrator to link the local Defender instance with Defender XDR in your Microsoft 365 tenant.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ad914c1616da.png)
+[![jv-media-7360-ad914c1616da.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ad914c1616da.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ad914c1616da.png)
 
 ---
 
@@ -99,7 +99,7 @@ Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" | Select 
 
 This will give us an overview of the latest logs of the Defender engine. You can also choose other options than 20, like 100 or 500 but this can take a while to retrieve information.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-d0ade1f5a138.png)
+[![jv-media-7360-d0ade1f5a138.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-d0ade1f5a138.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-d0ade1f5a138.png)
 
 ---
 
@@ -121,7 +121,7 @@ To focus only on key scan events, filter by event IDs 1000, 1001, and 1002 To gi
 - **Event ID** **1001**: Defender scan has completed
 - **Event ID** **1002**: Defender scan cancelled or interrupted
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-11087c491dd1.png)
+[![jv-media-7360-11087c491dd1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-11087c491dd1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-11087c491dd1.png)
 
 As you can see, this perfectly correspond to what we see in the GUI of Defender.
 
@@ -135,7 +135,7 @@ To simply check when the last full and quick Defender scans ran, execute this co
 Get-MpComputerStatus | Select FullScanStartTime, QuickScanStartTime
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-799afb8f2cb8.png)
+[![jv-media-7360-799afb8f2cb8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-799afb8f2cb8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-799afb8f2cb8.png)
 
 You can use this to get a simple overview of the latest scans executed. This can be used in incident responses or to simply check/troubleshoot your Defender confgiuration.
 
@@ -153,7 +153,7 @@ The signatures/virus definitions are literally hashes/signatures of trending vir
 
 I advise you to always first update these signatures before doing any scans. This way you ensure that we use the latest information available in certain scenarios. The command is almost always done in around 15 seconds.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-684d63a48862.png)
+[![jv-media-7360-684d63a48862.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-684d63a48862.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-684d63a48862.png)
 
 ---
 
@@ -171,7 +171,7 @@ Start-MpScan -ScanType QuickScan
 
 You can start scans anytime using PowerShell without waiting for Intune/Defender for syncing with your device for a faster incident response.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-b29c9d064585.png)
+[![jv-media-7360-b29c9d064585.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-b29c9d064585.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-b29c9d064585.png)
 
 ---
 
@@ -201,7 +201,7 @@ To remove all detected detected threats instantly, execute this command:
 Get-MpThreatDetection | Remove-MpThreat
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-a7b5c6eb58e2.png)
+[![jv-media-7360-a7b5c6eb58e2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-a7b5c6eb58e2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-a7b5c6eb58e2.png)
 
 ---
 
@@ -215,7 +215,7 @@ Get-MpPreference
 
 You can use this to check any Intune or Group Policy configurations with this command and see the endpoint uses your latest settings.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-572b2ad49a1d.png)
+[![jv-media-7360-572b2ad49a1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-572b2ad49a1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-572b2ad49a1d.png)
 
 ---
 

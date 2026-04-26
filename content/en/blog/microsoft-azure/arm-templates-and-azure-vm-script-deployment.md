@@ -27,7 +27,7 @@ In this post I will show some examples of deploying with ARM templates and also 
 
 ARM stands for Azure Resource Manager and is the underlying API for everything you deploy, change and manage in the Azure Portal, Azure PowerShell and Azure CLI. A basic understanding of ARM is in this picture:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca0f390b21af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca0f390b21af.png)
+[![jv-media-3935-ca0f390b21af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca0f390b21af.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca0f390b21af.png)
 
 I will not go very deep into Azure Resource Manager, as you can better read this in the Microsoft site: <https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview>
 
@@ -37,9 +37,9 @@ I will not go very deep into Azure Resource Manager, as you can better read this
 
 Now ARM allows us to create our own templates for deploying resources by defining a resource first, and then by clicking this link on the last page, just before deployment:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ec6ae5dcc11d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ec6ae5dcc11d.png)
+[![jv-media-3935-ec6ae5dcc11d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ec6ae5dcc11d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ec6ae5dcc11d.png)
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3bb5c6b4fa38.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3bb5c6b4fa38.png)
+[![jv-media-3935-3bb5c6b4fa38.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3bb5c6b4fa38.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3bb5c6b4fa38.png)
 
 Then click "Download".
 
@@ -58,9 +58,9 @@ These files can be changed easily to create duplicates and to deploy 5 similar V
 
 After creating your ARM template by defining the wizard and downloading the files, you can change the **parameters.json** file to change specific settings. This contains the naming of the resources, the region, your administrator and such:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-a73785e3ef04.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-a73785e3ef04.png)
+[![jv-media-3935-a73785e3ef04.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-a73785e3ef04.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-a73785e3ef04.png)
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3276d32e6a0b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3276d32e6a0b.png)
+[![jv-media-3935-3276d32e6a0b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3276d32e6a0b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3276d32e6a0b.png)
 
 Ensure no templates contain the same names as that will instantly result in an error.
 
@@ -72,29 +72,29 @@ After you have changed your template and adjusted it to your needs, you can depl
 
 Open up the Azure Portal, and search for "Deploy a custom template", and open that option.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-9f84afd8c0a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-9f84afd8c0a6.png)
+[![jv-media-3935-9f84afd8c0a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-9f84afd8c0a6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-9f84afd8c0a6.png)
 
 Now you get on this page. Click on "Build your own template in the editor":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2e53db9be9d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2e53db9be9d2.png)
+[![jv-media-3935-2e53db9be9d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2e53db9be9d2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2e53db9be9d2.png)
 
 You will get on this editor page now. Click on "Load file" to load our **template.json** file.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-817b62018b3b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-817b62018b3b.png)
+[![jv-media-3935-817b62018b3b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-817b62018b3b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-817b62018b3b.png)
 
 Now select the **template.json** file from your created and downloaded template.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-314eccf3139c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-314eccf3139c.png)
+[![jv-media-3935-314eccf3139c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-314eccf3139c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-314eccf3139c.png)
 
 It will now insert the template into the editor, and you can see on the left side what resource types are defined in the template:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ba360dc86908.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ba360dc86908.png)
+[![jv-media-3935-ba360dc86908.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ba360dc86908.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ba360dc86908.png)
 
 Click on "Save". Now we have to import the parameters file, otherwise all fields will be empty.
 
 Click on "Edit parameters", and we have to also upload the **parameters.json** file.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-f209b5a6ee84.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-f209b5a6ee84.png)
+[![jv-media-3935-f209b5a6ee84.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-f209b5a6ee84.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-f209b5a6ee84.png)
 
 Click on "Save" and our template will be filled in for 85%. We only have to set the important information:
 
@@ -103,17 +103,17 @@ Click on "Save" and our template will be filled in for 85%. We only have to set 
 
 Select your resource group to deploy all the resources in.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2c2d66421d12.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2c2d66421d12.png)
+[![jv-media-3935-2c2d66421d12.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2c2d66421d12.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2c2d66421d12.png)
 
 Then fill in your administrator password:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-06c358945819.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-06c358945819.png)
+[![jv-media-3935-06c358945819.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-06c358945819.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-06c358945819.png)
 
 Review all of the settings and then advance to the deployment.
 
 Now everything in your template will be deployed into Azure:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3aa30503b783.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3aa30503b783.png)
+[![jv-media-3935-3aa30503b783.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3aa30503b783.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3aa30503b783.png)
 
 As you can see, you can repeat these steps if you need multiple similar virtual machines as we only need to load the files and change 2 settings. This saves a lot of time of everything in the normal VM wizard and this decreases human errors.
 
@@ -125,7 +125,7 @@ We can also add a PowerShell script to an ARM template to directly run after dep
 
 I use a template to deploy an VM with Active Directory everytime I need an Active Directory to test certain things. So I have a modified version of my [Windows Server initial installation script](https://github.com/JustinVerstijnen/JV-ServersInitialInstall) which also installs the Active Directory role and promotes the VM to my internal domain. This saves a lot of time configuring this by hand every time:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b58f9201a127.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b58f9201a127.png)
+[![jv-media-3935-b58f9201a127.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b58f9201a127.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b58f9201a127.png)
 
 ### The Custom Script Extension block and monifying
 
@@ -162,15 +162,15 @@ Then change the 2 parameters in the file to point it to your own script:
 - fileUris: This is the public URL of your script (line 16)
 - commandToExecute: This is the name of your script (line 20)
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3b8bdf574b9a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3b8bdf574b9a.png)
+[![jv-media-3935-3b8bdf574b9a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3b8bdf574b9a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-3b8bdf574b9a.png)
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2f3b5b929cb3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2f3b5b929cb3.png)
+[![jv-media-3935-2f3b5b929cb3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2f3b5b929cb3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-2f3b5b929cb3.png)
 
 ### Placing the block into the existing ARM template
 
 This block must be placed after the virtual machine, as the virtual machine must be running before we can run a script on it.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b0846147977a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b0846147977a.png)
+[![jv-media-3935-b0846147977a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b0846147977a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-b0846147977a.png)
 
 Search for the "Outputs" block and on the second line just above it, place a comma and hit Enter and on the new line paste the Custom Script Extension block. Watch this video as example where I show you how to do this:
 
@@ -182,11 +182,11 @@ Search for the "Outputs" block and on the second line just above it, place a com
 
 After changing the **template.json** file, save it and then follow the custom template deployment step again of this guide to deploy the custom template which includes the PowerShell script. You will see it appear in the deployment after the virtual machine is deployed:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca36d0660bc0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca36d0660bc0.png)
+[![jv-media-3935-ca36d0660bc0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca36d0660bc0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-ca36d0660bc0.png)
 
 After the VM is deployed, I will login and check if the script has run:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-31fb9e124d7d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-31fb9e124d7d.png)
+[![jv-media-3935-31fb9e124d7d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-31fb9e124d7d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/arm-templates-and-azure-vm-script-deployment-3935/jv-media-3935-31fb9e124d7d.png)
 
 The domain has been succesfully installed with management tools and such. This is really cool and saves a lot of time.
 

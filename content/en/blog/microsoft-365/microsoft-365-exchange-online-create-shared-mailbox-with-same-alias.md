@@ -30,7 +30,7 @@ Write-ErrorMessage: ExB10BE9|Microsoft.Exchange.Management.Tasks.WLCDManagedMemb
 
 The cause of the problem is that even if you select another domain in the shared mailbox creation wizard, it wants to create a underlying UPN in your default domain.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-b5699773e4da.png)
+[![jv-media-288-b5699773e4da.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-b5699773e4da.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-b5699773e4da.png)
 
 We get an error stating: Email address not available because it's used by XXX, which is actually true.
 
@@ -71,7 +71,7 @@ Here, we create a new shared mailbox:
 
 You can create all mailboxes like this, and we have to tell Exchange Online exactly how to create the mailbox. After creating the mailbox, it looks like this in Exchange Admin center;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-8fbbe652547f.png)
+[![jv-media-288-8fbbe652547f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-8fbbe652547f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-365-exchange-online-create-shared-mailbox-with-same-alias-288/jv-media-288-8fbbe652547f.png)
 
 ---
 

@@ -42,7 +42,7 @@ The script itself has 6 steps:
 
 To use the script, we must first download it from the Github page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-cc79aadbe302.png)
+[![jv-media-3616-cc79aadbe302.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-cc79aadbe302.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-cc79aadbe302.png)
 
 Click on "Code" and then "Download ZIP".
 
@@ -50,13 +50,13 @@ Now place the script on the machine where it must run, If not already done so.
 
 To run this in the most user-friendly way possible, open the PowerShell ISE as administrator:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-d4b54450c379.png)
+[![jv-media-3616-d4b54450c379.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-d4b54450c379.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-d4b54450c379.png)
 
 Type in your credentials and advance.
 
 Now open the script by using the "Open" function:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-c9cbad0236b0.png)
+[![jv-media-3616-c9cbad0236b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-c9cbad0236b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-c9cbad0236b0.png)
 
 Before we can run, we must change the Powershell Execution policy temporarily. We can do this by typing the command in the blue window below:
 
@@ -70,15 +70,15 @@ Execute the command, and when prompted to lower the policy, click Yes.
 
 Now we are ready to execute the script. Double check the parameters section (Line 13 to 18) of the script to ensure this complies with your desired settings.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-eb61e387156a.png)
+[![jv-media-3616-eb61e387156a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-eb61e387156a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-eb61e387156a.png)
 
 Then run the script:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-3a4f47e6e796.png)
+[![jv-media-3616-3a4f47e6e796.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-3a4f47e6e796.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-3a4f47e6e796.png)
 
 This shows that the script runs and sets every setting correctly. After running correctly, the server will instantly reboot to apply all settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-97e8e90de29a.png)
+[![jv-media-3616-97e8e90de29a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-97e8e90de29a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/initial-installation-script-for-windows-azure-vms-3616/jv-media-3616-97e8e90de29a.png)
 
 ---
 

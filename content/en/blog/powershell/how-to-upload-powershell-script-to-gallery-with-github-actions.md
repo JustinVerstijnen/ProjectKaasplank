@@ -46,7 +46,7 @@ Inside our Github repository, we have Github Actions which can automate processe
 
 The action automatically kicks in every time a file in your repository is changed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-13772df5cab2.png)
+[![jv-media-5232-13772df5cab2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-13772df5cab2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-13772df5cab2.png)
 
 ---
 
@@ -56,17 +56,17 @@ Assuming you have a PowerShell script which is ready to upload to the PowerShell
 
 In the top-right corner, click on the "+" button and then on "New repository".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-e181fff55a9e.png)
+[![jv-media-5232-e181fff55a9e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-e181fff55a9e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-e181fff55a9e.png)
 
 Give the repository a name and description, and determine the visibility. Then press "Create repository".
 
 For this solution to work, the repository can be either Public or Private. As we upload our script to a public reposity, we can also set this to "Public". This gives users access to the "source code".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b4f331ef3ae4.png)
+[![jv-media-5232-b4f331ef3ae4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b4f331ef3ae4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b4f331ef3ae4.png)
 
 Now the repository is created, and we can upload our PowerShell script to it.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1204c515a46e.png)
+[![jv-media-5232-1204c515a46e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1204c515a46e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1204c515a46e.png)
 
 Select the script on your local machine, change the name and upload it to Github.
 
@@ -103,15 +103,15 @@ New-Guid
 
 Powershell then generates a new GUID for you to use in your script:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-7fa90749f381.png)
+[![jv-media-5232-7fa90749f381.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-7fa90749f381.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-7fa90749f381.png)
 
 My script looks like this now:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-67090eb82341.png)
+[![jv-media-5232-67090eb82341.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-67090eb82341.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-67090eb82341.png)
 
 When you are done pasting and changing the script information, we can save the changes by pressing "Commit changes" twice.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3de33c50c6d5.png)
+[![jv-media-5232-3de33c50c6d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3de33c50c6d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3de33c50c6d5.png)
 
 Press again to change the file, and we have prepared our script to be uploaded.
 
@@ -121,19 +121,19 @@ Press again to change the file, and we have prepared our script to be uploaded.
 
 For Github to have access to our PowerShell Gallery account, we must create an API key. Head to the PowerShell Gallery.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-90055b722c3e.png)
+[![jv-media-5232-90055b722c3e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-90055b722c3e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-90055b722c3e.png)
 
 Go to "API Keys". Then click on "Create".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-9c2fb36dc59b.png)
+[![jv-media-5232-9c2fb36dc59b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-9c2fb36dc59b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-9c2fb36dc59b.png)
 
 Now we have to fill in some information. In general, it is best-practice to create an API key for every project/repository.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-a60cc1c10e7c.png)
+[![jv-media-5232-a60cc1c10e7c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-a60cc1c10e7c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-a60cc1c10e7c.png)
 
 Click "Create" and that gives you the API key. You can only get the key now, so save it in a safe place like your Password manager.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-de72bb3cf05e.png)
+[![jv-media-5232-de72bb3cf05e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-de72bb3cf05e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-de72bb3cf05e.png)
 
 We need this API key in the next step.
 
@@ -145,7 +145,7 @@ Now let's head back to Github to insert our API key.
 
 In your Github repository, go to "Settings", then "Secrets and variables" and then create a new repository secret.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-963f1994325e.png)
+[![jv-media-5232-963f1994325e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-963f1994325e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-963f1994325e.png)
 
 In the "Name" field, paste this:
 
@@ -155,7 +155,7 @@ PSGALLERY_API_KEY
 
 In the "Secret" field, paste your just saved API key:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-abf1922b9542.png)
+[![jv-media-5232-abf1922b9542.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-abf1922b9542.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-abf1922b9542.png)
 
 Click on "Add secret" to add the secret to your repository.
 
@@ -173,7 +173,7 @@ An action is completely based on a single .yml (YAML) file which executes everyt
 
 Click on "Add file" and then the option "Create new file":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-c3a3ab110b34.png)
+[![jv-media-5232-c3a3ab110b34.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-c3a3ab110b34.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-c3a3ab110b34.png)
 
 In the top-left corner, type or paste in:
 
@@ -241,11 +241,11 @@ jobs:
 
 Change the information on lines 17, 18 and 19 to your own information and then save the file by clicking "Commit changes" in the top right corner. Make sure the script name and path exactly match your file name on the repository and do not change anything else.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-993c6b0d602a.png)
+[![jv-media-5232-993c6b0d602a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-993c6b0d602a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-993c6b0d602a.png)
 
 For about a minute, this will show on the homepage of your repository:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1e134a2a4c42.png)
+[![jv-media-5232-1e134a2a4c42.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1e134a2a4c42.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-1e134a2a4c42.png)
 
 This means the Action is now actually processing the changes and publishing our new script. It will directly upload the script to the PowerShell Gallery for us.
 
@@ -255,17 +255,17 @@ This means the Action is now actually processing the changes and publishing our 
 
 Now the the action has ran, and did not give any error. It must now be available on the PowerShell Gallery.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3d112869f69d.png)
+[![jv-media-5232-3d112869f69d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3d112869f69d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-3d112869f69d.png)
 
 Lets head back to the PowerShell Gallery to check the status. Click on your profile, and then on "Manage Packages".
 
 Here we see that the packages has been uploaded:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f42a4641b7.png)
+[![jv-media-5232-b6f42a4641b7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f42a4641b7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f42a4641b7.png)
 
 If you click on it you get actual instructions to install the script on your computer and we will see the information we have added to the script:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-359c6885b8d6.png)
+[![jv-media-5232-359c6885b8d6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-359c6885b8d6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-359c6885b8d6.png)
 
 Pretty cool in my opinion.
 
@@ -287,7 +287,7 @@ Install-Script -Name JV-ServersInitialInstall
 
 After executing this command you need to need to answer some questions:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f2e8d2e105.png)
+[![jv-media-5232-b6f2e8d2e105.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f2e8d2e105.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-b6f2e8d2e105.png)
 
 In order to actually run the script, you need to answer all with Yes/All.
 
@@ -296,7 +296,7 @@ After the script is installed, we can run it with your script name:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 JV-ServersInitialInstall
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-928af176f859.png)
+[![jv-media-5232-928af176f859.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-928af176f859.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upload-powershell-script-to-gallery-with-github-actions-5232/jv-media-5232-928af176f859.png)
 
 The script will run directly which is very nice and useful for mass use.
 

@@ -67,7 +67,7 @@ Get-OrganizationConfig | Select -Expand RejectDirectSend
 
 Thats all. :)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-directsend-in-exchange-online-6827/jv-media-6827-b418a4a00a96.png)
+[![jv-media-6827-b418a4a00a96.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-directsend-in-exchange-online-6827/jv-media-6827-b418a4a00a96.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-directsend-in-exchange-online-6827/jv-media-6827-b418a4a00a96.png)
 
 If an email is now sent using DirectSend, the following error will occur:
 

@@ -12,7 +12,7 @@ description: >
 ---
 Sometimes, the ADSync service stops without further notice. You will see that the service has been stopped in the Services panel:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3fafbbf3b1d4.png)
+[![jv-media-6576-3fafbbf3b1d4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3fafbbf3b1d4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3fafbbf3b1d4.png)
 
 In this guide I will explain how I solved this problem using a simple PowerShell script.
 
@@ -45,11 +45,11 @@ The fun part is that it cannot login according to the Entra Connect Sync tool bu
 
 We can run the script manually using the PowerShell ISE application.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-697c827d2e85.png)
+[![jv-media-6576-697c827d2e85.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-697c827d2e85.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-697c827d2e85.png)
 
 After running the script, the service does run:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-aff9b0ebc8df.png)
+[![jv-media-6576-aff9b0ebc8df.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-aff9b0ebc8df.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-aff9b0ebc8df.png)
 
 ---
 
@@ -68,23 +68,23 @@ The Installation script creates a folder in C:\ named "Scripts" if not already t
 
 Click on the blue button above. You now are on the Github page of the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-233d46e8460e.png)
+[![jv-media-6576-233d46e8460e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-233d46e8460e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-233d46e8460e.png)
 
 Click on "Code" and then "Download ZIP".
 
 Then place the files on the server where you want to install the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3b0f983f2536.png)
+[![jv-media-6576-3b0f983f2536.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3b0f983f2536.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-3b0f983f2536.png)
 
 Open Powershell ISE as administrator.
 
 Now open the "Install" script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-1d6ccca49412.png)
+[![jv-media-6576-1d6ccca49412.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-1d6ccca49412.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-1d6ccca49412.png)
 
 Review it's default settings and if you feel at home in PowerShell, review the rest of the script to understand what it does.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-7031ec1a27aa.png)
+[![jv-media-6576-7031ec1a27aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-7031ec1a27aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-7031ec1a27aa.png)
 
 You can change the schedule very easily by changing the runtime: 0:00 till 23:59 and the day of month to specify the day number of the month (1-31).
 
@@ -100,15 +100,15 @@ Execute the command, and when prompted to lower the policy, click Yes.
 
 Now execute the Install script by clicking the green "Run" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-cba0e2925e64.png)
+[![jv-media-6576-cba0e2925e64.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-cba0e2925e64.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-cba0e2925e64.png)
 
 After executing the script, we get the message that the task has been created succesfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-f31f470a61f3.png)
+[![jv-media-6576-f31f470a61f3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-f31f470a61f3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-f31f470a61f3.png)
 
 Let's check this in the Windows Task Scheduler:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-0e8ab634e298.png)
+[![jv-media-6576-0e8ab634e298.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-0e8ab634e298.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-adsync-service-stopped-entra-connect-sync-6576/jv-media-6576-0e8ab634e298.png)
 
 As you can see, the script is succesfully installed to Task Scheduler. This ensures it runs every first of the month at 03:00 (or at your own defined schedule). Also, the script has been placed in C:\Scripts for a good overview of the scripts of the system.
 

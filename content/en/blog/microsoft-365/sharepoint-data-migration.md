@@ -40,13 +40,13 @@ Install the SharePoint Migration tool on a computer with access to the source fi
 
 When the tool is installed, you will get on the landing page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-2cccfa2ddec8.png)
+[![jv-media-369-2cccfa2ddec8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-2cccfa2ddec8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-2cccfa2ddec8.png)
 
 Here you can configure the fileshare (source) and then the destination in SharePoint.
 
 After configuring the task, the tool will take over the hard work and migrates your data to your SharePoint site:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-20c8eae40fdc.png)
+[![jv-media-369-20c8eae40fdc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-20c8eae40fdc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/sharepoint-data-migration-369/jv-media-369-20c8eae40fdc.png)
 
 ---
 

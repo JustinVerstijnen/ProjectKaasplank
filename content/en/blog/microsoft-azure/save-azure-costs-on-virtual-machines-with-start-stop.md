@@ -43,7 +43,7 @@ To learn more about the Start/Stop solution, check out this page: <https://learn
 
 After deploying the template to your resource group, you can find some Logic Apps that are deployed to the resource group:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-ce0f1567d8f5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-ce0f1567d8f5.png)
+[![jv-media-1250-ce0f1567d8f5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-ce0f1567d8f5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-ce0f1567d8f5.png)
 
 These all have their own task:
 
@@ -91,20 +91,20 @@ To make our life easier, we can deploy the start/stop function directly from a t
 
 After clicking the button, you are redirected to the Azure Portal. Log in with your credentials and you will land on this page:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-9b2a710be2e6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-9b2a710be2e6.png)
+[![jv-media-1250-9b2a710be2e6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-9b2a710be2e6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-9b2a710be2e6.png)
 
 Selectthe appropriate option based on your needs and click on "Create"
 
 - **StartStopV2**
 - **StartStopV2-AZ** -> Zone Redundant
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4b3dd17a494e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4b3dd17a494e.png)
+[![jv-media-1250-4b3dd17a494e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4b3dd17a494e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4b3dd17a494e.png)
 
 You have to define names of all the dependencies of this Start/Stop solution.
 
 After this step, create the resource and all the required components will be built by Azure. Also all the permissions will be set correctly so this minimizes administrative effort.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)
+[![jv-media-1250-0e16733b824c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)
 
 There is created a managed identity and will be assigned "Contributor" permissions on the whole resource group. This way it has enough permissions to perform the tasks needed to start and shutdown VMs.
 
@@ -114,11 +114,11 @@ There is created a managed identity and will be assigned "Contributor" permissio
 
 In Azure, search for Logic Apps and go to the **ststv2\_vms\_Scheduled\_start** resource.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-362b81ba6f3c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-362b81ba6f3c.png)
+[![jv-media-1250-362b81ba6f3c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-362b81ba6f3c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-362b81ba6f3c.png)
 
 Open the Resource and on the left, click on the "Logic App Desginer".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4c3942e51908.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4c3942e51908.png)
+[![jv-media-1250-4c3942e51908.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4c3942e51908.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4c3942e51908.png)
 
 Here you see some tasks and blocks, similar to a Power Automate flow if you are familiar with those.
 
@@ -136,7 +136,7 @@ We can configure the complete flow here in the blocks:
 
 Click on the "Recurrence" block and change the parameters to your needs. In my case, i configured to start the VM on 13:45 Amsterdam time.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)
+[![jv-media-1250-d5de9e8af3af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)
 
 After configuring the scheduled start time, you can close the panel on the right and save the configuration.
 
@@ -144,21 +144,21 @@ After configuring the scheduled start time, you can close the panel on the right
 
 After configuring the recurrence we can configure the scope of the start logic app. You can do that by clicking on "Function-Try".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6a1425cd92d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6a1425cd92d5.png)
+[![jv-media-1250-6a1425cd92d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6a1425cd92d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6a1425cd92d5.png)
 
 On the "Settings" tab you can see that the recurrence we configured is used in this task to check if the time is matched. If this is a "success" the rest of the Logic App will be started.
 
 Now we have to open the "Logic app code view" option on the left and we have to make a change to the code to limit the scope of the task.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-541231c619c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-541231c619c4.png)
+[![jv-media-1250-541231c619c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-541231c619c4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-541231c619c4.png)
 
 Now we have to look out for a specific part of this code which is the "Function-Try" section. In my case, this section starts on **line 68**:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6d1845dbce6f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6d1845dbce6f.png)
+[![jv-media-1250-6d1845dbce6f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6d1845dbce6f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6d1845dbce6f.png)
 
 Now we have to paste the Resource ID of the resource group in here. You can find the Resource ID of the resource very fast and in a copy-paste manner by navigating to the resource group on a new browser tab, go to properties and in the field "Resource ID":
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-7107fddf25c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-7107fddf25c7.png)
+[![jv-media-1250-7107fddf25c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-7107fddf25c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-7107fddf25c7.png)
 
 Paste the Resource ID of the resource group and head back to the logic app code view browser tab.
 
@@ -204,7 +204,7 @@ If you want to copy and paste this code in your own configuration, you have to c
 
 After this change, save the configuration and go back to the Home page of the logic app.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-f2d1ec87c6c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-f2d1ec87c6c0.png)
+[![jv-media-1250-f2d1ec87c6c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-f2d1ec87c6c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-f2d1ec87c6c0.png)
 
 Enable the logic app by clicking "Enable". This starts the logic app and begins checking the time and starting of the VMs.
 
@@ -216,7 +216,7 @@ To configure the Auto stop schedule, we have to go to the Logic app "**ststv2\_v
 
 Go to the Logic App Designer, just when we did with the Auto Start schedule:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)
+[![jv-media-1250-d5de9e8af3af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-d5de9e8af3af.png)
 
 Click on the "Recurrence" block and configure the desired shutdown time.
 
@@ -264,11 +264,11 @@ Now i configured the machine to start on 13:45. You will not see the change dire
 
 At 13:45:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-8dfe5b7c024a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-8dfe5b7c024a.png)
+[![jv-media-1250-8dfe5b7c024a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-8dfe5b7c024a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-8dfe5b7c024a.png)
 
 And some minutes later:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4477e38bcf7f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4477e38bcf7f.png)
+[![jv-media-1250-4477e38bcf7f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4477e38bcf7f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-4477e38bcf7f.png)
 
 Now the starting procedure will work for all your VMs in that same resource group, excluding VMs you excluded.
 
@@ -280,11 +280,11 @@ Now I configured the machine to stop on 14:15. My VM is running at this time to 
 
 At 14:15:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-63c66e1523fd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-63c66e1523fd.png)
+[![jv-media-1250-63c66e1523fd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-63c66e1523fd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-63c66e1523fd.png)
 
 And some time later:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-b3be0e803f37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-b3be0e803f37.png)
+[![jv-media-1250-b3be0e803f37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-b3be0e803f37.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-b3be0e803f37.png)
 
 This confirms that the solution is working as intended.
 
@@ -297,7 +297,7 @@ There may be some cases that the solution does not work or gives other errors. W
 - Check the status of the Logic App -> Must be "Enabled"
 - Check the trigger of the Logic App
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-123bb9807d6a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-123bb9807d6a.png)
+[![jv-media-1250-123bb9807d6a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-123bb9807d6a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-123bb9807d6a.png)
 
 Maybe your time or timezone is incorrect. By going to the logic app and then the "Runs history" tab, you can view if the logic app has triggered at the right time.
 
@@ -305,7 +305,7 @@ Maybe your time or timezone is incorrect. By going to the logic app and then the
 
 The underlying Azure Function app must have the right permissions in your Resource Group to be able to perform the tasks. You can check the permissions by navigating to your Resource Group, and them check the Access Control (IAM) menu.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)
+[![jv-media-1250-0e16733b824c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-0e16733b824c.png)
 
 Double check if the right Functions App/Managed Identity has "Contributor" permissions to the resource group(s).
 
@@ -317,21 +317,21 @@ In some cases, you want to be alerted when an automatic tasks happens in Azure s
 
 You can configure notifications of this solution by searching for "Notifications" in the Azure Portal and heading to the deployed Action Group.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-61f68d989d2b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-61f68d989d2b.png)
+[![jv-media-1250-61f68d989d2b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-61f68d989d2b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-61f68d989d2b.png)
 
 Here you can configure what type of alert you want to receive when some of the tasks are executed.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-66ee7f23716e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-66ee7f23716e.png)
+[![jv-media-1250-66ee7f23716e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-66ee7f23716e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-66ee7f23716e.png)
 
 Click on the "Edit" button to edit the Action Group.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6bfdc83bdf16.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6bfdc83bdf16.png)
+[![jv-media-1250-6bfdc83bdf16.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6bfdc83bdf16.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-6bfdc83bdf16.png)
 
 Here you can configure how you want to receive the notifications. Be aware that if this task is executed every day, this can generate a huge amount of notifications.
 
 This is an example of the email message you will receive:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-3804df7db6be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-3804df7db6be.png)
+[![jv-media-1250-3804df7db6be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-3804df7db6be.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/save-azure-costs-on-virtual-machines-with-start-stop-1250/jv-media-1250-3804df7db6be.png)
 
 You can further change the texting of the notification by going into the alerts in Azure.
 

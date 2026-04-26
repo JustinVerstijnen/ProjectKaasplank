@@ -66,7 +66,7 @@ My environment consists of one physical server with 3 VMs on it. In a production
 
 I create a Multi-node server cluster to experiment with Stack HCI. The environment looks like this.
 
-![Azure Stack HCI environment overview](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5d59b8a921eb.png)
+[![jv-media-374-5d59b8a921eb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5d59b8a921eb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5d59b8a921eb.png)
 
 - 2 nodes (HCI01 and HCI02)
 - 1 domain controller (DC01)
@@ -74,7 +74,7 @@ I create a Multi-node server cluster to experiment with Stack HCI. The environme
 
 In Azure i have a single resource group where i want to deploy my cluster into:
 
-![Azure resource group](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e59b0f791505.png)
+[![jv-media-374-e59b0f791505.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e59b0f791505.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e59b0f791505.png)
 
 ---
 
@@ -84,7 +84,7 @@ In Azure i have a single resource group where i want to deploy my cluster into:
 
 The installation of Azure Stack HCI is very straight-forward, and the same as installing Windows 11 or Windows Server. At the time you follow this guide i think you understand how to do this.
 
-![Azure Stack HCI installation](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-8ebc1913b625.png)
+[![jv-media-374-8ebc1913b625.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-8ebc1913b625.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-8ebc1913b625.png)
 
 Install Azure Stack HCI on both of the nodes. Sit back or get a cup of coffee because this will take around 15 minutes :). To not waste time, my advice is to prepare the Active Directory during the installation.
 
@@ -114,15 +114,15 @@ At the credential section, you have to specify a new user who can manage the HCI
 
 I created my user like shown below:
 
-![HCI service account creation](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)
+[![jv-media-374-e64d8661dba7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)
 
 The module accepted my account:
 
-![HCI module accepted account](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ac11ecffbc71.png)
+[![jv-media-374-ac11ecffbc71.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ac11ecffbc71.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ac11ecffbc71.png)
 
 When going to the Active Directory Users and Computers center, you see the changes are processed succesfully:
 
-![Active Directory Users and Computers OU](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1bf9c102e1c5.png)
+[![jv-media-374-1bf9c102e1c5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1bf9c102e1c5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1bf9c102e1c5.png)
 
 Now we have configured the Active Directory and we can go on to configure the cluster nodes.
 
@@ -130,7 +130,7 @@ Now we have configured the Active Directory and we can go on to configure the cl
 
 After the installation and preparation of the nodes we can perform a default configuration of the nodes through sconfig:
 
-![sconfig menu](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-95dfefc3a1d5.png)
+[![jv-media-374-95dfefc3a1d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-95dfefc3a1d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-95dfefc3a1d5.png)
 
 This menu is the same as on server-core installations of Windows Server. Navigate through the menu by using the numbers and the extra options you get afterwards.
 
@@ -147,7 +147,7 @@ Note: do NOT join your nodes to Active Directory, otherwise the wizard to create
 
 The result after these steps.
 
-![Prepared Azure Stack HCI nodes](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-9bfb08538abc.png)
+[![jv-media-374-9bfb08538abc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-9bfb08538abc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-9bfb08538abc.png)
 
 After the basic configuration of the nodes is complete, we have to do the following pre-configuration steps on every node:
 
@@ -195,17 +195,17 @@ Invoke-AzStackHciArcInitialization -SubscriptionId $AzureSubscription -ResourceG
 
 Now the node will be registered to Azure Arc. This will take around 10 minutes.
 
-![Azure Arc initialization](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c94bc186464e.png)
+[![jv-media-374-c94bc186464e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c94bc186464e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c94bc186464e.png)
 
 After some minutes, the nodes appear in the Azure portal:
 
-![Azure Arc nodes in portal](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-859412ca99ed.png)
+[![jv-media-374-859412ca99ed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-859412ca99ed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-859412ca99ed.png)
 
 Now we have achieved this, we don't need the nodes anymore and we can close the connections to it. The rest of the cluster/node configuration will be done in the Azure Portal. This was just the setup of the nodes itself.
 
 After the machines appear in the Azure Portal, the service will install the needed extensions on all of the cluster nodes. You can't go further before all the extensions are installed. You can follow the status by clicking on one of the cluster nodes and the open the blade "Extensions".
 
-![Azure Arc node extensions](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5cafbc974d18.png)
+[![jv-media-374-5cafbc974d18.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5cafbc974d18.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5cafbc974d18.png)
 
 All of the nodes must have at least 3 extensions and the status must be "Succeded".
 
@@ -217,23 +217,23 @@ Now we have prepared everything, and we can create the cluster in the Azure port
 
 Go to Azure Arc and open the blade "Azure Stack HCI":
 
-![Azure Stack HCI blade in Azure Arc](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5eeeee0099af.png)
+[![jv-media-374-5eeeee0099af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5eeeee0099af.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-5eeeee0099af.png)
 
 Select the option "Deploy cluster"
 
 We now have to fill in some details. Next to a HCI cluster, Azure needs a Key Vault to store some secrets for encryption purposes. We have to create that in this wizard:
 
-![Deploy cluster basics and Key Vault](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c9cac85a7eff.png)
+[![jv-media-374-c9cac85a7eff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c9cac85a7eff.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-c9cac85a7eff.png)
 
 After that, we have to validate our cluster nodes by Azure to check if all pre-requisites are done:
 
-![Validate Azure Stack HCI cluster nodes](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93856e9ac8aa.png)
+[![jv-media-374-93856e9ac8aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93856e9ac8aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93856e9ac8aa.png)
 
 After succesfully validating the nodes, we can go further in the wizard.
 
 On the tab "Configuration", i chose for a new configuration:
 
-![Azure Stack HCI cluster configuration](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e09e3f7cbe05.png)
+[![jv-media-374-e09e3f7cbe05.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e09e3f7cbe05.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e09e3f7cbe05.png)
 
 On the tab "Networking", I chose for "Network switch for storage". This means if there is a network switch between the servers. In my environment, i am using VMware as Hypervisor for my cluster nodes. This has a internal switching system and has no direct link to the PCIe connected network interface.
 
@@ -247,7 +247,7 @@ In my environment i chose to group all traffic. In real world and business criti
 
 After that step, we have to configure network connectivity. Select the network interface and at the IP configuration section, keep in mind at the DNS servers you need connection to your domain controller.
 
-![Azure Stack HCI networking configuration](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f4e3c9bc6536.png)
+[![jv-media-374-f4e3c9bc6536.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f4e3c9bc6536.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f4e3c9bc6536.png)
 
 When everything is filled in correctly, we can advance to the "Management" tab.
 
@@ -264,11 +264,11 @@ Fill in those details and click Next: Security
 
 We want the highest level of security, so we choose the recommended settings:
 
-![Azure Stack HCI security settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1e14be36f4fc.png)
+[![jv-media-374-1e14be36f4fc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1e14be36f4fc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1e14be36f4fc.png)
 
 After that we can go to the tab "Validation". Here we have to validate the complete configuration of the cluster:
 
-![Azure Stack HCI validation](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1cc165774904.png)
+[![jv-media-374-1cc165774904.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1cc165774904.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-1cc165774904.png)
 
 ---
 
@@ -290,7 +290,7 @@ Test-Cluster -Node HCI01 -Include "Storage Spaces Direct", "Inventory", "Network
 
 Te result i got is the following:
 
-![Test-Cluster validation result](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-bac5c94f883e.png)
+[![jv-media-374-bac5c94f883e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-bac5c94f883e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-bac5c94f883e.png)
 
 It gives us the steps we have to fix first before creating the cluster. We get the warnings because at this point we didn't have everything configured. The following components needs configuration
 
@@ -322,11 +322,11 @@ At the credential section, you have to specify a new user who can manage the HCI
 
 I created my user like shown below:
 
-![HCI service account creation](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)
+[![jv-media-374-e64d8661dba7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-e64d8661dba7.png)
 
 The module accepted my account:
 
-![HCI module accepted account single-node](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ba8b6a4f3cee.png)
+[![jv-media-374-ba8b6a4f3cee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ba8b6a4f3cee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-ba8b6a4f3cee.png)
 
 ### 2.3 Prepare the drives
 
@@ -362,11 +362,11 @@ Invoke-Command ($ServerList) {
 
 This will give no output when succeeded:
 
-![Prepare drives output](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-71fee250d346.png)
+[![jv-media-374-71fee250d346.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-71fee250d346.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-71fee250d346.png)
 
 ### 2.4 Creating the cluster
 
-![Create single-node cluster](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-7c36ca1edcd8.png)
+[![jv-media-374-7c36ca1edcd8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-7c36ca1edcd8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-7c36ca1edcd8.png)
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 New-Cluster -Name HCI-CLUSTER01 -Node HCI01 -NOSTORAGE -StaticAddress 172.17.90.249
@@ -378,7 +378,7 @@ After creating the cluster, we have to enable Storage Spaces Direct, but without
 Enable-ClusterStorageSpacesDirect -CacheState Disabled
 {{< /card >}}
 
-![Enable Cluster Storage Spaces Direct](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-6886811d3057.png)
+[![jv-media-374-6886811d3057.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-6886811d3057.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-6886811d3057.png)
 
 The output shows the command has been processed succesfully.
 
@@ -386,7 +386,7 @@ The output shows the command has been processed succesfully.
 
 To fully let your cluster work, you have to update the functional level of the cluster. This is a version of the language the nodes use to speak with each other.
 
-![Update cluster functional level](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-3555d88afec1.png)
+[![jv-media-374-3555d88afec1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-3555d88afec1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-3555d88afec1.png)
 
 ### 2.6 Creating Cluster Shared Volume
 
@@ -400,7 +400,7 @@ New-VirtualDisk -StoragePoolFriendlyName S2D* -FriendlyName CSVDisk -Size 240GB 
 
 My output was:
 
-![New virtual disk output](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93fc5b7a5076.png)
+[![jv-media-374-93fc5b7a5076.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93fc5b7a5076.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-93fc5b7a5076.png)
 
 ### 2.7 Register the cluster to Azure Stack HCI
 
@@ -408,7 +408,7 @@ After you configured everything of the local server we have to register the clus
 
 First, register the needed resource providers in the Azure Portal. You can find this under your active subscription where you want to register the Cluster.
 
-![Azure resource providers](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f324a159ab15.png)
+[![jv-media-374-f324a159ab15.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f324a159ab15.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-f324a159ab15.png)
 
 Register the following resource providers here:
 
@@ -439,7 +439,7 @@ After that step, you have to wait around 10 minutes for the registration to be d
 
 You can access Azure Stack HCI in the Azure Portal:
 
-![Azure Stack HCI in Azure Portal](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-b5ea0c01ff3f.png)
+[![jv-media-374-b5ea0c01ff3f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-b5ea0c01ff3f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-stack-hci-host-your-virtual-desktops-locally-with-all-the-best-of-azure-374/jv-media-374-b5ea0c01ff3f.png)
 
 Here you can manage the nodes and clusters.
 

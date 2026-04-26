@@ -12,7 +12,7 @@ description: >
 
 Azure Update Manager is a tool from Microsoft and is developed to automate, installing and documenting Windows updates or updates to Linux server on Azure. This all in a single pane of glass and without installing any additional software.
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-da1adbcab709.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-da1adbcab709.png)
+[![jv-media-837-da1adbcab709.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-da1adbcab709.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-da1adbcab709.png)
 
 ---
 
@@ -52,11 +52,11 @@ Azure Update Manager has the following features:
 
 To enroll a new server into Azure Update Manager, open your VM and under "Operations", open "Updates"
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-bdfeed9c71e1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-bdfeed9c71e1.png)
+[![jv-media-837-bdfeed9c71e1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-bdfeed9c71e1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-bdfeed9c71e1.png)
 
 Click on the "Update settings"
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-8d6804843ca5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-8d6804843ca5.png)
+[![jv-media-837-8d6804843ca5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-8d6804843ca5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-8d6804843ca5.png)
 
 Select under periodic assessment the option "Enable" to enable the service to automatically scan for new updates and under "Patch Orchestration" select "Customer Managed Schedules".
 
@@ -70,7 +70,7 @@ In our work, most of the time we want to do things at scale. To enroll servers i
 
 Select all machines and click on "Update settings".
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-fd5eb1705b7f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-fd5eb1705b7f.png)
+[![jv-media-837-fd5eb1705b7f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-fd5eb1705b7f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-fd5eb1705b7f.png)
 
 Here you can do the same for all servers on your subscriptions (and Lighthouse managed subscriptions too)
 
@@ -91,7 +91,7 @@ The options in a configuration are:
 
 You can configure as many configurations as you want:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-14b1c7f83db3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-14b1c7f83db3.png)
+[![jv-media-837-14b1c7f83db3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-14b1c7f83db3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-14b1c7f83db3.png)
 
 ---
 
@@ -99,11 +99,11 @@ You can configure as many configurations as you want:
 
 On the server we see after a succesful run + reboot the updates are installed succesfully:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-c0a806bc023f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-c0a806bc023f.png)
+[![jv-media-837-c0a806bc023f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-c0a806bc023f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-c0a806bc023f.png)
 
 And if we check the recently installed updates:
 
-![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png)
+[![jv-media-837-cfbc48b43053.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png)
 
 ---
 

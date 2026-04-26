@@ -100,7 +100,7 @@ IPv4 addresses, like 172.16.254.1, are decimal representations of four 8-bit bin
 
 The IP address 172.16.254.1 can be represented in binary format like shown in the picture below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-b4e349b06019.png)
+[![jv-media-940-b4e349b06019.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-b4e349b06019.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-b4e349b06019.png)
 
 So an IP address is basically a human readable way of how the devices work under the hood. All based on 0's and 1's.
 
@@ -116,7 +116,7 @@ Subnetting is achieved by modifying the subnet mask, which determines how many b
 
 In Azure, we do this by creating a virtual network which has an address space (for example: 10.0.0.0/16) and we can build our subnets in that space (10.0.0.0/24, 10.0.1.0/24, 10.0.2.0/24 etc.). I have done this for demonstration in the picture below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-a1e17cf37a8f.png)
+[![jv-media-940-a1e17cf37a8f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-a1e17cf37a8f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-networks-940/jv-media-940-a1e17cf37a8f.png)
 
 When using routers and switches, we can segment our network in different, Virtual networks which are called VLANs. This can help us by dividing devices into different isolated networks without the need of having seperate physical networks.
 

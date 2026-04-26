@@ -38,7 +38,7 @@ Go to the Microsoft Entra admin center (entra.microsoft.com)
 
 Go to "Groups" and create a new group and select the membership type "Dynamic User"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-group-for-access-to-windows-365-174/jv-media-174-291ad6b3c568.png)
+[![jv-media-174-291ad6b3c568.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-group-for-access-to-windows-365-174/jv-media-174-291ad6b3c568.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/dynamic-group-for-access-to-windows-365-174/jv-media-174-291ad6b3c568.png)
 
 Now we have the group, we need to create the rules for the group to determine which users can be added. Click on "Add dynamic query" to configure the rules.
 

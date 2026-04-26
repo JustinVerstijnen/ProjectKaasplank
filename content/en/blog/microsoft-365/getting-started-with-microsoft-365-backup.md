@@ -31,7 +31,7 @@ Microsoft 365 Backup can be used to extend the retention period of certain data.
 
 If having any site-wide problems, data loss or change in permissions, you will be doomed.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d5842f0d6b3.png)
+[![jv-media-8069-5d5842f0d6b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d5842f0d6b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d5842f0d6b3.png)
 
 Microsoft 365 Backup has the following details:
 
@@ -71,7 +71,7 @@ As you can see, it totally depends on how many data is backed up, and selecting 
 
 You can find currect usage easily through the Microsoft 365 Admin center (<https://admin.cloud.microsoft>) and then to "Reports" and then "Usage":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-36baff867d1d.png)
+[![jv-media-8069-36baff867d1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-36baff867d1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-36baff867d1d.png)
 {{% alert color="info" %}}
 Tip: Calculate your actual data usage with this PowerShell scripts of Microsoft: <https://learn.microsoft.com/en-us/microsoft-365/backup/backup-pricing?view=o365-worldwide#finding-the-sizes-of-stored-data>
 {{% /alert %}}
@@ -88,7 +88,7 @@ If you want to use **the file level restore options**, you need to have these ro
 - SharePoint Backup Administrator
 - Exchange Backup Administrator
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6dba4232b7f4.png)
+[![jv-media-8069-6dba4232b7f4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6dba4232b7f4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6dba4232b7f4.png)
 
 ---
 
@@ -98,7 +98,7 @@ First we will creeate a separate resource group for our Microsoft 365 Backup pol
 
 Then create a new resource group in your subscription:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-05f74f7952c6.png)
+[![jv-media-8069-05f74f7952c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-05f74f7952c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-05f74f7952c6.png)
 
 After creating the resource group, it will be ready to deploy resources into.
 
@@ -110,33 +110,33 @@ Now we can start by preparing Microsoft 365 Backup in your tenant. Go to the Mic
 
 Then go to Settings -> Microsoft 365 Backup
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-896c7b69a28e.png)
+[![jv-media-8069-896c7b69a28e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-896c7b69a28e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-896c7b69a28e.png)
 
 Then click on the "Go to setup page" button and you will be redirected to the billing options.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-d3905deb50ef.png)
+[![jv-media-8069-d3905deb50ef.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-d3905deb50ef.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-d3905deb50ef.png)
 
 Click on the "Services" tab here and there we have Microsoft 365 Backup. To actually use Microsoft 365 Backup, we need to create a billing policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-557a645a2099.png)
+[![jv-media-8069-557a645a2099.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-557a645a2099.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-557a645a2099.png)
 
 Click the "create a billing policy" button to create one.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7b11e8d15bf5.png)
+[![jv-media-8069-7b11e8d15bf5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7b11e8d15bf5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7b11e8d15bf5.png)
 
 Fill in the details, and select your Azure subscription and just created resource group. The region can be any region of choice. Preferrably the closest one to you or what you need in terms of regulatory compliance.
 
 Click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-48514724c618.png)
+[![jv-media-8069-48514724c618.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-48514724c618.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-48514724c618.png)
 
 On the "Choose users" page choose one of the two options. I chose "All users". Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e8464e6c44a.png)
+[![jv-media-8069-8e8464e6c44a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e8464e6c44a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e8464e6c44a.png)
 
 On the "Budget" page, you can set a budget, or maximum amount of money you want to spend on this solution.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-429afd56b62c.png)
+[![jv-media-8069-429afd56b62c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-429afd56b62c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-429afd56b62c.png)
 
 Finish the policy and we are ready to go.
 
@@ -146,19 +146,19 @@ Finish the policy and we are ready to go.
 
 Now that we have our billing policy in place, we can now connect the Microsoft 365 Backup service to this policy. On the "Billing policies page, click "Services" and then "Microsoft 365 Backup".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1995838dc473.png)
+[![jv-media-8069-1995838dc473.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1995838dc473.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1995838dc473.png)
 
 A blade will now come from the right. Select the "Billing policies" tab there and enable the switch to connect the service to your created billing policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-bcc4f2b9a2a4.png)
+[![jv-media-8069-bcc4f2b9a2a4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-bcc4f2b9a2a4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-bcc4f2b9a2a4.png)
 
 After enabling this and saving, the service is now linked to your billing policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-82e38d60ff51.png)
+[![jv-media-8069-82e38d60ff51.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-82e38d60ff51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-82e38d60ff51.png)
 
 And as we can see in Azure, a policy is now deployed to our resource group:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0b9f621456d0.png)
+[![jv-media-8069-0b9f621456d0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0b9f621456d0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0b9f621456d0.png)
 
 ---
 
@@ -166,26 +166,26 @@ And as we can see in Azure, a policy is now deployed to our resource group:
 
 Now that we have connected the service to our Azure subscription, we actually enabled the service but without any configuration. By going again to the Microsoft 365 Backup blade, we will be shown this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-19d5ac1bdb3d.png)
+[![jv-media-8069-19d5ac1bdb3d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-19d5ac1bdb3d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-19d5ac1bdb3d.png)
 
 We will first configure a policy for SharePoint. Click on "+ Set up policy". After that, click Next on the SharePoint backup policy page.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d535942eb80.png)
+[![jv-media-8069-5d535942eb80.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d535942eb80.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5d535942eb80.png)
 {{% alert color="info" %}}
 You can use the "filters" option, but you always need to add new sites manually. This is not a dynamic option. Therefore, the "Individual" option is more easy.
 {{% /alert %}}
 
 Here we can select how we want to select our SharePoint sites. I will use the "Individual" option here. Then select the sites you want to backup.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1bd35f3737bf.png)
+[![jv-media-8069-1bd35f3737bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1bd35f3737bf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-1bd35f3737bf.png)
 
 Then proceed to the "Backup settings" and give your policy a name.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-66ac392659e2.png)
+[![jv-media-8069-66ac392659e2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-66ac392659e2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-66ac392659e2.png)
 
 Then finish the wizard. The policy will directly start backing up your data:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dda05d818490.png)
+[![jv-media-8069-dda05d818490.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dda05d818490.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dda05d818490.png)
 
 ---
 
@@ -193,7 +193,7 @@ Then finish the wizard. The policy will directly start backing up your data:
 
 Now we can configure the backup for OneDrive accounts. Click on the "+ Set up policy" button under "OneDrive". Proceed to the wizard.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a0e193298a4b.png)
+[![jv-media-8069-a0e193298a4b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a0e193298a4b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a0e193298a4b.png)
 
 At the "Choose selection method" select the "Dynamic rule" option, as we want to automatically backup new accounts instead of changing the scope every time.
 
@@ -202,17 +202,17 @@ We can select two types here:
 - Distribution lists
 - Security groups
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-726d1e45728d.png)
+[![jv-media-8069-726d1e45728d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-726d1e45728d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-726d1e45728d.png)
 
 In my case, I created a dynamic security group containing all users. Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a8b5d6bdd6d2.png)
+[![jv-media-8069-a8b5d6bdd6d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a8b5d6bdd6d2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-a8b5d6bdd6d2.png)
 
 Give the policy a name and finish the wizard.
 
 Now we have 2 policies in place:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5fe34f0f5fd1.png)
+[![jv-media-8069-5fe34f0f5fd1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5fe34f0f5fd1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-5fe34f0f5fd1.png)
 
 ---
 
@@ -220,7 +220,7 @@ Now we have 2 policies in place:
 
 Now we can configure the backup for Exchange accounts. Click on the "+ Set up policy" button under "Exchange". Proceed to the wizard.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-e4e1d4504e9c.png)
+[![jv-media-8069-e4e1d4504e9c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-e4e1d4504e9c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-e4e1d4504e9c.png)
 
 I once again use the dynamic rule option, to actually backup newly created accounts.
 
@@ -231,17 +231,17 @@ Here we can select two types of user sources similar to the OneDrive accounts:
 
 In my case, I created a dynamic security group containing all users. Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-2c02a77a2dd9.png)
+[![jv-media-8069-2c02a77a2dd9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-2c02a77a2dd9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-2c02a77a2dd9.png)
 
 Click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e75b07b11b7.png)
+[![jv-media-8069-8e75b07b11b7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e75b07b11b7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-8e75b07b11b7.png)
 
 Give the policy a name and finish the wizard.
 
 Now we have 3 policies in place:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-29e8c0e8bdd3.png)
+[![jv-media-8069-29e8c0e8bdd3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-29e8c0e8bdd3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-29e8c0e8bdd3.png)
 
 ---
 
@@ -249,49 +249,49 @@ Now we have 3 policies in place:
 
 To actually test the backup method, we will place a file on the SharePoint site and restore the site. I placed a .zip file of around 200MB on the site I just selected and wait for Microsoft 365 Backup to backup the site:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-02b4c6587d62.png)
+[![jv-media-8069-02b4c6587d62.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-02b4c6587d62.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-02b4c6587d62.png)
 
 After around 10 minutes, this starts backing up:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd531899a222.png)
+[![jv-media-8069-dd531899a222.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd531899a222.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd531899a222.png)
 
 And waiting for a few minutes will ensure the task has been completed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7ff4ab663248.png)
+[![jv-media-8069-7ff4ab663248.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7ff4ab663248.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7ff4ab663248.png)
 
 Now we will delete the file from the SharePoint site:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd22bdbdffbc.png)
+[![jv-media-8069-dd22bdbdffbc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd22bdbdffbc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-dd22bdbdffbc.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-153395c2b74c.png)
+[![jv-media-8069-153395c2b74c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-153395c2b74c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-153395c2b74c.png)
 
 And let's head back to Microsoft 365 Backup to actually restore the file. Under "SharePoint" I clicked on "Restore"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6c9e086f9740.png)
+[![jv-media-8069-6c9e086f9740.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6c9e086f9740.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6c9e086f9740.png)
 
 Follow the wizard by selecting your site where you want to recover files
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ad6ed30d6c6f.png)
+[![jv-media-8069-ad6ed30d6c6f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ad6ed30d6c6f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ad6ed30d6c6f.png)
 
 Select your desired restore point, which will be obviously before any error or problem occurred. In my case, I deleted the file after 10:30 AM.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6926fddbda1b.png)
+[![jv-media-8069-6926fddbda1b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6926fddbda1b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6926fddbda1b.png)
 
 I selected this restore point and clicked "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-43793d35b868.png)
+[![jv-media-8069-43793d35b868.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-43793d35b868.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-43793d35b868.png)
 
 Now you can select to create a new copy SharePoint site with all the filed in it or to just restore it to the current site.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0a4b8ad66cbb.png)
+[![jv-media-8069-0a4b8ad66cbb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0a4b8ad66cbb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-0a4b8ad66cbb.png)
 
 Now the restore action will be executed. In my case this took a while. Actually, around 3 hours:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f0be01324f73.png)
+[![jv-media-8069-f0be01324f73.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f0be01324f73.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f0be01324f73.png)
 
 And as you can see, the file is back:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-70794559b7a2.png)
+[![jv-media-8069-70794559b7a2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-70794559b7a2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-70794559b7a2.png)
 
 ---
 
@@ -305,41 +305,41 @@ Once again the reminder that your account needs these permissions to perform sin
 
 In the Microsoft 365 Backup pane, under "Onedrive" click on "Restore":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7572e51762b8.png)
+[![jv-media-8069-7572e51762b8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7572e51762b8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-7572e51762b8.png)
 
 Use the "Restore specific files or folders" option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-788d6faa8dee.png)
+[![jv-media-8069-788d6faa8dee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-788d6faa8dee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-788d6faa8dee.png)
 
 Then navigate to the account, desired restore point and file/folder. This would be pretty straight forward.
 
 For the demonstration, I will delete the top folder (called Post 1462 - SPF-DKIM-DMARC), containing some files of an earlier blog post (around 40MB):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f46877b94e82.png)
+[![jv-media-8069-f46877b94e82.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f46877b94e82.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-f46877b94e82.png)
 
 Thats gone.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-961154f2789f.png)
+[![jv-media-8069-961154f2789f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-961154f2789f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-961154f2789f.png)
 
 Now let's resume the restore action in the Microsoft 365 Backup portal.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ab6c93207ada.png)
+[![jv-media-8069-ab6c93207ada.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ab6c93207ada.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-ab6c93207ada.png)
 
 And the portal will inform us the restoration task has been started.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-00e00b84d5c4.png)
+[![jv-media-8069-00e00b84d5c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-00e00b84d5c4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-00e00b84d5c4.png)
 
 Now we can review the status of the restore action under the tab "Restorations".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-3ce82f8d1940.png)
+[![jv-media-8069-3ce82f8d1940.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-3ce82f8d1940.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-3ce82f8d1940.png)
 
 After a minute, the service has placed our files in a new folder in the root of the OneDrive folder, allowing us to manually place back the files. This is by design to prevent data loss.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-eb418673fb81.png)
+[![jv-media-8069-eb418673fb81.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-eb418673fb81.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-eb418673fb81.png)
 
 And the folder contains our selected folder:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6e47978c4f2e.png)
+[![jv-media-8069-6e47978c4f2e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6e47978c4f2e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-microsoft-365-backup-8069/jv-media-8069-6e47978c4f2e.png)
 
 ---
 

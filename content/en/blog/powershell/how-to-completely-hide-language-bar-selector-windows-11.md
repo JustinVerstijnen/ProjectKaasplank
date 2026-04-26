@@ -13,7 +13,7 @@ One of the small things I experienced in one of the updates for Windows 11 (24H2
 
 Because this can get very annoying, I researched on how to disable this button to clean up our taskbar and only use it for the applications and space we need.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-completely-hide-language-bar-selector-windows-11-4730/jv-media-4730-9c5068dbeb67.png)
+[![jv-media-4730-9c5068dbeb67.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-completely-hide-language-bar-selector-windows-11-4730/jv-media-4730-9c5068dbeb67.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-completely-hide-language-bar-selector-windows-11-4730/jv-media-4730-9c5068dbeb67.png)
 
 ---
 
