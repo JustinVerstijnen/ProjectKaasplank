@@ -30,6 +30,8 @@ wbadmin delete backup -keepVersions:30 -quiet
 - **-keepVersions:30** Keeps the 30 most recent backups and deletes all older backups.
 - **-quiet:** Prevents confirmation prompts (Y/N) and avoids showing a command window to interactive users.
 
+You can change the amount of backups to keep according to your needs and storage by changing the 30 to a lower or higher number.
+
 ## Scheduled Task
 
 Using this script, you can create a scheduled task that runs the cleanup automatically at a fixed interval.

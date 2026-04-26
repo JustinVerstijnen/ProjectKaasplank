@@ -51,94 +51,260 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           from datetime import datetime, timezone
+          import os
           import re
+          import html
 
-          today = datetime.now(timezone.utc).date()
-          planned_posts = []
+          BLOG_DIR = Path("content/en/blog")
+          OUTPUT_FILE = Path("content/en/planned-posts.md")
+          TODAY = datetime.now(timezone.utc).date()
 
-          for path in sorted(Path("content/en/blog").rglob("*.md")):
+
+          def extract_front_matter(text):
+              match = re.match(r"^---\s*\n(.*?)\n---\s*", text, re.DOTALL)
+              return match.group(1) if match else ""
+
+
+          def parse_front_matter(block):
+              data = {}
+              lines = block.splitlines()
+              i = 0
+
+              while i < len(lines):
+                  raw = lines[i]
+                  line = raw.rstrip()
+
+                  if not line.strip() or line.lstrip().startswith("#"):
+                      i += 1
+                      continue
+
+                  list_item_match = re.match(r"^\s*-\s+(.*)$", line)
+                  if list_item_match:
+                      i += 1
+                      continue
+
+                  key_match = re.match(r"^([A-Za-z0-9_-]+):\s*(.*)$", line.strip())
+                  if not key_match:
+                      i += 1
+                      continue
+
+                  key, value = key_match.groups()
+                  value = value.strip()
+
+                  if value in (">", "|"):
+                      collected = []
+                      i += 1
+                      while i < len(lines):
+                          next_line = lines[i]
+                          if next_line.startswith(" ") or next_line.startswith("\t"):
+                              collected.append(next_line.strip())
+                              i += 1
+                          else:
+                              break
+                      data[key] = " ".join(collected).strip()
+                      continue
+
+                  if value == "":
+                      collected = []
+                      j = i + 1
+                      while j < len(lines):
+                          list_match = re.match(r"^\s*-\s+(.*)$", lines[j])
+                          if list_match:
+                              collected.append(list_match.group(1).strip().strip('"').strip("'"))
+                              j += 1
+                          else:
+                              break
+                      data[key] = collected
+                      i = j
+                      continue
+
+                  data[key] = value.strip().strip('"').strip("'")
+                  i += 1
+
+              return data
+
+
+          def parse_date(value):
+              if not value:
+                  return None
+
+              cleaned = value.strip().strip('"').strip("'").replace("Z", "+00:00")
+
+              try:
+                  return datetime.fromisoformat(cleaned).date()
+              except ValueError:
+                  pass
+
+              try:
+                  return datetime.fromisoformat(cleaned[:10]).date()
+              except ValueError:
+                  return None
+
+
+          def ensure_list(value):
+              if not value:
+                  return []
+              if isinstance(value, list):
+                  return value
+              return [str(value)]
+
+
+          def build_countdown_label(days):
+              if days == 0:
+                  return "Today"
+              if days == 1:
+                  return "1 day to go"
+              return f"{days} days to go"
+
+
+          def build_summary(posts):
+              if not posts:
+                  return """
+          <div class="planned-posts-empty">
+            <h2>No planned posts found</h2>
+            <p>There are currently no posts scheduled with a future publication date.</p>
+          </div>
+          """
+
+              next_post_days = posts[0]["days_until"]
+              next_post_date = posts[0]["date_display"]
+
+              return f"""
+          <div class="planned-posts-summary">
+            <div class="planned-posts-summary__card">
+              <div class="planned-posts-summary__number">{len(posts)}</div>
+              <div class="planned-posts-summary__label">planned posts</div>
+            </div>
+            <div class="planned-posts-summary__card">
+              <div class="planned-posts-summary__number">{next_post_days}</div>
+              <div class="planned-posts-summary__label">days until next post</div>
+            </div>
+            <div class="planned-posts-summary__card">
+              <div class="planned-posts-summary__number">{html.escape(next_post_date)}</div>
+              <div class="planned-posts-summary__label">next publication date</div>
+            </div>
+          </div>
+          """
+
+
+          posts = []
+
+          for path in sorted(BLOG_DIR.rglob("*.md")):
               if path.name == "_index.md":
                   continue
 
               text = path.read_text(encoding="utf-8", errors="ignore")
+              front_matter = parse_front_matter(extract_front_matter(text))
 
-              date_match = re.search(r"^date:\s*['\"]?([^'\"\n]+)['\"]?", text, re.MULTILINE)
-              title_match = re.search(r"^title:\s*['\"]?([^'\"\n]+)['\"]?", text, re.MULTILINE)
-
-              if not date_match:
+              post_date = parse_date(front_matter.get("date"))
+              if not post_date:
                   continue
 
-              raw_date = date_match.group(1).strip()
-
-              try:
-                  post_date = datetime.fromisoformat(raw_date[:10]).date()
-              except ValueError:
+              if post_date <= TODAY:
                   continue
 
-              if post_date > today:
-                  title = title_match.group(1).strip() if title_match else path.stem
-                  planned_posts.append({
-                      "date": post_date,
+              title = front_matter.get("title") or path.stem.replace("-", " ").title()
+              description = front_matter.get("description") or "This post is scheduled and will be published automatically on the configured publication date."
+              categories = ensure_list(front_matter.get("categories"))
+              tags = ensure_list(front_matter.get("tags"))
+
+              days_until = (post_date - TODAY).days
+
+              posts.append(
+                  {
                       "title": title,
-                      "file": str(path)
-                  })
+                      "description": description,
+                      "categories": categories,
+                      "tags": tags,
+                      "file": str(path).replace("\\", "/"),
+                      "date": post_date,
+                      "date_display": post_date.strftime("%d-%m-%Y"),
+                      "days_until": days_until,
+                      "countdown": build_countdown_label(days_until),
+                  }
+              )
 
-          planned_posts.sort(key=lambda post: post["date"])
+          posts.sort(key=lambda item: (item["date"], item["title"].lower()))
 
-          output = Path("content/en/planned-posts.md")
+          cards_html = []
 
-          lines = [
+          for post in posts:
+              category_html = ""
+              if post["categories"]:
+                  category_html = " / ".join(
+                      f'<span class="planned-post-chip planned-post-chip--category">{html.escape(category)}</span>'
+                      for category in post["categories"]
+                  )
+
+              tags_html = ""
+              if post["tags"]:
+                  tags_html = "".join(
+                      f'<span class="planned-post-chip">{html.escape(tag)}</span>'
+                      for tag in post["tags"]
+                  )
+
+              card_html = f"""
+          <article class="planned-post-card">
+            <div class="planned-post-card__top">
+              <span class="planned-post-card__date">{html.escape(post["date_display"])}</span>
+              <span class="planned-post-card__countdown">{html.escape(post["countdown"])}</span>
+            </div>
+
+            <h2 class="planned-post-card__title">{html.escape(post["title"])}</h2>
+
+            <div class="planned-post-card__meta">
+              <span class="planned-post-card__meta-item">Blog</span>
+              {f'<span class="planned-post-card__meta-separator">/</span><span class="planned-post-card__meta-item">{category_html}</span>' if category_html else ''}
+            </div>
+
+            <p class="planned-post-card__description">{html.escape(post["description"])}</p>
+
+            {f'<div class="planned-post-card__chips">{tags_html}</div>' if tags_html else ''}
+
+            <div class="planned-post-card__footer">
+              <span class="planned-post-card__footer-label">Source file</span>
+              <code>{html.escape(post["file"])}</code>
+            </div>
+          </article>
+          """
+              cards_html.append(card_html)
+
+          page_parts = [
               "---",
               'title: "Planned posts"',
-              'description: "Overview of planned future posts."',
+              'description: "Overview of scheduled future posts."',
               "---",
               "",
-              "# Planned posts",
-              "",
+              '<div class="planned-posts-page">',
+              build_summary(posts),
           ]
 
-          if planned_posts:
-              lines.extend([
-                  "| Date | Title | File |",
-                  "|---|---|---|",
-              ])
+          if posts:
+              page_parts.append('<div class="planned-posts-grid">')
+              page_parts.extend(cards_html)
+              page_parts.append("</div>")
 
-              for post in planned_posts:
-                  lines.append(
-                      f"| {post['date'].strftime('%d-%m-%Y')} | {post['title']} | `{post['file']}` |"
-                  )
-          else:
-              lines.append("No planned posts found.")
+          page_parts.append("</div>")
+          page_parts.append("")
 
-          lines.append("")
+          OUTPUT_FILE.write_text("\n".join(page_parts), encoding="utf-8")
 
-          output.write_text("\n".join(lines), encoding="utf-8")
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary_path:
+              with open(summary_path, "a", encoding="utf-8") as summary:
+                  summary.write("## Planned posts\n\n")
+                  if posts:
+                      summary.write(f"Found **{len(posts)}** planned post(s).\n\n")
+                      summary.write("| Date | Countdown | Title |\n")
+                      summary.write("|---|---|---|\n")
+                      for post in posts:
+                          summary.write(
+                              f'| {post["date_display"]} | {post["countdown"]} | {post["title"]} |\n'
+                          )
+                  else:
+                      summary.write("No planned posts found.\n")
 
-          print(f"Generated {output} with {len(planned_posts)} planned post(s).")
-
-          with open(Path.cwd() / "planned-posts-summary.md", "w", encoding="utf-8") as summary:
-              summary.write("## Planned posts\n\n")
-              if planned_posts:
-                  summary.write("| Date | Title | File |\n")
-                  summary.write("|---|---|---|\n")
-                  for post in planned_posts:
-                      summary.write(
-                          f"| {post['date'].strftime('%d-%m-%Y')} | {post['title']} | `{post['file']}` |\n"
-                      )
-              else:
-                  summary.write("No planned posts found.\n")
-
-          with open("$GITHUB_STEP_SUMMARY", "a", encoding="utf-8") as github_summary:
-              github_summary.write("## Planned posts\n\n")
-              if planned_posts:
-                  github_summary.write("| Date | Title | File |\n")
-                  github_summary.write("|---|---|---|\n")
-                  for post in planned_posts:
-                      github_summary.write(
-                          f"| {post['date'].strftime('%d-%m-%Y')} | {post['title']} | `{post['file']}` |\n"
-                      )
-              else:
-                  github_summary.write("No planned posts found.\n")
+          print(f"Generated {OUTPUT_FILE} with {len(posts)} planned post(s).")
           PY
 
       - name: Build site
