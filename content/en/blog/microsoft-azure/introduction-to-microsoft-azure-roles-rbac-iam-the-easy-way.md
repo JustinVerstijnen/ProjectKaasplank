@@ -77,7 +77,7 @@ You can start customizing a role by picking a builtin role and add permissions t
 
 To begin creating a custom role, go to any access control blade, click "Add" and click "Add custom role".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-84e11a9233df.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-84e11a9233df.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-84e11a9233df.png)
 
 From there you have the option to completely start from scratch, or to clone a role and add or delete permissions from it to match your goal.
 
@@ -89,7 +89,7 @@ Creating your own role is the best way, but can take up a lot of time to build a
 
 The scope of a role is where exactly your role is applied. In Azure we can assign roles at the following scopes:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-b627f7f9127f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-b627f7f9127f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-b627f7f9127f.png)
 
 **Management Group** (MG)
 *Contains subscriptions*
@@ -134,7 +134,7 @@ You can also check effective permissions at every level in the Azure Portal by g
 - With the "View my access" button, you list your stack of permissions at your current scope
 - With the "Check access" button, you can check permissions of another principal at your current scope
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-62857aadbbd5.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-62857aadbbd5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way-292/jv-media-292-62857aadbbd5.png)
 
 This is my list of permissions. Only "Owner" is applied to the subscription level.
 

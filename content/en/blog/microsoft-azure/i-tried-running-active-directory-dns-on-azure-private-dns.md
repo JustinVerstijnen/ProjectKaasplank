@@ -26,15 +26,15 @@ This looks like this:
 
 Assuming you have everything already in plave, we will now deploy our Azure Private DNS zone. Open the Azure Portal and search for "Private DNS zones".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-6a694585ab3f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-6a694585ab3f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-6a694585ab3f.png)
 
 Create a new DNS zone here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-02fca15c7474.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-02fca15c7474.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-02fca15c7474.png)
 
 Place it in the right resource group and name the domain your desired domain name. If you actually want to link your Active Directory, this must be the same as your Active Directory domain name.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-b1d09c9a2b81.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-b1d09c9a2b81.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-b1d09c9a2b81.png)
 
 In my case, I will name it *internal.justinverstijnen.nl*
 
@@ -44,15 +44,15 @@ In my case, I will name it *internal.justinverstijnen.nl*
 
 Advance to the tab "Virtual Network Links", and we have to link our virtual network with Active Directory here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fa8c3faaa6a4.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fa8c3faaa6a4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fa8c3faaa6a4.png)
 
 Give the link a name and select the right virtual network.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-dcf2697b02d2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-dcf2697b02d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-dcf2697b02d2.png)
 
 You can enable "Auto registration" here, this means every VM in the network will be automatically registered to this DNS zone. In my case, I enabled it. This saves us from having to create records by hand later on.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-bf23e76f5fee.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-bf23e76f5fee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-bf23e76f5fee.png)
 
 Advance to the "Review + create" tab and create the DNS zone.
 
@@ -75,9 +75,9 @@ For Active Directory to work, we need to create a set of DNS records. Active Dir
 
 After creating those records in Private DNS, the list looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-f8fa5d69d0ad.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-f8fa5d69d0ad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-f8fa5d69d0ad.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fcae12bbf998.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fcae12bbf998.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-fcae12bbf998.png)
 
 ---
 
@@ -85,7 +85,7 @@ After creating those records in Private DNS, the list looks like this:
 
 Now I headed over to my second machine, did some connectivity tests and tried to join the machine to the domain which instantly works:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-17f70df6540e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-17f70df6540e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-17f70df6540e.png)
 
 After restarting, no errors occured at this just domain joined machine and I was even able to fetch some Active Directory related services.
 
@@ -95,7 +95,7 @@ After restarting, no errors occured at this just domain joined machine and I was
 
 To 100% ensure that this works, I will install the Administration tools for Active Directory on the second server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-7b61fa494276.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-7b61fa494276.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/i-tried-running-active-directory-dns-on-azure-private-dns-3877/jv-media-3877-7b61fa494276.png)
 
 And I can create everything just like it is supposed. Really cool :)
 

@@ -93,21 +93,21 @@ Login to the Azure Portal, and deploy a new virtual machine:
 - Disable availability zones (as this is not supported)
 - Select your image (Windows 11 24H2 Multi-session in my case)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0aa05d214d08.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0aa05d214d08.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0aa05d214d08.png)
 
 Now we have to select a size, which mus contain a non-capital "d". This stands for having local NVME storage on the hypervisor which makes it bloody fast. In my case, I selected the vm size: "E4ds\_v6"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-c278ed8f3c6b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-c278ed8f3c6b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-c278ed8f3c6b.png)
 
 Now the wizard looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-4d108e4761ac.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-4d108e4761ac.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-4d108e4761ac.png)
 
 Proceed by creating your local account and advance to the tab "Disks".
 
 Here we have to scroll down to the "Advanced" section, expand it and here we have the hided options for having Ephemeral OS disks:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-8e6940754b56.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-8e6940754b56.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-8e6940754b56.png)
 
 Select the "NVME placement" option and let the option "Use managed disks" checked. This is for additional data disks you link to the virtual machine. The Ephemeral OS disk option requires you to enable it.
 
@@ -119,7 +119,7 @@ Finish the rest of the wizard by selecting your needed options.
 
 Now that the virtual machine is deployed, we can log into it with Remote Desktop Protocol:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-418ccb396975.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-418ccb396975.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-418ccb396975.png)
 
 In my test period of about 15 minutes, the VM feels really snappy and fast.
 
@@ -147,9 +147,9 @@ Both of the test were conducted between 20 minutes of each other.
 
 Here is the raw data of the tests. 360/180 at the top is Ephemeral and 415/174 at the top are Managed disk results.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-ac5795982c9a.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-ac5795982c9a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-ac5795982c9a.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0a762a372402.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0a762a372402.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-0a762a372402.png)
 
 ---
 
@@ -157,7 +157,7 @@ Here is the raw data of the tests. 360/180 at the top is Ephemeral and 415/174 a
 
 Ephemeral OS Disks ensure the VM is powered by great disk performance. Storage will not longer be a bottleneck when using the VM but it will be mostly CPU. However, it comes at the cost of not being able to perform some basic tasks like shutting down and deallocating the machine. Restarting is possible and these machines have an extra option, called "Reimage", where they can be built again from a disk/image.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-1d857be631d6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-1d857be631d6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-ephemeral-os-disks-in-azure-2810/jv-media-2810-1d857be631d6.png)
 
 If using VMs with Ephemeral OS disks, use it for cases where data loss is no issue om the OS disk. All other data like data disks, data on storage account for FSLogix or outside of the VM is unharmed.
 

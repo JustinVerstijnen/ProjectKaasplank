@@ -70,7 +70,7 @@ To further clarify some practice examples i will create some different examples:
 
 When you want to have your server in Azure accessible through the internet, we need to create a *inbound rule* and will look like below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-aa6561e3e871.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-aa6561e3e871.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-aa6561e3e871.png)
 
 We have to create the rule as shown below:
 
@@ -97,13 +97,13 @@ We can assign virtual machines to Application Security Groups which host a certa
 
 This will look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-662d3b017e63.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-662d3b017e63.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-662d3b017e63.png)
 
 This will come in handy when managing a lot of servers. Instead of changing every NSG to allow traffic to a new subnet or network, we can only add the new server to the application security group (ASG) to make the wanted rules effective.
 
 To create a Application Security Group, go in the Azure Portal to "Application Security Groups" and create a new ASG.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-2121a73048bc.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-2121a73048bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/network-security-in-azure-with-nsg-and-asg-275/jv-media-275-2121a73048bc.png)
 
 Name the ASG and finish the wizard.
 

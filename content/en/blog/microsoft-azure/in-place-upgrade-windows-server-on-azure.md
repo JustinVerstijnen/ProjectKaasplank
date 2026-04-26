@@ -73,7 +73,7 @@ Log in with your Azure credentials which needs to have sufficient rights in the 
 
 Select a subscription if needed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-28823be66edf.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-28823be66edf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-28823be66edf.png)
 
 Then after logging in succesfully, we need to execute a script to create a upgrade disk. This can be done through this script:
 
@@ -129,11 +129,11 @@ On line 8 of the script, you can decide which version of Windows Server to upgra
 
 After the script has run successfully, I will give a summary of the performed action:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4bcc3c4011b8.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4bcc3c4011b8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4bcc3c4011b8.png)
 
 After running the script in the Azure Powershell window, the disk is available in the Azure Portal:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-dd58ad0837bc.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-dd58ad0837bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-dd58ad0837bc.png)
 
 ---
 
@@ -141,7 +141,7 @@ After running the script in the Azure Powershell window, the disk is available i
 
 After creating the upgrade media we have to assign it to the virtual machine we want to upgrade. You can do this in the Azure Portal by going to the virtual machine. After that, hit Disks.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-cb074d5ea332.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-cb074d5ea332.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-cb074d5ea332.png)
 
 Then select to attach an existing disk, and select the upgrade media you have created through Powershell.
 
@@ -156,36 +156,36 @@ Now we have prepared our environment for the upgrade of Windows Server, we can s
 
 Login into the virtual machine and let's do some pre-upgrade checks:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3e7a3ee30319.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3e7a3ee30319.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3e7a3ee30319.png)
 
 As you can see, the machine is on Windows Server 2022 Datacenter and we have enough disk space to perform this action. Now we can perform the upgrade through Windows Explorer, and then going to the upgrade disk we just created and assigned:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-533a6a03fdfa.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-533a6a03fdfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-533a6a03fdfa.png)
 {{% alert color="info" %}}
 When the volume is not available in Windows Explorer, you first have to initialize the disk in Disk Management (diskmgmt.msc) in Windows. Then it will be available.
 {{% /alert %}}
 
 Open the volume upgrade and start setup.exe. The starup will take about 2 minutes.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4e3076fdc7ac.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4e3076fdc7ac.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-4e3076fdc7ac.png)
 
 Click "Next". Then there will be a short break of around 30 seconds for searching for updates.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-76ea83c9aac6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-76ea83c9aac6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-76ea83c9aac6.png)
 
 Then select you preferred version. Note that the default option is to install without graphical environment/Desktop Experience. Set this to your preferred version and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-b26fafaf58be.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-b26fafaf58be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-b26fafaf58be.png)
 
 Ofcourse we have read those. Click Accept.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a396591da6ff.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a396591da6ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a396591da6ff.png)
 
 Choose here to keep files, settings and apps to make it an in-place upgrade. Click "Next". There will be another short break of some minutes for the setup to download some updates.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a4787dfceb4d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a4787dfceb4d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-a4787dfceb4d.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-8efa7d00012c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-8efa7d00012c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-8efa7d00012c.png)
 
 This process can take 45 minutes up to 2 hours, depending on the workload and the size of the virtual machine. Have a little patience during this upgrade.
 
@@ -199,17 +199,17 @@ After the machine will restart, RDP connection will be lost. However, you can ch
 
 Go to the virtual machine you are upgrading, and go to: "Boot diagnostics"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-97c94a908ada.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-97c94a908ada.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-97c94a908ada.png)
 
 Then configure this for the time being if not already done. Click on "Settings".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-c20b43655e61.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-c20b43655e61.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-c20b43655e61.png)
 
 By default, select a managed storage account. If you use a custom storage account for this purpose, select the custom option and then your custom storage account.
 
 We can check the status in the Azure Portal after the OS has restarted.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-1e08eef6e9ff.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-1e08eef6e9ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-1e08eef6e9ff.png)
 
 The upgrade went very fast in my case, within 30 minutes.
 
@@ -237,7 +237,7 @@ Upgrading a Windows Server to Server 2025 on Azure is relatively easy, although 
 
 The only downside is that Microsoft does not support upgrading Windows Server Azure Editions (ServerTurbine) yet, we are waiting with high hopes for this. Upgrading only works on the default Windows Server versions:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3874809ed7a3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3874809ed7a3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/in-place-upgrade-windows-server-on-azure-134/jv-media-134-3874809ed7a3.png)
 
 Thank you for reading ths guide and I hope it helped you out upgrading your server to the latest and most secured version.
 

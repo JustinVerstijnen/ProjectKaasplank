@@ -37,7 +37,7 @@ Assuming you want to use your own storage account for saving Boot diagnostics, w
 
 Open the Azure Portal and search for "Storage Accounts", click on it and create a new storage account. Then choose a globally unique name with lowercase characters only between 3 and 24 characters.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-ce87cbe694d3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-ce87cbe694d3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-ce87cbe694d3.png)
 
 Make sure you select the correct level of redundancy at the bottom as we want to defend ourselves against datacenter failures. Also, don't select a primary service as we need this storage account for multiple purposes.
 
@@ -45,19 +45,19 @@ At the "Advanced" tab, select "Hot" as storage tier, as we might ingest new info
 
 Advance to the "Networking" tab. Here we have the option to only enable public access for our own networks. This is highly recommended:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-0639f8583b91.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-0639f8583b91.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-0639f8583b91.png)
 
 This way we expose the storage account access but only for our services that needs it. This defends our storage account from attackers outside of our environment.
 
 For you actually able to see the data in the Azure Portal, you need to add the **WAN IP address** of your location/management server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-5c094ce5de91.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-5c094ce5de91.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-5c094ce5de91.png)
 
 You can do that simply by checking the "Client IP address". If you skip this step, you will get an error that the boot diagnostics cannot be found later on.
 
 At the "Encryption" tab we can configure the encryption, if your company policies states this. For the simplicity of this guide, I leave everything on "default".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-4c1406a70328.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-4c1406a70328.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-4c1406a70328.png)
 
 Create the storage account.
 
@@ -69,24 +69,24 @@ We can now create our Azure Policy that alters the virtual machine settings to s
 
 Open the Azure Portal and go to "Policy". We will land on the Policy compliancy dashboard:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-3adba70df2d9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-3adba70df2d9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-3adba70df2d9.png)
 
 Click on "[Definitions](https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/~/Definitions)" as we are going to define a new policy. Then click on "+ Policy Definition" to create a new:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-aa46bf7e84bb.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-aa46bf7e84bb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-aa46bf7e84bb.png)
 
 At the "definition location", select your subscription where you want this configuration to be active. You can also select the tenant root management group, so this is enabled on all subscriptions. Caution with this of course.
 
 {{% alert color="warning" %}}
 Warning: Policies assigned to the Tenant Management Group cannot be assigned remediation tasks. Select one or more subscriptions instead.
 {{% /alert %}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-98d6e5da31bd.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-98d6e5da31bd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-98d6e5da31bd.png)
 
 Then give the policy a good name and description.
 
 At the "Category" section we can assign the policy to a category. This changes nothing to the effect of the policy but is only for your own categorization and overview. You can also create custom categories if using multiple policies:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-a4f244504ed1.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-a4f244504ed1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-a4f244504ed1.png)
 
 At the policy rule, we have to paste a custom rule in JSON format which I have here:
 
@@ -150,11 +150,11 @@ At the policy rule, we have to paste a custom rule in JSON format which I have h
 
 Copy and paste the code into the "Policy Rule" field. Then make sure to change the storage account URI to your custom or managed storage account. You can find this in the Endpoints section of your storage account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-6b75fc5936b7.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-6b75fc5936b7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-6b75fc5936b7.png)
 
 Paste that URL into the JSON definition at line 10, and if desired, change the displayname and description on line 7 and 8.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-637daaa2ab31.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-637daaa2ab31.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-637daaa2ab31.png)
 
 Leave the "Role definitions" field to the default setting and click on "Save".
 
@@ -164,23 +164,23 @@ Leave the "Role definitions" field to the default setting and click on "Save".
 
 Now we have defined our policy, we can assign it to the scope where it must be active. After saving the policy you will get to the correct menu:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-90394671a374.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-90394671a374.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-90394671a374.png)
 
 Otherwise, you can go to "Policy", then to "[Definitions](https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/~/Definitions)" just like in step 3 and lookup your just created definition.
 
 On the Assign policy page, we can once again define our scope. We can now set "Exclusions" to apply to all, but some according to your configurations. You can also select one or multiple specific resources to exclude from your Policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-151c53a74363.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-151c53a74363.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-151c53a74363.png)
 
 Leave the rest of the page as default and advance to the "Remediation" tab:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-be7c2386cc40.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-be7c2386cc40.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-be7c2386cc40.png)
 
 Enable "Create a remediation task" and select your policy if not already there.
 
 Then we must create a system or user assigned managed identity because changing the boot diagnostics needs permissions. We can use the default system assiged here and that automatically selects the role with the least privileges.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-d773abec2e9c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-d773abec2e9c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-d773abec2e9c.png)
 
 You could forbid the creation of non-compliant virtual machines and leave a custom message, like our documentation is here -> here. This then would show up when creating a virtual machine that is not configured to send boot diagnostics to our custom storage account.
 
@@ -194,19 +194,19 @@ Now that we finished the configuration of our Azure Policy, we can now test the 
 
 In my environment I have a test machine called vm-jv-fsx-0 with boot diagnostics disabled:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-1231f0b2c881.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-1231f0b2c881.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-1231f0b2c881.png)
 
 This is just after assigning the policy, so a little patience is needed. We can check the status of the policy evaluation at the policy assignment and then "Remediation":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-551bbb4bf64c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-551bbb4bf64c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-551bbb4bf64c.png)
 
 After 30 minutes or something, this will automatically be configured:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-b6dc9c6c6355.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-b6dc9c6c6355.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-b6dc9c6c6355.png)
 
 This took about 20 minutes in my case. Now we have access to the boot configuration:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-7e8bbe1e6790.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-7e8bbe1e6790.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-7e8bbe1e6790.png)
 
 ---
 
@@ -214,11 +214,11 @@ This took about 20 minutes in my case. Now we have access to the boot configurat
 
 You can monitor the compliance of the policy by going to "Policy" and search for your assignment:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-fa013c1b2239.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-fa013c1b2239.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-fa013c1b2239.png)
 
 You will see the configuration of the definition, and you can click on "Deployed resources" to monitor the status and deployment.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-2f941aad79b3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-2f941aad79b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-azure-boot-diagnostics-monitoring-with-azure-policy-3766/jv-media-3766-2f941aad79b3.png)
 
 It will exactly show why the virtual machine is not compliant and what to do to make it compliant. If you have multiple resources, they will all show up.
 

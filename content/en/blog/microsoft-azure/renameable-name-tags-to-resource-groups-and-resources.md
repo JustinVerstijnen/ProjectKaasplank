@@ -11,7 +11,7 @@ description: >
 ---
 When it comes to naming your Azure Resource Groups and resources, most of them are not renameable. This due to limitations on the platform and maybe some underlying technical limitations. However, it is possible to assign a renameable tag to a resource in Azure which can be changed or used to clarify its role. This looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/renameable-name-tags-to-resource-groups-and-resources-164/jv-media-164-908f6f61e062.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/renameable-name-tags-to-resource-groups-and-resources-164/jv-media-164-908f6f61e062.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/renameable-name-tags-to-resource-groups-and-resources-164/jv-media-164-908f6f61e062.png)
 
 ---
 

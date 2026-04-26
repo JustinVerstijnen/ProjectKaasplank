@@ -61,7 +61,7 @@ Make sure that this information is described in a migration plan.
 
 Go to the Azure Portal, navigate to Azure Migrate:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1a8f6dcab17d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1a8f6dcab17d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1a8f6dcab17d.png)
 
 Open the "Servers, databases, and web apps" blade on the left:
 
@@ -71,7 +71,7 @@ When this is set-up, we go to our migration project:
 
 Under "Migration Tools", click "Discover".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-425d69c14227.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-425d69c14227.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-425d69c14227.png)
 
 On the next page, we have to select the source and target for our migration. In my case, the target is "Azure VM".
 
@@ -83,7 +83,7 @@ The source can be a little confusing, but hopefully this makes it clear:
 
 In my case, i used VMware ESXi to host a migration testing machine, so i selected "Physical".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-f234a337a69d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-f234a337a69d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-f234a337a69d.png)
 
 Hit "Create resources" to let Azure Migrate prepare the rest of the process.
 
@@ -112,7 +112,7 @@ After the initial installation of this server, we have to do some tasks:
   - Open Server Manager, then Local Server (1) and then the IE Enhanced Security Configuration (2)
   - Disable this for "Administrators" and click OK.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-4ce2ca3e2379.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-4ce2ca3e2379.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-4ce2ca3e2379.png)
 
 Now we have to install the Replication appliance software from the last part of Step 2. You can find this in the Azure Portal under the project or by clicking this link: <https://aka.ms/unifiedinstaller_we>
 
@@ -132,7 +132,7 @@ In step 4 we have to configure our Configuration/Processing server and prepare i
 
 After installing the software in step 3, there will be some icons on the desktop:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-e1b11dacadbb.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-e1b11dacadbb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-e1b11dacadbb.png)
 
 We have to create a shared credential which can be used on all servers to remote access them. We can do this with the "Cspsconfigtool". Open this and create a new credential.
 
@@ -140,7 +140,7 @@ You can use all sorts of credentials (local/domain), as long as they have local 
 
 In my case, the migration machine had the default "Administrator" logon so I added this credential to the tool.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1f1531f6e464.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1f1531f6e464.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-1f1531f6e464.png)
 
 You have to create a credential for every server. This can be a "one-fits-all" domain logon, or when all logins for servers are unique add them all.
 
@@ -162,7 +162,7 @@ On each machine you must install this agent from the Configuration/Process Serve
 
 Open the installation (.exe file) on one of the servers and choose to install the Mobility service. Then click "Next" to start the installation.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-010618586075.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-010618586075.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-010618586075.png)
 
 After the installation is complete (approximately 5 to 10 minutes), the setup will prompt for an IP address, passphrase, and port of the configuration server. Enter these details from step 3 and the port 443.
 
@@ -178,19 +178,19 @@ Now we can perform the initial replication (Phase 2) of the servers to Azure. To
 
 Under "Migration tools", click on "Replicate".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9be665eff93a.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9be665eff93a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9be665eff93a.png)
 
 Select your option again and click Next. In my case, it is "Physical" because of using a free version of VMware ESXi.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-40a33added3d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-40a33added3d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-40a33added3d.png)
 
 Select the machine to replicate, the processing server and the credentials you created in step 4.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-6a544889e1b9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-6a544889e1b9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-6a544889e1b9.png)
 
 Now we have to select the machines to replicate. If all servers use the same processing server and credentials, we can select all servers here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9b504a169fc0.jpg)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9b504a169fc0.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-9b504a169fc0.jpg)
 
 At the next page, we have to configure our target VM in Azure. Configure it to fit your needs and click "Next".
 
@@ -210,7 +210,7 @@ Now the source server must be shut down to prevent data loss. This also allows t
 
 Then, go to the Azure Portal, navigate to Azure Migrate, and under "Migration tools", click on "Migrate".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-a07f086a7ade.jpg)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-a07f086a7ade.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-migrate-to-migrate-on-premises-to-azure-1126/jv-media-1126-a07f086a7ade.jpg)
 
 Go through the wizard and monitor the status. In my case, this process took approximately 5 minutes, after which the server was online in Microsoft Azure.
 

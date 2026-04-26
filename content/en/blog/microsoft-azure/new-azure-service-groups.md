@@ -16,7 +16,7 @@ Service Groups are a parralel type of group to group resources and separate perm
 
 This looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-edbad5477c81.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-edbad5477c81.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-edbad5477c81.png)
 
 You can see these new service groups as a parallel Management Group, but then for resources.
 
@@ -38,21 +38,21 @@ Update 1 September 2025, the feature is in public preview, so I can do a little 
 
 In the Azure Portal, go to "Service Groups":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-5a752ecc22bd.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-5a752ecc22bd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-5a752ecc22bd.png)
 
 Then create a new Service Group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-39e86b19b65c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-39e86b19b65c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-39e86b19b65c.png)
 
 Here I have created a service group for my tools which are on my website. These reside in different resource groups so it's a nice candidate to test with. The parent service group is the tenant service group which is the top level.
 
 Now open your just created service group and add members to it, which can be subscriptions, resource groups and resources:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-aba2bbb85c68.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-aba2bbb85c68.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-aba2bbb85c68.png)
 
 Like I did here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-343454a44100.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-343454a44100.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/new-azure-service-groups-3200/jv-media-3200-343454a44100.png)
 
 ---
 

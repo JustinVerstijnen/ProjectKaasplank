@@ -26,37 +26,37 @@ Let’s dive into how to configure this VPN gateway maintenance configuration. O
 
 Then go to “VPN gateways“.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b59f33f9b766.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b59f33f9b766.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b59f33f9b766.png)
 
 If this list is empty, you will have to select “VPN gateways“ in the menu on the left:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b0e937f538b8.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b0e937f538b8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b0e937f538b8.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-63dee33f3210.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-63dee33f3210.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-63dee33f3210.png)
 
 Open your VPN gateway and select “Maintenance“.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-9019a9cd1f70.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-9019a9cd1f70.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-9019a9cd1f70.png)
 
 Then click on “Create new configuration“.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b9002f544a37.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b9002f544a37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-b9002f544a37.png)
 
 Fill in your details, select Resource at Maintenance Scope and Network Gateways for Maintenance subscope and then click “Add a schedule“.
 
 Here I created a schedule that starts on Sunday at 00:00 hours and takes up to 6 hours:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-91289c06a700.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-91289c06a700.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-91289c06a700.png)
 
 This must obviously be scheduled at a time then the VPN gateway may be offline, so outside of business hours. This could also be every day, depending on your wishes and needs.
 
 After configuring the schedule, save the schedule and advance to the “Resources“ tab:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-613f3515184b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-613f3515184b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-613f3515184b.png)
 
 Click the “+ Add resources“ button to add the virtual network gateway.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-71f38e9192a6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-71f38e9192a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-vpn-gateway-maintenance-how-to-configure-4880/jv-media-4880-71f38e9192a6.png)
 
 Then you can finish the wizard and the maintenance configuration will be applied to the VPN gateway.
 

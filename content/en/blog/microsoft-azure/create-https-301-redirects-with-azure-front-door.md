@@ -53,13 +53,13 @@ At first we must configure our Azure Front Door instance as this will be our hub
 
 Open up the Azure Portal and go to "Azure Front Door". Create a new instance there.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-70a1d9da49e2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-70a1d9da49e2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-70a1d9da49e2.png)
 
 As the note describes, every change will take up to 45 minutes to be effective. This was also the case when I was configuring it, so we must have a little patience but it will be worth it.
 
 I selected the "Custom create" option here, as we need a minimal instance.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-33968d72ccf6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-33968d72ccf6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-33968d72ccf6.png)
 
 At the first page, fill in your details and select a Tier. I will use the Standard tier. The costs will be around:
 
@@ -70,17 +70,17 @@ Source: <https://azure.microsoft.com/en-in/pricing/details/frontdoor/?msockid=0e
 
 Go to the "Endpoint" tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-8a553473ac1c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-8a553473ac1c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-8a553473ac1c.png)
 
 Give your Endpoint a name. This is the name you will redirect your hostname (CNAME) records to.
 
 After creating the Endpoint, we must create a route.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-95eb69784a00.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-95eb69784a00.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-95eb69784a00.png)
 
 Click "+ Add a route" to create a new route.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-c3a8b8be5fde.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-c3a8b8be5fde.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-c3a8b8be5fde.png)
 
 Give the route a name and fill in the following fields:
 
@@ -98,7 +98,7 @@ After creating the origin group, finish the wizard to create the Azure Front Doo
 
 After the Azure Front Door instance has finished deploying, we can create a Rule set. This can be found in the Azure Portal under your instance:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-93f2b52953ee.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-93f2b52953ee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-93f2b52953ee.png)
 
 Create a new rule set here by clicking "+ Add". Give the set a name after that.
 
@@ -111,11 +111,11 @@ Basically a if-then (do that) strategy. Let's create such rule step by step.
 
 Click the "+ Add rule" button. A new block will appear.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-5f3b11583466.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-5f3b11583466.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-5f3b11583466.png)
 
 Now click the "Add a condition" button to add a trigger, which will be "Request header"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-647ae4abeb06.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-647ae4abeb06.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-647ae4abeb06.png)
 
 Fill in the fields as following:
 
@@ -125,11 +125,11 @@ Fill in the fields as following:
 
 It will look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-235030dc5c99.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-235030dc5c99.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-235030dc5c99.png)
 
 The click the "+ Add an action" button to decide on what to do when a client requests your URL:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-48cbb62f499d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-48cbb62f499d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-48cbb62f499d.png)
 
 Select the "URL redirect" option and fill in the fields:
 
@@ -142,7 +142,7 @@ Then enable the "Stop evaluating remaining rules" option to stop processing afte
 
 The full rule looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-34b27ecbb5d7.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-34b27ecbb5d7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-34b27ecbb5d7.png)
 
 Now we can update the rule/rule set and do the rest of the configurations.
 
@@ -154,17 +154,17 @@ How we have configured that we want domain A to link to domain B, but Azure requ
 
 In the Azure Front Door instance, go to "Domains" and "+ Add" a domain here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-06341a4bc05e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-06341a4bc05e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-06341a4bc05e.png)
 
 Fill in your desired domain name and click on "Add". We now have to do a validation step on your domain by creating a TXT record.
 
 Wait for a minute or so for the portal to complete the domain add action, and go to the "Domain validation section":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-f8659a2f2d88.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-f8659a2f2d88.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-f8659a2f2d88.png)
 
 Click on the Pending state to unveil the steps and information for the validation:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-2a3ba77584ad.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-2a3ba77584ad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-2a3ba77584ad.png)
 
 In this case, we must create a TXT record at our DNS hosting with this information:
 
@@ -173,13 +173,13 @@ In this case, we must create a TXT record at our DNS hosting with this informati
 
 Let's do this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7a16d15cac67.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7a16d15cac67.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7a16d15cac67.png)
 
 Save the record, and wait for a few minutes. The Azure Portal will automatically validate your domain. This can take up to 24 hours.
 
 In the meanwhile, now we have all our systems open, we can also create the CNAME record which will route our domain to Azure Front Door. In Azure Front Door collect your full Endpoint hostname, which is on the Overview page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7ce388a20704.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7ce388a20704.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-7ce388a20704.png)
 
 Copy that value and head back to your DNS hosting.
 
@@ -192,7 +192,7 @@ Create a new CNAME record with this information:
 {{% alert color="info" %}}
 Make sure to end the value with a **trailing dot** (.), as this is a hostname externally to your DNS zone.
 {{% /alert %}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-b7b8339fc864.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-b7b8339fc864.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-https-301-redirects-with-azure-front-door-6467/jv-media-6467-b7b8339fc864.png)
 
 Save the DNS configuration, and your complete setup will now work in around 45 to 60 minutes.
 

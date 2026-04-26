@@ -50,11 +50,11 @@ We will build these networks. The only exception is VNET03, which we will isolat
 
 In Azure, search for "Virtual Networks", select it and create a virtual network.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4ebde32ddbc1.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4ebde32ddbc1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4ebde32ddbc1.png)
 
 Create a new virtual network which we will configure as hub of our Azure network. This is a big network where the Azure Firewall instance will reside.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-51ad217d4d02.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-51ad217d4d02.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-51ad217d4d02.png)
 
 For the IP addresses, ensure you choose an address space that is big enough for your network. I chose for the default /16 which theoretically can host 65.000 addresses.
 
@@ -68,7 +68,7 @@ Now we can create the other spoke networks in Azure where the servers, workstati
 
 Create the networks and select your preferred IP address ranges.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b3983ff6fd49.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b3983ff6fd49.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b3983ff6fd49.png)
 
 ---
 
@@ -76,7 +76,7 @@ Create the networks and select your preferred IP address ranges.
 
 Now that we have all our IP ranges in place, we can now peer all spoke networks with our hub. We can do this the most efficient way by going to the Hub network and creating the peers from there:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f878a0210a27.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f878a0210a27.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f878a0210a27.png)
 
 Create a new peering here.
 
@@ -100,7 +100,7 @@ Now we know how to configue the peerings, let's bring this in practice.
 
 The wizard starts with the configuration of the peering for the remote network:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9e5191ebbcc2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9e5191ebbcc2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9e5191ebbcc2.png)
 
 For the peering name, I advice you to simply use:
 
@@ -112,7 +112,7 @@ This makes it clear how the connections are. Azure will create the connection bo
 
 Now we have to configure the peering for the local network. We do this according to the table:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-0651abaa3e96.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-0651abaa3e96.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-0651abaa3e96.png)
 
 After these checks are marked correctly, we can create the peering by clicking on "Add".
 
@@ -128,7 +128,7 @@ Azure Firewall needs a subnet for management purposes which we have to create pr
 
 We can do this very easily by going to the Hub virtual network and then go to "Subnets". Click on "+ Subnet" to create a subnet from template:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-dae2b02de819.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-dae2b02de819.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-dae2b02de819.png)
 
 Select the "Azure Firewall" subnet purpose and everything will be completed automatically.
 
@@ -136,7 +136,7 @@ Select the "Azure Firewall" subnet purpose and everything will be completed auto
 
 If you select the "Basic" SKU of Azure Firewall or use "Forced tunnling", you also need to configure a Azure Firewall Management subnet. This works in the same way:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-636c22a06cd9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-636c22a06cd9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-636c22a06cd9.png)
 
 Select the "Firewall Management (forced tunneling)" option here and click on "Add" to create the subnet.
 
@@ -152,7 +152,7 @@ Fill in the wizard, choose your preferred SKU and at the section of the virtual 
 
 After that create a new Firewall policy and give it a name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-09e13af02791.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-09e13af02791.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-09e13af02791.png)
 
 Now configure the public IP addresses for the firewall itself and the management IP address:
 
@@ -161,17 +161,17 @@ Now configure the public IP addresses for the firewall itself and the management
 
 The complete configuration of my wizard looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-fc537147917e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-fc537147917e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-fc537147917e.png)
 
 Now click on "Next" and then "Review and Create" to create the Firewall instance.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3da474171909.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3da474171909.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3da474171909.png)
 
 This will take around 5 to 10 minutes.
 
 After the Firewall is created, we can check the status in the Firewall Manager:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-baf2a34672da.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-baf2a34672da.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-baf2a34672da.png)
 
 And in the Firewall policy:
 
@@ -181,17 +181,17 @@ And in the Firewall policy:
 
 Now that we have created our Firewall, we know it's internal IP address:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9c6d6df28cff.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9c6d6df28cff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-9c6d6df28cff.png)
 
 We have to tell all of our Spoke networks which gateway they can use to talk to the outside world. This is done by creating a route table, then a route and specifying the Azure Firewall instance.
 
 Go to "Route Tables" and create a new route table. Give it a name and place it in the same region as your networks:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-e9058d2cd6a8.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-e9058d2cd6a8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-e9058d2cd6a8.png)
 
 After this is done, we kan open the Route table and add a route in the Routes section:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-7eb8614b3a98.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-7eb8614b3a98.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-7eb8614b3a98.png)
 
 Configure the route:
 
@@ -217,7 +217,7 @@ This means we have to allow traffic between networks. Traffic in the same subnet
 
 Go to your Firewall policy and go to "Rule Collections". All rules you create in Azure Firewall are placed in Rule collections which are basically groups of rules. Create a new Rule collection:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-88ee9c1c5e45.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-88ee9c1c5e45.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-88ee9c1c5e45.png)
 
 I create a network rule collection for all of my networks to allow outbound traffic. We can also put the rules of inter-network here, these are basically outbound in their own context.
 
@@ -246,7 +246,7 @@ Create a rule to allow your created VNET01 outbound access to the internet.
 
 Such rule looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-d258e965002c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-d258e965002c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-d258e965002c.png)
 
 I created the rules for every spoke network (VNET01 to VNET03). Keep in mind you have to change the source to the address space of every network.
 
@@ -266,7 +266,7 @@ Go to Rule collections and create a new rule collection:
 - Rule collection action: Deny
 - Rule Collection Group: DefaultNetworkRuleCollectionGroup
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3fd380df6d47.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3fd380df6d47.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3fd380df6d47.png)
 
 The most important are the priority and the action, where the priority must be closer to 100 to make it effective above the allow rules and the action to block the traffic.
 
@@ -283,7 +283,7 @@ Now create rules to block traffic from VNET03 to all of our spoke networks:
 
 Create 2 rules to block traffic to VNET01 and VNET02:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f644c499461c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f644c499461c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-f644c499461c.png)
 
 Save the rule collection to make it effective.
 
@@ -295,7 +295,7 @@ For access from the outside network to for example RDP of servers, HTTPS or SQL 
 
 Go to the Firewall policy and then to "Rule collections". Create a new rule collection and specify DNAT as type:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-62d0cfdebfb6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-62d0cfdebfb6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-62d0cfdebfb6.png)
 
 I chose a priority of 65000 because of broad rules. DNAT rules have the higest priority over network and application rules.
 
@@ -307,11 +307,11 @@ Create the rule collection.
 
 Now we can create DNAT rules to allow traffic from the internet into our environment. Go to the just created DNAT rule collection and add some rules for RDP and HTTPS:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b5b74f9dc713.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b5b74f9dc713.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b5b74f9dc713.png)
 
 Part 2:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4b75a7c44aa2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4b75a7c44aa2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-4b75a7c44aa2.png)
 
 Here we have to specify which traffic from which source can access our internal servers. We can also do some translation here, with a different port number for internal and external networks. I used a 3389-1, 3389-2 and 3389-3 numbering here for the example but for real world scenario's I advice a more scalable numbering.
 
@@ -330,7 +330,7 @@ WIth application rules, you can allow or block traffic based on FQDNs and web ca
 
 To block a certain website for example create a new Rule collection for Application and specify the action "Deny".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b8d86e47582f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b8d86e47582f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-b8d86e47582f.png)
 
 Save the collection and advance to the rules.
 
@@ -340,7 +340,7 @@ Save the collection and advance to the rules.
 
 Now we can create some application rules to block certain websites:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3d0caf7c0e41.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3d0caf7c0e41.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-implement-azure-firewall-to-secure-your-azure-environment-2132/jv-media-2132-3d0caf7c0e41.png)
 
 For example I created 2 rules which block access from the workstations to apple.com and vmware.com. Make sure when using application rules, there has to be another rule in place to allow traffic with a higher priority number (closer to 65000)
 

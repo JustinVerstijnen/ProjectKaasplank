@@ -24,7 +24,7 @@ description: >
 
 For the people who may not know what Wordpress is; Wordpress is a tool to create and manage websites, without needing to have knowledge of code. It is a so-called content management system (CMS) and has thousands of themes and plugins to play with. This website you see now is also running on Wordpress.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1fbba83d4a0.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1fbba83d4a0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1fbba83d4a0.png)
 
 ---
 
@@ -32,7 +32,7 @@ For the people who may not know what Wordpress is; Wordpress is a tool to create
 
 When we look at the Azure Marketplace, we have a lot of different Wordpress options available:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a98e10390677.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a98e10390677.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a98e10390677.png)
 
 Now I want to highlight some different options, where some of these offerings will overlap or have the same features and architecture which is bold in the Azure Marketplace:
 
@@ -78,7 +78,7 @@ This architecture is very flexible, scalable and focusses on high availability a
 
 Backups of the whole Wordpress solution is included with the monthly price. Every hour Azure will take a backup from the App Service instance and storage account, starting from the time of creation:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0af08502a8a9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0af08502a8a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0af08502a8a9.png)
 
 I think this is really cool and a great pro that this will not take an additional 10 dollars per month.
 
@@ -90,7 +90,7 @@ We have to prepare our Azure environment for Wordpress. We begin by creating a r
 
 Login to Microsoft Azure (<https://portal.azure.com>) and create a new resource group:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-e1dd061295a4.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-e1dd061295a4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-e1dd061295a4.png)
 
 Finish the wizard. Now the resource group is created and we can advance to deploy the Wordpress solution.
 
@@ -100,20 +100,20 @@ Finish the wizard. Now the resource group is created and we can advance to deplo
 
 We can go to the Azure Marketplace now to search for the Wordpress solution published by Microsoft:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-bc127106ef4a.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-bc127106ef4a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-bc127106ef4a.png)
 {{% alert color="info" %}}
 In this guide, we will use the Microsoft offering. You are free to choose other options, but some steps will not align with this guide.
 {{% /alert %}}
 
 Now after selecting the option, we have 4 different plans which we can choose. This mostly depends on how big you want your environment to be:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1409fa6f079.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1409fa6f079.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-d1409fa6f079.png)
 
 For this guide, we will choose the Basic as we want to actually host on a custom domain name. Select the free plan and continue.
 
 ### Resource group and App Service plan
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-325689985ce6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-325689985ce6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-325689985ce6.png)
 
 Choose your resource group and choose a resource name for the Web app. This is a URL so may contain only small letters and numbers and hyphens (not ending on hyphen).
 
@@ -123,7 +123,7 @@ Scroll down and choose the "Basic" hosting plan. This is for the Azure App Servi
 
 Then fill in the Wordpress Setup menu, this is the admin account for Wordpress that will be created. Fill in your email address, username and use a good password. You can also generate one with my password generator tool: <https://password.jvapp.nl/>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ff6b4add7660.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ff6b4add7660.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ff6b4add7660.png)
 
 Click on "Next: Add ins >"
 
@@ -131,13 +131,13 @@ Click on "Next: Add ins >"
 
 On the Add-ins page, i have all options as default but enabled the Azure Blob Storage. This is where the media files are stored like images, documents and stuff.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-1602f77af72c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-1602f77af72c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-1602f77af72c.png)
 
 This automatically creates an storage account. Then go to the "Networking" tab.
 
 ### Networking
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cebd878c4e33.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cebd878c4e33.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cebd878c4e33.png)
 
 On the networking tab, we have to select a virtual network. This is because the database is hosted on a private, non public accessible network. When using a existing Azure network, select your own network. In my case, I stick to the automatic generated network.
 
@@ -150,15 +150,15 @@ When using your own network, you have to create 2 subnets:
 
 Click on "Next". And finish the wizard. For the basic plan, there are no additional options available.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cf3869b3b6aa.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cf3869b3b6aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cf3869b3b6aa.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-229ef212d55c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-229ef212d55c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-229ef212d55c.png)
 
 You will see at the review page that both the App service instance and the Database are being created.
 
 ### Deployment in progress
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a7309c793754.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a7309c793754.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a7309c793754.png)
 
 Now the deployment is in progress and you can see that a whole lot of resources are being created to make the Wordpress solution work. The nice thing about the Marketplace offerings is that they are pre-configured, and we only have to set some variables and settings like we did in Step 2.
 
@@ -172,11 +172,11 @@ Now we are not going very deep into Wordpress itself, as this guide will only de
 
 Now that the solution is deployed, we can go to the App Service in Azure by typing it in the bar:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f01c571d4c4b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f01c571d4c4b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f01c571d4c4b.png)
 
 There you can find the freshly created App Service. Let's open it.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f4ecdd11276d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f4ecdd11276d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f4ecdd11276d.png)
 
 Here you can find the Web App instance the wizard created and the URL of Azure with it. My URL is:
 
@@ -188,7 +188,7 @@ We will configure our custom domain in step 4.
 
 We can navigate to this URL to get the template website Wordpress created for us:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-46ab525b3246.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-46ab525b3246.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-46ab525b3246.png)
 
 ### Wordpress Admin
 
@@ -198,19 +198,19 @@ We want to configure our website. This can be done by adding "/wp-admin" to our 
 
 Now we will get the Administrator login of Wordpress:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-80de00ec9191.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-80de00ec9191.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-80de00ec9191.png)
 
 Now we can login to Wordpress with the credentials of [Step 1: Wordpress setup](#wp-setup)
 
 After logging in, we are presented the Dashboard of Wordpress:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-70a40341a334.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-70a40341a334.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-70a40341a334.png)
 
 ### Updating to the latest version
 
 As with every piece of software, my advice is to update directly to the latest version available. Click on the update icon in the left top corner:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5e3e34894ec2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5e3e34894ec2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5e3e34894ec2.png)
 
 Now in my environment, there are 3 types of updates available:
 
@@ -220,15 +220,15 @@ Now in my environment, there are 3 types of updates available:
 
 Update everything by simply selecting all and clicking on the "Update" buttons:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7eee8ff81921.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7eee8ff81921.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7eee8ff81921.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5992d989822.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5992d989822.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5992d989822.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a918696a3adf.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a918696a3adf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a918696a3adf.png)
 
 After every update, you will have to navigate back to the updates window. This process is done within 10 minutes, the environment will be completely up-to-date and ready to build your website.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-706ed7d28843.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-706ed7d28843.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-706ed7d28843.png)
 
 All updates are done now.
 
@@ -240,15 +240,15 @@ Now we can configure a custom, better readable domain for our Wordpress website.
 
 Under "Settings" we have the "Custom domains" option. Open this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-13a61175857f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-13a61175857f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-13a61175857f.png)
 
 Click on "+ Add custom domain" to add a new domain to the app service instance. We now have to select some options in case we have a 3rd-party DNS provider:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7853558ee7fa.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7853558ee7fa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-7853558ee7fa.png)
 
 Then fill in your desired custom domain name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-8456e7a65306.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-8456e7a65306.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-8456e7a65306.png)
 
 I selected the name:
 
@@ -261,27 +261,27 @@ This because my domain already contains a website. Now we have to head over to o
 
 In my case, I will create a CNAME record.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5f391770741.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5f391770741.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f5f391770741.png)
 
 Make sure that the CNAME or ALIAS record has to end with a "." dot, because this is a domain outside of your own domain.
 
 In the DNS hosting, save the records. Then wait for around 2 minutes before validating the records in Azure. This should work instantly, but can take up to 24 hours for your records to be found.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-782ae1305517.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-782ae1305517.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-782ae1305517.png)
 
 After some seconds, the custom domain is ready:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b765503571b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b765503571b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b765503571b.png)
 
 Click on "Add" to finish the wizard. After adding, a SSL certificate will be automatically added by Azure, which will take around a minute.
 
 Now we are able to use our freshly created Wordpress solution on Azure with our custom domain name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-4fa4af2c49be.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-4fa4af2c49be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-4fa4af2c49be.png)
 
 Let's visit the website:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-877f47bb19ce.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-877f47bb19ce.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-877f47bb19ce.png)
 
 Works properly! :)
 
@@ -289,7 +289,7 @@ We can also visit the Wordpress admin panel on this URL now by adding /wp-admin:
 
 - https://wordpresstest.justinverstijnen.nl/wp-admin
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f085d4defaf6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f085d4defaf6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-f085d4defaf6.png)
 
 ---
 
@@ -302,11 +302,11 @@ Now we can login to Wordpress but we have seperate logins for Wordpress and Azur
 
 Head to Wordpress, go to "Plugins" and install this plugin:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-525fa0e78970.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-525fa0e78970.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-525fa0e78970.png)
 
 After installing the plugin and activating the plugin, we have an extra menu option in our navigation window on the left:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-68311f4283fc.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-68311f4283fc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-68311f4283fc.png)
 
 We now have to configure the Single Sign On with our Microsoft Entra ID tenant.
 
@@ -316,21 +316,21 @@ Start by going to Microsoft Entra ID, because we must generate the information t
 
 Go to Microsoft Entra ID and then to "App registrations":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0884610d5dfd.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0884610d5dfd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-0884610d5dfd.png)
 
 Click on "+ New registration" to create a new custom application.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-28043760407e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-28043760407e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-28043760407e.png)
 
 Choose a name for the application and select the supported account types. In my case, I only want to have accounts from my tenant to use SSO to the plugin. Otherwise you can choose the second option to support business accounts in other tenants or the third option to also include personal Microsoft accounts.
 
 Scroll down on the page and configure the redirect URL which can be found in the plugin:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-c7848a8c038f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-c7848a8c038f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-c7848a8c038f.png)
 
 Copy this link, select type "Web" and paste this into Entra ID:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-319d276ec052.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-319d276ec052.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-319d276ec052.png)
 
 This is the URL which will be opened after succesfully authenticating to Entra ID.
 
@@ -340,11 +340,11 @@ Click register to finish the wizard.
 
 After creating the app registration, we can go to "Certificates & Secrets" to create a new secret:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b3d2245fb4b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b3d2245fb4b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-6b3d2245fb4b.png)
 
 Click on "+ New client secret".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5a157f42605c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5a157f42605c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-5a157f42605c.png)
 
 Type a good description and select the duration of the secret. This must be shorter than 730 days (2 years) because of security. In my case, I stick with the recommended duration. Click on "Add" to create the secret.
 
@@ -352,7 +352,7 @@ Now please copy the information and place it in a safe location, as this will be
 
 My advice is to always copy the Secret ID too, because you have a good identifier of which secret is used where, especially when you have like 20 app registrations.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a45275cfc831.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a45275cfc831.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-a45275cfc831.png)
 
 ### Collect the information in Microsoft Entra ID
 
@@ -364,29 +364,29 @@ Now that we have finished the configuration in ENtra ID, we have to collect the 
 
 The Client ID (green) and Tenant ID (red) can be found on the overview page of the app registration. The secret is saved in the safe location from previous step.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-fde3b9ef3cba.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-fde3b9ef3cba.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-fde3b9ef3cba.png)
 
 ### Configure Wordpress plugin
 
 Now head back to Wordpress and we have to fill in all of the collected information from Microsoft Entra ID:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-3f9e4023cbfa.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-3f9e4023cbfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-3f9e4023cbfa.png)
 
 Fill in all of the collected information, make sure the "Scope" field contains "openid profile email" and click on "Save settings". The scope determines the information it will request at the Identity Provider, this is Microsoft Entra ID in our case.
 
 Then scroll down again and click on "Test Configuration" which is next to the Save button. An extra authentication window will be opened:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ed734b7df537.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ed734b7df537.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ed734b7df537.png)
 
 Select your account or login into your Entra ID account and go to the next step.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)
 
 Now we have to accept the roles the application wants and to permit the application for the whole organization. For this step, you will need administrator rights in Entra ID. (Cloud Application Administrator or Application Administrator roles or higher).
 
 Accept the application and the plugin will tell you the information it got from Entra ID:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-65ef692cf88a.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-65ef692cf88a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-65ef692cf88a.png)
 
 Now we have to click on the "Configure Username" button or go the tab "Attribute/Role Mapping".
 
@@ -394,7 +394,7 @@ In Entra ID, a user has several properties with can be configured. In identity, 
 
 Start by selecting "email" in the "Username field":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cc140cbd41a9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cc140cbd41a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-cc140cbd41a9.png)
 
 Then click on "Save settings".
 
@@ -402,7 +402,7 @@ Then click on "Save settings".
 
 Now we can configure which role we want to give users from this SSO configuration:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ce67a773d7c4.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ce67a773d7c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-ce67a773d7c4.png)
 
 In my case, I selected "Administrator" to give myself the Administrator permissions but you can also chosse from all other built-in Wordpress roles. Be aware that all of the users who are able to SSO into Wordpress will bet this role by default.
 
@@ -414,7 +414,7 @@ Now we can test SSO for Wordpress by loggin out and again going to our Wordpress
 
 We have the option to do SSO now:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-468e759b5d4a.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-468e759b5d4a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-468e759b5d4a.png)
 
 Click on the blue button with "Login with Wordpress - Entra ID". You will now have to login with your Microsoft account.
 
@@ -422,7 +422,7 @@ After that you will land on the homepage of the website. You can manually go to 
 
 - https://wordpresstest.justinverstijnen.nl/wp-admin
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-563c9fc44652.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-563c9fc44652.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-563c9fc44652.png)
 
 ---
 

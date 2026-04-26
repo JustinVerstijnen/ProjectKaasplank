@@ -42,7 +42,7 @@ For a typical Minecraft server, without Mods, the guidelines and system requirem
 
 First, we need to setup our Azure environment for a Minecraft server. I started with creating a Resource group named "rg-jv-minecraftserver".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png)
 
 This resource group can we use to put all of the related resources in. We not only need to create a VM but also an virtual network, Public IP address, Network Security Group and disk for storage.
 
@@ -58,31 +58,31 @@ For a single server-setup, we can use most of the default settings of the wizard
 
 Go to "Virtual Machines" and create a new virtual machine:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-565b2b65e616.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-565b2b65e616.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-565b2b65e616.png)
 
 Put the server in the created resource group. I use the image **Ubuntu Server 24.04 LTS - x64 Gen2** for this deployment. This is a "Long-Term Support" image, which are enterprise grade images with at least 5 years support.
 
 For the specs, I used the size E4s\_V6 which has 4vCPU's and 32GB of RAM. Enough for 20 to 50 players and a big world so the game will not get boring.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a6dd7a972a5.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a6dd7a972a5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a6dd7a972a5.png)
 
 ### Authentication
 
 For the Authentication type, use an SSH key if you are familiar with that or use a password. I used the password option:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-ad6c27b513c9.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-ad6c27b513c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-ad6c27b513c9.png)
 
 ### Inbound ports
 
 For the inbound ports, use the default option to let port 22 open. We will change this in a bit for more security.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a76ef963b6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a76ef963b6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a76ef963b6.png)
 
 ### Disks and storage
 
 For the disk settings, let this as default:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-951e1730b498.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-951e1730b498.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-951e1730b498.png)
 
 I chose a deployment with an extra disk where the server itself is stored on. This way we have a server with 2 disks:
 
@@ -91,23 +91,23 @@ I chose a deployment with an extra disk where the server itself is stored on. Th
 
 This has some advantages like seperate upgrading, more resilience and more performance as the Minecraft world disk is not in use by the OS.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-6d62f687619f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-6d62f687619f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-6d62f687619f.png)
 
 Select the option "Create and attach a new disk". Then give the disk a name and select a proper size of your needs.
 
 I chose 128GB as size and have the performance tier as default.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5df22c79b290.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5df22c79b290.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5df22c79b290.png)
 
 Click "OK" and review the settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8d2b1865d288.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8d2b1865d288.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8d2b1865d288.png)
 
 ### Networking
 
 Advance to the "Networking" tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d4fd996364aa.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d4fd996364aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d4fd996364aa.png)
 
 Azure automatically creates a virtual network and a subnet for you. These are needed for the server to have an outbound connection to the internet. This way we can download updates on the server.
 
@@ -121,13 +121,13 @@ Go to the next tab.
 
 Here you have a setting for automatic shutdown if you want to. Can come in handy when you want to automatically shutdown your server to reduce costs. You have to manually enable the server after shutdown if you want to play again.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-870665ae970f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-870665ae970f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-870665ae970f.png)
 
 ### Review settings
 
 After this go to the last tab and review your settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d999122c06b3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d999122c06b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-d999122c06b3.png)
 
 Then create the virtual machine and we are good to go! Create the virtual machine and advance to the next part of the guide.
 
@@ -137,23 +137,23 @@ Then create the virtual machine and we are good to go! Create the virtual machin
 
 We want to secure inbound connections made to the server. Let's go to "Network Security Groups" (NSG for short) in Azure:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b711942f42d3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b711942f42d3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b711942f42d3.png)
 
 Open the related NSG and go to "Inbound Security rules".
 
 By default we have a rule applied for SSH access that allows the whole internet to the server. For security, the first thing we want to do is limit this access to only our own IP address. You can find your IP address by going to this page: <https://whatismyipaddress.com/>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b096517bee1d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b096517bee1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b096517bee1d.png)
 
 Note this IP address down and return to Azure.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5607360d763d.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5607360d763d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-5607360d763d.png)
 
 Click on the rule "SSH".
 
 Change the "Source" to "IP addresses" and paste in the IP address from the IP lookup website. This only allows SSH (admin) traffic from your own IP-address for security. This is a whitelist.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-3376bb21c6af.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-3376bb21c6af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-3376bb21c6af.png)
 
 You see that the warning is now gone as we have blocked more than 99% of all worldwide IP addresses SSH access to our server.
 
@@ -186,9 +186,9 @@ Create a new rule with the following settings:
 
 My rule looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4dac80b0730.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4dac80b0730.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4dac80b0730.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-bd0875603ad0.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-bd0875603ad0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-bd0875603ad0.png)
 
 Now the network configuration in Azure is done. We will advance to the server configuration now.
 
@@ -210,17 +210,17 @@ ssh username@ip-address
 
 Here you need your username from the virtual machine wizard and server IP address. You can find the server IP address under the server details in Azure:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e57d3fa7e07e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e57d3fa7e07e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e57d3fa7e07e.png)
 
 I used this in my command to connect to the server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0a5ae2fbc8c0.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0a5ae2fbc8c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0a5ae2fbc8c0.png)
 
 After the command, type "Yes" and fill in your password. Then hit enter to connect.
 
 Now we are connected to the server with SSH:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-308ddf4283f2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-308ddf4283f2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-308ddf4283f2.png)
 
 ---
 
@@ -234,7 +234,7 @@ Run the following command to get administrator/sudo access:
 sudo -s
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2519033c5758.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2519033c5758.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2519033c5758.png)
 
 Now you see the line went from green to white and starts with "root". This is the highest level of privileges on a Linux system.
 
@@ -246,7 +246,7 @@ apt-get update
 
 Now there will be a lot of activity, as the machine is updating all packages. This can take up to a minute.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4593d321da7.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4593d321da7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-f4593d321da7.png)
 
 ### Installing Dependencies
 
@@ -278,7 +278,7 @@ Run the following command to get all disks in a nice overview:
 lsblk
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9c5d0eb93c52.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9c5d0eb93c52.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9c5d0eb93c52.png)
 
 In my case, the nvme0n2 disk is the added disk. This can be different on your server, so take a good look at the size which is your disk.
 
@@ -301,7 +301,7 @@ If we now again run the command to list our disk and partitions, we see the chan
 lsblk
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-65b7e595394b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-65b7e595394b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-65b7e595394b.png)
 
 Under disk "nvme0n2" there is now an partition called "nvme0n2p1".
 
@@ -333,7 +333,7 @@ Let's try if this works :)
 cd /mnt/minecraft-data
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0703a6bc11fd.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0703a6bc11fd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-0703a6bc11fd.png)
 
 This works and our disks is now operational. Please note that this is non-persistent and gone after a reboot. We must add this to the systems disks of Linux to mount this at boot.
 
@@ -349,7 +349,7 @@ blkid /dev/nvme0n2p1
 
 You will get an output of this command what we need. Mine is:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2d7b63c0e56e.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2d7b63c0e56e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-2d7b63c0e56e.png)
 
 We have to edit the fstab system file to tell the system part that it must make this mount at boot.
 
@@ -368,13 +368,13 @@ UUID=7401b251-e0a0-4121-a99f-f740c6c3ed47 /mnt/minecraft-data ext4 defaults,nofa
 
 This looks like this in my fstab file:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-51f12b95a400.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-51f12b95a400.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-51f12b95a400.png)
 
 Now press the shortcut CTRL and X to exit the file and choose Yes to save the file.
 
 I directly restarted the server to check if the secondary disk is mounted like expected. We don't want this happening after all of our configuration work of course.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a5f391594a3.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a5f391594a3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-1a5f391594a3.png)
 
 As you can see this works like a charm.
 
@@ -406,7 +406,7 @@ wget https://piston-data.mojang.com/v1/objects/e6ec2f64e6080b9b5d9b471b291c33cc7
 
 Now the file is at the right place and ready to start:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-b853ecf9bcb6.png)
 
 We now need to create a file to agree with the End User License Agreement (EULA), and can do this with the following command:
 
@@ -422,7 +422,7 @@ We can now finally run the server with 28GBs of RAM with the following command:
 java -Xmx28672M -Xms28672M -jar server.jar nogui
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
 
 Now our server has been fully initialized and we are ready to play.
 
@@ -432,27 +432,27 @@ Now our server has been fully initialized and we are ready to play.
 
 The moment we have been waiting for, finally playing on our own Minecraft server. Download the game and login to your account.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a6f21b79d2.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a6f21b79d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-63a6f21b79d2.png)
 
 Open "Multiplayer".
 
 Click on "Add Server" and fill in the details of your server to connect:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-079d4158cf7b.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-079d4158cf7b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-079d4158cf7b.png)
 
 Click on "Done" and we are ready to connect:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-fd2aff33ab41.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-fd2aff33ab41.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-fd2aff33ab41.png)
 
 Connect and this will open the server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8bebe1a6fb8c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8bebe1a6fb8c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-8bebe1a6fb8c.png)
 
 I already cut some wood for my first house. Haha.
 
 Connecting also generated some logs:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-a88856f8448f.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-a88856f8448f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-a88856f8448f.png)
 
 ---
 
@@ -484,7 +484,7 @@ RestartSec=10
 WantedBy=multi-user.target
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-942703b1b91c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-942703b1b91c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-942703b1b91c.png)
 
 Then use the shortcut CTRL and X to exit and select Yes to save.
 
@@ -496,7 +496,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable minecraft.service
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e5b52074ced7.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e5b52074ced7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-e5b52074ced7.png)
 
 Now run this command to start Minecraft:
 
@@ -510,7 +510,7 @@ We can view the status of the service by running this command:
 sudo systemctl status minecraft
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-912c86eca1ba.png)
 
 We made a separate service of Minecraft which allows it to automatically run at boot. We can easily restart and stop it when needed without using the complex commands of Minecraft.
 
@@ -534,7 +534,7 @@ All of these settings are in files of the minecraft directory. You can navigate 
 cd /mnt/minecraft-data
 {{< /card >}}
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-7d01df6754ab.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-7d01df6754ab.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-7d01df6754ab.png)
 
 Open the file *server.properties*
 
@@ -550,7 +550,7 @@ motd=[§6Justin Verstijnen§f] §aOnline
 
 This makes the text in colors and all fancy and stuff. You can find this in the internet.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9d77300d3cd7.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9d77300d3cd7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-9d77300d3cd7.png)
 
 Now save the file by using CTRL + X and select Yes and hit enter. This saved the file.
 
@@ -562,7 +562,7 @@ systemctl restart minecraft
 
 After restarting, the server shows up like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-c2a9240e696c.png)
+![https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-c2a9240e696c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/setup-a-minecraft-server-on-azure-1573/jv-media-1573-c2a9240e696c.png)
 
 ---
 
