@@ -24,7 +24,7 @@ Before looking into the details, we first want to decide which billing type we w
 
 You select this billing type at the storage account wizard. After creating the storage account, you can't change the type. If you want to use premium storage account, then "provisioned" is required.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-b996dc06880b.gif)
+[![jv-media-3984-b996dc06880b.gif](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-b996dc06880b.gif)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-b996dc06880b.gif)
 
 As you can see in this animation. For standard (HDD based) you can choose both, and for premium (SSD based) we have to provision storage.
 
@@ -36,15 +36,15 @@ When you want to be billed based on how many storage you provision/reserve, you 
 
 We have two types of "provisioned" billing, V1 and V2:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-dbf3fae9f14f.png)
+[![jv-media-3984-dbf3fae9f14f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-dbf3fae9f14f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-dbf3fae9f14f.png)
 
 The big difference between those two values is that in V1, you are stuck with Microsoft's chosen performance based on how much you provision and with V2, you can change those values independently, as shown in the pictures below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-3f0bc7493d13.png)
+[![jv-media-3984-3f0bc7493d13.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-3f0bc7493d13.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-3f0bc7493d13.png)
 
 Provisioned v1
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-be41218849d7.png)
+[![jv-media-3984-be41218849d7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-be41218849d7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-be41218849d7.png)
 
 Provisioned v2
 
@@ -56,7 +56,7 @@ This way you can get more performance, with a little increase of credits instead
 
 Pay-as-you-go is the more linear manner of paying your storage account. Here you pay exactly what you use, and get a fixed performance but we have to pay additionally for transactions and egress of the data.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-daa00a7d33e3.png)
+[![jv-media-3984-daa00a7d33e3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-daa00a7d33e3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-daa00a7d33e3.png)
 
 Because this billing option aligns tohow you use the storage, we can define for what purpose we use the storage account. This changes the prices of transactions, storage at rest and egress data. We have 3 categories/tiers:
 
@@ -111,15 +111,15 @@ I want to go through all of the options to see the actual performance and pricin
 
 I first selected "Provisioned" with premium storage with default IOPS/throughput combination. For the three scenarios I get by default: (click image to enlarge)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-90823f990195.png)
+[![jv-media-3984-90823f990195.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-90823f990195.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-90823f990195.png)
 
 500GB
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-f397a2a5a735.png)
+[![jv-media-3984-f397a2a5a735.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-f397a2a5a735.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-f397a2a5a735.png)
 
 2500GB
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-10779d62a36c.png)
+[![jv-media-3984-10779d62a36c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-10779d62a36c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-10779d62a36c.png)
 
 5000GB
 
@@ -153,19 +153,19 @@ To further clarify what those numbers mean in terms of performance, I have a pra
 
 In this test we will place a 10GB (10.240 MB) file from a workstation to the Azure Storage to count the time and the average throughput (speed in MB per second).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-7df545d1d57b.jpg)
+[![jv-media-3984-7df545d1d57b.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-7df545d1d57b.jpg)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-7df545d1d57b.jpg)
 
 Now let's take a look at the results:
 
 Left: Premium Right: Standard
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-6428f768bc5b.png)
+[![jv-media-3984-6428f768bc5b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-6428f768bc5b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-6428f768bc5b.png)
 
 Time: 01:14:93 (75 seconds)
 Average speed: 136,5 MB/s
 Max speed: 203MB/s
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-5ac541bcd376.png)
+[![jv-media-3984-5ac541bcd376.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-5ac541bcd376.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/storage-account-performance-and-pricing-for-azure-virtual-desktop-3984/jv-media-3984-5ac541bcd376.png)
 
 Time: 03:03:41 (183 seconds)
 Average speed: 55,9 MB/s

@@ -20,7 +20,7 @@ Remember, having a secure score of 100% doesn't mean 100% security. This only me
 
 Starting this page, my Secure Score overview is this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
+[![jv-media-5293-cf5c9fb82ed1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
 ---
 
@@ -28,7 +28,7 @@ Starting this page, my Secure Score overview is this:
 
 Let's check first which requirements we have to address. Go to <https://security.microsoft.com/securescore> and select the Data recommendations only:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-dd4a5aa39d22.png)
+[![jv-media-6883-dd4a5aa39d22.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-dd4a5aa39d22.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-dd4a5aa39d22.png)
 
 This gives us these four recommendation we must address:
 
@@ -49,41 +49,41 @@ To create and enable an DLP policy, let's open the Purview Compliance Portal (<h
 
 Then navigate to Data loss prevention:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9eac8c845d2d.png)
+[![jv-media-6883-9eac8c845d2d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9eac8c845d2d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9eac8c845d2d.png)
 
 Click "+ Create policy" to create a new DLP policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-30fd17d0dfcc.png)
+[![jv-media-6883-30fd17d0dfcc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-30fd17d0dfcc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-30fd17d0dfcc.png)
 
 Choose the option "Enterprise & devices"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-2e8b8de796ab.png)
+[![jv-media-6883-2e8b8de796ab.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-2e8b8de796ab.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-2e8b8de796ab.png)
 
 You can start from a template or start from scratch at the first step. Think of what you want to do.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9199460ce2cd.png)
+[![jv-media-6883-9199460ce2cd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9199460ce2cd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-9199460ce2cd.png)
 
 Click "Next". Give the policy a name and description according to your documentation.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0894781f4c53.png)
+[![jv-media-6883-0894781f4c53.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0894781f4c53.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0894781f4c53.png)
 
 Click "Next". You can now decide if you want to use administrative units of Entra ID. In my case, I skipped this step.
 
 Now you can decide where to apply the policy. To make it the most effective, assign it to all locations, which is by default.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-1e6909f0dba9.png)
+[![jv-media-6883-1e6909f0dba9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-1e6909f0dba9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-1e6909f0dba9.png)
 
 Click "Next" twice. Now we can create some advanced rules. This is up to you of course, but I will make some rules to give a basic example of the possibilities.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-420a53757663.png)
+[![jv-media-6883-420a53757663.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-420a53757663.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-420a53757663.png)
 
 I clicked "+ Create rule" and gave it a name and description. Then I added 2 sensitive information types and stated that they are sent externally:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-f63b7834e343.png)
+[![jv-media-6883-f63b7834e343.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-f63b7834e343.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-f63b7834e343.png)
 
 At the "Actions" section, we are able to block the action:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0c8249388fc4.png)
+[![jv-media-6883-0c8249388fc4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0c8249388fc4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0c8249388fc4.png)
 
 Save the policy, assign it to a group of users (All company group) and that should be it for this recommendation.
 
@@ -97,11 +97,11 @@ To create and enable sensitivity label, let's open the Purview Compliance Portal
 
 Then navigate to: Information protection
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-37b7a6dfc125.png)
+[![jv-media-6883-37b7a6dfc125.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-37b7a6dfc125.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-37b7a6dfc125.png)
 
 Then select "Sensitivity labels" from the left and click "+ Create a label"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-05e895c5b44e.png)
+[![jv-media-6883-05e895c5b44e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-05e895c5b44e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-05e895c5b44e.png)
 
 You must now create a label to classify certain data to a certain type of information. Some examples of things you can do are:
 
@@ -111,43 +111,43 @@ You must now create a label to classify certain data to a certain type of inform
 
 For this guide, I will make a label for Personally Identifiable Information (PII).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-016f5d0a0cc7.png)
+[![jv-media-6883-016f5d0a0cc7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-016f5d0a0cc7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-016f5d0a0cc7.png)
 
 I also selected the red color as color of danger. Then click "Next" twice.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-aa0ab402586e.png)
+[![jv-media-6883-aa0ab402586e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-aa0ab402586e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-aa0ab402586e.png)
 
 Then I selected the credit card and Netherlands Citizen (BSN) number as information that it must contain before auto labeling the documents, but you can customize this to your own needs.
 
 Finish the wizard.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4d9441873403.png)
+[![jv-media-6883-4d9441873403.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4d9441873403.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4d9441873403.png)
 
 After creating the label, Purview asks you if you want to publish the label, which is a requirement for succeeding in this recommendation.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4cb52a5ce7f1.png)
+[![jv-media-6883-4cb52a5ce7f1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4cb52a5ce7f1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4cb52a5ce7f1.png)
 
 Select an existing label policy or create a new one by clicking "Create new label policy". For finishing this guide, I will create a new label policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-32349ff95663.png)
+[![jv-media-6883-32349ff95663.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-32349ff95663.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-32349ff95663.png)
 
 Select the labels to publish and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ffa69c50a53a.png)
+[![jv-media-6883-ffa69c50a53a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ffa69c50a53a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ffa69c50a53a.png)
 
 Select the users and groups for the label to apply and click "Next".
 
 You can now decide to use one of these advanced options:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-348f35d1a9c1.png)
+[![jv-media-6883-348f35d1a9c1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-348f35d1a9c1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-348f35d1a9c1.png)
 
 I chose the first option, because we want that for complaince and auditing reasons. Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-a0f2bc9210ff.png)
+[![jv-media-6883-a0f2bc9210ff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-a0f2bc9210ff.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-a0f2bc9210ff.png)
 
 Select the label just created, and repeat this for every type on the left. You can use "Same as document" for a speedy finishing of the wizard.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0917c3ef8252.png)
+[![jv-media-6883-0917c3ef8252.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0917c3ef8252.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-0917c3ef8252.png)
 
 Click "Next" and after that "Finish" to publish the label. That should be it for this recommendation.
 
@@ -159,11 +159,11 @@ This recommendation allows sensitivity labels to apply to data sources discovere
 
 In the label itself, you must have this enabled:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-bf3736a5ef47.png)
+[![jv-media-6883-bf3736a5ef47.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-bf3736a5ef47.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-bf3736a5ef47.png)
 
 And in the labeling policy, you must have the label selected at this page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-d40baf3737c2.png)
+[![jv-media-6883-d40baf3737c2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-d40baf3737c2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-d40baf3737c2.png)
 
 ---
 
@@ -173,11 +173,11 @@ This recommendation wants us to configure automatically applying sensitivity lab
 
 In the labeling policy, we must configure this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-c28b90debfcb.png)
+[![jv-media-6883-c28b90debfcb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-c28b90debfcb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-c28b90debfcb.png)
 
 And in the label itself, we must configure this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4859d386b023.png)
+[![jv-media-6883-4859d386b023.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4859d386b023.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-4859d386b023.png)
 
 ---
 
@@ -185,7 +185,7 @@ And in the label itself, we must configure this:
 
 After I did all the configurations described on this page, my Data secure score was at the full max, 100%:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ff61bbb1a096.png)
+[![jv-media-6883-ff61bbb1a096.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ff61bbb1a096.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-data-6883/jv-media-6883-ff61bbb1a096.png)
 
 ---
 

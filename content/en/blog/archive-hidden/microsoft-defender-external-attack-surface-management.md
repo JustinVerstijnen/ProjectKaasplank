@@ -40,7 +40,7 @@ The best features of this solution include:
 
 Here, for example, you can see a common vulnerability detected in servers, even when running in environments such as Amazon Web Services (AWS):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)
+[![jv-media-2480-a1dcfb0f21db.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/create-a-catch-all-mailbox-in-exchange-online-2480/jv-media-2480-a1dcfb0f21db.png)
 
 ---
 

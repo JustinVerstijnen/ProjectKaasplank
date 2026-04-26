@@ -13,7 +13,7 @@ description: >
 
 I created a script to test the connectivity, if it is allowed through Firewall and also test the RTT to the Azure Virtual Desktop service. The script then gives the following output:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-connectivity-script-1649/jv-media-1649-9617996da753.png)
+[![jv-media-1649-9617996da753.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-connectivity-script-1649/jv-media-1649-9617996da753.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-connectivity-script-1649/jv-media-1649-9617996da753.png)
 
 ---
 

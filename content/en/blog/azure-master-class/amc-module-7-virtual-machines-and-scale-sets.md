@@ -265,13 +265,13 @@ Let's say, a webserver needs 100 clients to be overloaded and we have a set of 4
 
 Virtual Machine Scale Sets are an example of "Horizontal Scaling" where more instances are added to complete the goal.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-6f876b1787aa.png)
+[![jv-media-993-6f876b1787aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-6f876b1787aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-6f876b1787aa.png)
 
 ### VMSS configuration
 
 The configuration of VMSS can be done in the Azure Portal and starts with configuring a condition to scale up and down and defining the minimum, maximum and default amount of instances:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-b36b6385f5aa.png)
+[![jv-media-993-b36b6385f5aa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-b36b6385f5aa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-b36b6385f5aa.png)
 
 After the conditions are configured, we can define the rules where we plan when to scale up or down:
 
@@ -337,7 +337,7 @@ Additionally, Azure Arc enables you to leverage other Azure benefits on non-Azur
 
 This allows you to have consistent management, monitoring, and security policies across your entire infrastructure, regardless of where it is hosted.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-2edcefa42c1c.png)
+[![jv-media-993-2edcefa42c1c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-2edcefa42c1c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-7-virtual-machines-and-scale-sets-993/jv-media-993-2edcefa42c1c.png)
 
 ---
 

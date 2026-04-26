@@ -31,7 +31,7 @@ I have created two scripts with Powershell that fully exports and imports all Gr
 
 When having our Group Policies in place on a server, create a new folder on a preferred place like Desktop.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)
+[![jv-media-324-2d71683c68b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)
 
 Save my Export script to a .ps1 file and place that into the newly created folder.
 
@@ -51,11 +51,11 @@ This will temporarily accept our script and other scripts till we close the Powe
 
 Now lets run our script to export all non-default Group Policy objects:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-463aa6493bb1.png)
+[![jv-media-324-463aa6493bb1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-463aa6493bb1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-463aa6493bb1.png)
 
 It will save all needed files in this folder, so you can copy the whole folder and start the importing process on the destination server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)
+[![jv-media-324-2d71683c68b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-2d71683c68b3.png)
 
 ---
 
@@ -65,21 +65,21 @@ Lets say, we have just created our new forest and promoted our first server to a
 
 I have saved the script as .ps1 file for quick execution, and have saved in the same folder as my export script saved the GPO's:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-8a4864724459.png)
+[![jv-media-324-8a4864724459.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-8a4864724459.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-8a4864724459.png)
 
 When checking our Group Policy Management console, it is completely empty and clean:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-cd78cac50b4b.png)
+[![jv-media-324-cd78cac50b4b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-cd78cac50b4b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-cd78cac50b4b.png)
 
 We now execute the script to import the Group Policies:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-d9ee1292e70a.png)
+[![jv-media-324-d9ee1292e70a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-d9ee1292e70a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-d9ee1292e70a.png)
 
 If you haven't temporarily disabled your PowerShell execution policy yet, [do this just like in the exporting action.](#using-the-export-script-to-migrate-group-policies)
 
 After succesfully executing the script, our GPO is available and ready to link to our OU. This is the only task what we have to do manually.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-60f5fff319c8.png)
+[![jv-media-324-60f5fff319c8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-60f5fff319c8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/migrate-group-policy-objects-to-a-new-server-or-domain-like-a-pro-324/jv-media-324-60f5fff319c8.png)
 
 ---
 

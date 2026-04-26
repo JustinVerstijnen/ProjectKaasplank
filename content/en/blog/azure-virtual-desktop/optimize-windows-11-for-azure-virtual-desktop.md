@@ -16,7 +16,7 @@ Assuming you run your Azure Virtual Desktop environment by using the good old Ac
 
 To help you optimizing the experience on Windows 11, I have a predefined group policy available with lots of settings to help optimizing your Windows 11 session hosts. This group policy follows the official Microsoft best practices, alongside with some of my own optimizations which has been proven good in production.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-a6c6593f45bf.png)
+[![jv-media-270-a6c6593f45bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-a6c6593f45bf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-a6c6593f45bf.png)
 
 ---
 
@@ -57,7 +57,7 @@ If you have to change your Powershell Execution Policy, use Set-ExecutionPolicy 
 
 After succesfully running the script, the GPO will be available in the Group Policy Management console;
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-3f204a6862c9.png)
+[![jv-media-270-3f204a6862c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-3f204a6862c9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/optimize-windows-11-for-azure-virtual-desktop-270/jv-media-270-3f204a6862c9.png)
 
 You are free to link the GPO to each OU you want but make sure it will not directly impact users or your service.
 

@@ -20,7 +20,7 @@ Fast path for URL: https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery
 
 When downloading the apps for your mobile devices, we get this window after installing:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-cbe412d3fee2.png)
+[![jv-media-4725-cbe412d3fee2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-cbe412d3fee2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-cbe412d3fee2.png)
 
 After filling in our emailadress that has access to a Azure Virtual Desktop hostpool or Windows 365 machine, we still get this error:
 
@@ -49,7 +49,7 @@ We must configure this 3 times.
 
 Let's login to our DNS hosting for the domain, and create the record:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-4d1ba0d66799.png)
+[![jv-media-4725-4d1ba0d66799.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-4d1ba0d66799.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-4d1ba0d66799.png)
 
 Then save your configuration and wait for a few minutes.
 
@@ -59,7 +59,7 @@ Then save your configuration and wait for a few minutes.
 
 Now that our DNS record is in place, we can test this by again, typing our email address into the application:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-ba13d135b117.png)
+[![jv-media-4725-ba13d135b117.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-ba13d135b117.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatic-avd-w365-feed-discovery-for-mobile-apps-4725/jv-media-4725-ba13d135b117.png)
 
 Now the application automatically finds the domain and imports the feed discovery URL into the application. This minor change solves a lot of headache.
 

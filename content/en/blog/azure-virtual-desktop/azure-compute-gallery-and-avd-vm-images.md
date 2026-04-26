@@ -72,7 +72,7 @@ The costs of Azure Compute Gallery is based on:
 
 In my exploratory example, I had a compute gallery active for around 24 hours on Premium SSD storage with one replica, and the costs of this were 2 cents:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d0ffde159f03.png)
+[![jv-media-3436-d0ffde159f03.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d0ffde159f03.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d0ffde159f03.png)
 
 This was a VM image with almost nothing installed, but let it increase to 15 cents per 24 hours (5 euro per month) and it still is 100% worth the money.
 
@@ -82,18 +82,18 @@ This was a VM image with almost nothing installed, but let it increase to 15 cen
 
 Let's dive into the Azure Portal, and navigate to "Azure Compute Gallery" to create a new gallery:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-ec4ec96b7d35.png)
+[![jv-media-3436-ec4ec96b7d35.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-ec4ec96b7d35.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-ec4ec96b7d35.png)
 
 Give the gallery a name, place it in a resource group and give it a clear description. Then go to "Sharing method".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-f97578348def.png)
+[![jv-media-3436-f97578348def.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-f97578348def.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-f97578348def.png)
 
 Here we have 3 options, where we will cover only 2:
 
 - **Role based access contol (RBAC):** The gallery and images are only available to the people you give access to in the same tenant
 - **RBAC + share to public community gallery:** The gallery and images can be published to the community gallery to be used by everyone using Azure, found here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bb2023c885c7.png)
+[![jv-media-3436-bb2023c885c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bb2023c885c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bb2023c885c7.png)
 
 After you made your choice, proceed to the last page of the wizard and create the gallery.
 
@@ -111,33 +111,33 @@ After creating the gallery itself, the place to store the images, we can now man
 
 Click on "+ Add" and then "VM image definition":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-990d0644519d.png)
+[![jv-media-3436-990d0644519d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-990d0644519d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-990d0644519d.png)
 
 Here we need to define which type of VMs we will be storing into our gallery:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d345154e6afb.png)
+[![jv-media-3436-d345154e6afb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d345154e6afb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-d345154e6afb.png)
 
 Here I named it "ImageDefinition-AzureVirtualDesktop", the left side of the topology I showed earlier.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-492bb1211013.png)
+[![jv-media-3436-492bb1211013.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-492bb1211013.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-492bb1211013.png)
 
 The last part can be named as you wish. This is meant for having more information for the image available for documentation purposes. Then go to the next page.
 
 Here you can define the versioning, region and end date of using the image version. A EOL (End-of-Life) for your image.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-336af49735d2.png)
+[![jv-media-3436-336af49735d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-336af49735d2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-336af49735d2.png)
 
 We can also select a managed image here, which makes migrating from Managed Images to Azure Compute Gallery really easy. After filling in the details go to the next page.
 
 On the "Publishing options" page we can define more information for publishing and documentation including guidelines for VM sizes:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bae1f00d370c.png)
+[![jv-media-3436-bae1f00d370c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bae1f00d370c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-bae1f00d370c.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-514b551da92a.png)
+[![jv-media-3436-514b551da92a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-514b551da92a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-514b551da92a.png)
 
 After defining everything, we can advance to the last page of the wizard and create the definition.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-e784eb588a24.png)
+[![jv-media-3436-e784eb588a24.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-e784eb588a24.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-e784eb588a24.png)
 
 ---
 
@@ -155,15 +155,15 @@ Sysprep is a application which is shipped with Windows which cleanes a Windows i
 
 After finishing those pre-capturing tasks, clean up the VM by cleaning the installation files etc. Then run the application Sysprep which can be found here: *C:\Windows\System32\Sysprep*
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-2eb8ad66597c.png)
+[![jv-media-3436-2eb8ad66597c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-2eb8ad66597c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-2eb8ad66597c.png)
 
 Open the application and select "Generalize" and the as Shutdown option: "Shutdown".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-88ac9780f955.png)
+[![jv-media-3436-88ac9780f955.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-88ac9780f955.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-88ac9780f955.png)
 
 Click "OK" and wait till the virtual machine performs the shutdown action.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-95db64f6f21e.png)
+[![jv-media-3436-95db64f6f21e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-95db64f6f21e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-95db64f6f21e.png)
 {{% alert color="info" %}}
 If you get an error during this stage that states Bitlocker is activated, you need to disable it temporarily. At deployment of the image, this will be re-activated.
 
@@ -176,11 +176,11 @@ Disable-BitLocker -MountPoint "C:"
 
 After the virtual machine is sysprepped/generalized succesfully, we can go to the virtual machine in the Azure Portal to capture it and store it in our newly created Compute gallery.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1d46b40a4623.png)
+[![jv-media-3436-1d46b40a4623.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1d46b40a4623.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1d46b40a4623.png)
 
 First clikc on "Stop" to actually deallocate the virtual machine. Then click on "Capture" and select "Image".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8215b6801434.png)
+[![jv-media-3436-8215b6801434.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8215b6801434.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8215b6801434.png)
 
 Select the option "Yes, share it to a gallery as a VM image version" if not already selected. Then scroll down and select your compute gallery as storage.
 
@@ -188,21 +188,21 @@ Select the option "Yes, share it to a gallery as a VM image version" if not alre
 
 Scroll down on the first page to "Target VM image definition". We can create a VM image definition here based on the image we give Azure:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1f1ccd2597c1.png)
+[![jv-media-3436-1f1ccd2597c1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1f1ccd2597c1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-1f1ccd2597c1.png)
 
 We don't have to fill in that much. A name for the image is enough.
 
 After that, click on "Add" and fill in the version numer and End of life date:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-a7082405da09.png)
+[![jv-media-3436-a7082405da09.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-a7082405da09.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-a7082405da09.png)
 
 Then scroll down to the redundancy options. You can define here what type of replication you want and what type of storage:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-3a5f2ecc393d.png)
+[![jv-media-3436-3a5f2ecc393d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-3a5f2ecc393d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-3a5f2ecc393d.png)
 
 I changed the options to make it more available:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8258d0ddd5c9.png)
+[![jv-media-3436-8258d0ddd5c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8258d0ddd5c9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-compute-gallery-and-avd-vm-images-3436/jv-media-3436-8258d0ddd5c9.png)
 
 Only the latest versions will be available in the regions you choose here. Older versions are only available in the primary region (The region you can't change).
 

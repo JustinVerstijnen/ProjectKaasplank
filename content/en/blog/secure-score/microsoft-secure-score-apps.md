@@ -18,7 +18,7 @@ Remember, having a secure score of 100% doesn't mean 100% security. This only me
 
 At the start of this page, my current Secure Score overview looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
+[![jv-media-5293-cf5c9fb82ed1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
 ---
 
@@ -26,7 +26,7 @@ At the start of this page, my current Secure Score overview looks like this:
 
 Let's check first which requirements we have to address. Go to <https://security.microsoft.com/securescore> and select Apps to only get the "Apps" category recommendations.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-617a3b38a36a.png)
+[![jv-media-5349-617a3b38a36a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-617a3b38a36a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-617a3b38a36a.png)
 
 This gets us 56 recommendations, where around 20 are already addressed by the default settings. We still have 36 recommendations to so which we will do per application.
 
@@ -36,11 +36,11 @@ This gets us 56 recommendations, where around 20 are already addressed by the de
 
 We can select the Exchange Online recommendations only in the filter:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-11890f91a865.png)
+[![jv-media-5349-11890f91a865.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-11890f91a865.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-11890f91a865.png)
 
 This are 8 recommendations which we will perform now. Most of these recommendations are setting which we will have to set. They can have impact on end-users so be aware of that.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-377c5978938d.png)
+[![jv-media-5349-377c5978938d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-377c5978938d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-377c5978938d.png)
 
 ---
 
@@ -50,11 +50,11 @@ Go to the Exchange Online admin center: <https://admin.exchange.microsoft.com>
 
 Then head to "Organization" and then "Sharing". Open the tab "Individual Sharing".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-de25b3faca80.png)
+[![jv-media-5349-de25b3faca80.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-de25b3faca80.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-de25b3faca80.png)
 
 Select the default Sharing Policy, then click on "Manage domains".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-62150531109d.png)
+[![jv-media-5349-62150531109d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-62150531109d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-62150531109d.png)
 
 Delete every rule and select the Anonymous rule. Then deselect every option and save the policy. This disables the possibility to share calendars and contacts with users from other tenants. This can be potentially dangerous and even leak (sensitive) data.
 
@@ -84,7 +84,7 @@ Get-OwaMailboxPolicy | Format-Table Name, AdditionalStorageProvidersAvailable
 
 This will return the actual state of this command.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-57f301cb7e0e.png)
+[![jv-media-5349-57f301cb7e0e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-57f301cb7e0e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-57f301cb7e0e.png)
 
 Keep the Exchange Online PowerShell window opened, as we have to do more in that PowerShell session.
 
@@ -94,7 +94,7 @@ Keep the Exchange Online PowerShell window opened, as we have to do more in that
 
 MailTips are information boxes in Outlook that warn users about possible actions. For example; they will send an email to 300 recipients, or send email messages to external email addresses. With Mailtips enabled, Outlook will hint the user that this is not possible.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6d8c20f1e86c.png)
+[![jv-media-5349-6d8c20f1e86c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6d8c20f1e86c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6d8c20f1e86c.png)
 
 This recommendation requires us to fire up Exchange Online PowerShell. You can install this module if you don't already have it: <https://www.powershellgallery.com/packages/ExchangeOnlineManagement/3.2.0>
 
@@ -110,7 +110,7 @@ Set-OrganizationConfig -MailTipsAllTipsEnabled $true -MailTipsExternalRecipients
 
 This command is now perfectly in line with the maximum outbound emails setting I described on the Identity page. Selecting more than 100 recipients will now warn the user that the email will be blocked. Perfectly in line with my recommendation here: <https://justinverstijnen.nl/?p=5338&preview=true&_thumbnail_id=5707#tip-3-restrict-amount-of-outbound-email-messages>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-47bdd7e00510.png)
+[![jv-media-5349-47bdd7e00510.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-47bdd7e00510.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-47bdd7e00510.png)
 
 Keep the Exchange Online PowerShell window opened, as we have to do more in that PowerShell session.
 
@@ -137,7 +137,7 @@ Then enable Auditing for every current shared mailbox:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Get-Mailbox -Filter * | Set-Mailbox -AuditEnabled $true
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-fac29f9dd5a9.png)
+[![jv-media-5349-fac29f9dd5a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-fac29f9dd5a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-fac29f9dd5a9.png)
 
 Keep the Exchange Online PowerShell window opened, as we have to do more in that PowerShell session.
 
@@ -151,13 +151,13 @@ To disable this, go to Exchange Online admin center: <https://admin.exchange.mic
 
 Then go to "Roles" and then "User Roles".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e265f3c7c236.png)
+[![jv-media-5349-e265f3c7c236.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e265f3c7c236.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e265f3c7c236.png)
 
 Click on the "Default Role Assignment Policy" and click on "Manage permissions".
 
 Uncheck the following three options:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-74c15a9389a1.png)
+[![jv-media-5349-74c15a9389a1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-74c15a9389a1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-74c15a9389a1.png)
 
 - My Custom Apps
 - My Marketplace Apps
@@ -173,7 +173,7 @@ The Customer Lockbock feature is a feature that allows Microsoft Engineers to ac
 
 It is true that before a support engineer can access your data, you must approve this access request and this request is given temporarily.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-100ce96c3ba4.png)
+[![jv-media-5349-100ce96c3ba4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-100ce96c3ba4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-100ce96c3ba4.png)
 
 This recommendation requires us to fire up Exchange Online PowerShell. You can install this module if you don't already have it: <https://www.powershellgallery.com/packages/ExchangeOnlineManagement/3.2.0>
 
@@ -199,7 +199,7 @@ Set-OrganizationConfig -CustomerLockboxEnabled $false
 
 We can find the Microsoft Teams recommendations in the same window by selecting "Apps" in the filter and then "Microsoft Teams":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d6f998f4f196.png)
+[![jv-media-5349-d6f998f4f196.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d6f998f4f196.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d6f998f4f196.png)
 
 ---
 
@@ -224,7 +224,7 @@ Then execute this command to set the option to match the recommendation:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Set-CsTeamsMeetingPolicy -Identity Global -AutoAdmittedUsers InvitedUsers
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-5f56c3242674.png)
+[![jv-media-5349-5f56c3242674.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-5f56c3242674.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-5f56c3242674.png)
 
 Now only invited users will be admitted to the Team meetings.
 
@@ -279,7 +279,7 @@ Then execute this command to set the option to match the recommendation:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Set-CsTeamsMeetingPolicy -Identity Global -AllowAnonymousUsersToJoinMeeting $False
 {{< /card >}}
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-12c17d365bed.png)
+[![jv-media-5349-12c17d365bed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-12c17d365bed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-12c17d365bed.png)
 
 This now forbids uninvited users from accessing your Teams meetings.
 
@@ -289,7 +289,7 @@ This now forbids uninvited users from accessing your Teams meetings.
 
 We can find the Microsoft Teams recommendations in the same window by selecting "Apps" in the filter and then "SharePoint Online":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a0765653dc29.png)
+[![jv-media-5349-a0765653dc29.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a0765653dc29.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a0765653dc29.png)
 
 These are only 2 recommendations we have to solve, which will take about 5 minutes.
 
@@ -303,11 +303,11 @@ We can configure this using the SharePoint Online Admin center. As administrator
 
 You will be directed to the SharePoint admin center. Open up "Policies" and then "Access control".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-28e5b2fd8728.png)
+[![jv-media-5349-28e5b2fd8728.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-28e5b2fd8728.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-28e5b2fd8728.png)
 
 Click on "Idle session sign-out". and enable this option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9685a60bb044.png)
+[![jv-media-5349-9685a60bb044.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9685a60bb044.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9685a60bb044.png)
 
 You can define yourself how strict this policy must be. The default is sign ou after 1 hour, but for businesses this could be somewhat short.
 
@@ -325,13 +325,13 @@ We can configure this using the SharePoint Online Admin center. As administrator
 
 You will be directed to the SharePoint admin center. Open up "Policies" and then "Access control".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-8a57ff0d5315.png)
+[![jv-media-5349-8a57ff0d5315.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-8a57ff0d5315.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-8a57ff0d5315.png)
 
 Click on "Apps that don't use modern authentication".
 
 Select "Block access" and save the settings to make them active.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-61dde62bfd55.png)
+[![jv-media-5349-61dde62bfd55.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-61dde62bfd55.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-61dde62bfd55.png)
 
 ---
 
@@ -339,11 +339,11 @@ Select "Block access" and save the settings to make them active.
 
 For Defender for Office 365 recommendations, I enabled the Strict policies tenant-wide to do a great part of the job already, but I will also manually configure all of the recommendations to give a better understanding of what Microsoft has to offer.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e516f3e36483.png)
+[![jv-media-5349-e516f3e36483.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e516f3e36483.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-e516f3e36483.png)
 
 After that, let's take a look into the specific recommendations:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-f27c2f40ef8b.png)
+[![jv-media-5349-f27c2f40ef8b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-f27c2f40ef8b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-f27c2f40ef8b.png)
 
 There are still around 20 items that have to be configured manually. I have categorized them by hand to make it easy to configure them all if you want. I also placed the headings of the policies so you can choose which requirement to configure.
 
@@ -388,19 +388,19 @@ Open the Microsoft Defender portal (<https://security.microsoft.com>)
 
 Go to "Email & collaboration" and click on "Policies & rules", then click on "Threat policies"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)
+[![jv-media-5349-273f25dc4ec4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)
 
 Then click on "Safe Links".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-379758d03e41.png)
+[![jv-media-5349-379758d03e41.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-379758d03e41.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-379758d03e41.png)
 
 Create a new policy here. Give this a good name and description:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-1ccfb4225d26.png)
+[![jv-media-5349-1ccfb4225d26.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-1ccfb4225d26.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-1ccfb4225d26.png)
 
 Advance to the next page. My advice here is to link this to the "All Company" default dynamic group. This makes the policy active for newly created users and domains as well.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)
+[![jv-media-5349-ad993259686c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)
 
 Click to the next page. Here is where all the settings are presented to you. Most of the default settings are okay which you can review. For my environment, I only enabled "Display the organization branding" at the bottom.
 
@@ -408,7 +408,7 @@ Click to the next page. Here is where all the settings are presented to you. Mos
 
 Make sure you enable the Safe Links for Teams and Office 365 Apps at this page for requirement **DO365 #2**. Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6bb221d1cdcf.png)
+[![jv-media-5349-6bb221d1cdcf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6bb221d1cdcf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6bb221d1cdcf.png)
 
 On this page you could put in a custom text for your users for warning about links in their email before opening them and potentially harm their devices and accounts or even worse.
 
@@ -426,7 +426,7 @@ Go to "Email & collaboration" and click on "Policies & rules", then click on "Th
 
 Click on "Global Settings"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d9eeb0492738.png)
+[![jv-media-5349-d9eeb0492738.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d9eeb0492738.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-d9eeb0492738.png)
 
 Enable this option and that should be it for this requirement.
 
@@ -434,7 +434,7 @@ Enable this option and that should be it for this requirement.
 
 If you are on this page already, also enable "Turn on Microsoft Defender for Office 365 in SharePoint, OneDrive and Microsoft Teams".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-30f81504d7ee.png)
+[![jv-media-5349-30f81504d7ee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-30f81504d7ee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-30f81504d7ee.png)
 
 ## DO365 #5: Ensure Safe Attachments policy is enabled
 
@@ -446,13 +446,13 @@ Go to "Email & collaboration" and click on "Policies & rules", then click on "Th
 
 Create or modify an existing policy here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-90648171212f.png)
+[![jv-media-5349-90648171212f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-90648171212f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-90648171212f.png)
 
 Give the policy a name and a description.
 
 Advance to the next page. My advice here is to link this to the "All Company" default dynamic group. This makes the policy active for newly created users and domains as well.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)
+[![jv-media-5349-ad993259686c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ad993259686c.png)
 
 Click "Next".
 
@@ -460,7 +460,7 @@ Click "Next".
 
 On the next tab we have to select the Block mode of Safe Attachments, and the best quarantine policy here would be AdminOnly.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-41ca9b71a041.png)
+[![jv-media-5349-41ca9b71a041.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-41ca9b71a041.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-41ca9b71a041.png)
 
 Finish the policy and make sure its enabled.
 
@@ -476,25 +476,25 @@ Open the Microsoft Defender portal (<https://security.microsoft.com>)
 
 Go to "Email & collaboration" and click on "Policies & rules", then click on "Threat policies"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)
+[![jv-media-5349-273f25dc4ec4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-273f25dc4ec4.png)
 
 Then click on "Anti-phishing".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c096cafea31.png)
+[![jv-media-5349-3c096cafea31.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c096cafea31.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c096cafea31.png)
 
 Create a new policy here, and give it a good name and description, and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-26a59a9384a3.png)
+[![jv-media-5349-26a59a9384a3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-26a59a9384a3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-26a59a9384a3.png)
 
 Advance to the next page. My advice here is to link this to the "All Company" default dynamic group. This makes the policy active for newly created users and domains as well.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-c0be3c703bf8.png)
+[![jv-media-5349-c0be3c703bf8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-c0be3c703bf8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-c0be3c703bf8.png)
 
 Click "Next".
 
 Set the Phishing email threshold to at least 3, and select the users/domains to protect using this setting. Ensure that the "Mailbox intelligence" setting is enabled.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-18a6fdd7dec4.png)
+[![jv-media-5349-18a6fdd7dec4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-18a6fdd7dec4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-18a6fdd7dec4.png)
 
 Then create the policy.
 
@@ -502,7 +502,7 @@ Then create the policy.
 
 This requirement wants us to set the Phishing email slider to at least 2. In my environment, I have set this to 3.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6babe929eb9c.png)
+[![jv-media-5349-6babe929eb9c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6babe929eb9c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6babe929eb9c.png)
 
 ## DO365 #9: Enable impersonated user protection
 
@@ -510,7 +510,7 @@ This requirement wants us to enable impersonated user protection. This enables u
 
 Enable this setting here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9f859b321ff0.png)
+[![jv-media-5349-9f859b321ff0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9f859b321ff0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9f859b321ff0.png)
 
 ## DO365 #10: Enable impersonated domain protection
 
@@ -518,7 +518,7 @@ This requirement wants us to enable impersonated domain protection. This is some
 
 Enable this setting here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-75ed2ac8172b.png)
+[![jv-media-5349-75ed2ac8172b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-75ed2ac8172b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-75ed2ac8172b.png)
 
 You can also add custom domains to trust them also, or enable the 2 suboptions to make it active for all domains.
 
@@ -526,7 +526,7 @@ You can also add custom domains to trust them also, or enable the 2 suboptions t
 
 This requirement wants us to enable the Intelligence option for impersonation protection, which can be found here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a79faa4ef8e4.png)
+[![jv-media-5349-a79faa4ef8e4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a79faa4ef8e4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a79faa4ef8e4.png)
 
 Enable this option in your policy to get the score.
 
@@ -534,14 +534,14 @@ Enable this option in your policy to get the score.
 
 This requirement wants us to change the quarantine policy of messages received by impersonated users. These can be changed in the anti-phishing policy here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c0dcef19519.png)
+[![jv-media-5349-3c0dcef19519.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c0dcef19519.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-3c0dcef19519.png)
 
 Then search for this option, and set it als following:
 
 - If a message is detected as user impersonation: Quarantine the message
 - Apply quarantine policy: AdminOnlyAccessPolicy
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-05a94fbd196a.png)
+[![jv-media-5349-05a94fbd196a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-05a94fbd196a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-05a94fbd196a.png)
 
 Thats all for this requirement, but do not click this window away yet.
 
@@ -554,7 +554,7 @@ Search for this option, and set it als following:
 - If a message is detected as domain impersonation: Quarantine the message
 - Apply quarantine policy: AdminOnlyAccessPolicy
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33ba467117bf.png)
+[![jv-media-5349-33ba467117bf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33ba467117bf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33ba467117bf.png)
 
 Thats all for this requirement, but do not click this window away yet.
 
@@ -568,7 +568,7 @@ Search for this option, and set it als following:
 - Apply quarantine policy: AdminOnlyAccessPolicy
 - Honor DMARC record policy: Enabled
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-2ec43bb0df3b.png)
+[![jv-media-5349-2ec43bb0df3b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-2ec43bb0df3b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-2ec43bb0df3b.png)
 
 ## DO365 #15: Enable the user impersonation safety tip
 
@@ -576,7 +576,7 @@ This requirement wants us to set the settings below DO365 #14. Scroll down to "S
 
 Enable this setting:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6854f9afbeb4.png)
+[![jv-media-5349-6854f9afbeb4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6854f9afbeb4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-6854f9afbeb4.png)
 
 - Show user impersonation safety tip
 
@@ -586,7 +586,7 @@ This requirement wants us to set the settings below DO365 #15.
 
 Enable this setting:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33b3ce412617.png)
+[![jv-media-5349-33b3ce412617.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33b3ce412617.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-33b3ce412617.png)
 
 - Show domain impersonation safety tip
 
@@ -596,7 +596,7 @@ This requirement wants us to set the settings below DO365 #16.
 
 Enable this setting:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9e7c859c53d7.png)
+[![jv-media-5349-9e7c859c53d7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9e7c859c53d7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-9e7c859c53d7.png)
 
 - Show user impersonation unusual characters safety tip
 
@@ -614,7 +614,7 @@ Go to "Email & collaboration" and click on "Policies & rules", then click on "Th
 
 Click the "Anti-spam outbound policy" and make sure this setting is disabled:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a46651403ece.png)
+[![jv-media-5349-a46651403ece.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a46651403ece.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-a46651403ece.png)
 
 You can also define here the limits of email that a user can send every hour/day. My advice is to limit this down to around 100 or 200. For more information about this: <https://justinverstijnen.nl/microsoft-secure-score-identity/tip-3-restrict-amount-of-outbound-email-messages>
 
@@ -624,7 +624,7 @@ You can also define here the limits of email that a user can send every hour/day
 
 In this requirement we hae to set notifications for certain spam that is being sent by users in your organization. You can do this also on the same page as requirement DO 365 #18.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-7463c72028b7.png)
+[![jv-media-5349-7463c72028b7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-7463c72028b7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-7463c72028b7.png)
 
 You can set here some email addresses to receive notifications about users exceeding their limits and sending spam. This is great for SOCs.
 
@@ -634,7 +634,7 @@ You can set here some email addresses to receive notifications about users excee
 
 In my environment, the secure score looks like this after setting all these recommendations.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ba521379edfa.png)
+[![jv-media-5349-ba521379edfa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ba521379edfa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-apps-5349/jv-media-5349-ba521379edfa.png)
 
 At least 100% for the Apps section :)
 

@@ -12,7 +12,7 @@ description: >
 
 Let's take a look what RDP Multipath adds to your connections:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-6509addb3606.png)
+[![jv-media-3778-6509addb3606.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-6509addb3606.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-6509addb3606.png)
 
 **Green:** The normal paths of connecting with RDP/Shortpath
 **Purple:** The paths added by RDP Multipath
@@ -38,7 +38,7 @@ Go to: *Computer Configuration \ Preferences \ Windows Settings \ Registry*
 
 Create a new registry item:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1dc01889c8d9.png)
+[![jv-media-3778-1dc01889c8d9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1dc01889c8d9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1dc01889c8d9.png)
 
 Choose the hive "HKEY\_LOCAL\_MACHINE" and in the Key Path, fill in:
 
@@ -52,7 +52,7 @@ Then select "REG\_DWORD" as value type and type in "100" in the value data field
 
 The correct configuration must look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-e3704aee3db3.png)
+[![jv-media-3778-e3704aee3db3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-e3704aee3db3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-e3704aee3db3.png)
 
 Now save this key, close the Group Policy Management console, reboot or GPupdate your session host and let's test this configuration!
 
@@ -68,15 +68,15 @@ Then go to:
 
 Create a new key here, named "**RdpCloudStackSettings**"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-c95f19fa427d.png)
+[![jv-media-3778-c95f19fa427d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-c95f19fa427d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-c95f19fa427d.png)
 
 Then create a new DWORD value:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-cc65a3bbb898.png)
+[![jv-media-3778-cc65a3bbb898.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-cc65a3bbb898.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-cc65a3bbb898.png)
 
 Name it "**SmilesV3ActivationThreshold**" and give it a value of 100 and set the Base to "Decimal":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-5a6ef3075170.png)
+[![jv-media-3778-5a6ef3075170.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-5a6ef3075170.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-5a6ef3075170.png)
 
 Save the key and close registry editor.
 
@@ -94,11 +94,11 @@ Open Microsoft Intune, go to Windows, then go to "Scripts and Remediations" amd 
 
 Click on "+ Add" to add a new script:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-efb395ed393e.png)
+[![jv-media-3778-efb395ed393e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-efb395ed393e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-efb395ed393e.png)
 
 Give the script a name and description and click on "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-66288951f95a.png)
+[![jv-media-3778-66288951f95a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-66288951f95a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-66288951f95a.png)
 
 Upload my script and then select the following options:
 
@@ -119,7 +119,7 @@ After this action, the script will be runned after synchronizing on your running
 
 After you configured RDP Multipath, you should see this in your connection window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1afec4f49317.png)
+[![jv-media-3778-1afec4f49317.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1afec4f49317.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/rdp-multipath-what-is-it-and-how-to-configure-3778/jv-media-3778-1afec4f49317.png)
 
 If Multipath is mentioned here, it means that the connection uses Multipath to connect to your session host. Please note that this may take up to 50 seconds prior to connectiong before this is visible. Your connection is first routed through the gateway and then switches to Shortpath or Multipath based on your settings.
 

@@ -28,7 +28,7 @@ The 3 most popular RDP properties which I also used a lot in the past are these 
 
 This setting enables or disables if we are allowed to use the clipboard between the local PC and the remote PC. We can find this on the tab "Device redirection":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-e9aca44e07ad.png)
+[![jv-media-4401-e9aca44e07ad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-e9aca44e07ad.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-e9aca44e07ad.png)
 
 The default option is "disabled", so text and files are not transferable between computers. Enabling this means that users this can do, but we trade in some security. We can configure this in the Azure Portal GUI or by changing the setting on the "Advanced Settings" tab.
 
@@ -62,11 +62,11 @@ Mostly the default configuration, but I like the Connection bar hided by default
 
 We can find the RDP properties in the hostpool of your environment, and then on "RDP properties":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-5784a654d692.png)
+[![jv-media-4401-5784a654d692.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-5784a654d692.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-5784a654d692.png)
 
 We can find the advanced options at the "Advanced" page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-a959f4d87150.png)
+[![jv-media-4401-a959f4d87150.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-a959f4d87150.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-rdp-properties-4401/jv-media-4401-a959f4d87150.png)
 
 ---
 

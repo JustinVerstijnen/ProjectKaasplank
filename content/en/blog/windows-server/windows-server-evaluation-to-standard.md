@@ -9,7 +9,7 @@ tags:
 description: >
   When you install a fresh Windows Server Evaluation installation from a .iso file, it will be installing the OS as a Evaluation version...
 ---
-![Powershell script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-evaluation-to-standard-71/jv-media-71-30eb3963ce1a.jpg)
+[![jv-media-71-30eb3963ce1a.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-evaluation-to-standard-71/jv-media-71-30eb3963ce1a.jpg)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-server-evaluation-to-standard-71/jv-media-71-30eb3963ce1a.jpg)
 
 When you install a fresh Windows Server installation from a .iso file, it will be installing the OS as a Evaluation version. When you want to activate the installation with a key you need to rebuild the OS and set the edition to Standard.
 

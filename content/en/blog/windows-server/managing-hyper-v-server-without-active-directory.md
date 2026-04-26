@@ -17,7 +17,7 @@ We can bypass this requirement by building these trust ourselves and so managing
 
 When you use Windows 11 Pro/Education/Enterprise, you have the option to install Hyper-V on your machine. This can be done through the features on demand window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-3b91bbf6bee4.png)
+[![jv-media-4029-3b91bbf6bee4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-3b91bbf6bee4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-3b91bbf6bee4.png)
 
 Here select the management tools and you are good to go.
 
@@ -46,11 +46,11 @@ Let's dive into these steps to make the connection work.
 
 When using Hyper-V server and logging in will present you this "sconfig" window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-efa653f60e5e.png)
+[![jv-media-4029-efa653f60e5e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-efa653f60e5e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-efa653f60e5e.png)
 
 Press number "4" here to open the "Configure Remote Management" menu. Check if "Remote Management is enabled, otherwise enable it by pressing number "1". Then press number "3" here to optionally enable ping response.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f959d8672ab5.png)
+[![jv-media-4029-f959d8672ab5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f959d8672ab5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f959d8672ab5.png)
 
 Then back on the home page, press number "2" to configure a hostname. This will be the hostname of your Hyper-V server. Do not reboot yet.
 
@@ -86,7 +86,7 @@ Get-NetAdapter | Get-NetConnectionProfile
 
 This will return the configuration of your network interface card. This must be on "NetworkCategory: Private"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-14875c5357c7.png)
+[![jv-media-4029-14875c5357c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-14875c5357c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-14875c5357c7.png)
 
 If this is Public, we need to run this command:
 
@@ -96,7 +96,7 @@ Set-NetConnectionProfile -InterfaceAlias "Wi-Fi 2" -NetworkCategory Private
 
 Change the Interface Alias to the output of your command and this will set the interface prfile to "Private" which is the least restrictive profile.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-49fedef51509.png)
+[![jv-media-4029-49fedef51509.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-49fedef51509.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-49fedef51509.png)
 
 Now the profile is "Private". Now we need to run another command to add the server to the Trustedhosts file of the workstation. We do this by executing this commands:
 
@@ -124,19 +124,19 @@ Now we would be able to connect to the server with Hyper-V.
 
 Open the Hyper-V Manager on your workstation:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-19148015ba19.png)
+[![jv-media-4029-19148015ba19.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-19148015ba19.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-19148015ba19.png)
 
 Click on "Connect to Server..." and the select another computer:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f7cae15404c2.png)
+[![jv-media-4029-f7cae15404c2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f7cae15404c2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-f7cae15404c2.png)
 
 Type in the hostname of the external computer, select connect as another user and the set the user.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-9e50cfaad8a9.png)
+[![jv-media-4029-9e50cfaad8a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-9e50cfaad8a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-9e50cfaad8a9.png)
 
 Use servername\username or ~\username which is basically the same and your password. Click OK now.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-6db436854e7e.png)
+[![jv-media-4029-6db436854e7e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-6db436854e7e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/managing-hyper-v-server-without-active-directory-4029/jv-media-4029-6db436854e7e.png)
 
 We will manage the Hyper-V server now while still being in a workgroup and non-domain joined environment.
 

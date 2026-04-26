@@ -16,7 +16,7 @@ Windows Server is a networking operating system used to set up a reliable enviro
 
 The biggest difference between Windows 11 and Windows Server 2025 is that we have a Server Manager with the ability to install different roles, which we will dive deeper into in the coming modules.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)
+[![jv-media-5721-c459f6e05624.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)
 
 This is how Windows Server 2025 looks, with the Server Manager open.
 
@@ -130,12 +130,12 @@ This one is used most often, because it gives you a server with a graphical inte
 
 This, obviously, looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)
+[![jv-media-5721-c459f6e05624.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-c459f6e05624.png)
 
 **Server Core (CLI):**
 You see this one less often. It is a command-line edition of Windows Server. It is harder to install, but after installation it can still be managed with remote tools in a GUI server. The performance of this edition is higher than Desktop Experience because it does not have a GUI and so needs to process a lot less.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-00823389522a.png)
+[![jv-media-5721-00823389522a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-00823389522a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-00823389522a.png)
 
 You see, this definitely needs some planning before deploying.
 
@@ -161,35 +161,35 @@ Write the ISO to an USB or mount your ISO file downloaded from here: <https://ww
 
 Then boot your device from this ISO/USB device.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-5b8fc8e2f68d.png)
+[![jv-media-5721-5b8fc8e2f68d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-5b8fc8e2f68d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-5b8fc8e2f68d.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-3ce35a0e7bfe.png)
+[![jv-media-5721-3ce35a0e7bfe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-3ce35a0e7bfe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-3ce35a0e7bfe.png)
 
 After some time the installation will boot:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-2d8310333e76.png)
+[![jv-media-5721-2d8310333e76.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-2d8310333e76.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-2d8310333e76.png)
 
 Select your language and click "Next" twice.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-47110208391c.png)
+[![jv-media-5721-47110208391c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-47110208391c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-47110208391c.png)
 
 Select the default option, select "I agree..and settings" and click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-bf8317560351.png)
+[![jv-media-5721-bf8317560351.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-bf8317560351.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-bf8317560351.png)
 
 Now select the edition and installation option you want, and click "Next". Notice that we have two options per edition: Server Core and Desktop Experience as [we already discussed here](#installation-options).
 
 Then click "Accept".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-37357b63eb2c.png)
+[![jv-media-5721-37357b63eb2c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-37357b63eb2c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-37357b63eb2c.png)
 
 Select the disk where you want to install Windows and click "Next". Then click "Install".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-0a6257563af9.png)
+[![jv-media-5721-0a6257563af9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-0a6257563af9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-0a6257563af9.png)
 
 The software will now be installed. After a while, we have to create a password for the local Administrator account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-64a6189841f5.png)
+[![jv-media-5721-64a6189841f5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-64a6189841f5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/WSMC-Module-1-1-Introduction-to-Windows-Server-5721/jv-media-5721-64a6189841f5.png)
 
 After that, our installation is ready and you are ready to follow the Windows Server Master Class!
 

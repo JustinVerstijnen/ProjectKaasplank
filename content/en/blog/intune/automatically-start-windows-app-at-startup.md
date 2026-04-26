@@ -18,11 +18,11 @@ To create this task/script, go to the Intune Admin center: <https://intune.micro
 
 Go to Devices -> Windows -> Scripts and remediations, then open the tab "Platform scripts".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-51c9912fd07e.png)
+[![jv-media-6832-51c9912fd07e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-51c9912fd07e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-51c9912fd07e.png)
 
 Click on "+ Add" and select "Windows 10 and later" to create a new script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-3490973267f0.png)
+[![jv-media-6832-3490973267f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-3490973267f0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-3490973267f0.png)
 
 Click "Next".
 
@@ -59,11 +59,11 @@ Upload the script to Intune and set the following options:
 2. Enforce script signature check: No
 3. Run script in 64 bit PowerShell Host: Yes
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-0bf1f24d2233.png)
+[![jv-media-6832-0bf1f24d2233.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-0bf1f24d2233.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-0bf1f24d2233.png)
 
 Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9f052328860d.png)
+[![jv-media-6832-9f052328860d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9f052328860d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9f052328860d.png)
 
 Assign the script to the group containing your devices where you want to autostart the Windows App. Then save the script.
 
@@ -73,7 +73,7 @@ Assign the script to the group containing your devices where you want to autosta
 
 After the script has been applied, which may take up to 30 minutes, and the computer has been restarted, the Windows app will start automatically when the user logs in, automating the process and eliminating the startup wait time.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9c54e9225ca2.png)
+[![jv-media-6832-9c54e9225ca2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9c54e9225ca2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/automatically-start-windows-app-at-startup-6832/jv-media-6832-9c54e9225ca2.png)
 
 ---
 

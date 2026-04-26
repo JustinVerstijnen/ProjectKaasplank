@@ -59,23 +59,23 @@ Assuming you already [have the FSLogix Rule Editor installed](#appendix-installi
 
 - Open up the "FSLogix Apps Rule Editor" on your testing machine.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-9ec04c3777c1.png)
+[![jv-media-3582-9ec04c3777c1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-9ec04c3777c1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-9ec04c3777c1.png)
 
 As this is a completely new instance, we must create a new rule by clicking the "New" button. Choose a place to save the rule and give it a name. I start with hiding Google Chrome according to the table.
 
 After saving your rule, we get the following window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-08cc30ff609a.png)
+[![jv-media-3582-08cc30ff609a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-08cc30ff609a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-08cc30ff609a.png)
 
 Select the option "Choose from installed programs", then select Google Chrome and then click on Scan. Now something very interesting happens, the program scans for the whole application and comes up with all information, from installation directory to shortcuts and registry keys:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-37e7bb917b37.png)
+[![jv-media-3582-37e7bb917b37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-37e7bb917b37.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-37e7bb917b37.png)
 
 This means we use a very robust way of hiding everything for a user, even for non-authorized users like a hacker.
 
 Now repeat those steps for the other applications, by creating a rule for every application like I did:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7d62eb0d757d.png)
+[![jv-media-3582-7d62eb0d757d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7d62eb0d757d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7d62eb0d757d.png)
 
 In the next step we will apply the security to those rules to make them effective.
 
@@ -87,7 +87,7 @@ Now that we have the rules themselves in place, we now must decide when users ar
 
 When still in the FSLogix Rule Editor application, select the first rule (in my case Chrome) and click on "Manage Assignments".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-14e34f3e7e09.png)
+[![jv-media-3582-14e34f3e7e09.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-14e34f3e7e09.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-14e34f3e7e09.png)
 
 In this window we must do several steps:
 
@@ -97,29 +97,29 @@ In this window we must do several steps:
 
 Let's do this step by step:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-ce5237fca3d5.png)
+[![jv-media-3582-ce5237fca3d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-ce5237fca3d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-ce5237fca3d5.png)
 
 Select "Everyone" and click on remove.
 
 Then click on "Add" and select "Group".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4d1cab0779d7.png)
+[![jv-media-3582-4d1cab0779d7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4d1cab0779d7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4d1cab0779d7.png)
 
 Then search for the group that must get access to the Google Chrome applicastion. In my example, these are the "Front Office" and "Sales" groups. Click the "User" icon to search the Active Directory.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-47611e9b937f.png)
+[![jv-media-3582-47611e9b937f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-47611e9b937f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-47611e9b937f.png)
 
 Then type in a part of your security group name and click on "OK":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4e32de46c55f.png)
+[![jv-media-3582-4e32de46c55f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4e32de46c55f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-4e32de46c55f.png)
 
 Add all your security groups in this way will they are all on the FSLogix Assignments page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-64bc04e7f054.png)
+[![jv-media-3582-64bc04e7f054.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-64bc04e7f054.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-64bc04e7f054.png)
 
 Now we must configure that the hiding rules does NOT apply to these groups. We do this by selecting both groups and then click "Rule Set does not apply to user/group".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-cd896aebaa0f.png)
+[![jv-media-3582-cd896aebaa0f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-cd896aebaa0f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-cd896aebaa0f.png)
 
 Then click "Apply" and then "OK".
 
@@ -131,7 +131,7 @@ Repeat those steps for Firefox and Adobe Reader while keeping in mind to select 
 
 We can test the hiding rules directly and easily on the configuration machine, which is really cool. In the FSLogix Apps Rule Editor, click on the "Apply Rules to system" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f30717471fa9.png)
+[![jv-media-3582-f30717471fa9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f30717471fa9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f30717471fa9.png)
 
 ### Testing - System
 
@@ -156,7 +156,7 @@ We now must deploy the rules to the workstations where our end users work on. We
 - .fxr file containing the hiding rules/actions
 - .fxa file containing the group assignments (for who to or not to hide)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7416a8511d19.png)
+[![jv-media-3582-7416a8511d19.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7416a8511d19.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-7416a8511d19.png)
 
 The best way is to host those files on a fileshare on or an Azure Storage account, and deploy them with Group Policy Files.
 
@@ -174,13 +174,13 @@ We will now create a fileshare on our server and place the hiding rules there. W
 
 I created a folder in C:\ named **Shares**, then created a folder "**Systems Management**" and then "**FSLogix Rules**". The location doesn't matter, it must be shared and authenticated users must have read access.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-6ed647808c43.png)
+[![jv-media-3582-6ed647808c43.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-6ed647808c43.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-6ed647808c43.png)
 
 Then I shared the folder "**Systems Management**", set Full Control to everyone on the SMB permissions and then gave "Authenticated Users" read access on the NTFS permissions.
 
 Then I placed the files on the shared folder to make them accessible for the Azure Virtual Desktop hosts.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-822c0bac95c9.png)
+[![jv-media-3582-822c0bac95c9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-822c0bac95c9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-822c0bac95c9.png)
 
 Let's create the rule deployment Group Policy.
 
@@ -190,11 +190,11 @@ Let's create the rule deployment Group Policy.
 
 Now we can open the Group Policy Management console (gpmc.msc) on our management server. We can create a new GPO for this purpose. I do this on the OU Azure Virtual Desktop, thats where my hosts reside.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-456d0a37df40.png)
+[![jv-media-3582-456d0a37df40.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-456d0a37df40.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-456d0a37df40.png)
 
 Give it a good and describing name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-d5df3e5f7b85.png)
+[![jv-media-3582-d5df3e5f7b85.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-d5df3e5f7b85.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-d5df3e5f7b85.png)
 
 Then edit the Group Policy by right clicking and then click "Edit". Navigate to:
 
@@ -202,7 +202,7 @@ Then edit the Group Policy by right clicking and then click "Edit". Navigate to:
 
 Create a new file here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f1e50f57e35c.png)
+[![jv-media-3582-f1e50f57e35c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f1e50f57e35c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-f1e50f57e35c.png)
 
 Now we must do this 6 times as we have 6 files. We have to tell Windows where to fetch the file and where the destination must be on the local machine/session host.
 
@@ -227,7 +227,7 @@ So in my case this must be:
 
 Now paste in the source and destination paths both including the file name as I did for all 6 files. It should look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-293a62a4fa70.png)
+[![jv-media-3582-293a62a4fa70.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-293a62a4fa70.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-293a62a4fa70.png)
 
 We are done and the files will be deployed the first time Group Policy is updated.
 
@@ -255,13 +255,13 @@ Google Chrome is hided, but Firefox and Adobe Reader are still available to me a
 
 In the official FSLogix package, the FSLogix rule editor tool is included as separate installation. You can find it here: <https://aka.ms/fslogix-latest>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-e097159ce572.png)
+[![jv-media-3582-e097159ce572.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-e097159ce572.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-e097159ce572.png)
 
 You need to install this on a testing machine which **contains the same applications** as your session host. In my work, we deploy session hosts first to a testing environment before deploying into production. I do the rule configuration there and installed the tool on the first testing session host.
 
 After installing, the tool is available on your machine:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-1c25e8bbab4e.png)
+[![jv-media-3582-1c25e8bbab4e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-1c25e8bbab4e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-fslogix-app-masking-to-hide-applications-on-virtual-desktops-3582/jv-media-3582-1c25e8bbab4e.png)
 
 ---
 

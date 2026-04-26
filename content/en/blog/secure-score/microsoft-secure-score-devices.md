@@ -20,7 +20,7 @@ Remember, having a secure score of 100% doesn't mean 100% security. This only me
 
 Starting this page, my Secure Score for Devices overview is already at 80% (due to strict policies I already created myself to play around):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-cddc888d1bb6.png)
+[![jv-media-5375-cddc888d1bb6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-cddc888d1bb6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-cddc888d1bb6.png)
 
 ---
 
@@ -28,7 +28,7 @@ Starting this page, my Secure Score for Devices overview is already at 80% (due 
 
 The current recommendations that I have to address are 20 of the 104 total items:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-1e04d2d93836.png)
+[![jv-media-5375-1e04d2d93836.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-1e04d2d93836.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-1e04d2d93836.png)
 
 For the devices pillar, we have the Endpoints/Vulnerability Management overview which also gives us the action to take to resolve them: <https://security.microsoft.com/security-recommendations>
 
@@ -46,7 +46,7 @@ It may be very boring to do this by hand, but is actually very useful to learn. 
 
 The first recommendation was to update Windows. This was indeed the case for my device:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-82f9c8565c37.png)
+[![jv-media-5375-82f9c8565c37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-82f9c8565c37.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-82f9c8565c37.png)
 
 This is pretty straight forward and doesn't need further explaination I think. You can automate this process using Windows Update Rings in Intune.
 
@@ -58,11 +58,11 @@ This recommendation states we may not store credentials locally, actually disabl
 
 Open Microsoft Intune, create a new policy for Windows or use an existing one and find this option:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-689dfceab761.png)
+[![jv-media-5375-689dfceab761.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-689dfceab761.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-689dfceab761.png)
 
 Select the setting, and then set it to "1" to enable forbidding to store credentials.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-741d93c24ab2.png)
+[![jv-media-5375-741d93c24ab2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-741d93c24ab2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-741d93c24ab2.png)
 
 Save the policy and assign this to your devices.
 
@@ -76,7 +76,7 @@ You can achieve this by searching for this option:
 
 - DisableIPSourceRouting IPv6
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-eac647e4d34e.png)
+[![jv-media-5375-eac647e4d34e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-eac647e4d34e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-eac647e4d34e.png)
 
 Then select the option and enable it, then set it to the highest protection as the recommendation states.
 
@@ -90,7 +90,7 @@ You can find this setting by searching for:
 
 - Apply UAC restrictions to
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-142af05e7b33.png)
+[![jv-media-5375-142af05e7b33.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-142af05e7b33.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-142af05e7b33.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -105,7 +105,7 @@ Search for the Windows Firewall settings, and select these two settings:
 - Allow local Ipsec Policy Merge: Disable
 - Allow local policy merge: Disable
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-2f07b7519cd5.png)
+[![jv-media-5375-2f07b7519cd5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-2f07b7519cd5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-2f07b7519cd5.png)
 
 ---
 
@@ -117,7 +117,7 @@ Search for:
 
 - Scan removable devices
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-51b37e96737b.png)
+[![jv-media-5375-51b37e96737b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-51b37e96737b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-51b37e96737b.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -131,7 +131,7 @@ Search for:
 
 - Configure Solicited Remote Assistance
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-c80e8aac007d.png)
+[![jv-media-5375-c80e8aac007d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-c80e8aac007d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-c80e8aac007d.png)
 
 Select the option on the right and then disable it on the left.
 
@@ -145,7 +145,7 @@ Search for:
 
 - Network Security LAN Manager Authentication Level
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-faec15f8460d.png)
+[![jv-media-5375-faec15f8460d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-faec15f8460d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-faec15f8460d.png)
 
 Select the option on the right and then select "Send NTLMv2 responses only. Refuse LM and NTLM".
 
@@ -157,7 +157,7 @@ This recommendation wants us to set the AutoRun behaviour to "Disabled". AutoRun
 
 - Search for Autoplay
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e87c3b1d018b.png)
+[![jv-media-5375-e87c3b1d018b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e87c3b1d018b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e87c3b1d018b.png)
 
 Then set the settings as follows:
 
@@ -177,7 +177,7 @@ This recommendation wants us to block untrusted and unsigned processes from runn
 
 - Search for "Block untrusted and unsigned processes that run from USB"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e273976877ad.png)
+[![jv-media-5375-e273976877ad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e273976877ad.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-e273976877ad.png)
 
 Select the option on the right and then Block it on the left.
 
@@ -191,7 +191,7 @@ Search for the setting:
 
 - Turn on e-mail scanning
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-730526457c9c.png)
+[![jv-media-5375-730526457c9c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-730526457c9c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-730526457c9c.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -205,7 +205,7 @@ Search for the setting:
 
 - Block Win32 API calls from Office macros
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-b4c01a2aafeb.png)
+[![jv-media-5375-b4c01a2aafeb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-b4c01a2aafeb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-b4c01a2aafeb.png)
 
 Select the option on the right and then Block it on the left.
 
@@ -219,7 +219,7 @@ Search for the setting:
 
 - Block executable files from running unless they meet a prevalence, age or trusted list criterion
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-35802fb9e073.png)
+[![jv-media-5375-35802fb9e073.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-35802fb9e073.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-35802fb9e073.png)
 
 Select the option on the right and then block it on the left.
 
@@ -233,7 +233,7 @@ Search for the setting:
 
 - Credential Guard
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-68ed4eb67731.png)
+[![jv-media-5375-68ed4eb67731.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-68ed4eb67731.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-68ed4eb67731.png)
 
 Select the option on the right and then enable it on the left (with or without UEFI lock)
 
@@ -251,7 +251,7 @@ Search for the setting
 
 - User Account Control Behaviour Of The Elevation Prompt For Standard Users
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-7e203e86da31.png)
+[![jv-media-5375-7e203e86da31.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-7e203e86da31.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-7e203e86da31.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -265,7 +265,7 @@ Search for the setting
 
 - Allow Full Scan Removable Drive Scanning
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-21fcd717b28f.png)
+[![jv-media-5375-21fcd717b28f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-21fcd717b28f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-21fcd717b28f.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -279,7 +279,7 @@ Search for the setting
 
 - Require additional authentication on startup
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-ccfe438c3532.png)
+[![jv-media-5375-ccfe438c3532.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-ccfe438c3532.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-ccfe438c3532.png)
 
 Select the option on the right and then enable it on the left.
 
@@ -289,11 +289,11 @@ Select the option on the right and then enable it on the left.
 
 This recommendation wants us to enforce a minimum Windows PIN of 6 characters. A minimum startup PIN length of six characters is enforced, increasing resistance to brute-force and guess-based attacks during pre-boot authentication.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-26d8befed9a2.png)
+[![jv-media-5375-26d8befed9a2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-26d8befed9a2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-26d8befed9a2.png)
 
 This can be found under the Drive Encryption settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-9d1bc90bdf86.png)
+[![jv-media-5375-9d1bc90bdf86.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-9d1bc90bdf86.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-devices-5375/jv-media-5375-9d1bc90bdf86.png)
 
 ---
 

@@ -43,19 +43,19 @@ Let's compare what is included in this new Windows Backup for Organizations feat
 
 To configure this new and great setting, go to Microsoft Intune and create a new configuration policy for Windows devices:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-356f5c27290c.png)
+[![jv-media-4926-356f5c27290c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-356f5c27290c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-356f5c27290c.png)
 
 Then select Windows 10 and later, and the profile type "Settings catalog".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7565b07545fc.png)
+[![jv-media-4926-7565b07545fc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7565b07545fc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7565b07545fc.png)
 
 Then click on create. Give the policy a name and a good description for your own documentation.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0afd9aed7a77.png)
+[![jv-media-4926-0afd9aed7a77.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0afd9aed7a77.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0afd9aed7a77.png)
 
 Click Next.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-96bd918a4c3e.png)
+[![jv-media-4926-96bd918a4c3e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-96bd918a4c3e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-96bd918a4c3e.png)
 
 On the "Configuration settings" tab, click on "+ Add settings". Navigate to this setting:
 
@@ -63,7 +63,7 @@ On the "Configuration settings" tab, click on "+ Add settings". Navigate to this
 
 Then lookup the setting-name: "Enable Windows Backup" and select it.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7de5f7fed5a9.png)
+[![jv-media-4926-7de5f7fed5a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7de5f7fed5a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-7de5f7fed5a9.png)
 
 You can now enable the setting which will enable it on your device.
 
@@ -77,7 +77,7 @@ After enabling the the devices to make their back-up, we also need to configure 
 
 Head to Windows Devices -> Enrollment -> Windows Backup and Restore (preview)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-09fe9f14892e.png)
+[![jv-media-4926-09fe9f14892e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-09fe9f14892e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-09fe9f14892e.png)
 
 Select "On" to show the restore page. This will prompt the user (when an active backup is made) to restore their old configuration ath the Windows Out of the Box experience screen (OOBE)
 
@@ -87,7 +87,7 @@ Save the configuration to make this active.
 
 Users can also manually configure this new Backup in the Windows Settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-6a51e24ace0f.png)
+[![jv-media-4926-6a51e24ace0f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-6a51e24ace0f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-6a51e24ace0f.png)
 
 This is the overview after I have configured it in Intune and synced to my device. It automatically enabled the feature and should be ready to restore in case I'll do a reinstall of my computer.
 
@@ -97,21 +97,21 @@ This is the overview after I have configured it in Intune and synced to my devic
 
 To restore the back-up made by Windows Backup for Organizations, let's install a second laptop (JV-LPT-002) with the latest Windows updates (25H2).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-e431ba6f8116.png)
+[![jv-media-4926-e431ba6f8116.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-e431ba6f8116.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-e431ba6f8116.png)
 
 Now I will login to Windows with the same account as I logged in to the first laptop (JV-LPT-001).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0fda63498d22.png)
+[![jv-media-4926-0fda63498d22.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0fda63498d22.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-0fda63498d22.png)
 
 After succeeding the MFA challenge, Windows will process the changes and will get the additional information from our tenant.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-f1ed2fb6d291.png)
+[![jv-media-4926-f1ed2fb6d291.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-f1ed2fb6d291.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-f1ed2fb6d291.png)
 
 Then Windows will present you the options to restore a previously made backup. To get a better picture, I have made a second backup on a VM.
 
 Now I will select the backup from the first laptop and click "Continue".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-2b3eca55c5e2.png)
+[![jv-media-4926-2b3eca55c5e2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-2b3eca55c5e2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-2b3eca55c5e2.png)
 
 Now the backup will be restored.
 
@@ -121,7 +121,7 @@ Now the backup will be restored.
 
 After the backup has been restored, this was the state on the laptop without any manual change. It synced the dark mode I configured, the installed Windows Store apps, the Windows taskbar to the left and my nice holiday picture. All without any manual action after restoring.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-fd1f6406587c.png)
+[![jv-media-4926-fd1f6406587c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-fd1f6406587c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-fd1f6406587c.png)
 
 As you can see, installing an new computer is alot easier with this new feature. We can easily restore an this configuration and minimizes the configuration we need to do for our new computer or installation.
 
@@ -131,7 +131,7 @@ As you can see, installing an new computer is alot easier with this new feature.
 
 The Windows Out of the Box experience screen is the first you'll see when going to a fresh Windows installation. We can take screenshots here but with a little difficult.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-8d8d7f87f097.png)
+[![jv-media-4926-8d8d7f87f097.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-8d8d7f87f097.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/configure-windows-backup-for-organizations-in-intune-4926/jv-media-4926-8d8d7f87f097.png)
 
 You can do this by pressing Shift + F10 or Shift + Fn + F10. A cmd window will the open.
 

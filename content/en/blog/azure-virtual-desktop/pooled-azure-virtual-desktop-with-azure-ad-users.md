@@ -65,7 +65,7 @@ As you might think, there are indeed some security risks with this setup;
 - The session host has full control over all user disks, not locked down to user1 only access to disk of user1 etc.
 - The storage account access key is saved in the machine and does not rotate periodically
 
-![Cloud only setup security warning](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff89fe30062e.png)
+[![jv-media-1947-ff89fe30062e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff89fe30062e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff89fe30062e.png)
 
 However, we want to learn something so we are still going to configure this cloud only setup. But take great care when bringing this into production.
 
@@ -75,13 +75,13 @@ However, we want to learn something so we are still going to configure this clou
 
 My environment looks like this before the guide. I already have created the needed resources to perform the tasks:
 
-![Azure resources before the guide](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1f756f47544b.png)
+[![jv-media-1947-1f756f47544b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1f756f47544b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1f756f47544b.png)
 
 So I created the hostpool, a network, the workspace and a demo VM to test this configuration with.
 
 The hostpool must be an Entra ID joined hostpool, which you can configure at the creation wizard of the hostpool:
 
-![Create Entra ID joined hostpool](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-44beae2aa00a.png)
+[![jv-media-1947-44beae2aa00a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-44beae2aa00a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-44beae2aa00a.png)
 
 I also highly recommend using the "Enroll VM with Intune" option so we can manage the session hosts with Intune, as we don't have Group Policies in this cloud only setup.
 
@@ -98,19 +98,19 @@ In addition, our test user must have access to the Desktop application group in 
 
 In this case, we are going to create our test user and assign him the default, non administrative role:
 
-![Create test user](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-5096138430ae.png)
+[![jv-media-1947-5096138430ae.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-5096138430ae.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-5096138430ae.png)
 
 Now that the user is created, go to the Azure Portal, and then to the resource group where your session hosts lives:
 
-![Go to resource group access control](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-20b1d4f35b7a.png)
+[![jv-media-1947-20b1d4f35b7a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-20b1d4f35b7a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-20b1d4f35b7a.png)
 
 Click on "+ Add" and then on "add role assignment":
 
-![Add role assignment](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-c97c9c238cbf.png)
+[![jv-media-1947-c97c9c238cbf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-c97c9c238cbf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-c97c9c238cbf.png)
 
 Then click on "Next" and under "User, group or service principal" select your user or user group:
 
-![Select user for role assignment](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1ece4c34e856.png)
+[![jv-media-1947-1ece4c34e856.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1ece4c34e856.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-1ece4c34e856.png)
 
 Click on "Review + assign" to assign the role to your users.
 
@@ -120,11 +120,11 @@ Now we navigate to our Hostpool to give our user access to the desktops.
 
 Go to "Application Groups", and then to our Hostpool DAG:
 
-![Application group in hostpool](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff00e0e18dda.png)
+[![jv-media-1947-ff00e0e18dda.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff00e0e18dda.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ff00e0e18dda.png)
 
 Click on "+ Add" to add our user or user group here:
 
-![Add user to application group](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8e73957a59a9.png)
+[![jv-media-1947-8e73957a59a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8e73957a59a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8e73957a59a9.png)
 
 Select your user or group here and save. The user/group is now allowed to logon to the hostpool and get the workspace in the Windows App.
 
@@ -138,7 +138,7 @@ Before we can configure the session hosts in Microsoft Intune, we need to have a
 
 Go to Microsoft Entra and then to groups:
 
-![Microsoft Entra groups](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a9076b80ed92.png)
+[![jv-media-1947-a9076b80ed92.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a9076b80ed92.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a9076b80ed92.png)
 
 Create a new "Dynamic Device" security group and add the following query:
 
@@ -150,11 +150,11 @@ This ensures no other device comes into the group by accident or by a wrong name
 
 This looks like this:
 
-![Dynamic device group membership rule](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4104ca102e33.png)
+[![jv-media-1947-4104ca102e33.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4104ca102e33.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4104ca102e33.png)
 
 Validate your rule by testing these rules on the "Validate Rules" tab:
 
-![Validate dynamic group rules](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-edb0bc453fcb.png)
+[![jv-media-1947-edb0bc453fcb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-edb0bc453fcb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-edb0bc453fcb.png)
 
 Now we are 100% sure our session host will join the group automatically but a Windows 11 laptop for example not.
 
@@ -170,13 +170,13 @@ If you choose to download the FSLogix configuration template, you need to change
 
 To configure this manually create a new configuration template from scratch for Windows 10 and higher and use the "Settings catalog"
 
-![Create Intune settings catalog profile](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a42a2435f3b0.png)
+[![jv-media-1947-a42a2435f3b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a42a2435f3b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-a42a2435f3b0.png)
 
 Give the profile a name and description and advance.
 
 Click on "Add settings" and navigate to the FSLogix policy settings.
 
-![Add FSLogix policy settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2e2308b11a0b.png)
+[![jv-media-1947-2e2308b11a0b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2e2308b11a0b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2e2308b11a0b.png)
 
 ### Profile Container settings
 
@@ -194,7 +194,7 @@ Under FSLogix -> Profile Containers, select the following settings, enable them 
 | Roam Search | Disabled |
 | VHD Locations | Your storage account and share in UNC. Mine is here: `\\sajvavdcloudonly.file.core.windows.net\fslogix-profiles` |
 
-![FSLogix profile container settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-73dd9e3f30a6.png)
+[![jv-media-1947-73dd9e3f30a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-73dd9e3f30a6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-73dd9e3f30a6.png)
 
 ### Container naming settings
 
@@ -207,13 +207,13 @@ Under FSLogix -> Profile Containers -> Container and Directory Naming, select th
 | VHD Name Pattern | `%username%` |
 | Volume Type (VHD or VHDX) | VHDX |
 
-![FSLogix container naming settings](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-04e4eeaeb097.png)
+[![jv-media-1947-04e4eeaeb097.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-04e4eeaeb097.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-04e4eeaeb097.png)
 
 You can defer from this configuration to fit your needs, this is purely how I configured FSLogix.
 
 After configuring the settings, advance to the "Assignments" tab:
 
-![Assign Intune configuration profile](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-eea62074fa32.png)
+[![jv-media-1947-eea62074fa32.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-eea62074fa32.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-eea62074fa32.png)
 
 Select your group here as "Included group" and save.
 
@@ -260,25 +260,25 @@ Change the information on line 5, 8 and 11 and save the script as .ps1 file or d
 
 You can find the information for line 5 and 11 in the Azure Portal by going to your Storage Account, and then "Access Keys":
 
-![Storage account access keys](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-671744095216.png)
+[![jv-media-1947-671744095216.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-671744095216.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-671744095216.png)
 
 For line 8, you can go to Data Storage -> File Shares:
 
-![Storage account file shares](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-bd668f70132f.png)
+[![jv-media-1947-bd668f70132f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-bd668f70132f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-bd668f70132f.png)
 
 If you don't have a fileshare yet, this is the time to create one.
 
 Paste this information in the script and save the script. It should look like this:
 
-![PowerShell script filled in](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-713e60002afb.png)
+[![jv-media-1947-713e60002afb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-713e60002afb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-713e60002afb.png)
 
 Go to Intune and navigate to the "Scripts and Remediations" and then to the tab "Platform scripts". Then add a new script:
 
-![Add Intune platform script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4a86325c01a6.png)
+[![jv-media-1947-4a86325c01a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4a86325c01a6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-4a86325c01a6.png)
 
 Give the script a name and description and advance.
 
-![Name Intune script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-077adf8fdb9e.png)
+[![jv-media-1947-077adf8fdb9e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-077adf8fdb9e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-077adf8fdb9e.png)
 
 Select the script and change the options shown in the image and as follows:
 
@@ -291,7 +291,7 @@ Advance to the "Assignments" tab:
 
 Select your session hosts dynamic group and save the script:
 
-![Assign Intune PowerShell script](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-9acd9df4f58d.png)
+[![jv-media-1947-9acd9df4f58d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-9acd9df4f58d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-9acd9df4f58d.png)
 
 ## Step 6: Let's test the result!
 
@@ -299,23 +299,23 @@ Now we are done with all of the setups and we can test our configuration. The se
 
 Configuration Profile:
 
-![Intune configuration profile status](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ec71a9c92b2a.png)
+[![jv-media-1947-ec71a9c92b2a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ec71a9c92b2a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-ec71a9c92b2a.png)
 
 PowerShell script: (This took about 30 minutes to sync into the Intune portal)
 
-![Intune PowerShell script status](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8470d924dc3b.png)
+[![jv-media-1947-8470d924dc3b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8470d924dc3b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-8470d924dc3b.png)
 
 Now that we know for sure everything is fully synchronized and performed, let's download the new Windows App to connect to our hostpool.
 
-![Windows App connection](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2044ed6cac35.png)
+[![jv-media-1947-2044ed6cac35.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2044ed6cac35.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-2044ed6cac35.png)
 
 After connecting we can see the session host indeed uses FSLogix to mount the profile to Windows:
 
-![FSLogix profile mounted in Windows](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-dfeba134f219.png)
+[![jv-media-1947-dfeba134f219.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-dfeba134f219.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-dfeba134f219.png)
 
 Also we can find a new file in the FSLogix folder on the Azure Storage Account:
 
-![FSLogix profile file in Azure Files](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-cdfc173365f0.png)
+[![jv-media-1947-cdfc173365f0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-cdfc173365f0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-cdfc173365f0.png)
 
 We have now successfully configured the Cloud only setup for Azure Virtual Desktop.
 
@@ -323,7 +323,7 @@ We have now successfully configured the Cloud only setup for Azure Virtual Deskt
 
 We can test navigating to the Azure Storage account from the session host, we will get this error:
 
-![Access denied to Azure Files share](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-0d7d4a5be021.png)
+[![jv-media-1947-0d7d4a5be021.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-0d7d4a5be021.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/pooled-azure-virtual-desktop-with-azure-ad-users-1947/jv-media-1947-0d7d4a5be021.png)
 
 This is because we try it through the context of the user which doesn't have access. So users cannot navigate to the fileshare of FSLogix because only our session host has access as system.
 

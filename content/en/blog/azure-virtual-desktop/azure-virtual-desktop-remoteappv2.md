@@ -52,7 +52,7 @@ New-ItemProperty `
 
 This should look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-f1121bf2b4af.png)
+[![jv-media-8050-f1121bf2b4af.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-f1121bf2b4af.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-f1121bf2b4af.png)
 
 ---
 
@@ -64,11 +64,11 @@ When enabled the registry key, the host must be restarted to make the changes ef
 
 Then right click the title bar and click Connection Information
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-7e7e54679130.png)
+[![jv-media-8050-7e7e54679130.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-7e7e54679130.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-7e7e54679130.png)
 
 This gives you the RDP session information, just like with full desktops.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-9e7cfcf47930.jpg)
+[![jv-media-8050-9e7cfcf47930.jpg](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-9e7cfcf47930.jpg)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-remoteappv2-8050/jv-media-8050-9e7cfcf47930.jpg)
 
 Under the Remote session type, you must see RemoteAppV2 now. Then the new enhancements are applied.
 

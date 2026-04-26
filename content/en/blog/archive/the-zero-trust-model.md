@@ -28,7 +28,7 @@ At first, those terms seem very unclear to me. To further clarify the principles
 
 The model is the best illustrated like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-zero-trust-model-555/jv-media-555-ee4818ad868b.png)
+[![jv-media-555-ee4818ad868b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-zero-trust-model-555/jv-media-555-ee4818ad868b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/the-zero-trust-model-555/jv-media-555-ee4818ad868b.png)
 
 Your security posture can be seen as a building. The principles are the foundation, and all aspects in a organization are the pillars.
 

@@ -35,7 +35,7 @@ We can categorize servers/VMs into two categories: Stateful and Stateless:
 
 Containers represent a new generation of virtualization. With Hyper-V, Azure, and VMware, we virtualize hardware, but with Containers, we virtualize the operating system. The goal is to quickly and efficiently host scalable applications.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-d663d6173042.png)
+[![jv-media-1224-d663d6173042.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-d663d6173042.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-d663d6173042.png)
 
 Some key features and benefits of using containers are:
 
@@ -58,7 +58,7 @@ Microsoft Azure offers the following container solutions:
 
 The configuration of containers in blocks is structured as follows:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-495e879b6592.png)
+[![jv-media-1224-495e879b6592.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-495e879b6592.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-495e879b6592.png)
 
 The main advantage of containers over virtual machines is that you don’t need to configure a separate operating system, network configuration, and instance settings for each deployment. All containers on the container host share the same kernel.
 
@@ -66,7 +66,7 @@ The main advantage of containers over virtual machines is that you don’t need 
 
 Instead of creating normal, software based containers it is also possible to create isolated containers. This also virtualizes the hardware. This is an option used often when on shared environments or data-protected environments:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-b3c639759012.png)
+[![jv-media-1224-b3c639759012.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-b3c639759012.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-b3c639759012.png)
 
 ---
 
@@ -74,7 +74,7 @@ Instead of creating normal, software based containers it is also possible to cre
 
 Docker is a container runtime solution that allows you to create and manage containers. This container solution can be managed via PowerShell and does not have a GUI, as it is purely a tool designed for technical professionals.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-56bd299944f8.png)
+[![jv-media-1224-56bd299944f8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-56bd299944f8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-56bd299944f8.png)
 
 ### Azure Container Registery
 
@@ -331,7 +331,7 @@ Azure Logic Apps are similar to Azure Functions, but instead of being based on c
 
 Logic Apps function as a low-code/no-code solution, similar to Power Automate, which itself is based on Azure Logic Apps. Additionally, Logic Apps offer the ability to configure connectors with external applications and services.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-41f2b2a0e962.png)
+[![jv-media-1224-41f2b2a0e962.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-41f2b2a0e962.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-8-application-services-and-containers-1224/jv-media-1224-41f2b2a0e962.png)
 
 Examples of what you can do with Logic Apps:
 

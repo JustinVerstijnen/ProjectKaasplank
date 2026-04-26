@@ -46,7 +46,7 @@ Go to the Entra Admin center (<https://entra.microsoft.com>) and go to "Groups".
 
 Create a new security group here:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7eb20ad7631f.png)
+[![jv-media-5828-7eb20ad7631f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7eb20ad7631f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7eb20ad7631f.png)
 
 You can use a assigned group if you want to manage access, or you can use a dynamic group to automate this process. Then create the group, which in my case will be used for storage permissions and hostpool access.
 
@@ -56,7 +56,7 @@ If having a larger Intune environment, it is recommended to create a Azure Virtu
 
 You can create a group with your desired name and this can be an assigned or dynamic group. An examples of dynamic group rules can be this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-24cf8477db9d.png)
+[![jv-media-5828-24cf8477db9d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-24cf8477db9d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-24cf8477db9d.png)
 {{< card code=true header="**JSON**" lang="json" >}}
 (device.displayName -startsWith "vm-jv") and (device.deviceModel -eq "Virtual Machine") and (device.managementType -eq "MDM")
 {{< /card >}}
@@ -74,15 +74,15 @@ After the group is created, we need to assign a role to the group. This role is:
 
 We will use the role "Virtual Machine User Login" in this case for normal end users. Go to the resource group where your AVD hosts are and go to "Access control (IAM)".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d2d3d01f7dd6.png)
+[![jv-media-5828-d2d3d01f7dd6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d2d3d01f7dd6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d2d3d01f7dd6.png)
 
 Click on "+ Add" and then "Add role assignment".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-49a36220a6a1.png)
+[![jv-media-5828-49a36220a6a1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-49a36220a6a1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-49a36220a6a1.png)
 
 Select the role "Virtual Machine User Login" and click on "Next". On the Members page, click on "+ Select members" and select the group with users you just created.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f047835814cc.png)
+[![jv-media-5828-f047835814cc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f047835814cc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f047835814cc.png)
 
 The role assignment is required because users will be loggin into a virtual machine. Azure requires the users to have the RBAC role for security.
 
@@ -96,25 +96,25 @@ Now we have to create a hostpool for Azure Virtual Desktop. This is a group of s
 
 In Microsoft Azure, search for "Azure Virtual Desktop".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c07dd058915c.png)
+[![jv-media-5828-c07dd058915c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c07dd058915c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c07dd058915c.png)
 
 Then click on "Create a hostpool".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d82e27d834f6.png)
+[![jv-media-5828-d82e27d834f6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d82e27d834f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d82e27d834f6.png)
 
 Fill in the details of your hostpool like a name, the region you want to host it and the hostpool type. Assuming you are here for FSLogix, select the "Pooled" type.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d3b2e6bb9b32.png)
+[![jv-media-5828-d3b2e6bb9b32.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d3b2e6bb9b32.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d3b2e6bb9b32.png)
 
 Then click "Next" to advance to the next configuration page. Here we must select if we want to deploy a virtual machine. In my case, I will do this.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-3f9788c15084.png)
+[![jv-media-5828-3f9788c15084.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-3f9788c15084.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-3f9788c15084.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-80170fef0703.png)
+[![jv-media-5828-80170fef0703.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-80170fef0703.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-80170fef0703.png)
 
 And at the end select the option "Microsoft Entra ID".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a0f3cf2d767f.png)
+[![jv-media-5828-a0f3cf2d767f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a0f3cf2d767f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a0f3cf2d767f.png)
 
 Create your local administrator account for initial or emergency access and then finish creating the hostpool.
 
@@ -124,11 +124,11 @@ Create your local administrator account for initial or emergency access and then
 
 After having the hostpool ready and the machine deploying, we have to create a storage account and fileshare for storing the FSLogix profiles. In the Azure Portal, go to Azure Files and create a new storage account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fc7826be59c7.png)
+[![jv-media-5828-fc7826be59c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fc7826be59c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fc7826be59c7.png)
 
 Then fill in the details of your storage account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01c41011088b.png)
+[![jv-media-5828-01c41011088b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01c41011088b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01c41011088b.png)
 
 I chose the Azure Files type as we don't need the other storages. We can skip to the end to create the storage account.
 
@@ -136,7 +136,7 @@ I chose the Azure Files type as we don't need the other storages. We can skip to
 
 After creating the storage account, we must do some configurations. Go to the storage account and then to "Configuration".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-df6035ae7c92.png)
+[![jv-media-5828-df6035ae7c92.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-df6035ae7c92.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-df6035ae7c92.png)
 
 Set these two options to this setting:
 
@@ -147,13 +147,13 @@ Set these two options to this setting:
 
 Navigate in the Storage account to the blade "Networking". We will limit the networks and IP addresses that can access the storage account which is by default the whole internet.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f8429a72577e.png)
+[![jv-media-5828-f8429a72577e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f8429a72577e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f8429a72577e.png)
 
 Click on "Enabled from all networks".
 
 Here select the "Enable from selected networks" option, and select your network containing your Azure Virtual Desktop hosts.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4edff7cd804b.png)
+[![jv-media-5828-4edff7cd804b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4edff7cd804b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4edff7cd804b.png)
 
 Click "Enable" to let Azure do some under the hood work (Creates a Service Endpoint for the AVD network to reach the Storage account).
 
@@ -161,7 +161,7 @@ Then click "Save" to limit access to your Storage Account only from your AVD hos
 
 Configuring this shifts the option to "Enabled from selected networks".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d675ed98c80e.png)
+[![jv-media-5828-d675ed98c80e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d675ed98c80e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-d675ed98c80e.png)
 
 ---
 
@@ -171,31 +171,31 @@ After creating, navigate to the storage account. We have to create a fileshare t
 
 Navigate to the storage account and create on "+ File share".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04e32a29172d.png)
+[![jv-media-5828-04e32a29172d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04e32a29172d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04e32a29172d.png)
 
 Give the file share a name and decide to use back-up or not. For production environments, this is highly recommended.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4bf429ce92b0.png)
+[![jv-media-5828-4bf429ce92b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4bf429ce92b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4bf429ce92b0.png)
 
 Finish the wizard to create the file share.
 
 Now we have to configure the Microsoft Entra Authentication to authenticate against the file share. Go to the storage account, then "file shares" and then click on "Identity-based access".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e63e1af047ee.png)
+[![jv-media-5828-e63e1af047ee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e63e1af047ee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e63e1af047ee.png)
 
 Select the option "Microsoft Entra Kerberos".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-0365726c05c6.png)
+[![jv-media-5828-0365726c05c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-0365726c05c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-0365726c05c6.png)
 
 Enable Microsoft Entra Kerberos on this window.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-70319ee48096.png)
+[![jv-media-5828-70319ee48096.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-70319ee48096.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-70319ee48096.png)
 
 After enabling this option, save and wait for a few minutes.
 
 Enabling this option will create a new App registration in your Entra ID.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04402341fb1c.png)
+[![jv-media-5828-04402341fb1c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04402341fb1c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-04402341fb1c.png)
 
 ---
 
@@ -207,25 +207,25 @@ Go to the Microsoft Entra portal: <https://entra.microsoft.com>
 
 Head to "App registrations" and open it. We need to give it some permissions as administrator.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-817ad6a66701.png)
+[![jv-media-5828-817ad6a66701.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-817ad6a66701.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-817ad6a66701.png)
 
 Then head to "API permissions".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c576907a3841.png)
+[![jv-media-5828-c576907a3841.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c576907a3841.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c576907a3841.png)
 
 The required permissions are already filled in by Azure, but we need to grant admin consent as administrator. This means we tell Azure that it may read our users and can use it to sign in to the File share.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a2417bb18ca6.png)
+[![jv-media-5828-a2417bb18ca6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a2417bb18ca6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a2417bb18ca6.png)
 
 Click on "Yes" to accept the permissions.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-049f60d1b5fb.png)
+[![jv-media-5828-049f60d1b5fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-049f60d1b5fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-049f60d1b5fb.png)
 
 Without granting access, the solution will not work. Even when it stated that admin consent is not required.
 
 You also need to exclude the application from your Conditional Access policies. For every policy, add it as excluded resource:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-5bcbd6e444fe.png)
+[![jv-media-5828-5bcbd6e444fe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-5bcbd6e444fe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-5bcbd6e444fe.png)
 
 In my case, the name did not pop-up so I used the Application ID instead.
 
@@ -241,11 +241,11 @@ To give users and this solution access to the storage account, we need to config
 
 Go to the Storage account, then to the file share and open the file share. For narrow security, we will give only permissions on the file share we just created some steps earlier.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01a76c3a3448.png)
+[![jv-media-5828-01a76c3a3448.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01a76c3a3448.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-01a76c3a3448.png)
 
 Open the file share and open the "Access Control (IAM)" blade and add a new role assignment.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ab8c3bbf497c.png)
+[![jv-media-5828-ab8c3bbf497c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ab8c3bbf497c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ab8c3bbf497c.png)
 
 Now search for the role named:
 
@@ -253,11 +253,11 @@ Now search for the role named:
 
 This role gives read/write access to the file share, which is the SMB protocol. We will assign this role to our created security group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b287e214a2d2.png)
+[![jv-media-5828-b287e214a2d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b287e214a2d2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b287e214a2d2.png)
 
 Click "Next" to get to the "Members" tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7cb9065194c7.png)
+[![jv-media-5828-7cb9065194c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7cb9065194c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7cb9065194c7.png)
 
 Search for your group and add it to the role. Then finish the wizard.
 
@@ -267,13 +267,13 @@ To view the profiles as administrator, we must give our accounts another role, t
 
 Again, add a new role assignment:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f5802f7dcc44.png)
+[![jv-media-5828-f5802f7dcc44.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f5802f7dcc44.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-f5802f7dcc44.png)
 
 Search for the role: **Storage File Data Privileged Contributor**
 
 Assign this to your administrator accounts:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ea30ccfa019d.png)
+[![jv-media-5828-ea30ccfa019d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ea30ccfa019d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ea30ccfa019d.png)
 
 Finish the wizard to make the assignment active.
 
@@ -287,11 +287,11 @@ Source: <https://learn.microsoft.com/en-us/azure/storage/files/storage-files-ide
 
 Go back to the storage account, click on FIle shares and then click on "Default share-level permissions"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1ce5d630cbb8.png)
+[![jv-media-5828-1ce5d630cbb8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1ce5d630cbb8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1ce5d630cbb8.png)
 
 Set the share-level permissions to "Enable permissions for all authenticated users and groups". Also select the "**Storage File Data SMB Share Contributor**" role, which includes read/write permissions.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2a51a2c7cccd.png)
+[![jv-media-5828-2a51a2c7cccd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2a51a2c7cccd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2a51a2c7cccd.png)
 
 Save the configuration, and we will now dive into the session host configuration part.
 
@@ -305,11 +305,11 @@ Now we need to configure the following setting for our AVD hosts in Intune:
 
 Go to the Intune Admin center (<https://intune.microsoft.com>). We need to create or change an existing configuration policy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-295d128cb93d.png)
+[![jv-media-5828-295d128cb93d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-295d128cb93d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-295d128cb93d.png)
 
 Search for "Kerberos" and search for the "Cloud Kerberos Ticket Retrieval" option and enable it.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7b638c62b36f.png)
+[![jv-media-5828-7b638c62b36f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7b638c62b36f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-7b638c62b36f.png)
 
 Then assign the configuration policy to your AVD hosts to apply this configuration.
 
@@ -321,13 +321,13 @@ We can now configure FSLogix in Intune. I do this by using configuration profile
 
 To configure this create a new configuration template from scratch for Windows 10 and higher and use the "Settings catalog".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-8936ff75b5c7.png)
+[![jv-media-5828-8936ff75b5c7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-8936ff75b5c7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-8936ff75b5c7.png)
 
 Give the profile a name and description and advance.
 
 Click on "Add settings" and navigate to the FSLogix policy settings.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-10b8dbc58b98.png)
+[![jv-media-5828-10b8dbc58b98.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-10b8dbc58b98.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-10b8dbc58b98.png)
 
 ### Profile Container settings
 
@@ -346,7 +346,7 @@ Under FSLogix -> Profile Containers, select the following settings, enable them 
 | Roam Search | Disabled |
 | VHD Locations | Your storage account and share in UNC. Mine is here:      \\sajvazurevirtualdesktop.file.core.windows.net\fslogix |
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b293467c80a1.png)
+[![jv-media-5828-b293467c80a1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b293467c80a1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-b293467c80a1.png)
 {{% alert color="warning" %}}
 Make sure the option "*Access Network as Computer Object*" is **Disabled**, as this is a requirement for user authentication. Otherwise the solution will not work and sign in will result in a FSLogix "Error code: 0x000000035, Message: Impossibile to find network path" error.
 {{% /alert %}}
@@ -375,17 +375,17 @@ We need to do some small final configurations, gaining access to the virtual des
 
 Go to the hostpool and then to Application Groups.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1cfdbd283cc8.png)
+[![jv-media-5828-1cfdbd283cc8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1cfdbd283cc8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-1cfdbd283cc8.png)
 
 Then open the application group that contains the desktop. Then click on "Assignments".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-776ecbcf2601.png)
+[![jv-media-5828-776ecbcf2601.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-776ecbcf2601.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-776ecbcf2601.png)
 
 Select the group to give desktop access to the users. Then save the assignment.
 
 After assigning the group we would have to do one last configuration, enabling Single Sign On on the hostpool. Go to your hostpool and open the RDP Properties
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-9e61108354a9.png)
+[![jv-media-5828-9e61108354a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-9e61108354a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-9e61108354a9.png)
 {{% alert color="info" %}}
 For a comprehensive guide about Azure Virtual Desktop and RDP Properties, visit: <https://justinverstijnen.nl/azure-virtual-desktop-rdp-properties/>
 {{% /alert %}}
@@ -404,19 +404,19 @@ drivestoredirect:s:;usbdevicestoredirect:s:;redirectclipboard:i:0;redirectprinte
 
 Now we have everything ready under the hood, we can finally connect to our hostpool. Download the Windows App [or use the webclient](https://windows.cloud.microsoft) and sign into your account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c020f277fe61.png)
+[![jv-media-5828-c020f277fe61.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c020f277fe61.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c020f277fe61.png)
 
 Also click on "Yes" on the Single sign-on prompt to allow the remote desktop connection.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-926048566019.png)
+[![jv-media-5828-926048566019.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-926048566019.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-926048566019.png)
 
 Here we are on our freshly created desktop. After connecting the FSLogix profile will be automatically created on the storage account.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a8f78c99eeec.png)
+[![jv-media-5828-a8f78c99eeec.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a8f78c99eeec.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-a8f78c99eeec.png)
 
 And this with only these resources:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-dd509eb8015b.png)
+[![jv-media-5828-dd509eb8015b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-dd509eb8015b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-dd509eb8015b.png)
 
 ---
 
@@ -424,21 +424,21 @@ And this with only these resources:
 
 In the Windows app, you get a workspace to connect to your desktop. By default, these are filled in automatically but it is possible to change the names for a better user experience.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-bd2c1be95225.png)
+[![jv-media-5828-bd2c1be95225.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-bd2c1be95225.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-bd2c1be95225.png)
 
 The red block can be changed in the Workspace -> Friendly name and the green block can be changed in the Application Group -> Application -> Session Desktop.
 
 For the red block, go to your Workspace, then to Properties and change and save the friendly name:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c5aa4cee161f.png)
+[![jv-media-5828-c5aa4cee161f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c5aa4cee161f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c5aa4cee161f.png)
 
 For the green block, go to your application groups, and then the Desktop Application Group (DAG) and select the SessionDesktop application. You can change and save the name here.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ee0a6fd91314.png)
+[![jv-media-5828-ee0a6fd91314.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ee0a6fd91314.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ee0a6fd91314.png)
 
 After refreshing the workspace, this looks a lot better to the end user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4c7bcd7e3770.png)
+[![jv-media-5828-4c7bcd7e3770.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4c7bcd7e3770.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4c7bcd7e3770.png)
 
 Building great solutions is having attention for the smallest details ;)
 
@@ -464,19 +464,19 @@ It is possible that this setup doesn't work at your first try. I have added some
 
 If you get an error like below picture, the profile failed to create or mount which can have various different causes based on the error.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4b91e6ba85c8.png)
+[![jv-media-5828-4b91e6ba85c8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4b91e6ba85c8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-4b91e6ba85c8.png)
 
 In this case, the error is "Access is denied". This is true because I did this on purpose. Check the configuration [of step 6](#6-configure-storage-permissions).
 
 When presented this type of errors, you are able to get to CMD by pressing CTRL+SHIFT+ESC and run a new task there, which is CMD.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-580b45fb9c37.png)
+[![jv-media-5828-580b45fb9c37.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-580b45fb9c37.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-580b45fb9c37.png)
 
 To check if you can navigate to the share, you can open explorer.exe here and navigate manually to the share to see if its working. If you get any authentication prompts or errors, this means that this is the reason FSLogix doesn't work either.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c76cb7e8c23e.png)
+[![jv-media-5828-c76cb7e8c23e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c76cb7e8c23e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c76cb7e8c23e.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c26a62c0d0a2.png)
+[![jv-media-5828-c26a62c0d0a2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c26a62c0d0a2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-c26a62c0d0a2.png)
 
 If not getting any FSLogix error and no profile is created in the storage account after logging in, check your FSLogix configuration [from step 8](#8-fslogix-configuration) and the assignments in Intune.
 
@@ -490,11 +490,11 @@ dsregcmd /status
 
 This returns an overview with the desktop configuration with Entra and Intune.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e17d9e2ddbef.png)
+[![jv-media-5828-e17d9e2ddbef.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e17d9e2ddbef.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e17d9e2ddbef.png)
 
 This overview shows that the Azure AD primary refresh token is active and that the Cloud TGT option is available. This must both be yes for the authentication to work.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fbfa9f3341f2.png)
+[![jv-media-5828-fbfa9f3341f2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fbfa9f3341f2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-fbfa9f3341f2.png)
 
 And to check if the Kerberos tickets is given, you can run this command:
 
@@ -504,7 +504,7 @@ klist get cifs/sajvazurevirtualdesktop.file.core.windows.net
 
 Change the name to your storage account name.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e88235b11443.png)
+[![jv-media-5828-e88235b11443.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e88235b11443.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e88235b11443.png)
 
 In my case, I get two tickets who are given to my user. If this shows nothing, there is anything wrong with your Kerberos configuration.
 

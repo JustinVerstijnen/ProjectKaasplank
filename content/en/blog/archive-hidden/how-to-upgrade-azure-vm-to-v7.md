@@ -54,7 +54,7 @@ We will start in the Azure Portal by reviewing some of the dependencies of the v
 
 For the purpose of this guide, I have created a dummy machine based on v5 which I will upgrade to v7:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-4fc8b54b9668.png)
+[![jv-media-8281-4fc8b54b9668.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-4fc8b54b9668.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-4fc8b54b9668.png)
 
 Let's check the dependencies of the existing machine now:
 
@@ -70,21 +70,21 @@ Let's check the dependencies of the existing machine now:
 
 Most dependencies can be found on the Virtual Machine overview page:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-25e2e13440e5.png)
+[![jv-media-8281-25e2e13440e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-25e2e13440e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-25e2e13440e5.png)
 
 The backup information under the Backup blade:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5fe049d0df7e.png)
+[![jv-media-8281-5fe049d0df7e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5fe049d0df7e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5fe049d0df7e.png)
 
 Make sure to note all these information as we have to partly rebuild the server using these settings.
 
 And to simulate a dependency, I have quickly setup a IIS instance on the server with a simple webpage:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-c4e39e52cba7.png)
+[![jv-media-8281-c4e39e52cba7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-c4e39e52cba7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-c4e39e52cba7.png)
 
 And then hosted this simple website from an earlier project: <https://github.com/JustinVerstijnen/JV-RickRoll>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-1ce22b512f78.png)
+[![jv-media-8281-1ce22b512f78.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-1ce22b512f78.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-1ce22b512f78.png)
 
 So our v5 server is reachable using the IP address which has also opened port 80 in the NSG.
 
@@ -96,19 +96,19 @@ Now we have to remove the current virtual machine. Be sure that you only remove 
 
 Navigate to the virtual machine and then delete the VM, and be sure to only select the virtual machine:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ae9d50d908d2.png)
+[![jv-media-8281-ae9d50d908d2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ae9d50d908d2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ae9d50d908d2.png)
 
 And then deselect everything to make sure no data is being lost:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-d67a3e5f4399.png)
+[![jv-media-8281-d67a3e5f4399.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-d67a3e5f4399.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-d67a3e5f4399.png)
 
 Now the machine will be gone but everything else has been retained:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8d1b6cc2e583.png)
+[![jv-media-8281-8d1b6cc2e583.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8d1b6cc2e583.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8d1b6cc2e583.png)
 
 Now navigate to "Network interfaces" to delete the old network interface. This will make things somewhat easier at the creation of a new virtual machine.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8b1715f57fc1.png)
+[![jv-media-8281-8b1715f57fc1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8b1715f57fc1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-8b1715f57fc1.png)
 
 This makes our Public IP freely assignable and our old NSG unassigned.
 
@@ -118,7 +118,7 @@ This makes our Public IP freely assignable and our old NSG unassigned.
 
 We will now re-create our virtual machine, based on v7 and our existing disk. Navigate to the disk through the resource group, or search for "Disks" and select your existing disk from the old machine.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2227a0badc41.png)
+[![jv-media-8281-2227a0badc41.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2227a0badc41.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2227a0badc41.png)
 
 From the disk, click "+ Create VM" to create a new VM based on this existing OS disk.
 
@@ -129,17 +129,17 @@ Make sure to have every setting similar to your old machine, especially these se
 
 And select a v7 based size.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-7577955cc0df.png)
+[![jv-media-8281-7577955cc0df.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-7577955cc0df.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-7577955cc0df.png)
 
 Click "Next". We cant change anything on the Disks page, as we create this VM based on a existing disk. Advance to the "Networking" page.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-afb0b701626b.png)
+[![jv-media-8281-afb0b701626b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-afb0b701626b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-afb0b701626b.png)
 
 Select the existing Public IP and the Network Security Group already existing. You have to select the "Advanced" NSG option. This both will not create new instances but use your resources from the old virtual machine.
 
 Now you can finish the creation of the virtual machine and this deployment will be done in seconds:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-e3f988d09684.png)
+[![jv-media-8281-e3f988d09684.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-e3f988d09684.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-e3f988d09684.png)
 
 ---
 
@@ -147,21 +147,21 @@ Now you can finish the creation of the virtual machine and this deployment will 
 
 If the IP address has been changed by Azure due to the assignment, you can now change this to your own value. My v5 machine has an IP address of 10.0.0.69. Let's configure this again:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-87b038d33c82.png)
+[![jv-media-8281-87b038d33c82.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-87b038d33c82.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-87b038d33c82.png)
 
 Go to the Virtual Machine and then to the "Networking" blade. Then open up the IP configuration settings. Note that the IP address is now 10.0.0.4.
 
 Click "ipconfig1" to configure the IP address.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-99e4071ab62f.png)
+[![jv-media-8281-99e4071ab62f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-99e4071ab62f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-99e4071ab62f.png)
 
 Select the "Static" allocation option and fill in your desired IP addrress. The VM must restart to apply this settings.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-881473c435f1.png)
+[![jv-media-8281-881473c435f1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-881473c435f1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-881473c435f1.png)
 
 Then navigate to your VM and restart the VM:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-93cf6fc11118.png)
+[![jv-media-8281-93cf6fc11118.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-93cf6fc11118.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-93cf6fc11118.png)
 
 ---
 
@@ -171,7 +171,7 @@ As the virtual machine instance has changed, there is a possibility that some se
 
 For the Backup, go to the virtual machine and check "Backup".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5f905489d932.png)
+[![jv-media-8281-5f905489d932.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5f905489d932.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-5f905489d932.png)
 
 However, in my case the backup was already enabled. I like to include this in the list of steps to be sure that your backup doesn't interrupt and prevent loss of data.
 
@@ -183,17 +183,17 @@ Now that we completely upgraded our VM instance, we can test some things to chec
 
 Let's login to our VM:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2a984925279f.png)
+[![jv-media-8281-2a984925279f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2a984925279f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-2a984925279f.png)
 
 As you can see we are now on AMD based CPU's like we selected. On the v5 I had Intel based CPUs. This is the "a" in the VM size.
 
 The VM itself works like expected. Even the webpage on the VM was available again on the same IP after the upgrade, like we configured:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ee7d51840f64.png)
+[![jv-media-8281-ee7d51840f64.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ee7d51840f64.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ee7d51840f64.png)
 
 And the machine is completely the same, but now on the faster v7 size:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ed5ce7bb3f12.png)
+[![jv-media-8281-ed5ce7bb3f12.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ed5ce7bb3f12.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-to-upgrade-azure-vm-to-v7-8281/jv-media-8281-ed5ce7bb3f12.png)
 
 ---
 

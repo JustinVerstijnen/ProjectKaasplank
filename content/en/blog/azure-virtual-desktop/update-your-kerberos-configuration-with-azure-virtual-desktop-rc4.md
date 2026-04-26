@@ -30,7 +30,7 @@ Kerberos works with tickets and those tickets can be encrypted using different e
 
 These tickets are being granted in step 3 of the diagram below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-02ede77e93c4.png)
+[![jv-media-8318-02ede77e93c4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-02ede77e93c4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-02ede77e93c4.png)
 
 ---
 
@@ -46,11 +46,11 @@ However, this scope may not be limited to Azure Files or FSLogix only. Any resou
 
 We can check our current storage account configuration in Azure to check if we still use both protocols or only the newer AES-256 option by going to the storage account:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-44bc409e4e5b.png)
+[![jv-media-8318-44bc409e4e5b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-44bc409e4e5b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-44bc409e4e5b.png)
 
 By clicking on the "Security" part, we get the overview of protocols being used by AD DS, Kerberos and SMB. This part goes about the part in the bottom right corner (Kerberos ticket encryption):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-d22556eef6b6.png)
+[![jv-media-8318-d22556eef6b6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-d22556eef6b6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-d22556eef6b6.png)
 
 If you are already using [the maximum security preset](https://justinverstijnen.nl/fslogix-and-maximum-azure-files-security/), you don't have to change anything and you are good to go for the coming updates.
 
@@ -70,7 +70,7 @@ klist get cifs/servername
 
 For example:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-0042eaa35fa2.png)
+[![jv-media-8318-0042eaa35fa2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-0042eaa35fa2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-0042eaa35fa2.png)
 
 This returns the information about the current Kerberos ticket, and as you can see at the KerbTicket Encryption Type, AES-256 is being used, which is the newer protocol.
 
@@ -109,7 +109,7 @@ In my environment, I am using a Windows 11-based AVD environment and have a Doma
 
 Although, I highly recommend performing this change during off-business hours to prevent any user interruption.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-47142f3cfe74.png)
+[![jv-media-8318-47142f3cfe74.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-47142f3cfe74.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/update-your-kerberos-configuration-with-azure-virtual-desktop-rc4-8318/jv-media-8318-47142f3cfe74.png)
 
 If the protocol is disabled and FSLogix still works, the change has been successfully done. We prepared our environment for the coming change and can now possibly troubleshoot any problems instead of a random Windows Update disabling this protocol and impacting your environment.
 

@@ -66,7 +66,7 @@ The Recovery Time Objective (RTO) defines the amount of time required to initiat
 
 The most important aspect is to thoroughly understand the application you are building in Azure. When you understand the application, you will more quickly identify improvements or detect issues. Additionally, it is crucial to know all the dependencies of the application. For example, Azure Virtual Desktop has dependencies such as Active Directory, FSLogix, and Storage.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-ec5fbbbfb334.png)
+[![jv-media-521-ec5fbbbfb334.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-ec5fbbbfb334.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-ec5fbbbfb334.png)
 
 In solutions as these, documentation is key. Ensure your organization has a proper tool to write topologies like these down.
 
@@ -111,7 +111,7 @@ To achieve resiliency in your Azure application, these constructs must always be
 
 A **Fault Domain** is a feature of **Availability Sets** and **VM Scale Sets** that ensures multiple virtual machines remain online in the event of a failure within a physical datacenter. However, true resiliency requires designing and configuring the application to handle such disruptions effectively, as fault domains are only one part of the broader resiliency strategy.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-c8f4728a267f.png)
+[![jv-media-521-c8f4728a267f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-c8f4728a267f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-c8f4728a267f.png)
 
 The white blocks represent physical server racks, each with its own power, network, and cooling systems. Each rack is considered a "Fault Domain," meaning a domain or area where a failure could impact the entire domain/area.
 
@@ -128,7 +128,7 @@ Availability Sets, Virtual Machine Scale Sets, and Fault Domains do not provide 
 
 Nearly every Microsoft Azure region has **3 Availability Zones**. These are groups of datacenters with independent power, network, and cooling systems. This allows you to make solutions **zone-redundant**, protecting your application from failures at the datacenter level. However, this redundancy and resiliency must be specifically designed. This can be done by using a method like the method below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-e1ae77533c1d.png)
+[![jv-media-521-e1ae77533c1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-e1ae77533c1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-4-resiliency-and-redundancy-521/jv-media-521-e1ae77533c1d.png)
 
 Here, we have 9 servers with the exact same role, distributed across the 3 Availability Zones in groups of 3. In this setup, if one of the three zones goes down, it will not impact the service. The remaining 6 servers in the other two zones will continue to handle the workload, ensuring uninterrupted service.
 

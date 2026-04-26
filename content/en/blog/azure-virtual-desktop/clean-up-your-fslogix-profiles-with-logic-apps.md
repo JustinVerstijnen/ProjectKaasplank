@@ -44,7 +44,7 @@ Then you can use the code to configure it completely and only change the connect
 
 The logic app looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-b42a3304a09c.png)
+[![jv-media-4167-b42a3304a09c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-b42a3304a09c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-b42a3304a09c.png)
 
 **Recurrence:** This is the trigger for the Logic App, and determines when it should run.
 
@@ -62,11 +62,11 @@ This is a relatively simple 6-step logic app where the last 2 are optional. If y
 
 The Logic App monitors this date in the Azure Portal:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-ce610617b645.png)
+[![jv-media-4167-ce610617b645.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-ce610617b645.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-ce610617b645.png)
 
 **Not** the NTFS last modified date which you will find in Windows:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9219bdbb2ed.png)
+[![jv-media-4167-c9219bdbb2ed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9219bdbb2ed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9219bdbb2ed.png)
 
 ---
 
@@ -76,11 +76,11 @@ Now we will configure this Logic App step-by step to configure it like I have do
 
 Start by creating a new Logic App in the Azure Portal. Choose the "Multi-tenant" option for the most cost-effective plan:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-484c459355ee.png)
+[![jv-media-4167-484c459355ee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-484c459355ee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-484c459355ee.png)
 
 Advance.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c1107cc66487.png)
+[![jv-media-4167-c1107cc66487.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c1107cc66487.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c1107cc66487.png)
 
 Select the right resource group, give it a name and select the right region. Then advance to the last page and create the Logic App.
 
@@ -92,15 +92,15 @@ Now that we have the Logic App, we must now configure the trigger. This states w
 
 Open the Logic App designer, and click the "Add a trigger" button.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-2ea8305dc3fb.png)
+[![jv-media-4167-2ea8305dc3fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-2ea8305dc3fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-2ea8305dc3fb.png)
 
 Search for "Recurrence" and select it.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-1ebdb5d615ea.png)
+[![jv-media-4167-1ebdb5d615ea.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-1ebdb5d615ea.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-1ebdb5d615ea.png)
 
 Then configure when the Logic App must run. In my example, I configured it to run every day on 00:00.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-097080c345f5.png)
+[![jv-media-4167-097080c345f5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-097080c345f5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-097080c345f5.png)
 
 Then save the Logic App.
 
@@ -112,11 +112,11 @@ Now we have to configure the step to connect the Logic App to the Azure Files sh
 
 Add a step under "Recurrence" by clicking the "+" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9cfd185ec7c.png)
+[![jv-media-4167-c9cfd185ec7c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9cfd185ec7c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c9cfd185ec7c.png)
 
 And then click "Add an action". Then search for "List Files" of the Azure File Storage connector. Make sure to choose the right one:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a036ab3874e7.png)
+[![jv-media-4167-a036ab3874e7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a036ab3874e7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a036ab3874e7.png)
 
 Click the "List Files" button to add the connector and configure it. We now must configure 3 fields:
 
@@ -128,11 +128,11 @@ Click the "List Files" button to add the connector and configure it. We now must
 
 This must look like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c35b7b726e7d.png)
+[![jv-media-4167-c35b7b726e7d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c35b7b726e7d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-c35b7b726e7d.png)
 
 Click on "Create new" to create the connection. Because we now have access to the storage account we can select the right folder on the share:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc9a30acff52.png)
+[![jv-media-4167-bc9a30acff52.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc9a30acff52.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc9a30acff52.png)
 
 Save the Logic App.
 
@@ -144,15 +144,15 @@ We have to add another step under the "List Files" step, called a "Filter Array"
 
 Add a "Filter Array" step from the "Data operations" connector:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-239f2c052926.png)
+[![jv-media-4167-239f2c052926.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-239f2c052926.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-239f2c052926.png)
 
 At the "From" field, click on the thunder button to add a dynamic content
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-56ce8c215fdb.png)
+[![jv-media-4167-56ce8c215fdb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-56ce8c215fdb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-56ce8c215fdb.png)
 
 And pick the "value" content of the "List Files" step.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bf455a2dc1fa.png)
+[![jv-media-4167-bf455a2dc1fa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bf455a2dc1fa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bf455a2dc1fa.png)
 
 In the "Filter query" field, make sure you are in the advanced mode through the button below and paste this line:
 
@@ -172,7 +172,7 @@ This will only keep files mofidied within 30 minutes from execution. It's up to 
 
 After pasting, it will automatically format the field:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a6c617ba56d9.png)
+[![jv-media-4167-a6c617ba56d9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a6c617ba56d9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-a6c617ba56d9.png)
 
 Save the Logic App.
 
@@ -182,11 +182,11 @@ Save the Logic App.
 
 Now we have to add the step that deletes the files. Add the "Delete file" action from the Azure File Storage connector.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-5ae8df338392.png)
+[![jv-media-4167-5ae8df338392.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-5ae8df338392.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-5ae8df338392.png)
 
 Click the "Delete files" option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc75dee9a88b.png)
+[![jv-media-4167-bc75dee9a88b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc75dee9a88b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bc75dee9a88b.png)
 
 Now on the "File" field, again click on the thunder icon to add dynamic content and add the "Body Path" option of the "Filter Array" step.
 
@@ -196,7 +196,7 @@ Make sure you select the Filter Array step, as other steps might delete ALL file
 
 This automatically transforms the "Delete files" step into a loop where it performs the action for all filtered files in the "Filter Array" step.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d544a55609ef.png)
+[![jv-media-4167-d544a55609ef.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d544a55609ef.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d544a55609ef.png)
 
 Save the Logic App.
 
@@ -208,17 +208,17 @@ We can now, if you want to receive reports of the files being deleted, add anoth
 
 Add a step called "Create HTML table" from the Data operations connector.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-9996dea11e14.png)
+[![jv-media-4167-9996dea11e14.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-9996dea11e14.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-9996dea11e14.png)
 
 Then we have to format our table:
 
 On the "From" field, again click the thunder icon to select dynamic content:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-3f49b890192f.png)
+[![jv-media-4167-3f49b890192f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-3f49b890192f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-3f49b890192f.png)
 
 From the "Filter Array" step, select the Body content. Then on the "Advanced Parameters" drop down menu, select "Columns". And after that on the "Columns" drop down menu, select "Custom":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e253833a8433.png)
+[![jv-media-4167-e253833a8433.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e253833a8433.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e253833a8433.png)
 
 We now have to add 2 columns and configure in the information the Logic App needs to fill in.
 
@@ -231,7 +231,7 @@ And in the "Value" field, click the thunder icon for dynamic content and select 
 
 This must look like this in the end:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-93ba621983a7.png)
+[![jv-media-4167-93ba621983a7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-93ba621983a7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-93ba621983a7.png)
 
 Now save the Logic app and we need to do one final step.
 
@@ -241,7 +241,7 @@ Now save the Logic app and we need to do one final step.
 
 Now we have to send all the information from previous steps by email. We have to add an action called 'Send an Email":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-78e2e55e1b19.png)
+[![jv-media-4167-78e2e55e1b19.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-78e2e55e1b19.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-78e2e55e1b19.png)
 
 Make sure to use the "Office 365 Outlook" connector and not the Outlook.com connector. Also pick the newest version available in case of multiple versions.
 
@@ -249,15 +249,15 @@ Now create a connection to a mailbox, this means logging into it.
 
 Then configure the address to send emails to, the subject and the text. I have did this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-30221280bd9f.png)
+[![jv-media-4167-30221280bd9f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-30221280bd9f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-30221280bd9f.png)
 
 Then under the line in the "Body" field, paste a new dynamic content by clicking the thunder icon:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e9f28f870ace.png)
+[![jv-media-4167-e9f28f870ace.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e9f28f870ace.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-e9f28f870ace.png)
 
 And select the "Output" option from the "Create HTML table" step which is basically the formatted table.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-97df0ab311e5.png)
+[![jv-media-4167-97df0ab311e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-97df0ab311e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-97df0ab311e5.png)
 
 Now the Output dynamic content should be under your email text, and that will be where the table is pasted.
 
@@ -273,11 +273,11 @@ Now we have configured our Logic App and we want to test this. For the testing p
 
 This states that only files modified in the last 30 minutes will be kept, and longer than 30 minutes will be deleted. This is based on the Azure Files "Last Modified" time/date.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bcc89bffa6ed.png)
+[![jv-media-4167-bcc89bffa6ed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bcc89bffa6ed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-bcc89bffa6ed.png)
 
 On the file share I have connected, there are 5 files present that acts as dummy files:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-be33190fee76.png)
+[![jv-media-4167-be33190fee76.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-be33190fee76.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-be33190fee76.png)
 
 In the portal they have a different last modified date:
 
@@ -294,19 +294,19 @@ It's now 2:39 PM on the same day, that will mean executing it now would:
 
 I ran the logic app using the manual "Run" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-abf849f68602.png)
+[![jv-media-4167-abf849f68602.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-abf849f68602.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-abf849f68602.png)
 
 It ran successfully:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-415bba422291.png)
+[![jv-media-4167-415bba422291.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-415bba422291.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-415bba422291.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d044c2df815b.png)
+[![jv-media-4167-d044c2df815b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d044c2df815b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-d044c2df815b.png)
 
 The files 1 and 2 are gone as they were not modified within 30 minutes of execution.
 
 And I have a nice little report in my email inbox what files are exactly deleted:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-90fc91f1b136.png)
+[![jv-media-4167-90fc91f1b136.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-90fc91f1b136.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/clean-up-your-fslogix-profiles-with-logic-apps-4167/jv-media-4167-90fc91f1b136.png)
 
 The last logon date is presented in UTC/Zulu timezone, but for my guide we have to add 2 hours.
 

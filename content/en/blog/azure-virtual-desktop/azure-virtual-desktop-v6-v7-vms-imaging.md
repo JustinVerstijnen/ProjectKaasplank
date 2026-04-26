@@ -53,9 +53,9 @@ This gave pretty interesting results:
 
 This result would indicate a theoretical CPU performance increase of around 55%.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-52f0abf87f8e.png)
+[![jv-media-7340-52f0abf87f8e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-52f0abf87f8e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-52f0abf87f8e.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ad2552f93fe3.png)
+[![jv-media-7340-ad2552f93fe3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ad2552f93fe3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ad2552f93fe3.png)
 
 ---
 
@@ -71,11 +71,11 @@ Let's start by creating our imaging PC. This is a temporary VM which we will do 
 
 In the Azure Portal (<https://portal.azure.com>), create a resource group if not already having one for this purpose.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-54a751e40db9.png)
+[![jv-media-7340-54a751e40db9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-54a751e40db9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-54a751e40db9.png)
 
 Now let's go to "Virtual Machines" to create a temporary virtual machine. My advice is to always use the exact same size/specs as you will roll out in the future.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-d0fd836251b7.png)
+[![jv-media-7340-d0fd836251b7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-d0fd836251b7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-d0fd836251b7.png)
 
 Create a new virtual machine using your settings. I chose the RDP top be opened so we can login to the virtual machine to install applications and such. Ensure you select the Multi-session marketplace image if you use a Pooled hostpool.
 
@@ -95,19 +95,19 @@ Now we need to do our customizations. I would advise to do this in this order:
 
 Connect to the virtual machine using RDP. You can use the Public IP assigned to the virtual machine to connect to:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-be1658b4910c.png)
+[![jv-media-7340-be1658b4910c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-be1658b4910c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-be1658b4910c.png)
 
 After logging in with the credentials you spefidied in the Azure VM wizard we are connected.
 
 First I executed the Virtual Desktop Optimization tool:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aba47fc32746.png)
+[![jv-media-7340-aba47fc32746.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aba47fc32746.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aba47fc32746.png)
 
 Then ran my script to change the language which you can find here: <https://justinverstijnen.nl/set-correct-language-and-timezone-on-azure-vm/>
 
 And finally installed the latest updates and applications. I dont like preview updates in production environments so not installed the update awaiting.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-93699f654fec.png)
+[![jv-media-7340-93699f654fec.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-93699f654fec.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-93699f654fec.png)
 
 ---
 
@@ -121,7 +121,7 @@ You can find this here:
 
 Put this line into the "Run" window and the applications opens itself.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6632f04fa2c5.png)
+[![jv-media-7340-6632f04fa2c5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6632f04fa2c5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6632f04fa2c5.png)
 
 Select "Generalize" and choose the option to shutdown the machine after completing.
 
@@ -137,7 +137,7 @@ Wait for around 15 minutes to finish decryption, then try Sysprep again.
 
 The machine will now clean itself up and then shutdown. This process can take up to 20 minutes, in the meanwhile you can advance with step 4.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-25754a9739b5.png)
+[![jv-media-7340-25754a9739b5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-25754a9739b5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-25754a9739b5.png)
 
 ---
 
@@ -147,21 +147,21 @@ Before we can capture the VM, we must first create a space for it. This is the A
 
 Go to "Azure compute galleries" and create a new ACG.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-abf230d21ce6.png)
+[![jv-media-7340-abf230d21ce6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-abf230d21ce6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-abf230d21ce6.png)
 
 Give the ACG a name and place it in the right Subscription/Resouce Group.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-e210831c54d0.png)
+[![jv-media-7340-e210831c54d0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-e210831c54d0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-e210831c54d0.png)
 
 Then click "Next".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ba5647019f2c.png)
+[![jv-media-7340-ba5647019f2c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ba5647019f2c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ba5647019f2c.png)
 
 I use the default "RBAC" option at the "Sharing" tab as I dont want to publicy share this image. With the other options, you could share images acros other tenants if you want.
 
 After finishing the wizard, create the Compute Gallery and wait for it to deploy which takes several seconds.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aa2d1ab20d6b.png)
+[![jv-media-7340-aa2d1ab20d6b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aa2d1ab20d6b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-aa2d1ab20d6b.png)
 
 ---
 
@@ -169,29 +169,29 @@ After finishing the wizard, create the Compute Gallery and wait for it to deploy
 
 We can now finally capture our VM image and store it in the just created ACG. Go back to the virtual machine you have sysprepped.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-2b087e9a2137.png)
+[![jv-media-7340-2b087e9a2137.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-2b087e9a2137.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-2b087e9a2137.png)
 
 As it is "Stopped" but not "Deallocated", we must first click "Stop" to deallocate the VM. This is because the OS itself gave the shutdown command but this does not really de-allocate the machine, and is still stand-by.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-afed8343bb0a.png)
+[![jv-media-7340-afed8343bb0a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-afed8343bb0a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-afed8343bb0a.png)
 
 Now click "Capture" and select the "Image" option.
 
 Now we get a wizard where we have to select our ACG and define our image:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1f40181c2948.png)
+[![jv-media-7340-1f40181c2948.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1f40181c2948.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1f40181c2948.png)
 
 Click on "Create new" to create a new image definition:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6543c6812cd8.png)
+[![jv-media-7340-6543c6812cd8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6543c6812cd8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-6543c6812cd8.png)
 
 Give this a name and ensure that the check for "NVMe" is checked. Checking this mark enables NVMe support, while also still maintaining the SCSI support. Finish the versioning of the image and then advance through the wizard:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-4b28f0e58e67.png)
+[![jv-media-7340-4b28f0e58e67.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-4b28f0e58e67.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-4b28f0e58e67.png)
 
 The image will then be created:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-3fd2940a9eb3.png)
+[![jv-media-7340-3fd2940a9eb3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-3fd2940a9eb3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-3fd2940a9eb3.png)
 
 ### Checking image disk controller types
 
@@ -212,7 +212,7 @@ $def.Features | Format-Table Name, Value -AutoSize
 
 This will result something like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ab54a35d32d8.png)
+[![jv-media-7340-ab54a35d32d8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ab54a35d32d8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-ab54a35d32d8.png)
 
 This states at the DiskControllerTypes that it supports both SCSI and NVMe for a broad support.
 
@@ -222,29 +222,29 @@ This states at the DiskControllerTypes that it supports both SCSI and NVMe for a
 
 After the image has captured, I removed the imaging PC from my environment as you can do in the image capture wizard. I ended up having these 3 resources left:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-491499c03840.png)
+[![jv-media-7340-491499c03840.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-491499c03840.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-491499c03840.png)
 
 These resources should be kept, where the VM image version will get newer instances as you capture more images during the lifecycle.
 
 We will now deploy a Azure Virtual Desktop hostpool with one VM in it, to test if we can select V7 machines at the wizard. Go to "host pools" and create a new hostpool if not done so already. Adding VMs to an existing hostpool is also possible.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-b0d447337788.png)
+[![jv-media-7340-b0d447337788.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-b0d447337788.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-b0d447337788.png)
 
 The next tab is more important, as we have to actually add the virtual machines there:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f7c5371d4aa9.png)
+[![jv-media-7340-f7c5371d4aa9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f7c5371d4aa9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f7c5371d4aa9.png)
 
 At the "Image" section, click on "see all images", and then select your shared image definition. This will automatically pick the newest version from the list you saved there.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f1939888cfed.png)
+[![jv-media-7340-f1939888cfed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f1939888cfed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-f1939888cfed.png)
 
 Now advance through the Azure Virtual Desktop hostpool wizard and finish.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-816587fc6379.png)
+[![jv-media-7340-816587fc6379.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-816587fc6379.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-816587fc6379.png)
 
 This will create a hostpool with the machines in it with the best specifications and highest security options available at this moment.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1ee55ab9aa01.png)
+[![jv-media-7340-1ee55ab9aa01.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1ee55ab9aa01.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-1ee55ab9aa01.png)
 
 ---
 
@@ -252,11 +252,11 @@ This will create a hostpool with the machines in it with the best specifications
 
 After the hostpool is deployed, we can check how this works now. The hostpool and machine are online:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-493b01a43573.png)
+[![jv-media-7340-493b01a43573.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-493b01a43573.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-493b01a43573.png)
 
 And looking into the VM itself, we can check if this is a newer generation of virtual machine:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-40a3dd273fdb.png)
+[![jv-media-7340-40a3dd273fdb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-40a3dd273fdb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-v6-v7-vms-imaging-7340/jv-media-7340-40a3dd273fdb.png)
 
 Now I have finished the configuration of the hostpool as described in my AVD implementation guide: <https://justinverstijnen.nl/azure-virtual-desktop-fslogix-and-native-kerberos-authentication/#9-preparing-the-hostpool>
 

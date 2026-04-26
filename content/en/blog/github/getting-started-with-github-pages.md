@@ -44,11 +44,11 @@ Open GitHub at <https://github.com/> and log in to your account.
 
 Now in the top-right corner, click on the "+" and create a new repository.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-71544fa6f0c0.png)
+[![jv-media-7057-71544fa6f0c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-71544fa6f0c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-71544fa6f0c0.png)
 
 Now give the repository a name and description.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-336ab69806c6.png)
+[![jv-media-7057-336ab69806c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-336ab69806c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-336ab69806c6.png)
 
 Now the creation of the repository is finished.
 
@@ -60,7 +60,7 @@ I will create a template site with a Rick Roll meme on it, to make the guide a l
 
 Now finish the repository creation wizard. Then click on uploading some files.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3727b98ada13.png)
+[![jv-media-7057-3727b98ada13.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3727b98ada13.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3727b98ada13.png)
 
 Download the files from my example repository:
 
@@ -68,15 +68,15 @@ Download the files from my example repository:
 
 Click "Code" and then click "Download ZIP".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-156c0dd5d8c0.png)
+[![jv-media-7057-156c0dd5d8c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-156c0dd5d8c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-156c0dd5d8c0.png)
 
 Then upload these files into your own repository.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-7547619b0106.png)
+[![jv-media-7057-7547619b0106.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-7547619b0106.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-7547619b0106.png)
 
 Your repository should have those three files in the root/main branch now:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-4cf9caf82354.png)
+[![jv-media-7057-4cf9caf82354.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-4cf9caf82354.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-4cf9caf82354.png)
 
 ---
 
@@ -84,15 +84,15 @@ Your repository should have those three files in the root/main branch now:
 
 Now we have prepared our repository to host a website, so we can enable the GitHub Pages service. In the repository, go to "Settings":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-db1042e80776.png)
+[![jv-media-7057-db1042e80776.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-db1042e80776.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-db1042e80776.png)
 
 Then go to "Pages".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-41c9ddafdcce.png)
+[![jv-media-7057-41c9ddafdcce.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-41c9ddafdcce.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-41c9ddafdcce.png)
 
 We can now build the website by selecting the branch `main` and finishing by clicking "Save".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-c5418618e94d.png)
+[![jv-media-7057-c5418618e94d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-c5418618e94d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-c5418618e94d.png)
 
 After waiting a few minutes, the website will be up and running with a `github.io` link. In the meantime, you can continue with Step 4.
 
@@ -104,7 +104,7 @@ In the meantime, the page will be built, and we can link a custom domain to our 
 
 On the same blade where you ended Step 3, fill in your custom domain. This can be a normal domain or subdomain. In my case, I will use a subdomain.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-d19da0116b59.png)
+[![jv-media-7057-d19da0116b59.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-d19da0116b59.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-d19da0116b59.png)
 
 Now we have to do a simple DNS change in our domain, linking this name to your GitHub so the whole world knows where to find your page. Head to the DNS hosting provider of your domain and create a CNAME record.
 
@@ -116,17 +116,17 @@ In my case, I created this CNAME record:
 
 Make sure to end the destination with a trailing dot `.`. This is required because it is an external domain in the context of your own domain.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-303e0fba36c8.png)
+[![jv-media-7057-303e0fba36c8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-303e0fba36c8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-303e0fba36c8.png)
 
 The TTL does not really matter. I stuck to the best practice of 60 minutes / 1 hour.
 
 Save your DNS settings and wait for a few minutes. Heading back to GitHub, you will see this in the meantime:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-9ae2180f652a.png)
+[![jv-media-7057-9ae2180f652a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-9ae2180f652a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-9ae2180f652a.png)
 
 Keep this page open. Then after waiting some minutes, and possibly getting yourself a coffee, you will see a notification that the website is up and running and live:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-e68027be8ea6.png)
+[![jv-media-7057-e68027be8ea6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-e68027be8ea6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-e68027be8ea6.png)
 
 ---
 
@@ -134,17 +134,17 @@ Keep this page open. Then after waiting some minutes, and possibly getting yours
 
 After the custom domain is successfully validated and configured, we need to enable HTTPS for a secure transfer of data to our site. Otherwise users can get this error when visiting the website:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-f4dd9f174b41.png)
+[![jv-media-7057-f4dd9f174b41.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-f4dd9f174b41.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-f4dd9f174b41.png)
 
 In the GitHub Pages blade, we have to wait for GitHub linking a certificate to your new website. I have seen cases where this takes a few minutes but also up to a few hours.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-73dffb5abca1.png)
+[![jv-media-7057-73dffb5abca1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-73dffb5abca1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-73dffb5abca1.png)
 
 After this is done, we can check this checkmark on the GitHub Pages blade:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-de324a01351b.png)
+[![jv-media-7057-de324a01351b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-de324a01351b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-de324a01351b.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3019966d219a.png)
+[![jv-media-7057-3019966d219a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3019966d219a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-github-pages-7057/jv-media-7057-3019966d219a.png)
 
 Now the site is fully up and running and secured. Yes, even if we are hosting a meme.
 

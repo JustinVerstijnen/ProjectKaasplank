@@ -14,7 +14,7 @@ description: >
 
 We can also run the SMB security on the Maximum security preset in the Azure Portal and still run FSLogix without problems. In the Azure Portal, go to the storage account and set the security of the File share to "Maximum security":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ecc337dcb41b.png)
+[![jv-media-5828-ecc337dcb41b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ecc337dcb41b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-ecc337dcb41b.png)
 
 This will only allow the AES-256-GCM SMB Channel encryption, but Windows 11 defaults to the 128 version only. We now have to tell Windows to use the better secured 256 version instead, otherwise the storage account blocks your requests and logging in isn't possible. I will do this through Intune, but you could do this with Group Policy in the same manner or with PowerShell.
 
@@ -37,7 +37,7 @@ Search for these 2 settings and select the settings:
 
 Both of these options are in different categories in Intune, altough they partly work with each other to facilitate SMB security.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2bab3dd0208e.png)
+[![jv-media-5828-2bab3dd0208e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2bab3dd0208e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-2bab3dd0208e.png)
 
 Set the Encryption to "Enabled" and paste this line into the Cipher Suites field:
 
@@ -56,7 +56,7 @@ AES_128_CCM
 
 This is stated by the local group policy editor (gpedit.msc):
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-921060904232.png)
+[![jv-media-5828-921060904232.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-921060904232.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-921060904232.png)
 
 After finishing this configuration, save the policy and assign it to the group with your session hosts. Then reboot to make this new changes active.
 
@@ -66,7 +66,7 @@ After finishing this configuration, save the policy and assign it to the group w
 
 Now that we have set the configuration, I have rebooted the Azure Virtual Desktop session host, and let the Intune settings apply. This was seconds after reboot. When logged into the hostpool the sign in was working again, using the highest SMB ecryption settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e20571c1d0a8.png)
+[![jv-media-5828-e20571c1d0a8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e20571c1d0a8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-e20571c1d0a8.png)
 
 ---
 

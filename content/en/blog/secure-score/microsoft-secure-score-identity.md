@@ -23,7 +23,7 @@ Remember, having a secure score of 100% doesn't mean 100% security. This only me
 
 Starting this page, my Secure Score overview is this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
+[![jv-media-5293-cf5c9fb82ed1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
 ---
 
@@ -249,13 +249,13 @@ In this policy, I was very strict and set the maximum limit of every user to 100
 
 After I did all the configurations described on this page, my Identity secure score was at a whopping **98.48%**.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-182187059b90.png)
+[![jv-media-5338-182187059b90.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-182187059b90.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-182187059b90.png)
 
 And the result on the overview pages:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-b9e21360e8eb.png)
+[![jv-media-5338-b9e21360e8eb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-b9e21360e8eb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-b9e21360e8eb.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-6dd51622ab23.png)
+[![jv-media-5338-6dd51622ab23.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-6dd51622ab23.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-secure-score-identity-5338/jv-media-5338-6dd51622ab23.png)
 
 ---
 

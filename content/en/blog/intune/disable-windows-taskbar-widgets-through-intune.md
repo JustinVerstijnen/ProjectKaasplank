@@ -10,7 +10,7 @@ description: >
   Today a short guide on how to disable Windows Taskbar widgets through Intune. I mean this part of the Windows 11 taskbar.
 ---
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-0e5b331ce973.png)
+[![jv-media-5551-0e5b331ce973.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-0e5b331ce973.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-0e5b331ce973.png)
 
 ---
 
@@ -24,7 +24,7 @@ Search for "widget" and these options are available:
 - News and Interests: Disable Widgets Board
 - Widgets: Allow Widgets
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-81938df80595.png)
+[![jv-media-5551-81938df80595.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-81938df80595.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-81938df80595.png)
 
 In my case, I have set all three options to disabled/Not allowed.
 
@@ -56,7 +56,7 @@ Set-ItemProperty -Path $JVRegPath -Name "AllowWidgets" -Type DWord -Value 0
 
 This sets 3 registry keys to the desired setting. In this case disabling widgets on the taskbar and lockscreen.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-dbc6f1861166.png)
+[![jv-media-5551-dbc6f1861166.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-dbc6f1861166.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-windows-taskbar-widgets-through-intune-5551/jv-media-5551-dbc6f1861166.png)
 
 After these keys are set, the computer must reboot to apply the changes.
 

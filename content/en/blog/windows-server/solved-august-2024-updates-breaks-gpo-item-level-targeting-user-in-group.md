@@ -19,7 +19,7 @@ When applying printers, registery settings or drive maps to users, we use Group 
 
 Since the updates of August 2024 this isn't working anymore:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-4e468d1e17b1.png)
+[![jv-media-342-4e468d1e17b1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-4e468d1e17b1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-4e468d1e17b1.png)
 
 We cannot select "User in group", only "computer in group". This applies only to new and existing policies. If you already have policies in place with "User in group" selected before the updates, this will still work as expected.
 
@@ -41,7 +41,7 @@ To remove this update, open Control Panel -> Programs and Features (appwiz.cpl)
 
 Click on "View installed updates"
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-dc70be5d79a7.png)
+[![jv-media-342-dc70be5d79a7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-dc70be5d79a7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-august-2024-updates-breaks-gpo-item-level-targeting-user-in-group-342/jv-media-342-dc70be5d79a7.png)
 
 Select the right update for your OS and click "Uninstall". After uninstalling the update the server has to be restarted. Make sure you perform this action in your maintenance window to decrease impact of this change.
 

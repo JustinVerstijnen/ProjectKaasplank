@@ -26,7 +26,7 @@ Storage fundamentally exists in three different types:
 
 In this chapter, we will primarily focus on **Unstructured** data.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-39c027f1677e.png)
+[![jv-media-901-39c027f1677e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-39c027f1677e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-39c027f1677e.png)
 
 ---
 
@@ -191,7 +191,7 @@ Azure File Sync can be used for two scenarios:
 
 The topology of Azure File Sync is broadly structured as follows:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-86ac42fe2a8f.png)
+[![jv-media-901-86ac42fe2a8f.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-86ac42fe2a8f.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-86ac42fe2a8f.png)
 
 ---
 
@@ -206,7 +206,7 @@ The different options:
 - **Premium SSD**
 - **Ultra SSD**
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-58b8c5aa1007.png)
+[![jv-media-901-58b8c5aa1007.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-58b8c5aa1007.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-5-storage-901/jv-media-901-58b8c5aa1007.png)
 
 Source: <https://learn.microsoft.com/nl-nl/azure/virtual-machines/disks-types#disk-type-comparison>
 

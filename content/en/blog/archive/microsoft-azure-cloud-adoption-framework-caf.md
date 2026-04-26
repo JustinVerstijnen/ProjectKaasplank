@@ -14,7 +14,7 @@ More and more organizations are moving to the cloud. In order to do this succesf
 
 The framework is a succesful order of processes and guidelines which companys can use to increase the success of adopting the cloud. The framework is described in the diagram below:
 
-![Cloud Adoption Framework](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-azure-cloud-adoption-framework-caf-230/jv-media-230-96e3366cfe69.png)
+[![jv-media-230-96e3366cfe69.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-azure-cloud-adoption-framework-caf-230/jv-media-230-96e3366cfe69.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-azure-cloud-adoption-framework-caf-230/jv-media-230-96e3366cfe69.png)
 
 The CAF has the following steps:
 

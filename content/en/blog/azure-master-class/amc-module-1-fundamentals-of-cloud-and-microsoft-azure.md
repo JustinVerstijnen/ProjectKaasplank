@@ -44,7 +44,7 @@ When we talk about cloud or "As-a-service," we mean that we are purchasing a spe
 
 What is important to understand about different cloud services is that as a customer, even though you are using a service, you are still responsible for certain areas. See the matrix below; for example, with IaaS services, you are always responsible for the operating system, applications, and data.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b887946fbc82.png)
+[![jv-media-450-b887946fbc82.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b887946fbc82.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b887946fbc82.png)
 
 In general, there are three main types of cloud services:
 
@@ -87,7 +87,7 @@ Other good scenarios for choosing the Public Cloud include:
 
 This is because prices may initially seem quite high. However, when you take into account all the factors, such as those in the image below, you’ll see that the Cloud isn’t such a crazy option after all:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-06b04e44b2a7.png)
+[![jv-media-450-06b04e44b2a7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-06b04e44b2a7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-06b04e44b2a7.png)
 
 For on-premises (local) servers, for example, you incur the following costs that you don't have in the cloud:
 
@@ -105,7 +105,7 @@ For on-premises (local) servers, for example, you incur the following costs that
 
 Microsoft Azure is an Infrastructure-as-a-Service (IaaS) cloud service designed to run compute and storage solutions.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b0a5c2995fdf.png)
+[![jv-media-450-b0a5c2995fdf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b0a5c2995fdf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-b0a5c2995fdf.png)
 
 It can serve as a replacement for physical servers and consists of dozens of different services, such as:
 
@@ -126,7 +126,7 @@ Most services in Microsoft Azure are "serverless." This means you use a service 
 
 **Microsoft Azure works with the "Pay-as-you-go" model.** This means you pay based on the usage of the cloud service and its resources. This makes the platform very flexible in terms of pricing.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-150ee8daf588.png)
+[![jv-media-450-150ee8daf588.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-150ee8daf588.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-1-fundamentals-of-cloud-and-microsoft-azure-450/jv-media-450-150ee8daf588.png)
 
 Billing by Azure to a customer or reseller happens at the **Subscription level**, and payment methods are quite limited, usually to various types of credit cards.
 

@@ -17,7 +17,7 @@ In this module, i want you to understand all the possibilities of Monitoring and
 
 Azure Monitor is a service in Azure that enables monitoring. With it, you can monitor various resources and quickly identify potential issues during an outage. Azure Monitor supports almost all resources in Azure and can, for example, retrieve event logs and metrics from the guest operating system of virtual machines.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-091a625ecd51.png)
+[![jv-media-1199-091a625ecd51.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-091a625ecd51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-091a625ecd51.png)
 
 ### Azure Monitor Agent (AMA)
 
@@ -51,13 +51,13 @@ In a Data Collection Rule, you define:
 - **What information** you want to collect
 - **In which workspace** you want to store the data
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-98c080531415.png)
+[![jv-media-1199-98c080531415.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-98c080531415.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-98c080531415.png)
 
 ### Custom Dashboards
 
 Azure Monitor allows you to create a custom dashboard with key information and shortcuts. Such a dashboard looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-627a6da2a89d.png)
+[![jv-media-1199-627a6da2a89d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-627a6da2a89d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-627a6da2a89d.png)
 
 This dashboard gets information from various places, like Virtual Machine insights, Guest OS insights, Azure Resource Graph and Log Analytics workspaces.
 
@@ -214,7 +214,7 @@ In addition to its standard recommendations, Defender for Cloud allows you to ap
 
 Azure/Microsoft Sentinel is an advanced Security Information & Event Management (SIEM) and Security Orchestrated Automation and Response (SOAR) solution. It provides a centralized platform for investigating security events. Sentinel integrates with many Microsoft services as well as third-party applications and solutions.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-b77ae8795ea1.png)
+[![jv-media-1199-b77ae8795ea1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-b77ae8795ea1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-10-monitoring-and-security-1199/jv-media-1199-b77ae8795ea1.png)
 
 Azure Sentinel stores its data in Log Analytics and allows the creation of custom Workbooks for visualization. Additionally, it supports Playbooks, which enable automated responses to security incidents based on incoming data.
 

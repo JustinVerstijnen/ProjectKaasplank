@@ -69,27 +69,27 @@ Now we have purchased and downloaded the S/MIME certificate, we need to install 
 
 Open your local Certificates manager (certmgr.msc)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-a87f74d57611.png)
+[![jv-media-6845-a87f74d57611.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-a87f74d57611.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-a87f74d57611.png)
 
 Open the application.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-f75b4758ca59.png)
+[![jv-media-6845-f75b4758ca59.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-f75b4758ca59.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-f75b4758ca59.png)
 
 Navigate to your Personal storage and click "Action -> All tasks -> Import..."
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-d2eae875abad.png)
+[![jv-media-6845-d2eae875abad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-d2eae875abad.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-d2eae875abad.png)
 
 Click "Next". Now select the certificate you downloaded and purchased.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-45c266d3beee.png)
+[![jv-media-6845-45c266d3beee.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-45c266d3beee.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-45c266d3beee.png)
 
 Click "Next". Now insert the password if you have received this. If you did not get a password from your certificate issuer, leave this blank.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-5c1c94e0b9b0.png)
+[![jv-media-6845-5c1c94e0b9b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-5c1c94e0b9b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-5c1c94e0b9b0.png)
 
 Click "Next" twice and then finish. The certificate should now be in your Personal certificate storage:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-04768d6d604c.png)
+[![jv-media-6845-04768d6d604c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-04768d6d604c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-04768d6d604c.png)
 
 ---
 
@@ -133,11 +133,11 @@ Change the Text *CertProviderName* to your certificate provider name. It only mu
 
 This script exports all root certificate information from your certificate provider to a single file. We must upload this file to Exchange Online so Microsoft trusts our certificates.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e416169b6ca8.png)
+[![jv-media-6845-e416169b6ca8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e416169b6ca8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e416169b6ca8.png)
 
 You can now find the file in the C:\ root directory:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-4f7a1619e9b2.png)
+[![jv-media-6845-4f7a1619e9b2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-4f7a1619e9b2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-4f7a1619e9b2.png)
 
 Now we are ready to go to the next step.
 
@@ -161,7 +161,7 @@ Set-SmimeConfig -SMIMECertificateIssuingCA ([System.IO.File]::ReadAllBytes('C:\J
 
 This command should run without any output, which means it completed successfully.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-95dea0305eae.png)
+[![jv-media-6845-95dea0305eae.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-95dea0305eae.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-95dea0305eae.png)
 
 After running that command, you can check if the certificate is added succesfully with these commands:
 
@@ -176,7 +176,7 @@ $col | Select Subject,Issuer | Format-Table -AutoSize
 
 You will get the complete names of the certificates uploaded:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-526800d2b71d.png)
+[![jv-media-6845-526800d2b71d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-526800d2b71d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-526800d2b71d.png)
 
 Wait for around 10 to 15 minutes before changing anything in your Email clients for this new configuration to propagate.
 
@@ -188,7 +188,7 @@ Now we can go out of PowerShell and actually test if this email encryption works
 
 First enable the "Digital signatures" option without enabling the Encrypt contents option yet. Enabling this will break your email sending capabilities.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e49b113aeec3.png)
+[![jv-media-6845-e49b113aeec3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e49b113aeec3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-e49b113aeec3.png)
 
 ---
 
@@ -196,7 +196,7 @@ First enable the "Digital signatures" option without enabling the Encrypt conten
 
 After the certificate is added and trusted and the first email is sent, you will see what happens at the receiver side. They will get an notification that the email is digitally signed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-feb216e1c488.png)
+[![jv-media-6845-feb216e1c488.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-feb216e1c488.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/Encrypt-your-Microsoft-365-emails-with-S/MIME-6845/jv-media-6845-feb216e1c488.png)
 
 However, if you want to encrypt the email messages, you must have the public key of your receiver to create a secure channel. This is done by receiving an email from your receiver first with the digital signature. This will be saved into your address book and then you can reply with encryption.
 

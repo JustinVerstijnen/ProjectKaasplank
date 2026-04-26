@@ -21,7 +21,7 @@ Keep in mind, we have the following requirements for this new feature:
 
 Also worth mentioning, removing an application needs a manual reinstall, which is easy to do.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-bc2d5b646894.png)
+[![jv-media-4861-bc2d5b646894.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-bc2d5b646894.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-bc2d5b646894.png)
 
 ---
 
@@ -31,27 +31,27 @@ We can configure the removal of these apps with a configuration profile in Micro
 
 Open up Microsoft Intune Admin center (intune.microsoft.com).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-e2b774ec6877.png)
+[![jv-media-4861-e2b774ec6877.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-e2b774ec6877.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-e2b774ec6877.png)
 
 Then go to your Devices, and then Windows.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-59fe5bb3fe88.png)
+[![jv-media-4861-59fe5bb3fe88.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-59fe5bb3fe88.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-59fe5bb3fe88.png)
 
 Then click on "Configuration" to view all the Windows-based Configuration Profiles. Here we can create a new profile for this setting. Click on "+ Create" and then "New Policy".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-4adbd2ef9d0a.png)
+[![jv-media-4861-4adbd2ef9d0a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-4adbd2ef9d0a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-4adbd2ef9d0a.png)
 
 Select for Platform the "**Windows 10 and later option**", and for Profile Type "**Settings catalog**".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-0e6660b57a1d.png)
+[![jv-media-4861-0e6660b57a1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-0e6660b57a1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-0e6660b57a1d.png)
 
 Then give the policy a recognizable name and description.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-3cae757bbfb5.png)
+[![jv-media-4861-3cae757bbfb5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-3cae757bbfb5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-3cae757bbfb5.png)
 
 Then click "Next". On the "Configuration settings" page, click on the "+ Add settings" button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-8e77073bd9fc.png)
+[![jv-media-4861-8e77073bd9fc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-8e77073bd9fc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-8e77073bd9fc.png)
 
 Then search for the setting in this location:
 
@@ -59,17 +59,17 @@ Then search for the setting in this location:
 
 Then select the "Remove Default Microsoft Store packages from the system" option.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-b847a03f60c6.png)
+[![jv-media-4861-b847a03f60c6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-b847a03f60c6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-b847a03f60c6.png)
 
 At the left side, flick the switch to "Enabled" and now we can select all apps to remove from Windows client devices.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-9b712f1ea4a9.png)
+[![jv-media-4861-9b712f1ea4a9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-9b712f1ea4a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-9b712f1ea4a9.png)
 
 In this configuration, I want to leave all helpful tools installed, but want to remove non-business related applications like Xbox , Solitaire collection and Clipchamp.
 
 You can make your own selection of course. After your apps to remove are selected, click "Next". Then click "Next" again to assign the configuration profile to your devices. In my case, I select "All devices" but you can also use a manual or [Dynamic group](https://justinverstijnen.nl/dynamic-group-for-access-to-windows-365/).
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-cebb4743d704.png)
+[![jv-media-4861-cebb4743d704.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-cebb4743d704.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-pre-installed-windows-store-apps-with-intune-4861/jv-media-4861-cebb4743d704.png)
 
 Now the policy is assigned and the actions will be applied the next time your device synchronizes with Microsoft Intune.
 

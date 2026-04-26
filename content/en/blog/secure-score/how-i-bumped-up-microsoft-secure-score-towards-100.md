@@ -55,9 +55,9 @@ By getting your Secure Score to 100% means you are using 100% of the Microsoft S
 
 When started out, my tenant contained around 8 users and 2 devices and have Business Premium licenses assigned to the users with Entra P1 included. My total secure score was 31,65% and the Identity pillar was 42,42%:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
+[![jv-media-5293-cf5c9fb82ed1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-cf5c9fb82ed1.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-a44012a62c4d.png)
+[![jv-media-5293-a44012a62c4d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-a44012a62c4d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-a44012a62c4d.png)
 
 While I mostly use the Secure Score of the security.microsoft.com portal, as this contains every pillar we also have the secure score from the Entra portal. As you can see, they are a bit inconsistent. For Zero Trust to work, we have to defend ourselves on every pillar.
 
@@ -75,11 +75,11 @@ All the stuff we do on this pages needs the following licenses:
 
 We can do most of the stuff with Business Premium licenses, which most small and bigger business should use. For the guides I ordered some standalone licenses to gain access to every setting available.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dca97b71a997.png)
+[![jv-media-5293-dca97b71a997.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dca97b71a997.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dca97b71a997.png)
 
 And for optimal Identity security, we need Entra ID Premium Plan 2 licenses assigned to every user:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dcb05c94b2bc.png)
+[![jv-media-5293-dcb05c94b2bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dcb05c94b2bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-dcb05c94b2bc.png)
 
 It is not essentially required to have those licenses, but it will drastically expand our toolbox to secure all Zero Trust pillars.
 
@@ -89,9 +89,9 @@ It is not essentially required to have those licenses, but it will drastically e
 
 As I did not implement every single setting, my Secure Score was hanging at 98,7% which is still a great score. In my environment, I did not have any Windows Enterprise or Education devices, so some of the recommendations were not achievable.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-0f017efcd3d5.png)
+[![jv-media-5293-0f017efcd3d5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-0f017efcd3d5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-0f017efcd3d5.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-637f95350ee6.png)
+[![jv-media-5293-637f95350ee6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-637f95350ee6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/how-i-bumped-up-microsoft-secure-score-towards-100-5293/jv-media-5293-637f95350ee6.png)
 
 ---
 

@@ -118,7 +118,7 @@ Bicep is an alternative language for deploying Azure resources. It is a declarat
 
 Here's an example to show the difference in syntax between Bicep and JSON when implementing the same resources:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-11-infrastructure-as-code-iac-and-devops-1108/jv-media-1108-7b2ebf4e0e62.png)
+[![jv-media-1108-7b2ebf4e0e62.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-11-infrastructure-as-code-iac-and-devops-1108/jv-media-1108-7b2ebf4e0e62.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-11-infrastructure-as-code-iac-and-devops-1108/jv-media-1108-7b2ebf4e0e62.png)
 
 ---
 

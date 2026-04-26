@@ -16,7 +16,7 @@ By default in Windows 11 with Microsoft 365 apps installed, we have two software
 - OneNote (Desktop)
 - Microsoft Print to PDF
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e8079ca2ffa.png)
+[![jv-media-4319-5e8079ca2ffa.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e8079ca2ffa.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e8079ca2ffa.png)
 
 However, some users don't use them and they will annoyingly be as default printer sometimes, which we want to avoid. Most software have built-in options to save to PDF, so this is a bit redundant. Our real printers will be further down which causes their own problems for end users.
 
@@ -30,11 +30,11 @@ The PowerShell script can be downloaded from my Github page:
 
 On the Github page, click on "<> Code" and then on "Download ZIP".
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-1add2f262839.png)
+[![jv-media-4319-1add2f262839.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-1add2f262839.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-1add2f262839.png)
 
 Unzip the file to get the PowerShell script:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-76e41eb3269d.png)
+[![jv-media-4319-76e41eb3269d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-76e41eb3269d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-76e41eb3269d.png)
 
 ---
 
@@ -52,11 +52,11 @@ To deploy this script, let's go to the Microsoft Intune Admin Center: <https://i
 
 Navigate to Devices -> Windows -> Scripts and remediations and open the "Platform scripts" tab. Click on "+ Add" here to add a new script to your configuration.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-6d87252856b4.png)
+[![jv-media-4319-6d87252856b4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-6d87252856b4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-6d87252856b4.png)
 
 Give your script a name and good description of the result of the script.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-e79b1c4a73fe.png)
+[![jv-media-4319-e79b1c4a73fe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-e79b1c4a73fe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-e79b1c4a73fe.png)
 
 Then click "Next" to go to the "Script settings" tab.
 
@@ -66,7 +66,7 @@ Import the script you just downloaded from my Github page. Then set the script o
 2. Enforce script signature check: No
 3. Run script in 64 bit PowerShell Host: Yes
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e1575dea2db.png)
+[![jv-media-4319-5e1575dea2db.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e1575dea2db.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5e1575dea2db.png)
 
 Then click “Next” and assign it to your devices. In my case, I selected “All devices”.
 
@@ -80,15 +80,15 @@ If your environment is Active Directory based, then Group Policy might be a good
 
 Login to your Domain-joined management server and go to File Explorer and go to your domains SYSVOL folder by typing in: \\domain.com in the File Explorer bar:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-7311077e5127.png)
+[![jv-media-4319-7311077e5127.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-7311077e5127.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-7311077e5127.png)
 
 Open the SYSVOL folder -> domain -> scripts. Paste the script in this folder:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-a94883efd912.png)
+[![jv-media-4319-a94883efd912.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-a94883efd912.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-a94883efd912.png)
 
 Then right-click the file and select "Copy as path" to set the full scipt path in your clipboard.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5f7f086bfcfc.png)
+[![jv-media-4319-5f7f086bfcfc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5f7f086bfcfc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-5f7f086bfcfc.png)
 
 Open Group Policy Management on the server to create a new start-up script. Use an existing GPO or create a new one and navigate to:
 
@@ -96,15 +96,15 @@ Computer Configuration -> Policies -> Windows Settings -> Scripts -> Startup
 
 Create a new script here and select the "PowerShell scripts" tab.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-357c9987ab0d.png)
+[![jv-media-4319-357c9987ab0d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-357c9987ab0d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-357c9987ab0d.png)
 
 Add a new script here. Paste the copied path and remove the quotes.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-085e2de7b307.png)
+[![jv-media-4319-085e2de7b307.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-085e2de7b307.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-085e2de7b307.png)
 
 Then click "OK" to save the configuration. This will bring us to this window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-92dd3c244fd3.png)
+[![jv-media-4319-92dd3c244fd3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-92dd3c244fd3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-92dd3c244fd3.png)
 
 We have now made a start-up script which will run at every startup of the machine. If you place a updated script as the same name in the same directory, this new version will be executed.
 
@@ -114,7 +114,7 @@ We have now made a start-up script which will run at every startup of the machin
 
 After the script has been executed succesfully, which should be at the next logon, we will check the status in the Printers and Scanners section:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-001954a56c36.png)
+[![jv-media-4319-001954a56c36.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-001954a56c36.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/remove-microsoft-print-to-pdf-and-onenote-printers-script-4319/jv-media-4319-001954a56c36.png)
 
 No software printers left bothering us and our end users anymore :)
 

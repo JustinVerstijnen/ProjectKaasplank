@@ -87,7 +87,7 @@ Then create a Group Policy with an start-up script that targets this script and 
 
 *User Configuration -> Policies -> Windows Settings -> Scripts (Logon)*
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-5eb06a2f9530.png)
+[![jv-media-997-5eb06a2f9530.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-5eb06a2f9530.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-5eb06a2f9530.png)
 
 Add your network added script there. Then head over to your AVD application.
 
@@ -97,7 +97,7 @@ Add your network added script there. Then head over to your AVD application.
 
 After succesfully logging in to Azure Virtual Desktop (relogin required after changing policy), our applications will be available and installed in the background. After around 30 seconds you can find the applications in the start menu.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-03babc8d9509.png)
+[![jv-media-997-03babc8d9509.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-03babc8d9509.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-store-applications-on-azure-virtual-desktop-fslogix-997/jv-media-997-03babc8d9509.png)
 
 Fun fact is that the data is stored in the profile, so after installing the app it can be used directly and with the data from an earlier login.
 

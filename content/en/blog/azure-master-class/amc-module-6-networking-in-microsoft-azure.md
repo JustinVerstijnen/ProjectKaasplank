@@ -34,7 +34,7 @@ A virtual network in Azure is a private network within the Azure cloud. Within t
 
 This Azure service does not require physical switches or routers. When creating a virtual network, you specify an address space, which defines the range of IP addresses available for subnet creation. An example of an address space would be: **10.0.0.0/16**. This is the default setting when creating a virtual network in Microsoft Azure.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-13c6e27e0f18.png)
+[![jv-media-937-13c6e27e0f18.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-13c6e27e0f18.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-13c6e27e0f18.png)
 
 An example network in Microsoft Azure.
 
@@ -167,7 +167,7 @@ A Site-to-Site VPN allows you to connect an on-premises network to a **virtual n
 - Physical security is not a major concern
 - ExpressRoute is not available
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-496a42d97651.png)
+[![jv-media-937-496a42d97651.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-496a42d97651.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-496a42d97651.png)
 
 ### 2. **ExpressRoute**
 
@@ -197,7 +197,7 @@ VPN clients that support these protocols will work with **VPN options in Microso
 
 To configure a Point-to-Site VPN, navigate to **"Settings" → "Point-to-site configuration"** in the Virtual Network Gateway. From there, you can download a **.zip file** containing the required installation files and the correct VPN profile.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-cf8715612f62.png)
+[![jv-media-937-cf8715612f62.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-cf8715612f62.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-cf8715612f62.png)
 
 ### VPN Authentication
 
@@ -231,7 +231,7 @@ There are two options for applying NSGs:
 
 If a resource does not have a Network Security Group or is not protected by Azure Firewall, all traffic is allowed by default, and the guest OS firewall (Windows Firewall or UFW for Linux) becomes the only point where security is enforced for incoming and outgoing traffic.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-afac020c63b0.png)
+[![jv-media-937-afac020c63b0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-afac020c63b0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-afac020c63b0.png)
 
 ### Network Security Group inbound processing order
 
@@ -294,7 +294,7 @@ The reason for these restrictions is that all networking capabilities in Azure a
 
 Application Security Groups are definitions for a Network Security Group. This enables to have a third protection layer, because you can allow or disallow traffic based on a ASG member ship. Lets take a look at the image below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e7c364d69179.png)
+[![jv-media-937-e7c364d69179.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e7c364d69179.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e7c364d69179.png)
 
 Here we have a single subnet. Normally all traffic in and out is allowed. But because we created a rule in the NSG of the VM specific NIC and added ASGs for web and mgmt, the user can only connect to the webservers for port 80 and port 3389 to mgmt servers. This enables that third layer of traffic filtering.
 
@@ -370,7 +370,7 @@ It is possible to secure and monitor an Azure Virtual Network using Forced Tunne
 
 By default, Azure traffic communicates directly with the internet, as this results in fewer hops and higher speed.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-69ffb0b5a399.png)
+[![jv-media-937-69ffb0b5a399.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-69ffb0b5a399.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-69ffb0b5a399.png)
 
 Now i don't neccesarily recommend this option as it increases hops and lower the performance but when it is required for security and governance purposes it will do the trick.
 
@@ -463,7 +463,7 @@ Azure NAT Gateways are designed to provide one or more virtual networks within a
 
 This allows you, for example, to enable an entire Azure Virtual Desktop host pool with 100 machines to communicate using the same external IP address.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-01965e1237ad.png)
+[![jv-media-937-01965e1237ad.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-01965e1237ad.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-01965e1237ad.png)
 
 Use cases for Azure NAT Gateway are for example:
 
@@ -480,7 +480,7 @@ This allows you to link all connections to Azure, such as VPN (S2S/P2S) and conn
 
 The topology looks as follows:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-538e6dc33f0b.png)
+[![jv-media-937-538e6dc33f0b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-538e6dc33f0b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-538e6dc33f0b.png)
 
 Azure Virtual WAN serves as the Hub for all externally connected services, such as:
 
@@ -493,7 +493,7 @@ Azure Virtual WAN serves as the Hub for all externally connected services, such 
 - **Azure Firewall and Routing**
 - **Azure VNETs in other Azure tenants (cross-tenant)**
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e24b76ad2c1d.png)
+[![jv-media-937-e24b76ad2c1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e24b76ad2c1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e24b76ad2c1d.png)
 
 An Azure Virtual WAN consists of a base network that must be at least a /24 network or larger, to which all endpoints are connected. Additionally, it is possible to deploy a custom NVA (Network Virtual Appliance) or Firewall to secure traffic. The NVA must be deployed in the Virtual WAN Hub that you have created.
 
@@ -515,7 +515,7 @@ For a current overview of ExpressRoute providers: <https://learn.microsoft.com/n
 
 For using Azure ExpressRoute, there are 4 methods of connecting your network with ExpressRoute to Azure:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-84dd45fda480.png)
+[![jv-media-937-84dd45fda480.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-84dd45fda480.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-84dd45fda480.png)
 
 ### **Co-location in a Cloud Exchange**
 
@@ -539,7 +539,7 @@ You can connect directly to Microsoft's global network at a strategically locate
 
 When having to load balance external traffic to for example webservers, database servers etc. Azure has some solutions to achieve this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-9fd996449542.png)
+[![jv-media-937-9fd996449542.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-9fd996449542.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-9fd996449542.png)
 
 The solutions mentioned above each have their own use cases but work best with the following applications:
 
@@ -577,7 +577,7 @@ On the frontend, Azure Application Gateway has a virtual WAN IP address that all
 
 A load balancer also typically includes a health probe rule. This checks whether the backend web servers are functioning correctly by periodically opening an internal website. If a web server does not respond, the load balancer will immediately stop sending traffic to that server.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e819a87454a1.png)
+[![jv-media-937-e819a87454a1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e819a87454a1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e819a87454a1.png)
 
 ---
 
@@ -587,7 +587,7 @@ Azure Front Door is a **Content Delivery Network (CDN)** that runs on Azure. It 
 
 To learn more about Front Door, please review the image below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e1e0670002b3.png)
+[![jv-media-937-e1e0670002b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e1e0670002b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-e1e0670002b3.png)
 
 Azure Front Door has the following security features:
 
@@ -631,7 +631,7 @@ In Microsoft Azure we can use custom firewalls such as Palo Alto, Fortinet, Open
 
 To make our Firewall effective, we configure a routing table with next hop "Network Appliance" and define the IP address to route traffic through the custom firewall.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-68204c1a1332.png)
+[![jv-media-937-68204c1a1332.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-68204c1a1332.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-6-networking-in-microsoft-azure-937/jv-media-937-68204c1a1332.png)
 
 ---
 

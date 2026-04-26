@@ -32,7 +32,7 @@ To store identities, you need an Identity Provider. In Azure, we have a built-in
 
 An overview of what this process looks like:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-6d45f3ce80bb.png)
+[![jv-media-463-6d45f3ce80bb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-6d45f3ce80bb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-6d45f3ce80bb.png)
 
 In this diagram, Azure Active Directory, our Identity Provider, is at the center. When an application is set up, a 'trust' is established with the Identity Provider. This allows a user to log in to third-party applications through the Identity Provider using the same credentials, and they will be logged in automatically.
 
@@ -44,7 +44,7 @@ Another possibility is to use the Decentralized Identity model. In this model, t
 
 An overview of what this process looks like:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-7a5b8d931605.png)
+[![jv-media-463-7a5b8d931605.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-7a5b8d931605.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-7a5b8d931605.png)
 
 ---
 
@@ -113,11 +113,11 @@ Identity has become the primary factor to secure because, in the past 5 years, a
 
 There are multiple overviews of the Microsoft Secure Score. In the Security portal (https://security.microsoft.com) you have the best overview with the most information:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-31f6ec926aed.png)
+[![jv-media-463-31f6ec926aed.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-31f6ec926aed.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-31f6ec926aed.png)
 
 In the Microsoft Entra portal, only the "Identity" score is shown:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-b1d9fbbd7ebd.png)
+[![jv-media-463-b1d9fbbd7ebd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-b1d9fbbd7ebd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-b1d9fbbd7ebd.png)
 
 For more information about the Microsoft Secure Score, check out my Secure Score pages on the left.
 
@@ -183,7 +183,7 @@ To learn more about roles and custom roles, check out my guide where i go in dep
 
 Roles cannot be assigned to groups, except if you create a custom group. In this case, you can specify that Microsoft Entra ID roles can be applied:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-27cce0f7cd65.png)
+[![jv-media-463-27cce0f7cd65.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-27cce0f7cd65.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-27cce0f7cd65.png)
 
 Administrative units are similar to OUs (Organizational Units) in traditional AD DS, but they differ in a few aspects. They are logical groups used to add identities, with the purpose of applying additional security to control what users can and cannot manage. For example, an administrative unit for Executives can be created so that not all administrators can manage these identities.
 
@@ -209,7 +209,7 @@ Privileged Identity Management is your central tool for assigning all permission
 
 Privileged Identity Management works for Microsoft Entra ID roles and Azure Resource Manager roles, ensuring a systematic approach to resolving changes.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-f6a7d64286b3.png)
+[![jv-media-463-f6a7d64286b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-f6a7d64286b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-f6a7d64286b3.png)
 
 The four pillars of Entra ID Privileged Identity Management
 
@@ -245,7 +245,7 @@ This works in 3 steps:
 - A user logs in into a service from a blocked country -> Block access
 - A normal user doesn't have to do MFA but a administrative user must do MFA
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-68aa35fb7fc8.png)
+[![jv-media-463-68aa35fb7fc8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-68aa35fb7fc8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-2-identity-463/jv-media-463-68aa35fb7fc8.png)
 
 ### Conditional Access Policy presedence
 

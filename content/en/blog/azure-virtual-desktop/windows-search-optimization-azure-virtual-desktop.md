@@ -38,11 +38,11 @@ Place the script on a local or network location and open Group Policy Management
 
 Go to User Configuration -> Windows Settings -> Scripts (Logon/Logoff)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-d41fefdceb1b.png)
+[![jv-media-3737-d41fefdceb1b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-d41fefdceb1b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-d41fefdceb1b.png)
 
 Then open the tab "Powershell Scripts" and select the downloaded script from my Github page.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-f7e8fe795ad2.png)
+[![jv-media-3737-f7e8fe795ad2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-f7e8fe795ad2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-f7e8fe795ad2.png)
 
 Save the GPO and the script will run on startup.
 
@@ -66,7 +66,7 @@ Set the settings to this for the best performance:
 - Do not allow web search -> Enabled\*
 - Don't search the web or display web results in Search -> Enabled\*
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-8fd7919db559.png)
+[![jv-media-3737-8fd7919db559.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-8fd7919db559.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/windows-search-optimization-azure-virtual-desktop-3737/jv-media-3737-8fd7919db559.png)
 
 \* Negative policy setting, enabled means disabling the option
 

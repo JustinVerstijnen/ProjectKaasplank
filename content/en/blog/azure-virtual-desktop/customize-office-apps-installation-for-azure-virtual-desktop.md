@@ -45,7 +45,7 @@ To use the Office Configuration tool, use the following link:
 
 Then start by creating a new configuration:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-13f3afb97764.png)
+[![jv-media-4259-13f3afb97764.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-13f3afb97764.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-13f3afb97764.png)
 
 ---
 
@@ -53,7 +53,7 @@ Then start by creating a new configuration:
 
 The wizard starts with asking whether to use 32-bit (x86) or 64-bit (x64). Choose the version you'll need, while keeping in ming x64 is always the preferred option:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a549efb0353e.png)
+[![jv-media-4259-a549efb0353e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a549efb0353e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a549efb0353e.png)
 
 Then advance below.
 
@@ -63,7 +63,7 @@ Then advance below.
 
 If you need additional products or a different version like LTSC or Volume Licensing, you can select this now:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-205bf4a1a4f6.png)
+[![jv-media-4259-205bf4a1a4f6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-205bf4a1a4f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-205bf4a1a4f6.png)
 
 You can also select to include Visio, Project.
 
@@ -73,7 +73,7 @@ You can also select to include Visio, Project.
 
 You can now select what update channel to use:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0bf8d05eb30d.png)
+[![jv-media-4259-0bf8d05eb30d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0bf8d05eb30d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0bf8d05eb30d.png)
 
 These channels define how much your apps are updated. I advice to use the monthly enterprise channel or the semi annual enterprise channel, so you'll get updates once a month or twice a year. We don't want to update too much and we also don't want preview versions in our production environments.
 
@@ -85,7 +85,7 @@ In smaller organizations, I had more success with the monthly channel so new fea
 
 Now we can customize the set of applications that are being installed:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-8994d9a5f51a.png)
+[![jv-media-4259-8994d9a5f51a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-8994d9a5f51a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-8994d9a5f51a.png)
 
 Here we can disable apps our users don't need like the old Outlook or Access/Publisher. Not installing those applications saves some on storage and compute power. Also we can disable the Microsoft Bing Background service. No further clarification needed.
 
@@ -101,7 +101,7 @@ OneDriveSetup.exe /allusers
 
 When you have users from multiple countries in your Virtual Desktops, we can install multiple language packs for users. These are used for display and language corrections.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-efe2b2cbe184.png)
+[![jv-media-4259-efe2b2cbe184.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-efe2b2cbe184.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-efe2b2cbe184.png)
 
 You can also choose to match the users' Windows language.
 
@@ -111,7 +111,7 @@ You can also choose to match the users' Windows language.
 
 At this step you could host the Office installation files yourself on a local server, which can save on bandwidth if you install the applications 25 times a day. For installations happening once or twice a month, I recommend using the default options:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-096512499d7b.png)
+[![jv-media-4259-096512499d7b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-096512499d7b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-096512499d7b.png)
 
 ---
 
@@ -119,7 +119,7 @@ At this step you could host the Office installation files yourself on a local se
 
 Now we have the option to automatically accept the EULA for all users. This saves one click for every user who opens the Microsoft Office apps:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-b1dce8c20e46.png)
+[![jv-media-4259-b1dce8c20e46.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-b1dce8c20e46.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-b1dce8c20e46.png)
 
 ---
 
@@ -127,7 +127,7 @@ Now we have the option to automatically accept the EULA for all users. This save
 
 Now we have the option to enable Shared Computer Activation, which is required for using on machines where multiple users are working simultaneously.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-915d280fb5a6.png)
+[![jv-media-4259-915d280fb5a6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-915d280fb5a6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-915d280fb5a6.png)
 
 If using Azure Virtual Desktop or Remote Desktop Services as pooled, choose Shared Computer, otherwise use User based or Device based if having an Enterprise Agreement and the proper licenses.
 
@@ -137,7 +137,7 @@ If using Azure Virtual Desktop or Remote Desktop Services as pooled, choose Shar
 
 At this step we can set a company name to print in every Office document:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-fe0ac29f716c.png)
+[![jv-media-4259-fe0ac29f716c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-fe0ac29f716c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-fe0ac29f716c.png)
 
 ---
 
@@ -149,7 +149,7 @@ Now we have finished the normal wizard and we have the chance to set some advanc
 
 We could disable hardware acceleration on Virtual Desktops, as we mostly don't have a GPU on board. DirectX software rendering will then be used as default to make the software faster.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0d4491470ccf.png)
+[![jv-media-4259-0d4491470ccf.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0d4491470ccf.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0d4491470ccf.png)
 
 - Do not use hardware graphics acceleration
 
@@ -157,7 +157,7 @@ We could disable hardware acceleration on Virtual Desktops, as we mostly don't h
 
 We could also disable the animations to save some on compute power:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-2ae9ee454ac6.png)
+[![jv-media-4259-2ae9ee454ac6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-2ae9ee454ac6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-2ae9ee454ac6.png)
 
 - Disable Office animations
   - No need to change the "Menu animations" setting as we completely disabled animations
@@ -166,7 +166,7 @@ We could also disable the animations to save some on compute power:
 
 And we can also set some security options, like disable macros for files downloaded from the internet:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-4d8d8f153986.png)
+[![jv-media-4259-4d8d8f153986.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-4d8d8f153986.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-4d8d8f153986.png)
 
 - Block macros from running in Office files from the internet
   - Be aware, you must configure this for every Office application you install
@@ -177,15 +177,15 @@ And we can also set some security options, like disable macros for files downloa
 
 We can set the Office XML or OpenDocument setting in this configuration, as this will be asked for every new user. I am talking about this window:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-f32ae3bb563d.png)
+[![jv-media-4259-f32ae3bb563d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-f32ae3bb563d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-f32ae3bb563d.png)
 
 We can set this in our configured office by saving the configuration and then downloading it:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-450dc80a6988.png)
+[![jv-media-4259-450dc80a6988.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-450dc80a6988.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-450dc80a6988.png)
 
 Click OK and your XML file with all customizations will be downloaded:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1919590e6f0a.png)
+[![jv-media-4259-1919590e6f0a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1919590e6f0a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1919590e6f0a.png)
 
 ---
 
@@ -195,29 +195,29 @@ Now we can install Office with our customizations. We first need to download the
 
 After you downloaded the Office Deployment Toolkit, we end up having 2 files:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1345b720e965.png)
+[![jv-media-4259-1345b720e965.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1345b720e965.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-1345b720e965.png)
 
 Now run the Office Deployment Toolkit and extract the files in the same folder:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-27427126765d.png)
+[![jv-media-4259-27427126765d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-27427126765d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-27427126765d.png)
 
 Select the folder containing your customized XML file:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-6289b596392c.png)
+[![jv-media-4259-6289b596392c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-6289b596392c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-6289b596392c.png)
 
 Now we have around 4 files, with the official Office setup now extracted and comes with a default configuration:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-527584f129be.png)
+[![jv-media-4259-527584f129be.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-527584f129be.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-527584f129be.png)
 
 We will now execute the setup using our customized file. Don't click on setup yet.
 
 Click on the address bar of the File Explorer, type"cmd" and hit Enter.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-daf32aa330b4.png)
+[![jv-media-4259-daf32aa330b4.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-daf32aa330b4.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-daf32aa330b4.png)
 
 This opens CMD directly in this folder:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-acf26f6da397.png)
+[![jv-media-4259-acf26f6da397.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-acf26f6da397.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-acf26f6da397.png)
 
 Now execute this command:
 
@@ -227,11 +227,11 @@ setup.exe /configure *yourcustomizedfile*.xml
 
 At the filename, you can use TAB to auto-complete the name. Makes it easier :)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a5da11915b52.png)
+[![jv-media-4259-a5da11915b52.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a5da11915b52.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-a5da11915b52.png)
 
 Now the setup will run and install Office applications according to your custom settings:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-79ec38245ae8.png)
+[![jv-media-4259-79ec38245ae8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-79ec38245ae8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-79ec38245ae8.png)
 
 ---
 
@@ -239,11 +239,11 @@ Now the setup will run and install Office applications according to your custom 
 
 Now the installation of Office is done and I will click through the applications to check the outcome of what we have configured:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-c71d4a69cf60.png)
+[![jv-media-4259-c71d4a69cf60.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-c71d4a69cf60.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-c71d4a69cf60.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-075e15974dbd.png)
+[![jv-media-4259-075e15974dbd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-075e15974dbd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-075e15974dbd.png)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0e8de3a63995.png)
+[![jv-media-4259-0e8de3a63995.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0e8de3a63995.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/customize-office-apps-installation-for-azure-virtual-desktop-4259/jv-media-4259-0e8de3a63995.png)
 
 As we have Shared Computer Activation enabled, my user account needs a Microsoft 365 Business Premium or higher license to use the apps. I don't have this at the moment so this is by design.
 

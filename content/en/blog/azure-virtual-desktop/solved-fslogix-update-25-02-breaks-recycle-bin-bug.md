@@ -19,7 +19,7 @@ Please use this newer version instead of version 25.02. This fixes the bug in th
 
 When testing the new FSLogix 25.02 version, I came across a very annoying problem/bug in this new version.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)
+[![jv-media-1312-c20e8ab02a2c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)
 
 "The Recycle Bin on C:\ is corrupted. Do you want to empty the Recycle Bin for this drive?"
 
@@ -35,7 +35,7 @@ Go to the following path:
 
 *Computer Configuration -> Policies -> Administrative Templates -> FSLogix*
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-983cda2f2bff.png)
+[![jv-media-1312-983cda2f2bff.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-983cda2f2bff.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-983cda2f2bff.png)
 
 Here you can find the option "Roam Recycle Bin", which is enabled by default -> even when in a "Not Configured" state. Disable this option and click on "OK".
 
@@ -69,7 +69,7 @@ We have 2 options to "fix" the profile:
 - Backup all of your data in the profile and delete it. Then let FSLogix regenerate a new profile
 - Restore a backup of the profile, before the FSLogix update to 25.02
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)
+[![jv-media-1312-c20e8ab02a2c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/solved-fslogix-update-25-02-breaks-recycle-bin-bug-1312/jv-media-1312-c20e8ab02a2c.png)
 
 After logging in with a new or restored profile, the problem is solved.
 

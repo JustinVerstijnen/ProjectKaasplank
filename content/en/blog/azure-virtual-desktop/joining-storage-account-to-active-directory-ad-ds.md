@@ -57,19 +57,19 @@ Now the server is prepared for installing the AZFilesHybrid Powershell module.
 
 We must now install the AzFilesHybrid PowerShell module. We can download the files from the Github repository of Microsoft: <https://github.com/Azure-Samples/azure-files-samples/releases>
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-971cc2e2346b.png)
+[![jv-media-3981-971cc2e2346b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-971cc2e2346b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-971cc2e2346b.png)
 
 Download the ZIP file and extract this on a location on your Active Directory management server.
 
 Now open the PowerShell ISE application on your server as administrator.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-233515cb4e12.png)
+[![jv-media-3981-233515cb4e12.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-233515cb4e12.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-233515cb4e12.png)
 
 Then give consent to User Account Control to open the program.
 
 Navigate to the folder where your files are stored, right-click the folder and click on "Copy as path":
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-b1d9e2d669e9.png)
+[![jv-media-3981-b1d9e2d669e9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-b1d9e2d669e9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-b1d9e2d669e9.png)
 
 Now go back to PowerShell ISE and type "cd" followed by a space and paste your script path.
 
@@ -121,7 +121,7 @@ Debug-AzStorageAccountAuth -StorageAccountName $StorageAccountName -ResourceGrou
 
 After running this script with the right information, you will be prompted with a device login. Go to the link in a browser, login with a Entra ID Administrator account and fill in the code.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-7761ef94633a.png)
+[![jv-media-3981-7761ef94633a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-7761ef94633a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-7761ef94633a.png)
 
 Now the storage account will be visible in your Active Directory.
 
@@ -131,11 +131,11 @@ Now the storage account will be visible in your Active Directory.
 
 After step 3, we will see the outcome of the script in the Azure Portal. The identity-based access is now configured.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-c53364e99ccd.png)
+[![jv-media-3981-c53364e99ccd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-c53364e99ccd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-c53364e99ccd.png)
 
 Click on the Security button:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-4e186636a5a3.png)
+[![jv-media-3981-4e186636a5a3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-4e186636a5a3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-4e186636a5a3.png)
 
 Set this to "Maximum security" and save the options.
 
@@ -147,7 +147,7 @@ Ensure that the user(s) or groups you want to give access to the share have the 
 
 Now test the access from File Explorer:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-20392acb17f7.png)
+[![jv-media-3981-20392acb17f7.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-20392acb17f7.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/joining-storage-account-to-active-directory-ad-ds-3981/jv-media-3981-20392acb17f7.png)
 
 This works and we can create a folder, so have also write access.
 

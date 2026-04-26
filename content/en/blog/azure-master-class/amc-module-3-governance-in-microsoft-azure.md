@@ -127,7 +127,7 @@ With Azure RBAC, you ensure that a specific user only has access to the services
 
 In this diagram, several levels are illustrated:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-c11cead7db6d.png)
+[![jv-media-482-c11cead7db6d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-c11cead7db6d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-c11cead7db6d.png)
 
 - **Microsoft Entra ID:** Microsoft Entra ID is the Identity Provider (IdP) for Microsoft Azure.
 - **Root Management Group:** The Root Management Group is automatically created when you start setting up management groups. This is the highest level where permissions can be assigned. By default, all subscriptions are also members of this Management Group.
@@ -144,7 +144,7 @@ Please note, role assignments will always propagate to underlying levels. There 
 
 Please take a look at the following image for a practice example:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-43c0c16a53d9.png)
+[![jv-media-482-43c0c16a53d9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-43c0c16a53d9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-43c0c16a53d9.png)
 
 1. **Azure Account**: At the top, we have the main Azure Account, which can be self-managed or provided through a Cloud Solution Provider (CSP).
 2. **Root Tenant**: Under the Azure Account is the Root Tenant, which serves as the primary identity and management boundary within Azure. This is typically linked to **Microsoft Entra ID** and represents the overall organization.
@@ -188,7 +188,7 @@ Azure Resource Manager (ARM) is the management layer for your resources, providi
 
 Azure Resource Manager ensures that all resources comply with defined Azure Policies and that security configurations set with RBAC function correctly on a technical level. ARM is a built-in service in Azure, not a standalone resource that requires management.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-8950416e9910.png)
+[![jv-media-482-8950416e9910.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-8950416e9910.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-8950416e9910.png)
 
 ---
 
@@ -207,7 +207,7 @@ Before a resource provider can be used within your Azure subscription, it must b
 
 In a given subscription, you can view an overview of which providers are registered and which are not.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-13b62ef427df.png)
+[![jv-media-482-13b62ef427df.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-13b62ef427df.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/amc-module-3-governance-in-microsoft-azure-482/jv-media-482-13b62ef427df.png)
 
 ---
 

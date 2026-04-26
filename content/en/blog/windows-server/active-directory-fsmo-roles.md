@@ -52,7 +52,7 @@ In my environment, I have 3 domain controllers. This means we can separate all r
 
 Because Entra Connect Sync is also a critical function of my domain, I placed this on my third server to give all 3 servers 2 dedicated roles.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-95408e56dc1d.png)
+[![jv-media-5732-95408e56dc1d.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-95408e56dc1d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-95408e56dc1d.png)
 
 ---
 
@@ -66,7 +66,7 @@ netdom query fsmo
 
 You will get an output like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-9faa4c6b46b6.png)
+[![jv-media-5732-9faa4c6b46b6.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-9faa4c6b46b6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/active-directory-fsmo-roles-5732/jv-media-5732-9faa4c6b46b6.png)
 
 Here I have separated the roles onto 3 different servers. In Microsoft Azure, I have the servers set-up in different availability zones to also defend my environment to datacenter-outages.
 

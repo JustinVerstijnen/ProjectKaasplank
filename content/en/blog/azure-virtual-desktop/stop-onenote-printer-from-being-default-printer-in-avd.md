@@ -10,7 +10,7 @@ description: >
   If you have the Office Apps installed with OneNote included, sometimes the OneNote printer will be installed as default. This post explains how to solve this problem.
 ---
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-b6757651a8fd.png)
+[![jv-media-4308-b6757651a8fd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-b6757651a8fd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-b6757651a8fd.png)
 
 This can be very annoying for our end users and ourselves as we want real printers to be the default printer. Today I will show you how to delete this printer for current and new session hosts permanently.
 
@@ -30,17 +30,17 @@ My solution to fix this problem is to create a delete-printer rule with Group Po
 
 Create a new Group Policy Object at yourt Active Directory Management server:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-4c198b20eb50.png)
+[![jv-media-4308-4c198b20eb50.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-4c198b20eb50.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-4c198b20eb50.png)
 
 Choose "Create a GPO in this domain and Link it here..." or use your existing printers-GPO if applicable. The GPO must target users using the Azure Virtual Desktop environment.
 
 Navigate to *User Configuration -> Preferences -> Control Panel Settings -> Printers*
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-627f56d35f32.png)
+[![jv-media-4308-627f56d35f32.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-627f56d35f32.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-627f56d35f32.png)
 
 Right-click on the empty space and select New -> Local Printer
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-18661f3757b3.png)
+[![jv-media-4308-18661f3757b3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-18661f3757b3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-18661f3757b3.png)
 
 The select "Delete" as action and type in exactly the name of the printer to be deleted, in this case:
 
@@ -50,11 +50,11 @@ OneNote (Desktop)
 
 Just like below:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-2e2d2ea48430.png)
+[![jv-media-4308-2e2d2ea48430.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-2e2d2ea48430.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-2e2d2ea48430.png)
 
 Click OK and check the settings for the last time:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-a58c0aaf587e.png)
+[![jv-media-4308-a58c0aaf587e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-a58c0aaf587e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/stop-onenote-printer-from-being-default-printer-in-avd-4308/jv-media-4308-a58c0aaf587e.png)
 
 Now we are done and at the next login or Group Policy refresh interval, the OneNote printer will be completely deleted from the users' printers list.
 

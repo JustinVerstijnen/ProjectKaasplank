@@ -20,7 +20,7 @@ Ik heb mijn best gedaan om de uitleg zo simpel maar duidelijk te geven, ook voor
 
 Powershell is een shell en script taal en sinds Windows 8/Server 2012 de onderliggende CLI van Windows. Eigenlijk alles in de grafische interface van Windows wordt door Powershell verwerkt, zoals te zien in onderstaande afbeelding:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-e591ec9a2438.png)
+[![jv-media-1971-e591ec9a2438.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-e591ec9a2438.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-e591ec9a2438.png)
 
 Klik op "Export configuration settings" en je krijgt:
 
@@ -196,7 +196,7 @@ Om een kleine hands-on demo te geven van Powershell heb ik speciaal voor deze CI
 
 Om de module te installeren kun PowerShell starten op je Windows apparaat en de commando's invullen.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-eb5a8dfdb79e.png)
+[![jv-media-1971-eb5a8dfdb79e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-eb5a8dfdb79e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/skrepr-tech-ci-powershell-1971/jv-media-1971-eb5a8dfdb79e.png)
 
 Beide gearceerde versies op Windows kun je hiervoor gebruiken.
 
