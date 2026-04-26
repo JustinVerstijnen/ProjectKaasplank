@@ -38,7 +38,7 @@ Now I want to highlight some different options, where some of these offerings wi
 
 - **Virtual Machine:** This means Wordpress runs on a virtual machine which has to be maintained, updated and secured.
 - **Azure Service:** This is the official offering of Microsoft, completely serverless and relying the most on Azure solutions
-- **Azure Application**: This is an option to run Wordpress on [containers](https://justinverstijnen.nl/ama-module-8-application-services-and-containers/#containers) or [scale sets](https://justinverstijnen.nl/amc-module-7-virtual-machines-and-scale-sets/#vmss).
+- **Azure Application**: This is an option to run Wordpress on [containers](https://justinverstijnen.nl/amc-module-8-application-services-and-containers/#containers) or [scale sets](https://justinverstijnen.nl/amc-module-7-virtual-machines-and-scale-sets/#vmss).
 
 In this guide, we will go for the official Microsoft option, as this has the most support and we are Azure-minded.
 

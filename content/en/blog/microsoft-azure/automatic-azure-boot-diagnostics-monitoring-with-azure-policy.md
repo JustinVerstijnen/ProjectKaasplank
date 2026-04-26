@@ -10,7 +10,7 @@ description: >
   In Azure, we can configure Boot diagnostics to view the status of a virtual machine and connect to its serial console. However, this must be configured manually. The good part is that we can automate this process with Azure Policy. In this post I will explain step-by-step how to configure this and how to start using this in your own environment.
 ---
 
-In short, [Azure Policy](https://justinverstijnen.nl/ama-module-3-governance-in-microsoft-azure/#azure-policy) is a compliance/governance tool in Azure with capabilities for automatically pushing your resources to be compliant with your stated policy. This means if we configure Azure Policy to automatically configure boot diagnostics and save the information to a storage account, this will be automatically done for all existing and new virtual machines.
+In short, [Azure Policy](https://justinverstijnen.nl/amc-module-3-governance-in-microsoft-azure/#azure-policy) is a compliance/governance tool in Azure with capabilities for automatically pushing your resources to be compliant with your stated policy. This means if we configure Azure Policy to automatically configure boot diagnostics and save the information to a storage account, this will be automatically done for all existing and new virtual machines.
 
 ---
 
