@@ -5,6 +5,7 @@ tags:
 - Step by Step Guides
 categories:
 - Windows Server
+slug: "windows-server-backup-retention"
 ---
 
 For more information about the wbadmin tool, see:
