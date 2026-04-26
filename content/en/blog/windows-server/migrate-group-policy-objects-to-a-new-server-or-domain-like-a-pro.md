@@ -91,6 +91,6 @@ I have used this script multiple times and I am very satisfied.
 
 Thank you for reading this page and hope it was interesting and helpful.
 
-{{\< ads >}}
+{{< ads >}}
 
-{{\< article-footer >}}
+{{< article-footer >}}
