@@ -32,7 +32,7 @@ Defender for Endpoint works by default with the defaults of Microsoft, which is 
 
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-ac4cfa8cf2ed.png)
 
-To learn more about configuring Microsoft Defender with Intune, check out this guide: [https://justinverstijnen.nl/microsoft-secure-score-devices](https://justinverstijnen.nl/?p=5375)
+To learn more about configuring Microsoft Defender with Intune, check out this guide: [https://justinverstijnen.nl/microsoft-secure-score-devices](https://justinverstijnen.nl/microsoft-secure-score-devices/)
 
 ---
 
@@ -52,15 +52,11 @@ This will give you an overview of all Defender information available on the devi
 {{% alert color="info" %}}
 If this command doesn't work, check if the module is imported correctly:
 
-PowerShell
-
 ```powershell
 Import-Module Defender
 ```
 
 If this doesn't help anything you can run this command to install the module:
-
-PowerShell
 
 ```powershell
 Get-Module -ListAvailable Defender | Install-Module
@@ -138,6 +134,7 @@ To simply check when the last full and quick Defender scans ran, execute this co
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Get-MpComputerStatus | Select FullScanStartTime, QuickScanStartTime
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-799afb8f2cb8.png)
 
 You can use this to get a simple overview of the latest scans executed. This can be used in incident responses or to simply check/troubleshoot your Defender confgiuration.
@@ -167,6 +164,7 @@ Sometimes we need to execute Defender scans manually. We can do this using 2 sep
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Start-MpScan -ScanType FullScan
 {{< /card >}}
+
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Start-MpScan -ScanType QuickScan
 {{< /card >}}
@@ -202,6 +200,7 @@ To remove all detected detected threats instantly, execute this command:
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Get-MpThreatDetection | Remove-MpThreat
 {{< /card >}}
+
 ![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/use-microsoft-defender-for-endpoint-with-powershell-7360/jv-media-7360-a7b5c6eb58e2.png)
 
 ---
@@ -239,13 +238,11 @@ This will give you a list of millions of signature items Microsoft has in its da
 You could setup a simple script with all commands above that does a definitions update and then do a scan. You can schedule this using the Windows Task Scheduler.
 
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
-# 4: Updating Virus definitions/signatures
+# Latest updates
 Update-MpSignature
-
-# 5: Executing a Full Scan
+# Full scan
 Start-MpScan -ScanType FullScan
-
-# 6: Remove all threats
+# Delete threat detections
 Get-MpThreatDetection | Remove-MpThreat
 {{< /card >}}
 
@@ -257,7 +254,7 @@ This can work in smaller environenments of course. If managing environments with
 
 PowerShell allows easy and powerful management of Microsoft Defender for Endpoint. You can view scan events, start scans manually, update virus definitions, control protection settings, and handle detected threats. Always keep virus definitions updated and be cautious when changing security settings like turning off real-time protection.
 
-I only described the operational commands of using Defender in case of incident response. For the configuration of Defender for Endpoint, I highly advise to use Microsoft Intune for central and mass configuration options. I have a guide on some Defender settings and the Microsft Secure Score here: [https://justinverstijnen.nl/microsoft-secure-score-devices](https://justinverstijnen.nl/?p=5375)
+I only described the operational commands of using Defender in case of incident response. For the configuration of Defender for Endpoint, I highly advise to use Microsoft Intune for central and mass configuration options. I have a guide on some Defender settings and the Microsft Secure Score here: [https://justinverstijnen.nl/microsoft-secure-score-devices](https://justinverstijnen.nl/microsoft-secure-score-devices/)
 
 Thank you for reading this guide and I hope it was helpful.
 
