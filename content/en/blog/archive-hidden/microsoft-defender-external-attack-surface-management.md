@@ -8,6 +8,7 @@ tags:
   - Concepts
 description: >
   Microsoft Defender External Attack Surface Management (EASM) is a security solution for an organization's external attack surfaces. It ope...
+hidden: true
 ---
 **Microsoft Defender External Attack Surface Management (EASM)** is a security solution for an organization's external attack surfaces. It operates by monitoring security and operational integrity across the following assets:
 
