@@ -8,7 +8,7 @@ tags:
   - AI Generated Content
   - Step by Step guides
 description: >
-  This page will share a PowerShell script to create bulk AD users with Powershell. Click here for more information...
+  This page will share a PowerShell script to create bulk AD users with Powershell including instructions to use it.
 ---
 When it comes to creating users for Active Directory, especially in new implementations, you want to minimize the time needed to create the accounts. This is possible by creating the AD users with Powershell.
 

@@ -37,15 +37,15 @@ Save my Export script to a .ps1 file and place that into the newly created folde
 
 If you haven't changed your Powershell script execution policy yet, do a shift + right click on a empty space in the folder, and run the command:
 
-{{\< card code=true header="\*\*POWERSHELL\*\*" lang="powershell" >}}  
+{{< card code=true header="\*\*POWERSHELL\*\*" lang="powershell" >}}  
 Set-ExecutionPolicy Unrestricted -Scope Process  
-{{\< /card >}}
+{{< /card >}}
 
 After that you can run the script by typing .\\\*tab button\*
 
-{{\< card code=true header="\*\*POWERSHELL\*\*" lang="powershell" >}}  
-.\\ExportGroupPolicies.ps1  
-{{\< /card >}}
+{{< card code=true header="\*\*POWERSHELL\*\*" lang="powershell" >}}  
+.\ExportGroupPolicies.ps1  
+{{< /card >}}
 
 This will temporarily accept our script and other scripts till we close the Powershell window. This is the best and most secure way handling the Execution Policy of Powershell.
 
