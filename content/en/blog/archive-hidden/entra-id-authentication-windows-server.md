@@ -21,8 +21,7 @@ Before starting, ensure the following requirements are met:
 - The **AADLoginForWindows** VM extension is installed
 - Security settings are properly configured
 - A **System Assigned Managed Identity** is enabled
-- A whitelist is configured according to  
-  https://skrepr.atlassian.net/wiki/spaces/TECH/pages/24446528
+- A whitelist is configured
 - A **public DNS A record** exists pointing to the public IP address of the server
 - The **full FQDN** is configured on the server
 - **Internet login** is enabled in the RDP file
