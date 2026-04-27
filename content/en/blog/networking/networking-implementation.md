@@ -22,9 +22,11 @@ To keep the process as simple as possible, this implementation guide consists of
 
 The phases of a network migration are:
 
-1. Preparation and configuration  
-2. Implementation  
-3. Post-check and completion  
+1. Preparation and configuration
+2. Implementation
+3. Post-check and completion
+
+[![jv-media-7100-2fb61033955a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/networking-implementation/jv-media-7100-2fb61033955a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/networking-implementation/jv-media-7100-2fb61033955a.png)
 
 ---
 
