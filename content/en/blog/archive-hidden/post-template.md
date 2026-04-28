@@ -7,6 +7,9 @@ tags:
 categories:
 - Microsoft Azure
 hidden: true
+build:
+  render: always
+  list: never
 ---
 
 ## Heading A
