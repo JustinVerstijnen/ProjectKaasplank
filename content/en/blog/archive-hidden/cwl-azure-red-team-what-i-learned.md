@@ -5,7 +5,9 @@ description: "In the first half of 2026 I followed a paid course on cyberwarfare
 tags: []
 categories: []
 type: "docs"
-hidden: true
+build:
+  render: always
+  list: never
 ---
 
 "If you don't test your infrastructure as an attacker, someone else will."
