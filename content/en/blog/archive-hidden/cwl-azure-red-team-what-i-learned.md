@@ -21,7 +21,9 @@ I started on the site cyberwarfare.live by purchasing the course. I found this v
 
 The full name of the course was: *CWL Certified Azure Red Team Specialist (AzRTS)*.
 
-Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input. You only can proceed if you submit the right information which makes it really fun and helpful.
+Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input. 
+
+All of this must be done through a honeypot Azure environment they deliver for you. You only can proceed if you submit the right information which makes it really fun and helpful.
 
 ## Certification subjects
 
@@ -40,35 +42,35 @@ The objectives of the certification are:
 
 ---
 
-## Heading B
+## Key learning points
 
-Paragraph text
+- When having a hybrid environment, apply hybrid security
+- Read-only access is more deadly than it looks
+- OAuth apps are very sensitive for hacks and backdoors and mostly hiding in plain sight
 
-<a class="btn btn-primary" href="/blog/" target="_blank" rel="noreferrer">This is a button</a>
-
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
-This is a code block.
-{{< /card >}}
-
-{{% alert title="Info" color="info" %}}
-This is an alert block.
-{{% /alert %}}
-
-{{% alert title="Warning" color="warning" %}}
-This is a warning block.
-{{% /alert %}}
-
-{{% alert title="Failure" color="danger" %}}
-This is a failure block.
-{{% /alert %}}
-
-{{% alert title="Success" color="success" %}}
-This is a success block.
-{{% /alert %}}
 
 ---
 
-## Heading C
+## Module 1: Introduction to Azure
+
+Microsoft Azure and Entra ID are valuable resources for hackers as these are global services. This means they are available for you as user but also for attackers. By breaching one single login, they have access to everything an user also has access to.
+
+### Access tokens
+
+Microsoft Azure uses Microsoft Entra ID as Identity Provider. This identity provider is basically a system that checks the users' credentials and then assigns a token where the user can login to all authorized applications and resources. By default, this token is valid for 90 days.
+
+An access token looks like this and can be further defined with [this tool](https://www.jwt.io/): 
+
+*plaatje
+
+This token is then saved into the cache of the browser so the user does not have to reauthenticate for every resource or application.
+
+### Control plane and Data plane
+
+Some resources in Azure needs security on both the control and data planes of the resource:
+
+- Control plane: What users can access the resource, during what time windows and what are their privileges?
+- Data plane: What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
 
 
 
