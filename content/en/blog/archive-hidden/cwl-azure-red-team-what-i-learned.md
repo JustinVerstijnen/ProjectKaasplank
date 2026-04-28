@@ -1,16 +1,11 @@
 ---
 title: "CWL Azure Red Team Certification - What I learned"
-slug: "cwl-azure-red-team-what-i-learned"
 date: 2026-07-01
-tags:
-- Try Outs
-categories:
-- Microsoft Azure
-hidden: true
-build:
-  render: always
-  list: never
 description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the stuff but in the notes I took and what I have learned from doing the course."
+tags: []
+categories: []
+type: "docs"
+hidden: true
 ---
 
 "If you don't test your infrastructure as an attacker, someone else will."
@@ -21,7 +16,9 @@ I started on the site cyberwarfare.live by purchasing the course. I found this v
 
 The full name of the course was: *CWL Certified Azure Red Team Specialist (AzRTS)*.
 
-Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input. 
+[![jv-media-8501-4c5d770da05a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-4c5d770da05a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-4c5d770da05a.png)
+
+Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input.
 
 All of this must be done through a honeypot Azure environment they deliver for you. You only can proceed if you submit the right information which makes it really fun and helpful.
 
@@ -48,7 +45,6 @@ The objectives of the certification are:
 - Read-only access is more deadly than it looks
 - OAuth apps are very sensitive for hacks and backdoors and mostly hiding in plain sight
 
-
 ---
 
 ## Module 1: Introduction to Azure
@@ -59,9 +55,9 @@ Microsoft Azure and Entra ID are valuable resources for hackers as these are glo
 
 Microsoft Azure uses Microsoft Entra ID as Identity Provider. This identity provider is basically a system that checks the users' credentials and then assigns a token where the user can login to all authorized applications and resources. By default, this token is valid for 90 days.
 
-An access token looks like this and can be further defined with [this tool](https://www.jwt.io/): 
+An access token looks like this and can be further defined with [this tool](https://www.jwt.io/):
 
-*plaatje
+[![jv-media-8501-c3becc04d0bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)
 
 This token is then saved into the cache of the browser so the user does not have to reauthenticate for every resource or application.
 
@@ -69,10 +65,8 @@ This token is then saved into the cache of the browser so the user does not have
 
 Some resources in Azure needs security on both the control and data planes of the resource:
 
-- Control plane: What users can access the resource, during what time windows and what are their privileges?
-- Data plane: What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
-
-
+- **Control plane** : What users can access the resource, during what time windows and what are their privileges?
+- **Data plane** : What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
 
 ---
 
@@ -83,7 +77,6 @@ Short summary of the post and what the organization wins using the information o
 ### Sources
 
 - Some links of documentation from official sources
-
 
 {{< ads >}}
 
