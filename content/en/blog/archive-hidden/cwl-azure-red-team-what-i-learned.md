@@ -1,7 +1,7 @@
 ---
 title: "CWL Azure Red Team Certification - What I learned"
 date: 2026-07-01
-description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the stuff but in the notes I took and what I have learned from doing the course."
+description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves but took some notes from what I have learned from doing the course."
 tags: []
 categories: []
 type: "docs"
@@ -69,6 +69,64 @@ Some resources in Azure needs security on both the control and data planes of th
 
 - **Control plane** : What users can access the resource, during what time windows and what are their privileges?
 - **Data plane** : What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
+
+---
+
+## Module 2: Red Team Operations in Microsoft Entra ID
+
+We have two types of applications in Microsoft Entra ID:
+
+- **App registrations**: Application Instance
+- **Enterprise Application** (Service Principals): Application Identity which has the permissions
+
+If an App Registration is created using the Azure Portal, you also get a Service Principal. This is the identity who has the permissions and can exists in multiple tenants if configured to do so. Both the App Registration and Service Principal may represent the same app, they are two different objects in Entra ID.
+
+### An attack described
+
+An attacker these days wants to target normal users. They doesn't seem valuable but they really are. With a correct login with an user an attacker has read access to the whole tenant. This means it can enumerate different users, groups, applications, devices and roles which it can use to escalate its privileges. The ultimate goal is to breach into a Global Administrator account of an organization which can do a LOT of harm.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-700c124c1749.png)
+
+The fun fact is that administrator accounts are normally secured properly but normal users a lot less.
+
+1. Initial target: Employee
+2. Information about an employee
+3. Access method: Device Code, Credential Harvesting, Shoulder Surfing
+4. Target environment: Microsoft Entra ID
+5. Motive: Gaining access with an access token and perform lateral movement
+6. Enumeration: The attacker will inventory the environment for possible users, devices and service principals to breach/attack
+7. End goal: Gaining Global Administrator privileges
+
+Attackers will mostly contact users by phone or email, and will push them at the needed action is high priority. This pushes the end user even more to do things they normally don't and shouldn't.
+
+### High Risk permissions
+
+Attacker will inventory your environment and search for permissions which gives them a lot of power. These permissions can be:
+
+- Global Administrator (user role) -> can do everything
+- RoleManagement.ReadWrite.Directory (API permission) -> Can assign roles to users, even Global Administrator role
+- Global Reader -> Can read everything, so complete attack surface is visible to hacker in a few minutes
+
+### Conditional Access and Targets
+
+High risk targets for attackers are users that are excluded from Conditional Access policies. These users doesn't need further authentication like trusted locations, MFA or session/token limitations. They can just perform a password spray attack to try and breach into this account. Now they have the real gold in their hands.
+
+---
+
+## Module 3: Red Team Operations in Azure Resource Manager
+
+Azure Resource Manager is the control plane of Microsoft Azure. Everything you do in the Portal, PowerShell and Azure CLI works with Azure Resource Manager by API calls. This makes viewing, creating and deleting resources pretty easy as the mechanism works the same across multiple platforms.
+
+An attack on Azure Resource Manager can look like this:
+
+1. Initial target: Publicly exposed web app
+2. Information about the organization
+3. Access method: Public facing web portal
+4. Target environment: Microsoft Azure Resource Manager
+5. Motive: Gaining access to organizations cloud environment
+6. End goal: Data exfiltration (steal)
+
+
 
 ---
 
