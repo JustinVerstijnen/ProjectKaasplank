@@ -2,9 +2,10 @@
 title: "CWL Azure Red Team Certification - What I learned"
 date: 2026-07-01
 description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves but took some notes from what I have learned from doing the course."
-tags: []
-categories: []
-type: "docs"
+tags:
+- Concepts
+categories:
+- Microsoft Azure
 build:
   render: always
   list: never
@@ -44,6 +45,10 @@ The objectives of the certification are:
 ## Key learning points
 
 - When having a hybrid environment, apply hybrid security
+- Attacks happen due to 3 major factors
+  - Misconfigurations
+  - Ease of use over security
+  - Untrained employees who don't understand what they do and can cause
 - Read-only access is more deadly than it looks
 - OAuth apps are very sensitive for hacks and backdoors and mostly hiding in plain sight
 
@@ -125,6 +130,32 @@ An attack on Azure Resource Manager can look like this:
 4. Target environment: Microsoft Azure Resource Manager
 5. Motive: Gaining access to organizations cloud environment
 6. End goal: Data exfiltration (steal)
+
+You see, we use newer cloud solutions but attack vectors still are using techniques like SQL injection.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-ab049923269c.png)
+
+### The MicroBurst PowerShell module
+
+The MicroBurst PowerShell module can be used to execute assessments of your Microsoft Azure environment. This checks the security and possible attack surfaces like Web apps. You can find this here:
+
+<a class="btn btn-primary" href="https://github.com/Netspi/Microburst" target="_blank" rel="noreferrer">MicroBurst PowerShell module</a>
+
+
+### Managed Identities
+
+Managed Identities are a great target for hackers as they have always have standing permissions. Managed Identities are used in links between Azure Resources, like a Logic App that needs permissions to turn on and off a virtual machine or a Logic App that needs permissions to a Storage Account. The actual identity used in these processes is a Managed Identity.
+
+To learn more about Logic Apps and Managed Identities, check out [this article](https://justinverstijnen.nl/use-azure-logic-apps-to-automatically-start-and-stop-vms/)
+
+---
+
+## 
+
+
+
+
+
 
 
 
