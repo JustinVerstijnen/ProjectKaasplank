@@ -43,6 +43,8 @@ The recommendations Microsoft gives are based on years of experience, cybersecur
 
 By getting your Secure Score to 100% means you are using 100% of the Microsoft Security toolbox. This doesn't mean that you are unhackable, which you technically would never be able to achieve.
 
+{{< ads >}}
+
 ---
 
 ## Starting point
