@@ -1,7 +1,7 @@
 ---
 title: "CWL Azure Red Team Certification - What I learned"
 date: 2026-07-01
-description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves but took some notes from what I have learned from doing the course."
+description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves or step by step hacking but took some notes from what I have learned from doing the course."
 tags:
 - Concepts
 categories:
@@ -45,16 +45,27 @@ The objectives of the certification are:
 ## Key learning points
 
 - When having a hybrid environment, apply hybrid security
-- Attacks happen due to 3 major factors
+- Attacks happen due to these major factors
   - Misconfigurations
+  - Failure to apply basic access controls
   - Ease of use over security
   - Untrained employees who don't understand what they do and can cause
 - Read-only access is more deadly than it looks
 - OAuth apps are very sensitive for hacks and backdoors and mostly hiding in plain sight
+- Basic Endpoint and Server security software and rules are highly needed to block from running malicious software
 
 ---
 
-## Module 1: Introduction to Azure
+## Attacker motives
+
+Hacks happen very often, but what exactly are the motives of hacking other people?
+
+- Stealing personal information
+- Selling personal information
+- Increase their reach by bulk sending phishing emails
+- Loss of face for companies
+
+## Introduction to Azure
 
 Microsoft Azure and Entra ID are valuable resources for hackers as these are global services. This means they are available for you as user but also for attackers. By breaching one single login, they have access to everything an user also has access to.
 
@@ -77,7 +88,7 @@ Some resources in Azure needs security on both the control and data planes of th
 
 ---
 
-## Module 2: Red Team Operations in Microsoft Entra ID
+## 1: Red Team Operations in Microsoft Entra ID
 
 We have two types of applications in Microsoft Entra ID:
 
@@ -118,7 +129,7 @@ High risk targets for attackers are users that are excluded from Conditional Acc
 
 ---
 
-## Module 3: Red Team Operations in Azure Resource Manager
+## 2: Red Team Operations in Azure Resource Manager
 
 Azure Resource Manager is the control plane of Microsoft Azure. Everything you do in the Portal, PowerShell and Azure CLI works with Azure Resource Manager by API calls. This makes viewing, creating and deleting resources pretty easy as the mechanism works the same across multiple platforms.
 
@@ -150,7 +161,97 @@ To learn more about Logic Apps and Managed Identities, check out [this article](
 
 ---
 
-## 
+## 3: Red Team Operations in Microsoft 365
+
+Attacks in Microsoft 365 are often performed by abusing OAuth 2.0 consent/grant flows. An attack flow for Microsoft 365 can look like this:
+
+1. Initial target: Employee of an organization
+2. Information about employees, organization details
+3. Access method: OAuth Consent Grant attack
+4. Target environment: Microsoft Entra ID and Microsoft 365
+5. Motive: Gaining access to organization
+6. End goal: Data exfiltration (steal)
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-6002156a21a9.png)
+
+### OAuth 2.0 consents and results
+
+An OAuth 2.0 consent window looks like this:
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)
+
+This is an consent request of an application to gain information about the user and organization where this is possible by default. We administrators often want to disable this for standard users because of this attack surface. Why these apps are also highly useable to the attackers is that they bypass the needs for credentials as the user gave permissions themselves. Attackers can create some malicious app in their tenant and creates them "multi-tenant". This makes it possible to publish this app to multiple organizations like the victims.
+
+When the victim accepts the application, an **Service Principal** is created in the victims tenant. This means we as the attacker have permissions in the victims tenant. The good part for us attackers is that these Service Principals are often hiding in plain sight as they are missed by administrators. Especially if we make the app good looking with a logo and such.
+
+When an attacker assigns the right permissions to the OAuth 2.0 applications, it can escalate its privileges to higher permissions without the need of an administrator. Then it can target administrator accounts to have even more gold.
+
+---
+
+## 4: Primary Refresh Token attacks
+
+Attacks on hybrid environments often happen and a breach of one of the systems can easily result in a breach of both.
+
+1. Initial target: Client device
+2. Access method: Pass the Primary Refresh Token
+3. Target environment: Active Directory and Microsoft Entra ID
+4. Motive: Gaining access to organizations' Entra ID
+5. End goal: Access Entra ID resources
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34931ce473a2.png)
+
+Attacks with the Primary Refresh Token has huge advantages for attackers. This bypasses:
+- Password Authentication
+- Multi Factor Authentication
+- Conditional Access Policies
+
+### Primary Refresh Token (PRT)
+
+To understand this attack, we need to first look at what a **Primary Refresh Token** is. This token is provided by Microsoft Entra ID to a device that allows it to do MFA. This PRT is device-bound and is given to the device after enrolling into Entra ID or Hybrid Entra join.
+
+The PRT is different to an Access token, where the PRT is device bound till a new enrollment is the access token a provided token for a specific application. This PRT token is then used to tell Entra ID "Hey im this device, give me a new access token for Microsoft SharePoint".
+
+An session key is encrypted and linked to the Primary Refresh Token which can be seen as a private key to the PRT, the public key. By passing both of these keys, Entra ID will trust your login attempt. This session key is secured by the Trusted Platform Module (TPM) chip of your device.
+
+### Enumeration device
+
+To get all the needed information, we can use this command on the compromised Windows device:
+
+{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+dsregcmd /status
+{{< /card >}}
+
+This tells us to what kind of identity service the computer is linked including more information like the tenant. Attackers will often use this command to search for this: **AzureAdPrt : YES**
+
+### Extract PRT
+
+To extract PRT's you can use the tool mimikatz, which you can find here:
+
+<a class="btn btn-primary" href="https://github.com/ParrotSec/mimikatz" target="_blank" rel="noreferrer">Mimikatz</a>
+
+This tool you can run on a Windows device and it extracts the PRT and session key which can be used on another device to pass this new token.
+
+---
+
+## 5: Entra Connect Password Hash Synchronization attacks
+
+Attacks can also perform reverse attacks if having access to the Entra Connect server first.
+
+1. Initial target: Entra Connect server
+2. Access method: Password Hash Synchronization
+3. Target environment: Active Directory and Microsoft Entra ID
+4. Motive: Gaining access to organizations' Entra ID
+5. End goal: Access Entra ID resources
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-590e76a9c22b.png)
+
+On the Entra Connect Server, the attacker can extract the connect credentials to use to authenticate to Microsoft Entra ID. This only works if the Password Hash Sync (PHS) option is selected in Entra Connect which is by default. The password are stored in an entrypted SQL instance on the Entra Connect server which can be extracted by administrators in plain text.
+
+With this command you can view the complete configuration of the Entra Connect instance:
+
+{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+Get-ADSyncConnector
+{{< /card >}}
 
 
 
