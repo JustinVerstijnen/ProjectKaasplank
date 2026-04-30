@@ -1,8 +1,7 @@
 ---
 title: "How I bumped up Microsoft Secure Score towards 100%"
 date: 2026-04-30
-description: "In this post series, I will demonstrate how I bumped up the Microsoft Secure Score of my tenant up to 100% (98,78% to be exact). This can be used to change the settings of your own tenant and have a better security posture.However, 100% secure score will definitely not mean that you are not hackable. It only means you use 100% of the Microsoft toolbox to defend your digital fortress. Spending more resources on awareness training for employees is a good approach on top of these settings. They are often the weakest factor.
-This pages and the subpages describe how I got my secure score up, and describing the settings I have done. For Intune Device pillar, I shared my Configuration Profile for fast import and reviewing the settings to use on your side."
+description: "In this post series, I will demonstrate how I bumped up the Microsoft Secure Score of my tenant up to 100% (98,78% to be exact). This can be used to change the settings of your own tenant and have a better security posture.However, 100% secure score will definitely not mean that you are not hackable. It only means you use 100% of the Microsoft toolbox to defend your digital fortress. Spending more resources on awareness training for employees is a good approach on top of these settings. They are often the weakest factor."
 tags:
 - Step by Step guides
 categories:
