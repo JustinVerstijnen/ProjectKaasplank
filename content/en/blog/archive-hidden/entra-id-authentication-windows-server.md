@@ -1,137 +1,195 @@
 ---
-title: "Entra ID Authentication on Windows Server"
-date: 2026-04-04
-slug: "entra-id-authentication-windows-server"
-categories:
-  - Windows Server
-draft: true
----
-
-# Joining an Azure Server to Azure AD
-
-This guide explains how to join an Azure virtual machine to **Azure Active Directory (Azure AD)**.
-Please note that this process has several prerequisites that must be met before configuration.
-
+title: "Entra ID Authentication on Azure Windows VM"
+date: 2026-05-14
+description: "This guide explains how to join an Azure virtual machine to Azure Active Directory (Azure AD). Please note that this process has several prerequisites that must be met before configuration which are described in the guide itself."
+tags: []
+categories: []
+type: "docs"
+hidden: false
 ---
 
 ## Prerequisites
 
 Before starting, ensure the following requirements are met:
 
-- The **AADLoginForWindows** VM extension is installed
-- Security settings are properly configured
-- A **System Assigned Managed Identity** is enabled
-- A whitelist is configured
-- A **public DNS A record** exists pointing to the public IP address of the server
-- The **full FQDN** is configured on the server
-- **Internet login** is enabled in the RDP file
+- The AADLoginForWindows VM extension is installed
+- The required users have an applicable role for VM login
+- A System Assigned Managed Identity is enabled
+- A RDP whitelist is configured
+- A public DNS A record exists pointing to the public IP address of the server
+- The full FQDN is configured on the server
+- Internet login is enabled in the RDP client
+- The VM name nay not exceed 15 characters
+
+I will guide you through all these steps to get a good understanding of what these requirements actually are.
+
+## The solution described
+
+The solution we are going to implement works as follows:
+
+1. **Extension** : On the virtual machine in Azure we install an extension. Extensions are small add ons which can be deployed from the Azure Portal or ARM tools to alter the working of a VM instance. In this case, it enables it to do Entra ID authentication.
+2. **Managed Identity** : It uses this extension alongside a Managed Identity, which is the identity of the virtual machine in Entra ID, to authenticate you as user.
+3. **IAM Permissions** : Before the user can be fully authenticated, it needs some IAM permissions as the access control is now done through the Azure Portal.
+
+[![jv-media-8502-d40fa21c6a96.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-d40fa21c6a96.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-d40fa21c6a96.png)
 
 ---
 
-## 1. Install the AADLoginForWindows Extension
+## Step 1: Install the AADLoginForWindows Extension
 
-The required extension can be installed via the Azure Portal.
+We first need to install the required extension for Entra ID authentication. This extension can be installed via the Azure Portal.
 
-Steps:
+Go to the Virtual Machine and open the "Extensions + applications" blade.
 
-- Go to **Virtual Machines** and select the desired virtual machine
-- Start the virtual machine if it is not running and wait approximately 5 minutes
-- Under **Settings**, go to **Extensions + Applications**
-- Click **Add**
-- Search for **AADLoginForWindows**
-- Install the extension
+[![jv-media-8502-1865acb0b8ba.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-1865acb0b8ba.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-1865acb0b8ba.png)
 
-At this point, the Azure VM should have the extension installed.
+Click on "+ Add" here to add a new extension to the Virtual Machine instance.
 
----
+[![jv-media-8502-502a418e7de8.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-502a418e7de8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-502a418e7de8.png)
 
-## 2. Configure Security Settings
+Select the "Azure AD based Windows Login" extension here. This is the old name of Entra ID as you already know. Then finish the wizard by advancing 3 times through the wizard.
 
-In the Azure Portal, you can define which users are allowed to log in to the server.
-This can be done for regular users or administrators.
+[![jv-media-8502-e38077502335.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e38077502335.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e38077502335.png)
 
-Steps:
+At this point, the Azure VM should have the extension installed. You can also configure the extension when initially deploying an Azure VM. Then you can find it on the Management tab:
 
-- Go to **Virtual Machines** and select the desired virtual machine
-- Open **Access Control (IAM)**
-- Add a new **role assignment**
-- Search for the role **Virtual Machine Administrator Login**
-- Add the customer’s general administrator account as the **Principal**
+[![jv-media-8502-e579cd1e7888.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e579cd1e7888.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e579cd1e7888.png)
 
-This completes the role assignment.
+As you can see, the Managed Identity will also be configured for this machine to actually have access to Entra ID.
+
+-_Login with Microsoft Entra ID: Enabled_
 
 ---
 
-## 3. Enable System Assigned Managed Identity
+## Step 2: Configure IAM Roles
 
-To allow the server to authenticate against Azure AD, a **System Assigned Managed Identity** must be enabled.
-This identity allows Azure resources to receive permissions and access Azure AD-related services.
+We must now configure which users are allowed to login to the virtual machine. This is done by Azure RBAC roles.
 
-Steps:
+To learn more about Azure RBAC roles and scopes, [check out this guide](https://justinverstijnen.nl/introduction-to-microsoft-azure-roles-rbac-iam-the-easy-way/).
 
-- Go to **Virtual Machines** and select the desired virtual machine
-- Under **Settings**, open **Identity**
-- On the **System assigned** tab, set the status to **On**
+In the Azure Portal, go to the virtual machine instance and open the "Access control (IAM)" blade. Then click "+Add" and add role assignments here.
 
----
+[![jv-media-8502-e04c2b11dd65.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e04c2b11dd65.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-e04c2b11dd65.png)
 
-## 4. Configure the Whitelist
+Now you need to assign the right roles. We have two options: normal user and Admin login:
 
-To ensure that only authorized users can access the server and to secure the RDP ports,
-a whitelist must be configured.
+-**Normal user:** Virtual Machine User Login
 
-Steps:
+-**Admin user:** Virtual Machine Administrator Login
 
-- Go to **Virtual Machines** and select the desired virtual machine
-- Under **Settings**, go to **Networking**
-- Configure an inbound security rule based on the whitelist defined at  
-  https://skrepr.atlassian.net/wiki/spaces/TECH/pages/24446528
+In my case, I assign the Virtual Machine Administrator Login to my account. Having Owner on a inheriting scope is unfortunately not enough as access to a VM is categorized as "Data" role and there stops this kind of inheritance.
 
----
+{{% alert title="Info" color="info" %}}
+If having multiple VMs with this cause in one resource group, you can also assign this role on the resource group level. This eliminates having to add those roles to every VM.
+{{% /alert %}}
 
-## 5. Create a Public A Record
+[![jv-media-8502-ab64382bca52.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ab64382bca52.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ab64382bca52.png)
 
-A public DNS **A record** must be created on the customer’s domain,
-using **exactly the same hostname as the server**.
-
-Example:
-
-- Azure VM name: `XXX-APP-SRV01`
-- DNS record: `xxx-app-srv01.customer.com`
-- This record must point to the **public IP address** assigned to the Azure VM
-
-Create this record at the DNS provider of the domain and verify it resolves correctly using `ping`.
+Step 2 is now completed.
 
 ---
 
-## 6. Configure the Full FQDN on the Server
+## Step 3: Enable the System Assigned Managed Identity
 
-Steps:
+To allow this server to authenticate against Entra ID, a System Assigned Managed Identity must be enabled. This is an identity which represents the Virtual Machine instance in Entra ID and makes it possible to assign Azure RBAC roles to the VM itself. For the purpose of this solution its needed to partly join the virtual machine to your Entra ID environment and making this communication possible.
 
-- Log in to the virtual machine
-- Open **sysdm.cpl**
-- On the **Computer Name** tab, click **Change**
-- Click **More**
-- Add the customer domain to **Primary DNS Suffix**
-- Apply the changes and restart the server
+In the Azure Portal, open your Virtual Machine and open the "Identity" blade.
 
-After this, the full FQDN of the server will be set.
-Example: `ORO-APP-SRV01.oromar.nl`
+[![jv-media-8502-81006013c04e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-81006013c04e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-81006013c04e.png)
+
+Switch this button from Off to On to enable the identity and save the changes.
+
+[![jv-media-8502-ce3179088bfc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ce3179088bfc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ce3179088bfc.png)
+
+This is how we want it to be. Step 3 completed.
 
 ---
 
-## 7. Enable Internet Login in the RDP File
+## Step 4: Configure Inbound RDP network rule (DNAT)
 
-In the RDP file used to connect to the server, internet account login must be enabled.
-In the classic MSTSC client, this option can be configured in the connection settings.
+If not already done so, let's configure the virtual machine to only be reachable from trusted networks. As RDP is a highly sensitive port which is actively scanned by attackers we want to only allow certain IP addresses we trust.
 
-Additional requirements:
+While this step may vary for every person or organization, let me show you how to add multiple fictional IP addresses.
 
-- Connect using the **full FQDN** of the server  
-  (hostname.domain, e.g. `xxx-app-srv01.customer.com`)
-- Append a custom port if required
+In the Azue Portal, open the virtual machine and the the "Network settings".
 
-After connecting, you will be presented with a **Microsoft 365 / Azure AD login prompt**.
-Log in using the customer’s administrator account.
+This already shows the unsafe RDP rule being opened to the whole internet to attack. We will now add two fictional IP addresses to limit access to only 2 of the possible 4+ billion IP addresses, as known as the full internet.
 
-If all steps are completed correctly, you should now be able to log in to the server using Azure AD.
+-12.34.56.78
+
+-78.56.34.12
+
+Click on the "RDP" inbound network rule.
+
+Set the source to "IP Addresses" and fill your IP addresses in here. This must be comma separated, a range or a CIDR network.
+
+{{< card code=true header="**JSON**" lang="json" >}}
+12.34.56.78,78.56.34.12
+{{< /card >}}
+
+This should be like this:
+
+[![jv-media-8502-ea3d11e24fd3.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ea3d11e24fd3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-ea3d11e24fd3.png)
+
+Now we can save the RDP rule and made the machine 99,9% more safe against RDP attacks.
+
+---
+
+## Step 5: Create a Public A Record
+
+To make Entra ID authentication and your RDP client word, A public DNS (A record) must be created on your domain. Create this record at the DNS provider of the domain and verify it resolves correctly using the ping command in CMD or PowerShell.
+
+[![jv-media-8502-8ab0b2fde1e5.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-8ab0b2fde1e5.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-8ab0b2fde1e5.png)
+
+Let's test it after configuring:
+
+{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+ping vm-jv-entra.justinverstijnen.nlPinging vm-jv-entra.justinverstijnen.nl [20.229.85.39] with 32 bytes of data:
+Request timed out.
+{{< /card >}}
+
+It doesn't have to actually reply as we did not configure that. Just the translation from name to IP is enough.
+
+---
+
+## Step 6: Configure the Full FQDN on the Server
+
+Now that we have almost everything in place, we must login to the virtual machine but still with the locally created administrator account. We must configure a Primary DNS Suffix name on the machine so it knows what FQDN to listen to. The FQDN is a combination of host and domain name. In my case: _vm-jv-entra.justinverstijnen.nl_
+
+Login to the virtual machine using the local administrator login and open the control panel section **sysdm.cpl.**
+
+[![jv-media-8502-bd961caa9b93.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-bd961caa9b93.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-bd961caa9b93.png)
+
+Then click on "Change" at the Computer Name tab.
+
+[![jv-media-8502-11a6192c104a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-11a6192c104a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-11a6192c104a.png)
+
+Then click the "More..." button.
+
+[![jv-media-8502-7561c1764f1e.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-7561c1764f1e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-7561c1764f1e.png)
+
+Fill in the full FQDN of the server here which is hostname and domain name in one string, which must match the A record you have created in the previous step:
+
+[![jv-media-8502-1ebc75f6f2d1.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-1ebc75f6f2d1.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-1ebc75f6f2d1.png)
+
+Apply the changes and restart the server to apply this change.
+
+[![jv-media-8502-fa4c80362b5b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-fa4c80362b5b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-fa4c80362b5b.png)
+
+---
+
+## Step 7: Enable Internet Login in the RDP File
+
+Now we must enable internet login for the RDP client. This changes the Kerberos authentication to Entra ID authentication.
+
+This can be done in the MSTSC client of Windows at the "Advanced" tab.
+
+[![jv-media-8502-85b03c4a41cd.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-85b03c4a41cd.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-authentication-on-azure-windows-vm/jv-media-8502-85b03c4a41cd.png)
+
+Enable the option "Use a web account to sign in to the remote computer".
+
+If using RDP files, you can add or change this line in your configuration to the line below:
+
+-enablerdsaadauth:i:1
+
+Now connect to your server using the FQDN hostname: _vm-jv-entra.justinverstijnen.nl_ in my case.

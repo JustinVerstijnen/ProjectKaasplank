@@ -6,9 +6,6 @@ tags:
 - Concepts
 categories:
 - Microsoft Azure
-build:
-  render: always
-  list: never
 ---
 
 "If you don't test your infrastructure as an attacker, someone else will."
@@ -253,22 +250,17 @@ With this command you can view the complete configuration of the Entra Connect i
 Get-ADSyncConnector
 {{< /card >}}
 
-
-
-
-
-
-
-
 ---
 
 ## Summary
 
-Short summary of the post and what the organization wins using the information of the post
+In this post, I share my experiences of the CWL Certified Azure Red Team Specialist (AzRTS) training by [cyberwarfare.live](https://cyberwarfare.live/) and the key lessons learned. By approaching Azure and Microsoft 365 environments from an attacker’s perspective, it becomes clear how misconfigurations, weak access controls failure to use least privileges and unaware users can lead to successful compromises. COmpromises who can cost companies a lot of money in terms of outage, employees not able to do work or loss of face and indirectly customers and work.
+
+I hope I gave you a good understanding of my experience with this course and would recommend it to everyone interested.
 
 ### Sources
 
-- Some links of documentation from official sources
+- [https://cyberwarfare.live](https://cyberwarfare.live/)
 
 {{< ads >}}
 
