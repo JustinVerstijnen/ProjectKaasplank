@@ -13,7 +13,7 @@ permalinks:
 
 # Disable archive-hidden pages
 ignoreFiles:
-  - "/content/blog/archive-hidden/"
+  - "/content/en/blog/archive-hidden/"
 
 # Navbar menu
 menu:
