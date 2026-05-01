@@ -1,9 +1,12 @@
 ---
 title: "Microsoft Defender External Attack Surface Management (EASM)"
 date: 2026-06-23
-description: ">"
-tags: []
-categories: []
+description: "Microsoft Defender External Attack Surface Management (EASM) is a separate Defender solution which can be used to defend and monitor some of your external attack surfaces like websites, servers, SSL certificates and domains. All of this is achieved through a single admin panel in your Azure Portal."
+tags:
+- Step by Step guides
+- Concepts
+categories:
+- Microsoft Defender XDR
 ---
 
 ## What is Defender External Attack Surface Management (EASM)?
@@ -31,7 +34,7 @@ The best features of Defender EASM are:
 - Open port scanning on IP addresses
 - SSL certificate monitoring + expiration date checks
 - Domain name checks + expiration date verification
-- Scanning for potential CVE score vulnerabilities
+- Active scanning for known CVE score vulnerabilities
 - Identifying common administrative misconfigurations
 - Web server assessments based on OWASP guidelines
 - Tracking changes in assets
@@ -131,11 +134,27 @@ I have added the IP address of the newly created virtual machine and created an 
 
 _The web-login of the intended vulnerable Web-app._
 
+The overview of the vulnerable server looks like this:
+
+[![jv-media-8503-c968ff9e90c0.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-c968ff9e90c0.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-c968ff9e90c0.png)
+
+The open ports/services of the server:
+
+[![jv-media-8503-d2664c1586f9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-d2664c1586f9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-d2664c1586f9.png)
+
+And after scanning, the solution has scanned all vulnerabilities in terms of open ports and services and vulnerabilities to be scanned:
+
+[![jv-media-8503-62ff1e32cc35.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-62ff1e32cc35.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/microsoft-defender-external-attack-surface-management/jv-media-8503-62ff1e32cc35.png)
+
 ---
 
 ## Summary
 
-To summarize this solution, its a must-need for organizations who want security on every level. Security is like a team sport, it has to be great on every level. Not just one level. This solution will help you achieve this.
+Defender EASM is a nice solution for actively scanning your asset inventory for known vulnerabilities. This can be used as an extra control plane for overviewing those and be informed about the exposure. Limiting this exposure also decreases your attacking possibilities for hackers.
+
+This solution is great to use and not that expensive for the additional security it can provide. However, you must use it as a tool to increase your security. Only enabling it and paying the money does nothing.
+
+Thank you for visiting this page and I hope it was helpful!
 
 {{< ads >}}
 
