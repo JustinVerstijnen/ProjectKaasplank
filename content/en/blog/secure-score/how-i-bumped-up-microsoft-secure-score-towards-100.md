@@ -1,32 +1,26 @@
 ---
 title: "How I bumped up Microsoft Secure Score towards 100%"
 date: 2026-04-30
-slug: "how-i-bumped-up-microsoft-secure-score-towards-100"
-categories:
-  - Secure Score
+description: "In this post series, I will demonstrate how I bumped up the Microsoft Secure Score of my tenant up to 100% (98,78% to be exact). This can be used to change the settings of your own tenant and have a better security posture.However, 100% secure score will definitely not mean that you are not hackable. It only means you use 100% of the Microsoft toolbox to defend your digital fortress. Spending more resources on awareness training for employees is a good approach on top of these settings. They are often the weakest factor."
 tags:
-  - Step by Step guides
-description: >
-  In this post series, I will demonstrate how I bumped up the Microsoft Secure Score of my tenant up to 100%. This can be used to change the...
----
-In this post series, I will demonstrate how I bumped up the Microsoft Secure Score of my tenant up to 100% (98,78% to be exact). This can be used to change the settings of your own tenant and have a better security posture.
-
-However, 100% secure score will definitely not mean that you are not hackable. It only means you use 100% of the Microsoft toolbox to defend your digital fortress. Spending more resources on awareness training for employees is a good approach on top of these settings. They are often the weakest factor.
-
-This pages and the subpages describe how I got my secure score up, and describing the settings I have done. For Intune Device pillar, I shared my Configuration Profile for fast import and reviewing the settings to use on your side.
-
+- Step by Step guides
+categories:
+- Secure Score
 ---
 
-## Microsoft Secure Score subpages
+## My Microsoft Secure Score subpages
 
 These subpages contains the different pillars to address:
 
-[1. Identity](https://justinverstijnen.nl/microsoft-secure-score-identity/)
-[2. Devices](https://justinverstijnen.nl/microsoft-secure-score-devices/)
-[3. Apps](https://justinverstijnen.nl/microsoft-secure-score-apps/)
-[4. Data](https://justinverstijnen.nl/microsoft-secure-score-data/)
+<a class="btn btn-primary" href="/microsoft-secure-score-identity/" target="_blank" rel="noreferrer">1. Identity</a>
 
-On these pages I did the recommendations step-by-step and added some non-counting advices of myself and some things I found out in my work.
+<a class="btn btn-primary" href="/microsoft-secure-score-devices/" target="_blank" rel="noreferrer">2. Devices</a>
+
+<a class="btn btn-primary" href="/microsoft-secure-score-apps/" target="_blank" rel="noreferrer">3. Apps</a>
+
+<a class="btn btn-primary" href="/microsoft-secure-score-data/" target="_blank" rel="noreferrer">4. Data</a>
+
+On these pages I did the recommendations step-by-step and added some non-counting advices of myself and some things I found out in my work. You can also find all pages on the left side in the sidebar under "Secure Score".
 
 ---
 
@@ -48,6 +42,8 @@ The recommendations Microsoft gives are based on years of experience, cybersecur
 - Classify your sensitive data
 
 By getting your Secure Score to 100% means you are using 100% of the Microsoft Security toolbox. This doesn't mean that you are unhackable, which you technically would never be able to achieve.
+
+{{< ads >}}
 
 ---
 
