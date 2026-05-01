@@ -11,6 +11,10 @@ enableGitInfo: true
 permalinks:
   blog: "/:slug/"
 
+# Disable archive-hidden pages
+ignoreFiles:
+  - "/content/blog/archive-hidden/"
+
 # Navbar menu
 menu:
   main:
