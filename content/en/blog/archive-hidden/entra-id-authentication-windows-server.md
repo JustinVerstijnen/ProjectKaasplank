@@ -1,7 +1,7 @@
 ---
 title: "Entra ID Authentication on Azure Windows VM"
 slug: "entra-id-authentication-on-azure-windows-vm"
-date: 2025-06-07
+date: 2026-06-07
 description: "This guide explains how to join an Azure virtual machine to Azure Active Directory (Azure AD). Please note that this process has several prerequisites that must be met before configuration which are described in the guide itself."
 tags: "Step by Step guides"
 categories: "Microsoft Azure"
@@ -21,6 +21,8 @@ Before starting, ensure the following requirements are met:
 - The VM name nay not exceed 15 characters
 
 I will guide you through all these steps to get a good understanding of what these requirements actually are.
+
+---
 
 ## The solution described
 
