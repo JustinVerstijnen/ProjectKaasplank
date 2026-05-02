@@ -187,7 +187,7 @@ Click browse and select your just created CSS file. Then save the settings and l
 
 Now that we have applied our customized CSS, we can check the changes by opening a sign-in prompt of our tenant. The fastest way I know is to open up this link:
 
-{{< card code=true header="**CMD**" lang="cmd" >}}
+{{< card code=true lang="cmd" >}}
 outlook.com/justinverstijnen.nl
 {{< /card >}}
 
@@ -204,6 +204,7 @@ This should show the new branding within a few minutes.
 Some things that could help you troubleshooting and possibly further customizing the sign-in experience:
 
 - CSS are heavily cached, so you can expect different outcomes directly after changes, also across multiple devices
+- Not every CSS control is correctly picked up as Microsoft does not support all options
 - If you want to live test some changes, you can use the "Devtools" of your browser. On Chrome and Edge browsers, this works like this:
 
 Right-click the element (for example: the button) you want to customize and click on "Inspect".
