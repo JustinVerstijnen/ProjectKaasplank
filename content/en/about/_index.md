@@ -7,7 +7,7 @@ title: "About"
 <section class="about-hero-panel about-justin-panel">
   <div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
-    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.</p>
+    <p class="about-lead">I am Justin Verstijnen and this is my Technical Blog website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.</p>
 
     <div class="about-skill-row about-competency-row" aria-label="Competencies">
       <span>Independent</span>
@@ -97,8 +97,7 @@ title: "About"
     <article class="about-expand-card about-certifications-card about-static-certifications-card">
       <div class="about-expand-summary-content">
         <span class="about-eyebrow">Certifications</span>
-        <strong>Microsoft, networking and IT fundamentals</strong>
-        <em>A compact overview of Microsoft, networking and IT certifications, including identity, security, Azure, Microsoft 365, Windows Server, networking and service management.</em>
+        <em>An overview of my IT certifications.</em>
       </div>
       <div class="about-cert-grid" aria-label="Certifications">
         <article class="about-cert-tile"><strong>Microsoft Identity Access Administrator</strong><small>SC-300</small></article>
@@ -153,10 +152,9 @@ title: "About"
   <div class="about-build-card about-build-card-clean">
     <div>
       <p class="about-eyebrow">Build details</p>
-      <h3>How this site is built</h3>
     </div>
     <div class="about-build-content">
-      <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source, meaning that every change and part of code is publicly available. The key components of the website are:</p>
+      <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source, meaning that every change and part of code is publicly available. I also use the tool Umami for reviewing page visitors and views, just because I like viewing those numbers. The key components of the website are:</p>
       <div class="about-chip-list about-build-link-list">
         <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener noreferrer">Hugo</a>
         <a href="https://www.docsy.dev/docs/" target="_blank" rel="noopener noreferrer">Docsy</a>
