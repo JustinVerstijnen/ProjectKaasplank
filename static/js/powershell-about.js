@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return String(message || "").split("\n")[0];
   }
 
-  fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/commits?per_page=3`, {
+  fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/commits?per_page=5`, {
     headers: {
       Accept: "application/vnd.github+json",
       "X-GitHub-Api-Version": "2022-11-28"

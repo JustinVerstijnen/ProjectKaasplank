@@ -1480,3 +1480,116 @@ body.has-ps-about-page .ps-markdown [id] {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Layout update: no external icon font dependency, compact grouped sections */
+.ps-markdown .about-justin-panel {
+  grid-template-columns: minmax(0, 1fr) 220px;
+}
+
+.ps-markdown .about-hero-bottom-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: none;
+}
+
+.ps-markdown .about-inline-expand-card {
+  max-width: none;
+  min-height: 0;
+}
+
+.ps-markdown .about-inline-expand-card summary {
+  min-height: 17rem;
+}
+
+.ps-markdown .about-hero-bottom-grid .about-card-modern,
+.ps-markdown .about-two-columns.about-modern-columns > .about-card-modern,
+.ps-markdown .about-two-columns.about-modern-columns > .about-inline-expand-card {
+  height: 100%;
+}
+
+.ps-markdown .about-profile-card,
+.ps-markdown .about-profile-photo {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
+.ps-markdown .about-profile-photo {
+  height: 200px !important;
+}
+
+.ps-markdown .about-skill-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+}
+
+.ps-markdown .about-skill-row span {
+  flex: 0 0 auto;
+}
+
+.ps-markdown .about-tile-icon,
+.ps-markdown .about-card-icon {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.ps-markdown .about-tile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55rem;
+  min-width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 0.5rem;
+  color: #1d5fa7;
+  background: rgba(43, 124, 211, 0.1);
+  border: 1px solid rgba(43, 124, 211, 0.16);
+  font-size: 0.82rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.ps-markdown .about-tile i,
+.ps-markdown .about-skill-row i,
+.ps-markdown .about-card-icon i {
+  display: none !important;
+}
+
+.ps-markdown .about-feature-grid.about-site-grid.about-compact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ps-markdown .about-build-card-clean {
+  align-items: start;
+}
+
+.ps-markdown .about-build-preview {
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .ps-markdown .about-justin-panel,
+  .ps-markdown .about-hero-bottom-grid,
+  .ps-markdown .about-feature-grid.about-site-grid.about-compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-inline-expand-card summary {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .ps-markdown .about-profile-card,
+  .ps-markdown .about-profile-photo {
+    width: 160px !important;
+    max-width: 160px !important;
+  }
+
+  .ps-markdown .about-profile-photo {
+    height: 160px !important;
+  }
+}
