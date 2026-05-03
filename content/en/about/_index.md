@@ -165,7 +165,7 @@ title: "About"
       <p>The source repository for this website is available on GitHub: <a href="https://github.com/JustinVerstijnen/JVTechnicalBlog">JustinVerstijnen/JVTechnicalBlog</a>.</p>
     </article>
   </div>
-
+</div>
   <div class="about-build-card about-build-card-clean">
     <div>
       <p class="about-eyebrow">Build details</p>
