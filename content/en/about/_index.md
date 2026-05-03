@@ -7,7 +7,7 @@ title: "About"
 <section class="about-hero-panel about-justin-panel">
   <div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
-    <p class="about-lead">I am Justin Verstijnen and this is my Technical Blog website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.</p>
+    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.</p>
 
     <div class="about-skill-row about-competency-row" aria-label="Competencies">
       <span>Independent</span>
@@ -97,33 +97,162 @@ title: "About"
     <article class="about-expand-card about-certifications-card about-static-certifications-card">
       <div class="about-expand-summary-content">
         <span class="about-eyebrow">Certifications</span>
-        <em>An overview of my IT certifications.</em>
+        <strong>Microsoft, networking and IT fundamentals</strong>
+        <em>An overview of my currently active Microsoft certifications, including certification numbers, earned dates and expiry dates.</em>
       </div>
-      <div class="about-cert-grid" aria-label="Certifications">
-        <article class="about-cert-tile"><strong>Microsoft Identity Access Administrator</strong><small>SC-300</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Security SOC Engineer</strong><small>SC-200</small></article>
-        <article class="about-cert-tile"><strong>Microsoft AI Fundamentals</strong><small>AI-900</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Power Platform Fundamentals</strong><small>PL-900</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Networking Engineer</strong><small>AZ-700</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Security Architect Expert</strong><small>SC-100</small></article>
-        <article class="about-cert-tile"><strong>Windows Server Hybrid Administrator</strong><small>AZ-800, AZ-801</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Virtual Desktop Specialty</strong><small>AZ-140</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Security Associate</strong><small>AZ-500</small></article>
-        <article class="about-cert-tile"><strong>Microsoft 365 Security Associate</strong><small>MS-500</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Enterprise Expert</strong><small>MS-100, MS-101 (MS-102)</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Modern Desktop Associate</strong><small>MD-100, MD-101 (MD-102)</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Architect Expert</strong><small>AZ-303, AZ-304, AZ-305</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Administrator</strong><small>AZ-104</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Security &amp; Compliance Fundamentals</strong><small>SC-900</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Azure Fundamentals</strong><small>AZ-900</small></article>
-        <article class="about-cert-tile"><strong>Microsoft 365 Fundamentals</strong><small>MS-900</small></article>
-        <article class="about-cert-tile"><strong>Microsoft Certified Solutions Associate (MCSA)</strong><small>70-740, 70-741, 70-742</small></article>
-        <article class="about-cert-tile"><strong>Ubiquiti Wireless Administrator</strong><small>UEWA</small></article>
-        <article class="about-cert-tile"><strong>Ubiquiti Networking Fundamentals</strong><small>UNS</small></article>
-        <article class="about-cert-tile"><strong>Hurricane Electric IPv6 Networking &quot;Sage&quot;</strong><small>Certification</small></article>
-        <article class="about-cert-tile"><strong>3CX Expert</strong><small>Certification</small></article>
-        <article class="about-cert-tile"><strong>Cisco Certified Networking Associate 1 + 2</strong><small>CCNA 1, CCNA 2</small></article>
-        <article class="about-cert-tile"><strong>ITIL 4 Foundation</strong><small>Certification</small></article>
+      <div class="about-cert-grid" aria-label="Active certifications">
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Cybersecurity Architect Expert</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>EB2052-MB2315</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Nov 28, 2024</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Nov 29, 2026</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Virtual Desktop Specialty</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>133ABF-AN7E34</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Dec 9, 2021</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Dec 10, 2026</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Administrator Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>EA40EE-21I6A4</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Dec 18, 2020</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Dec 19, 2026</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Security Operations Analyst Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>273D5C-EDF491</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Jan 26, 2023</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Jan 27, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Solutions Architect Expert</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>54787C-2CDCG8</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Mar 10, 2022</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Mar 11, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft 365 Certified: Administrator Expert</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>64EV67-955A72</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Apr 22, 2021</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Apr 23, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft 365 Certified: Teams Administrator Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>F414FF-E10KB1</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Apr 28, 2022</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Apr 29, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Identity and Access Administrator Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>EU0495-684C0F</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>May 2, 2024</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>May 3, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Security Engineer Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>FDD82F-A107D3</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Jul 27, 2023</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Jul 28, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft 365 Certified: Endpoint Administrator Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>4B56A2-M5362A</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Oct 9, 2020</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 10, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Network Engineer Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>29A40A-2J5B2F</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Oct 19, 2023</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 20, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Windows Server Hybrid Administrator Associate</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>4750C4-9E4307</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Oct 27, 2022</small></div>
+            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 28, 2027</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>V41D61-5F6A9F</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Oct 10, 2024</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Data Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>E376CB-H1AA84</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Mar 30, 2023</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Power Platform Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>1DFAB0-435489</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Dec 29, 2022</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure AI Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>M9D4AB-A61472</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Dec 8, 2022</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Security, Compliance, and Identity Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>720CAC-2F31E0</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Apr 5, 2022</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft 365 Certified: Fundamentals</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>D1B9EB-B31A7D</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>Jun 4, 2020</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>MCSA: Windows Server 2016</strong>
+          <div class="about-cert-meta"><span>Certification number</span><small>916FWC-D55F27</small></div>
+          <div class="about-cert-date-row">
+            <div><span>Earned on</span><small>May 15, 2020</small></div>
+            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
+          </div>
+        </article>
       </div>
     </article>
   </div>
@@ -152,15 +281,15 @@ title: "About"
   <div class="about-build-card about-build-card-clean">
     <div>
       <p class="about-eyebrow">Build details</p>
+      <h3>How this site is built</h3>
     </div>
     <div class="about-build-content">
-      <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source, meaning that every change and part of code is publicly available. I also use the tool Umami for reviewing page visitors and views, just because I like viewing those numbers. The key components of the website are:</p>
+      <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source, meaning that every change and part of code is publicly available. The key components of the website are:</p>
       <div class="about-chip-list about-build-link-list">
         <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener noreferrer">Hugo</a>
         <a href="https://www.docsy.dev/docs/" target="_blank" rel="noopener noreferrer">Docsy</a>
         <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
         <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener noreferrer">Markdown</a>
-        <a href="https://umami.is" target="_blank" rel="noopener noreferrer">Umami</a>
       </div>
       <a class="about-build-preview" href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
         <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">
@@ -181,7 +310,7 @@ title: "About"
   <div class="about-github-card about-donation-card">
     <div class="about-github-card-header">
       <p class="about-eyebrow">Support the website</p>
-      <p>If one of my posts, tools or examples helped you save time, solve a problem or learn something new, a small donation helps me keep the website running and motivates me to keep writing practical technical content. Creating, maintaining and updating content takes a lot of time and money.</p>
+      <p>If one of my posts, tools or examples helped you save time, solve a problem or learn something new, a small donation helps me keep the website running and motivates me to keep writing practical technical content.</p>
     </div>
     <p class="about-donation-button"><a href="https://www.buymeacoffee.com/justinverstijnen" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20beer&amp;emoji=🍺&amp;slug=justinverstijnen&amp;button_colour=FFDD00&amp;font_colour=000000&amp;font_family=Arial&amp;outline_colour=000000&amp;coffee_colour=ffffff" alt="Buy me a beer"></a></p>
   </div>
@@ -190,5 +319,3 @@ title: "About"
 {{< /powershell-about >}}
 
 {{< ads >}}
-
-<br>
