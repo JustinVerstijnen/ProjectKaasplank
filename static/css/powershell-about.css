@@ -491,3 +491,380 @@ body.has-ps-about-page .ps-markdown [id] {
     font-size: 0.92rem;
   }
 }
+
+/* Modern About page sections */
+.ps-markdown .about-hero-panel,
+.ps-markdown .about-section,
+.ps-markdown .about-story-section {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ps-markdown .about-hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.75fr);
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-top: 0.25rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(43, 124, 211, 0.16), transparent 32rem),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.025), rgba(0, 0, 0, 0.01));
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.ps-markdown .about-hero-content,
+.ps-markdown .about-hero-highlight,
+.ps-markdown .about-section-header,
+.ps-markdown .about-feature-card,
+.ps-markdown .about-build-card,
+.ps-markdown .about-github-card {
+  max-width: none;
+}
+
+.ps-markdown .about-eyebrow {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1d5fa7;
+}
+
+.ps-markdown .about-hero-panel h2,
+.ps-markdown .about-section-header h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.ps-markdown .about-lead,
+.ps-markdown .about-section-header p:not(.about-eyebrow) {
+  margin-bottom: 0;
+  max-width: 760px;
+  color: rgba(33, 37, 41, 0.78);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.ps-markdown .about-hero-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 0.65rem;
+  padding: 1.25rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.ps-markdown .about-hero-highlight span,
+.ps-markdown .about-chip-list span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(43, 124, 211, 0.09);
+  border: 1px solid rgba(43, 124, 211, 0.18);
+  color: #174c83;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.48rem 0.72rem;
+}
+
+.ps-markdown .about-section {
+  margin-top: 3.25rem;
+  margin-bottom: 3.25rem;
+}
+
+.ps-markdown .about-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.ps-markdown .about-feature-grid {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem auto 2rem;
+}
+
+.ps-markdown .about-feature-card,
+.ps-markdown .about-card-modern,
+.ps-markdown .about-build-card,
+.ps-markdown .about-github-card,
+.ps-markdown .about-site-preview {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+}
+
+.ps-markdown .about-feature-card {
+  padding: 1.35rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ps-markdown .about-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(43, 124, 211, 0.25);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+.ps-markdown .about-feature-card-large {
+  grid-column: span 1;
+}
+
+.ps-markdown .about-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2b7cd3, #1d5fa7);
+  box-shadow: 0 10px 18px rgba(43, 124, 211, 0.24);
+  font-weight: 800;
+}
+
+.ps-markdown .about-feature-card h3,
+.ps-markdown .about-build-card h3,
+.ps-markdown .about-github-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.16rem;
+}
+
+.ps-markdown .about-feature-card p,
+.ps-markdown .about-feature-card li,
+.ps-markdown .about-build-card p,
+.ps-markdown .about-github-card p {
+  margin-bottom: 0;
+  color: rgba(33, 37, 41, 0.76);
+  line-height: 1.72;
+}
+
+.ps-markdown .about-modern-columns {
+  margin-top: 1rem;
+}
+
+.ps-markdown .about-card-modern {
+  padding: 1.5rem;
+}
+
+.ps-markdown .about-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.ps-markdown .about-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.ps-markdown .about-link-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 2.7rem;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.ps-markdown .about-link-grid a::after {
+  content: "↗";
+  flex: 0 0 auto;
+  opacity: 0.5;
+}
+
+.ps-markdown .about-link-grid a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(43, 124, 211, 0.32);
+  background: rgba(43, 124, 211, 0.07);
+  text-decoration: none;
+}
+
+.ps-markdown .about-story-section {
+  padding: 2rem;
+  border-left: 4px solid #2b7cd3;
+  border-radius: 0 22px 22px 0;
+  background: linear-gradient(90deg, rgba(43, 124, 211, 0.075), rgba(43, 124, 211, 0.015));
+}
+
+.ps-markdown .about-story-section h2:first-child {
+  margin-top: 0;
+}
+
+.ps-markdown .about-certifications-section table {
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+}
+
+.ps-markdown .about-section-site {
+  padding: 2rem;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(43, 124, 211, 0.13), transparent 30rem),
+    rgba(0, 0, 0, 0.018);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.ps-markdown .about-build-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.5fr) minmax(0, 1.5fr);
+  gap: 1.25rem;
+  align-items: start;
+  margin: 1.25rem auto;
+  padding: 1.35rem;
+}
+
+.ps-markdown .about-build-content * {
+  max-width: 100%;
+}
+
+.ps-markdown .about-site-preview {
+  max-width: 1040px;
+  margin: 1.25rem auto;
+  padding: 0.8rem;
+  overflow: hidden;
+}
+
+.ps-markdown .about-site-preview img {
+  margin: 0;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.ps-markdown .about-github-card {
+  max-width: 1040px;
+  margin: 1.25rem auto 0;
+  padding: 1.35rem;
+}
+
+.ps-markdown .about-github-card-header {
+  margin-bottom: 1rem;
+}
+
+.ps-markdown #github-contributions-widget {
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  font-family: inherit;
+}
+
+.ps-markdown .github-commit {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ps-markdown .github-commit:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ps-markdown .github-commit:last-child {
+  padding-bottom: 0;
+}
+
+.ps-markdown .github-commit-title {
+  margin-bottom: 0.35rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ps-markdown .github-commit-title a {
+  text-decoration: none;
+}
+
+.ps-markdown .github-commit-title a:hover {
+  text-decoration: underline;
+}
+
+.ps-markdown .github-commit-meta {
+  color: rgba(33, 37, 41, 0.62);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .ps-markdown .about-hero-panel,
+  .ps-markdown .about-build-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-section-site,
+  .ps-markdown .about-story-section,
+  .ps-markdown .about-hero-panel {
+    padding: 1.25rem;
+  }
+
+  .ps-markdown .about-hero-panel h2,
+  .ps-markdown .about-section-header h2 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .ps-markdown .about-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-hero-highlight {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ps-markdown .about-feature-card,
+  .ps-markdown .about-link-grid a {
+    transition: none !important;
+  }
+
+  .ps-markdown .about-feature-card:hover,
+  .ps-markdown .about-link-grid a:hover {
+    transform: none;
+  }
+}
+
+.ps-markdown .about-chip-list a {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(43, 124, 211, 0.09);
+  border: 1px solid rgba(43, 124, 211, 0.18);
+  color: #174c83;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.48rem 0.72rem;
+  text-decoration: none;
+}
+
+.ps-markdown .about-chip-list a:hover {
+  background: rgba(43, 124, 211, 0.14);
+  text-decoration: none;
+}
