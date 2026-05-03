@@ -25,7 +25,7 @@ title: "About"
   <aside class="about-hero-aside" aria-label="Profile photo">
     <figure class="about-profile-card">
       <div class="about-profile-photo">
-        <img src="/img/about-profile-placeholder.svg" alt="Profile photo placeholder">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGo_phxUmEeGA/profile-displayphoto-shrink_100_100/B4EZNdp3RXH0AU-/0/1732443076313?e=1779321600&v=beta&t=TwyuFfmz9JuHrrigrQ_GCKm5BCktGUOfXZ4dVTuLeJI" alt="Profile picture">
       </div>
     </figure>
   </aside>
