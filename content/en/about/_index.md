@@ -32,7 +32,8 @@ title: "About"
   </aside>
 
   <div class="about-hero-bottom-grid">
-    <div class="about-card about-card-modern about-item-card">
+    <div class="about-card about-card-modern about-item-card about-feature-card about-tile-panel">
+      <div class="about-card-icon" aria-hidden="true">✦</div>
       <h3>Hobbies and pastimes</h3>
       <div class="about-tile-grid about-hobby-grid">
         <span class="about-tile"><span class="about-tile-icon" aria-hidden="true">📷</span>Photography</span>
@@ -73,37 +74,20 @@ title: "About"
     <p>In my daily work I'm busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
   </div>
 
-  <div class="about-feature-grid about-compact-grid">
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">☁</div>
-      <h3>Professional focus</h3>
-      <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell and Networking as subservices. This translates into the content on this website, but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure solutions, and therefore you need to know the whole solution.</p>
-    </article>
-  </div>
-
-  <div class="about-two-columns about-modern-columns">
-    <div class="about-card about-card-modern about-item-card">
-      <h3>Profiles and socials</h3>
-      <div class="about-tile-grid about-social-grid">
-        <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">in</span>LinkedIn</a>
-        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
-        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">MS</span>Microsoft Learn</a>
-        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><span class="about-tile-icon" aria-hidden="true">✓</span>Certification Transcript</a>
-        <a class="about-tile" href="https://github.com/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">GH</span>GitHub</a>
-        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
-        <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Reddit</a>
-        <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Subreddit</a>
-        <a class="about-tile" href="https://substack.com/@justinverstijnen"><span class="about-tile-icon" aria-hidden="true">S</span>Substack</a>
-        <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">▶</span>YouTube</a>
-      </div>
-    </div>
-
-    <details class="about-expand-card about-inline-expand-card">
+  <div class="about-work-layout">
+    <details class="about-expand-card about-certifications-card">
       <summary>
         <span class="about-expand-summary-content">
           <span class="about-eyebrow">Certifications</span>
           <strong>Microsoft, networking and IT fundamentals</strong>
           <em>A compact overview of Microsoft, networking and IT certifications, including identity, security, Azure, Microsoft 365, Windows Server, networking and service management.</em>
+          <span class="about-cert-preview" aria-label="Certification preview">
+            <span><strong>Microsoft Identity Access Administrator</strong><small>SC-300</small></span>
+            <span><strong>Microsoft Security SOC Engineer</strong><small>SC-200</small></span>
+            <span><strong>Microsoft Azure Networking Engineer</strong><small>AZ-700</small></span>
+            <span><strong>Microsoft Security Architect Expert</strong><small>SC-100</small></span>
+            <span><strong>Windows Server Hybrid Administrator</strong><small>AZ-800, AZ-801</small></span>
+          </span>
         </span>
         <span class="about-summary-action">Expand</span>
       </summary>
@@ -139,8 +123,35 @@ title: "About"
             <tr><td>ITIL 4 Foundation</td><td></td></tr>
           </tbody>
         </table>
+
       </div>
     </details>
+
+    <div class="about-work-side">
+      <article class="about-feature-card about-work-focus-card">
+        <div class="about-card-icon" aria-hidden="true">☁</div>
+        <h3>Professional focus</h3>
+        <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell and Networking as subservices. This translates into the content on this website, but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure solutions, and therefore you need to know the whole solution.</p>
+      </article>
+
+    <div class="about-card about-card-modern about-item-card about-feature-card about-tile-panel">
+      <div class="about-card-icon" aria-hidden="true">↗</div>
+      <h3>Profiles and socials</h3>
+      <div class="about-tile-grid about-social-grid">
+        <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">in</span>LinkedIn</a>
+        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">MS</span>Microsoft Learn</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><span class="about-tile-icon" aria-hidden="true">✓</span>Certification Transcript</a>
+        <a class="about-tile" href="https://github.com/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">GH</span>GitHub</a>
+        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
+        <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Reddit</a>
+        <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Subreddit</a>
+        <a class="about-tile" href="https://substack.com/@justinverstijnen"><span class="about-tile-icon" aria-hidden="true">S</span>Substack</a>
+        <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">▶</span>YouTube</a>
+      </div>
+    </div>
+
+    </div>
   </div>
 </section>
 
@@ -150,30 +161,18 @@ title: "About"
     <p>In 2023 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it. I also needed a better and more scalable solution than creating and saving hundreds of separate Word documents. First I started on the easier WordPress CMS and in 2026 I migrated the website to GitHub Pages.</p>
   </div>
 
-  <div class="about-feature-grid about-site-grid about-compact-grid">
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">◇</div>
-      <h3>Built with Docsy</h3>
-      <p>This site is built with <a href="https://github.com/google/docsy">Docsy</a> and Hugo, so the content can stay fast, structured and maintainable.</p>
-    </article>
-
-    <article class="about-feature-card">
+  <div class="about-feature-grid about-site-grid about-compact-grid about-site-link-grid">
+    <a class="about-feature-card about-click-card" href="https://justinverstijnen.nl/getting-started-with-github-pages/">
       <div class="about-card-icon" aria-hidden="true">⌘</div>
       <h3>Running on GitHub Pages</h3>
-      <p>The site runs on GitHub Pages. I also wrote a blog about <a href="https://justinverstijnen.nl/getting-started-with-github-pages/">getting started with GitHub Pages</a>.</p>
-    </article>
+      <p>The site runs on GitHub Pages. I also wrote a blog about getting started with GitHub Pages.</p>
+    </a>
 
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">⚙</div>
-      <h3>Tools page</h3>
-      <p>I also maintain a separate tools page with practical utilities: <a href="https://tools.justinverstijnen.nl">tools.justinverstijnen.nl</a>.</p>
-    </article>
-
-    <article class="about-feature-card">
+    <a class="about-feature-card about-click-card" href="https://github.com/JustinVerstijnen/JVTechnicalBlog">
       <div class="about-card-icon" aria-hidden="true">GH</div>
       <h3>GitHub repository</h3>
-      <p>The source repository for this website is available on GitHub: <a href="https://github.com/JustinVerstijnen/JVTechnicalBlog">JustinVerstijnen/JVTechnicalBlog</a>.</p>
-    </article>
+      <p>The source repository for this website is available on GitHub: JustinVerstijnen/JVTechnicalBlog.</p>
+    </a>
   </div>
 
   <div class="about-build-card about-build-card-clean">

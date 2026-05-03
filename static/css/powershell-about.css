@@ -1593,3 +1593,187 @@ body.has-ps-about-page .ps-markdown [id] {
     height: 160px !important;
   }
 }
+
+/* Final layout refinements for About page */
+.ps-markdown .about-profile-card {
+  width: 125px !important;
+  max-width: 125px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.ps-markdown .about-profile-photo {
+  width: 125px !important;
+  max-width: 125px !important;
+  height: 125px !important;
+  overflow: hidden;
+  border-radius: 999px !important;
+  background: transparent !important;
+  border: 3px solid rgba(255, 255, 255, 0.78) !important;
+  box-shadow: 0 14px 30px rgba(52, 79, 115, 0.26) !important;
+}
+
+.ps-markdown .about-profile-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+}
+
+.ps-markdown .about-hero-aside {
+  align-content: center;
+  justify-items: center;
+}
+
+.ps-markdown .about-tile-panel,
+.ps-markdown .about-work-focus-card,
+.ps-markdown .about-click-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ps-markdown .about-tile-panel.about-feature-card,
+.ps-markdown .about-tile-panel.about-card-modern {
+  padding: 1.35rem;
+}
+
+.ps-markdown .about-tile-panel h3,
+.ps-markdown .about-work-focus-card h3,
+.ps-markdown .about-click-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.16rem;
+}
+
+.ps-markdown .about-tile-grid {
+  margin-top: 1rem;
+}
+
+.ps-markdown .about-tile {
+  min-height: 2.85rem;
+  background: rgba(255, 255, 255, 0.56);
+  border-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 18px rgba(52, 79, 115, 0.07);
+}
+
+.ps-markdown .about-tile-icon {
+  color: #1d5fa7;
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 6px 16px rgba(52, 79, 115, 0.08);
+}
+
+.ps-markdown .about-work-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  max-width: 1180px;
+  margin: 1.5rem auto 0;
+}
+
+.ps-markdown .about-work-side {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.ps-markdown .about-certifications-card,
+.ps-markdown .about-work-side > * {
+  height: 100%;
+}
+
+.ps-markdown .about-certifications-card summary {
+  min-height: 0;
+  align-items: start;
+}
+
+.ps-markdown .about-cert-preview {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  max-width: none;
+}
+
+.ps-markdown .about-cert-preview > span {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.66rem 0.75rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+}
+
+.ps-markdown .about-cert-preview strong {
+  font-size: 0.92rem !important;
+  line-height: 1.35 !important;
+}
+
+.ps-markdown .about-cert-preview small {
+  color: #1d5fa7;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ps-markdown .about-certifications-card[open] .about-cert-preview {
+  display: none;
+}
+
+.ps-markdown .about-site-link-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.ps-markdown .about-click-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ps-markdown .about-click-card::after {
+  content: "↗";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-top: 1rem;
+  border-radius: 999px;
+  color: #1d5fa7;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+}
+
+.ps-markdown .about-click-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(142, 175, 218, 0.8);
+  box-shadow: 0 18px 42px rgba(52, 79, 115, 0.14);
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .ps-markdown .about-work-layout,
+  .ps-markdown .about-site-link-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ps-markdown .about-profile-card,
+  .ps-markdown .about-profile-photo {
+    width: 112px !important;
+    max-width: 112px !important;
+  }
+
+  .ps-markdown .about-profile-photo {
+    height: 112px !important;
+  }
+}
