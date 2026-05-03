@@ -47,6 +47,53 @@ document.addEventListener("DOMContentLoaded", () => {
     return measuredHeight;
   }
 
+  function tokenizePowerShellLine(line) {
+    const tokenPattern = /(\$[A-Za-z_][A-Za-z0-9_]*|\bFormat-(?:List|Table)\b|\b\d+(?:[,.]\d+)?%?\b|\.\\[A-Za-z0-9_.-]+|\|)/g;
+    const tokens = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = tokenPattern.exec(line)) !== null) {
+      if (match.index > lastIndex) {
+        tokens.push({ text: line.slice(lastIndex, match.index), className: "" });
+      }
+
+      const value = match[0];
+      let className = "";
+
+      if (value.startsWith("$")) {
+        className = "ps-token-variable";
+      } else if (value.startsWith("Format-")) {
+        className = "ps-token-command";
+      } else if (value === "|") {
+        className = "ps-token-operator";
+      } else if (value.startsWith(".\\")) {
+        className = "ps-token-script";
+      } else if (/^\d/.test(value)) {
+        className = "ps-token-number";
+      }
+
+      tokens.push({ text: value, className });
+      lastIndex = tokenPattern.lastIndex;
+    }
+
+    if (lastIndex < line.length) {
+      tokens.push({ text: line.slice(lastIndex), className: "" });
+    }
+
+    return tokens;
+  }
+
+  function createTokenNode(className) {
+    if (!className) {
+      return null;
+    }
+
+    const node = document.createElement("span");
+    node.className = className;
+    return node;
+  }
+
   syncAboutNavbarOffset();
   window.addEventListener("resize", syncAboutNavbarOffset, { passive: true });
   window.addEventListener("load", syncAboutNavbarOffset, { passive: true });
@@ -114,9 +161,31 @@ document.addEventListener("DOMContentLoaded", () => {
       content.classList.remove("about-hidden");
     };
 
+    const appendHighlightedLine = (target, line) => {
+      tokenizePowerShellLine(line).forEach((token) => {
+        const tokenNode = createTokenNode(token.className);
+        const textNode = document.createTextNode(token.text);
+
+        if (tokenNode) {
+          tokenNode.appendChild(textNode);
+          target.appendChild(tokenNode);
+        } else {
+          target.appendChild(textNode);
+        }
+      });
+    };
+
     if (prefersReducedMotion) {
-      command.textContent = scriptName;
-      output.textContent = `\n${outputLines.join("\n")}`;
+      command.textContent = "";
+      appendHighlightedLine(command, scriptName);
+      output.appendChild(document.createTextNode("\n"));
+      outputLines.forEach((line, index) => {
+        appendHighlightedLine(output, line);
+
+        if (index < outputLines.length - 1) {
+          output.appendChild(document.createTextNode("\n"));
+        }
+      });
       cursor.style.display = "none";
       showContent();
       terminal.classList.add("is-hidden");
@@ -127,9 +196,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    let commandIndex = 0;
+    let commandTokens = tokenizePowerShellLine(scriptName);
+    let commandTokenIndex = 0;
+    let commandCharIndex = 0;
+    let commandTokenNode = null;
     let lineIndex = 0;
-    let charIndex = 0;
+    let outputTokens = [];
+    let outputTokenIndex = 0;
+    let outputCharIndex = 0;
+    let outputTokenNode = null;
 
     function finishSequence() {
       cursor.style.display = "none";
@@ -145,39 +220,93 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 450);
     }
 
+    function typeNextTokenCharacter(target, tokens, state) {
+      const token = tokens[state.tokenIndex];
+
+      if (!token) {
+        return false;
+      }
+
+      if (state.charIndex === 0) {
+        state.tokenNode = createTokenNode(token.className);
+
+        if (state.tokenNode) {
+          target.appendChild(state.tokenNode);
+        }
+      }
+
+      const character = token.text.charAt(state.charIndex);
+
+      if (state.tokenNode) {
+        state.tokenNode.appendChild(document.createTextNode(character));
+      } else {
+        target.appendChild(document.createTextNode(character));
+      }
+
+      state.charIndex += 1;
+
+      if (state.charIndex >= token.text.length) {
+        state.tokenIndex += 1;
+        state.charIndex = 0;
+        state.tokenNode = null;
+      }
+
+      return true;
+    }
+
     function typeOutput() {
       if (lineIndex >= outputLines.length) {
         finishSequence();
         return;
       }
 
-      const currentLine = outputLines[lineIndex];
-
-      if (charIndex === 0) {
+      if (outputTokenIndex === 0 && outputCharIndex === 0 && outputTokens.length === 0) {
         output.appendChild(document.createTextNode("\n"));
+        outputTokens = tokenizePowerShellLine(outputLines[lineIndex]);
       }
 
-      if (charIndex < currentLine.length) {
-        output.appendChild(document.createTextNode(currentLine.charAt(charIndex)));
-        charIndex += 1;
-        setTimeout(typeOutput, 9);
+      const outputState = {
+        tokenIndex: outputTokenIndex,
+        charIndex: outputCharIndex,
+        tokenNode: outputTokenNode,
+      };
+
+      const typedCharacter = typeNextTokenCharacter(output, outputTokens, outputState);
+      outputTokenIndex = outputState.tokenIndex;
+      outputCharIndex = outputState.charIndex;
+      outputTokenNode = outputState.tokenNode;
+
+      if (typedCharacter) {
+        setTimeout(typeOutput, 5);
         return;
       }
 
       lineIndex += 1;
-      charIndex = 0;
-      setTimeout(typeOutput, lineIndex === outputLines.length ? 150 : 70);
+      outputTokens = [];
+      outputTokenIndex = 0;
+      outputCharIndex = 0;
+      outputTokenNode = null;
+      setTimeout(typeOutput, lineIndex === outputLines.length ? 100 : 45);
     }
 
     function typeCommand() {
-      if (commandIndex < scriptName.length) {
-        command.textContent += scriptName.charAt(commandIndex);
-        commandIndex += 1;
-        setTimeout(typeCommand, 16);
+      const commandState = {
+        tokenIndex: commandTokenIndex,
+        charIndex: commandCharIndex,
+        tokenNode: commandTokenNode,
+      };
+
+      const typedCharacter = typeNextTokenCharacter(command, commandTokens, commandState);
+      commandTokenIndex = commandState.tokenIndex;
+      commandCharIndex = commandState.charIndex;
+      commandTokenNode = commandState.tokenNode;
+
+      if (typedCharacter) {
+        setTimeout(typeCommand, 11);
         return;
       }
 
-      setTimeout(typeOutput, 110);
+      setTimeout(typeOutput, 80);
     }
 
     typeCommand();

@@ -209,6 +209,27 @@ body.has-ps-about-page .ps-markdown [id] {
   color: #c9d6e7;
 }
 
+
+.ps-token-variable {
+  color: #7ee787;
+}
+
+.ps-token-command {
+  color: #f2cc60;
+}
+
+.ps-token-operator {
+  color: #ff7b72;
+}
+
+.ps-token-script {
+  color: #79c0ff;
+}
+
+.ps-token-number {
+  color: #a5d6ff;
+}
+
 .ps-cursor {
   display: inline-block;
   width: 0.6ch;
