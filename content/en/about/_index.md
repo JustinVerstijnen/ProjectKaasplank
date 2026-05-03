@@ -157,11 +157,11 @@ title: "About"
     </div>
     <div class="about-build-content">
       <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source, meaning that every change and part of code is publicly available. The key components of the website are:</p>
-      <div class="about-chip-list">
-        <span>Hugo</span>
-        <span>Docsy</span>
-        <span>GitHub Pages</span>
-        <span>Markdown</span>
+      <div class="about-chip-list about-build-link-list">
+        <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener noreferrer">Hugo</a>
+        <a href="https://www.docsy.dev/docs/" target="_blank" rel="noopener noreferrer">Docsy</a>
+        <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+        <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener noreferrer">Markdown</a>
       </div>
       <a class="about-build-preview" href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
         <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">

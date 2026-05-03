@@ -2059,3 +2059,120 @@ body.has-ps-about-page .ps-markdown [id] {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Final requested visual tweaks */
+.ps-markdown .about-feature-card h3,
+.ps-markdown .about-build-card h3,
+.ps-markdown .about-github-card h3,
+.ps-markdown .about-tile-panel h3,
+.ps-markdown .about-work-focus-card h3,
+.ps-markdown .about-click-card h3,
+.ps-markdown .about-static-story-card .about-expand-summary-content strong,
+.ps-markdown .about-static-certifications-card .about-expand-summary-content strong {
+  color: #0c202E !important;
+}
+
+.ps-markdown .about-skill-row {
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.ps-markdown .about-skill-row span {
+  justify-content: center;
+  text-align: center;
+}
+
+.ps-markdown .about-story-content-full p,
+.ps-markdown .about-static-story-card p,
+.ps-markdown .about-expand-content p {
+  color: #0c202E !important;
+}
+
+.ps-markdown .about-tile-panel .about-card-icon,
+.ps-markdown .about-tile-panel .about-tile-icon {
+  display: none !important;
+}
+
+.ps-markdown .about-tile-panel .about-tile {
+  padding-left: 0.9rem;
+}
+
+.ps-markdown .about-cert-tile {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.ps-markdown .about-cert-tile:hover {
+  transform: translateY(-2px);
+  border-color: rgba(119, 176, 222, 0.72) !important;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 30px rgba(119, 176, 222, 0.18) !important;
+}
+
+.ps-markdown .about-build-link-list a {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  color: #1f5f8e !important;
+  background: var(--about-pill-bg) !important;
+  border: 1px solid var(--about-pill-border) !important;
+  box-shadow: var(--about-pill-glow) !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.48rem 0.72rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ps-markdown .about-build-link-list a::after {
+  content: "↗";
+  margin-left: 0.45rem;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.ps-markdown .about-build-link-list a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(119, 176, 222, 0.76) !important;
+  box-shadow: 0 12px 26px rgba(119, 176, 222, 0.24) !important;
+  text-decoration: none;
+}
+
+.ps-markdown .about-donation-card {
+  text-align: left !important;
+}
+
+.ps-markdown .about-donation-card .about-github-card-header {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.ps-markdown .about-donation-card .about-github-card-header p:not(.about-eyebrow) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.ps-markdown .about-donation-button {
+  text-align: center !important;
+}
+
+.ps-markdown .about-section-site .about-click-card {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
+}
+
+.ps-markdown .about-section-site .about-click-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(119, 176, 222, 0.72) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  box-shadow: 0 18px 42px rgba(119, 176, 222, 0.18) !important;
+}
+
+@media (max-width: 640px) {
+  .ps-markdown .about-skill-row {
+    justify-content: flex-start;
+  }
+}
