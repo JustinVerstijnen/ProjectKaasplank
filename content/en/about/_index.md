@@ -5,7 +5,9 @@ title: "About"
 {{< powershell-about command=".\AboutJustinVerstijnen.ps1" >}}
 
 <section class="about-hero-panel about-justin-panel">
-  <div class="about-hero-content">
+    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
+  </div>
+<div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
     <div class="about-skill-row" aria-label="Blog categories">
     <span>Azure</span>
@@ -19,9 +21,6 @@ title: "About"
     <span>PowerShell</span>
     <span>Windows Server</span>
   </div>
-    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
-  </div>
-
   <aside class="about-hero-aside" aria-label="Profile photo">
     <figure class="about-profile-card">
       <div class="about-profile-photo">
