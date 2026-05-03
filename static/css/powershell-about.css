@@ -943,3 +943,195 @@ body.has-ps-about-page .ps-markdown [id] {
   background: rgba(43, 124, 211, 0.14);
   text-decoration: none;
 }
+
+/* Refined compact glass layout */
+.ps-markdown .about-hero-panel,
+.ps-markdown .about-section,
+.ps-markdown .about-expand-grid {
+  width: min(1180px, calc(100vw - 2rem));
+}
+
+.ps-markdown .about-hero-panel {
+  grid-template-columns: minmax(0, 1fr) 240px;
+}
+
+.ps-markdown .about-hero-aside {
+  justify-items: center;
+}
+
+.ps-markdown .about-profile-card {
+  width: 200px;
+  padding: 0.75rem;
+}
+
+.ps-markdown .about-profile-photo {
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+}
+
+.ps-markdown .about-profile-card figcaption {
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.ps-markdown .about-compact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ps-markdown .about-feature-card,
+.ps-markdown .about-card-modern,
+.ps-markdown .about-build-card,
+.ps-markdown .about-github-card,
+.ps-markdown .about-site-preview,
+.ps-markdown .about-expand-card {
+  border-radius: 20px;
+}
+
+.ps-markdown .about-feature-card {
+  padding: 1.1rem;
+}
+
+.ps-markdown .about-feature-card p,
+.ps-markdown .about-card-modern p,
+.ps-markdown .about-build-card p,
+.ps-markdown .about-github-card p {
+  font-size: 0.95rem;
+}
+
+.ps-markdown .about-expand-grid {
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 3.25rem auto;
+}
+
+.ps-markdown .about-expand-card {
+  max-width: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 45px rgba(52, 79, 115, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: hidden;
+}
+
+.ps-markdown .about-expand-card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ps-markdown .about-expand-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.ps-markdown .about-expand-card summary strong {
+  display: block;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.ps-markdown .about-summary-action {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: rgba(43, 124, 211, 0.09);
+  border: 1px solid rgba(43, 124, 211, 0.18);
+  color: #174c83;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.55rem 0.7rem;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action {
+  color: #ffffff;
+  background: #1d5fa7;
+  border-color: #1d5fa7;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action::before {
+  content: "Collapse";
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action {
+  font-size: 0;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action::before {
+  font-size: 0.82rem;
+}
+
+.ps-markdown .about-expand-content {
+  max-height: 340px;
+  overflow: auto;
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px solid rgba(91, 115, 150, 0.14);
+}
+
+.ps-markdown .about-expand-card[open] .about-expand-content {
+  animation: ps-fade-in 0.25s ease;
+}
+
+.ps-markdown .about-expand-content h3 {
+  margin-top: 1.35rem;
+}
+
+.ps-markdown .about-certification-list table {
+  margin: 0;
+  max-width: none;
+  font-size: 0.92rem;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.ps-markdown .about-build-card-clean {
+  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
+}
+
+.ps-markdown .about-build-card-clean .about-chip-list {
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .ps-markdown .about-hero-panel,
+  .ps-markdown .about-expand-grid,
+  .ps-markdown .about-compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-hero-panel,
+  .ps-markdown .about-section,
+  .ps-markdown .about-expand-grid {
+    width: min(100% - 1rem, 1180px);
+  }
+
+  .ps-markdown .about-profile-card,
+  .ps-markdown .about-profile-photo {
+    width: 180px;
+  }
+
+  .ps-markdown .about-profile-photo {
+    height: 180px;
+  }
+}
+
+.ps-markdown .about-expand-card summary em {
+  display: block;
+  margin-top: 0.45rem;
+  color: rgba(33, 37, 41, 0.68);
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.ps-markdown .about-expand-card:not([open]) {
+  min-height: 170px;
+}
