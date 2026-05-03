@@ -98,160 +98,103 @@ title: "About"
       <div class="about-expand-summary-content">
         <span class="about-eyebrow">Certifications</span>
         <strong>Microsoft, networking and IT fundamentals</strong>
-        <em>An overview of my currently active Microsoft certifications, including certification numbers, earned dates and expiry dates.</em>
+        <em>A compact overview with certification title, exam code and year earned.</em>
       </div>
-      <div class="about-cert-grid" aria-label="Active certifications">
+      <div class="about-cert-grid" aria-label="Certifications">
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Cybersecurity Architect Expert</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>EB2052-MB2315</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Nov 28, 2024</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Nov 29, 2026</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>SC-100</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Virtual Desktop Specialty</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>133ABF-AN7E34</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Dec 9, 2021</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Dec 10, 2026</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-140</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>EA40EE-21I6A4</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Dec 18, 2020</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Dec 19, 2026</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-104</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Security Operations Analyst Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>273D5C-EDF491</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Jan 26, 2023</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Jan 27, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>SC-200</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Solutions Architect Expert</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>54787C-2CDCG8</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Mar 10, 2022</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Mar 11, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-305</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Administrator Expert</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>64EV67-955A72</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Apr 22, 2021</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Apr 23, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>MS-100, MS-101 (MS-102)</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Teams Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>F414FF-E10KB1</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Apr 28, 2022</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Apr 29, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>MS-700</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Identity and Access Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>EU0495-684C0F</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>May 2, 2024</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>May 3, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>SC-300</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Security Engineer Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>FDD82F-A107D3</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Jul 27, 2023</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Jul 28, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-500</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Endpoint Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>4B56A2-M5362A</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Oct 9, 2020</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 10, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>MD-100, MD-101 (MD-102)</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Network Engineer Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>29A40A-2J5B2F</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Oct 19, 2023</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 20, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-700</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Windows Server Hybrid Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>4750C4-9E4307</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Oct 27, 2022</small></div>
-            <div class="about-cert-expiry"><span>Expires on</span><small>Oct 28, 2027</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-800, AZ-801</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>V41D61-5F6A9F</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Oct 10, 2024</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AZ-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Data Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>E376CB-H1AA84</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Mar 30, 2023</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>DP-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Power Platform Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>1DFAB0-435489</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Dec 29, 2022</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>PL-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure AI Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>M9D4AB-A61472</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Dec 8, 2022</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>AI-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Security, Compliance, and Identity Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>720CAC-2F31E0</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Apr 5, 2022</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>SC-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Fundamentals</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>D1B9EB-B31A7D</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>Jun 4, 2020</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>MS-900</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
         </article>
         <article class="about-cert-tile">
           <strong>MCSA: Windows Server 2016</strong>
-          <div class="about-cert-meta"><span>Certification number</span><small>916FWC-D55F27</small></div>
-          <div class="about-cert-date-row">
-            <div><span>Earned on</span><small>May 15, 2020</small></div>
-            <div class="about-cert-expiry about-cert-expiry-none"><span>Expires on</span><small>No expiry</small></div>
-          </div>
+          <div class="about-cert-meta"><span>Exam code</span><small>70-740, 70-741, 70-742</small></div>
+          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
         </article>
       </div>
     </article>

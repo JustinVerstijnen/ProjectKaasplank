@@ -2235,3 +2235,38 @@ body.has-ps-about-page .ps-markdown [id] {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Compact certification card style */
+.ps-markdown .about-static-certifications-card .about-expand-summary-content em {
+  color: rgba(12, 32, 46, 0.72) !important;
+}
+
+.ps-markdown .about-cert-tile {
+  min-height: 132px !important;
+  gap: 0.55rem !important;
+}
+
+.ps-markdown .about-cert-meta {
+  padding: 0.48rem 0.58rem !important;
+}
+
+.ps-markdown .about-cert-date-row {
+  display: none !important;
+}
+
+.ps-markdown .about-cert-meta span {
+  color: rgba(12, 32, 46, 0.58) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.055em !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
+}
+
+.ps-markdown .about-cert-meta small {
+  color: #0c202E !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
