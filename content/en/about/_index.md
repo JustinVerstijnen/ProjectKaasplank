@@ -103,98 +103,136 @@ title: "About"
       <div class="about-cert-grid" aria-label="Certifications">
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Cybersecurity Architect Expert</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>SC-100</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>SC-100</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Virtual Desktop Specialty</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-140</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-140</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-104</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-104</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Security Operations Analyst Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>SC-200</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>SC-200</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Solutions Architect Expert</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-305</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-305</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Administrator Expert</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>MS-100, MS-101 (MS-102)</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>MS-100, MS-101 (MS-102)</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Teams Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>MS-700</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>MS-700</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Identity and Access Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>SC-300</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>SC-300</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Security Engineer Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-500</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-500</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Endpoint Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>MD-100, MD-101 (MD-102)</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>MD-100, MD-101 (MD-102)</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Network Engineer Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-700</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-700</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Windows Server Hybrid Administrator Associate</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-800, AZ-801</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-800, AZ-801</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AZ-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2024</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Data Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>DP-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>DP-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Power Platform Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>PL-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>PL-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure AI Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>AI-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AI-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft Certified: Security, Compliance, and Identity Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>SC-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>SC-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>Microsoft 365 Certified: Fundamentals</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>MS-900</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>MS-900</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
         </article>
         <article class="about-cert-tile">
           <strong>MCSA: Windows Server 2016</strong>
-          <div class="about-cert-meta"><span>Exam code</span><small>70-740, 70-741, 70-742</small></div>
-          <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>70-740, 70-741, 70-742</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
         </article>
       </div>
     </article>
