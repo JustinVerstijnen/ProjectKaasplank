@@ -1,4 +1,4 @@
-{{- $command := .Get "command" | default ".\AboutJustinVerstijnen.ps1" -}}
+{{- $command := .Get "command" | default `.\AboutJustinVerstijnen.ps1` -}}
 
 <div class="ps-about" data-command="{{ $command }}">
   <div class="ps-terminal-wrapper" aria-live="polite">
