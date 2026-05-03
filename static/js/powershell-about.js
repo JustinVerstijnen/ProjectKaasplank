@@ -312,3 +312,83 @@ document.addEventListener("DOMContentLoaded", () => {
     typeCommand();
   });
 });
+
+// Latest GitHub contributions widget on the About page.
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("github-contributions-widget");
+
+  if (!container) {
+    return;
+  }
+
+  const owner = "JustinVerstijnen";
+  const repo = "JVTechnicalBlog";
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function formatDate(dateString) {
+    return new Intl.DateTimeFormat("en-US", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    }).format(new Date(dateString));
+  }
+
+  function getFirstLine(message) {
+    return String(message || "").split("\n")[0];
+  }
+
+  fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/commits?per_page=3`, {
+    headers: {
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28"
+    }
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`GitHub API returned status ${response.status}`);
+      }
+
+      return response.json();
+    })
+    .then((commits) => {
+      if (!Array.isArray(commits) || commits.length === 0) {
+        container.innerHTML = "<p>No public commits found for this repository.</p>";
+        return;
+      }
+
+      container.innerHTML = commits.map((commit) => {
+        const message = escapeHtml(getFirstLine(commit.commit.message));
+        const authorName = escapeHtml(
+          commit.commit.author && commit.commit.author.name
+            ? commit.commit.author.name
+            : "Unknown author"
+        );
+        const commitDate = commit.commit.author ? formatDate(commit.commit.author.date) : "";
+        const commitUrl = escapeHtml(commit.html_url);
+        const shortSha = escapeHtml(commit.sha.substring(0, 7));
+
+        return `
+          <div class="github-commit">
+            <div class="github-commit-title">
+              <a href="${commitUrl}" target="_blank" rel="noopener noreferrer">${message}</a>
+            </div>
+            <div class="github-commit-meta">${authorName} · ${commitDate} · ${shortSha}</div>
+          </div>
+        `;
+      }).join("");
+    })
+    .catch((error) => {
+      container.innerHTML = "<p>Unable to load GitHub contributions.</p>";
+      console.error(error);
+    });
+});
