@@ -8,6 +8,8 @@ title: "About"
   <div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
     <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
+    <br>
+    <p>My skill area's</p>
   </div>
 
   <aside class="about-hero-aside" aria-label="Profile photo">
@@ -71,20 +73,14 @@ title: "About"
 <section class="about-section about-section-person">
   <div class="about-section-header">
     <p class="about-eyebrow">About my work</p>
-    <p>My interest in IT started early and eventually became my daily work: designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
+    <p>In my daily work I'm busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
   </div>
 
   <div class="about-feature-grid about-compact-grid">
     <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">☁</div>
       <h3>Professional focus</h3>
-      <p>I focus on Microsoft Azure, Microsoft 365, Entra ID, Intune, security, endpoint management and automation. I like solutions that are secure, maintainable and documented clearly enough for others to use.</p>
-    </article>
-
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">⌁</div>
-      <h3>How I learn</h3>
-      <p>I research a topic, build or configure it, test what works, and then write it down in a practical way. Explaining the solution forces me to understand it properly.</p>
+      <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell And Networking as subservices. This translates into the content on this website but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure and therefore you need to know the whole solution.</p>
     </article>
   </div>
 
@@ -93,16 +89,15 @@ title: "About"
       <h3>Profiles and socials</h3>
       <div class="about-tile-grid about-social-grid">
         <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">in</span>LinkedIn</a>
-        <a class="about-tile" href="mailto:info@justinverstijnen.nl"><span class="about-tile-icon" aria-hidden="true">@</span>Email</a>
+        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
         <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">MS</span>Microsoft Learn</a>
         <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><span class="about-tile-icon" aria-hidden="true">✓</span>Certification Transcript</a>
         <a class="about-tile" href="https://github.com/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">GH</span>GitHub</a>
+        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
         <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Reddit</a>
         <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Subreddit</a>
         <a class="about-tile" href="https://substack.com/@justinverstijnen"><span class="about-tile-icon" aria-hidden="true">S</span>Substack</a>
-        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
         <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">▶</span>YouTube</a>
-        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
       </div>
     </div>
 
@@ -158,26 +153,13 @@ title: "About"
     <p>In 2023 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it. I also needed a better and more scalable solution than creating and saving hundreds of separate Word documents. First I started on the more easier Wordpress CMS and in 2026 I migrated the website to GitHub Pages.</p>
   </div>
 
-  <div class="about-feature-grid about-site-grid about-compact-grid">
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">◇</div>
-      <h3>Built with Docsy</h3>
-      <p>Site built with <a href="https://github.com/google/docsy">Docsy</a> and Hugo, so the content can stay fast, structured and maintainable.</p>
-    </article>
-
-    <article class="about-feature-card">
+  <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">⌘</div>
       <h3>Running on GitHub Pages</h3>
       <p>The site runs on GitHub Pages. I also wrote a blog about <a href="https://justinverstijnen.nl/getting-started-with-github-pages/">getting started with GitHub Pages</a>.</p>
     </article>
 
-    <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">⚙</div>
-      <h3>Tools page</h3>
-      <p>My tools page contains practical utilities I created for day-to-day technical work. Visit <a href="https://tools.justinverstijnen.nl">tools.justinverstijnen.nl</a>.</p>
-    </article>
-
-    <article class="about-feature-card">
+  <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">GH</div>
       <h3>GitHub repository</h3>
       <p>The source repository for this website is available on GitHub: <a href="https://github.com/JustinVerstijnen/JVTechnicalBlog">JustinVerstijnen/JVTechnicalBlog</a>.</p>
@@ -190,7 +172,7 @@ title: "About"
       <h3>How this site is built</h3>
     </div>
     <div class="about-build-content">
-      <p>This website is maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source meaning that every change and part of code is publicly available.</p>
+      <p>This website is built and maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source meaning that every change and part of code is publicly available. The key components of the website are:</p>
       <div class="about-chip-list">
         <span>Hugo</span>
         <span>Docsy</span>
@@ -206,7 +188,7 @@ title: "About"
   <div class="about-github-card">
     <div class="about-github-card-header">
       <p class="about-eyebrow">Latest updates</p>
-      <h3>Here you can see the latest updates to this website in reverse-chronological order.</h3>
+      <p>Here you can view the latest updates to this website in reverse-chronological order.</p>
     </div>
     <div id="github-contributions-widget">
       <p>Loading my latest GitHub contributions...</p>
@@ -217,3 +199,5 @@ title: "About"
 {{< /powershell-about >}}
 
 {{< ads >}}
+
+<br>
