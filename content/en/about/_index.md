@@ -56,11 +56,10 @@ title: "About"
         <span class="about-summary-action">Expand</span>
       </summary>
       <div class="about-expand-content">
-        <p>My interest in computers started at around 9 years old because of my dad who had a computer company for years where he helped around 200 individuals and 1 to 2 person companies with their computer problems, migrating to new computers, selling new computers, laptops, printers and monitors, and helping them with using them, periodic cleaning and more. At first I only watched him do the magic, but later I helped him very often. This introduced me well and fast into computers, software, possible problems and some basic knowledge of hardware. I knew very soon in my life that I wanted to do the same as my dad, but not what exactly. I thought of <em>Something with computers.</em></p>
-        <p>In my free time I sometimes play some games, and I liked it to set up custom game servers for games. Here is where my interest in building systems and servers started, but quickly realized that technical knowledge, security and planning is very important when designing systems. I knew then that only building and planning systems is fun to do and wanted to make my work out of it which it now is, already for several years.</p>
-        <h3>From hobby to job</h3>
-        <p>After passing my IT Intermediate vocational education I started at my first IT job on the servicedesk. A few years later, the wish to specialize in Microsoft and Microsoft Cloud solutions became stronger, and I followed that path. After some years of watching, learning and gaining hands-on experience, I started to achieve Microsoft certifications and that is where the learning really began and has never stopped since.</p>
-        <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a great way to shift into the next phase: gaining even more knowledge, going deeper into topics and sharing that knowledge in practice. I really like to research a topic or technical part and then document what I did to make it work. It pushes me to the limit when I have to understand a solution, configure it correctly and then explain it in a way that helps others get it working as well. In my daily job I am mostly busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
+        <p>My interest in computers started when I was around 9 years old, because of my dad. He had a computer company for years where he helped around 200 individuals and small companies with computer problems, migrations, new computers, laptops, printers, monitors and periodic cleaning. At first I only watched him do the magic, but later I helped him very often. This introduced me quickly to computers, software, common problems and some basic hardware knowledge. I knew very early in life that I wanted to do something similar to my dad, but did not know exactly what yet. I just knew it had to be something with computers.</p>
+        <p>In my free time I sometimes play games, and I always liked setting up custom game servers. That is where my interest in building systems and servers started. I quickly realized that technical knowledge, security and planning are very important when designing systems. From that moment I knew that building and planning systems was something I really enjoyed and wanted to turn into my work, which it has been for several years now.</p>
+        <p>After passing my IT Intermediate vocational education, I started my first IT job on the servicedesk. A few years later, my wish to specialize in Microsoft and Microsoft Cloud solutions became stronger, and I followed that path. After years of watching, learning and gaining hands-on experience, I started achieving Microsoft certifications. That is where the learning really began, and it has never stopped since.</p>
+        <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a way to move into the next phase: gaining more knowledge, going deeper into topics and sharing that knowledge in practice. I really like researching a topic or technical part, and then documenting what I did to make it work. It pushes me to fully understand a solution, configure it correctly and explain it in a way that helps others. In my daily job I am mostly busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
       </div>
     </details>
   </div>
@@ -76,7 +75,7 @@ title: "About"
     <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">☁</div>
       <h3>Professional focus</h3>
-      <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell And Networking as subservices. This translates into the content on this website but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure and therefore you need to know the whole solution.</p>
+      <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell and Networking as subservices. This translates into the content on this website but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure and therefore you need to know the whole solution.</p>
     </article>
   </div>
 
@@ -187,7 +186,7 @@ title: "About"
       <p>Here you can view the latest updates to this website in reverse-chronological order.</p>
     </div>
     <div id="github-contributions-widget">
-      <p>Loading my latest GitHub contributions...</p>
+      <p>Loading my latest GitHub contributions, please wait...</p>
     </div>
   </div>
 </section>
