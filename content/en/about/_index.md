@@ -7,20 +7,7 @@ title: "About"
 <section class="about-hero-panel about-justin-panel">
   <div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
-    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
-    <br>
-    <p>My skill area's</p>
-  </div>
-
-  <aside class="about-hero-aside" aria-label="Profile photo">
-    <figure class="about-profile-card">
-      <div class="about-profile-photo">
-        <img src="/img/about-profile-placeholder.svg" alt="Profile photo placeholder">
-      </div>
-    </figure>
-  </aside>
-
-  <div class="about-skill-row" aria-label="Blog categories">
+    <div class="about-skill-row" aria-label="Blog categories">
     <span>Azure</span>
     <span>AVD/W365</span>
     <span>Intune</span>
@@ -32,6 +19,16 @@ title: "About"
     <span>PowerShell</span>
     <span>Windows Server</span>
   </div>
+    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
+  </div>
+
+  <aside class="about-hero-aside" aria-label="Profile photo">
+    <figure class="about-profile-card">
+      <div class="about-profile-photo">
+        <img src="/img/about-profile-placeholder.svg" alt="Profile photo placeholder">
+      </div>
+    </figure>
+  </aside>
 
   <div class="about-hero-bottom-grid">
     <div class="about-card about-card-modern about-item-card">
