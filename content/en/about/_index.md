@@ -162,6 +162,7 @@ title: "About"
         <a href="https://www.docsy.dev/docs/" target="_blank" rel="noopener noreferrer">Docsy</a>
         <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
         <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener noreferrer">Markdown</a>
+        <a href="https://umami.is" target="_blank" rel="noopener noreferrer">Umami</a>
       </div>
       <a class="about-build-preview" href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
         <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">
@@ -182,7 +183,7 @@ title: "About"
   <div class="about-github-card about-donation-card">
     <div class="about-github-card-header">
       <p class="about-eyebrow">Support the website</p>
-      <p>If one of my posts, tools or examples helped you save time, solve a problem or learn something new, a small donation helps me keep the website running and motivates me to keep writing practical technical content.</p>
+      <p>If one of my posts, tools or examples helped you save time, solve a problem or learn something new, a small donation helps me keep the website running and motivates me to keep writing practical technical content. Creating, maintaining and updating content takes a lot of time and money.</p>
     </div>
     <p class="about-donation-button"><a href="https://www.buymeacoffee.com/justinverstijnen" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20beer&amp;emoji=🍺&amp;slug=justinverstijnen&amp;button_colour=FFDD00&amp;font_colour=000000&amp;font_family=Arial&amp;outline_colour=000000&amp;coffee_colour=ffffff" alt="Buy me a beer"></a></p>
   </div>
@@ -191,3 +192,5 @@ title: "About"
 {{< /powershell-about >}}
 
 {{< ads >}}
+
+<br>
