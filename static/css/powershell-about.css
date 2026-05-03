@@ -1135,3 +1135,187 @@ body.has-ps-about-page .ps-markdown [id] {
 .ps-markdown .about-expand-card:not([open]) {
   min-height: 170px;
 }
+
+
+/* Final About rendering fixes */
+.ps-markdown pre:has(.about-feature-card),
+.ps-markdown pre:has(.about-card-modern),
+.ps-markdown pre:has(.about-link-grid) {
+  display: none;
+}
+
+.ps-markdown .about-hero-panel {
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+}
+
+.ps-markdown .about-hero-aside {
+  justify-items: center;
+}
+
+.ps-markdown .about-profile-card {
+  width: 200px;
+  max-width: 200px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.ps-markdown .about-profile-photo {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(52, 79, 115, 0.14);
+}
+
+.ps-markdown .about-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ps-markdown .about-feature-grid,
+.ps-markdown .about-two-columns,
+.ps-markdown .about-expand-grid {
+  gap: 1rem;
+}
+
+.ps-markdown .about-compact-grid,
+.ps-markdown .about-feature-grid,
+.ps-markdown .about-site-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ps-markdown .about-feature-card,
+.ps-markdown .about-card-modern,
+.ps-markdown .about-build-card,
+.ps-markdown .about-github-card,
+.ps-markdown .about-site-preview,
+.ps-markdown .about-expand-card {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 22px;
+  box-shadow: 0 16px 42px rgba(52, 79, 115, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.ps-markdown .about-expand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  margin: 3.25rem auto;
+}
+
+.ps-markdown .about-expand-card {
+  overflow: hidden;
+}
+
+.ps-markdown .about-expand-card summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.35rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ps-markdown .about-expand-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.ps-markdown .about-summary-main {
+  min-width: 0;
+}
+
+.ps-markdown .about-expand-card summary strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.ps-markdown .about-summary-preview {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgba(33, 37, 41, 0.76);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.ps-markdown .about-summary-action {
+  margin-top: 0.2rem;
+  white-space: nowrap;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-preview {
+  display: none;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action {
+  font-size: 0;
+}
+
+.ps-markdown .about-expand-card[open] .about-summary-action::before {
+  content: "Collapse";
+  font-size: 0.82rem;
+}
+
+.ps-markdown .about-expand-content {
+  max-height: none;
+  overflow: visible;
+  padding: 0 1.35rem 1.35rem;
+  border-top: 1px solid rgba(91, 115, 150, 0.14);
+}
+
+.ps-markdown .about-expand-content p:first-child {
+  margin-top: 1.15rem;
+}
+
+.ps-markdown .about-certification-list {
+  overflow-x: auto;
+}
+
+.ps-markdown .about-certification-list table {
+  min-width: 520px;
+}
+
+.ps-markdown .about-build-card-clean {
+  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr);
+}
+
+@media (max-width: 980px) {
+  .ps-markdown .about-hero-panel,
+  .ps-markdown .about-compact-grid,
+  .ps-markdown .about-feature-grid,
+  .ps-markdown .about-site-grid,
+  .ps-markdown .about-two-columns,
+  .ps-markdown .about-expand-grid,
+  .ps-markdown .about-build-card-clean {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-markdown .about-hero-aside {
+    justify-items: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .ps-markdown .about-profile-card,
+  .ps-markdown .about-profile-photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ps-markdown .about-expand-card summary {
+    grid-template-columns: 1fr;
+  }
+}

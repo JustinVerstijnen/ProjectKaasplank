@@ -16,7 +16,6 @@ title: "About me"
       <div class="about-profile-photo">
         <img src="/img/about-profile-placeholder.svg" alt="Profile photo placeholder">
       </div>
-      <figcaption>Replace <code>/static/img/about-profile-placeholder.svg</code> with your own photo.</figcaption>
     </figure>
 
     <div class="about-hero-highlight" aria-label="Main focus areas">
@@ -88,15 +87,17 @@ title: "About me"
   </div>
 </section>
 
-<section class="about-expand-grid">
-  <details class="about-expand-card">
+<section class="about-expand-grid" aria-label="Story and certifications">
+  <details class="about-expand-card about-story-card">
     <summary>
-      <span>
+      <span class="about-summary-main">
         <span class="about-eyebrow">Story</span>
         <strong>My IT and Cloud story</strong>
-        <em>How my interest in computers became my daily work in Microsoft Cloud and infrastructure.</em>
+        <span class="about-summary-preview">
+          My interest in computers started when I was around 9 years old. My dad had a computer company where he helped individuals and small companies with computer problems, migrations, hardware, periodic cleaning and support. I first watched him do the magic, but later I helped him often. That introduced me quickly to computers, software, problems and hardware basics.
+        </span>
       </span>
-      <span class="about-summary-action">Expand</span>
+      <span class="about-summary-action">Read more</span>
     </summary>
     <div class="about-expand-content">
       <p>My interest in computers started at around 9 years old because of my dad who had a computer company for years where he helped around 200 individuals and 1 to 2 person companies with their computer problems, migrating to new computers, selling new computers, laptops, printers and monitors, and helping them with using them, periodic cleaning and more. At first I only watched him do the magic, but later I helped him very often. This introduced me well and fast into computers, software, possible problems and some basic knowledge of hardware. I knew very soon in my life that I wanted to do the same as my dad, but not what exactly. I thought of <em>Something with computers.</em></p>
@@ -108,14 +109,16 @@ title: "About me"
     </div>
   </details>
 
-  <details class="about-expand-card">
+  <details class="about-expand-card about-certifications-card">
     <summary>
-      <span>
+      <span class="about-summary-main">
         <span class="about-eyebrow">Certifications</span>
         <strong>Microsoft, networking and IT fundamentals</strong>
-        <em>A compact overview of Microsoft, networking and IT certifications.</em>
+        <span class="about-summary-preview">
+          A compact overview of certifications across Microsoft identity, security, Azure, Microsoft 365, endpoint management, networking and IT service management. The first items include SC-300, SC-200, AI-900, PL-900 and AZ-700.
+        </span>
       </span>
-      <span class="about-summary-action">Expand</span>
+      <span class="about-summary-action">View list</span>
     </summary>
     <div class="about-expand-content about-certification-list">
       <table>
@@ -209,6 +212,6 @@ title: "About me"
 
 Thank you for visiting my website.
 
-{{< ads >}}
-
 {{< /powershell-about >}}
+
+{{< ads >}}
