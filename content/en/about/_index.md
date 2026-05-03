@@ -81,73 +81,52 @@ title: "About"
   </div>
 
   <div class="about-work-stack">
-    <details class="about-expand-card about-story-card">
-      <summary>
-        <span class="about-expand-summary-content">
-          <span class="about-eyebrow">Story</span>
-          <strong>My IT and Cloud story</strong>
-          <span class="about-story-preview">My interest in computers started when I was around 9 years old, because of my dad. He had a computer company for years where he helped individuals and small companies with computer problems, migrations, new computers, laptops, printers, monitors and periodic cleaning. At first I only watched him do the magic, but later I helped him very often.</span>
-        </span>
-        <span class="about-summary-action">Expand</span>
-      </summary>
-      <div class="about-expand-content">
+    <article class="about-expand-card about-story-card about-static-story-card">
+      <div class="about-expand-summary-content">
+        <span class="about-eyebrow">Story</span>
+        <strong>My IT and Cloud story</strong>
+      </div>
+      <div class="about-expand-content about-story-content-full">
         <p>My interest in computers started when I was around 9 years old, because of my dad. He had a computer company for years where he helped around 200 individuals and small companies with computer problems, migrations, new computers, laptops, printers, monitors and periodic cleaning. At first I only watched him do the magic, but later I helped him very often. This introduced me quickly to computers, software, common problems and some basic hardware knowledge. I knew very early in life that I wanted to do something similar to my dad, but did not know exactly what yet. I just knew it had to be something with computers.</p>
         <p>In my free time I sometimes play games, and I always liked setting up custom game servers. That is where my interest in building systems and servers started. I quickly realized that technical knowledge, security and planning are very important when designing systems. From that moment I knew that building and planning systems was something I really enjoyed and wanted to turn into my work, which it has been for several years now.</p>
         <p>After passing my IT Intermediate vocational education, I started my first IT job on the servicedesk. A few years later, my wish to specialize in Microsoft and Microsoft Cloud solutions became stronger, and I followed that path. After years of watching, learning and gaining hands-on experience, I started achieving Microsoft certifications. That is where the learning really began, and it has never stopped since.</p>
         <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a way to move into the next phase: gaining more knowledge, going deeper into topics and sharing that knowledge in practice. I really like researching a topic or technical part, and then documenting what I did to make it work. It pushes me to fully understand a solution, configure it correctly and explain it in a way that helps others. In my daily job I am mostly busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
       </div>
-    </details>
+    </article>
 
-    <details class="about-expand-card about-certifications-card">
-      <summary>
-        <span class="about-expand-summary-content">
-          <span class="about-eyebrow">Certifications</span>
-          <strong>Microsoft, networking and IT fundamentals</strong>
-          <em>A compact overview of Microsoft, networking and IT certifications, including identity, security, Azure, Microsoft 365, Windows Server, networking and service management.</em>
-          <span class="about-cert-preview" aria-label="Certification preview">
-            <span><strong>Microsoft Identity Access Administrator</strong><small>SC-300</small></span>
-            <span><strong>Microsoft Security SOC Engineer</strong><small>SC-200</small></span>
-            <span><strong>Microsoft Azure Networking Engineer</strong><small>AZ-700</small></span>
-            <span><strong>Microsoft Security Architect Expert</strong><small>SC-100</small></span>
-            <span><strong>Windows Server Hybrid Administrator</strong><small>AZ-800, AZ-801</small></span>
-          </span>
-        </span>
-        <span class="about-summary-action">Expand</span>
-      </summary>
-      <div class="about-expand-content about-certification-list">
-        <table>
-          <thead>
-            <tr><th>Certification</th><th>Exam code(s)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Microsoft Identity Access Administrator</td><td>SC-300</td></tr>
-            <tr><td>Microsoft Security SOC Engineer</td><td>SC-200</td></tr>
-            <tr><td>Microsoft AI Fundamentals</td><td>AI-900</td></tr>
-            <tr><td>Microsoft Power Platform Fundamentals</td><td>PL-900</td></tr>
-            <tr><td>Microsoft Azure Networking Engineer</td><td>AZ-700</td></tr>
-            <tr><td>Microsoft Security Architect Expert</td><td>SC-100</td></tr>
-            <tr><td>Windows Server Hybrid Administrator</td><td>AZ-800, AZ-801</td></tr>
-            <tr><td>Microsoft Azure Virtual Desktop Specialty</td><td>AZ-140</td></tr>
-            <tr><td>Microsoft Azure Security Associate</td><td>AZ-500</td></tr>
-            <tr><td>Microsoft 365 Security Associate</td><td>MS-500</td></tr>
-            <tr><td>Microsoft Enterprise Expert</td><td>MS-100, MS-101 (MS-102)</td></tr>
-            <tr><td>Microsoft Modern Desktop Associate</td><td>MD-100, MD-101 (MD-102)</td></tr>
-            <tr><td>Microsoft Azure Architect Expert</td><td>AZ-303, AZ-304, AZ-305</td></tr>
-            <tr><td>Microsoft Azure Administrator</td><td>AZ-104</td></tr>
-            <tr><td>Microsoft Security &amp; Compliance Fundamentals</td><td>SC-900</td></tr>
-            <tr><td>Microsoft Azure Fundamentals</td><td>AZ-900</td></tr>
-            <tr><td>Microsoft 365 Fundamentals</td><td>MS-900</td></tr>
-            <tr><td>Microsoft Certified Solutions Associate (MCSA)</td><td>70-740, 70-741, 70-742</td></tr>
-            <tr><td>Ubiquiti Wireless Administrator</td><td>UEWA</td></tr>
-            <tr><td>Ubiquiti Networking Fundamentals</td><td>UNS</td></tr>
-            <tr><td>Hurricane Electric IPv6 Networking &quot;Sage&quot;</td><td></td></tr>
-            <tr><td>3CX Expert</td><td></td></tr>
-            <tr><td>Cisco Certified Networking Associate 1 + 2</td><td>CCNA 1, CCNA 2</td></tr>
-            <tr><td>ITIL 4 Foundation</td><td></td></tr>
-          </tbody>
-        </table>
+    <article class="about-expand-card about-certifications-card about-static-certifications-card">
+      <div class="about-expand-summary-content">
+        <span class="about-eyebrow">Certifications</span>
+        <strong>Microsoft, networking and IT fundamentals</strong>
+        <em>A compact overview of Microsoft, networking and IT certifications, including identity, security, Azure, Microsoft 365, Windows Server, networking and service management.</em>
       </div>
-    </details>
+      <div class="about-cert-grid" aria-label="Certifications">
+        <article class="about-cert-tile"><strong>Microsoft Identity Access Administrator</strong><small>SC-300</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Security SOC Engineer</strong><small>SC-200</small></article>
+        <article class="about-cert-tile"><strong>Microsoft AI Fundamentals</strong><small>AI-900</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Power Platform Fundamentals</strong><small>PL-900</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Networking Engineer</strong><small>AZ-700</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Security Architect Expert</strong><small>SC-100</small></article>
+        <article class="about-cert-tile"><strong>Windows Server Hybrid Administrator</strong><small>AZ-800, AZ-801</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Virtual Desktop Specialty</strong><small>AZ-140</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Security Associate</strong><small>AZ-500</small></article>
+        <article class="about-cert-tile"><strong>Microsoft 365 Security Associate</strong><small>MS-500</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Enterprise Expert</strong><small>MS-100, MS-101 (MS-102)</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Modern Desktop Associate</strong><small>MD-100, MD-101 (MD-102)</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Architect Expert</strong><small>AZ-303, AZ-304, AZ-305</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Administrator</strong><small>AZ-104</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Security &amp; Compliance Fundamentals</strong><small>SC-900</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Azure Fundamentals</strong><small>AZ-900</small></article>
+        <article class="about-cert-tile"><strong>Microsoft 365 Fundamentals</strong><small>MS-900</small></article>
+        <article class="about-cert-tile"><strong>Microsoft Certified Solutions Associate (MCSA)</strong><small>70-740, 70-741, 70-742</small></article>
+        <article class="about-cert-tile"><strong>Ubiquiti Wireless Administrator</strong><small>UEWA</small></article>
+        <article class="about-cert-tile"><strong>Ubiquiti Networking Fundamentals</strong><small>UNS</small></article>
+        <article class="about-cert-tile"><strong>Hurricane Electric IPv6 Networking &quot;Sage&quot;</strong><small>Certification</small></article>
+        <article class="about-cert-tile"><strong>3CX Expert</strong><small>Certification</small></article>
+        <article class="about-cert-tile"><strong>Cisco Certified Networking Associate 1 + 2</strong><small>CCNA 1, CCNA 2</small></article>
+        <article class="about-cert-tile"><strong>ITIL 4 Foundation</strong><small>Certification</small></article>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -198,6 +177,14 @@ title: "About"
     <div id="github-contributions-widget">
       <p>Loading my latest GitHub contributions, please wait...</p>
     </div>
+  </div>
+
+  <div class="about-github-card about-donation-card">
+    <div class="about-github-card-header">
+      <p class="about-eyebrow">Support the website</p>
+      <p>If one of my posts, tools or examples helped you save time, solve a problem or learn something new, a small donation helps me keep the website running and motivates me to keep writing practical technical content.</p>
+    </div>
+    <p class="about-donation-button"><a href="https://www.buymeacoffee.com/justinverstijnen" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20beer&amp;emoji=🍺&amp;slug=justinverstijnen&amp;button_colour=FFDD00&amp;font_colour=000000&amp;font_family=Arial&amp;outline_colour=000000&amp;coffee_colour=ffffff" alt="Buy me a beer"></a></p>
   </div>
 </section>
 
