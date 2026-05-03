@@ -1,14 +1,13 @@
 ---
-title: "About me"
+title: "About"
 ---
 
 {{< powershell-about command=".\AboutJustinVerstijnen.ps1" >}}
 
 <section class="about-hero-panel about-justin-panel">
   <div class="about-hero-content">
-    <p class="about-eyebrow">About Justin</p>
-    <h2>Microsoft Cloud, security, automation and practical documentation.</h2>
-    <p class="about-lead">I design, build, secure and document Microsoft Cloud and on-premises solutions. This website is where I turn research, real-world configurations and lessons learned into practical technical content.</p>
+    <p class="about-eyebrow">About me</p>
+    <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share some technical blogs about various IT and Cloud professions. On this website you can find blogs written from experiences, researches I've done, older notes I took and converted into blogs and more.</p>
   </div>
 
   <aside class="about-hero-aside" aria-label="Profile photo">
@@ -20,13 +19,14 @@ title: "About me"
   </aside>
 
   <div class="about-skill-row" aria-label="Blog categories">
-    <span>GitHub</span>
+    <span>Azure</span>
+    <span>AVD/W365</span>
     <span>Intune</span>
-    <span>Microsoft 365</span>
-    <span>Microsoft Azure</span>
-    <span>Microsoft Entra</span>
-    <span>Microsoft Defender XDR</span>
+    <span>365</span>
+    <span>Entra</span>
+    <span>Defender</span>
     <span>Networking</span>
+    <span>GitHub</span>
     <span>PowerShell</span>
     <span>Windows Server</span>
   </div>
@@ -45,7 +45,6 @@ title: "About me"
         <span class="about-tile"><span class="about-tile-icon" aria-hidden="true">🖥</span>Building gaming PCs</span>
         <span class="about-tile"><span class="about-tile-icon" aria-hidden="true">◎</span>Darts</span>
         <span class="about-tile"><span class="about-tile-icon" aria-hidden="true">🏋</span>Fitness</span>
-        <span class="about-tile"><span class="about-tile-icon" aria-hidden="true">⚽</span>Football</span>
       </div>
     </div>
 
@@ -54,7 +53,7 @@ title: "About me"
         <span class="about-expand-summary-content">
           <span class="about-eyebrow">Story</span>
           <strong>My IT and Cloud story</strong>
-          <em>My interest in computers started at around 9 years old because of my dad, who had a computer company for years. I watched him solve practical computer problems, migrate people to new systems and help customers use their devices. Later I started helping him myself, and that early exposure shaped the direction I wanted to take.</em>
+          <em>Click here to expand my IT story and how I started into this workfield.</em>
         </span>
         <span class="about-summary-action">Expand</span>
       </summary>
@@ -63,8 +62,7 @@ title: "About me"
         <p>In my free time I sometimes play some games, and I liked it to set up custom game servers for games. Here is where my interest in building systems and servers started, but quickly realized that technical knowledge, security and planning is very important when designing systems. I knew then that only building and planning systems is fun to do and wanted to make my work out of it which it now is, already for several years.</p>
         <h3>From hobby to job</h3>
         <p>After passing my IT Intermediate vocational education I started at my first IT job on the servicedesk. A few years later, the wish to specialize in Microsoft and Microsoft Cloud solutions became stronger, and I followed that path. After some years of watching, learning and gaining hands-on experience, I started to achieve Microsoft certifications and that is where the learning really began and has never stopped since.</p>
-        <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a great way to shift into the next phase: gaining even more knowledge, going deeper into topics and sharing that knowledge in practice. I really like to research a topic or technical part and then document what I did to make it work. It pushes me to the limit when I have to understand a solution, configure it correctly and then explain it in a way that helps others get it working as well.</p>
-        <p>In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
+        <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a great way to shift into the next phase: gaining even more knowledge, going deeper into topics and sharing that knowledge in practice. I really like to research a topic or technical part and then document what I did to make it work. It pushes me to the limit when I have to understand a solution, configure it correctly and then explain it in a way that helps others get it working as well. In my daily job I am mostly busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
       </div>
     </details>
   </div>
@@ -72,8 +70,7 @@ title: "About me"
 
 <section class="about-section about-section-person">
   <div class="about-section-header">
-    <p class="about-eyebrow">About what I do</p>
-    <h2>From curiosity about computers to cloud solutions.</h2>
+    <p class="about-eyebrow">About my work</p>
     <p>My interest in IT started early and eventually became my daily work: designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
   </div>
 
@@ -158,8 +155,7 @@ title: "About me"
 <section class="about-section about-section-site">
   <div class="about-section-header">
     <p class="about-eyebrow">About this website</p>
-    <h2>A personal technical knowledge base, blog and portfolio.</h2>
-    <p>In 2023 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it.</p>
+    <p>In 2023 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it. I also needed a better and more scalable solution than creating and saving hundreds of separate Word documents. First I started on the more easier Wordpress CMS and in 2026 I migrated the website to GitHub Pages.</p>
   </div>
 
   <div class="about-feature-grid about-site-grid about-compact-grid">
@@ -172,7 +168,7 @@ title: "About me"
     <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">⌘</div>
       <h3>Running on GitHub Pages</h3>
-      <p>The site runs on GitHub Pages. I also wrote a blogpost about <a href="https://justinverstijnen.nl/getting-started-with-github-pages/">getting started with GitHub Pages</a>.</p>
+      <p>The site runs on GitHub Pages. I also wrote a blog about <a href="https://justinverstijnen.nl/getting-started-with-github-pages/">getting started with GitHub Pages</a>.</p>
     </article>
 
     <article class="about-feature-card">
@@ -183,7 +179,7 @@ title: "About me"
 
     <article class="about-feature-card">
       <div class="about-card-icon" aria-hidden="true">GH</div>
-      <h3>Website GitHub repository</h3>
+      <h3>GitHub repository</h3>
       <p>The source repository for this website is available on GitHub: <a href="https://github.com/JustinVerstijnen/JVTechnicalBlog">JustinVerstijnen/JVTechnicalBlog</a>.</p>
     </article>
   </div>
@@ -191,10 +187,10 @@ title: "About me"
   <div class="about-build-card about-build-card-clean">
     <div>
       <p class="about-eyebrow">Build details</p>
-      <h3>How this site is maintained</h3>
+      <h3>How this site is built</h3>
     </div>
     <div class="about-build-content">
-      <p>This website is maintained as code and published through GitHub Pages. The content is written in Markdown, generated with Hugo and styled with Docsy plus custom About-page styling.</p>
+      <p>This website is maintained as code and published through GitHub Pages. All content is written in Markdown, generated with Hugo and styled with Docsy plus some custom adjustments to improve user experience. The full website is open-source meaning that every change and part of code is publicly available.</p>
       <div class="about-chip-list">
         <span>Hugo</span>
         <span>Docsy</span>
@@ -210,7 +206,7 @@ title: "About me"
   <div class="about-github-card">
     <div class="about-github-card-header">
       <p class="about-eyebrow">Latest updates</p>
-      <h3>Latest GitHub contributions</h3>
+      <h3>Here you can see the latest updates to this website in reverse-chronological order.</h3>
     </div>
     <div id="github-contributions-widget">
       <p>Loading my latest GitHub contributions...</p>
