@@ -313,6 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 // Latest GitHub contributions widget on the About page.
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("github-contributions-widget");
