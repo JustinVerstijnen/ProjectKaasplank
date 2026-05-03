@@ -1777,3 +1777,128 @@ body.has-ps-about-page .ps-markdown [id] {
     height: 112px !important;
   }
 }
+
+/* Requested layout update: move work areas, stack story/certifications, compact profile */
+.ps-markdown .about-justin-panel {
+  grid-template-columns: minmax(0, 1fr) 145px !important;
+  align-items: start !important;
+}
+
+.ps-markdown .about-hero-content {
+  align-self: start;
+}
+
+.ps-markdown .about-hero-aside {
+  align-content: start !important;
+  align-items: start !important;
+  justify-items: center !important;
+  padding-top: 0.15rem;
+}
+
+.ps-markdown .about-profile-card {
+  width: 125px !important;
+  max-width: 125px !important;
+  margin: 0 !important;
+}
+
+.ps-markdown .about-profile-photo {
+  width: 125px !important;
+  max-width: 125px !important;
+  height: 125px !important;
+}
+
+.ps-markdown .about-competency-row {
+  max-width: 100%;
+  margin-top: 1.25rem;
+}
+
+.ps-markdown .about-hero-bottom-grid.about-equal-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch;
+}
+
+.ps-markdown .about-hero-bottom-grid.about-equal-card-grid > .about-tile-panel {
+  height: 100%;
+}
+
+.ps-markdown .about-work-section .about-section-header {
+  margin-bottom: 1.25rem;
+}
+
+.ps-markdown .about-work-section .about-skill-row {
+  margin-top: 1.25rem;
+}
+
+.ps-markdown .about-work-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1180px;
+  margin: 1.5rem auto 0;
+}
+
+.ps-markdown .about-work-stack .about-expand-card {
+  width: 100%;
+  max-width: none;
+}
+
+.ps-markdown .about-work-stack .about-expand-card summary {
+  min-height: 0 !important;
+  align-items: start;
+}
+
+.ps-markdown .about-story-preview {
+  display: -webkit-box;
+  margin-top: 0.9rem;
+  color: rgba(33, 37, 41, 0.72);
+  font-size: 0.98rem;
+  font-style: normal;
+  line-height: 1.65;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ps-markdown .about-story-card[open] .about-story-preview {
+  display: none;
+}
+
+.ps-markdown .about-certifications-card .about-cert-preview {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ps-markdown .about-tile-panel {
+  display: block;
+}
+
+.ps-markdown .about-tile-panel .about-card-icon {
+  margin-bottom: 1rem;
+}
+
+.ps-markdown .about-tile-panel h3 {
+  margin: 0 0 0.75rem;
+}
+
+@media (max-width: 1000px) {
+  .ps-markdown .about-justin-panel,
+  .ps-markdown .about-hero-bottom-grid.about-equal-card-grid,
+  .ps-markdown .about-certifications-card .about-cert-preview {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ps-markdown .about-hero-aside {
+    justify-items: start !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ps-markdown .about-profile-card,
+  .ps-markdown .about-profile-photo {
+    width: 112px !important;
+    max-width: 112px !important;
+  }
+
+  .ps-markdown .about-profile-photo {
+    height: 112px !important;
+  }
+}

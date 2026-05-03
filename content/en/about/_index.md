@@ -9,17 +9,10 @@ title: "About"
     <p class="about-eyebrow">About me</p>
     <p class="about-lead">I am Justin Verstijnen and this is my website. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.</p>
 
-    <div class="about-skill-row" aria-label="Blog categories">
-      <span>Azure</span>
-      <span>AVD/W365</span>
-      <span>Intune</span>
-      <span>365</span>
-      <span>Entra</span>
-      <span>Defender</span>
-      <span>Networking</span>
-      <span>GitHub</span>
-      <span>PowerShell</span>
-      <span>Windows Server</span>
+    <div class="about-skill-row about-competency-row" aria-label="Competencies">
+      <span>Independent</span>
+      <span>Eager to learn</span>
+      <span>Ambitious</span>
     </div>
   </div>
 
@@ -31,7 +24,7 @@ title: "About"
     </figure>
   </aside>
 
-  <div class="about-hero-bottom-grid">
+  <div class="about-hero-bottom-grid about-equal-card-grid">
     <div class="about-card about-card-modern about-item-card about-feature-card about-tile-panel">
       <div class="about-card-icon" aria-hidden="true">✦</div>
       <h3>Hobbies and pastimes</h3>
@@ -49,12 +42,51 @@ title: "About"
       </div>
     </div>
 
-    <details class="about-expand-card about-inline-expand-card">
+    <div class="about-card about-card-modern about-item-card about-feature-card about-tile-panel">
+      <div class="about-card-icon" aria-hidden="true">↗</div>
+      <h3>Profiles and socials</h3>
+      <div class="about-tile-grid about-social-grid">
+        <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">in</span>LinkedIn</a>
+        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">MS</span>Microsoft Learn</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><span class="about-tile-icon" aria-hidden="true">✓</span>Certification Transcript</a>
+        <a class="about-tile" href="https://github.com/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">GH</span>GitHub</a>
+        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
+        <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Reddit</a>
+        <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Subreddit</a>
+        <a class="about-tile" href="https://substack.com/@justinverstijnen"><span class="about-tile-icon" aria-hidden="true">S</span>Substack</a>
+        <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">▶</span>YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section about-section-person about-work-section">
+  <div class="about-section-header">
+    <p class="about-eyebrow">About my work</p>
+    <p>In my daily work I'm busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
+
+    <div class="about-skill-row" aria-label="Main technical areas">
+      <span>Azure</span>
+      <span>AVD/W365</span>
+      <span>Intune</span>
+      <span>365</span>
+      <span>Entra</span>
+      <span>Defender</span>
+      <span>Networking</span>
+      <span>GitHub</span>
+      <span>PowerShell</span>
+      <span>Windows Server</span>
+    </div>
+  </div>
+
+  <div class="about-work-stack">
+    <details class="about-expand-card about-story-card">
       <summary>
         <span class="about-expand-summary-content">
           <span class="about-eyebrow">Story</span>
           <strong>My IT and Cloud story</strong>
-          <em>Click here to expand my IT story and how I started into this workfield.</em>
+          <span class="about-story-preview">My interest in computers started when I was around 9 years old, because of my dad. He had a computer company for years where he helped individuals and small companies with computer problems, migrations, new computers, laptops, printers, monitors and periodic cleaning. At first I only watched him do the magic, but later I helped him very often.</span>
         </span>
         <span class="about-summary-action">Expand</span>
       </summary>
@@ -65,16 +97,7 @@ title: "About"
         <p>In 2024, after achieving every Microsoft certification I wanted, I started this website as a way to move into the next phase: gaining more knowledge, going deeper into topics and sharing that knowledge in practice. I really like researching a topic or technical part, and then documenting what I did to make it work. It pushes me to fully understand a solution, configure it correctly and explain it in a way that helps others. In my daily job I am mostly busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions.</p>
       </div>
     </details>
-  </div>
-</section>
 
-<section class="about-section about-section-person">
-  <div class="about-section-header">
-    <p class="about-eyebrow">About my work</p>
-    <p>In my daily work I'm busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises environments.</p>
-  </div>
-
-  <div class="about-work-layout">
     <details class="about-expand-card about-certifications-card">
       <summary>
         <span class="about-expand-summary-content">
@@ -123,35 +146,8 @@ title: "About"
             <tr><td>ITIL 4 Foundation</td><td></td></tr>
           </tbody>
         </table>
-
       </div>
     </details>
-
-    <div class="about-work-side">
-      <article class="about-feature-card about-work-focus-card">
-        <div class="about-card-icon" aria-hidden="true">☁</div>
-        <h3>Professional focus</h3>
-        <p>My primary focus is on Microsoft Azure, with Azure Virtual Desktop, Windows 365, Windows Server, PowerShell and Networking as subservices. This translates into the content on this website, but I also like the rest of the Microsoft Cloud platform, so you can also find blogs about Entra and Intune. I like good and secure solutions, and therefore you need to know the whole solution.</p>
-      </article>
-
-    <div class="about-card about-card-modern about-item-card about-feature-card about-tile-panel">
-      <div class="about-card-icon" aria-hidden="true">↗</div>
-      <h3>Profiles and socials</h3>
-      <div class="about-tile-grid about-social-grid">
-        <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">in</span>LinkedIn</a>
-        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><span class="about-tile-icon" aria-hidden="true">☕</span>Buy me a Coffee</a>
-        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><span class="about-tile-icon" aria-hidden="true">MS</span>Microsoft Learn</a>
-        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><span class="about-tile-icon" aria-hidden="true">✓</span>Certification Transcript</a>
-        <a class="about-tile" href="https://github.com/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">GH</span>GitHub</a>
-        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">PS</span>PowerShell Gallery</a>
-        <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Reddit</a>
-        <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><span class="about-tile-icon" aria-hidden="true">r/</span>Subreddit</a>
-        <a class="about-tile" href="https://substack.com/@justinverstijnen"><span class="about-tile-icon" aria-hidden="true">S</span>Substack</a>
-        <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><span class="about-tile-icon" aria-hidden="true">▶</span>YouTube</a>
-      </div>
-    </div>
-
-    </div>
   </div>
 </section>
 
