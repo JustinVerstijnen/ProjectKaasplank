@@ -11,22 +11,25 @@ title: "About me"
     <p class="about-lead">I design, build, secure and document Microsoft Cloud and on-premises solutions. This website is where I turn research, real-world configurations and lessons learned into practical technical content.</p>
   </div>
 
-  <aside class="about-hero-aside" aria-label="Profile and focus areas">
+  <aside class="about-hero-aside" aria-label="Profile photo">
     <figure class="about-profile-card">
       <div class="about-profile-photo">
         <img src="/img/about-profile-placeholder.svg" alt="Profile photo placeholder">
       </div>
     </figure>
-
-    <div class="about-hero-highlight" aria-label="Main focus areas">
-      <span>Azure</span>
-      <span>Microsoft 365</span>
-      <span>Entra ID</span>
-      <span>Intune</span>
-      <span>Security</span>
-      <span>Automation</span>
-    </div>
   </aside>
+
+  <div class="about-skill-row" aria-label="Blog categories">
+    <span><i class="fa-brands fa-github" aria-hidden="true"></i>Github</span>
+    <span><i class="fa-solid fa-laptop-code" aria-hidden="true"></i>Intune</span>
+    <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>Microsoft 365</span>
+    <span><i class="fa-solid fa-cloud" aria-hidden="true"></i>Microsoft Azure</span>
+    <span><i class="fa-solid fa-id-card" aria-hidden="true"></i>Microsoft Entra</span>
+    <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Microsoft Defender XDR</span>
+    <span><i class="fa-solid fa-network-wired" aria-hidden="true"></i>Networking</span>
+    <span><i class="fa-solid fa-terminal" aria-hidden="true"></i>PowerShell</span>
+    <span><i class="fa-brands fa-windows" aria-hidden="true"></i>Windows Server</span>
+  </div>
 </section>
 
 <section class="about-section about-section-person">
@@ -38,66 +41,64 @@ title: "About me"
 
   <div class="about-feature-grid about-compact-grid">
     <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">☁</div>
+      <div class="about-card-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
       <h3>Professional focus</h3>
       <p>I focus on Microsoft Azure, Microsoft 365, Entra ID, Intune, security, endpoint management and automation. I like solutions that are secure, maintainable and documented clearly enough for others to use.</p>
     </article>
 
     <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">⌁</div>
+      <div class="about-card-icon" aria-hidden="true"><i class="fa-solid fa-code-branch"></i></div>
       <h3>How I learn</h3>
       <p>I research a topic, build or configure it, test what works, and then write it down in a practical way. Explaining the solution forces me to understand it properly.</p>
     </article>
   </div>
 
   <div class="about-two-columns about-modern-columns">
-    <div class="about-card about-card-modern">
+    <div class="about-card about-card-modern about-item-card">
       <h3>Hobbies and pastimes</h3>
-      <div class="about-chip-list">
-        <span>Photography</span>
-        <span>Playing guitar</span>
-        <span>Microsoft Flight Simulator</span>
-        <a href="https://flightblog.justinverstijnen.nl/">Student PPL pilot on the C172</a>
-        <span>Cloud solutions</span>
-        <span>Community content</span>
-        <span>Gaming</span>
-        <span>Building gaming PCs</span>
-        <span>Darts</span>
-        <span>Fitness</span>
-        <span>Football</span>
+      <div class="about-tile-grid about-hobby-grid">
+        <span class="about-tile"><i class="fa-solid fa-camera" aria-hidden="true"></i>Photography</span>
+        <span class="about-tile"><i class="fa-solid fa-guitar" aria-hidden="true"></i>Playing guitar</span>
+        <span class="about-tile"><i class="fa-solid fa-plane" aria-hidden="true"></i>Microsoft Flight Simulator</span>
+        <a class="about-tile" href="https://flightblog.justinverstijnen.nl/"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i>Student PPL pilot on the C172</a>
+        <span class="about-tile"><i class="fa-solid fa-cloud" aria-hidden="true"></i>Cloud solutions</span>
+        <span class="about-tile"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i>Community content</span>
+        <span class="about-tile"><i class="fa-solid fa-gamepad" aria-hidden="true"></i>Gaming</span>
+        <span class="about-tile"><i class="fa-solid fa-desktop" aria-hidden="true"></i>Building gaming PCs</span>
+        <span class="about-tile"><i class="fa-solid fa-bullseye" aria-hidden="true"></i>Darts</span>
+        <span class="about-tile"><i class="fa-solid fa-dumbbell" aria-hidden="true"></i>Fitness</span>
+        <span class="about-tile"><i class="fa-solid fa-futbol" aria-hidden="true"></i>Football</span>
       </div>
     </div>
 
-    <div class="about-card about-card-modern">
+    <div class="about-card about-card-modern about-item-card">
       <h3>Profiles and socials</h3>
-      <div class="about-link-grid">
-        <a href="https://www.linkedin.com/in/justinverstijnen/">LinkedIn</a>
-        <a href="mailto:info@justinverstijnen.nl">Email</a>
-        <a href="https://learn.microsoft.com/en-us/users/justinverstijnen/">Microsoft Learn</a>
-        <a href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0">Certification Transcript</a>
-        <a href="https://github.com/JustinVerstijnen">GitHub</a>
-        <a href="https://www.reddit.com/user/JustinVerstijnen/">Reddit</a>
-        <a href="https://www.reddit.com/r/JustinVerstijnen/">Subreddit</a>
-        <a href="https://substack.com/@justinverstijnen">Substack</a>
-        <a href="https://www.powershellgallery.com/profiles/JustinVerstijnen">PowerShell Gallery</a>
-        <a href="https://www.youtube.com/@JustinVerstijnen">YouTube</a>
-        <a href="https://buymeacoffee.com/justinverstijnen">Buy me a Coffee</a>
+      <div class="about-tile-grid about-social-grid">
+        <a class="about-tile" href="https://www.linkedin.com/in/justinverstijnen/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+        <a class="about-tile" href="mailto:info@justinverstijnen.nl"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/"><i class="fa-brands fa-microsoft" aria-hidden="true"></i>Microsoft Learn</a>
+        <a class="about-tile" href="https://learn.microsoft.com/en-us/users/justinverstijnen/transcript/71kg1ag8p16k9e0"><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certification Transcript</a>
+        <a class="about-tile" href="https://github.com/JustinVerstijnen"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+        <a class="about-tile" href="https://www.reddit.com/user/JustinVerstijnen/"><i class="fa-brands fa-reddit" aria-hidden="true"></i>Reddit</a>
+        <a class="about-tile" href="https://www.reddit.com/r/JustinVerstijnen/"><i class="fa-brands fa-reddit-alien" aria-hidden="true"></i>Subreddit</a>
+        <a class="about-tile" href="https://substack.com/@justinverstijnen"><i class="fa-solid fa-newspaper" aria-hidden="true"></i>Substack</a>
+        <a class="about-tile" href="https://www.powershellgallery.com/profiles/JustinVerstijnen"><i class="fa-solid fa-terminal" aria-hidden="true"></i>PowerShell Gallery</a>
+        <a class="about-tile" href="https://www.youtube.com/@JustinVerstijnen"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube</a>
+        <a class="about-tile" href="https://buymeacoffee.com/justinverstijnen"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i>Buy me a Coffee</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="about-expand-grid" aria-label="Story and certifications">
-  <details class="about-expand-card about-story-card">
+<section class="about-expand-grid">
+  <details class="about-expand-card">
     <summary>
-      <span class="about-summary-main">
+      <span class="about-expand-summary-content">
         <span class="about-eyebrow">Story</span>
         <strong>My IT and Cloud story</strong>
-        <span class="about-summary-preview">
-          My interest in computers started when I was around 9 years old. My dad had a computer company where he helped individuals and small companies with computer problems, migrations, hardware, periodic cleaning and support. I first watched him do the magic, but later I helped him often. That introduced me quickly to computers, software, problems and hardware basics.
-        </span>
+        <em>My interest in computers started at around 9 years old because of my dad, who had a computer company for years. I watched him solve practical computer problems, migrate people to new systems and help customers use their devices. Later I started helping him myself, and that early exposure shaped the direction I wanted to take.</em>
       </span>
-      <span class="about-summary-action">Read more</span>
+      <span class="about-summary-action">Expand</span>
     </summary>
     <div class="about-expand-content">
       <p>My interest in computers started at around 9 years old because of my dad who had a computer company for years where he helped around 200 individuals and 1 to 2 person companies with their computer problems, migrating to new computers, selling new computers, laptops, printers and monitors, and helping them with using them, periodic cleaning and more. At first I only watched him do the magic, but later I helped him very often. This introduced me well and fast into computers, software, possible problems and some basic knowledge of hardware. I knew very soon in my life that I wanted to do the same as my dad, but not what exactly. I thought of <em>Something with computers.</em></p>
@@ -109,16 +110,14 @@ title: "About me"
     </div>
   </details>
 
-  <details class="about-expand-card about-certifications-card">
+  <details class="about-expand-card">
     <summary>
-      <span class="about-summary-main">
+      <span class="about-expand-summary-content">
         <span class="about-eyebrow">Certifications</span>
         <strong>Microsoft, networking and IT fundamentals</strong>
-        <span class="about-summary-preview">
-          A compact overview of certifications across Microsoft identity, security, Azure, Microsoft 365, endpoint management, networking and IT service management. The first items include SC-300, SC-200, AI-900, PL-900 and AZ-700.
-        </span>
+        <em>A compact overview of Microsoft, networking and IT certifications, including identity, security, Azure, Microsoft 365, Windows Server, networking and service management.</em>
       </span>
-      <span class="about-summary-action">View list</span>
+      <span class="about-summary-action">Expand</span>
     </summary>
     <div class="about-expand-content about-certification-list">
       <table>
@@ -165,13 +164,13 @@ title: "About me"
 
   <div class="about-feature-grid about-site-grid about-compact-grid">
     <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">◇</div>
+      <div class="about-card-icon" aria-hidden="true"><i class="fa-solid fa-diamond"></i></div>
       <h3>Built with Docsy</h3>
       <p>Site built with <a href="https://github.com/google/docsy">Docsy</a> and Hugo, so the content can stay fast, structured and maintainable.</p>
     </article>
 
     <article class="about-feature-card">
-      <div class="about-card-icon" aria-hidden="true">⌘</div>
+      <div class="about-card-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></div>
       <h3>Running on GitHub Pages</h3>
       <p>The site runs on GitHub Pages. I also wrote a blogpost about <a href="https://justinverstijnen.nl/getting-started-with-github-pages/">getting started with GitHub Pages</a>.</p>
     </article>
@@ -190,13 +189,10 @@ title: "About me"
         <span>GitHub Pages</span>
         <span>Markdown</span>
       </div>
+      <a class="about-build-preview" href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
+        <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">
+      </a>
     </div>
-  </div>
-
-  <div class="about-site-preview">
-    <a href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
-      <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">
-    </a>
   </div>
 
   <div class="about-github-card">
@@ -209,8 +205,6 @@ title: "About me"
     </div>
   </div>
 </section>
-
-Thank you for visiting my website.
 
 {{< /powershell-about >}}
 
