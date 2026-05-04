@@ -91,8 +91,7 @@ title: "About"
     <article class="about-expand-card about-certifications-card about-static-certifications-card">
       <div class="about-expand-summary-content">
         <span class="about-eyebrow">Certifications</span>
-        <strong>Microsoft, networking and IT fundamentals</strong>
-        <em>A compact overview with certification title, exam code and year earned.</em>
+        <em>An overview of my earned IT certifications.</em>
       </div>
       <div class="about-cert-grid" aria-label="Certifications">
         <article class="about-cert-tile">
