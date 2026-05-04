@@ -278,7 +278,7 @@ title: "About"
 <section class="about-section about-section-site">
   <div class="about-section-header">
     <p class="about-eyebrow">About this website</p>
-    <p>In 2023 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it. I also needed a better and more scalable solution than creating and saving hundreds of separate Word documents. First I started on the easier WordPress CMS and in 2026 I migrated the website to GitHub Pages.</p>
+    <p>In 2024 I founded this website and wanted to use it as my personal documentation system. Documenting solutions and being able to explain them pushes me further than only trying a solution and knowing I did something with it. I also needed a better and more scalable solution than creating and saving hundreds of separate Word documents. First I started on the easier WordPress CMS and in 2026 I migrated the website to GitHub Pages.</p>
   </div>
 
   <div class="about-feature-grid about-site-grid about-compact-grid about-site-link-grid">
