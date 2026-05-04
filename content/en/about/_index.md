@@ -307,6 +307,7 @@ title: "About"
         <a href="https://www.docsy.dev/docs/" target="_blank" rel="noopener noreferrer">Docsy</a>
         <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
         <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener noreferrer">Markdown</a>
+        <a href="https://umami.is/" target="_blank" rel="noopener noreferrer">Umami</a>
       </div>
       <a class="about-build-preview" href="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png">
         <img src="https://sajvwebsiteblobstorage.blob.core.windows.net/blog/site/jv-media-6969-fe38958f74ce.png" alt="Website preview image">
