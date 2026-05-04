@@ -43,6 +43,6 @@ This project is a combination of 5 different solutions:
 
 ## License
 
-This project is licensed under the **Apache-2.0 license**. This means that the software is open source and can be used to run the tool yourself.
+This project is licensed under the **Apache-2.0 license**.
 
 The official Terms and Conditions of my website and GitHub repository can be found on: [https://justinverstijnen.nl/blog/terms-conditions/](https://justinverstijnen.nl/blog/terms-conditions/)
