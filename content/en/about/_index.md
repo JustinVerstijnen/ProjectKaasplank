@@ -109,24 +109,24 @@ title: "About"
           </div>
         </article>
         <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Administrator Associate</strong>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-104</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Microsoft Certified: Azure Solutions Architect Expert</strong>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>AZ-305</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
           <strong>Microsoft Certified: Azure Virtual Desktop Specialty</strong>
           <div class="about-cert-meta-row">
             <div class="about-cert-meta"><span>Exam code</span><small>AZ-140</small></div>
             <div class="about-cert-meta"><span>Earned</span><small>2021</small></div>
-          </div>
-        </article>
-        <article class="about-cert-tile">
-          <strong>ITIL 4 Foundation</strong>
-          <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small>ITIL4</small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2019</small></div>
-          </div>
-        </article>
-        <article class="about-cert-tile">
-          <strong>Cisco Certified Networking Associate 1 + 2</strong>
-          <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small>CCNA1 + 2</small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2017</small></div>
           </div>
         </article>
         <article class="about-cert-tile">
@@ -144,6 +144,13 @@ title: "About"
           </div>
         </article>
         <article class="about-cert-tile">
+          <strong>Microsoft Certified: Security Operations Analyst Associate</strong>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>SC-200</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
           <strong>Ubiquiti Enterprise Wireless Administrator</strong>
           <div class="about-cert-meta-row">
             <div class="about-cert-meta"><span>Exam code</span><small>UEWA</small></div>
@@ -155,27 +162,6 @@ title: "About"
           <div class="about-cert-meta-row">
             <div class="about-cert-meta"><span>Exam code</span><small>UNS</small></div>
             <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
-          </div>
-        </article>
-        <article class="about-cert-tile">
-          <strong>Microsoft Certified: Azure Administrator Associate</strong>
-          <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small>AZ-104</small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
-          </div>
-        </article>
-        <article class="about-cert-tile">
-          <strong>Microsoft Certified: Security Operations Analyst Associate</strong>
-          <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small>SC-200</small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2023</small></div>
-          </div>
-        </article>
-        <article class="about-cert-tile">
-          <strong>Microsoft Certified: Azure Solutions Architect Expert</strong>
-          <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small>AZ-305</small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2022</small></div>
           </div>
         </article>
         <article class="about-cert-tile">
@@ -274,6 +260,20 @@ title: "About"
           <div class="about-cert-meta-row">
             <div class="about-cert-meta"><span>Exam code</span><small>70-740, 70-741, 70-742</small></div>
             <div class="about-cert-meta"><span>Earned</span><small>2020</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>ITIL 4 Foundation</strong>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>ITIL4</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2019</small></div>
+          </div>
+        </article>
+        <article class="about-cert-tile">
+          <strong>Cisco Certified Networking Associate 1 + 2</strong>
+          <div class="about-cert-meta-row">
+            <div class="about-cert-meta"><span>Exam code</span><small>CCNA1 + 2</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2017</small></div>
           </div>
         </article>
       </div>
