@@ -2312,3 +2312,14 @@ body.has-ps-about-page .ps-markdown [id] {
     grid-template-columns: 1fr;
   }
 }
+
+/* Hide the About page profile photo on narrow phone screens only. */
+@media (max-width: 640px) {
+  .ps-markdown .about-justin-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ps-markdown .about-hero-aside {
+    display: none !important;
+  }
+}
