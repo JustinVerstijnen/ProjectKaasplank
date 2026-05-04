@@ -2,6 +2,7 @@
 title: "Header Photo"
 description: "This page contains information about my header photo."
 date: 2024-06-19
+slug: "header-photo"
 build:
   render: always
   list: never
