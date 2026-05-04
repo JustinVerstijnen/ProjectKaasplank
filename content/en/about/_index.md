@@ -7,7 +7,7 @@ title: "About"
 <section class="about-hero-panel about-justin-panel">
   <div class="about-hero-content">
     <p class="about-eyebrow">About me</p>
-    <p class="about-lead">I am Justin Verstijnen and this is my technical blog. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.<br> I would describe my competences as:</p>
+    <p class="about-lead">I am Justin Verstijnen and this is my technical blog. In my daily job I am busy designing, building, maintaining, securing and improving Microsoft Cloud and on-premises solutions. On this website, I share technical blogs about various IT and Cloud professions. You can find blogs written from experiences, research I've done, older notes I converted into blogs and more.<br><br> I would describe my competences as:</p>
 
     <div class="about-skill-row about-competency-row" aria-label="Competencies">
       <span>Independent</span>
