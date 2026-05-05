@@ -80,7 +80,17 @@ a:focus:hover
 }
 
 /* 4. Custom button color and rounded corners */
-.ext-button.ext-primary .ext-button.ext-secondary .ext-button.ext-primary:active
+.ext-button.ext-primary
+{
+    color: #fff;
+    border-color: #77B0DE;
+    background-color: #77B0DE;
+    display: block;
+    width: 100%;
+    border-radius: 999px;
+}
+
+.ext-button.ext-secondary
 {
     color: #fff;
     border-color: #77B0DE;
@@ -91,7 +101,13 @@ a:focus:hover
 }
 
 /* 5. Custom button color when hovering */
-.ext-button.ext-primary:hover .ext-button.ext-secondary:hover .ext-button.ext-secondary:active
+.ext-button.ext-primary:hover
+{
+    border-color: #6fa4cf;
+    background-color: #6fa4cf;
+}
+
+.ext-button.ext-secondary:hover
 {
     border-color: #6fa4cf;
     background-color: #6fa4cf;
@@ -191,7 +207,7 @@ Now that we have applied our customized CSS, we can check the changes by opening
 outlook.com/justinverstijnen.nl
 {{< /card >}}
 
-Change the domain-name after the "/" to your own primary domain name. This automatically redirects to your tenant.
+Change the domain-name after the "/" to your own primary domain name (like example.com). This automatically redirects to your tenants-login page immediately showing your company branding.
 
 [![jv-media-8504-4782ed8229f2.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-custom-css-styling/jv-media-8504-4782ed8229f2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/entra-id-custom-css-styling/jv-media-8504-4782ed8229f2.png)
 
