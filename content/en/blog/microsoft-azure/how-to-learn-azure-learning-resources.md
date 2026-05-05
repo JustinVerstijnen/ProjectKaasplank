@@ -49,13 +49,13 @@ My advice is to explore the portal and train yourself to do simple tasks like:
 
 ## 3. Get your Azure Fundamentals (AZ-900) certification
 
-When having some experience with the solutions, it is great to learn for your AZ-900 Azure Fundamentals certification. Its a great way to express yourself to the world that you have the knowledge of what Azure is.
+When having some experience with the solutions, it is great to learn for your AZ-900 Azure Fundamentals certification. Its a great way to express yourself to the world that you have the knowledge of what Azure is. There are also some Interactive Guides which let you around simulated environments where not errors can be made.
 
 Learning for the AZ-900 certification is possible through the following source:
 
 Microsoft Learn: <https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus>
 
-After you have done the complete cource, i recommend you watch the Study Cram of John Savil vor AZ-900. He is a great explainer of concepts, and he explains every detail you need to know for the exam including some populair exam questions.
+After you have done the complete cource, i recommend you watch the Study Cram of John Savil for AZ-900. He is a great explainer of concepts, and he explains every detail you need to know for the exam including some populair exam questions.
 
 John Savil: <https://www.youtube.com/watch?v=tQp1YkB2Tgs>
 
