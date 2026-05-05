@@ -80,7 +80,7 @@ a:focus:hover
 }
 
 /* 4. Custom button color and rounded corners */
-.ext-button.ext-primary
+.ext-button.ext-primary .ext-button.ext-secondary .ext-button.ext-primary:active
 {
     color: #fff;
     border-color: #77B0DE;
@@ -91,7 +91,7 @@ a:focus:hover
 }
 
 /* 5. Custom button color when hovering */
-.ext-button.ext-primary:hover
+.ext-button.ext-primary:hover .ext-button.ext-secondary:hover .ext-button.ext-secondary:active
 {
     border-color: #6fa4cf;
     background-color: #6fa4cf;
