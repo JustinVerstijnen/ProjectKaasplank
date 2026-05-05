@@ -61,7 +61,7 @@ John Savil: <https://www.youtube.com/watch?v=tQp1YkB2Tgs>
 
 John has a extra playlist for each concept where he will go deeper into the subject than in the cram. You can find that here: <https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3>
 
-<p><a class="btn btn-primary" href="https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus">AZ-900 Text course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3">AZ-900 Video course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/watch?v=tQp1YkB2Tgs">AZ-900 Study Cram</a></p>
+<p><a class="btn btn-primary" href="https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus">AZ-900 Text course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3">AZ-900 Video course</a>&nbsp;<a class="btn btn-primary" href="https://www.youtube.com/watch?v=tQp1YkB2Tgs">AZ-900 Study Cram</a>&nbsp;<a class="btn btn-primary" href="https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%201">AZ-900 Interactive guides</a></p>
 
 ---
 
