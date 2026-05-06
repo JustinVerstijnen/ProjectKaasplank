@@ -1,7 +1,7 @@
 ---
 title: "Entra ID Custom CSS styling"
 slug: "entra-id-custom-css-styling"
-date: 2026-07-08
+date: 2026-05-09
 tags: Step by Step guides
 categories: Microsoft Entra
 description: "On this page I will show the advanced and custom CSS controls available for Entra ID prompts to style this to your likings or organization branding."
