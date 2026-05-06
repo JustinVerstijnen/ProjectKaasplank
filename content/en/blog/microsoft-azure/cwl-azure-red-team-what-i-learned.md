@@ -1,26 +1,33 @@
 ---
 title: "CWL Azure Red Team Certification - What I learned"
-date: 2026-07-01
-description: "In the first half of 2026 I followed a paid course on cyberwarfare.live. Namely the CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves or step by step hacking but took some notes from what I have learned from doing the course."
-tags:
-- Concepts
-categories:
-- Microsoft Azure
+slug: "cwl-azure-red-team-what-i-learned"
+date: 2026-05-06
+tags: 
+categories: "Microsoft Entra"
+description: "In the first half of 2026 I followed a paid course on Cyberwarfare.live. The CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves or step by step hacking but took some notes from what I have learned from doing the course."
 ---
 
 "If you don't test your infrastructure as an attacker, someone else will."
 
-## Starting out
+## 
+
+## The CWL Azure Red Team course
 
 I started on the site cyberwarfare.live by purchasing the course. I found this very fun looking and interesting to use that information to further secure environments. Learn to attack environments also gains knowledge in how to defend yourself.
 
-The full name of the course was: *CWL Certified Azure Red Team Specialist (AzRTS)*.
+The full name of the course was: _CWL Certified Azure Red Team Specialist (AzRTS)_.
 
 [![jv-media-8501-4c5d770da05a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-4c5d770da05a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-4c5d770da05a.png)
 
-Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input.
+Cyberwarfare offers some courses which you can buy or do free and they take advantage of giving you lab assessments that you have to take. In different scenarios you need to find certain information like which IP or account did the attackers use to breach your environment and check your input. All of this must be done through a honeypot Azure environment they deliver for you. You only can proceed if you submit the right information (called Flags) which makes it really fun and helpful.
 
-All of this must be done through a honeypot Azure environment they deliver for you. You only can proceed if you submit the right information which makes it really fun and helpful.
+This course gives you access to an environment with theory about the Microsoft Entra, Azure and Entra Connect Sync topics. Then it gives you guidance about how these services can be abused, giving you enough details on why you should stick with best practices, least privileges, zero trust and simply removing test configurations or permissions after testing is done.
+
+You get demonstrations about 4 different attack approaches which are known to be abused in the industry.
+
+After that you get your own lab environment, a Microsoft Entra tenant with Azure Subscription where you have to complete 16 objectives.
+
+---
 
 ## Certification subjects
 
@@ -41,15 +48,20 @@ The objectives of the certification are:
 
 ## Key learning points
 
+During and after completing this course, these were my key takeaways. While many of these points were already familiar, the course helped reinforce why they matter even more.
+
+- Watch your Service Principal and Managed Identity permissions and always apply least privileges + audit them periodically
 - When having a hybrid environment, apply hybrid security
-- Attacks happen due to these major factors
-  - Misconfigurations
-  - Failure to apply basic access controls
-  - Ease of use over security
-  - Untrained employees who don't understand what they do and can cause
+- Attacks and escalation happen due to these major factors
+
+	- Misconfigurations or non-removed testing configurations
+	- Failure to apply basic access controls
+	- Ease of use over security
+	- Untrained employees who don't understand what they do
 - Read-only access is more deadly than it looks
 - OAuth apps are very sensitive for hacks and backdoors and mostly hiding in plain sight
 - Basic Endpoint and Server security software and rules are highly needed to block from running malicious software
+- Again, watch your Service Principal and Managed Identity permissions and always apply least privileges + audit them periodically
 
 ---
 
@@ -62,34 +74,13 @@ Hacks happen very often, but what exactly are the motives of hacking other peopl
 - Increase their reach by bulk sending phishing emails
 - Loss of face for companies
 
-## Introduction to Azure
-
-Microsoft Azure and Entra ID are valuable resources for hackers as these are global services. This means they are available for you as user but also for attackers. By breaching one single login, they have access to everything an user also has access to.
-
-### Access tokens
-
-Microsoft Azure uses Microsoft Entra ID as Identity Provider. This identity provider is basically a system that checks the users' credentials and then assigns a token where the user can login to all authorized applications and resources. By default, this token is valid for 90 days.
-
-An access token looks like this and can be further defined with [this tool](https://www.jwt.io/):
-
-[![jv-media-8501-c3becc04d0bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)
-
-This token is then saved into the cache of the browser so the user does not have to reauthenticate for every resource or application.
-
-### Control plane and Data plane
-
-Some resources in Azure needs security on both the control and data planes of the resource:
-
-- **Control plane** : What users can access the resource, during what time windows and what are their privileges?
-- **Data plane** : What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
-
 ---
 
 ## 1: Red Team Operations in Microsoft Entra ID
 
 We have two types of applications in Microsoft Entra ID:
 
-- **App registrations**: Application Instance
+- **App registrations** : Application Instance
 - **Enterprise Application** (Service Principals): Application Identity which has the permissions
 
 If an App Registration is created using the Azure Portal, you also get a Service Principal. This is the identity who has the permissions and can exists in multiple tenants if configured to do so. Both the App Registration and Service Principal may represent the same app, they are two different objects in Entra ID.
@@ -98,7 +89,7 @@ If an App Registration is created using the Azure Portal, you also get a Service
 
 An attacker these days wants to target normal users. They doesn't seem valuable but they really are. With a correct login with an user an attacker has read access to the whole tenant. This means it can enumerate different users, groups, applications, devices and roles which it can use to escalate its privileges. The ultimate goal is to breach into a Global Administrator account of an organization which can do a LOT of harm.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-700c124c1749.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-700c124c1749.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-700c124c1749.png)
 
 The fun fact is that administrator accounts are normally secured properly but normal users a lot less.
 
@@ -117,12 +108,36 @@ Attackers will mostly contact users by phone or email, and will push them at the
 Attacker will inventory your environment and search for permissions which gives them a lot of power. These permissions can be:
 
 - Global Administrator (user role) -> can do everything
-- RoleManagement.ReadWrite.Directory (API permission) -> Can assign roles to users, even Global Administrator role
+- RoleManagement.ReadWrite.Directory (API permission) -> Can all assign roles to principals, even Global Administrator role making privilege escalation easy
 - Global Reader -> Can read everything, so complete attack surface is visible to hacker in a few minutes
 
 ### Conditional Access and Targets
 
 High risk targets for attackers are users that are excluded from Conditional Access policies. These users doesn't need further authentication like trusted locations, MFA or session/token limitations. They can just perform a password spray attack to try and breach into this account. Now they have the real gold in their hands.
+
+### Access tokens
+
+Microsoft Azure uses Microsoft Entra ID as Identity Provider. This identity provider is basically a system that checks the users' credentials and then assigns a token where the user can login to all authorized applications and resources. By default, this token is valid for 90 days.
+
+Every principal which is being authenticated by Entra ID gets this token. We speak of principals every object that can get roles and scopes assigned:
+
+- Users
+- Groups
+- Service Principals (App registration)
+- Managed Identity
+
+An access token looks like this and can be further defined with [this tool](https://www.jwt.io/):
+
+[![jv-media-8501-c3becc04d0bc.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-c3becc04d0bc.png)
+
+This token is then saved into the cache of the browser so the user does not have to reauthenticate for every resource or application.
+
+### Control plane and Data plane
+
+Some resources in Azure needs security on both the control and data planes of the resource:
+
+- **Control plane** : What users can access the resource, during what time windows and what are their privileges?
+- **Data plane** : What users can access what data of the resources, during what time windows and what are their privileges? Dataplanes are also more vulnerable as secrets are a possibility, which are just longer passwords
 
 ---
 
@@ -141,14 +156,13 @@ An attack on Azure Resource Manager can look like this:
 
 You see, we use newer cloud solutions but attack vectors still are using techniques like SQL injection.
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-ab049923269c.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-ab049923269c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-ab049923269c.png)
 
 ### The MicroBurst PowerShell module
 
 The MicroBurst PowerShell module can be used to execute assessments of your Microsoft Azure environment. This checks the security and possible attack surfaces like Web apps. You can find this here:
 
 <a class="btn btn-primary" href="https://github.com/Netspi/Microburst" target="_blank" rel="noreferrer">MicroBurst PowerShell module</a>
-
 
 ### Managed Identities
 
@@ -169,13 +183,13 @@ Attacks in Microsoft 365 are often performed by abusing OAuth 2.0 consent/grant 
 5. Motive: Gaining access to organization
 6. End goal: Data exfiltration (steal)
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-6002156a21a9.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-6002156a21a9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-6002156a21a9.png)
 
 ### OAuth 2.0 consents and results
 
 An OAuth 2.0 consent window looks like this:
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/wordpress-on-azure-2625/jv-media-2625-adbea3391418.png)
 
 This is an consent request of an application to gain information about the user and organization where this is possible by default. We administrators often want to disable this for standard users because of this attack surface. Why these apps are also highly useable to the attackers is that they bypass the needs for credentials as the user gave permissions themselves. Attackers can create some malicious app in their tenant and creates them "multi-tenant". This makes it possible to publish this app to multiple organizations like the victims.
 
@@ -195,9 +209,10 @@ Attacks on hybrid environments often happen and a breach of one of the systems c
 4. Motive: Gaining access to organizations' Entra ID
 5. End goal: Access Entra ID resources
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34931ce473a2.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34931ce473a2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34931ce473a2.png)
 
 Attacks with the Primary Refresh Token has huge advantages for attackers. This bypasses:
+
 - Password Authentication
 - Multi Factor Authentication
 - Conditional Access Policies
@@ -240,7 +255,7 @@ Attacks can also perform reverse attacks if having access to the Entra Connect s
 4. Motive: Gaining access to organizations' Entra ID
 5. End goal: Access Entra ID resources
 
-![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-590e76a9c22b.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-590e76a9c22b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-590e76a9c22b.png)
 
 On the Entra Connect Server, the attacker can extract the connect credentials to use to authenticate to Microsoft Entra ID. This only works if the Password Hash Sync (PHS) option is selected in Entra Connect which is by default. The password are stored in an entrypted SQL instance on the Entra Connect server which can be extracted by administrators in plain text.
 
@@ -249,6 +264,42 @@ With this command you can view the complete configuration of the Entra Connect i
 {{< card code=true header="**POWERSHELL**" lang="powershell" >}}
 Get-ADSyncConnector
 {{< /card >}}
+
+---
+
+## My exam/lab experience
+
+As we have to pass the exam/lab by actually breaching an environment, which was really fun by the way, we needed to think like an attacker like shown and demonstrated in the course. Because everyone has to learn like they describe in the course, I will not dive into the details of the course and the objectives themselves but give an overview of how I completed the breach from access to full blown access.
+
+### 1. Initial access
+
+Initial access to the lab is gained by a simulated device code flow misabuse. It works like, you retieve a code from your local Powershell window and paste that into a field simulating a phishing attack that always work.
+
+Then I gained access to a user that had no roles and some small API permissions.
+
+### 2. Enumeration
+
+We start by checking for any leads by enumerating every object in the tenant. I did this using some commands and eventually found a high-privileged Service Principal with Global Administrator permissions. By enumerating every part of the tenant, these leads come into view which can be missed if a person or team daily manages a tenant.
+
+We look for highly privileged roles and API permissions in this part.
+
+### 3. Privilege escalation
+
+The best part is, the user which is simulated to be phished is owner of this application/service principal so we can create a new client secret to gain access using that service principal. This is how easy this can get.
+
+### 4. Signed in using Service Principal
+
+Now I had a second PowerShell window with the Service Principal logged in, with Global Administrator permissions. This makes it very easy to create a new user and also assign that user this Global Administrator role. We can now login as a user and full privilege escalation is completed.
+
+### 5. Azure Subscription
+
+As we are now logged in using Global Administrator permissions in Entra ID, we can easily also get every Azure RBAC permission we want. Global Administrator can assign the User Access Administrator role to themselves, using this checkmark at the Entra ID properties:
+
+[![jv-media-8501-34fa39888893.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34fa39888893.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/cwl-azure-red-team-what-i-learned/jv-media-8501-34fa39888893.png)
+
+Now we have gone from a simple user, to a Service Principal, to a newly created user with Global Administrator permissions to also extend that access into Azure Subscriptions.
+
+While this sounds pretty cool, as I now did this around 2 times, this costed me around 5-6 hours but professional hackers will do this much faster.
 
 ---
 
