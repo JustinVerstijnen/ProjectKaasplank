@@ -123,10 +123,10 @@ title: "About"
           </div>
         </article>
         <article class="about-cert-tile">
-          <strong>3CX Expert</strong>
+          <strong>Azure Red Team Specialist</strong>
           <div class="about-cert-meta-row">
-            <div class="about-cert-meta"><span>Exam code</span><small></small></div>
-            <div class="about-cert-meta"><span>Earned</span><small>2025</small></div>
+            <div class="about-cert-meta"><span>Exam code</span><small>AZRTS</small></div>
+            <div class="about-cert-meta"><span>Earned</span><small>2026</small></div>
           </div>
         </article>
         <article class="about-cert-tile">
