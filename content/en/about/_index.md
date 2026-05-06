@@ -123,7 +123,7 @@ title: "About"
           </div>
         </article>
         <article class="about-cert-tile">
-          <strong>Azure Red Team Specialist</strong>
+          <strong>Cyberwarfare Azure Red Team Specialist (AzRTS)</strong>
           <div class="about-cert-meta-row">
             <div class="about-cert-meta"><span>Exam code</span><small>AZRTS</small></div>
             <div class="about-cert-meta"><span>Earned</span><small>2026</small></div>
