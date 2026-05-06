@@ -42,6 +42,8 @@ The objectives of the certification are:
 - Develop the ability to conduct structured cloud threat research and adversary emulation
 - Gain hands-on experience through practical lab exercises simulating Azure attack scenarios
 
+The overall key objective is to gain knowledge to defend your environmen from those attackers.
+
 ---
 
 ## Key learning points
