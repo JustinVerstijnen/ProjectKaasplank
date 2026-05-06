@@ -9,8 +9,6 @@ description: "In the first half of 2026 I followed a paid course on Cyberwarfare
 
 "If you don't test your infrastructure as an attacker, someone else will."
 
-## 
-
 ## The CWL Azure Red Team course
 
 I started on the site cyberwarfare.live by purchasing the course. I found this very fun looking and interesting to use that information to further secure environments. Learn to attack environments also gains knowledge in how to defend yourself.
