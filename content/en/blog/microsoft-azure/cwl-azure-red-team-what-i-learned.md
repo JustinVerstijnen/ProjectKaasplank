@@ -2,7 +2,7 @@
 title: "CWL Azure Red Team Certification - What I learned"
 slug: "cwl-azure-red-team-what-i-learned"
 date: 2026-05-06
-tags: 
+tags: "Try Outs"
 categories: "Microsoft Entra"
 description: "In the first half of 2026 I followed a paid course on Cyberwarfare.live. The CWL Certified Azure Red Team Specialist (AzRTS) course. On this page I will not dive deep into the topics themselves or step by step hacking but took some notes from what I have learned from doing the course."
 ---
