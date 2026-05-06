@@ -11,7 +11,7 @@ description: "In the first half of 2026 I followed a paid course on Cyberwarfare
 
 ## The CWL Azure Red Team course
 
-I started on the site cyberwarfare.live by purchasing the course. I found this very fun looking and interesting to use that information to further secure environments. Learn to attack environments also gains knowledge in how to defend yourself.
+I started on the site cyberwarfare.live by purchasing the course. I found this very fun looking and interesting to use that information to further secure environments. Learn to attack environments also gains knowledge in how to defend yourself. During 2026 as the amount of cyberincidents explosively increases we need to keep our environments safe and I found this course to be very interesting gaining some extra knowledge to achieve this.
 
 The full name of the course was: _CWL Certified Azure Red Team Specialist (AzRTS)_.
 
