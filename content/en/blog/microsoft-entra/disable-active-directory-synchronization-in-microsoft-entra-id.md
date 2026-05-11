@@ -6,7 +6,7 @@ tags:
 - Step by Step guides
 categories:
 - Microsoft Entra
-description: "This guide describes on how to disable Entra ID synchronization company-wide without restoring users from the recycle bin. Therefore instructing you further on how to phase out Entra Connect Sync."
+description: "This guide describes on how to disable Entra ID synchronization company-wide without the need of restoring users from the recycle bin. Therefore instructing you further on how to phase out Entra Connect Sync."
 ---
 
 ## The process described
