@@ -1,7 +1,7 @@
 ---
 title: "Remove Roaming Profile folders with PowerShell (force)"
 slug: "remove-roaming-profile-folders-powershell"
-date: 2025-04-11
+date: 2025-09-24
 tags:
 - Tools and Scripts
 categories:
@@ -10,9 +10,7 @@ categories:
 description: "This guide uses and describes a PowerShell script that removes a roaming profile folder by taking ownership, fixing permissions and attributes, and using a robocopy fallback if delete fails due to several possible reasons."
 ---
 
-This guide explains the script in a step-by-step way, like the post template uses headings, steps, and a short final summary. [[1]]
-
-## What this script does (simple explanation)
+## What this script does
 
 This script tries to **clean and delete a folder** (the folder you set in `$fullPath`). It does it more forcefully than a normal delete, because it also:
 - changes ownership (`takeown`)
@@ -28,29 +26,27 @@ This script tries to **clean and delete a folder** (the folder you set in `$full
   - `$emptydir` = where the script creates a temporary empty folder
 - Be sure you are pointing to the correct folder (this script deletes contents)
 
-## Step by step: how to use it
-
-### Step 1: Edit the script paths
+## Step 1: Edit the script paths
 Change this line:
 - `$fullPath = "D:\Path\To\Profiles"`
 
 And this line:
 - `$emptydir = "C:\JVEmptyDir"`
 
-### Step 2: Start PowerShell as Administrator
+## Step 2: Start PowerShell as Administrator
 Right-click PowerShell → **Run as administrator**.
 
-### Step 3: Run the script
+## Step 3: Run the script
 Run the `.ps1` file, for example:
 - `.\YourScriptName.ps1`
 
-### Step 4: Watch the messages
+## Step 4: Watch the messages
 You may see:
 - a message when `$emptydir` is created
 - warning messages if the script has to use the robocopy fallback
 - a message about removing the temporary empty directory
 
-### Step 5: Check the result
+## Step 5: Check the result
 After the script finishes, check that the target folder (based on `$fullPath`) is cleaned/removed as expected.
 
 ## Summary
