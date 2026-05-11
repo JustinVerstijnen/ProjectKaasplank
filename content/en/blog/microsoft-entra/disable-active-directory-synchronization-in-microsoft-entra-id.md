@@ -6,97 +6,115 @@ tags:
 - Step by Step guides
 categories:
 - Microsoft Azure
-description: "This guide describes on how to disable Entra ID synchronization company-wide without restoring users from the recycle bin. Therefore instructiong you further on how to phase out Entra Connect Sync."
+description: "This guide describes on how to disable Entra ID synchronization company-wide without restoring users from the recycle bin. Therefore instructing you further on how to phase out Entra Connect Sync."
 ---
 
-## How to uninstall Microsoft Entra Connect Sync
-The correct way to disable Active Directory synchronization with Microsoft Entra ID is to follow the steps in the Microsoft Entra Connect article Uninstall Microsoft Entra Connect.
+## The process described
 
-That supported process will:
-- Turn off directory synchronization in on-premises AD
-- Turn off directory synchronization in Microsoft Entra ID
-- Uninstall Microsoft Entra Connect Sync from the server
+The correct way to disable Active Directory synchronization with Microsoft Entra ID is to follow the steps in the Microsoft article on how to uninstall Microsoft Entra Connect Sync. We will disable the Synchronization on the Microsoft Entra ID side, which prevents any users from being moved to the recycle bin. After all these steps described, the software can be removed from your server.
 
-If your on-premises AD environment is already offline, then you cannot do the uninstall step there. In that case, you can disable the sync setting only in Microsoft Entra ID.
+If your on-premises AD environment is offline or unreachable then you cannot do the uninstallation of the server. In that case, you can disable the sync setting only in Microsoft Entra ID forcing this process. We are assuming that the server won't be online again in this case.
 
 ---
 
-## Step 1. Install Microsoft Graph PowerShell module
-Start Windows PowerShell as Administrator, then run:
+## Step 1. Install and Connect with Microsoft Graph
 
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+We first need to install the Microsoft Graph PowerShell module, if you don't already have it installed. Let's open up PowerShell on your computer and run the command below:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
 Install-Module Microsoft.Graph -Force
 {{< /card >}}
 
-**Important:** Before you run commands, update to the latest Microsoft Graph PowerShell module version to avoid errors and wrong results.
+If you already have [this module](https://www.powershellgallery.com/packages/Microsoft.Graph) installed, you can skip this step. Let's connect to Microsoft Graph PowerShell using the required scopes, which are the permissions you request:
 
-## Step 2. Connect to Microsoft Graph PowerShell
-I connect to Microsoft Graph PowerShell using the required scope (permission):
-
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
 Connect-MgGraph -Scopes "Organization.ReadWrite.All"
 {{< /card >}}
 
-## Step 3. Check current on-premises sync status
-I check the current sync status in Microsoft Entra ID:
+If being asked to grant consent to the Microsoft Graph Command Line Tools, grant this as we need those permissions to execute the actions after this.
 
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
-Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
+[![jv-media-8505-ae89186942fb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-ae89186942fb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-ae89186942fb.png)
+
+After this has been completed, check if you are logged in correctly by using this command:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+Get-MgContext
 {{< /card >}}
 
-**What I look for:**
-- `True` = sync is enabled
-- `null/empty` = sync is disabled
+This should result in a list of details of your account and sign-in:
 
-Example from the guide:
-- `DisplayName` = EXOIP
-- `OnPremisesSyncEnabled` = `True`
+[![jv-media-8505-546b0d6e704c.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-546b0d6e704c.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-546b0d6e704c.png)
 
-## Step 4. Disable on-premises directory synchronization
-Now I disable sync in Microsoft Entra ID and move the users to cloud-only.
-
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
-$OrgID = (Get-MgOrganization).Id
-
-$params = @{
-    onPremisesSyncEnabled = $false
-}
-
-Update-MgOrganization -OrganizationId $OrgID -BodyParameter $params
-{{< /card >}}
-
-
-- It can take up to 72 hours to finish after you disable sync.
-- You cannot cancel the disable action.
-- Wait until it is finished before you do other actions (including turning it back on).
-- If you later re-enable on-premises directory synchronization, a full synchronization will happen again (time depends on how many objects you have).
-
-## Step 5. Verify on-premises synchronization status
-Finally, I check again if the on-premises sync is disabled:
-
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
-Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
-{{< /card >}}
-
-After disabling, `OnPremisesSyncEnabled` should show as null/empty.
-
-Example from the guide:
-- `DisplayName` = EXOIP
-- `OnPremisesSyncEnabled` = empty
-
-I also confirmed the status in the Microsoft 365 admin center (before vs after turning it off), as shown in the guide.
+We are now ready to perform the further steps. If this doesnt show a list similar to the list above, then you are not logged in or the PowerShell module is not installed correctly.
 
 ---
 
-## Conclusion (and Summary)
-In this post, I showed how to disable Active Directory synchronization in Microsoft Entra ID.
+## Step 2. Check current on-premises sync status
 
-- Best option: disable sync on both sides (on-premises AD + Microsoft Entra ID), then uninstall Microsoft Entra Connect.
-- Only-cloud option: if the on-premises environment is already down, disable sync only in Microsoft Entra ID.
+Now we are logged in to Microsoft Graph, let's check the current status of the sync in Microsoft Entra ID:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
+{{< /card >}}
+
+This results in a list of your tenants with the actual sync status:
+
+[![jv-media-8505-c6bfc31914cb.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-c6bfc31914cb.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-c6bfc31914cb.png)
+
+If this list shows a "Yes" or "Enabled" at the OnPremisesSyncEnabled coloumn, then synchronization is enabled. In my case, Entra Connect Sync is already disabled.
+
+---
+
+## Step 3. Disable on-premises directory synchronization
+
+Now we can disable the on-premises ADSync with this simple script below. Copy and run these commands to disable the synchronization.
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+$OrganizationID = (Get-MgOrganization).Id
+$param = @{onPremisesSyncEnabled = $false}
+Update-MgOrganization -OrganizationId $OrganizationID -BodyParameter $param
+{{< /card >}}
+
+This gives not any output as the execution was succesful. You can now check the status again just like in the previous steps:
+
+[![jv-media-8505-d8d3b30e0ebe.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-d8d3b30e0ebe.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-d8d3b30e0ebe.png)
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
+{{< /card >}}
+
+{{% alert title="Success" color="success" %}}
+Disabling the synchronization can take up to 72 hours to completeWait for the process to fully complete before performing any other organization wide action
+
+Once the disable process has started, it cannot be canceled so use it with care
+{{% /alert %}}
+
+After that we can also check the status in the Microsoft 365 Admin center and Entra ID Admin center. Make sure to check it on a subset of users which had synchronization enabled before:
+
+**Microsoft 365 Admin Center:**
+
+[![jv-media-8505-4d13db7668f9.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-4d13db7668f9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-4d13db7668f9.png)
+
+Make sure to enable the Sync status column:
+
+[![jv-media-8505-bda435c25a4a.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-bda435c25a4a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-bda435c25a4a.png)
+
+**Entra ID Admin Center:**
+
+[![jv-media-8505-813185244b50.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-813185244b50.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/disable-active-directory-synchronization-in-microsoft-entra-id/jv-media-8505-813185244b50.png)
+
+This shows the user is now a full cloud-only user, which makes the disable action a success. You can now remove the Entra Connect Sync application from your servers as no further action is needed there. Re-enable the synchronization needs consent from a Global Administrator account.
+
+---
+
+## Summary
+
+In this post, I showed how to disable Active Directory synchronization in Microsoft Entra ID which can be used to phase this synchronization out and fully leverage all features of Entra ID. This action prevents any users from getting moved to the recycle bin which is also nice. If we were to disable the synchronization of the users in AD first, then all users will be moved to the recycle bin in the cloud, and needing manual action to recover them.
 
 Thank you for reading this post and I hope it was helpful!
 
 ### Sources
+
 1. https://learn.microsoft.com/entra/identity/hybrid/connect/how-to-uninstall-entra-connect
 2. https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization
 
