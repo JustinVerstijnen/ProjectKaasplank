@@ -83,10 +83,10 @@ This gives not any output as the execution was succesful. You can now check the 
 Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
 {{< /card >}}
 
-{{% alert title="Success" color="success" %}}
-Disabling the synchronization can take up to 72 hours to completeWait for the process to fully complete before performing any other organization wide action
-
-Once the disable process has started, it cannot be canceled so use it with care
+{{% alert title="Be aware" color="success" %}}
+- Disabling the synchronization can take up to 72 hours to complete
+- Wait for the process to fully complete before performing any other organization wide action
+- Once the disable process has started, it cannot be canceled so use it with care
 {{% /alert %}}
 
 After that we can also check the status in the Microsoft 365 Admin center and Entra ID Admin center. Make sure to check it on a subset of users which had synchronization enabled before:
