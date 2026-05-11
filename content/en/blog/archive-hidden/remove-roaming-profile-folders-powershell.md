@@ -53,7 +53,7 @@ You may see:
 ### Step 5: Check the result
 After the script finishes, check that the target folder (based on `$fullPath`) is cleaned/removed as expected.
 
-## Summary + Important Notes (combined)
+## Summary
 
 - The script is designed to **remove a folder and its contents**, even when permissions or attributes make deletion hard.
 - It first tries a normal delete (`Remove-Item`), then:
