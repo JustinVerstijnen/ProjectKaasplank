@@ -5,7 +5,7 @@ date: 2024-09-23
 tags:
 - Step by Step guides
 categories:
-- Microsoft Azure
+- Microsoft Entra
 description: "This guide describes on how to disable Entra ID synchronization company-wide without restoring users from the recycle bin. Therefore instructing you further on how to phase out Entra Connect Sync."
 ---
 
