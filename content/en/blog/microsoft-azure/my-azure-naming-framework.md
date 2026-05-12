@@ -51,7 +51,7 @@ I keep the format consistent, even if not every part is available for every reso
 
 As you might have already seen in some of my posts, I use this format a lot and almost exclusively for naming the Azure resources.
 
-- [Guide on Azure Virtual Desktop with Native Entra ID](https://justinverstijnen.nl/azure-virtual-desktop-fslogix-and-native-kerberos-authentication) :
+- [Guide on Azure Virtual Desktop with Native Entra ID](https://justinverstijnen.nl/azure-virtual-desktop-fslogix-and-native-kerberos-authentication):
 
 [![jv-media-5828-dd509eb8015b.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-dd509eb8015b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/azure-virtual-desktop-fslogix-and-native-kerberos-authentication-5828/jv-media-5828-dd509eb8015b.png)
 
