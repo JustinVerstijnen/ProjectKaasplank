@@ -58,7 +58,7 @@ Short summary of the post and what the organization wins using the information o
 
 ### Sources
 
-- Some links of documentation from official sources
+1. https://learn.microsoft.com/en-us/azure/developer/terraform/get-started-windows-bash
 
 
 {{< ads >}}
