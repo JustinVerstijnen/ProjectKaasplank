@@ -1,12 +1,12 @@
 ---
 title: "AI-900 My learning journey"
 slug: "ai-900-learning-journey"
-date: 2023-05-12
+date: 2022-11-29
 tags:
 - Concepts
 categories:
 - Archive
-description: "This post contains my notes of following the AI-900 course on Microsoft Learn, including me testing some of the services and features."
+description: "This post contains my notes from back in 2022 of following the AI-900 course on Microsoft Learn, including me testing some of the services and features."
 ---
 
 ## What is AI and what does Azure offer?
@@ -205,27 +205,21 @@ Azure can use the following services to create and implement into your own appli
 
 ---
 
-
----
-
 ## 5: Natural Language Processing (NLP)
 
-**Natural Language Processing (NLP)** is AI that understands and recognizes written and spoken language.
+Natural Language Processing (NLP) is AI that understands and recognizes written and spoken language. This can be used in different scenarios:
 
-### NLP use cases (from the post)
 - read and understand text in documents and emails
 - understand spoken language and answer
 - translate spoken or written sentences
 - understand user commands and actions
 
-### Example from the post: Starship Commander (VR game)
-The post mentions a VR game that uses NLP so players can talk and the game can respond.
+The post mentions a VR game named Starship Commander that uses NLP so players can talk and the game can respond. It uses AI for these scenarios:
 
-Examples from the post:
 - the game reacts to what you say
 - the game responds in a personal way to characters
 
-### Azure services for NLP (as listed in the post)
+### Azure services for NLP
 - Language
 - Translator
 - Speech
@@ -235,26 +229,23 @@ Examples from the post:
 
 ## 6: Knowledge Mining
 
-**Knowledge mining** means finding information inside large data sources, including data that is not well structured. The goal is to build a searchable knowledge store.
+Knowledge mining is a definition for finding information inside large data sources, including data that is not well structured. The goal is to build a searchable knowledge store.
 
-### Azure service mentioned: Azure Cognitive Search
-The post states that Azure Cognitive Search helps you:
+### Azure Cognitive Search
+Azure has a service named Cognitive Search that helps you:
 - build indexes
 - support search for internal use or a secured internet-facing search
 
-The post also mentions that Azure can:
-- process images
-- extract information from documents
-
-#### What Azure Cognitive Search is
-The post describes it as a **PaaS** solution, where Microsoft manages the infrastructure.
+Azure can process images in this manner and extract information from documents or images, so you can ask for specific stuff and Cognitive Search does the rest for you.Cognitive Search is a PaaS solution, where Microsoft manages the infrastructure.
 
 It can support:
 - full-text search and analysis
 - text derived from images
 - entity detection and key phrase detection (via text analysis)
 
-### Features listed in the post
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-c4e8c1b9e6b5.png)
+
+### Features of Azure Cognitive Search
 - data from many sources
 - full-text search and analysis
 - AI-driven search requests
@@ -266,33 +257,28 @@ It can support:
 
 ## 7: Challenges and risks
 
-AI is powerful, but it needs responsible use. The post lists these risks:
+AI is very helpful and powerful, but it needs responsible use. Microsoft lists these risks:
 
-- **Bias** can affect results  
-  Example: a loan approval model may discriminate if trained on biased data.
-
+- **Bias**: can affect results.
+  - Example: a loan approval model may discriminate if trained on biased data.
 - **Errors can cause damage**  
-  Example: if an autonomous vehicle fails, it can cause an accident.
-
+  - Example: if an autonomous vehicle fails, it can cause an accident.
 - **Data can be exposed**  
-  Example: a medical bot trained on sensitive patient data needs strong protection.
-
+  - Example: a medical bot trained on sensitive patient data needs strong protection.
 - **Solutions may not work for everyone**  
-  Example: a smart home assistant may not provide audio output for visually disabled users.
-
+  - Example: a smart home assistant may not provide audio output for visually disabled users.
 - **Users may need to trust a complex system**  
-  Example: an AI tool gives investment advice, but where are the reasons coming from?
-
+  - Example: an AI tool gives investment advice, but where are the reasons coming from?
 - **Who is responsible for AI decisions?**  
-  Example from the post: someone is wrongly convicted based on face recognition—who is accountable?
+  - Example from the post: someone is wrongly convicted based on face recognition—who is accountable?
 
 ---
 
 ## 8: Machine Learning + Computer Vision Practice test
 
-This part is a step-by-step test from the post. You can use the same idea to learn how training changes results.
+This part is a step-by-step guide of some of the features of Machine Learning and Computer Vision, which I did according to the course which was really fun to do. You can use the same idea to learn how training changes results.
 
-### Step 1: Prepare the training images
+### 8.1: Preparing the training images
 In the test environment, import **45 photos**:
 - 15 apple images
 - 15 banana images
@@ -301,47 +287,59 @@ In the test environment, import **45 photos**:
 Source for the images:
 https://aka.ms/fruit-images
 
-### Step 2: Import into Cognitive Services and add tags
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-8ca270d090f7.png)
+
+### 8.2: Importing into Cognitive Services and add tags
 Import the photos into your Cognitive Services workspace.
 
-When importing, add a **tag** so the system knows what each image is.
-Later, the system uses these learned tags to judge new images.
+When importing we add a tag so the system knows what each image is. After it learned what is an apple, what is a banana and what is an orange, the system uses these learned tags to judge new images.
 
-### Step 3: Run a quick test (before learning new fruit)
-Take an image from Google that was **not** part of the imported set:
-https://www.fruitatwork.eu/web/image/313362/Image_appel1_800x450.png
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-e052e76caec2.png)
 
-Result in the post:
-- the system was **94.6%** sure it was an apple.
+### 8.3: Running a quick test
 
-### Step 4: Add a new fruit (learning process)
-To teach the system something new, add **apricot**.
+To test the system, we will quickly pick an image from google of an apple to see how sure the system is about other images which are slightly different than the images uploaded and trained with.
 
-This fruit can look like:
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-f250b52af0d3.png)
+
+The system was **94.6%** sure it was an apple, so this is already a very clever service.
+
+### 8.4: Learning process
+To teach the system something new, add **apricot**. This can give very fun results, as this can can be judged as:
 - orange (color)
 - apple (shape)
 
-As a “0-measurement” test, run apricot against the 3 known fruit types (apple, banana, orange).
+As a “0-measurement” test, I imported a picture of an apricot against the 3 known fruit types (apple, banana, orange).
 The post states the system predicted:
 - **83.7%** orange (mostly due to color)
-- **14.3%** apple
+- **14.3%** apple (due to the same shape)
+- **1,9%** banana (doesnt find that much matching properties)
 
-### Step 5: Upload apricot images and train again
-Upload **6 apricot photos** (not the earlier 0-measurement image).
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-fe0fac4ca250.png)
+
+### 8.5: Uploading apricot images and train again
+We will now upload 6 apricot photos, to train the service what a apricot is.
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-aabb53e6ea87.png)
 
 Add the tag:
-- `apricot` (as the post says: “abrikoos”)
+- "apricot" (as the post says: “abrikoos”)
+
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-7fdf9bfe51db.png)
 
 Then run training:
 - **Quick training** (faster, but less compared to advanced training time/quality tradeoff mentioned in the post)
 
-### Step 6: Test again with the same apricot image
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-99b42ca14873.png)
+
+### 8.6: Test again with the same apricot image
 After learning, test the same image again (from the 0-measurement).
 In the post, the result became:
 - **98%** apricot
 
-So, with only a few training images, the system can learn a new category.
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-70dfdf5467af.png)
 
+So, with only a few training/reference images, the system can learn a new category.
 
 ---
 
