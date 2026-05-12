@@ -31,7 +31,7 @@ However, some resources cannot be named beforehand. Like a Virtual Machine that 
 
 I like a naming format that is easy to use but tells every Azure Engineer what the purpose is of a particular resource.
 
-- _<specification>-<resource-type>-<resource-purpose>_
+- _specification-resource-type-resource-purpose_
 
 If you want, you can add a "prod" or "dev" step at any place you want to separate production from testing and development environments.
 
