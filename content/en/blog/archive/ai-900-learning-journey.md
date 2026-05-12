@@ -27,7 +27,7 @@ If you want a full study guide, you can start here:
 
 ---
 
-## 1. Machine Learning
+## 1: Machine Learning
 
 Machine Learning means that software learns from the data it receives. In many AI solutions, ML is seen as the “foundation”.
 
@@ -35,17 +35,16 @@ A typical goal of machine learning is:
 - train a model with data
 - then let the model make predictions or make choices
 
-### Example 1: Recognize apples
+**Example 1: Recognize apples**
 If software sees many apple images, it can learn what an apple looks like.  
 Then it can also estimate things like:
 - “how rotten” an apple looks (for example: a percent)
 
 In a real sorting process, you can use this to filter fruit (for example: mark B-quality) and automate decisions.
 
-### Example 2: Recognize a flower
+**Example 2: Recognize a flower**
 If you import many images of the same flower type, the software can recognize that flower across different photos and camera situations.
 
-### Azure features for Machine Learning
 Azure offers functions to help with building ML solutions, like:
 
 - Automated machine learning: Helps you create a model faster, even if you are not an ML expert.
@@ -53,38 +52,29 @@ Azure offers functions to help with building ML solutions, like:
 - Data and compute management: Cloud storage for data, so you can run experiments at larger scale.
 - Pipelines: A way to define steps and automate tasks like model training and management.
 
-### Two common ML outputs
-- **Regression**  
-  Predicts a **continuous** value (a number that can vary smoothly), like:
+We use two different outputs of Machine Learning:
+
+- **Regression**: Predicts a continuous value (a number that can vary smoothly), like:
   - sales per day
   - quantity to buy
   - revenue for a month/year
-
-- **Classification**  
-  Assigns a **category** (one of multiple choices), like:
+- **Classification**: Assigns a category (one of multiple choices), like:
   - weather predictions
   - a medical diagnosis
 
 ### Azure Machine Learning Studio
 Azure also has a specific tool for ML: https://ml.azure.com
 
-In ML Studio, you create a **workspace**. A workspace is where you manage your ML setup, including compute options.
+In ML Studio, you create a workspace. A workspace is where you manage your ML setup, including compute options.
 
 Your workspace can use 4 kinds of compute resources:
-- **Compute Instances**  
-  Developer workstations (for working with data and models)
-
-- **Compute Clusters**  
-  VM clusters for scale and processing when needed
-
-- **Inference Clusters**  
-  Used for running prediction services (when models are used to predict)
-
-- **Attached Compute**  
-  Links to existing Azure compute resources (for example VMs or Databricks)
+- **Compute Instances**: Developer workstations (for working with data and models)
+- **Compute Clusters**: VM clusters for scale and processing when needed
+- **Inference Clusters**: Used for running prediction services (when models are used to predict)
+- **Attached Compute**: Links to existing Azure compute resources (for example VMs or Databricks)
 
 ### Practice example: Bike rental predictions
-A bike rental company wants to predict **how many bikes are available** for a specific day.
+A bike rental company wants to predict how many bikes are available for a specific day.
 
 They use historical data and input parameters such as:
 - day, month, year
@@ -97,68 +87,55 @@ They use historical data and input parameters such as:
 - humidity
 - wind speed
 
-With the data in a CSV file, Azure ML can predict how many bikes should be available on **1 January 2022**.
+With the data in a CSV file, Azure ML can predict how many bikes should be available on 1 January 2022. In the example, the prediction was 444 bikes, and the post notes that the result can change based on better predicted weather.
 
-In the example, the prediction was **444 bikes**, and the post notes that the result can change based on better predicted weather.
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-2a976f921e04.png)
 
 #### Confusion matrix (simple explanation)
 A **confusion matrix** shows how often the **expected** and the **real** results match. It is one way to check model quality.
 
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-6c1d3231d2b0.png)
+
 ---
 
-## 2. Guiding principles for implementing AI
+## 2: Guiding principles for implementing AI
 
 Microsoft has guidance for building AI responsibly. Here are the main points, in simple terms:
 
-- **Fairness**  
-  AI should not discriminate. Example: in loan decisions, the system should not use gender, ethnicity, or religion to give someone an advantage or disadvantage.
-
-- **Reliability and Safety**  
-  AI systems must work in a safe way and should be tested well. Example: if an AI model controls a vehicle or supports medical decisions, wrong results can cause serious harm.
-
-- **Privacy and Security**  
-  Sensitive data must stay protected. Even after training, privacy and security should be monitored in production.
-
-- **Inclusiveness**  
-  AI should help people and support better work for everyone, including people with different accessibility needs.
-
-- **Transparency**  
-  Users should understand the goal, limits, and how the system works.
-
-- **Accountability**  
-  People stay responsible for what AI does. Designers and developers should follow clear organization rules and frameworks so the solution is well-defined. [[1]]
+- **Fairness**: AI should not discriminate. Example: in loan decisions, the system should not use gender, ethnicity, or religion to give someone an advantage or disadvantage
+- **Reliability and Safety**: AI systems must work in a safe way and should be tested well. Example: if an AI model controls a vehicle or supports medical decisions, wrong results can cause serious harm
+- **Privacy and Security**: Sensitive data must stay protected. Even after training, privacy and security should be monitored in production
+- **Inclusiveness**: AI should help people and support better work for everyone, including people with different accessibility needs
+- **Transparency**: Users should understand the goal, limits, and how the system works
+- **Accountability**: People stay responsible for what AI does. Designers and developers should follow clear organization rules and frameworks so the solution is well-defined
 
 ---
 
-## 3. Anomaly Detection
+## 3: Anomaly Detection
 
-**Anomaly Detection** finds unusual patterns or “strange points” in data.  
-This can help find issues like fraud or technical problems.
+Anomaly Detection finds unusual patterns or “strange points” in data. This can help find issues like fraud or technical problems.
 
-### Examples
+**Example 1:**
 - In race sports: find a mechanical problem early, before it becomes critical.
 - In production: detect faults in an automated production line at different times.
 
-### What can happen when an anomaly is found?
 When anomalies are detected, you can trigger actions like:
 - send a warning/alert
 - run a script or automated fix process
 
-### Module example: Explore Decision Support (HVAC)
-The post gives an example using an HVAC system (heating, ventilation, air conditioning).  
+**Example 2:**
+The post gives an example using an HVAC system (heating, ventilation, air conditioning).
+
 AI can predict when temperature moves too high or too low, then trigger:
 - extra cooling or heating
 - alerts when a threshold is crossed
 
 ---
 
-## 4. Computer Vision
+## 4: Computer Vision
 
-**Computer Vision** is AI that can work with visual content (images).
+Computer Vision is AI that can work with visual content (images). The post also mentions*Seeing AI, an app that can help blind or low-vision users by describing what is around them.
 
-The post also mentions **Seeing AI**, an app that can help blind or low-vision users by describing what is around them.
-
-### What Computer Vision can do (examples from the post)
 It can:
 - describe an image in one sentence (max 10 words)
 - read text (from a scan/photo)
@@ -168,63 +145,59 @@ It can:
 
 And it can also provide more image features:
 
-#### Image classification
-Find out what type of environment the image shows.
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-f6706f457f7f.png)
 
-#### Object detection
-Detect different objects in an image.
+- **Image classification**: Find out what type of environment the image shows.
+- **Object detection**: Detect different objects in an image.
+- **Semantic segmentation**: Find which pixels belong to which object. Example is traffic monitoring where vehicles can be marked.
+- **Image analysis (tags)**: Describe an image using tags and confidence.The post says it can describe in up to 10 words by using the detected tags.
+- **Face detection, analysis, and recognition**: Recognize faces and connect them to people. The post also states it can match known people and return an answer in about 2 seconds.
+- **Optical character recognition (OCR)**: Recognize characters in an image. The post uses Google Translate camera scan as an example.
 
-#### Semantic segmentation
-Find which pixels belong to which object.  
-Example from the post: traffic monitoring where vehicles can be marked.
-
-#### Image analysis (tags)
-Describe an image using tags and confidence.
-The post says it can describe in up to **10 words** by using the detected tags.
-
-#### Face detection, analysis, and recognition
-Recognize faces and connect them to people.  
-The post also states it can match known people and return an answer in about 2 seconds.
-
-#### Optical character recognition (OCR)
-Recognize characters in an image.  
-The post uses Google Translate camera scan as an example.
-
-### Quick note: why this works
 In AI, an image can be seen as numeric pixel values. These values can be used to train ML models that learn what the image content looks like.
 
----
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-be3e4dcb243c.png)
 
-### Start using Computer Vision (needs resources)
+
+### Start using Computer Vision
 To use Computer Vision, you need:
-- a **Computer Vision resource**
-- a **Cognitive Services resource**
+- a Computer Vision resource
+- a Cognitive Services resource
 
 ### Analyze an image (confidence)
 Computer Vision can evaluate what objects are in an image and return a human-style description.
 
-The results can include a **confidence score**, meaning how sure the service is about what it sees.
+The results can include a confidence score, meaning how sure the service is about what it sees.
 
 Example from the post (descriptions like):
 - “A black and white photo of a city”
 - “A black and white photo of a large city”
 - “A large white building in a city”
 
-It also creates **tags** (example tags in the post):
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-4ffb7cf4be05.png)
+
+It also creates tags (example tags in the post):
 - skyscraper
 - tower
 - building
 
 Then object detection can label what the objects are (example: “building”).
 
-### Face recognition (as described in the post)
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-8af694e31761.png)
+
+
+### Face recognition
 Computer Vision can:
 - estimate age
 - place a square/box around the face
 
----
+![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/ai-900-learning-journey/jv-media-900-d978fcc0794b.png)
 
-### Azure services mentioned in the post (Computer Vision related)
+
+### Azure and Computer Vision
+
+Azure can use the following services to create and implement into your own applications:
+
 - Computer Vision
 - Custom Vision
 - Face
@@ -232,7 +205,90 @@ Computer Vision can:
 
 ---
 
-## Machine Learning + Computer Vision: small practice test (fruit images)
+
+---
+
+## 5: Natural Language Processing (NLP)
+
+**Natural Language Processing (NLP)** is AI that understands and recognizes written and spoken language.
+
+### NLP use cases (from the post)
+- read and understand text in documents and emails
+- understand spoken language and answer
+- translate spoken or written sentences
+- understand user commands and actions
+
+### Example from the post: Starship Commander (VR game)
+The post mentions a VR game that uses NLP so players can talk and the game can respond.
+
+Examples from the post:
+- the game reacts to what you say
+- the game responds in a personal way to characters
+
+### Azure services for NLP (as listed in the post)
+- Language
+- Translator
+- Speech
+- Azure Bot
+
+---
+
+## 6: Knowledge Mining
+
+**Knowledge mining** means finding information inside large data sources, including data that is not well structured. The goal is to build a searchable knowledge store.
+
+### Azure service mentioned: Azure Cognitive Search
+The post states that Azure Cognitive Search helps you:
+- build indexes
+- support search for internal use or a secured internet-facing search
+
+The post also mentions that Azure can:
+- process images
+- extract information from documents
+
+#### What Azure Cognitive Search is
+The post describes it as a **PaaS** solution, where Microsoft manages the infrastructure.
+
+It can support:
+- full-text search and analysis
+- text derived from images
+- entity detection and key phrase detection (via text analysis)
+
+### Features listed in the post
+- data from many sources
+- full-text search and analysis
+- AI-driven search requests
+- multiple languages
+- location-based search
+- customizable user experience
+
+---
+
+## 7: Challenges and risks
+
+AI is powerful, but it needs responsible use. The post lists these risks:
+
+- **Bias** can affect results  
+  Example: a loan approval model may discriminate if trained on biased data.
+
+- **Errors can cause damage**  
+  Example: if an autonomous vehicle fails, it can cause an accident.
+
+- **Data can be exposed**  
+  Example: a medical bot trained on sensitive patient data needs strong protection.
+
+- **Solutions may not work for everyone**  
+  Example: a smart home assistant may not provide audio output for visually disabled users.
+
+- **Users may need to trust a complex system**  
+  Example: an AI tool gives investment advice, but where are the reasons coming from?
+
+- **Who is responsible for AI decisions?**  
+  Example from the post: someone is wrongly convicted based on face recognition—who is accountable?
+
+---
+
+## 8: Machine Learning + Computer Vision Practice test
 
 This part is a step-by-step test from the post. You can use the same idea to learn how training changes results.
 
@@ -286,85 +342,6 @@ In the post, the result became:
 
 So, with only a few training images, the system can learn a new category.
 
----
-
-## 5. Natural Language Processing (NLP)
-
-**Natural Language Processing (NLP)** is AI that understands and recognizes written and spoken language.
-
-### NLP use cases (from the post)
-- read and understand text in documents and emails
-- understand spoken language and answer
-- translate spoken or written sentences
-- understand user commands and actions
-
-### Example from the post: Starship Commander (VR game)
-The post mentions a VR game that uses NLP so players can talk and the game can respond.
-
-Examples from the post:
-- the game reacts to what you say
-- the game responds in a personal way to characters
-
-### Azure services for NLP (as listed in the post)
-- Language
-- Translator
-- Speech
-- Azure Bot
-
----
-
-## 6. Knowledge Mining
-
-**Knowledge mining** means finding information inside large data sources, including data that is not well structured. The goal is to build a searchable knowledge store.
-
-### Azure service mentioned: Azure Cognitive Search
-The post states that Azure Cognitive Search helps you:
-- build indexes
-- support search for internal use or a secured internet-facing search
-
-The post also mentions that Azure can:
-- process images
-- extract information from documents
-
-#### What Azure Cognitive Search is
-The post describes it as a **PaaS** solution, where Microsoft manages the infrastructure.
-
-It can support:
-- full-text search and analysis
-- text derived from images
-- entity detection and key phrase detection (via text analysis)
-
-### Features listed in the post
-- data from many sources
-- full-text search and analysis
-- AI-driven search requests
-- multiple languages
-- location-based search
-- customizable user experience
-
----
-
-## 7. Challenges and risks
-
-AI is powerful, but it needs responsible use. The post lists these risks:
-
-- **Bias** can affect results  
-  Example: a loan approval model may discriminate if trained on biased data.
-
-- **Errors can cause damage**  
-  Example: if an autonomous vehicle fails, it can cause an accident.
-
-- **Data can be exposed**  
-  Example: a medical bot trained on sensitive patient data needs strong protection.
-
-- **Solutions may not work for everyone**  
-  Example: a smart home assistant may not provide audio output for visually disabled users.
-
-- **Users may need to trust a complex system**  
-  Example: an AI tool gives investment advice, but where are the reasons coming from?
-
-- **Who is responsible for AI decisions?**  
-  Example from the post: someone is wrongly convicted based on face recognition—who is accountable?
 
 ---
 
