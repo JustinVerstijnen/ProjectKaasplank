@@ -47,6 +47,18 @@ Select the right update for your OS and click "Uninstall". After uninstalling th
 
 Please note that this is a temporary solution, and not a persistent solution. Microsoft has to fix this in the coming update wave.
 
+You can also check the latest installed updates through PowerShell:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+(New-Object -ComObject Microsoft.Update.Session).CreateUpdateSearcher().QueryHistory(0,500) | Where-Object { $_.Operation -eq 1 -and $_.Title -match 'KB\d{6,7}' -and $_.Title -notmatch 'driver' } | Select-Object Date,@{Name='KB';Expression={[regex]::Match($_.Title,'KB\d{6,7}').Value}} | Group-Object KB | ForEach-Object { $_.Group | Sort-Object Date -Descending | Select-Object -First 1 } | Sort-Object Date -Descending | Format-Table -AutoSize
+{{< /card >}}
+
+And then remove the update with this command:
+
+{{< card code=true header="**Bash**" lang="bash" >}}
+wusa.exe /uninstall /kb:69696969
+{{< /card >}}
+
 ---
 
 ## My advice
