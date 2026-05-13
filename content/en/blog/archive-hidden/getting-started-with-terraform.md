@@ -8,7 +8,13 @@ categories:
 - Microsoft Azure
 ---
 
-## Heading A
+
+## Terraform described
+
+
+
+
+## Installation of Terraform
 
 Paragraph text
 
@@ -29,10 +35,7 @@ terraform -version
 {{< /card >}}
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-$ProgressPreference = 'SilentlyContinue'
-Invoke-WebRequest -Uri https://aka.ms/installazurecliwindowsx64 -OutFile .\AzureCLI.msi
-Start-Process msiexec.exe -Wait -ArgumentList '/I', 'AzureCLI.msi', '/quiet'
-Remove-Item .\AzureCLI.msi
+winget install --exact --id Microsoft.AzureCLI
 {{< /card >}}
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
@@ -47,7 +50,7 @@ Paragraph text
 
 <a class="btn btn-primary" href="/blog/" target="_blank" rel="noreferrer">This is a button</a>
 
-{{< card code=true header="**POWERSHELL**" lang="powershell" >}}
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
 This is a code block.
 {{< /card >}}
 
@@ -69,7 +72,19 @@ This is a success block.
 
 ---
 
-## Heading C
+## Applying your first Terraform project
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform init
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform validate
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform apply
+{{< /card >}}
 
 
 
