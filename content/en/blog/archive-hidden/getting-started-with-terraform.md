@@ -16,15 +16,27 @@ Paragraph text
 https://developer.hashicorp.com/terraform/install
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
+$terraformlocation = "C:\Tools\Terraform"
 $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
 
-if ($userPath -notlike "*C:\Tools\Terraform*") {
-    [Environment]::SetEnvironmentVariable("Path", "$userPath;C:\Tools\Terraform", "User")
+if ($userPath -notlike "*$terraformlocation*") {
+    [Environment]::SetEnvironmentVariable("Path", "$userPath;$terraformlocation", "User")
 }
 {{< /card >}}
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform -version
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+$ProgressPreference = 'SilentlyContinue'
+Invoke-WebRequest -Uri https://aka.ms/installazurecliwindowsx64 -OutFile .\AzureCLI.msi
+Start-Process msiexec.exe -Wait -ArgumentList '/I', 'AzureCLI.msi', '/quiet'
+Remove-Item .\AzureCLI.msi
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+az version
 {{< /card >}}
 
 ---
