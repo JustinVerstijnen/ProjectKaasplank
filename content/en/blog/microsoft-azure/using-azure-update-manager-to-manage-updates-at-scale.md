@@ -105,6 +105,12 @@ And if we check the recently installed updates:
 
 [![jv-media-837-cfbc48b43053.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/using-azure-update-manager-to-manage-updates-at-scale-837/jv-media-837-cfbc48b43053.png)
 
+You can also check the latest installed updates through PowerShell:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+(New-Object -ComObject Microsoft.Update.Session).CreateUpdateSearcher().QueryHistory(0,500) | Where-Object { $_.Operation -eq 1 -and $_.Title -match 'KB\d{6,7}' -and $_.Title -notmatch 'driver' } | Select-Object Date,@{Name='KB';Expression={[regex]::Match($_.Title,'KB\d{6,7}').Value}} | Group-Object KB | ForEach-Object { $_.Group | Sort-Object Date -Descending | Select-Object -First 1 } | Sort-Object Date -Descending | Format-Table -AutoSize
+{{< /card >}}
+
 ---
 
 ## Summary & Tips
