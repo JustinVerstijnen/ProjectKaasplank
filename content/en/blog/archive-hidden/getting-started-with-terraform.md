@@ -15,6 +15,17 @@ Paragraph text
 
 https://developer.hashicorp.com/terraform/install
 
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+$userPath = [Environment]::GetEnvironmentVariable("Path", "User")
+
+if ($userPath -notlike "*C:\Tools\Terraform*") {
+    [Environment]::SetEnvironmentVariable("Path", "$userPath;C:\Tools\Terraform", "User")
+}
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform -version
+{{< /card >}}
 
 ---
 
