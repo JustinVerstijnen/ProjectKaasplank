@@ -112,6 +112,7 @@ params:
   ui:
     breadcrumb_disable: false
     navbar_logo: true
+        logo: /icons/logo.svg
     navbar_translucent_over_cover_disable: true
 
     sidebar_menu_foldable: true
