@@ -63,7 +63,7 @@ languages:
     languageName: English
     title: justinverstijnen.nl
     params:
-      description: On this website, I will share my aviation experiences, including both theory and practice, during my journey towards achieving a Private Pilot License (PPL).
+      description: On this website, I will share my technical experience, focussing on Microsoft Azure, Virtual Desktop, Entra, Intune, Networking, PowerShell and Windows Server with Securiry in mind.
   # cSpell:disable
 
 markup:
