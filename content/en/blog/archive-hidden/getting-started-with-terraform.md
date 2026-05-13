@@ -38,6 +38,10 @@ terraform -version
 winget install --exact --id Microsoft.AzureCLI
 {{< /card >}}
 
+This installation can take up to 15 minutes so please have a little patience.
+
+After the installation is completed, restart all PowerShell and Visual Studio Code windows to load the new environmental variables and be able to use the newly installed packages.
+
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 az version
 {{< /card >}}
