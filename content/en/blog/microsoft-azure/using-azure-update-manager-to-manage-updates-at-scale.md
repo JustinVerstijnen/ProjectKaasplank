@@ -95,7 +95,7 @@ You can configure as many configurations as you want:
 
 ---
 
-## The Result
+## The result
 
 On the server we see after a succesful run + reboot the updates are installed succesfully:
 
