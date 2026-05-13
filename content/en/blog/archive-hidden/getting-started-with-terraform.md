@@ -79,6 +79,10 @@ This is a success block.
 ## Applying your first Terraform project
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
+az login
+{{< /card >}}
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform init
 {{< /card >}}
 
@@ -87,10 +91,25 @@ terraform validate
 {{< /card >}}
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-terraform apply
+terraform plan -out main.tfplan
 {{< /card >}}
 
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform apply main.tfplan
+{{< /card >}}
 
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform destroy
+{{< /card >}}
+
+## Changes to Terraform project
+
+If changing anything to your setup, run these two commands again to revise the plan and then apply it to your Azure environment:
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+terraform plan -out main.tfplan
+terraform apply main.tfplan
+{{< /card >}}
 
 ---
 
