@@ -7,7 +7,6 @@ tags:
 categories:
 - Microsoft Azure
 description: "In this guide, I show the path from installation to deployment: I install Terraform, prepare my Azure login using Azure CLI, and then run a “single server” Terraform setup so you can see the process end-to-end."
-hidden: false
 ---
 
 ## Terraform described
