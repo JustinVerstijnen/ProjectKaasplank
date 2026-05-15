@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Terraform"
 slug: "getting-started-with-terraform"
-date: 2025-07-13
+date: 2026-07-13
 tags:
 - Step by Step guides
 categories:
@@ -77,7 +77,7 @@ if ($userPath -notlike "*$terraformlocation*") {
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ae1a5f665475.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ae1a5f665475.png)
 
-After changing the `Path`, close all open PowerShell and Visual Studio Code windows.
+After changing the *Path*, close all open PowerShell and Visual Studio Code windows.
 
 Then open a new PowerShell window and check if Terraform is working:
 
@@ -133,7 +133,7 @@ Download the ZIP file and place it on your computer on a known place.
 
 ## Step 4: Changing the project variables
 
-In the file `terraform.tfvars`, you can change the project variables.
+In the file *terraform.tfvars*, you can change the project variables.
 
 This file is where you set values like names, IP addresses, and other settings for your deployment. Review everything before saving.
 
