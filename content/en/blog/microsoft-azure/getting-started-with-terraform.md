@@ -7,6 +7,7 @@ tags:
 categories:
 - Microsoft Azure
 description: "In this guide, I show the path from install to deployment: I install Terraform, I prepare my Azure login using Azure CLI, and then I run a “single server” Terraform setup so you can see the process end-to-end."
+hidden: false
 ---
 
 ## Terraform described
@@ -20,6 +21,15 @@ Terraform is a framework built by Hashicorp that lets you manage cloud infrastru
 3. Then Terraform applies the plan to build (or change) the Azure resources according to your plan
 
 [![jv-media-8507-99d18c372f66.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-99d18c372f66.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-99d18c372f66.png)
+
+The topology of the resources we will deploy in this guide is:
+
+- 1 Virtual Machine
+- 1 Public IP address
+- 1 Network Interface
+- 1 Virtual Network
+- 1 Disk
+- 1 Resource group
 
 In this guide, I will show how to install Terraform, prepare your Azure login, start using Terraform and run a single server Terraform setup I have made with the needed dependencies and security.
 
@@ -38,17 +48,13 @@ In this guide, I will show how to install Terraform, prepare your Azure login, s
 
 ## Step 1: Installation of Terraform
 
-In this step, I will install Terraform on my local computer.
+In this step, I will install Terraform on my local computer. First, go to the official Terraform installation page.
 
-First, go to the official Terraform installation page.
+[https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install)
 
-https://developer.hashicorp.com/terraform/install
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-9691e43b1ac8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-9691e43b1ac8.png)
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-db0e2386126d.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-db0e2386126d.png)
-
-On the Terraform installation page, download the Windows version of Terraform.
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca4810099bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca4810099bc.png)
+On this Terraform installation page, download the Windows version of Terraform.
 
 After downloading the ZIP file, extract the file. Inside the ZIP file you will find the *terraform.exe* file.
 
@@ -60,11 +66,11 @@ For this guide, I place the Terraform binary in the folder below. Create the fol
 
 Then place *terraform.exe* inside this folder.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ff6446803ae9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ff6446803ae9.png)
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)
 
 Now Terraform is installed on the computer, but Windows still needs to know where it can find *terraform.exe*.
 
-To make this work from every PowerShell window, I add the Terraform folder to the Windows user Path.
+To make this work from every PowerShell window, I add the Terraform folder to the Windows user Path. If you have a other location, change the location.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 $terraformlocation = "C:\Tools\Terraform"
@@ -75,11 +81,11 @@ if ($userPath -notlike "*$terraformlocation*") {
 }
 {{< /card >}}
 
+This action sets the variable in the Windows known variables. This is similar to this GUI option.
+
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ae1a5f665475.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ae1a5f665475.png)
 
-After changing the *Path*, close all open PowerShell and Visual Studio Code windows.
-
-Then open a new PowerShell window and check if Terraform is working:
+After changing the *Path*, close all open PowerShell and Visual Studio Code windows. Then open a new PowerShell window and check if Terraform is working:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform -version
@@ -87,7 +93,11 @@ terraform -version
 
 If Terraform is installed correctly, the Terraform version will be shown in the terminal.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+PS C:\Users\InfoJustinVerstijnen> terraform -version
+Terraform v1.15.2
+on windows_amd64
+{{< /card >}}
 
 Terraform is now installed and ready to use.
 
@@ -95,11 +105,7 @@ Terraform is now installed and ready to use.
 
 ## Step 2: Installation of Azure CLI
 
-Terraform is now installed, but Terraform also needs a way to authenticate to Microsoft Azure.
-
-For this guide, I use Azure CLI for the Azure login.
-
-I install Azure CLI with `winget`.
+We can now install the Azure CLI shell if not already installed, as Terraform needs a way to authenticate to Microsoft Azure. The most easy way to install Azure CLI is through with `winget`.
 
 Open PowerShell as Administrator and run the command below:
 
@@ -107,9 +113,9 @@ Open PowerShell as Administrator and run the command below:
 winget install --exact --id Microsoft.AzureCLI
 {{< /card >}}
 
-The installation can take some time, so please have a little patience.
+The installation can take some time, so please have a little patience. This process can take up to 15 minutes.
 
-After the installation is completed, close all open PowerShell and Visual Studio Code windows. This is needed so Windows can reload the new environment variables.
+After the installation is completed, close all open PowerShell and Visual Studio Code windows. This is needed so Windows can reload the new environment variables and initializing the commands needed.
 
 Then open a new PowerShell window and check if Azure CLI is working:
 
@@ -119,13 +125,26 @@ az version
 
 If Azure CLI is installed correctly, the Azure CLI version information will be shown in the terminal.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-9d5a69b3bbf3.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-9d5a69b3bbf3.png)
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+PS C:\Users\InfoJustinVerstijnen> az version
+{
+  "azure-cli": "2.86.0",
+  "azure-cli-core": "2.86.0",
+  "azure-cli-telemetry": "1.1.0",
+  "extensions": {
+    "account": "0.2.5",
+    "logic": "1.1.0"
+  }
+}
+{{< /card >}}
 
-Azure CLI is now installed and ready to use.
+Azure CLI is now also installed and ready to use.
 
-In the next steps, I will use Azure CLI to sign in to Azure, so Terraform can deploy the Azure resources.
+---
 
 ## Step 3: Downloading my Single Server Terraform setup
+
+For the ease of this guide, I have a full template available that deploys the resources
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-753081aad9ac.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-753081aad9ac.png)
 
