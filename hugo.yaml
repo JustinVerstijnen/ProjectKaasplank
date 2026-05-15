@@ -63,7 +63,7 @@ languages:
     languageName: English
     title: justinverstijnen.nl
     params:
-      description: On this website, I will share my aviation experiences, including both theory and practice, during my journey towards achieving a Private Pilot License (PPL).
+      description: On this website, I will share my technical experience, focussing on Microsoft Azure, Virtual Desktop, Entra, Intune, Networking, PowerShell and Windows Server with Securiry in mind.
   # cSpell:disable
 
 markup:
@@ -112,6 +112,7 @@ params:
   ui:
     breadcrumb_disable: false
     navbar_logo: true
+    logo: /icons/logo.svg
     navbar_translucent_over_cover_disable: true
 
     sidebar_menu_foldable: true
@@ -131,8 +132,7 @@ params:
         can improve</a>.
 
     readingtime:
-      enable: false
-  mainBranchPreviewURL: https://main--goldydocs.netlify.app/
+      enable: true
   btn-lg: class="btn btn-lg btn-{1}" role="button"
   FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
 
@@ -157,9 +157,7 @@ security:
       # Netlify build env var
       - ^(BRANCH|BUILD_ID|COMMIT_REF|CONTEXT|DEPLOY_ID|NETLIFY|PULL_REQUEST|REVIEW_ID)$
 
-module:
-  # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
-  # workspace: docsy.work
+module:
   hugoVersion:
     extended: true
     min: 0.155.0
