@@ -159,6 +159,22 @@ Go to my GitHub repository to download the simple 1 server setup:
 
 Click on "Code" and click Download ZIP and place it on your computer on a known place. This folder contains the Terraform setup, with some preconfigured files. For this guide we only need to change information in the terraform.tfvars file.
 
+In the ZIP file we can find 9 files which all have their own purpose:
+
+| File name | Contains |
+| --- | --- |
+| scripts/bootstrap-dc.ps1 | The after deployment PowerShell script |
+| LICENSE | The license of the GitHub Repo |
+| README.md | The instructions of the repo, superseded if you follow this guide |
+| locals.tf | The naming scheme of the deployment |
+| main.tf | The resources which all will be deployed using the set variables. We can see this as the full recipe |
+| outputs.tf | The outputs like names of resources |
+| terraform.tfvars | The project specific variables which we can configure to our likings |
+| variables.tf | All possible renameable fields |
+| versions.tf | All versions of dependencies |
+
+Now we are ready to change the project to your likings.
+
 ---
 
 ## Step 4: Changing the project variables
@@ -247,10 +263,10 @@ After around 5 minutes, Terraform will inform us that the deployment is finished
 If you need to remove all the resources Terraform created, you can run:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-terraform destroy
+terraform destroy -auto-approve
 {{< /card >}}
 
-This will destroy every resource created by the Terraform plan.
+This willautomatically destroy every resource created by the Terraform plan, skipping the extra approval step.
 
 ---
 
@@ -291,7 +307,7 @@ Terraform will compare what it wants (new plan) with what already exists, and th
 If you want to remove everything completely, use the terraform destroy command first.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-terraform destroy
+terraform destroy -auto-approve
 {{< /card >}}
 
 ---
