@@ -12,24 +12,29 @@ hidden: false
 
 ## Terraform described
 
-Terraform is a framework built by Hashicorp that lets you manage cloud infrastructure for Azure and Amazon Web Services using text files only. Terraform is a declarative code, where you tell the system on how to get the end results, instead of PowerShell scripts that need to describe everything step by step.
+Terraform is a framework built by Hashicorp that lets you manage cloud infrastructure for Azure and Amazon Web Services using text files only. This does it by talking with the Azure Resource Manager API, the underlying system that manages Azure Environments, Azure CLI and Azure PowerShell.
+
+Terraform is a declarative code, where you tell the system on how to get the end results, instead of PowerShell scripts that need to describe everything step by step.
 
 **In simple words:**
 
 1. You write what you want (for example: “make a server, with a IP linked and a NSG”).
 2. Terraform creates a “plan” to show what it will do before touching your cloud environment
-3. Then Terraform applies the plan to build (or change) the Azure resources according to your plan
+3. Then Terraform applies the plan using Azure CLI to build (or change) the Azure resources according to your plan
 
 [![jv-media-8507-99d18c372f66.png](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-99d18c372f66.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-99d18c372f66.png)
 
 The topology of the resources we will deploy in this guide is:
 
-- 1 Virtual Machine
-- 1 Public IP address
-- 1 Network Interface
-- 1 Virtual Network
-- 1 Disk
-- 1 Resource group
+| Resource type | Resource name |
+| --- | --- |
+| Resource group | rg-jv-<project> |
+| OS disk | osdisk-jv-<project> |
+| VNET | vnet-jv-<project> |
+| NIC | nic-jv-<project> |
+| Public IP | pip-jv-<project> |
+| NSG | nsg-jv-<project> |
+| VM | vm-jv-<project> |
 
 In this guide, I will show how to install Terraform, prepare your Azure login, start using Terraform and run a single server Terraform setup I have made with the needed dependencies and security.
 
@@ -56,19 +61,15 @@ In this step, I will install Terraform on my local computer. First, go to the of
 
 On this Terraform installation page, download the Windows version of Terraform.
 
-After downloading the ZIP file, extract the file. Inside the ZIP file you will find the *terraform.exe* file.
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-e27a35758b51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-e27a35758b51.png)
-
-For this guide, I place the Terraform binary in the folder below. Create the folder below if it does not already exist.
+After downloading the ZIP file, extract the file. Inside the ZIP file you will find the *terraform.exe* file. For this guide, I place the Terraform binary in the folder below. Create the folder below if it does not already exist.
 
 - C:\Tools\Terraform
 
 Then place *terraform.exe* inside this folder.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-02474ea7de4e.png)
 
-Now Terraform is installed on the computer, but Windows still needs to know where it can find *terraform.exe*.
+Now Terraform is installed on the computer, but Windows still needs to know where it can find _terraform.exe_.
 
 To make this work from every PowerShell window, I add the Terraform folder to the Windows user Path. If you have a other location, change the location.
 
@@ -113,6 +114,8 @@ Open PowerShell as Administrator and run the command below:
 winget install --exact --id Microsoft.AzureCLI
 {{< /card >}}
 
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-30279654acd2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-30279654acd2.png)
+
 The installation can take some time, so please have a little patience. This process can take up to 15 minutes.
 
 After the installation is completed, close all open PowerShell and Visual Studio Code windows. This is needed so Windows can reload the new environment variables and initializing the commands needed.
@@ -144,69 +147,80 @@ Azure CLI is now also installed and ready to use.
 
 ## Step 3: Downloading my Single Server Terraform setup
 
-For the ease of this guide, I have a full template available that deploys the resources
+For the ease of this guide, I have a full template available that deploys the resources as stated in the description at the top of the page. We only need to change some variables to your likings.
+
+Go to my GitHub repository to download the simple 1 server setup:
+
+<a class="btn btn-primary" href="https://github.com/JustinVerstijnen/JV-TF-SingleWindowsServerActiveDirectory" target="_blank" rel="noreferrer">Download Terraform setup from GitHub</a>
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-753081aad9ac.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-753081aad9ac.png)
 
-Download the ZIP file and place it on your computer on a known place.
-
-## Step 4: Changing the project variables
-
-In the file *terraform.tfvars*, you can change the project variables.
-
-This file is where you set values like names, IP addresses, and other settings for your deployment. Review everything before saving.
-
-(Reason: these values control what Terraform will create in Azure.)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-30279654acd2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-30279654acd2.png)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca6540d0a4cc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca6540d0a4cc.png)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6c649b895949.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6c649b895949.png)
+Click on "Code" and click Download ZIP and place it on your computer on a known place. This folder contains the Terraform setup, with some preconfigured files. For this guide we only need to change information in the terraform.tfvars file.
 
 ---
 
-## Step 5: Applying the Terraform project
+## Step 4: Changing the project variables
 
-First, sign in to Azure:
+In the file _terraform.tfvars_, you can change the project variables. This file is where you set values like names, IP addresses, and other settings for your deployment. Review everything before saving.
+
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-d32fe6d628b2.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-d32fe6d628b2.png)
+
+Change the information to your likings. The things you are required to change are:
+
+- Line 4: Subscription ID
+- Line 5: Project name
+- Line 13: Your IP address for whitelisting purposes
+- Line 16, 17, 18, 19, 20: Your Active Directory details
+
+After changing this information, save the file and we are now ready to go.
+
+---
+
+## Step 5: Deploying the Terraform project
+
+Now we are finally ready to deploy our Terraform project to Azure. We will login to Azure CLI and then prepare Terraform for the deployment. In my Azure Environment, nothing is available using the projects' names:
+
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-78e67cf80990.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-78e67cf80990.png)
+
+Let's sign in to Azure CLI using this command:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 az login
 {{< /card >}}
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)
+Then login to your Azure account where the deployment must be done. Also be sure to perform the additional verification steps.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-78e67cf80990.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-78e67cf80990.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ad7642e5dc79.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ad7642e5dc79.png)
 
-Now the correct subscription ID should be shown in your screen. Copy the ID and paste it between the quotes on line 4 of the `terraform.tfvars` file.
+After that, Azure CLI can ask for additional information like the subscription you want to deploy the resources into. If you no have already done so, copy the Subscription ID and paste this into line 4 of the _terraform.tfvars_ file.
 
-Next, open PowerShell and go to your Terraform folder on your local computer, then initialize the project:
+Now navigate to the folder of your Terraform project in Visual Studio Code terminal.
+
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-0444f67a21f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-0444f67a21f6.png)
+
+Then we can perform these commands:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform init
 {{< /card >}}
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ad7642e5dc79.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ad7642e5dc79.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-056e180e1730.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-056e180e1730.png)
 
-Then validate the configuration:
+Now Terraform is initialized, creating some temporary files. Then validate the configuration:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform validate
 {{< /card >}}
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-0444f67a21f6.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-0444f67a21f6.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-75a613a3d311.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-75a613a3d311.png)
 
-After validation with **zero errors**, create a plan.
-
-Terraform plan creates a file that shows what will be changed:
+After validation with zero errors, create a plan. This command (Terraform plan) creates a file that shows what will be added to the Azure Environment.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform plan -out main.tfplan
 {{< /card >}}
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-056e180e1730.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-056e180e1730.png)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-75a613a3d311.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-75a613a3d311.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6b15fe5afc1b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6b15fe5afc1b.png)
 
 Finally, apply the plan:
 
@@ -225,6 +239,8 @@ Terraform will now start the full deployment based on your Terraform variables a
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)
+
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)
 
