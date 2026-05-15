@@ -14,7 +14,8 @@ hidden: false
 
 Terraform is a framework built by Hashicorp that lets you manage cloud infrastructure for Azure and Amazon Web Services using text files only. This does it by talking with the Azure Resource Manager API, the underlying system that manages Azure Environments, Azure CLI and Azure PowerShell.
 
-Terraform is a declarative code, where you tell the system on how to get the end results, instead of PowerShell scripts that need to describe everything step by step.
+Terraform code is declarative code, which means you describe the desired end result instead of writing every step the system needs to take, like you would often do in a PowerShell script. In this case, we tell ARM to create a Virtual Machine with the name, IP address, and other settings we specify. It is a bit like telling a chef which dish you want and which ingredients to use, and then letting the chef prepare it for you.
+
 
 **In simple words:**
 
