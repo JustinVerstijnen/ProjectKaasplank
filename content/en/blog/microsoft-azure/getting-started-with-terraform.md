@@ -7,6 +7,7 @@ tags:
 categories:
 - Microsoft Azure
 description: "In this guide, I show the path from install to deployment: I install Terraform, I prepare my Azure login using Azure CLI, and then I run a “single server” Terraform setup so you can see the process end-to-end."
+hidden: false
 ---
 
 ## Terraform described
@@ -243,26 +244,32 @@ After around 5 minutes, Terraform will inform us that the deployment is finished
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ee155ad50186.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ee155ad50186.png)
-
-If you need to remove the resources Terraform created, you can run:
+If you need to remove all the resources Terraform created, you can run:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 terraform destroy
 {{< /card >}}
 
-> Tip: `terraform destroy` removes the resources. Only run it when you really want to clean everything up.
+This will destroy every resource created by the Terraform plan.
+
+---
 
 ## Step 6: The results
 
-After `terraform apply` finishes, Terraform has built the resources defined in the Terraform setup.
-
-To see the results:
+After terraform apply finishes, Terraform has built the resources defined in the Terraform setup. Let's check the results:
 
 - check the output shown by Terraform in your terminal, and
-- check the Azure resources in the Azure Portal for the resource group that was created/used by this Terraform setup.
+- check the Azure resources in the Azure Portal for the resource group that was created/used by this Terraform setup
+
+This is the newly created resource group for example. All dependent resources are created.
+
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)
+
+And in the VNET, the DNS server is also changed to get new servers into the DNS/Active Directory of the created servers.
+
+[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ee155ad50186.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ee155ad50186.png)
+
+---
 
 ## Step 7: Changes to Terraform project (optional)
 
@@ -285,7 +292,7 @@ terraform destroy
 
 ## Summary
 
-Terraform helps you deploy Azure resources in a repeatable way using Infrastructure as Code. With the steps above, you installed Terraform and Azure CLI, prepared your settings in `terraform.tfvars`, then used `terraform init`, `terraform validate`, `terraform plan`, and `terraform apply` to deploy your single server setup. This structured format follows the same blog layout pattern from my post template [[1]].
+Terraform helps you deploy Azure resources in a repeatable way using Infrastructure as Code. With the steps above, you installed Terraform and Azure CLI, prepared your settings in `terraform.tfvars`, then used `terraform init`, `terraform validate`, `terraform plan`, and `terraform apply` to deploy your single server setup. This structured format follows the same blog layout pattern from my post template.
 
 Thank you for reading this post and I hope it was helpful!
 
@@ -293,7 +300,7 @@ Thank you for reading this post and I hope it was helpful!
 
 These sources helped me by writing and research for this post;
 
-1. https://developer.hashicorp.com/terraform/install
+1. [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install)
 
 {{< ads >}}
 
