@@ -7,7 +7,6 @@ tags:
 categories:
 - Microsoft Azure
 description: "In this guide, I show the path from install to deployment: I install Terraform, I prepare my Azure login using Azure CLI, and then I run a “single server” Terraform setup so you can see the process end-to-end."
-hidden: false
 ---
 
 ## Terraform described
@@ -35,6 +34,8 @@ The topology of the resources we will deploy in this guide is:
 | Public IP | pip-jv-<project> |
 | NSG | nsg-jv-<project> |
 | VM | vm-jv-<project> |
+
+After the resources are deployed, a PowerShell script is executed in the VM to install the Active Directory role and to configure it.
 
 In this guide, I will show how to install Terraform, prepare your Azure login, start using Terraform and run a single server Terraform setup I have made with the needed dependencies and security.
 
@@ -230,17 +231,17 @@ terraform apply main.tfplan
 
 Terraform will now start the full deployment based on your Terraform variables and plan.
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6b15fe5afc1b.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-6b15fe5afc1b.png)
+[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)
+
+Now the complete deployment will be executed and built in Azure. In the Terminal Window you can review the status. The complete deployment will take around 5 minutes.
+
+After some seconds, still in deployment, we can already see the resource group being created:
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-bfd6c870bf8e.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-bfd6c870bf8e.png)
 
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-5ccd23f24a48.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-5ccd23f24a48.png)
-
-[![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-211b908415a8.png)
+After around 5 minutes, Terraform will inform us that the deployment is finished, giving us information about what has been done, like the IP address to connect with RDP.
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-146a9a4df81a.png)
-
-[![Image](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-90fd4b3f4213.png)
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-7435cd091c23.png)
 
