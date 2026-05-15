@@ -7,7 +7,6 @@ tags:
 categories:
 - Microsoft Azure
 description: "In this guide, I show the path from install to deployment: I install Terraform, I prepare my Azure login using Azure CLI, and then I run a “single server” Terraform setup so you can see the process end-to-end."
-hidden: false
 ---
 
 ## Terraform described
@@ -41,11 +40,7 @@ In this guide, I will show how to install Terraform, prepare your Azure login, s
 
 In this step, I will install Terraform on my local computer.
 
-For this guide, I place the Terraform binary in this folder:
-
-`C:\Tools\Terraform`
-
-First, go to the official Terraform installation page:
+First, go to the official Terraform installation page.
 
 https://developer.hashicorp.com/terraform/install
 
@@ -55,21 +50,21 @@ On the Terraform installation page, download the Windows version of Terraform.
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca4810099bc.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ca4810099bc.png)
 
-After downloading the ZIP file, extract the file. Inside the ZIP file you will find the `terraform.exe` file.
+After downloading the ZIP file, extract the file. Inside the ZIP file you will find the *terraform.exe* file.
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-e27a35758b51.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-e27a35758b51.png)
 
-Create the folder below if it does not already exist:
+For this guide, I place the Terraform binary in the folder below. Create the folder below if it does not already exist.
 
-`C:\Tools\Terraform`
+- C:\Tools\Terraform
 
-Then place `terraform.exe` inside this folder.
+Then place *terraform.exe* inside this folder.
 
 [![](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ff6446803ae9.png)](https://sajvwebsiteblobstorage.blob.core.windows.net/blog/getting-started-with-terraform/jv-media-8507-ff6446803ae9.png)
 
-Now Terraform is on the computer, but Windows still needs to know where it can find `terraform.exe`.
+Now Terraform is installed on the computer, but Windows still needs to know where it can find *terraform.exe*.
 
-To make this work from every PowerShell window, I add the Terraform folder to the Windows user `Path`.
+To make this work from every PowerShell window, I add the Terraform folder to the Windows user Path.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 $terraformlocation = "C:\Tools\Terraform"
