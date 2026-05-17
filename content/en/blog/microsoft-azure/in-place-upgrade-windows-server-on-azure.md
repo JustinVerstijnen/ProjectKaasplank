@@ -7,7 +7,7 @@ categories:
 tags:
   - Step by Step guides
 description: >
-  This guide explains how to perform a in-place upgrade WIndows Server on Azure to leverage the newest version and stay secure.
+  This guide explains how to perform a in-place upgrade Wndows Server from 2022 to 2025 on Azure to leverage the newest version and stay secure.
 ---
 
 Once every 3 to 4 years you want to be on the last version of Windows Server because of new features and of course to have the latest security updates. These security updates are the most important these days.
@@ -245,7 +245,7 @@ Thank you for reading ths guide and I hope it helped you out upgrading your serv
 
 These sources helped me by writing and research for this post;
 
-1. h<ttps://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview>
+1. https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview
 
 {{< ads >}}
 
