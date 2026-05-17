@@ -82,8 +82,8 @@ outputs:
   section: [HTML, print, RSS]
 
 params:
-  offlineSearch: true
-  offlineSearchMaxResults: 7
+  #offlineSearch: true
+  #offlineSearchMaxResults: 7
   taxonomy:
     taxonomyCloud: [tags, categories]
     taxonomyCloudTitle: [Tags, Categories]
@@ -98,7 +98,7 @@ params:
   github_repo: https://github.com/JustinVerstijnen/JVTechnicalBlog
   github_project_repo: https://github.com/JustinVerstijnen/JVTechnicalBlog
   github_branch: main
-  #gcs_engine_id: d72aa9b2712488cc3
+  gcs_engine_id: d72aa9b2712488cc3
   prism_syntax_highlighting: false
 
 # #ooter
@@ -157,7 +157,8 @@ security:
       # Netlify build env var
       - ^(BRANCH|BUILD_ID|COMMIT_REF|CONTEXT|DEPLOY_ID|NETLIFY|PULL_REQUEST|REVIEW_ID)$
 
-module:
+module:
+
   hugoVersion:
     extended: true
     min: 0.155.0
