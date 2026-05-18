@@ -332,8 +332,11 @@ jobs:
           print(f"Excluded planned posts directory: {EXCLUDED_CONTENT_DIR}")
           PY
 
+      - name: Clean previous Hugo output
+        run: rm -rf public
+
       - name: Build site
-        run: hugo --minify --gc
+        run: hugo --minify --cleanDestinationDir --gc
 
       - name: Sanity check build output
         run: test -f public/index.html
