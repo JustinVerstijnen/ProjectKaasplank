@@ -1,7 +1,7 @@
 ---
 title: "Solved - FSLogix release 25.02 breaks Recycle Bin - Azure Virtual Desktop"
 date: 2025-03-03
-slug: "solved-fslogix-update-25-02-breaks-recycle-bin-bug"
+slug: "solved-fslogix-update-25-02-breaks-recycle-bin-on-azure-virtual-desktop"
 categories:
   - Azure Virtual Desktop
 tags:
