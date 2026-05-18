@@ -157,7 +157,8 @@ security:
       # Netlify build env var
       - ^(BRANCH|BUILD_ID|COMMIT_REF|CONTEXT|DEPLOY_ID|NETLIFY|PULL_REQUEST|REVIEW_ID)$
 
-module:
+module:
+
   hugoVersion:
     extended: true
     min: 0.155.0
