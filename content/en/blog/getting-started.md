@@ -1,7 +1,7 @@
 ---
 title: "Getting started"
-date: 2026-01-01
-weight: 2
+date: 2026-04-20
+weight: 1
 ---
 
 Welcome to my blog section. In my blog posts, I describe the steps I took to make things work and/or explain how it works. The navigation on this page is relatively easy and I will do my best to explain all features of the blog to you as a manual.
