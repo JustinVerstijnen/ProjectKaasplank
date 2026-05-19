@@ -43,7 +43,7 @@ The different keys described:
 ## Requirements
 
 - Around 30 minutes of your time
-- [Exchange Online Powershell module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/3.9.0) installed
+- [Exchange Online Powershell module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) installed
 - S/MIME certificate for your mailbox
 - Microsoft 365 tenant/mailbox to configure S/MIME
 
@@ -54,10 +54,8 @@ The different keys described:
 When starting my research for S/MIME, I found S/MIME be really similar to [what DKIM does](https://justinverstijnen.nl/enhance-email-security-with-spf-dkim-dmarc/#dkim), so I did a little research about the differences, and it has some clear takeaways:
 
 - DKIM proves an email came from a specific domain/mailserver
-
 	- Keyword: Verification
 - S/MIME proves an email came from a specific person and keeps the content private for Man in the middle attacks
-
 	- Keyword: Encryption
 
 And I made a little overview about the features of both security protocols:
@@ -84,7 +82,6 @@ Then we must purchase a S/MIME certificate for every mailbox. In my case I used 
 When purchasing the certificate, keep the following things in mind:
 
 - Use the exact email address of the mailbox
-
 	- For example: user@domain.com
 - Save the certificate password somewhere secure
 - Download the certificate as a .pfx or .p12 file if possible
