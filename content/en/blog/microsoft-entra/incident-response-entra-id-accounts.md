@@ -39,7 +39,7 @@ The goal is simple:
 
 ## 1. Detection Phase
 
-{{% alert title="Info" color="info" %}}
+{{% alert title="Actions" color="info" %}}
 - 1.1 Review sign-in attempts from the last 30 days
 - 1.2 Review Risky Users
 {{% /alert %}}
@@ -111,7 +111,7 @@ Any user that appeared as risky in the last 14 days should be included in the re
 
 ## 2. Blocking Actions
 
-{{% alert title="Info" color="info" %}}
+{{% alert title="Actions" color="info" %}}
 2.1 Disable the User Account
 
 2.2 Revoke All Sessions
@@ -174,7 +174,7 @@ Store the temporary password securely until the recovery phase is completed.
 
 ## 3. Recovery Actions
 
-{{% alert title="Info" color="info" %}}
+{{% alert title="Actions" color="info" %}}
 3.1 Unblock the User Account
 
 3.2 Check Mailbox Rules
@@ -291,7 +291,7 @@ Avoid sending passwords through email.
 
 ## 4. Investigation Phase
 
-{{% alert title="Info" color="info" %}}
+{{% alert title="Actions" color="info" %}}
 4.1 Retrieve Audit Logs from Purview
 
 4.2 Further Investigate Entra ID Sign-in Logs
