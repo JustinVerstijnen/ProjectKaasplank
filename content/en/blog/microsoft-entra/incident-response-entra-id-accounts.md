@@ -352,24 +352,17 @@ Review all privileged role assignments.
 Use PowerShell to retrieve all administrative role assignments.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-# Sign in to Azure AD
 Connect-AzureAD
 
-# Retrieve administrative roles
-Get-AzureADDirectoryRole | ForEach-Object {
-
-$role = $_
-
-Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | ForEach-Object {
-
-@{
-DisplayName = $_.DisplayName
-UserPrincipalName = $_.UserPrincipalName
-RoleName = $role.DisplayName
-}
-
-}
-
+Get-AzureADDirectoryRole | % {
+    $role = $_
+    Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | % {
+        [pscustomobject]@{
+            DisplayName       = $_.DisplayName
+            UserPrincipalName = $_.UserPrincipalName
+            RoleName          = $role.DisplayName
+        }
+    }
 }
 {{< /card >}}
 
@@ -396,66 +389,36 @@ Attackers sometimes create malicious Enterprise Applications or Service Principa
 Use Microsoft Graph PowerShell to review application permissions.
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
-# Authenticate
 Connect-MgGraph -Scopes "Application.Read.All", "Directory.Read.All" -NoWelcome
-
-# Retrieve applications and service principals
-$applications = Get-MgApplication -All
-$servicePrincipals = Get-MgServicePrincipal -All
-
-# Build lookup tables
-$spLookup = @{}
+$now = Get-Date
 $permissionsLookup = @{}
-
-foreach ($sp in $servicePrincipals) {
-
-if ($sp.AppId) {
-
-$spLookup[$sp.AppId] = $sp.DisplayName
-
-foreach ($res in @($sp.Oauth2PermissionScopes + $sp.AppRoles)) {
-
-$permissionsLookup["$($sp.AppId)|$($res.Id)"] = $res.Value
-
+Get-MgServicePrincipal -All | ForEach-Object {
+    $sp = $_
+    @($sp.Oauth2PermissionScopes) + @($sp.AppRoles) | Where-Object Id | ForEach-Object {
+        $permissionsLookup["$($sp.AppId)|$($_.Id)"] = $_.Value
+    }
 }
 
-}
+Get-MgApplication -All | ForEach-Object {
+    $app = $_
+    $hasSecret = [bool]($app.PasswordCredentials | Where-Object { $_.EndDateTime -gt $now })
+    $hasCert   = [bool]($app.KeyCredentials      | Where-Object { $_.EndDateTime -gt $now })
 
-}
+    $app.RequiredResourceAccess | ForEach-Object {
+        $resourceAccess = $_
 
-# Create result set
-$appDetails = @()
-
-foreach ($app in $applications) {
-
-$hasSecret = ($app.PasswordCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
-$hasCert = ($app.KeyCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
-
-foreach ($resourceAccess in $app.RequiredResourceAccess) {
-
-foreach ($access in $resourceAccess.ResourceAccess) {
-
-$permType = if ($access.Type -eq "Role") { "Application" } else { "Delegated" }
-
-$permName = $permissionsLookup["$($resourceAccess.ResourceAppId)|$($access.Id)"]
-
-$appDetails += @{
-ApplicationId   = $app.AppId
-DisplayName     = $app.DisplayName
-PermissionType  = $permType
-PermissionName  = $permName
-HasClientSecret = $hasSecret
-HasCertificate  = $hasCert
-}
-
-}
-
-}
-
-}
-
-# Export results
-$appDetails | Export-Csv "EntraID_AppPermissions_WithNames.csv" -NoTypeInformation -Encoding UTF8 -Delimiter ";"
+        $resourceAccess.ResourceAccess | ForEach-Object {
+            [pscustomobject]@{
+                ApplicationId   = $app.AppId
+                DisplayName     = $app.DisplayName
+                PermissionType  = if ($_.Type -eq "Role") { "Application" } else { "Delegated" }
+                PermissionName  = $permissionsLookup["$($resourceAccess.ResourceAppId)|$($_.Id)"]
+                HasClientSecret = $hasSecret
+                HasCertificate  = $hasCert
+            }
+        }
+    }
+} | Export-Csv "EntraID_AppPermissions_WithNames.csv" -NoTypeInformation -Encoding UTF8 -Delimiter ";"
 {{< /card >}}
 
 Review all applications carefully and remove anything suspicious or unnecessary.
