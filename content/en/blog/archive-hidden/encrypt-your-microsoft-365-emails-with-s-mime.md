@@ -145,6 +145,10 @@ Click "Next" twice and then finish. The certificate should now be in your Person
 
 ## Step 4: Export certificate information to file
 
+{{% alert title="Info" color="info" %}}
+You have to follow step 4 and 5 for every S/MIME certificate issuer you use. If you use 3 different issuers for example for 50 mailboxes in total, you need to perform step 4 and 5 logically 3 times.
+{{% /alert %}}
+
 We must now export our certificate provider information to a single file. We can use that file to give it to Exchange Online to trust our certificates and be able to setup the secure, encrypted connection.
 
 On the computer where you just installed the S/MIME certificate, open PowerShell (ISE) as Administrator.
@@ -219,10 +223,8 @@ After running that command, you can check if the certificate is added succesfull
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 $cfg = Get-SmimeConfig
-
 $col = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
 $col.Import($cfg.SMIMECertificateIssuingCA)
-
 $col | Select Subject,Issuer | Format-Table -AutoSize
 {{< /card >}}
 
@@ -275,9 +277,7 @@ If this works, the signing part of S/MIME is configured correctly and this digit
 
 ## Step 8: Send your first encrypted email
 
-Now we can test the encryption part.
-
-Before you can send an encrypted email to someone, your Outlook must know the public certificate of that receiver. The easiest way to do this is:
+Now we can test the encryption part. Before you can send an encrypted email to anyone, your Outlook must know the public certificate of that receiver. The easiest way to do this is:
 
 1. Ask the receiver to send you a digitally signed email first
 2. Open that signed email in Outlook
@@ -303,10 +303,8 @@ Run this command again:
 
 {{< card code=true header="**PowerShell**" lang="powershell" >}}
 $cfg = Get-SmimeConfig
-
 $col = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
 $col.Import($cfg.SMIMECertificateIssuingCA)
-
 $col | Select-Object Subject, Issuer | Format-Table -AutoSize
 {{< /card >}}
 
@@ -353,16 +351,6 @@ If it still does not work, remove and recreate the Outlook contact, and then ope
 If you use Outlook on the web, your browser may need the Microsoft S/MIME extension or control. This depends on the Outlook client and browser you are using.
 
 For company managed devices, this can be configured with browser policies. In smaller environments it is often easier to use the Outlook desktop client for the first test.
-
----
-
-## The result
-
-After the certificate is added and trusted and the first email is sent, you will see what happens at the receiver side. They will get an notification that the email is digitally signed:
-
-However, if you want to encrypt the email messages, you must have the public key of your receiver to create a secure channel. This is done by receiving an email from your receiver first with the digital signature. This will be saved into your address book and then you can reply with encryption.
-
-After this is working, you can enable encryption manually per message. I would not recommend enabling encryption by default directly, because you cannot send encrypted emails to receivers where you do not have the public key from.
 
 ---
 
