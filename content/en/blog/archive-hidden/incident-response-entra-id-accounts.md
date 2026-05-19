@@ -133,9 +133,7 @@ Attackers often attempt to move toward:
 - Executive accounts
 - Sensitive mailboxes
 
-Disabling the account immediately limits further damage.
-
-This can be done in:
+Disabling the account immediately limits new sign-in attempts. This can be done in:
 
 - Microsoft 365 Admin Center
 - Entra ID Admin Center
@@ -146,29 +144,23 @@ Use the option:
 
 ### 2.2 Revoke All Sessions
 
-Revoke all active sessions in Entra ID.
-
-This invalidates all existing authentication tokens.
-
-This ensures:
+Revoke all active sessions in Entra ID. This invalidates all existing authentication tokens by Entra ID, and will ultimately revoke access to the attacker. This ensures:
 
 - Existing sessions stop working
 - Browser refreshes fail
 - Mobile applications reconnect with new authentication
 
-This step is important because some sessions may remain active for a period of time even after blocking sign-in.
+This step is important because some sessions may remain active for a period of time even after blocking sign-in. This is because of the tokens released by Entra ID are still active as they have a certain lifetime. Revoking sessions and tokens will instantly make these tokens invalid, blocking any action for the attackers.
 
 ### 2.3 Reset the Password
 
-Reset the password after the attacker is blocked.
+Reset the password after the attacker is blocked. Use a strong password:
 
-Use a strong password:
-
-- Minimum 12 characters
+- Minimum 16 characters
 - No dictionary words
 - Different from previous passwords
 
-Store the temporary password securely until the recovery phase is completed.
+Store the temporary password securely until the recovery phase is completed, as we are not done yet, but we now have prevented further damage.
 
 ---
 
@@ -187,17 +179,15 @@ Store the temporary password securely until the recovery phase is completed.
 
 At this stage, the attacker should no longer have access. We will now verify whether persistence or backdoors were left behind. Do not allow the user to continue working yet during this phase as possible backdoors or other manipulations can be possibly active.
 
-### 3.1 Unblock the User Account
+### 3.1 Unblock the User Account (NOG NAAR KIJKEN)
 
-Unblock the account temporarily for recovery actions.
-
-Then sign in as the user to inspect the environment.
+Unblock the account temporarily for recovery actions. Then we can sign in as the user to inspect the environment.
 
 ### 3.2 Check Mailbox Rules
 
-Attackers often create mailbox rules to hide activity.
+Attackers often create mailbox rules to hide activity. 
 
-Open Outlook on the Web and review all inbox rules.
+If having access to the users' environment, Open Outlook on the Web and review all inbox rules.
 
 Look for suspicious rules such as:
 
@@ -206,6 +196,8 @@ Look for suspicious rules such as:
 - Moving emails to RSS or Deleted Items folders
 
 Remove all suspicious rules immediately.
+
+If not having access to the users' environment, we can use Exchange Online PowerShell to check these rules.
 
 ### 3.3 Check Forwarding Rules
 
