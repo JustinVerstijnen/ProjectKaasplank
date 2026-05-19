@@ -89,11 +89,14 @@ When purchasing the certificate, keep the following things in mind:
 - Save the certificate password somewhere secure
 - Download the certificate as a .pfx or .p12 file if possible
 - Make sure the certificate includes the private key
-- Start with one test user before deploying it to all users
 
 The private key is important. Without the private key, Outlook can verify signed emails, but it cannot sign or decrypt emails for that mailbox.
 
 After ordering the certificate, your certificate provider will usually send a validation email to the mailbox. Open the email and follow the steps from your provider to approve the certificate request.
+
+{{% alert title="Info" color="info" %}}
+As the steps for aquiring the certificate can be different for various issuers, I describe the logical steps you need to take to get such certificate.
+{{% /alert %}}
 
 ---
 
