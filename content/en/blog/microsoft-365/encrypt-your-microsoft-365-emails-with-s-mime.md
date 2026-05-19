@@ -1,7 +1,7 @@
 ---
 title: "Encrypt your Microsoft 365 emails with S/MIME"
 slug: "encrypt-your-microsoft-365-emails-with-s-mime"
-date: 2026-04-05
+date: 2026-06-01
 tags:
 - Step by Step guides
 categories:
