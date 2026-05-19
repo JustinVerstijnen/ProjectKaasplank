@@ -1,28 +1,22 @@
 ---
-title: "Incident Response for Entra ID accounts"
+title: "Incident Response for Entra ID Accounts"
 slug: "incident-response-entra-id-accounts"
 date: 2026-07-01
 tags:
 - Tools and Scripts
 categories:
-- Microsoft Entra ID
-hidden: true
-build:
-  render: always
-  list: never
-description: "This page explains the steps required to recover from an account compromise. The focus of this guide is on Microsoft 365 accounts, but the same framework can also be applied to other accounts such as 3CX, personal Microsoft accounts, or other SaaS platforms."
----
-
-This guide focuses on activity from the last 14 days, starting from the date of the first detected compromise.
-
-The reader/executor is encouraged to actively think along with the situation, as every hack or compromise is different.
-This guide is based on my prior experience and industry best practices.
-
+- Microsoft Entra
+description: "Learn how to respond to a suspected Entra ID account compromise and recover Microsoft 365 accounts securely."
+hidden: false
 ---
 
 ## Overview
 
-For account compromise incidents, we work with the following five steps:
+In this guide, I will explain the steps you can follow when an Entra ID account is suspected to be compromised.
+
+This guide can also be used as a checklist during investigations to verify whether an account is healthy and to identify what actions an attacker may have performed.
+
+For suspected Entra ID account compromise incidents, we work with the following five phases:
 
 1. Detection phase
 2. Blocking actions
@@ -30,355 +24,496 @@ For account compromise incidents, we work with the following five steps:
 4. Investigation phase
 5. Closure and reporting
 
+The goal is simple:
+
+- Detect suspicious activity quickly
+- Block the attacker immediately
+- Recover the account safely
+- Investigate what happened
+- Prevent it from happening again
+
 ---
 
 ## 1. Detection Phase
 
-An account compromise is never pleasant and can be detected in several ways:
+An Entra ID account compromise can be detected in several ways.
 
-- A customer reports seeing strange messages in Outlook
-- A customer account has been blocked from signing in
-- Contacts of the customer receive spam or phishing emails
-- Other signals indicating a possible compromise
+Common examples are:
 
-Before taking blocking or recovery actions, we must first **verify that the account is actually compromised**.
-Otherwise, further steps are unnecessary.
+- A user reports strange Outlook behavior
+- The account is blocked automatically
+- Contacts receive spam or phishing emails
+- Sign-ins appear from unusual countries
+- Microsoft flags the account as risky
 
-In short, during this phase we:
+Before taking recovery actions, first confirm whether the account is actually compromised.
 
-- Review the last **30 days** of sign-in activity
-- Look for sign-ins from **unknown or unusual locations**
-- Check whether **multiple users** are affected
+During this phase, focus on:
 
-Do not spend too much time in this phase.
-We must move from detection to blocking as quickly as possible.
-**Every second counts.**
+- Reviewing the last 30 days of sign-in logs
+- Looking for unusual locations or IP addresses
+- Checking whether multiple users are affected
 
----
-
-### 1.1 Review Sign-in Attempts from the Last 30 Days
-
-Review unusual sign-ins in **Entra ID** for the past 30 days.
-
-Steps:
-
-- Set the time range to **1 month / 30 days**
-- Add an extra filter:
-  - Filter: **Username**
-  - Value: the user’s email address / UPN
-- Sort by **IP address** and then by **Location**
-
-Evaluate the sign-in behavior:
-
-Healthy sign-in behavior:
-- All sign-ins consistently originate from 1–3 expected and explainable IP addresses in the Netherlands  
-  (e.g. AVD or Windows 365)
-
-Unhealthy sign-in behavior:
-- Successful or failed sign-ins from unexpected countries or IP addresses
-
-Check whether the user has had **successful fraudulent sign-ins** in the last 30 days.
-
-- If not: change the password as a precaution and stop following this guide
-- If yes: continue with step 1.2 and follow the rest of this guide
+Do not spend too much time in this phase. If compromise is confirmed, move to blocking actions immediately.
 
 ---
 
-### 1.2 Review Risky Users
+## 1.1 Review Sign-in Attempts from the Last 30 Days
 
-Check whether the user appears in the **Risky Users** list in Entra ID.
+Open the Entra ID sign-in logs and review the last 30 days.
 
-This list shows all users that Microsoft has identified as potentially compromised.
-Also verify whether **multiple users** appear in this list.
+Use the following filters:
 
-All users that have posed a risk within the last **14 days** must be included in the recovery steps described below.
+- Time range: 30 days
+- Username: affected user account
+
+Sort the results by:
+
+- IP address
+- Location
+
+Healthy sign-in behavior usually shows:
+
+- Consistent locations
+- Expected IP addresses
+- Trusted environments such as AVD or Windows 365
+
+Unhealthy sign-in behavior may include:
+
+- Sign-ins from unexpected countries
+- Impossible travel activity
+- Failed sign-ins followed by successful sign-ins
+
+If no successful malicious sign-ins are found:
+
+- Reset the password as precaution
+- Monitor the account
+- No further actions may be required
+
+If malicious sign-ins are confirmed, continue with the next steps.
+
+---
+
+## 1.2 Review Risky Users
+
+Open the Risky Users page in Entra ID.
+
+This page shows accounts Microsoft identified as potentially compromised.
+
+Verify:
+
+- Whether the affected account appears in the list
+- Whether multiple users are affected
+
+Any user that appeared as risky in the last 14 days should be included in the recovery actions.
 
 ---
 
 ## 2. Blocking Actions
 
-For each detected user, perform the following actions.
+After compromise is confirmed, block the attacker as quickly as possible.
 
-### 2.1 Disable the User Account
-
-Immediately disable the user account to prevent further malicious activity.
-
-During a compromise, attackers often attempt to pivot to more sensitive accounts
-such as administrators or executives.
-
-Disabling the account immediately cuts off access and buys time to perform further actions.
-
-This can be done via:
-- Microsoft 365 Admin Center, or
-- Entra ID Admin Center  
-  (Block sign-in)
+The goal in this phase is to stop all active access immediately.
 
 ---
 
-### 2.2 Revoke All Sessions
+## 2.1 Disable the User Account
 
-Revoke all active sessions to invalidate all issued Entra ID tokens.
+Disable the affected account directly.
 
-This ensures that:
-- All current sessions become invalid immediately
-- Any navigation or refresh attempt will fail
+This prevents the attacker from continuing activity inside the environment.
 
-Perform this action in the **Entra ID Admin Center**.
+Attackers often attempt to move toward:
 
-This is an additional safeguard on top of blocking the user,
-as token expiration may otherwise take time.
+- Administrator accounts
+- Executive accounts
+- Sensitive mailboxes
+
+Disabling the account immediately limits further damage.
+
+This can be done in:
+
+- Microsoft 365 Admin Center
+- Entra ID Admin Center
+
+Use the option:
+
+- Block sign-in
 
 ---
 
-### 2.3 Reset the Password
+## 2.2 Revoke All Sessions
 
-Once the attacker has been fully blocked, reset the user’s password.
+Revoke all active sessions in Entra ID.
 
-Requirements:
-- Minimum of **12 characters**
+This invalidates all existing authentication tokens.
+
+This ensures:
+
+- Existing sessions stop working
+- Browser refreshes fail
+- Mobile applications reconnect with new authentication
+
+This step is important because some sessions may remain active for a period of time even after blocking sign-in.
+
+---
+
+## 2.3 Reset the Password
+
+Reset the password after the attacker is blocked.
+
+Use a strong password:
+
+- Minimum 12 characters
 - No dictionary words
-- Must not be the same as the previous password
+- Different from previous passwords
+
+Store the temporary password securely until recovery is completed.
 
 ---
 
 ## 3. Recovery Actions
 
-Now proceed with recovery actions to limit and repair any further damage.
+At this stage, the attacker should no longer have access.
 
-At this stage, **do not allow the user to log in yet**.
+Now verify whether persistence or backdoors were left behind.
 
----
-
-### 3.1 Unblock the User Account
-
-After resetting the password, unblock the account so that recovery actions can be performed.
-
-- Unblock the account
-- Sign in as the user
+Do not allow the user to continue working yet.
 
 ---
 
-### 3.2 Check Mailbox Rules
+## 3.1 Unblock the User Account
 
-Attackers often create mailbox rules to forward or delete emails.
+Unblock the account temporarily for recovery actions.
 
-- Open the mailbox in **Exchange Online Webmail**
-- Review all inbox rules
-- Remove suspicious rules, such as rules moving all mail to Deleted Items
+Then sign in as the user to inspect the environment.
 
 ---
 
-### 3.3 Check Forwarding Rules
+## 3.2 Check Mailbox Rules
 
-Verify whether any email forwarding rules are active.
-Remove all unauthorized forwarding rules.
+Attackers often create mailbox rules to hide activity.
+
+Open Outlook on the Web and review all inbox rules.
+
+Look for suspicious rules such as:
+
+- Automatically deleting emails
+- Forwarding emails
+- Moving emails to RSS or Deleted Items folders
+
+Remove all suspicious rules immediately.
 
 ---
 
-### 3.4 Check Automatic Replies
+## 3.3 Check Forwarding Rules
+
+Check whether mailbox forwarding is enabled.
+
+Unauthorized forwarding can allow attackers to continue receiving emails silently.
+
+Remove all unauthorized forwarding settings.
+
+---
+
+## 3.4 Check Automatic Replies
 
 Verify whether automatic replies are enabled.
-Disable any unintended or malicious auto-replies.
+
+Attackers sometimes configure malicious replies to redirect contacts.
+
+Disable all suspicious automatic replies.
 
 ---
 
-### 3.5 Check MFA Methods
+## 3.5 Check MFA Methods
 
-Attackers sometimes register an MFA method as a backdoor.
+Attackers may register their own MFA method as persistence.
 
-While still logged in as the user:
-- Open the MFA methods page
-- Remove all non-relevant methods
+Open the user MFA methods page and verify all registered methods.
+
+Remove:
+
+- Unknown devices
+- Unknown phone numbers
+- Unknown authenticator applications
+
+Only trusted MFA methods should remain.
 
 ---
 
-### 3.6 App Passwords
+## 3.6 App Passwords
 
-App passwords can be abused as a backdoor without MFA.
+App passwords can bypass MFA in older applications.
 
-Approach: **Zero Trust — remove everything.**
+Follow a Zero Trust approach and remove anything unnecessary.
 
-Steps:
+Verify whether app passwords are enabled in Entra ID.
 
-- As administrator, check in Entra ID whether app passwords are enabled
-- Open **Service settings**
+Possible situations:
 
-If the setting is:
-- “Do not allow…” → app passwords are disabled; skip this step
-- “Allow users…” → continue with cleanup
+- “Do not allow users to create app passwords”
+- “Allow users to create app passwords”
 
-Investigate whether app passwords were used in the last 30 days.
+If app passwords are enabled:
+
+- Review usage
+- Remove unnecessary app passwords
+- Disable the feature if possible
+
 Disabling app passwords invalidates all existing app passwords immediately.
 
 ---
 
-### 3.7 Check Windows 365 / Azure Virtual Desktop Access
+## 3.7 Check Windows 365 / Azure Virtual Desktop Access
 
-If the customer uses **Windows 365** or **Azure Virtual Desktop**, verify:
+If the organization uses Windows 365 or Azure Virtual Desktop, review these environments carefully.
 
-- Whether sign-ins occurred
-- Whether malware is present
+Verify:
+
+- User sign-ins
+- Suspicious activity
+- Malware presence
 - General environment health
 
-Account compromise gives easy access to these environments.
+A compromised account can provide direct access to these systems.
 
 ---
 
-### 3.8 Restore User Access
+## 3.8 Restore User Access
 
-Contact the user **only by phone or in person**.
-Restore access to the account so the user can resume work in a cleaned environment.
+After all recovery actions are completed, restore access to the user.
 
----
+Only communicate the new credentials:
 
-## 4. Investigation Phase (MSP Customers Only)
+- By phone
+- In person
 
-After containment, both we and the customer want to understand **how this happened**.
-
-### 4.1 Retrieve Audit Logs from Purview
-
-If audit logging was enabled in advance:
-
-- Open **Microsoft Purview**
-- Set the time range to the last **14 days**
-- Select the affected users under **Users**
-- Click **Search**
-
-This will generate a report containing all user activities for further analysis.
+Avoid sending passwords through email.
 
 ---
 
-### 4.2 Further Investigate Entra ID Sign-in Logs
+## 4. Investigation Phase
 
-Revisit Entra ID sign-in logs to determine:
+After containment and recovery, investigate how the compromise happened.
 
-- From which countries sign-ins originated
-- Whether certain countries should be blocked
-- Whether Conditional Access policies can prevent similar attacks
-
-Blocking IPs alone is insufficient, as IP addresses are easily spoofed.
+This helps improve security and reduce future incidents.
 
 ---
 
-### 4.3 Review Users and Roles
+## 4.1 Retrieve Audit Logs from Purview
 
-Investigate whether current roles or permissions contributed to the incident.
+If auditing was enabled beforehand:
 
-Open PowerShell and run the following:
+- Open Microsoft Purview
+- Search the last 14 days
+- Filter on affected users
 
-# Step 1: Sign in to Azure AD
+Review:
+
+- Mailbox activity
+- File activity
+- Sign-ins
+- Permission changes
+
+Export the logs if needed for documentation.
+
+---
+
+## 4.2 Further Investigate Entra ID Sign-in Logs
+
+Revisit the sign-in logs for deeper analysis.
+
+Investigate:
+
+- Source countries
+- IP addresses
+- Authentication methods
+- Conditional Access gaps
+
+Consider whether Conditional Access policies could prevent similar attacks in the future.
+
+Examples include:
+
+- Blocking risky countries
+- Requiring compliant devices
+- Blocking legacy authentication
+
+Blocking only IP addresses is usually insufficient because attackers can change IP addresses easily.
+
+---
+
+## 4.3 Review Users and Roles
+
+Review all privileged role assignments.
+
+Use PowerShell to retrieve all administrative role assignments.
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+# Sign in to Azure AD
 Connect-AzureAD
 
-# Step 2: Retrieve administrative roles
+# Retrieve administrative roles
 Get-AzureADDirectoryRole | ForEach-Object {
-    $role = $_
-    Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | ForEach-Object {
-        @{
-            DisplayName = $_.DisplayName
-            UserPrincipalName = $_.UserPrincipalName
-            RoleName = $role.DisplayName
-        }
-    }
+
+$role = $_
+
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | ForEach-Object {
+
+@{
+DisplayName = $_.DisplayName
+UserPrincipalName = $_.UserPrincipalName
+RoleName = $role.DisplayName
 }
 
-Each line represents a role assignment.
+}
 
-Remove unintended role assignments.
-In principle, only Skreprtech and break-glass accounts should have administrator rights.
+}
+{{< /card >}}
 
----
+Review the results carefully and remove unauthorized role assignments.
 
-### 4.4 Check Exchange Connectors
-
-Compromised admin accounts may create Exchange connectors for abuse.
-
-Steps:
-
-- Open **Exchange Admin Center**
-- Go to **Mail flow**
-- Open **Connectors**
-- Remove any unauthorized connectors immediately
+Only approved administrative accounts should have elevated permissions.
 
 ---
 
-### 4.5 Investigate Backdoors in Enterprise Applications
+## 4.4 Check Exchange Connectors
 
-Backdoors may be created via Enterprise Applications with high privileges.
+Compromised administrator accounts may create Exchange connectors for abuse.
 
-Use Microsoft Graph PowerShell:
+Open:
 
-# Step 1: Authenticate
+- Exchange Admin Center
+- Mail flow
+- Connectors
+
+Review all configured connectors and remove anything suspicious.
+
+---
+
+## 4.5 Investigate Backdoors in Enterprise Applications
+
+Attackers sometimes create malicious Enterprise Applications or Service Principals with permissions inside the tenant.
+
+Use Microsoft Graph PowerShell to review application permissions.
+
+{{< card code=true header="**PowerShell**" lang="powershell" >}}
+# Authenticate
 Connect-MgGraph -Scopes "Application.Read.All", "Directory.Read.All" -NoWelcome
 
-# Step 2: Retrieve applications and service principals
+# Retrieve applications and service principals
 $applications = Get-MgApplication -All
 $servicePrincipals = Get-MgServicePrincipal -All
 
-# Step 3: Build lookup tables
+# Build lookup tables
 $spLookup = @{}
 $permissionsLookup = @{}
 
 foreach ($sp in $servicePrincipals) {
-    if ($sp.AppId) {
-        $spLookup[$sp.AppId] = $sp.DisplayName
-        foreach ($res in @($sp.Oauth2PermissionScopes + $sp.AppRoles)) {
-            $permissionsLookup["$($sp.AppId)|$($res.Id)"] = $res.Value
-        }
-    }
+
+if ($sp.AppId) {
+
+$spLookup[$sp.AppId] = $sp.DisplayName
+
+foreach ($res in @($sp.Oauth2PermissionScopes + $sp.AppRoles)) {
+
+$permissionsLookup["$($sp.AppId)|$($res.Id)"] = $res.Value
+
 }
 
-# Step 4: Create result set
+}
+
+}
+
+# Create result set
 $appDetails = @()
 
 foreach ($app in $applications) {
-    $hasSecret = ($app.PasswordCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
-    $hasCert = ($app.KeyCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
 
-    foreach ($resourceAccess in $app.RequiredResourceAccess) {
-        foreach ($access in $resourceAccess.ResourceAccess) {
-            $permType = if ($access.Type -eq "Role") { "Application" } else { "Delegated" }
-            $permName = $permissionsLookup["$($resourceAccess.ResourceAppId)|$($access.Id)"]
+$hasSecret = ($app.PasswordCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
+$hasCert = ($app.KeyCredentials | Where-Object { $_.EndDateTime -gt (Get-Date) }).Count -gt 0
 
-            $appDetails += @{
-                ApplicationId   = $app.AppId
-                DisplayName     = $app.DisplayName
-                PermissionType  = $permType
-                PermissionName  = $permName
-                HasClientSecret = $hasSecret
-                HasCertificate  = $hasCert
-            }
-        }
-    }
+foreach ($resourceAccess in $app.RequiredResourceAccess) {
+
+foreach ($access in $resourceAccess.ResourceAccess) {
+
+$permType = if ($access.Type -eq "Role") { "Application" } else { "Delegated" }
+
+$permName = $permissionsLookup["$($resourceAccess.ResourceAppId)|$($access.Id)"]
+
+$appDetails += @{
+ApplicationId   = $app.AppId
+DisplayName     = $app.DisplayName
+PermissionType  = $permType
+PermissionName  = $permName
+HasClientSecret = $hasSecret
+HasCertificate  = $hasCert
 }
 
-# Step 5: Export results
-$appDetails | Export-Csv "EntraID_AppPermissions_WithNames.csv" -NoTypeInformation -Encoding UTF8 -Delimiter ";"
+}
 
-After analysis, this step is complete.
+}
+
+}
+
+# Export results
+$appDetails | Export-Csv "EntraID_AppPermissions_WithNames.csv" -NoTypeInformation -Encoding UTF8 -Delimiter ";"
+{{< /card >}}
+
+Review all applications carefully and remove anything suspicious or unnecessary.
 
 ---
 
 ## 5. Closure and Reporting
 
-After completing the investigation, share the findings with the customer.
+After the investigation is completed, share the findings with the customer or internal organization.
 
-This improves awareness and helps prevent future incidents.
-Consider advising the customer to internally share lessons learned.
+The report should explain:
 
-There is currently no fixed template for reporting.
-All collected data from the investigation phase can be shared directly or demonstrated in the portals.
-``
+- What happened
+- What was affected
+- What actions were taken
+- What improvements are recommended
+
+This phase is important for awareness and future prevention.
+
+Use the collected information from:
+
+- Sign-in logs
+- Audit logs
+- Exchange investigation
+- MFA review
+- Enterprise Application review
+
+to build the final report.
 
 ---
 
 ## Summary
 
-Short summary of the post and what the organization wins using the information of the post
+In this guide, we reviewed a complete incident response process for compromised Entra ID accounts.
+
+The most important parts are:
+
+- Detect suspicious activity quickly
+- Block attacker access immediately
+- Remove persistence methods
+- Investigate how the compromise happened
+- Improve security controls afterward
+
+Following a structured response process helps reduce damage and improves recovery time during security incidents.
+
+Thank you for reading this post and I hope it was helpful!
 
 ### Sources
 
-- Some links of documentation from official sources
+These sources helped me by writing and research for this post;
 
+1. https://learn.microsoft.com/en-us/entra/identity/
+2. https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access
+3. https://learn.microsoft.com/en-us/purview/audit-search
+4. https://learn.microsoft.com/en-us/exchange/monitoring/mail-flow-insights/connectors-report
+5. https://learn.microsoft.com/en-us/graph/powershell/get-started
 
 {{< ads >}}
 
