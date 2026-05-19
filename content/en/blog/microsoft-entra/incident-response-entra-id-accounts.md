@@ -40,8 +40,8 @@ The goal is simple:
 ## 1. Detection Phase
 
 {{% alert title="Actions" color="info" %}}
-- 1.1 Review sign-in attempts from the last 30 days
-- 1.2 Review Risky Users
+1.1 Review sign-in attempts from the last 30 days
+1.2 Review Risky Users
 {{% /alert %}}
 
 An Entra ID account compromise can be detected in several ways. Common examples are:
@@ -113,9 +113,7 @@ Any user that appeared as risky in the last 14 days should be included in the re
 
 {{% alert title="Actions" color="info" %}}
 2.1 Disable the User Account
-
 2.2 Revoke All Sessions
-
 2.3 Reset the Password
 {{% /alert %}}
 
@@ -176,19 +174,12 @@ Store the temporary password securely until the recovery phase is completed.
 
 {{% alert title="Actions" color="info" %}}
 3.1 Unblock the User Account
-
 3.2 Check Mailbox Rules
-
 3.3 Check Forwarding Rules
-
 3.4 Check Automatic Replies
-
 3.5 Check MFA Methods
-
 3.6 App Passwords
-
 3.7 Check 3rd-party application sign-ins
-
 3.8 Restore User Access
 {{% /alert %}}
 
@@ -293,13 +284,9 @@ Avoid sending passwords through email.
 
 {{% alert title="Actions" color="info" %}}
 4.1 Retrieve Audit Logs from Purview
-
 4.2 Further Investigate Entra ID Sign-in Logs
-
 4.3 Review Users and Roles
-
 4.4 Check Exchange Connectors
-
 4.5 Investigate Backdoors in Enterprise Applications
 {{% /alert %}}
 
