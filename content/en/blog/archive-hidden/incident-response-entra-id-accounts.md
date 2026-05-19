@@ -10,7 +10,7 @@ description: "Learn how to respond to a suspected Entra ID account compromise an
 hidden: false
 ---
 
-## Overview
+### Overview
 
 In this guide, I will explain the steps you can follow when an Entra ID account is suspected to be compromised.
 
@@ -20,45 +20,44 @@ For suspected Entra ID account compromise incidents, we work with the following 
 
 1. Detection phase
 2. Blocking actions
-3. Recovery actions
+3. Remediation actions
 4. Investigation phase
 5. Closure and reporting
 
 The goal is simple:
 
 - Detect suspicious activity quickly
-- Block the attacker immediately
-- Recover the account safely
+- Block the attacker as soon as possible
+- Recover the account safely without major chances of another breach
 - Investigate what happened
-- Prevent it from happening again
+- Prevent it from happening again by analyzing the cause and possible changes in policies
 
 ---
 
 ## 1. Detection Phase
 
-An Entra ID account compromise can be detected in several ways.
+{{% alert title="Info" color="info" %}}
+- 1.1 Review sign-in attempts from the last 30 days
+- 1.2 Review Risky Users
+{{% /alert %}}
 
-Common examples are:
+An Entra ID account compromise can be detected in several ways. Common examples are:
 
 - A user reports strange Outlook behavior
 - The account is blocked automatically
 - Contacts receive spam or phishing emails
-- Sign-ins appear from unusual countries
+- Succesful sign-ins appear in the logs or SIEM from unusual countries
 - Microsoft flags the account as risky
 
-Before taking recovery actions, first confirm whether the account is actually compromised.
-
-During this phase, focus on:
+Before taking recovery actions, we want to first confirm whether the account is actually compromised. This is the main goal of this phase, so focus on:
 
 - Reviewing the last 30 days of sign-in logs
-- Looking for unusual locations or IP addresses
+- Looking for succesful sign-in attempts from unusual locations or IP addresses
 - Checking whether multiple users are affected
 
-Do not spend too much time in this phase. If compromise is confirmed, move to blocking actions immediately.
+Do not spend too much time in this phase. If compromise is confirmed, move to blocking actions immediately. If you already know by certain behaviour that an account is possibly breached, skip the detection phase and instead directly head to blocking.
 
----
-
-## 1.1 Review Sign-in Attempts from the Last 30 Days
+### 1.1 Review Sign-in Attempts from the Last 30 Days
 
 Open the Entra ID sign-in logs and review the last 30 days.
 
@@ -92,9 +91,7 @@ If no successful malicious sign-ins are found:
 
 If malicious sign-ins are confirmed, continue with the next steps.
 
----
-
-## 1.2 Review Risky Users
+### 1.2 Review Risky Users
 
 Open the Risky Users page in Entra ID.
 
@@ -111,13 +108,16 @@ Any user that appeared as risky in the last 14 days should be included in the re
 
 ## 2. Blocking Actions
 
-After compromise is confirmed, block the attacker as quickly as possible.
+{{% alert title="Info" color="info" %}}
+2.1 Disable the User Account
+2.2 Revoke All Sessions
 
-The goal in this phase is to stop all active access immediately.
+2.3 Reset the Password
+{{% /alert %}}
 
----
+After compromise is confirmed, block the attacker as quickly as possible. The goal in this phase is to stop all active access immediately by revoking the current session and the possibility to the attacker to obtain new tokens. Only blocking access or only changing the password will not stop active sessions for the attacker.
 
-## 2.1 Disable the User Account
+### 2.1 Disable the User Account
 
 Disable the affected account directly.
 
@@ -140,9 +140,7 @@ Use the option:
 
 - Block sign-in
 
----
-
-## 2.2 Revoke All Sessions
+### 2.2 Revoke All Sessions
 
 Revoke all active sessions in Entra ID.
 
@@ -156,9 +154,7 @@ This ensures:
 
 This step is important because some sessions may remain active for a period of time even after blocking sign-in.
 
----
-
-## 2.3 Reset the Password
+### 2.3 Reset the Password
 
 Reset the password after the attacker is blocked.
 
@@ -168,29 +164,36 @@ Use a strong password:
 - No dictionary words
 - Different from previous passwords
 
-Store the temporary password securely until recovery is completed.
+Store the temporary password securely until the recovery phase is completed.
 
 ---
 
 ## 3. Recovery Actions
 
-At this stage, the attacker should no longer have access.
+{{% alert title="Info" color="info" %}}
+3.1 Unblock the User Account
+3.2 Check Mailbox Rules
 
-Now verify whether persistence or backdoors were left behind.
+3.3 Check Forwarding Rules
 
-Do not allow the user to continue working yet.
+3.4 Check Automatic Replies
 
----
+3.5 Check MFA Methods
 
-## 3.1 Unblock the User Account
+3.6 App Passwords
+3.7 Check 3rd-party application sign-ins
+3.8 Restore User Access
+{{% /alert %}}
+
+At this stage, the attacker should no longer have access. We will now verify whether persistence or backdoors were left behind. Do not allow the user to continue working yet during this phase as possible backdoors or other manipulations can be possibly active.
+
+### 3.1 Unblock the User Account
 
 Unblock the account temporarily for recovery actions.
 
 Then sign in as the user to inspect the environment.
 
----
-
-## 3.2 Check Mailbox Rules
+### 3.2 Check Mailbox Rules
 
 Attackers often create mailbox rules to hide activity.
 
@@ -204,9 +207,7 @@ Look for suspicious rules such as:
 
 Remove all suspicious rules immediately.
 
----
-
-## 3.3 Check Forwarding Rules
+### 3.3 Check Forwarding Rules
 
 Check whether mailbox forwarding is enabled.
 
@@ -214,9 +215,7 @@ Unauthorized forwarding can allow attackers to continue receiving emails silentl
 
 Remove all unauthorized forwarding settings.
 
----
-
-## 3.4 Check Automatic Replies
+### 3.4 Check Automatic Replies
 
 Verify whether automatic replies are enabled.
 
@@ -224,9 +223,7 @@ Attackers sometimes configure malicious replies to redirect contacts.
 
 Disable all suspicious automatic replies.
 
----
-
-## 3.5 Check MFA Methods
+### 3.5 Check MFA Methods
 
 Attackers may register their own MFA method as persistence.
 
@@ -240,9 +237,7 @@ Remove:
 
 Only trusted MFA methods should remain.
 
----
-
-## 3.6 App Passwords
+### 3.6 App Passwords
 
 App passwords can bypass MFA in older applications.
 
@@ -263,11 +258,7 @@ If app passwords are enabled:
 
 Disabling app passwords invalidates all existing app passwords immediately.
 
----
-
-## 3.7 Check Windows 365 / Azure Virtual Desktop Access
-
-If the organization uses Windows 365 or Azure Virtual Desktop, review these environments carefully.
+### 3.7 Check 3rd-party application sign-ins
 
 Verify:
 
@@ -278,9 +269,7 @@ Verify:
 
 A compromised account can provide direct access to these systems.
 
----
-
-## 3.8 Restore User Access
+### 3.8 Restore User Access
 
 After all recovery actions are completed, restore access to the user.
 
@@ -295,13 +284,22 @@ Avoid sending passwords through email.
 
 ## 4. Investigation Phase
 
+{{% alert title="Info" color="info" %}}
+4.1 Retrieve Audit Logs from Purview
+4.2 Further Investigate Entra ID Sign-in Logs
+
+4.3 Review Users and Roles
+
+4.4 Check Exchange Connectors
+
+4.5 Investigate Backdoors in Enterprise Applications
+{{% /alert %}}
+
 After containment and recovery, investigate how the compromise happened.
 
 This helps improve security and reduce future incidents.
 
----
-
-## 4.1 Retrieve Audit Logs from Purview
+### 4.1 Retrieve Audit Logs from Purview
 
 If auditing was enabled beforehand:
 
@@ -318,9 +316,7 @@ Review:
 
 Export the logs if needed for documentation.
 
----
-
-## 4.2 Further Investigate Entra ID Sign-in Logs
+### 4.2 Further Investigate Entra ID Sign-in Logs
 
 Revisit the sign-in logs for deeper analysis.
 
@@ -341,9 +337,7 @@ Examples include:
 
 Blocking only IP addresses is usually insufficient because attackers can change IP addresses easily.
 
----
-
-## 4.3 Review Users and Roles
+### 4.3 Review Users and Roles
 
 Review all privileged role assignments.
 
@@ -375,9 +369,7 @@ Review the results carefully and remove unauthorized role assignments.
 
 Only approved administrative accounts should have elevated permissions.
 
----
-
-## 4.4 Check Exchange Connectors
+### 4.4 Check Exchange Connectors
 
 Compromised administrator accounts may create Exchange connectors for abuse.
 
@@ -389,9 +381,7 @@ Open:
 
 Review all configured connectors and remove anything suspicious.
 
----
-
-## 4.5 Investigate Backdoors in Enterprise Applications
+### 4.5 Investigate Backdoors in Enterprise Applications
 
 Attackers sometimes create malicious Enterprise Applications or Service Principals with permissions inside the tenant.
 
@@ -485,8 +475,6 @@ Use the collected information from:
 - MFA review
 - Enterprise Application review
 
-to build the final report.
-
 ---
 
 ## Summary
@@ -502,8 +490,6 @@ The most important parts are:
 - Improve security controls afterward
 
 Following a structured response process helps reduce damage and improves recovery time during security incidents.
-
-Thank you for reading this post and I hope it was helpful!
 
 ### Sources
 
