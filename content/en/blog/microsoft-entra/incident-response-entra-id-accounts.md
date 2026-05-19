@@ -40,7 +40,7 @@ The goal is simple:
 ## 1. Detection Phase
 
 {{% alert title="Actions" color="info" %}}
-1.1 Review sign-in attempts from the last 30 days
+1.1 Review sign-in attempts from the last 30 days<br>
 1.2 Review Risky Users
 {{% /alert %}}
 
@@ -112,8 +112,8 @@ Any user that appeared as risky in the last 14 days should be included in the re
 ## 2. Blocking Actions
 
 {{% alert title="Actions" color="info" %}}
-2.1 Disable the User Account
-2.2 Revoke All Sessions
+2.1 Disable the User Account<br>
+2.2 Revoke All Sessions<br>
 2.3 Reset the Password
 {{% /alert %}}
 
@@ -173,13 +173,13 @@ Store the temporary password securely until the recovery phase is completed.
 ## 3. Recovery Actions
 
 {{% alert title="Actions" color="info" %}}
-3.1 Unblock the User Account
-3.2 Check Mailbox Rules
-3.3 Check Forwarding Rules
-3.4 Check Automatic Replies
-3.5 Check MFA Methods
-3.6 App Passwords
-3.7 Check 3rd-party application sign-ins
+3.1 Unblock the User Account<br>
+3.2 Check Mailbox Rules<br>
+3.3 Check Forwarding Rules<br>
+3.4 Check Automatic Replies<br>
+3.5 Check MFA Methods<br>
+3.6 App Passwords<br>
+3.7 Check 3rd-party application sign-ins<br>
 3.8 Restore User Access
 {{% /alert %}}
 
@@ -283,10 +283,10 @@ Avoid sending passwords through email.
 ## 4. Investigation Phase
 
 {{% alert title="Actions" color="info" %}}
-4.1 Retrieve Audit Logs from Purview
-4.2 Further Investigate Entra ID Sign-in Logs
-4.3 Review Users and Roles
-4.4 Check Exchange Connectors
+4.1 Retrieve Audit Logs from Purview<br>
+4.2 Further Investigate Entra ID Sign-in Logs<br>
+4.3 Review Users and Roles<br>
+4.4 Check Exchange Connectors<br>
 4.5 Investigate Backdoors in Enterprise Applications
 {{% /alert %}}
 
