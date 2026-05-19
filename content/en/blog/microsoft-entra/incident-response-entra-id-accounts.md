@@ -42,7 +42,9 @@ You can use the visual view above, and then use this page for the step-by-step i
 1.2 Review Risky Users
 {{% /alert %}}
 
-In the Detection-phase, we will suspect breach. An Entra ID account compromise can be detected in several ways. Common examples are:
+In the Detection-phase, we will suspect breach. An Entra ID account compromise can be detected in several ways. The main goal is to use as least time as possible during this phase, as an attacker might have access. Be sure to switch to the Block phase as soon as possible.
+
+Common examples of suspected breach are:
 
 - A user reports strange Outlook behavior like exceeding set limits or bulk emails
 - The account is blocked by Conditional Access (best scenario)
